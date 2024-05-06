@@ -1,0 +1,114 @@
+##########################
+# FU_Milanese_Modifiers
+##########################
+#Missions
+mlo_estate_interests_secured_modifier = {
+	church_loyalty_modifier = 0.05 
+	nobles_loyalty_modifier = 0.05
+	burghers_loyalty_modifier = 0.05 
+}
+mlo_republic_of_the_people_modifier = {
+	global_unrest = -2 
+}
+mlo_shield_of_italy_modifier = {
+	ae_impact = -0.15
+}
+mlo_great_power_diplomacy_modifier = {
+	diplomats = 1 
+}
+mlo_host_of_the_eternal_city_1 = {
+	prestige_decay = -0.01 
+	monarch_admin_power = 1 
+}
+mlo_host_of_the_eternal_city_2 = {
+	prestige_decay = -0.01 
+	stability_cost_modifier = -0.2 
+}
+mlo_holy_see_influence_modifier = {
+	papal_influence = 2 
+}
+mlo_regulation_of_the_curia_treasury_modifier = {
+	global_tax_modifier = 0.10
+	church_loyalty_modifier = 0.05 
+}
+mlo_exhibition_modifier = {
+	tolerance_own = 1 
+	adm_advisor_cost = -0.1
+	development_cost = -0.1
+}
+mlo_scrofa_semilanuta_modifier = {
+	land_morale = 0.05
+}
+mlo_passage_to_southern_italy_modifier = {
+	local_hostile_movement_speed = -0.5
+	local_hostile_attrition = 3 
+}
+mlo_secured_alpine_passes = { 
+	fort_maintenance_modifier = -0.15 
+	garrison_size = 0.25 
+}
+milanese_dominance_modifier = {
+	administrative_efficiency = 0.05 
+	governing_capacity_modifier = 0.2 
+}
+mlo_reinforced_republican_mandate_modifier = {
+	republican_tradition = 0.1
+	reelection_cost = -0.1 
+}
+mlo_hegemonic_ambitions = {
+	max_absolutism = 25 
+	all_power_cost = -0.05 
+}
+mlo_po_border_modifier = {
+	local_defensiveness = 0.33 
+}
+mlo_venetian_influences_modifier = {
+	global_ship_cost = -0.1 
+	global_trade_power = 0.1
+}
+mlo_recognized_italian_status_modifier = {
+	legitimacy = 1 
+	republican_tradition = 0.1
+}
+mlo_expanded_schwarze_mine_modifier = {
+	local_development_cost = -0.25 
+}
+mlo_wave_modern_thought_modifier = {
+	technology_cost = -0.05 
+}
+mlo_booming_trade_winds = {
+	trade_efficiency = 0.10
+	burghers_loyalty_modifier = 0.05 
+}
+mlo_seat_of_hre_modifier = {
+	diplomatic_reputation = 2 
+	improve_relation_modifier = 0.25 
+}
+mlo_plethora_academic_scholars_modifier = {
+	innovativeness_gain = 0.5 
+}
+
+#Events
+mlo_control_genoese_modifier = {
+	country_admin_power = 1 
+}
+mlo_tax_reform_modifier = {
+	global_tax_modifier = 0.10
+	interest = -1 
+}
+mlo_fashion_exhibitions_modifier = {
+	monthly_splendor = 1
+	global_trade_goods_size_modifier = 0.1
+}
+mlo_printing_press_modifier = {
+	yearly_corruption = -0.2 
+	global_unrest = -1 
+}
+mlo_santa_maria_springs_modifier = {
+	monarch_lifespan = 0.1
+}	
+mlo_court_stability_modifier = {
+	republican_tradition = 0.1
+	legitimacy = 1
+	global_autonomy = -0.05
+}

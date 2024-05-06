@@ -1,0 +1,92 @@
+##############################
+# Province Modifiers
+##############################
+echo_dnieper_buh_estuary_pmod = {
+	province_trade_power_value = 5
+	picture = "estuary_icon"
+}
+echo_production_hub_grain_pmod = {
+	trade_value_modifier = 1
+	local_development_cost = -0.15
+}
+
+echo_production_hub_livestock_pmod = {
+	trade_value_modifier = 0.375
+	local_development_cost = -0.15
+}
+echo_production_hub_naval_supplies_pmod = {
+	trade_value_modifier = 0.5
+	local_development_cost = -0.15
+}
+
+##############################
+# Country Modifiers
+##############################
+echo_provincial_investment_cmod = {
+}
+########################################
+# General Modifiers
+
+free_colonist = {
+	colonists = 2
+	range = 10
+	trade_range_modifier = 1
+	global_colonial_growth = 35
+	may_explore = yes
+}
+
+urbanisation = {
+	all_power_cost = -0.1
+	global_trade_goods_size_modifier = 0.1
+}
+
+
+echo_muslim_school_cooldown = {
+}
+
+
+echo_province_investment = {
+}
+
+trade_hub_created = {
+}
+
+
+echo_commandant_cooldown = {
+}
+echo_commandant_cooldown_100 = {
+}
+echo_grand_captain_cooldown = {
+}
+echo_grand_captain_cooldown_100 = {
+}
+echo_armyreform_cooldown = {
+}
+
+echo_militaryreform_cooldown = {
+}
+
+hired_explorer = {
+	may_explore = yes
+}
+
+hired_conquistador = {
+	may_explore = yes
+}
+
+echo_development = {
+	development_cost = -0.05
+	build_cost = -0.05
+	global_trade_goods_size_modifier = 0.1
+	free_leader_pool = 1
+	power_projection_from_insults = 1.5
+}
+
+# Por Modifier
+echo_por_colonist = {
+	colonists = 1
+	may_explore = yes
+}
+
+enacted_states_general_reform = {
+}

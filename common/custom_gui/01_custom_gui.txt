@@ -1,0 +1,222 @@
+
+################################################################
+#### Make Trade Center Province Decision
+################################################################
+# To the poor soul trying to recreate this...
+################################################################
+#Made by Yannick
+
+# This is the file that declares the button
+# The button graphic can be found in /gfx/interface/button_flogi_tradecenter.dds
+# The button is assigned to the GUI window in /interface/provinceview.gui on line 571 as of now
+# The graphic is assigned in the file /interface/custom_button.gfx 
+# You will need to add 'scripted = yes' to your guiButtonType or else it will NOT work
+
+# FROM always refers to the country itself
+# Owner is the country too, however I didnt figure out what exactly the difference is
+# ROOT always refers to the province
+
+#Spawn trade center of trade button
+custom_button = {
+    name = iv_tradecenter_button
+	tooltip = iv_tradecenter_button_title
+    potential = {
+        owned_by = FROM				#You want this so that you can only see this button on your own provinces!
+    }
+    trigger = { 
+		FROM = {
+			is_colonial_nation = no	
+			NOT = { has_country_modifier = trade_hub_created }
+			treasury = 200
+			dip_power = 50
+			is_at_war = no
+		}	
+		ROOT = {
+			NOT = {
+				continent = north_america
+			}
+			NOT = {
+				continent = south_america
+			}
+			is_state_core = FROM
+			development = 30
+			NOT = { 
+				area_for_scope_province = { 
+					OR = {
+						province_has_center_of_trade_of_level = 1 
+					}
+				}
+			}
+			OR = {
+				has_building = marketplace
+				has_building = trade_depot
+				has_building = stock_exchange
+			}
+		}
+	}
+    effect = { 
+		owner = { #This will apply to the country
+			add_treasury = -200
+			add_dip_power = -50
+		}
+
+		#These will apply on the province
+		center_of_trade = 1
+		add_base_production = 2
+	}	
+}
+#bastard mercs
+custom_button = {
+    name = bastard_build_merc_button
+	tooltip = echo_provincial_investment_title
+    potential = {
+		always = no
+        owned_by = FROM				#You want this so that you can only see this button on your own provinces!
+			ai = no
+			NOT = { is_bankrupt = yes }
+    }
+    trigger = { 
+		NOT = {
+				check_variable = {
+					which = number_of_owned_mercenaries
+					which = mercenary_forcelimit
+				}
+			}
+	}
+   effect = {
+		
+		}	
+}
+
+
+#Wool to Cloth button
+custom_button = {
+    name = Issue_Provincial_Investment_button
+	tooltip = echo_provincial_investment_tt
+    potential = {
+        owned_by = FROM				#You want this so that you can only see this button on your own provinces!
+		OR = {
+			trade_goods = grain
+			trade_goods = livestock
+			trade_goods = naval_supplies
+			trade_goods = wool
+		}
+    }
+    trigger = { 
+		FROM = {
+			treasury = 250
+			dip_power = 100
+		}	
+		FROM = {
+			NOT = { has_country_modifier = echo_provincial_investment_cmod }
+		}
+		ROOT = {
+			NOT = { has_province_flag = echo_provincial_investment_pflag }
+			is_state_core = FROM
+			base_production = 10
+			has_production_building_trigger = yes
+			OR = {
+				trade_goods = grain
+				trade_goods = livestock
+				trade_goods = naval_supplies
+				trade_goods = wool
+			}
+		}
+	}
+    effect = { 
+		owner = { #This will apply to the country
+			add_treasury = -250
+			add_dip_power = -100
+			add_country_modifier = {
+				name = echo_provincial_investment_cmod
+				duration = 3650
+			}
+		}
+
+		#These will apply on the province
+		if = {
+			limit = { trade_goods = grain }
+				add_province_modifier = {
+					name = echo_production_hub_grain_pmod
+					duration = -1
+				}
+		}
+		else_if = {
+			limit = { trade_goods = livestock }
+			add_province_modifier = {
+				name = echo_production_hub_livestock_pmod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { trade_goods = naval_supplies }
+			add_province_modifier = {
+				name = echo_production_hub_naval_supplies_pmod
+				duration = -1
+			}
+		}
+		else = {
+			limit = { trade_goods = wool }
+			change_trade_goods = cloth
+		}
+		ROOT = {
+			set_province_flag = echo_provincial_investment_pflag
+		}
+	}	
+}
+
+#Economic Golden Age button
+custom_button = {
+    name = economic_golden_age
+	tooltip = economic_golden_age_title
+    potential = {
+		FROM = {
+			NOT = { has_country_flag = urbanisation_taken }
+			NOT = { has_country_flag = X_POR_economic_golden_age_cflag }
+		}
+    }
+    trigger = { 
+		custom_trigger_tooltip = {
+				tooltip = urbanisation_tt
+				OR = {
+					AND = {
+						ai  = yes
+						is_colonial_nation = no
+					}
+					AND = {
+						ai  = no
+						is_colonial_nation = yes
+					}
+					AND = {
+						ai  = no
+						is_colonial_nation = no
+					}
+				}	
+				adm_power = 100
+				dip_power = 100
+				mil_power = 100
+				splendor = 200
+				if = {
+					limit = { tag = POR }
+					hidden_trigger = {
+						NOT = { has_country_flag = X_POR_economic_golden_age_cflag }
+					}
+				}
+			}	
+	}
+    effect = { 
+		FROM = { #This will apply to the country
+			add_country_modifier = {
+				name = "urbanisation"
+				duration = 18250
+			}
+			if = {
+				limit = { NOT = { tag = POR } }
+				set_country_flag = urbanisation_taken
+			}
+			else = {
+				set_country_flag = X_POR_economic_golden_age_cflag
+			}
+		}
+	}	
+}

@@ -1,0 +1,48 @@
+
+#Italian Alliances
+alliance = {
+	first = MLO
+	second = VEN
+	start_date = 1444.1.1
+	end_date = 1454.4.9
+}
+
+alliance = {
+	first = MLO
+	second = SIC
+	start_date = 1444.1.1
+	end_date = 1454.4.9
+}
+alliance = {
+	first = VEN
+	second = SIC
+	start_date = 1444.1.1
+	end_date = 1454.4.9
+}
+alliance = {
+	first = TUN
+	second = MOR
+	start_date = 1444.1.1
+	end_date = 1454.4.9
+}
+
+vassal = {
+	first = DLH
+	second = SRM
+	start_date = 1444.1.1
+	end_date = 1534.1.1
+}
+
+vassal = {
+	first = DLH
+	second = GHR
+	start_date = 1444.1.1
+	end_date = 1534.1.1
+}
+
+#vassal = {
+#	first = TRS
+#	second = KHI
+#	start_date = 1444.1.1
+#	end_date = 1534.1.1
+#}

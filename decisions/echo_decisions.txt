@@ -1,0 +1,808 @@
+country_decisions = {
+	new_player_readme = {
+		color = { 41  233  249 }
+		potential = {
+			ai = no
+			NOT = { has_country_flag = hide_extra_decisions }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 219
+				province_id = 343
+				province_id = 151
+				province_id = 183
+				province_id = 134
+				province_id = 361
+				province_id = 236
+				province_id = 50
+				province_id = 295
+				province_id = 465
+				province_id = 153
+				province_id = 118
+				province_id = 257
+				province_id = 12
+				province_id = 446	
+				province_id = 266
+				province_id = 1020
+				province_id = 1816
+				province_id = 1821
+				province_id = 4678
+				province_id = 522
+				province_id = 600
+				province_id = 636
+				province_id = 667
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+		}
+		effect = {
+			country_event = {
+				id = echo.6
+			}
+		}
+	}	
+	Create_a_Trade_Hub = {
+		color = { 166  0  0 }
+		provinces_to_highlight = {
+					area_for_scope_province = {
+								type = all
+								NOT = {
+									province_has_center_of_trade_of_level = 1
+								}
+					}
+					development = 30	
+					OR = {
+						owned_by = ROOT 
+						is_core = ROOT 
+					}
+		}
+		potential = {
+			any_owned_province = {
+					area_for_scope_province = {
+								type = all
+								NOT = {
+									province_has_center_of_trade_of_level = 1
+								}
+					}
+					development = 30
+			}		
+		}
+		
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = view_province_tt
+			}
+		}
+		
+		effect = {
+		}
+	}
+	echo_provincial_investment = {
+		color = { 166  0  0 }
+		provinces_to_highlight = {
+				base_production = 10
+				is_state = yes
+				hidden_trigger = { NOT = { has_province_flag = echo_provincial_investment_pflag } }
+				OR = {
+					trade_goods = grain
+					trade_goods = livestock
+					trade_goods = naval_supplies
+					trade_goods = wool
+				}
+				OR = {
+						owned_by = ROOT 
+						is_core = ROOT 
+					}
+		}
+		potential = { 
+			any_owned_province = {
+				base_production = 10
+				is_state = yes
+				hidden_trigger = { NOT = { has_province_flag = echo_provincial_investment_pflag } }
+				OR = {
+					trade_goods = grain
+					trade_goods = livestock
+					trade_goods = naval_supplies
+					trade_goods = wool
+				}
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = view_province_tt
+			}
+		}
+		effect = {
+		}
+	}
+	urbanisation = {
+		color = { 166  0  0 }
+		potential = {
+			NOT = { has_country_flag = urbanisation_taken }
+			NOT = { has_country_flag = X_POR_economic_golden_age_cflag }
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = urbanisation_tt
+				OR = {
+					AND = {
+						ai  = yes
+						is_colonial_nation = no
+					}
+					AND = {
+						ai  = no
+						is_colonial_nation = yes
+					}
+					AND = {
+						ai  = no
+						is_colonial_nation = no
+					}
+				}	
+				adm_power = 100
+				dip_power = 100
+				mil_power = 100
+				splendor = 200
+				if = {
+					limit = { tag = POR }
+					hidden_trigger = {
+						NOT = { has_country_flag = X_POR_economic_golden_age_cflag }
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "urbanisation"
+				duration = 18250
+			}
+			if = {
+				limit = { NOT = { tag = POR } }
+				set_country_flag = urbanisation_taken
+			}
+			else = {
+				set_country_flag = X_POR_economic_golden_age_cflag
+			}
+		}
+	}	
+	echo_critical_events = {
+		color = { 166  0  0 }
+		potential = {
+			ai = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = echo_radical_reform_decision
+				NOT = { has_country_flag = radical_mercantilist_reforms }
+			}
+			custom_trigger_tooltip = {
+				tooltip = echo_military_reform_decision
+				NOT = { has_country_flag = military_reform }
+			}
+			custom_trigger_tooltip = {
+				tooltip = echo_commandant_decision
+				NOT = { has_country_modifier = echo_commandant_cooldown }
+				NOT = { has_country_modifier = echo_commandant_cooldown_100 }
+			}
+			custom_trigger_tooltip = {
+				tooltip = echo_grand_captain_decision
+				NOT = { has_country_modifier = echo_grand_captain_cooldown }
+				NOT = { has_country_modifier = echo_grand_captain_cooldown_100 }
+			}
+		}
+		effect = {
+		}
+	}
+
+	hide_extra_decisions = {
+		color = { 41  233  249 }
+		potential = {
+				ai = no
+				NOT = { has_country_flag = hide_extra_decisions }
+			}
+			allow = {
+			}
+			effect = {
+				set_country_flag = hide_extra_decisions
+			}
+	}
+	show_extra_decisions = {
+		color = { 41  233  249 }
+		potential = {
+				ai = no
+				has_country_flag = hide_extra_decisions 
+			}
+			allow = {
+			}
+			effect = {
+				clr_country_flag = hide_extra_decisions
+			}
+	}
+	show_bad_production_provinces = {
+		color = { 41  233  249 }
+		potential = {
+			ai = no
+			adm_tech = 11
+			dip_tech = 11
+			mil_tech = 11
+			NOT = {has_country_flag = hide_extra_decisions}
+		}
+		provinces_to_highlight = {
+			NOT = { trade_goods = grain }
+			OR = {
+				AND = {
+					OR = {
+						has_building = wharf
+						has_building = weapons
+						has_building = textile
+						has_building = tradecompany
+						has_building = farm_estate
+						has_building = mills
+						has_building = plantations
+					}
+					NOT = {has_production_building_trigger = yes }
+				}	
+				AND = {
+					NOT = {
+						OR = {
+							has_building = wharf
+							has_building = weapons
+							has_building = textile
+							has_building = tradecompany
+							has_building = farm_estate
+							has_building = mills
+							has_building = plantations
+						}
+					}
+					has_production_building_trigger = yes 
+				}	
+			}
+			OR = {
+				owned_by = ROOT 
+				is_core = ROOT 
+			}
+		}
+		allow = {
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					NOT = { trade_goods = grain }
+						OR = {
+							AND = {
+								OR = {
+									has_building = wharf
+									has_building = weapons
+									has_building = textile
+									has_building = tradecompany
+									has_building = farm_estate
+									has_building = mills
+									has_building = plantations
+								}
+								NOT = {has_production_building_trigger = yes }
+							}	
+							AND = {
+								NOT = {
+									OR = {
+										has_building = wharf
+										has_building = weapons
+										has_building = textile
+										has_building = tradecompany
+										has_building = farm_estate
+										has_building = mills
+										has_building = plantations
+									}
+								}
+								has_production_building_trigger = yes 
+							}	
+						}
+						OR = {
+							owned_by = ROOT 
+							is_core = ROOT 
+						}	
+				}
+				add_province_modifier = { 
+					name = bad_building_production
+					duration = 3650 
+				}
+			}
+			every_owned_province = {
+					limit = {
+						has_province_modifier = bad_building_production
+						has_production_building_trigger = yes
+						OR = {
+							has_building = wharf
+							has_building = weapons
+							has_building = textile
+							has_building = tradecompany
+							has_building = farm_estate
+							has_building = mills
+							has_building = plantations
+						}
+					}
+					remove_province_modifier = bad_building_production
+			}	
+		}
+	}
+	show_bad_manpower_provinces = {
+		color = { 41  233  249 }
+		potential = {
+			ai = no
+			adm_tech = 15
+			NOT = {has_country_flag = hide_extra_decisions}
+		}
+		provinces_to_highlight = {
+			OR = {
+				trade_goods = grain
+				trade_goods = fish
+				trade_goods = livestock
+				trade_goods = wine
+				trade_goods = wool
+			}
+			NOT = { has_building = soldier_households }
+			OR = {
+				owned_by = ROOT 
+				is_core = ROOT 
+			}
+		}
+		allow = {
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						trade_goods = grain
+						trade_goods = fish
+						trade_goods = livestock
+						trade_goods = wine
+						trade_goods = wool
+					}
+					NOT = { has_building = soldier_households }
+					OR = {
+						owned_by = ROOT 
+						is_core = ROOT 
+					}
+				}
+				add_province_modifier = { 
+					name = bad_building_soldier_household
+					duration = 3650 
+				}
+			}
+			every_owned_province = {
+					limit = {
+						has_province_modifier = bad_building_soldier_household
+						has_building = soldier_households
+					}
+					remove_province_modifier = bad_building_soldier_household
+				}	
+		}
+	}
+	show_bad_temples = {
+		color = { 41  233  249 }
+		potential = {
+			ai = no
+			adm_tech = 11
+			NOT = {has_country_flag = hide_extra_decisions}
+		}
+		provinces_to_highlight = {
+			OR = {
+				has_building = temple
+				has_building = cathedral
+			}
+			NOT = { base_tax = 5 }
+			NOT = { num_free_building_slots = 1 }
+			OR = {
+				NOT = { has_manpower_building_trigger = yes }
+				NOT = { has_forcelimit_building_trigger = yes  }
+				NOT = {
+					OR = {
+						has_building = wharf
+						has_building = weapons
+						has_building = textile
+						has_building = tradecompany
+						has_building = farm_estate
+						has_building = mills
+						has_building = plantations
+					}
+				}
+				NOT = {has_production_building_trigger = yes }		
+			}	
+			OR = {
+				owned_by = ROOT 
+				is_core = ROOT 
+			}
+		}
+		allow = {
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					has_tax_building_trigger = yes
+					NOT = { base_tax = 5 }
+					NOT = { num_free_building_slots = 1 }
+					OR = {
+						NOT = { has_manpower_building_trigger = yes }
+						NOT = { has_forcelimit_building_trigger = yes  }
+						NOT = {
+							OR = {
+								has_building = wharf
+								has_building = weapons
+								has_building = textile
+								has_building = tradecompany
+								has_building = farm_estate
+								has_building = mills
+								has_building = plantations
+							}
+						}
+					NOT = {has_production_building_trigger = yes }		
+					}	
+					OR = {
+						owned_by = ROOT 
+						is_core = ROOT 
+					}
+				}
+				add_province_modifier = { 
+					name = bad_building_temple
+					duration = 3650 
+				}
+			}
+			every_owned_province = {
+					limit = {
+						has_province_modifier = bad_building_temple
+						has_tax_building_trigger = no	
+					}
+					remove_province_modifier = bad_building_temple
+			}			
+		}
+	}
+
+
+	development_counter = {
+		color = { 166  0  0 }
+		potential = { ai = no }
+		allow = {
+			if = {
+				limit = {
+					has_country_flag = has_development_counter_cflag
+				}
+				custom_trigger_tooltip = {
+					tooltip = development_counter_tt
+				}
+			}
+			hidden_trigger = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = has_development_counter_cflag }
+					}
+					always = yes
+				}
+				else = {
+					always = no
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = has_development_counter_cflag }
+				}
+				custom_tooltip = development_counter_update_tt
+				hidden_effect = { development_counter = { on_startup = yes } }
+			}
+		}
+	}
+	educate_ruler = {
+		color = { 166  0  0 }
+		potential = {
+			ai = no
+			NOT = { government = republic }
+			NOT = { has_ruler_flag = educate_ruler_rflag }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = educate_ruler_tt
+				NOT = {
+					check_variable = {
+						which = ruler_total_skill
+						value = 10
+					}
+				}
+				NOT = {
+					check_variable = { 
+						which = educate_ruler_counter
+						value = 3
+					}
+				}
+			}
+		}
+		effect = {
+			educate_ruler = { educate = yes }
+			set_ruler_flag = educate_ruler_rflag
+		}
+	}
+	prepare_for_holy_war = {	
+			###X###
+			major = yes
+			#######
+			potential = {
+					always = no
+					is_at_war = no
+					ai = no
+					religion_group = muslim
+					has_border_with_religious_enemy = yes
+			}
+			allow = {
+					reform_level = 5
+					religion_group = muslim
+					NOT = { has_country_modifier = jihad }
+					has_border_with_religious_enemy = yes
+					army_size_percentage = 1
+					manpower_percentage = 0.25
+					prestige = 25
+			}
+			effect = {
+					add_piety = -1
+					add_country_modifier = {
+					name = "jihad"
+					duration = 1825
+					}
+			}	
+	}
+	
+	
+	master_of_india = {
+		color = { 41  233  249 }
+		potential = {
+			is_at_war = no
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			value = 1
+			superregion = india_superregion
+			is_city = yes
+			}
+			NOT = {has_country_modifier = master_of_india}
+		}	
+		provinces_to_highlight = {
+			AND = {
+					superregion = india_superregion
+					root = {
+						NOT = {
+							num_of_owned_provinces_with = {
+								value = 200
+								superregion = india_superregion
+								is_core = root
+							}
+						}	
+					}
+				}
+		}
+		allow = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			value = 200
+			superregion = india_superregion
+			is_city = yes
+			}
+		}	
+		effect = {
+			add_prestige = 100
+			add_country_modifier = {
+					name = "master_of_india"
+					duration = -1
+			}
+		}
+	}
+	b_china_missions = {
+		color = { 41  233  249 }
+		potential = {
+			always = no
+			is_emperor_of_china = yes
+			NOT = {tag = MNG}
+			NOT = {tag = QNG}
+			NOT = {has_country_flag = b_allow_china_missions}
+		}	
+		allow = {
+			is_emperor_of_china = yes
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}	
+		effect = {
+			set_country_flag = b_allow_china_missions
+			swap_non_generic_missions = yes
+		}
+	}
+	b_form_eoh = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_eoh_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			tag = HUN
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			OR = {
+				ai = no
+				num_of_cities = 20
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					OR = {
+						area = bohemia_area
+						area = erzgebirge_area
+						area = moravia_area
+						area = austria_proper_area
+						area = inner_austria_area
+						area = silesia_area
+						area = tirol_area
+					}
+				}
+			}
+		}
+		allow = {
+			adm_tech = 10
+			NOT = { exists = EOH }
+			    bohemia_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+                erzgebirge_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+                moravia_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+                austria_proper_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+                inner_austria_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+                silesia_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+                tirol_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+			num_of_cities = 30
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+		}
+		effect = {
+			change_tag = EOH
+			on_change_tag_effect = yes
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				set_country_flag = formed_eoh_flag
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { num_of_cities = 25 }
+			}
+		}
+		ai_importance = 400
+	}
+	defend_the_united_provinces = {
+		potential = {
+			has_government_attribute = has_defense_of_the_united_provinces
+			ai = no
+		}
+		allow = {
+			is_at_war = yes
+			OR = {
+				num_of_owned_provinces_with = {
+					culture = ROOT
+					NOT = { controlled_by = ROOT }
+					value = 10
+				}
+				is_in_war = {
+					defenders = ROOT
+				}
+			}
+			NOT = { has_country_modifier = defense_of_the_low_countries }
+			if = {
+				limit = { government = monarchy }
+				legitimacy = 80
+			}
+		}
+		effect = {
+			add_legitimacy = -10
+			add_war_exhaustion = -2
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -10
+			}
+			add_country_modifier = { 
+				name = "defense_of_the_low_countries" 
+				duration = -1
+				desc = the_righteous_army_tt
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	FKN_fabricate_cbs = {
+		major = no
+		potential = {
+			has_country_flag = FKN_CB
+			NOT = { is_emperor = yes }
+		}
+		allow = {
+			any_elector = {
+				preferred_emperor = emperor
+			}
+			dip_power = 150
+		}
+		effect = {
+			add_dip_power = -150
+			every_elector = {
+				limit = {
+					preferred_emperor = emperor
+				}
+				reverse_add_casus_belli = {
+					target = ROOT
+					type = cb_insult
+					months = 120
+				}
+			}
+			add_country_modifier = {
+				name = FKN_spy_activity
+				duration = 9125
+			}
+			clr_country_flag = FKN_CB
+		}
+		ai_will_do = {
+			factor = 0 #doubt ai can use it
+		}
+	}
+}

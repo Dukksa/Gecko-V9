@@ -1,0 +1,42 @@
+namespace = tribal_succession
+
+# Tribal Succession Crisis
+country_event = {
+	id = tribal_succession.1
+	title = tribal_succession.1.t
+	desc = tribal_succession.1.d
+	picture = KING_SICK_IN_BED_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			has_reform = steppe_horde
+			has_reform = tribal_federation
+		}
+		NOT = { has_country_flag = no_new_succession_crisis_if_pretender_rebels }
+		num_of_cities = 4
+		has_regency = yes
+	}
+	
+		option = {
+		name = tribal_succession.1.b
+		trigger = {
+			has_regency = yes
+		}
+		if = {
+			limit = {
+				has_consort_regency = yes
+			}
+			remove_consort = yes
+		}
+		define_ruler = {
+			dynasty = ROOT #Uncles, or other relatives were by far the most likely coup-makers
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+			claim = 100
+		}
+		kill_heir = yes
+	}
+}

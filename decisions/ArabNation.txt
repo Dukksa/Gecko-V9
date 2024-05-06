@@ -1,0 +1,130 @@
+country_decisions = {
+	
+	arab_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_arabia_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			NOT = { exists = ARB }
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			OR = {
+			tag = SHR
+			tag = YAS
+			tag = ORM
+			tag = OMA
+			tag = ALH
+			tag = BSR
+			tag = SHM
+			tag = NAJ
+			tag = DAW
+			tag = FAD
+			tag = ANZ
+			tag = MDA
+			tag = HED
+			tag = MFL
+			tag = RAS
+			tag = NJR
+			tag = HDR
+			tag = MHR
+			tag = ADE
+			tag = YEM
+			tag = RAS
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = asir_area
+				area = tihama_al_yemen_area
+				area = yamamah_area
+				area = upper_yemen_area
+				area = yemen_area
+				province_id = 402
+				province_id = 4284
+				area = hadramut_area
+				area = oman_area
+				area = pirate_coast_area
+				area = dhofar_area
+				area = mascat_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no			
+			yamamah_area = { type = all country_or_non_sovereign_subject_holds = ROOT   }
+			asir_area = { type = all country_or_non_sovereign_subject_holds = ROOT   }
+			tihama_al_yemen_area = { type = all country_or_non_sovereign_subject_holds = ROOT  }
+			upper_yemen_area = { type = all country_or_non_sovereign_subject_holds = ROOT  }
+			yemen_area = { type = all country_or_non_sovereign_subject_holds = ROOT  }
+			owns_core_province = 402
+			owns_core_province = 4284
+			hadramut_area = { type = all country_or_non_sovereign_subject_holds = ROOT  }
+			oman_area = { type = all country_or_non_sovereign_subject_holds = ROOT  }
+			pirate_coast_area = { type = all country_or_non_sovereign_subject_holds = ROOT  }
+			dhofar_area = { type = all country_or_non_sovereign_subject_holds = ROOT  }
+			mascat_area = { type = all country_or_non_sovereign_subject_holds = ROOT  }
+		}
+		effect = {
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			mashriq_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ARB
+			}
+			egypt_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { area = lower_nubia_area }
+				}
+				add_permanent_claim = ARB
+			}
+			arabia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ARB
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = formed_arabia_flag
+			change_tag = ARB
+			swap_non_generic_missions = yes
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			country_event = {
+				id = flavor_ARB.10
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

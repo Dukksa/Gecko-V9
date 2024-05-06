@@ -1,0 +1,428 @@
+namespace = FU_Milan_Events 
+#Made by Big Boss for Flavor Universalis
+
+country_event = { 
+	id = FU_Milan_Events.1 
+	title = FU_Milan_Events.1.t 
+	desc = FU_Milan_Events.1.d 
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Milan_Events.1.a 
+		
+		GEN = { 
+			add_liberty_desire = -25 
+			define_ruler = {
+				name = "Spinetta Campofregoso"
+				dynasty = ROOT 
+			}
+		}
+		add_country_modifier = {
+			name = mlo_control_genoese_modifier 
+			duration = 5475 
+		}
+	}
+}
+
+country_event = { #Academy of Bologna
+	id = FU_Milan_Events.2
+	title = FU_Milan_Events.2.t 
+	desc = FU_Milan_Events.2.d 
+	picture = GREAT_BUILDING_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Milan_Events.2.a 
+		
+		change_innovativeness = 1 
+		add_prestige_or_monarch_power = { amount = 10 } 
+	}
+}
+
+country_event = {
+	id = FU_Milan_Events.3 
+	title = FU_Milan_Events.3.t 
+	desc = FU_Milan_Events.3.d 
+	picture = HARBOUR_eventPicture 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Milan_Events.3.a 
+		
+		121 = {
+			add_base_tax = 1 
+			add_base_production = 1 
+		}
+		if = {
+			limit = {
+				exists = NAP 
+			}
+			add_casus_belli = {
+				target = NAP
+				type = cb_vassalize_mission
+			}
+		}
+		else = {
+			apulia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					is_empty = no
+				}
+				add_permanent_claim = ROOT
+			}
+			naples_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					is_empty = no
+				}
+				add_permanent_claim = ROOT
+			}
+			calabria_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					is_empty = no
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+country_event = {
+	id = FU_Milan_Events.4
+	title = FU_Milan_Events.4.t 
+	desc = FU_Milan_Events.4.d 
+	picture = WALLENSTEIN_eventPicture 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Milan_Events.4.a 
+		
+		change_government_reform_progress = 100
+		lombardy_area = { add_base_tax = 1 } 
+	}
+}
+
+country_event = { 
+	id = FU_Milan_Events.5
+	title = FU_Milan_Events.5.t 
+	desc = FU_Milan_Events.5.d 
+	picture = PRINCELY_PALACE_TRANSYLVANIA_eventPicture 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Milan_Events.5.a 
+		
+		add_republican_tradition = 10 
+		add_legitimacy = 15 
+		add_ruler_personality = midas_touched_personality 
+	}
+}
+
+country_event = {
+	id = FU_Milan_Events.6
+	title = FU_Milan_Events.6.t 
+	desc = FU_Milan_Events.6.d 
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Milan_Events.6.a 
+		if = {
+			limit = {
+				OR = {
+					is_part_of_hre = no 
+					is_elector = yes 
+				}
+			}
+			set_government_rank = 3 
+		}
+		hidden_effect = { set_country_flag = mlo_formed_lom }
+		change_government = monarchy
+		override_country_name = LOB
+		country_event = { id = ideagroups.1 }
+	}
+
+	option = {
+		name = FU_Milan_Events.6.b 
+		
+		add_stability_or_adm_power = yes 
+		add_legitimacy = 10 
+		add_republican_tradition = 10
+	}
+	
+	option = {
+		name = FU_Milan_Events.6.c
+		trigger = { 
+			NOT = { government = monarchy } 
+		}
+		highlight = yes 
+		
+		if = {
+			limit = {
+				OR = {
+					is_part_of_hre = no 
+					is_elector = yes 
+				}
+			}
+			set_government_rank = 3 
+		}
+		hidden_effect = { set_country_flag = mlo_formed_lom }
+		change_government_reform_progress = 100
+		add_republican_tradition = 3 
+		add_devotion = 10
+		override_country_name = LOB
+		country_event = { id = ideagroups.1 }
+	}
+}
+
+country_event = {
+	id = FU_Milan_Events.7
+	title = FU_Milan_Events.7.t 
+	desc = FU_Milan_Events.7.d
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Milan_Events.7.a 
+		
+		tirol_area = {
+			limit = {
+				NOT = { is_core = TIR }
+				owned_by = ROOT
+			}
+			add_core = TIR
+			remove_core = ROOT 
+		}
+		release = TIR  
+		TIR = {
+			change_government = monarchy
+			add_government_reform = feudalism_reform
+		}
+		MLO = { vassalize = TIR }
+		
+	}
+	
+	option = {
+		name = FU_Milan_Events.7.b 
+		add_prestige_or_monarch_power = { amount = 10 }
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = FU_Milan_Events.8
+	title = FU_Milan_Events.8.t 
+	desc = FU_Milan_Events.8.d 
+	picture = UNIVERSITY_eventPicture 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Milan_Events.8.a 
+		
+		define_advisor = {
+			type = artist 
+			cost_multiplier = 0.75
+			skill = 3 
+		}
+		add_splendor = 200 
+	}
+}
+
+country_event = { #Milaner Wealth Display
+	id = FU_Milan_Events.10
+	title = FU_Milan_Events.10.t 
+	desc = FU_Milan_Events.10.d 
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Milan_Events.10.a 
+		
+		every_owned_province = {
+			limit = {
+				OR = {
+					trade_goods = wool 
+					trade_goods = cloth 
+				}
+			}
+			add_base_production = 1 
+		}
+		add_country_modifier = {
+			name = mlo_fashion_exhibitions_modifier 
+			duration = -1 
+		}
+		104 = {
+			change_trade_goods = silk
+			}
+		4740 = {
+			change_trade_goods = silk
+			}	
+	}
+}
+
+country_event = { #Printing Press  
+	id = FU_Milan_Events.11
+	title = FU_Milan_Events.11.t 
+	desc = FU_Milan_Events.11.d 
+	picture = PRINTING_PRESS_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Milan_Events.11.a
+
+		add_country_modifier = {
+			name = mlo_printing_press_modifier 
+			duration = 9125
+		}
+	}	
+}
+
+country_event = { #Milano Conservatories and Opera Houses
+	id = FU_Milan_Events.12
+	title = FU_Milan_Events.12.t 
+	desc = FU_Milan_Events.12.d 
+	picture = CULTURE_eventPicture
+	is_triggered_only = yes 
+	
+	
+	option = {
+		name = FU_Milan_Events.12.a 
+		
+		define_advisor = {
+			type = artist
+			name = "Wolfgang Amadeus Mozart"
+			skill = 3
+			culture = bavarian
+			cost_multiplier = 0.75 
+		}
+	}
+}
+
+country_event = {  #Santa Maria delle Grazie
+	id = FU_Milan_Events.13
+	title = FU_Milan_Events.13.t 
+	desc = FU_Milan_Events.13.d 
+	picture = ST_PETERS_CHURCH_eventPicture 
+	
+	fire_only_once = yes 
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	trigger = {
+		has_country_flag = mlo_has_architectural_works_tt
+		owns = 104 
+		is_at_war = no 
+		is_year = 1481 
+	}
+	
+	option = {
+		name = FU_Milan_Events.13.a
+		
+		104 = { add_base_tax = 2 } 
+		add_estate_loyalty = {
+			estate = estate_church 
+			loyalty = 10 
+		}
+	}
+}
+
+country_event = { #Santa Maria alla Fontana
+	id = FU_Milan_Events.14 
+	title = FU_Milan_Events.14.t 
+	desc = FU_Milan_Events.14.d 
+	picture = GREAT_BUILDING_eventPicture
+	
+	fire_only_once = yes 
+	
+	mean_time_to_happen = {
+		months = 12 
+	}
+	
+	trigger = {
+		has_country_flag = mlo_has_architectural_works_tt
+		owns = 104 
+		is_at_war = no 
+		is_year = 1505 
+	}
+	
+	option = {
+		name = FU_Milan_Events.14.a 
+		
+		add_country_modifier = {
+			name = mlo_santa_maria_springs_modifier
+			duration = -1 
+		}
+	}
+}
+
+country_event = { #Santa Maria Presso San Calso
+	id = FU_Milan_Events.15 
+	title = FU_Milan_Events.15.t 
+	desc = FU_Milan_Events.15.d 
+	picture = COURT_eventPicture 
+	
+	fire_only_once = yes 
+	 
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	trigger = {
+		has_country_flag = mlo_has_architectural_works_tt
+		owns = 104 
+		is_at_war = no 
+		is_year = 1493 
+	}
+
+	option = {
+		name = FU_Milan_Events.15.a 
+		
+		add_stability_or_adm_power = yes 
+		add_legitimacy = 10 
+		add_republican_tradition = 5 
+	}
+}
+
+country_event = { #San Fedele a Milano
+	id = FU_Milan_Events.16 
+	title = FU_Milan_Events.16.t 
+	desc = FU_Milan_Events.16.d 
+	picture = ADULT_BAPTISME_eventPicture
+	
+	fire_only_once = yes 
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	trigger = {
+		has_country_flag = mlo_has_architectural_works_tt
+		owns = 104 
+		is_at_war = no 
+		is_year = 1558 
+	}
+	
+	option = {
+		name = FU_Milan_Events.16.a 
+		
+		add_prestige_or_monarch_power = { amount = 20 } 
+		add_splendor = 100 
+	}
+} 

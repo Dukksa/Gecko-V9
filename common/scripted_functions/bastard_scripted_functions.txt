@@ -1,0 +1,110 @@
+can_harsh_treatment = {
+	condition = {
+			potential = {
+				FROM = {
+					ai = yes
+				}
+			}
+			allow = {
+				always = no
+			}
+		}
+}
+
+can_declare_bankruptcy = {
+	condition = {
+			potential = {
+				FROM = {
+						ai = yes
+				}	
+			}
+			allow = {
+				always = no
+			}
+		}
+	condition = {
+			tooltip = "bs_stability_must_be_at_least_3"
+			potential = {
+				FROM = {
+						ai = no
+				}	
+			}
+			allow = {
+				stability = 3
+			}
+		}	
+}
+
+can_increase_autonomy = {
+	condition = {
+			potential = {
+				FROM = {
+						ai = yes
+				}	
+			}
+			allow = {
+				always = no
+			}
+		}
+}
+
+can_move_capital = {
+	condition = {
+		tooltip = "NO_CAPITAL_MOVE_SHOGUN"
+		potential = {
+			FROM = {
+				has_reform = shogunate
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		tooltip = "bs_no_africa"
+		potential = {
+			FROM = {
+				tag = POR
+			}
+		}
+		allow = {
+			NOT = {
+					continent = africa
+			}
+		}
+	}
+}
+
+can_move_trade_port = {
+	condition = {
+		tooltip = "bs_no_africa_trade"
+		potential = {
+			FROM = {
+				tag = POR
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+can_colonize_province = {
+	condition = {
+		tooltip = "cant_colonize_siberia_tt"
+		potential = {
+		}
+
+		allow = {
+				NOT = {
+					OR = {
+						region = east_siberia_region
+						region = west_siberia_region
+						region = ural_region
+					}
+				}	
+		}
+	}
+}
+
+

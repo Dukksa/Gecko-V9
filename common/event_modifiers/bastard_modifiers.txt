@@ -1,0 +1,126 @@
+mam_age_ability_modifier = {
+	discipline = 0.05
+	is_mamluks_modifier = yes
+}
+
+tur_age_ability_modifier = {
+	discipline = 0.05
+	is_janissary_modifier = yes
+}
+
+jihad = {
+    monthly_piety = -0.08
+}
+
+
+Great_power_dominance_timer = {
+}
+
+Great_power_dominance_established = {
+	governing_capacity = 400
+	num_accepted_cultures = 1
+}
+mid_power_dominance_established = {
+	governing_capacity = 200
+	num_accepted_cultures = 1
+}
+master_of_india = {
+	governing_capacity = 500
+	land_morale = 0.1
+	fire_damage = 0.1
+	num_accepted_cultures = 3
+}
+
+bad_building_soldier_household = {
+	local_build_time = -0.1
+	trade_value = 0.25
+	trade_goods_size = -0.25
+}
+
+bad_building_temple = {
+	local_build_time = -0.1
+	trade_value = 0.25
+	trade_goods_size = -0.25
+}
+
+bad_building_production = {
+	local_build_time = -0.1
+	trade_value = 0.25
+	trade_goods_size = -0.25
+}
+
+b_colony_warscore = {
+	local_warscore_cost_modifier = 1.5
+}
+
+Merc_payments_reneged = {
+	is_mercenary_modifier = yes
+	reinforce_speed = -0.33
+}
+
+defense_of_the_low_countries = {
+	global_tax_modifier = -0.1
+	land_morale = 0.1
+	hostile_attrition = 3
+	max_hostile_attrition = 3
+}
+
+bastard_dev_cost_modifier_1 = {
+	local_development_cost_modifier = -0.0125
+}
+
+bastard_dev_cost_modifier_2  = {
+	local_development_cost_modifier = -0.025
+}
+
+bastard_dev_cost_modifier_3 = {
+	local_development_cost_modifier = -0.0375
+}
+bastard_dev_cost_modifier_4 = {
+	local_development_cost_modifier = -0.05
+}
+bastard_dev_cost_modifier_5 = {
+	local_development_cost_modifier = -0.075
+}
+bastard_dev_cost_modifier_6 = {
+	local_development_cost_modifier = -0.1
+}
+provincial_investment_woods = {
+	local_development_cost_modifier = -0.0375
+}
+provincial_investment_hills = {
+	local_development_cost_modifier = -0.0625
+}	
+provincial_investment_mountain = {
+	local_development_cost_modifier = -0.0875
+}	
+provincial_investment_jungle = {
+	local_development_cost_modifier = -0.0875
+}	
+provincial_investment_marsh = {
+	local_development_cost_modifier = -0.0625
+}	
+provincial_investment_desert = {
+	local_development_cost_modifier = -0.04375
+}	
+provincial_investment_coastal_desert = {
+	local_development_cost_modifier = -0.04375
+}	
+provincial_investment_coastline = {
+	local_development_cost_modifier = -0.0375
+}	
+provincial_investment_highlands = {
+	local_development_cost_modifier = -0.05
+}	
+provincial_investment_savannah = {
+	local_development_cost_modifier = -0.0375
+}	
+provincial_investment_steppe = {
+	local_development_cost_modifier = -0.05
+}	
+imp_ambition_timer = {
+
+}
+anti_lag = {
+	global_supply_limit_modifier = 1
+}

@@ -1,0 +1,8 @@
+﻿l_english:
+ expand_infrastructure_flogi: "Expand Infrastructure"
+ iv_tradecenter_button_title:0 "§GDeclare [Root.Province.GetName] as an official Trade Center.§!\nDeclaring this province to a Center of Trade will spawn a Center of Trade in the province."
+ new_trade_center_cooldown:0 "Trade Center Cooldown"
+ trade_hub_created:0 "Created CoT recently"
+ trade_hub_created_in_province:0 "Built CoT recently"
+ START_ECONOMIC_GOLDEN_AGE:0 "£adm£Start Economic Golden Age"
+ economic_golden_age_title:0 "This will start our Economic Golden Age which will last for 50 years."

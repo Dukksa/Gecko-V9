@@ -1,0 +1,732 @@
+##########################################################
+#---------------------------------------------------------
+# Gecko Mercenary System update Inputs
+#---------------------------------------------------------
+# Mercenary Cost: mercenary_cost cost is ducats
+# Mercenary Cavalry Cost Multiplier: mercenary_cavalry_cost_multiplier
+# Development or Force Limit: To match mercenary force limit to land force limit of nations, forcelimit = yes. This will take land force limit modifiers into account. To match mercenary force limit to autonomy-scaled force limit from development (removes land force limit modifiers), development = yes. 
+# Mercenary Force Limit Percentage: mercenary_forcelimit_percentage (Example: For mercenary force limit = base force limit + force limit from autonomy-scaled development, input 100) Product will result in base mercenary force limit.
+# Minor Mercenary Force Limit: minor_forcelimit_modifier Additive to Mercenary Force Limit, for countries with Minor triggered modifier
+#---------------------------------------------------------
+# Gecko Mercenary System on_startup Inputs
+#---------------------------------------------------------
+# Tiers: OPTIONAL! Creates number of tiers for bulk spawning decisions (Example: 4 = 25%, 50%, 75%, 100% bulk spawning)
+##########################################################
+gecko_mercs = {
+	################################
+	# Inputs
+	################################
+	[[update]
+		gecko_mercs_base_system = {
+			mercenary_cost = 30
+			mercenary_cavalry_cost_multiplier = 2.5
+			development = yes
+			mercenary_forcelimit_percentage = 100
+			minor_forcelimit_modifier = 4
+		}
+	]
+	################################
+	# on_actions
+	################################
+	[[on_startup]
+		# Bulk Mercenary Spawning
+		gecko_mercs_tier_selection_effect = { tiers = 4 }
+		
+		# Automatic Mercenary Updater
+		if = {
+			limit = {
+				ai = no
+				capital_scope = {
+					NOT = { has_province_modifier = gecko_mercs_ptmod }
+				}
+			}
+			capital_scope = {
+				add_province_triggered_modifier = gecko_mercs_ptmod
+			}
+		}
+	]
+	[[on_capital_moved]
+		# Automatic Mercenary Updater
+		add_province_triggered_modifier = gecko_mercs_ptmod
+		FROM = {
+			remove_province_triggered_modifier = gecko_mercs_ptmod
+		}
+	]
+	[[on_province_owner_change]
+		# Automatic Mercenary Updater
+		if = {
+			limit = {
+				has_province_modifier = gecko_mercs_ptmod
+			}
+			remove_province_triggered_modifier = gecko_mercs_ptmod
+		}
+	]
+}
+##########################################################
+#---------------------------------------------------------
+# Gecko Mercenary Recruitment System
+#---------------------------------------------------------
+# Scope is country
+# Can recruit a fixed OR variable amount by using variable = <variable> or fixed = <amount>
+# When recruiting fixed amounts with this effect:
+# Example: recruit_gecko_mercs = { fixed = 3 } will spawn 3 mercenary regiments
+# 
+# When recruiting variable amounts with this effect, variable recommendations include the following:
+# (mercenaries_available, mercenary_forcelimit, mercenary_bulk_recruitment_tier_<tier>)
+# Example: recruit_gecko_mercs = { variable = mercenary_bulk_recruitment_tier_1 1 = yes }
+# Note: 1 = yes and tier_<tier> (tier being 1 in previous example) must be the same for tooltips
+# Example: mercenary_bulk_recruitment_tier_1 1 = yes, mercenary_bulk_recruitment_tier_9 9 = yes
+##########################################################
+recruit_gecko_mercs = {
+	gecko_mercs = { update = yes }
+	
+	#Sets spawn point
+	gecko_mercs_get_spawn_point = yes
+	
+	#Creates tooltip for tiered spawning
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = number_of_owned_mercenaries
+					which = mercenary_forcelimit
+				}
+			}
+		}
+		[[1]
+			event_target:gecko_mercs_spawn_point = {
+				custom_tooltip = mercenary_recruitment_tier_1_tt
+			}
+		]
+		[[2]
+			event_target:gecko_mercs_spawn_point = {
+				custom_tooltip = mercenary_recruitment_tier_2_tt
+			}
+		]
+		[[3]
+			event_target:gecko_mercs_spawn_point = {
+				custom_tooltip = mercenary_recruitment_tier_3_tt
+			}
+		]
+		[[4]
+			event_target:gecko_mercs_spawn_point = {
+				custom_tooltip = mercenary_recruitment_tier_4_tt
+			}
+		]
+		[[5]
+			event_target:gecko_mercs_spawn_point = {
+				custom_tooltip = mercenary_recruitment_tier_5_tt
+			}
+		]
+		[[6]
+			event_target:gecko_mercs_spawn_point = {
+				custom_tooltip = mercenary_recruitment_tier_6_tt
+			}
+		]
+		[[7]
+			event_target:gecko_mercs_spawn_point = {
+				custom_tooltip = mercenary_recruitment_tier_7_tt
+			}
+		]
+		[[8]
+			event_target:gecko_mercs_spawn_point = {
+				custom_tooltip = mercenary_recruitment_tier_8_tt
+			}
+		]
+		[[9]
+			event_target:gecko_mercs_spawn_point = {
+				custom_tooltip = mercenary_recruitment_tier_9_tt
+			}
+		]
+		[[10]
+			event_target:gecko_mercs_spawn_point = {
+				custom_tooltip = mercenary_recruitment_tier_10_tt
+			}
+		]
+	}
+	else = {
+		custom_tooltip = mercenary_over_force_limit_recruitment_tt
+	}
+	
+	[[variable]
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						is_variable_equal = {
+							which = $variable$
+							which = mercenaries_available
+						}
+					}
+					check_variable = {
+						which = $variable$
+						which = mercenaries_available
+					}
+				}
+				set_variable = {
+					which = $variable$
+					which = mercenaries_available
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = gecko_mercs_recruit_cavalry_cflag }
+				}
+				for_variable_amount = {
+					variable = $variable$
+					effect = "
+						event_target:gecko_mercs_spawn_point = { mercenary_infantry = PREV }
+						gecko_mercs_army_professionalism_cost = yes
+						gecko_mercs_recruitment_cost = yes
+					"
+				}
+			}
+			else = {
+				for_variable_amount = {
+					variable = $variable$
+					effect = "
+						event_target:gecko_mercs_spawn_point = { mercenary_cavalry = PREV }
+						gecko_mercs_army_professionalism_cost = yes
+						gecko_mercs_recruitment_cost = yes
+					"
+				}
+			}
+		}
+	]
+	[[fixed]
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = number_of_owned_mercenaries
+						which = mercenary_forcelimit
+					}
+				}
+			}
+			event_target:gecko_mercs_spawn_point = {
+				custom_tooltip = mercenary_recruitment_tt
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { 
+						check_variable = {
+							which = mercenaries_available
+							value = $fixed$
+						}
+					}
+				}
+				recruit_gecko_mercs = {
+					variable = mercenaries_available
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = gecko_mercs_recruit_cavalry_cflag }
+					}
+					for = {
+						amount = $fixed$
+						effect = "
+							event_target:gecko_mercs_spawn_point = { mercenary_infantry = PREV }
+							gecko_mercs_army_professionalism_cost = yes
+							gecko_mercs_recruitment_cost = yes
+						"
+					}
+				}
+				else = {
+					for = {
+						amount = $fixed$
+						effect = "
+							event_target:gecko_mercs_spawn_point = { mercenary_cavalry = PREV }
+							gecko_mercs_army_professionalism_cost = yes
+							gecko_mercs_recruitment_cost = yes
+						"
+					}
+				}
+			}
+		}
+	]
+	
+	gecko_mercs = { update = yes }
+}
+##########################################################
+
+#Country effect
+gecko_mercs_base_system = {
+	hidden_effect = {
+		################################
+		# Mercenary Cost
+		################################
+		
+		#Base cost of mercenaries
+		set_variable = {
+			which = mercenary_cost
+			value = $mercenary_cost$
+		}
+		
+		#Mercenary Cavalry cost multiplier
+		if = {
+			limit = {
+				has_country_flag = gecko_mercs_recruit_cavalry_cflag
+			}
+			multiply_variable = {
+				which = mercenary_cost
+				value = $mercenary_cavalry_cost_multiplier$
+			}
+		}
+				
+		#Converts mercenary_cost modifier for this mercenary system
+		export_to_variable = {
+			variable_name = mercenary_cost_modifier
+			value = modifier:mercenary_cost 
+		}
+		
+		#Sets limit of 90% mercenary cost reduction
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = mercenary_cost_modifier 
+						value = -0.9
+					}
+				}
+			}
+			set_variable = {
+				which = mercenary_cost_modifier
+				value = -0.9
+			}
+		}
+		change_variable = {
+			which = mercenary_cost_modifier
+			value = 1
+		}
+		multiply_variable = {
+			which = mercenary_cost
+			which = mercenary_cost_modifier
+		}
+		
+		################################
+		# Mercenary Force Limit
+		################################
+		[[forcelimit]
+			#Matches country's land force limit to their mercenary force limit
+			export_to_variable = {
+				which = mercenary_forcelimit
+				value = land_forcelimit
+			}
+		]
+
+		[[development]
+			#Matches country's land force limit from development to their mercenary force limit
+			export_to_variable = {
+				which = mercenary_forcelimit
+				value = total_development 
+			}
+			multiply_variable = {
+				which = mercenary_forcelimit
+				value = 0.075
+			}
+			
+			#Reduces mercenary force limit by average autonomy, same as force limit from provinces
+			export_to_variable = {
+				which = mercenary_autonomy_scalar
+				value = average_autonomy
+			}
+			divide_variable = {
+				which = mercenary_autonomy_scalar
+				value = 100
+			}
+			multiply_variable = {
+				which = mercenary_autonomy_scalar
+				value = -1
+			}
+			change_variable = {
+				which = mercenary_autonomy_scalar
+				value = 1
+			}
+			multiply_variable = {
+				which = mercenary_forcelimit
+				which = mercenary_autonomy_scalar
+			}
+			
+			#Base force limit 
+			change_variable = {
+				which = mercenary_forcelimit
+				value = 6
+			}
+		]
+		
+		#Scalar for mercenary force limit
+		multiply_variable = {
+			which = mercenary_forcelimit
+			value = $mercenary_forcelimit_percentage$
+		}
+		divide_variable = {
+			which = mercenary_forcelimit
+			value = 100
+		}
+		
+		#Smaller nations can receive a larger mercenary force limit
+		if = {
+			limit = { has_country_modifier = Minor }
+			change_variable = {
+				which = mercenary_forcelimit
+				value = $minor_forcelimit_modifier$
+			}
+		}
+		
+		#Converts mercenary_manpower modifier to mercenary force limit for this mercenary system
+		export_to_variable = {
+			which = mercenary_forcelimit_modifier
+			value = modifier:mercenary_manpower 
+		}
+		
+		#Sets limit of 90% mercenary force limit reduction
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = mercenary_forcelimit_modifier 
+						value = -0.9
+					}
+				}
+			}
+			set_variable = {
+				which = mercenary_forcelimit_modifier
+				value = -0.9
+			}
+		}
+		change_variable = {
+			which = mercenary_forcelimit_modifier
+			value = 1
+		}
+		multiply_variable = {
+			which = mercenary_forcelimit
+			which = mercenary_forcelimit_modifier
+		}
+		
+		gecko_mercs_truncation_effect = {
+			truncated_variable = mercenary_forcelimit
+		}
+		
+		################################
+		# Available Mercenaries
+		################################
+		
+		#This value will include mercenary companies, used to compare force limit 
+		export_to_variable = {
+			which = number_of_owned_mercenaries
+			value = trigger_value:num_of_mercenaries
+		}
+		
+		#Tracks number of mercenaries available
+		set_variable = {
+			which = mercenaries_available
+			which = mercenary_forcelimit
+		}
+		subtract_variable = {
+			which = mercenaries_available
+			which = number_of_owned_mercenaries
+		}
+		
+		################################
+		# Mercenary Bulk Spawning
+		################################
+		gecko_mercs_bulk_spawning_update_effect = { tiers = 1 }
+		gecko_mercs_bulk_spawning_update_effect = { tiers = 2 }
+		gecko_mercs_bulk_spawning_update_effect = { tiers = 3 }
+		gecko_mercs_bulk_spawning_update_effect = { tiers = 4 }
+		gecko_mercs_bulk_spawning_update_effect = { tiers = 5 }
+		gecko_mercs_bulk_spawning_update_effect = { tiers = 6 }
+		gecko_mercs_bulk_spawning_update_effect = { tiers = 7 }
+		gecko_mercs_bulk_spawning_update_effect = { tiers = 8 }
+		gecko_mercs_bulk_spawning_update_effect = { tiers = 9 }
+		gecko_mercs_bulk_spawning_update_effect = { tiers = 10 }
+	}
+}
+
+#Country effect
+gecko_mercs_bulk_spawning_update_effect = {
+	if = {
+		limit = {
+			is_variable_equal = {
+				which = mercenary_bulk_recruitment_num_of_tiers
+				value = $tiers$
+			}
+		}
+		gecko_mercs_tier_selection_effect = { tiers = $tiers$ }
+	}
+}
+
+#Country effect
+gecko_mercs_tier_selection_effect = {
+	################################
+	# Bulk Spawning of Mercenaries
+	################################
+	# General setup
+	set_variable = {
+		which = mercenary_bulk_recruitment_num_of_tiers
+		value = $tiers$
+	}
+	
+	if = { #If player selects 0 tiers to display, division by 0 will be prevented
+		limit = {
+			NOT = { 
+				is_variable_equal = {
+					which = mercenary_bulk_recruitment_num_of_tiers
+					value = 0
+				}
+			}
+		}
+		
+		#Gives bulk recruitment percentages based on number of tiers
+		set_variable = {
+			which = mercenary_bulk_recruitment_num_of_tiers
+			value = $tiers$
+		}
+		set_variable = {
+			which = mercenary_bulk_recruitment_percentage_iterate
+			value = 100
+		}
+		divide_variable = {
+			which = mercenary_bulk_recruitment_percentage_iterate
+			which = mercenary_bulk_recruitment_num_of_tiers
+		}
+		set_variable = {
+			which = mercenary_bulk_recruitment_percentage
+			which = mercenary_bulk_recruitment_percentage_iterate
+		}
+		################################
+		# Tiered Spawning System
+		################################
+		
+		# To create a new tier, add new effect with next number. Make sure to change tiers in gecko_mercs!
+		# Decisions, events, localization, and recruit_gecko_mercs tooltips must be separately created:
+		# See gecko_mercs_decisions.txt, gecko_mercs_l_english.yml, gecko_mercs_events.txt, and recruit_gecko_mercs and gecko_mercs_base_system in this file
+		gecko_mercs_tier_creation_effect = { tier = 1 }
+		gecko_mercs_tier_creation_effect = { tier = 2 }
+		gecko_mercs_tier_creation_effect = { tier = 3 }
+		gecko_mercs_tier_creation_effect = { tier = 4 }
+		gecko_mercs_tier_creation_effect = { tier = 5 }
+		gecko_mercs_tier_creation_effect = { tier = 6 }
+		gecko_mercs_tier_creation_effect = { tier = 7 }
+		gecko_mercs_tier_creation_effect = { tier = 8 }
+		gecko_mercs_tier_creation_effect = { tier = 9 }
+		gecko_mercs_tier_creation_effect = { tier = 10 }
+	}
+}
+		
+#Country effect
+gecko_mercs_tier_creation_effect = {
+	set_variable = {
+		which = mercenary_bulk_recruitment_tier_$tier$
+		which = mercenary_bulk_recruitment_percentage
+	}
+	change_variable = {
+		which = mercenary_bulk_recruitment_percentage
+		which = mercenary_bulk_recruitment_percentage_iterate
+	}
+	gecko_mercs_rounding_effect = {
+		rounded_variable = mercenary_bulk_recruitment_tier_$tier$
+	}
+	set_variable = {
+		which = mercenary_bulk_recruitment_tier_$tier$_localization
+		which = mercenary_bulk_recruitment_tier_$tier$
+	}
+	divide_variable = {
+		which = mercenary_bulk_recruitment_tier_$tier$
+		value = 100
+	}
+	multiply_variable = {
+		which = mercenary_bulk_recruitment_tier_$tier$
+		which = mercenary_forcelimit
+	}
+	if = {
+		limit = {
+			NOT = {
+				is_variable_equal = {
+					which = mercenary_bulk_recruitment_tier_$tier$
+					which = mercenaries_available
+				}
+			}
+			check_variable = {
+				which = mercenary_bulk_recruitment_tier_$tier$
+				which = mercenaries_available
+			}
+		}
+		set_variable = {
+			which = mercenary_bulk_recruitment_tier_$tier$
+			which = mercenaries_available
+		}
+	}
+	gecko_mercs_truncation_effect = {
+		truncated_variable = mercenary_bulk_recruitment_tier_$tier$
+	}
+	set_variable = {
+		which = mercenary_bulk_recruitment_cost_tier_$tier$
+		which = mercenary_cost
+	}
+	multiply_variable = {
+		which = mercenary_bulk_recruitment_cost_tier_$tier$
+		which = mercenary_bulk_recruitment_tier_$tier$
+	}
+}
+
+#Country effect
+gecko_mercs_truncation_effect = {
+	set_variable = {
+		which = truncating_variable
+		which = $truncated_variable$
+	}
+	while = {
+		limit = {
+			check_variable = {
+				which = truncating_variable
+				value = 1
+			}
+		}
+		subtract_variable = {
+			which = truncating_variable
+			value = 1
+		}
+	}
+	subtract_variable = {
+		which = $truncated_variable$
+		which = truncating_variable
+	}
+	if = {
+		limit = {
+			is_variable_equal = {
+				which = $truncated_variable$
+				value = 0
+			}
+		}
+		change_variable = {
+			which = $truncated_variable$
+			value = 1
+		}
+	}
+}
+
+#Country effect
+gecko_mercs_rounding_effect = {
+	set_variable = {
+		which = rounding_variable
+		which = $rounded_variable$
+	}
+	while = {
+		limit = {
+			check_variable = {
+				which = rounding_variable
+				value = 1
+			}
+		}
+		subtract_variable = {
+			which = rounding_variable
+			value = 1
+		}
+	}
+	#Round up
+	if = {
+		limit = {		
+			check_variable = {
+				which = rounding_variable
+				value = 0.5
+			}
+		}
+		subtract_variable = {
+			which = rounding_variable
+			value = 1
+		}
+		multiply_variable = {
+			which = rounding_variable
+			value = -1
+		}
+		change_variable = {
+			which = $rounded_variable$
+			which = rounding_variable
+		}
+	}
+	#Round down
+	else = {
+		subtract_variable = {
+			which = $rounded_variable$
+			which = rounding_variable
+		}
+	}
+}
+
+#Country effect
+gecko_mercs_recruitment_cost = {
+	set_variable = {
+		which = mercenary_recruitment_cost
+		which = mercenary_cost
+	}
+	while = {
+		limit = {
+			check_variable = {
+				which = mercenary_recruitment_cost
+				value = 0.001
+			}
+		}
+		add_treasury = -0.001
+		subtract_variable = {
+			which = mercenary_recruitment_cost
+			value = 0.001
+		}
+	}
+}
+
+#Country effect
+gecko_mercs_army_professionalism_cost = {
+	if = {
+		limit = { has_free_mercs_trait = no }
+		if = {
+			limit = {
+				OR = {
+					has_country_flag = fifty_percent_merc_army_professionalism_cost
+					has_country_modifier = pol_cheap_ap_mercs_modifier
+				}
+			}
+			add_army_professionalism = -0.001
+		}
+		else = {
+			add_army_professionalism = -0.002
+		}
+	}
+}
+
+#Country effect
+gecko_mercs_get_spawn_point = {
+	hidden_effect = {
+		if = {
+			limit = {
+				capital_scope = {
+					controlled_by = ROOT
+					has_siege = no
+					unit_in_battle = no
+				}
+			}
+			capital_scope = { save_event_target_as = gecko_mercs_spawn_point }
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					NOT = { is_capital_of = ROOT }
+					has_siege = no
+					unit_in_battle = no
+					controlled_by = ROOT
+					NOT = {
+						any_neighbor_province = {
+							owned_by = ROOT
+							NOT = { controlled_by = ROOT }
+						}
+					}
+				}
+				save_event_target_as = gecko_mercs_spawn_point
+			}
+		}
+	}
+}

@@ -1,0 +1,420 @@
+bukhara_missions_slot_1 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = BUK
+			was_tag = BUK
+		}	
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	buk_mission_conquer_central_asia = {
+			icon = mission_arabian_fort
+			required_missions = {  }
+			provinces_to_highlight = {
+				OR = {
+					province_id = 464
+					province_id = 465
+					province_id = 284
+				}
+			}
+			trigger = {
+				464 = {
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT 
+						owner = {
+							alliance_with = ROOT 
+						}
+					}	
+					trade_share = {
+						country = ROOT 
+						share = 50
+					}
+				}
+				465 = {
+					country_or_non_sovereign_subject_holds = ROOT 
+				}
+				284 = {
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT 
+						owner = {
+							alliance_with = ROOT 
+						}
+					}	
+					trade_share = {
+						country = ROOT 
+						share = 50
+					}
+				}
+			}
+			
+			effect = {
+				464 = {
+					change_trade_goods = slaves
+					add_base_production = 5
+					add_province_modifier = {
+						name = "bukharan_slave_trade"
+						duration = -1
+					}
+				}
+				465 = {
+					change_trade_goods = slaves
+					add_base_production = 5
+					add_province_modifier = {
+						name = "bukharan_slave_trade"
+						duration = -1
+					}
+				}
+				442 = {
+					change_trade_goods = slaves
+					add_base_production = 5
+					add_province_modifier = {
+						name = "bukharan_slave_trade"
+						duration = -1
+					}
+				}
+				change_price = {
+					trade_goods = slaves
+					key = BUKHARAN_SLAVE_TRADE
+					value = 0.5
+					duration = -1
+				}
+			}
+	}
+	
+	buk_mission_conquer_mongolia = {
+		icon = mission_chinese_general_riding
+		required_missions = { buk_mission_conquer_central_asia }
+		provinces_to_highlight = {
+			region = mongolia_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			NOT = {
+				is_empty = yes
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = mongol_china_mission_tooltip
+				mongolia_region = {
+					type = all
+					OR = {
+						is_empty = yes
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+			707 = {
+				trade_share = {
+						country = ROOT 
+						share = 50
+					}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 3
+					}
+				}
+				set_government_rank = 3
+			}
+			add_country_modifier = {
+				name = "fall_of_china"
+				duration = 7300
+			}
+		}
+	}
+}
+
+bukhara_missions_slot_2 = {
+	slot = 4
+	ai = yes
+	
+	potential = {
+			OR = {
+				tag = BUK
+				was_tag = BUK
+		}
+			NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	buk_mission_restore_silk_road = {
+		icon = mission_golden_century
+		required_missions = { buk_mission_conquer_mongolia }
+		position = 3
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 457
+				province_id = 739
+				province_id = 1973
+				province_id = 461
+				province_id = 2124
+				province_id = 458
+				province_id = 2364
+				province_id = 710
+				province_id = 2192
+				province_id = 715
+				province_id = 442
+				province_id = 454
+			}	
+			NOT = { development = 20 }
+			NOT = { province_has_center_of_trade_of_level = 3 }
+		}
+		trigger = {
+			AND = {
+				owns_core_province = 457
+				if = {
+					limit = {
+						has_dlc = "Dharma"
+					}
+					457 = {
+						OR = { 
+							province_has_center_of_trade_of_level = 3
+							development = 20
+						}
+					}
+				}
+				else = {
+					457 = {
+						development = 20
+						}
+					}
+				owns_core_province = 739
+				if = {
+					limit = {
+						has_dlc = "Dharma"
+					}
+					739 = {
+						OR = { 
+							province_has_center_of_trade_of_level = 3
+							development = 20
+						}
+					}
+				}
+				else = {
+					739 = {
+						development = 20
+						}
+					}	
+				owns_core_province = 1973
+				if = {
+					limit = {
+						has_dlc = "Dharma"
+					}
+					1973 = {
+							development = 20
+						}
+					}
+				else = {
+					1973 = {
+						development = 20
+						}
+					}
+				owns_core_province = 461
+				if = {
+					limit = {
+						has_dlc = "Dharma"
+					}
+					461 = {
+							development = 20
+						}
+					}
+				else = {
+					461 = {
+						development = 20
+						}
+					}
+				owns_core_province = 2124
+				if = {
+					limit = {
+						has_dlc = "Dharma"
+					}
+					2124 = {
+						OR = { 
+							province_has_center_of_trade_of_level = 3
+							development = 20
+						}
+					}
+				}
+				else = {
+					2124 = {
+						development = 20
+						}
+					}
+				owns_core_province = 710
+				if = {
+					limit = {
+						has_dlc = "Dharma"
+					}
+					710 = {
+						OR = { 
+							province_has_center_of_trade_of_level = 3
+							development = 20
+						}
+					}
+				}
+				else = {
+					710 = {
+						development = 20
+						}
+					}
+				owns_core_province = 2192
+				if = {
+					limit = {
+						has_dlc = "Dharma"
+					}
+					2192 = {
+						OR = { 
+							province_has_center_of_trade_of_level = 3
+							development = 20
+						}
+					}
+				}
+				else = {
+					2192 = {
+						development = 20
+						}
+					}
+				owns_core_province = 715
+				if = {
+					limit = {
+						has_dlc = "Dharma"
+					}
+					715 = {
+						OR = { 
+							province_has_center_of_trade_of_level = 3
+							development = 20
+						}
+					}
+				}
+				else = {
+					715 = {
+						development = 20
+						}
+					}
+				owns_core_province = 442
+				if = {
+					limit = {
+						has_dlc = "Dharma"
+					}
+					442 = {
+						OR = { 
+							province_has_center_of_trade_of_level = 3
+							development = 20
+						}
+					}
+				}
+				owns_core_province = 454
+				if = {
+					limit = {
+						has_dlc = "Dharma"
+					}
+					454 = {
+						OR = { 
+							province_has_center_of_trade_of_level = 3
+							development = 20
+						}
+					}
+				}	
+			}		
+		}
+		effect = {
+			457 = {
+				add_center_of_trade_level = 1	
+				change_trade_goods = silk
+				add_province_modifier = {
+					name = "silk_road_restored"
+					duration = -1
+					}
+				}
+			739 = {
+				add_center_of_trade_level = 1	
+				change_trade_goods = silk
+				add_province_modifier = {
+					name = "silk_road_restored"
+					duration = -1
+					}
+				}
+			1973 = {
+				center_of_trade = 1	
+				change_trade_goods = silk
+				add_province_modifier = {
+					name = "silk_road_restored"
+					duration = -1
+					}	
+				}
+			458 = {
+				center_of_trade = 1
+				add_province_modifier = {
+					name = "silk_road_restored"
+					duration = -1
+					}	
+				}
+			2364 = {
+				center_of_trade = 1
+				add_province_modifier = {
+					name = "silk_road_restored"
+					duration = -1
+					}
+				}
+			461 = {
+				center_of_trade = 1
+				add_province_modifier = {
+					name = "silk_road_restored"
+					duration = -1
+					}
+				}
+			2124 = {
+				add_center_of_trade_level = 1
+				change_trade_goods = cloth
+				add_province_modifier = {
+					name = "silk_road_restored"
+					duration = -1
+					}
+				}
+			710 = {
+				add_center_of_trade_level = 1
+				add_province_modifier = {
+					name = "silk_road_restored"
+					duration = -1
+					}
+				}
+			2192 = {
+				center_of_trade = 1
+				change_trade_goods = glass
+				add_province_modifier = {
+					name = "silk_road_restored"
+					duration = -1
+					}
+				}
+			715 = {
+				center_of_trade = 1
+				change_trade_goods = cloth
+				add_province_modifier = {
+					name = "silk_road_restored"
+					duration = -1
+					}
+				}
+			454 = {
+				add_province_modifier = {
+					name = "silk_road_restored"
+					duration = -1
+					}
+				}
+			442 = {
+				add_province_modifier = {
+					name = "silk_road_restored"
+					duration = -1
+					}
+				}		
+		}
+	}
+}	

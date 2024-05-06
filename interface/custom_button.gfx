@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_button_flogi_tradecenter"
+		texturefile = "gfx//interface//button_flogi_tradecenter.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_button_cloth_change"
+		texturefile = "gfx//interface//button_cloth_change.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_age_golden_age_button"
+		texturefile = "gfx/interface/ages/age_golden_age_button.dds"
+	}
+}

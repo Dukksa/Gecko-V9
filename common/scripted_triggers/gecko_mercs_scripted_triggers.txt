@@ -1,0 +1,23 @@
+gecko_mercs_spawn_point_trigger = {
+	hidden_trigger = {
+		OR = {
+			capital_scope = {
+				controlled_by = ROOT
+				has_siege = no
+				unit_in_battle = no
+			}
+			any_owned_province = {
+				NOT = { is_capital_of = ROOT }
+				has_siege = no
+				unit_in_battle = no
+				controlled_by = ROOT
+				NOT = {
+					any_neighbor_province = {
+						owned_by = ROOT
+						NOT = { controlled_by = ROOT }
+					}
+				}
+			}
+		}
+	}
+}

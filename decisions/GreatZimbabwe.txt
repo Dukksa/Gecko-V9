@@ -1,0 +1,149 @@
+country_decisions = {
+
+	great_zimbabwe = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+
+			NOT = { has_country_flag = formed_great_zimbabwe_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = GZM }
+			OR = {
+				tag = ZAN
+				culture_group = southern_african
+
+			}
+
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4037 
+				province_id = 4040 
+				province_id = 4039  
+				province_id = 4047 
+				province_id = 4045 
+				province_id = 4044 
+				province_id = 1191 
+				province_id = 1187  
+				province_id = 1190
+				province_id = 1188
+				province_id = 2951
+				province_id = 1189
+				province_id = 1185
+				province_id = 2950
+				province_id = 2952
+				province_id = 1184
+				province_id = 1203
+				province_id = 1204
+				province_id = 2796
+				province_id = 2774
+				region = central_africa_region
+				region = kongo_region
+			}
+		}
+		
+		allow = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			
+			num_of_owned_provinces_with = {
+								is_core = ROOT
+								OR = {
+									region = central_africa_region
+									region = kongo_region
+								}
+								value = 30
+							}	
+			owns_core_province = 4037
+			owns_core_province = 4040 
+			owns_core_province = 4039  
+			owns_core_province = 4047 
+			owns_core_province = 4045 
+			owns_core_province = 4044 
+			owns_core_province = 1191 
+			owns_core_province = 1187
+			owns_core_province = 1190
+			owns_core_province = 1188
+			owns_core_province = 2951
+			owns_core_province = 1189
+			owns_core_province = 1185
+			owns_core_province = 2950
+			owns_core_province = 2952
+			owns_core_province = 1184
+			owns_core_province = 1203
+			owns_core_province = 1204
+			owns_core_province = 2796
+			owns_core_province = 2774
+		}
+
+		effect = {
+			1186 = { #Sofala
+				move_capital_effect = yes
+			}
+			change_tag = GZM
+			restore_country_name_effect = yes
+
+			central_africa_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = GZM
+			}
+			
+			south_africa_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = GZM
+			}
+			
+			east_africa_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = GZM
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			add_prestige = 25
+
+			set_country_flag = formed_great_zimbabwe_flag
+
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}

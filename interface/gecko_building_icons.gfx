@@ -1,0 +1,47 @@
+spriteTypes = {
+
+	#Armory 
+	spriteType = {
+		name = "GFX_armory"
+		texturefile = "gfx//interface//buildings//latin_armory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_armory_easterngfx"
+		texturefile = "gfx//interface//buildings//eastern_armory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_armory_asiangfx"
+		texturefile = "gfx//interface//buildings//chinese_armory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_armory_africangfx"
+		texturefile = "gfx//interface//buildings//african_armory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_armory_indiangfx"
+		texturefile = "gfx//interface//buildings//indian_armory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_armory_muslimgfx"
+		texturefile = "gfx//interface//buildings//muslim_armory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_armory_southamericagfx"
+		texturefile = "gfx//interface//buildings//southamerica_armory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_armory_northamericagfx"
+		texturefile = "gfx//interface//buildings//northamerica_armory.tga"
+		loadType = "INGAME"
+	}
+
+	
+
+}	#End of bracket

@@ -1,0 +1,23 @@
+gov_dominion = {
+	rank = {
+		1 = H_DOMINION
+		2 = H_DOMINION
+		3 = H_DOMINION
+	}
+	
+	ruler_male = {
+		1 = H_PrimeMinister
+		2 = H_PrimeMinister
+		3 = H_PrimeMinister
+	}
+	
+	ruler_female = {
+		1 = H_PrimeMinister
+		2 = H_PrimeMinister
+		3 = H_PrimeMinister
+	}
+	
+	trigger = {
+		has_reform = h_reform_dominion
+	}
+}

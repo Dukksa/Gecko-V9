@@ -1,0 +1,161 @@
+country_decisions = {
+
+	h_enable_australia = {
+			major = yes
+			potential = {
+				any_subject_country = {
+					has_country_flag = h_australia_dominion_request
+				}
+				NOT = { has_country_flag = h_nzl_enabled }
+			}
+			allow = {
+				any_subject_country = {
+					has_country_flag = h_australia_dominion_request
+				}
+			}
+			effect  = {
+				set_country_flag = h_aus_enabled
+				every_subject_country = {
+					clr_country_flag = h_australia_dominion_request
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	h_form_australia = {
+			major = yes
+			potential = {
+				NOT = { has_country_flag = became_dominion }
+				was_never_end_game_tag_trigger = yes
+				is_colonial_nation = yes
+				colonial_australia = {
+					owned_by = ROOT
+				}
+			}
+			provinces_to_highlight = {
+				colonial_region = colonial_australia
+				OR = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+			}
+			allow = {
+				is_at_war = no
+				colonial_australia = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				NOT = { exists = AUS }
+			}
+			effect  = {
+				change_tag = AUS
+				remove_non_electors_emperors_from_empire_effect = yes
+				add_government_reform = h_reform_dominion
+				if = {
+					limit = { has_custom_ideas = no }
+					country_event = { id = ideagroups.1 } #Swap Ideas
+				}
+				add_country_modifier = {
+					name = "centralization_modifier"
+					duration = 7300
+				}
+				add_prestige = 25
+				set_country_flag = became_dominion
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		h_form_southafrica = {
+			major = yes
+			potential = {
+				NOT = { has_country_flag = became_dominion }
+				was_never_end_game_tag_trigger = yes
+				is_colonial_nation = yes
+				colonial_south_africa = {
+					owned_by = ROOT
+				}
+			}
+			provinces_to_highlight = {
+				region = south_africa_region
+				OR = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+			}
+			allow = {
+				is_at_war = no
+				colonial_south_africa = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				NOT = { exists = DSA }
+			}
+			effect  = {
+				change_tag = DSA
+				remove_non_electors_emperors_from_empire_effect = yes
+				add_government_reform = h_reform_dominion
+				if = {
+					limit = { has_custom_ideas = no }
+					country_event = { id = ideagroups.1 } #Swap Ideas
+				}
+				add_country_modifier = {
+					name = "centralization_modifier"
+					duration = 7300
+				}
+				add_prestige = 25
+				set_country_flag = became_dominion
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		h_form_oranje = {
+			major = yes
+			potential = {
+				NOT = { has_country_flag = became_dominion }
+				was_never_end_game_tag_trigger = yes
+				is_colonial_nation = yes
+				colonial_south_africa = {
+					owned_by = ROOT
+				}
+			}
+			provinces_to_highlight = {
+				region = south_africa_region
+				OR = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+			}
+			allow = {
+				is_at_war = no
+				colonial_south_africa = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				NOT = { exists = ORJ }
+			}
+			effect  = {
+				change_tag = ORJ
+				remove_non_electors_emperors_from_empire_effect = yes
+				add_government_reform = h_reform_dominion
+				if = {
+					limit = { has_custom_ideas = no }
+					country_event = { id = ideagroups.1 } #Swap Ideas
+				}
+				add_country_modifier = {
+					name = "centralization_modifier"
+					duration = 7300
+				}
+				add_prestige = 25
+				set_country_flag = became_dominion
+			}
+			ai_will_do = {
+				factor = 0
+			}
+	}		
+}		

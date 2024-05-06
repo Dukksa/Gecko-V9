@@ -1,0 +1,2495 @@
+ public_road_act = {
+	monarch_power = DIP
+	
+	potential = {
+		always = no
+	}
+	
+	allow = {
+ 		always = no
+ 	}
+	
+	global_naval_barrage_cost = -1
+	trade_efficiency = 0.075
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.6
+			NOT = { trade_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.5
+		}
+	}
+}
+ 
+exchange_of_ideas = {
+ 	monarch_power = ADM
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+ 		always = no
+ 	}	
+ 	
+ 	idea_cost = -0.1
+ 	global_institution_spread = 0.2
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0.8
+ 	}
+ }
+
+ enlightened_aristocracy = {
+ 	monarch_power = ADM
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+ 		always = no
+ 	}	
+ 	
+ 	production_efficiency = 0.1
+ 	religious_unity = 0.25
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 		modifier = {
+ 			factor = 0.6
+ 			religious_unity = 1
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			NOT = { religious_unity = 0.8 }
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			NOT = { religious_unity = 0.6 }
+ 		}			
+ 		modifier = {
+ 			factor = 1.5
+ 			NOT = { religious_unity = 0.4 }
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			NOT = { religious_unity = 0.2 }
+ 		}
+ 		
+ 		modifier = {
+ 			factor = 0.6
+ 			NOT = { production_income_percentage = 0.1 }
+ 		}			
+ 		modifier = {
+ 			factor = 1.5
+ 			production_income_percentage = 0.2
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			production_income_percentage = 0.3
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			production_income_percentage = 0.4
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			production_income_percentage = 0.5
+ 		}	
+ 	}
+ }
+
+ the_liberation_act = {
+ 	monarch_power = ADM
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}	
+ 	
+ 	global_unrest = -1
+ 	years_of_nationalism = -5
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 		
+ 		modifier = {
+ 			factor = 1.5
+ 			average_effective_unrest = 2
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			average_effective_unrest = 4
+ 		}			
+ 		modifier = {
+ 			factor = 1.5
+ 			average_effective_unrest = 6
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			average_effective_unrest = 8
+ 		}
+ 	}
+ }
+
+ visionary_thinkers = {
+ 	monarch_power = ADM
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}	
+ 	
+ 	innovativeness_gain = 0.5
+ 	army_tradition_decay = -0.01
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0.6
+ 	}
+ }
+
+ the_transportation_act = {
+ 	monarch_power = ADM
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}	
+ 	
+ 	global_trade_goods_size_modifier = 0.1
+ 	production_efficiency = 0.1
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0.6
+ 		modifier = {
+ 			factor = 0
+ 			NOT = { production_income_percentage = 0.1 }
+ 		}			
+ 		modifier = {
+ 			factor = 1.5
+ 			production_income_percentage = 0.2
+ 		}
+  		modifier = {
+ 			factor = 1.5
+ 			production_income_percentage = 0.3
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			production_income_percentage = 0.4
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			production_income_percentage = 0.5
+ 		}	
+ 	}
+ }
+
+ harbour_administration = {
+ 	monarch_power = ADM
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 
+ 	embracement_cost = -0.2
+ 	global_ship_recruit_speed = -0.1
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 		modifier = {
+ 			factor = 0
+ 			NOT = { trade_income_percentage = 0.1 }
+ 		}			
+ 		modifier = {
+ 			factor = 1.5
+ 			trade_income_percentage = 0.2
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			trade_income_percentage = 0.3
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			trade_income_percentage = 0.4
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			trade_income_percentage = 0.5
+ 		}	
+ 	}
+ }
+
+ supply_convoys = {
+ 	monarch_power = ADM
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}	
+ 	
+ 	state_maintenance_modifier = -0.5
+ 	liberty_desire_from_subject_development = -0.25
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 		modifier = {
+ 			factor = 0
+ 			NOT = { vassal = 1 }
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			vassal = 2
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			vassal = 3
+ 		}			
+ 		modifier = {
+ 			factor = 1.5
+ 			vassal = 4
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			vassal = 5
+ 		}	
+ 	}
+ }
+ 
+ 
+the_banking_system = {
+	monarch_power = ADM
+
+
+	potential = {
+		always = no
+	}
+	
+	allow = {
+ 		always = no
+ 	}
+
+	trade_efficiency = 0.1
+
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.5
+				
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.5
+		}
+	}
+}
+
+
+ steppe_supplies_policy = {
+ 	monarch_power = ADM
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	global_manpower_modifier = 0.1
+ 	manpower_recovery_speed = 0.15
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 		modifier = {
+ 			factor = 1.5
+ 			is_at_war = yes
+ 		}
+ 	}
+ }
+
+
+ to_the_ground_policy = { 
+ 	monarch_power = ADM
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	raze_power_gain = 0.33
+ 	horde_unity = 1
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 	}
+ }
+
+ calming_the_tides_policy = { 
+ 	monarch_power = ADM
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	global_unrest = -2
+ 	prestige = 0.5
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 
+ 		modifier = {
+ 			factor = 1.5
+ 			average_effective_unrest = 2
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			average_effective_unrest = 4
+ 		}			
+ 		modifier = {
+ 			factor = 1.5
+ 			average_effective_unrest = 6
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			average_effective_unrest = 8
+ 		}
+ 	}
+ }
+ 
+ 
+ administration_of_sacred_land_policy = {
+ 	monarch_power = ADM
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	land_maintenance_modifier = -0.1
+ 	development_cost = -0.1
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 		modifier = {
+ 			factor = 0
+ 			NOT = { army_size_percentage = 0.9 }
+ 		}			
+ 		modifier = {
+ 			factor = 1.5
+ 			army_size_percentage = 1.1
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			army_size_percentage = 1.5
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			army_size_percentage = 2
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			army_size_percentage = 2.5
+ 		}		
+ 	}
+ }
+
+ shared_land_policy = { 
+ 	monarch_power = ADM
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	build_cost = -0.1
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 		modifier = {
+ 			factor = 0.1
+ 			is_at_war = yes
+ 		}
+ 	}
+ }
+
+ disruptive_innovation_policy = { 
+ 	monarch_power = ADM
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	development_cost = -0.05
+ 	global_institution_spread = 0.2
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 	}
+ }
+
+ ancestor_worship_policy = {
+ 	monarch_power = ADM
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	missionaries = 1
+ 	tolerance_own = 1
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 	}
+ }
+
+
+ humanitarian_administration_act = { 
+ 	monarch_power = ADM
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+ 		always = no
+ 	}
+ 	
+ 	num_accepted_cultures = 2
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0			
+ 	}
+ }
+
+
+ peace_keeping_force_act = { 
+ 	monarch_power = ADM
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+ 		always = no
+ 	}
+ 	
+ 	harsh_treatment_cost = -0.25
+ 	global_rebel_suppression_efficiency = 1
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0			
+ 	}
+ }
+
+ indigenous_development_act = { 
+ 	monarch_power = ADM
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+ 		always = no
+ 	}
+ 	
+ 	development_cost = -0.05
+ 	global_institution_spread = 0.33
+ 
+ 	ai_will_do = {
+ 		factor = 0			
+ 	}
+ }
+
+
+
+ omnism_policy = {
+ 	monarch_power = ADM
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	tolerance_heathen = 2
+ 	tolerance_heretic = 2
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 		modifier = {
+ 			factor = 0
+ 			religious_unity = 1
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			NOT = { religious_unity = 0.8 }
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			NOT = { religious_unity = 0.6 }
+ 		}			
+ 		modifier = {
+ 			factor = 1.5
+ 			NOT = { religious_unity = 0.4 }
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			NOT = { religious_unity = 0.2 }
+ 		}	
+ 	}
+ }
+
+
+ esprit_de_corps_policy = { 
+ 	monarch_power = ADM
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	years_of_nationalism = -5
+ 	global_missionary_strength = 0.01
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 
+ 		modifier = {
+ 			factor = 1.5
+ 			average_effective_unrest = 2
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			average_effective_unrest = 4
+ 		}			
+ 		modifier = {
+ 			factor = 1.5
+ 			average_effective_unrest = 6
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			average_effective_unrest = 8
+ 		}
+ 	}
+ }
+
+
+church_sponsored_guilds = {
+	monarch_power = ADM
+
+	potential = {
+		always = no
+	}
+	
+	allow = {
+ 		always = no
+ 	}
+	
+	global_missionary_strength = 0.02
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			religious_unity = 1
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.8 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.6 }
+		}			
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.4 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.2 }
+		}			
+	}
+}
+
+ 
+ 
+ the_citrus_statute = {
+ 	monarch_power = ADM
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}	
+ 	
+ 	global_tax_modifier = 0.2
+ 	sunk_ship_morale_hit_recieved = -0.25
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0.6
+ 	}
+ }
+
+ 
+ the_statute_of_monopolies = {
+	monarch_power = ADM
+
+	potential = {
+		always = no
+	}
+	
+	allow = {
+ 		always = no
+ 	}
+
+	production_efficiency = 0.1
+	trade_efficiency = 0.05
+
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.6
+			NOT = { trade_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.5
+		}
+		
+		modifier = {
+			factor = 0.6
+			NOT = { production_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.5
+		}
+	}
+}
+
+
+ cultural_recognition_act = {
+ 	monarch_power = ADM
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}	
+ 	
+ 	num_accepted_cultures = 1
+ 	global_institution_spread = 0.1
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 	}
+ }
+ 
+
+ the_maritime_intelligencer_unit = {
+ 	monarch_power = MIL
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}	
+ 	
+ 	siege_blockade_progress = 1
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 		modifier = {
+ 			factor = 0
+ 			NOT = { num_of_heavy_ship = 10 }
+ 		}
+ 	}
+ }
+
+ the_nautic_education_act = {
+ 	monarch_power = MIL
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}	
+ 	
+ 	recover_navy_morale_speed = 0.15
+ 	leader_naval_fire = 1
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 		modifier = {
+ 			factor = 0
+ 			NOT = { navy_size = 10 }
+ 		}
+ 		modifier = {
+ 			factor = 0.6
+ 			NOT = { navy_size = 20 }
+ 		}
+ 	}
+ }
+
+ zealous_captains = {
+ 	monarch_power = MIL
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}	
+ 	
+ 	sunk_ship_morale_hit_recieved = -0.10
+ 	leader_naval_shock = 1
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 		modifier = {
+ 			factor = 0
+ 			NOT = { navy_size = 10 }
+ 		}
+ 		modifier = {
+ 			factor = 0.6
+ 			NOT = { navy_size = 20 }
+ 		}
+ 	}
+ }
+
+ inspirational_leaders = {
+  	monarch_power = MIL
+ 	
+	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+ 		always = no
+ 	}	
+ 	
+ 	leader_land_shock = 1
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1.2
+ 		modifier = {
+ 			factor = 1.5
+ 			is_at_war = yes
+ 		}
+ 	}
+ }
+
+ the_naval_inspection_act = {
+ 	monarch_power = MIL
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}	
+ 	
+ 	ship_durability = 0.05
+ 	recover_navy_morale_speed = 0.1
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0.8
+ 		modifier = {
+ 			factor = 0
+ 			NOT = { navy_size = 20 }
+ 		}
+ 	}
+ }
+
+ the_preparation_act = {
+ 	monarch_power = MIL
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}	
+ 	
+ 	land_attrition = -0.25
+ 	war_exhaustion = -0.05
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0.9
+ 		modifier = {
+ 			factor = 1.5
+ 			is_at_war = yes
+ 		}
+ 	}
+ }
+
+ war_horses_policy = { 
+ 	monarch_power = MIL
+ 
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 
+ 	army_tradition = 0.5
+ 	shock_damage = 0.1
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0.75
+ 		modifier = {
+ 			factor = 0
+ 			NOT = { army_tradition = 2 }
+ 		}			
+ 		modifier = {
+ 			factor = 1.5
+ 			army_tradition = 30
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			army_tradition = 50
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			army_tradition = 80
+ 		}
+ 	}
+ }
+ 
+ 
+ the_three_sisters_policy = { 
+ 	monarch_power = MIL
+ 
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 
+ 	land_morale = 0.05
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1.0
+ 		modifier = {
+ 			factor = 1.5
+ 			is_at_war = yes
+ 		}
+ 	}
+ }
+
+ by_the_people_for_the_people_policy = {
+ 	monarch_power = MIL
+ 
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 
+ 	defensiveness = 0.25
+ 	garrison_size = 0.1
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1.0
+ 		modifier = {
+ 			factor = 1.5
+ 			is_at_war = yes
+ 		}
+ 	}
+ }
+
+ war_on_our_terms_policy = {
+ 	monarch_power = MIL
+ 
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 
+ 	discipline = 0.025
+ 	land_morale = 0.1
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1.0
+ 		modifier = {
+ 			factor = 2.5
+ 			is_at_war = yes
+ 		}
+ 	}
+ }
+
+ fear_tactics_policy = {
+ 	monarch_power = MIL
+ 
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 
+ 	shock_damage = 0.1
+  	siege_ability = 0.1
+  	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1.0
+ 		modifier = {
+ 			factor = 1.5
+ 			is_at_war = yes
+ 		}
+ 	}
+ }
+
+ psychological_warfare_policy = { 
+ 	monarch_power = MIL
+ 
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 
+ 	cavalry_flanking = 0.5
+ 	cavalry_power = 0.1
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1.0
+ 		modifier = {
+ 			factor = 1.5
+ 			is_at_war = yes
+ 		}
+ 	}
+ }
+ 
+
+ 
+ naval_competence_act = { 
+ 	monarch_power = MIL
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+ 		always = no
+ 	}
+ 	
+ 	leader_naval_manuever = 1 
+ 	leader_naval_fire = 1 
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0			
+ 	}
+ }
+
+ 
+ gentle_conquest_act = { 
+ 	monarch_power = MIL
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+ 		always = no
+ 	}
+ 	
+ 	global_monthly_devastation = -0.25
+ 	land_maintenance_modifier = -0.1
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0			
+ 	}
+ }
+
+ 
+ naval_armament_act = { 
+ 	monarch_power = MIL
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+ 		always = no
+ 	}
+ 	
+ 	global_ship_recruit_speed = -0.25
+ 	movement_speed_in_fleet_modifier = 1
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0			
+ 	}
+ }
+
+ 
+ 
+ render_unto_caesar_policy = { 
+ 	monarch_power = MIL
+ 
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 
+ 	global_manpower_modifier = 0.1
+ 	land_forcelimit_modifier = 0.05
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1.0
+ 		modifier = {
+ 			factor = 1.5
+ 			is_at_war = yes
+ 		}
+ 	}
+ }
+
+
+ kharash_policy = { 
+ 	monarch_power = MIL
+ 
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 
+ 	land_morale = 0.05
+ 	vassal_forcelimit_bonus = 1.0
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1.0
+ 		modifier = {
+ 			factor = 1.5
+ 			is_at_war = yes
+ 		}
+ 	}
+ }
+
+
+ the_best_defense_policy = { 
+ 	monarch_power = MIL
+ 
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 
+ 	shock_damage_received = -0.05
+ 	fire_damage_received = -0.05
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1.0
+ 		modifier = {
+ 			factor = 1.5
+ 			is_at_war = yes
+ 		}
+ 	}
+ }
+
+trade_kontor_network = {
+	monarch_power = DIP
+	potential = {
+		always = no
+	}
+	
+	allow = {
+ 		always = no
+ 	}
+	
+	merchants = 2
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.6
+		modifier = {
+			factor = 0
+			NOT = { trade_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.5
+		}
+	}
+}
+
+
+ the_colonial_nobility_act = {
+ 	monarch_power = MIL
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 		
+
+ 
+ 	global_manpower_modifier = 0.2
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0.8
+ 	}
+ }
+
+
+ 
+hired_adventurers_act = {
+ 	monarch_power = MIL
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+ 		 always = no
+ 	}
+ 
+ 	movement_speed = 0.1
+ 	leader_land_manuever = 1
+ 
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 		modifier = {
+ 			factor = 1.5
+ 			is_at_war = yes
+ 		}
+ 	}
+ }	
+	 
+ 
+superior_supply_system = {
+ 	monarch_power = MIL
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	manpower_recovery_speed = 0.1
+ 	land_attrition = -0.25
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 		modifier = {
+ 			factor = 1.5
+ 			is_at_war = yes
+ 		}
+ 	}
+ }
+ 
+ 
+ naval_secrecy_act = {
+ 	monarch_power = DIP
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 
+ 	sunk_ship_morale_hit_recieved = -0.1
+ 	naval_morale = 0.1
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0.8
+ 		modifier = {
+ 			factor = 0
+ 			NOT = { navy_size = 20 }
+ 		}	
+ 	}
+ }
+
+
+cloth_quality_edict = {
+	monarch_power = DIP
+	potential = {
+		always = no
+	}
+	
+	allow = {
+		always = no
+ 	}
+	trade_efficiency = 0.15
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.2
+		modifier = {
+			factor = 0
+			NOT = { trade_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.5
+		}
+	}
+}
+
+
+ multilingual_diplomats = {
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}	
+ 	
+ 	num_accepted_cultures = 1
+ 	improve_relation_modifier = 0.2
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 	}
+ }
+
+ native_assimilation_act = {
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}	
+ 	
+ 	global_colonial_growth = 10
+ 	native_assimilation = 0.5
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 		modifier = {
+ 			factor = 0
+ 			NOT = { num_of_colonists = 1 }
+ 		}
+ 		modifier = {
+ 			factor = 0.1
+ 			NOT = { num_of_colonies = 1 }
+ 		}
+ 	}
+ }
+
+
+ terms_of_surrender_statute = {
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}	
+ 	
+ 	capture_ship_chance = 0.33
+ 
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0.6
+ 	}
+ }
+
+ skilled_cartographers = {
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}	
+ 	
+ 	global_naval_engagement_modifier = 0.2
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 		modifier = {
+ 			factor = 0.6
+ 			NOT = { num_of_colonists = 1 }
+ 		}
+ 		modifier = {
+ 			factor = 0.6
+ 			NOT = { num_of_colonies = 1 }
+ 		}
+ 	}
+ }
+
+ fortified_trading_posts = {
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}	
+ 	
+ 	global_ship_trade_power = 0.33
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0.9
+ 		modifier = {
+ 			factor = 0.6
+ 			NOT = { trade_income_percentage = 0.1 }
+ 		}			
+ 		modifier = {
+ 			factor = 1.5
+ 			trade_income_percentage = 0.2
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			trade_income_percentage = 0.3
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			trade_income_percentage = 0.4
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			trade_income_percentage = 0.5
+ 		}
+ 	}
+ }
+
+
+armed_neutrality_act = {
+	monarch_power = DIP
+	
+	potential = {
+		always = no
+	}
+	
+	allow = {
+ 		always = no
+ 	}
+	
+	trade_steering = 0.15
+	merchants = 1
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.6
+		modifier = {
+			factor = 0.6
+			NOT = { trade_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.5
+		}
+	}
+}
+
+ the_naval_supremacy_act = {
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}	
+ 	
+ 	siege_blockade_progress = 1
+ 	blockade_efficiency = 0.5
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0.8
+ 		modifier = {
+ 			factor = 0
+ 			NOT = { navy_size = 20 }
+ 		}
+ 	}
+ }
+ 
+ 
+ steppe_nomad_migrations_policy = {
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	colonist_placement_chance = 0.05
+ 	native_uprising_chance = -0.5
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0
+ 	}
+ }
+
+ riverine_navy_policy = { 
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	naval_forcelimit_modifier = 0.1
+ 	navy_tradition = 1
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1.0
+ 		modifier = {
+ 			factor = 0
+ 			NOT = { navy_size = 20 }
+ 		}				
+ 	}
+ }
+ 
+ 
+ solidarity_policy = {  
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	improve_relation_modifier = 0.15
+ 	trade_efficiency = 0.1
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1.2
+ 		modifier = {
+ 			factor = 0
+ 			NOT = { trade_income_percentage = 0.1 }
+ 		}			
+ 		modifier = {
+ 			factor = 1.5
+ 			trade_income_percentage = 0.2
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			trade_income_percentage = 0.3
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			trade_income_percentage = 0.4
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			trade_income_percentage = 0.5
+ 		}
+ 	}
+ }
+
+ appeal_to_old_powers_policy = {
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	diplomatic_reputation = 1
+ 	improve_relation_modifier = 0.15
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1.0
+ 	}
+ }
+
+ indirect_approach_policy = {
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	movement_speed = 0.1
+ 	land_attrition = -0.1
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 		modifier = {
+ 			factor = 1.5
+ 			is_at_war = yes
+ 		}
+ 	}
+ }
+
+ loyalty_to_the_land_policy = {
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	diplomatic_upkeep = 1
+ 	liberty_desire_from_subject_development = -0.15
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 	}
+ }
+
+ commercial_tribes_policy = { 
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	trade_range_modifier = 0.15
+ 	range = 0.25
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0
+ 	}
+ }
+
+
+global_trade_networks_act = { 
+	monarch_power = DIP
+	
+	potential = {
+		always = no
+	}
+	
+	allow = {
+ 		always = no
+ 	}
+	
+	province_trade_power_modifier = 0.25
+	production_efficiency = 0.05
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0			
+	}
+}
+
+
+merchants_hire_act = { 
+	monarch_power = DIP
+	
+	potential = {
+		always = no
+	}
+	
+	allow = {
+ 		always = no
+ 	}
+	
+	global_ship_trade_power = 0.33
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0			
+	}
+}
+
+ transportation_act = { 
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+ 		always = no
+ 	}
+ 	
+ 	privateer_efficiency = 0.5
+ 	transport_attrition = -0.5
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0			
+ 	}
+ }
+
+ native_emissaries_act = {
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	monthly_federation_favor_growth = 0.2
+ 	ae_impact = -0.1
+ 	
+ 
+ 	ai_will_do = {
+ 		factor = 1.0
+ 	}
+ }
+
+
+
+ colonial_boost_act = { 
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+ 		always = no
+ 	}
+ 	
+ 	colony_development_boost = 1
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0			
+ 	}
+ }
+
+
+ canoe_expertise_policy = {
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	disengagement_chance = 0.25
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 	}
+ }
+
+
+
+
+
+ passport_to_merchants_policy = { 
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	mercantilism_cost = -0.2
+ 	global_own_trade_power = 0.1
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0			
+ 	}
+ }
+
+
+ letters_of_marque = {
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	privateer_efficiency = 0.5
+ 	capture_ship_chance = 0.25
+ 
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0.6
+ 		modifier = {
+ 			factor = 0
+ 			NOT = { num_of_light_ship = 20 }
+ 		}
+ 	}
+ }
+
+
+ the_stamp_act = {
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	global_trade_power = 0.1
+ 	global_tariffs = 0.15 
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 		modifier = {
+ 			factor = 0
+ 			NOT = { colony = 1 }
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			colony = 2
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			colony = 3
+ 		}			
+ 		modifier = {
+ 			factor = 1.5
+ 			colony = 4
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			colony = 5
+ 		}		
+ 	}
+ }
+
+
+ colonial_administration_act = {
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	global_colonial_growth = 10
+ 	colonist_placement_chance = 0.05
+ 
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+  	ai_will_do = {
+ 		factor = 1
+ 		modifier = {
+ 			factor = 0
+ 			NOT = { num_of_colonists = 1 }
+ 		}
+ 		modifier = {
+ 			factor = 0.1
+ 			NOT = { num_of_colonies = 1 }
+ 		}
+ 	}
+ }
+
+
+ the_cooperation_act = {
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}	
+ 	
+ 	caravan_power = 0.33
+ 	merchants = 1
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0.7
+ 		modifier = {
+ 			factor = 0.6
+ 			NOT = { trade_income_percentage = 0.1 }
+ 		}			
+ 		modifier = {
+ 			factor = 0.6
+ 			NOT = { trade_income_percentage = 0.2 }
+ 		}
+ 	}
+ }
+
+
+ the_foreign_aid_act = {
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}	
+ 	
+ 	diplomatic_upkeep = 1
+ 	diplomatic_reputation = 1
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0.9
+ 	}
+ }
+
+
+colonial_companies_act = {
+ 	monarch_power = DIP
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 	
+ 	range = 0.20
+ 	global_colonial_growth = 10
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 		modifier = {
+ 			factor = 0
+ 			NOT = { num_of_colonists = 1 }
+ 		}
+ 		modifier = {
+ 			factor = 0.6
+ 			NOT = { num_of_colonies = 1 }
+ 		}
+ 	}
+ }
+
+
+
+production_quota_act = {
+	monarch_power = DIP
+	potential = {
+		always = no
+	}
+	
+	allow = {
+		always = no
+	}
+	global_trade_goods_size_modifier = 0.15
+ 
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.7
+	}
+}
+
+encouragement_of_merchant_navy = {
+	monarch_power = DIP
+	potential = {
+		always = no
+	}
+	
+	allow = {
+ 		always = no
+ 	}
+	
+	trade_steering = 0.25
+ 
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { navy_size = 20 }
+		}		
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.5
+		}
+	}
+}
+
+
+
+ 
+ trade_connection_policy = {
+	monarch_power = DIP
+	potential = {
+		always = no
+	}
+	
+	allow = {
+		always = no
+	}
+
+	global_foreign_trade_power = 0.30
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.8		
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.5
+		}
+	}
+}
+
+ restrictions_for_colonies = {
+ 	monarch_power = DIP
+ 
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 
+ 
+ 
+ 	global_missionary_strength = 0.02
+ 	liberty_desire_from_subject_development = -0.15
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 		modifier = {
+ 			factor = 0
+ 			NOT = { colony = 1 }
+ 		}
+ 		modifier = {
+ 			factor = 1.25
+ 			colony = 2
+ 		}
+ 		modifier = {
+ 			factor = 1.25
+ 			colony = 3
+ 		}			
+ 		modifier = {
+ 			factor = 1.25
+ 			colony = 4
+ 		}
+ 		modifier = {
+ 			factor = 1.25
+ 			colony = 5
+ 		}
+ 		modifier = {
+ 			factor = 0
+ 			religious_unity = 1
+ 		}
+ 		modifier = {
+ 			factor = 1.25
+ 			NOT = { religious_unity = 0.8 }
+ 		}
+ 		modifier = {
+ 			factor = 1.25
+ 			NOT = { religious_unity = 0.6 }
+ 		}			
+ 		modifier = {
+ 			factor = 1.25
+ 			NOT = { religious_unity = 0.4 }
+ 		}
+ 		modifier = {
+ 			factor = 1.25
+ 			NOT = { religious_unity = 0.2 }
+ 		}			
+ 	}
+ }
+
+
+ colonial_expansions = {
+ 
+ 	monarch_power = DIP
+ 
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}		
+ 
+ 	global_colonial_growth = 15
+ 	native_uprising_chance = -0.5
+ 	
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 		modifier = {
+ 			factor = 0
+ 			NOT = { num_of_colonists = 1 }
+ 		}
+ 		modifier = {
+ 			factor = 0.1
+ 			NOT = { num_of_colonies = 1 }
+ 		}
+ 	}
+ }
+ beneficial_neglect = {
+ 	monarch_power = DIP
+ 
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+		always = no
+ 	}
+ 
+ 	colonist_placement_chance = 0.05
+ 	global_trade_power = 0.1
+ 
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 1
+ 		modifier = {
+ 			factor = 0.6
+ 			NOT = { num_of_colonists = 1 }
+ 		}
+ 		modifier = {
+ 			factor = 0.6
+ 			NOT = { num_of_colonies = 1 }
+ 		}
+ 		
+ 		modifier = {
+ 			factor = 0
+ 			NOT = { trade_income_percentage = 0.1 }
+ 		}			
+ 		modifier = {
+ 			factor = 1.5
+ 			trade_income_percentage = 0.2
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			trade_income_percentage = 0.3
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			trade_income_percentage = 0.4
+ 		}
+ 		modifier = {
+ 			factor = 1.5
+ 			trade_income_percentage = 0.5
+ 		}
+ 	}
+ }
+clan_unity_act = { 
+ 	monarch_power = DIP
+ 	
+ 	potential = {
+		always = no
+	}
+ 	
+ 	allow = {
+ 		always = no
+ 	}
+ 	
+ 	horde_unity = 1
+ 	ae_impact = -0.1
+ 
+ 	effect = {}
+ 	removed_effect = {}
+ 	ai_will_do = {
+ 		factor = 0			
+ 	}
+ }
+ 
+ the_importation_act = {
+	monarch_power = DIP
+
+	potential = {
+		always = no
+	}
+	allow = {
+ 		always = no
+ 	}
+	
+	trade_efficiency = 0.05
+	mercantilism_cost = -0.2
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.2
+		modifier = {
+			factor = 0
+			NOT = { trade_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.5
+		}
+	}
+}

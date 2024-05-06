@@ -1,0 +1,23 @@
+ottoman_decadence_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 12
+	available = {
+		has_dlc = "Domination"
+	}
+
+	powers = {
+		ottoman_decadence = {
+			gui = ottoman_decadende_gov_mech
+			max = 100
+			reset_on_new_ruler = no
+			base_monthly_growth = 0
+			is_good = no
+			
+			scaled_modifier = {
+				modifier = {
+					legitimacy = -1
+				}
+			}
+		}
+	}
+}

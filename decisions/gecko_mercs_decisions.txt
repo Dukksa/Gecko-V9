@@ -1,0 +1,364 @@
+country_decisions = {
+	change_gecko_mercs_unit_type_decision = {
+		color = { 0  166  0 }
+		potential = {
+			ai = no
+			NOT = { is_bankrupt = yes }
+			NOT = { is_colonial_nation = yes }
+		}
+		effect = {
+			gecko_mercs = { update = yes }
+			if = {
+				limit = {
+					NOT = { has_country_flag = gecko_mercs_recruit_cavalry_cflag }
+				}
+				custom_tooltip = change_gecko_mercs_unit_type_decision_tt
+				set_country_flag = gecko_mercs_recruit_cavalry_cflag
+			}
+			else = {
+				custom_tooltip = change_gecko_mercs_unit_type_decision_tt2
+				clr_country_flag = gecko_mercs_recruit_cavalry_cflag
+			}
+			gecko_mercs = { update = yes }
+		}
+	}
+	
+	recruit_one_gecko_mercs_decision = {
+		color = { 0  166  0 }
+		potential = {
+			ai = no
+			NOT = { is_bankrupt = yes }
+			NOT = { is_colonial_nation = yes }
+		}
+		allow = {
+			NOT = {
+				check_variable = {
+					which = number_of_owned_mercenaries
+					which = mercenary_forcelimit
+				}
+			}
+			gecko_mercs_spawn_point_trigger = yes
+		}
+		effect = {
+			recruit_gecko_mercs = {
+				fixed = 1
+			}
+		}
+	}
+
+	recruit_tier_1_gecko_mercs_decision = {
+		color = { 0  166  0 }
+		potential = {
+			ai = no
+			NOT = { is_bankrupt = yes }
+			NOT = { is_colonial_nation = yes }
+			check_variable = {
+				which = mercenary_bulk_recruitment_num_of_tiers
+				value = 1
+			}
+		}
+		allow = {
+			NOT = {
+				check_variable = {
+					which = number_of_owned_mercenaries
+					which = mercenary_forcelimit
+				}
+			}
+			gecko_mercs_spawn_point_trigger = yes
+		}
+		effect = {
+			recruit_gecko_mercs = {
+				variable = mercenary_bulk_recruitment_tier_1
+				1 = yes
+			}
+		}
+	}
+
+	recruit_tier_2_gecko_mercs_decision = {
+		color = { 0  166  0 }
+		potential = {
+			ai = no
+			NOT = { is_bankrupt = yes }
+			NOT = { is_colonial_nation = yes }
+			check_variable = {
+				which = mercenary_bulk_recruitment_num_of_tiers
+				value = 2
+			}
+		}
+		allow = {
+			NOT = {
+				check_variable = {
+					which = number_of_owned_mercenaries
+					which = mercenary_forcelimit
+				}
+			}
+			gecko_mercs_spawn_point_trigger = yes
+		}
+		effect = {
+			recruit_gecko_mercs = {
+				variable = mercenary_bulk_recruitment_tier_2
+				2 = yes
+			}
+		}
+	}
+
+	recruit_tier_3_gecko_mercs_decision = {
+		color = { 0  166  0 }
+		potential = {
+			ai = no
+			NOT = { is_bankrupt = yes }
+			NOT = { is_colonial_nation = yes }
+			check_variable = {
+				which = mercenary_bulk_recruitment_num_of_tiers
+				value = 3
+			}
+		}
+		allow = {
+			NOT = {
+				check_variable = {
+					which = number_of_owned_mercenaries
+					which = mercenary_forcelimit
+				}
+			}
+			gecko_mercs_spawn_point_trigger = yes
+		}
+		effect = {
+			recruit_gecko_mercs = {
+				variable = mercenary_bulk_recruitment_tier_3
+				3 = yes
+			}
+		}
+	}
+
+	recruit_tier_4_gecko_mercs_decision = {
+		color = { 0  166  0 }
+		potential = {
+			ai = no
+			NOT = { is_bankrupt = yes }
+			NOT = { is_colonial_nation = yes }
+			check_variable = {
+				which = mercenary_bulk_recruitment_num_of_tiers
+				value = 4
+			}
+		}
+		allow = {
+			NOT = {
+				check_variable = {
+					which = number_of_owned_mercenaries
+					which = mercenary_forcelimit
+				}
+			}
+			gecko_mercs_spawn_point_trigger = yes
+		}
+		effect = {
+			recruit_gecko_mercs = {
+				variable = mercenary_bulk_recruitment_tier_4
+				4 = yes
+			}
+		}
+	}
+	
+	recruit_tier_5_gecko_mercs_decision = {
+		color = { 0  166  0 }
+		potential = {
+			ai = no
+			NOT = { is_bankrupt = yes }
+			NOT = { is_colonial_nation = yes }
+			check_variable = {
+				which = mercenary_bulk_recruitment_num_of_tiers
+				value = 5
+			}
+		}
+		allow = {
+			NOT = {
+				check_variable = {
+					which = number_of_owned_mercenaries
+					which = mercenary_forcelimit
+				}
+			}
+			gecko_mercs_spawn_point_trigger = yes
+		}
+		effect = {
+			recruit_gecko_mercs = {
+				variable = mercenary_bulk_recruitment_tier_5
+				5 = yes
+			}
+		}
+	}
+	
+	recruit_tier_6_gecko_mercs_decision = {
+		color = { 0  166  0 }
+		potential = {
+			ai = no
+			NOT = { is_bankrupt = yes }
+			NOT = { is_colonial_nation = yes }
+			check_variable = {
+				which = mercenary_bulk_recruitment_num_of_tiers
+				value = 6
+			}
+		}
+		allow = {
+			NOT = {
+				check_variable = {
+					which = number_of_owned_mercenaries
+					which = mercenary_forcelimit
+				}
+			}
+			gecko_mercs_spawn_point_trigger = yes
+		}
+		effect = {
+			recruit_gecko_mercs = {
+				variable = mercenary_bulk_recruitment_tier_6
+				6 = yes
+			}
+		}
+	}
+	
+	recruit_tier_7_gecko_mercs_decision = {
+		color = { 0  166  0 }
+		potential = {
+			ai = no
+			NOT = { is_bankrupt = yes }
+			NOT = { is_colonial_nation = yes }
+			check_variable = {
+				which = mercenary_bulk_recruitment_num_of_tiers
+				value = 7
+			}
+		}
+		allow = {
+			NOT = {
+				check_variable = {
+					which = number_of_owned_mercenaries
+					which = mercenary_forcelimit
+				}
+			}
+			gecko_mercs_spawn_point_trigger = yes
+		}
+		effect = {
+			recruit_gecko_mercs = {
+				variable = mercenary_bulk_recruitment_tier_7
+				7 = yes
+			}
+		}
+	}
+	
+	recruit_tier_8_gecko_mercs_decision = {
+		color = { 0  166  0 }
+		potential = {
+			ai = no
+			NOT = { is_bankrupt = yes }
+			NOT = { is_colonial_nation = yes }
+			check_variable = {
+				which = mercenary_bulk_recruitment_num_of_tiers
+				value = 8
+			}
+		}
+		allow = {
+			NOT = {
+				check_variable = {
+					which = number_of_owned_mercenaries
+					which = mercenary_forcelimit
+				}
+			}
+			gecko_mercs_spawn_point_trigger = yes
+		}
+		effect = {
+			recruit_gecko_mercs = {
+				variable = mercenary_bulk_recruitment_tier_8
+				8 = yes
+			}
+		}
+	}
+	
+	recruit_tier_9_gecko_mercs_decision = {
+		color = { 0  166  0 }
+		potential = {
+			ai = no
+			NOT = { is_bankrupt = yes }
+			NOT = { is_colonial_nation = yes }
+			check_variable = {
+				which = mercenary_bulk_recruitment_num_of_tiers
+				value = 9
+			}
+		}
+		allow = {
+			NOT = {
+				check_variable = {
+					which = number_of_owned_mercenaries
+					which = mercenary_forcelimit
+				}
+			}
+			gecko_mercs_spawn_point_trigger = yes
+		}
+		effect = {
+			recruit_gecko_mercs = {
+				variable = mercenary_bulk_recruitment_tier_9
+				9 = yes
+			}
+		}
+	}
+	
+	recruit_tier_10_gecko_mercs_decision = {
+		color = { 0  166  0 }
+		potential = {
+			ai = no
+			NOT = { is_bankrupt = yes }
+			NOT = { is_colonial_nation = yes }
+			check_variable = {
+				which = mercenary_bulk_recruitment_num_of_tiers
+				value = 10
+			}
+		}
+		allow = {
+			NOT = {
+				check_variable = {
+					which = number_of_owned_mercenaries
+					which = mercenary_forcelimit
+				}
+			}
+			gecko_mercs_spawn_point_trigger = yes
+		}
+		effect = {
+			recruit_gecko_mercs = {
+				variable = mercenary_bulk_recruitment_tier_10
+				10 = yes
+			}
+		}
+	}
+	
+	#In case of a player hotjoining
+	gecko_mercs_auto_update_decision = {
+		color = { 0  166  0 }
+		potential = {
+			ai = no
+			NOT = { is_bankrupt = yes }
+			NOT = { is_colonial_nation = yes }
+			capital_scope = {
+				NOT = { has_province_modifier = gecko_mercs_ptmod }
+			}
+		}
+		effect = {
+			custom_tooltip = gecko_mercs_auto_update_decision_tt
+			hidden_effect = {
+				capital_scope = {
+					add_province_triggered_modifier = gecko_mercs_ptmod
+				}
+			}
+		}
+	}
+	
+	# Allows player to change number of tiers for bulk spawning of mercenaries
+	gecko_mercs_tier_selection_decision = {
+		color = { 0  166  0 }
+		potential = {
+			NOT = { is_colonial_nation = yes }
+			ai = no
+			NOT = { is_bankrupt = yes }
+			always = yes 
+		}
+		allow = { hidden_trigger = { NOT = { has_country_flag = gecko_mercs_in_tier_selection_event_cflag } } }
+		effect = {
+			country_event = { id = gecko_mercs.1 }
+		}
+	}
+}

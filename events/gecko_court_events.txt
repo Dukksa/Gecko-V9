@@ -1,0 +1,75 @@
+namespace = gecko_court
+
+#Court Recruitment
+country_event = {
+	id = gecko_court.1
+	title = gecko_court.1.t
+	desc = gecko_court.1.d1
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	
+	immediate = { hidden_effect = { set_country_flag = gecko_court_in_court_recruitment_cflag } }
+	
+	option = { #Recruit Administrative advisor
+		trigger = { adm_power = 25 }
+		name = gecko_court.1.a
+		country_event = { id = echo.10 }
+	}
+	option = { #Recruit Diplomatic advisor
+		trigger = { dip_power = 25 }
+		name = gecko_court.1.b
+		country_event = { id = echo.11 }
+	}
+	option = { #Recruit Military advisor
+		trigger = { mil_power = 25 }
+		name = gecko_court.1.c
+		country_event = { id = echo.12 }
+	}
+	option = { #Hire a foreign conquistador
+		trigger = { NOT = { has_country_modifier = hired_conquistador } }
+		name = gecko_court.1.d
+		add_years_of_income = -0.2
+		create_conquistador = { tradition = 10 }
+		add_country_modifier = {
+			name = "hired_conquistador"
+			duration = 1825
+			hidden = yes
+		}
+	}
+	option = { #Hire a foreign explorer
+		trigger = { NOT = { has_country_modifier = hired_explorer } }
+		name = gecko_court.1.e
+		add_years_of_income = -0.1
+		create_explorer = { tradition = 10 }
+		add_country_modifier = {
+			name = "hired_explorer"
+			duration = 1825
+			hidden = yes
+		}
+	}
+	option = { #Promote colonial expansion
+		trigger = {
+			NOT = { has_country_modifier = free_colonist }
+			OR = {
+				AND = {
+					is_colonial_nation = yes 
+					dip_tech = 10
+				}
+				AND = {
+					is_colonial_nation = no
+					dip_tech = 6
+				}
+			}	
+		}
+		name = gecko_court.1.f
+		add_country_modifier = {
+			name = "free_colonist"
+			duration = -1
+		}
+	}
+	option = { #Back
+		name = gecko_court.1.g
+	}
+	after = { hidden_effect = { clr_country_flag = gecko_court_in_court_recruitment_cflag } }
+}

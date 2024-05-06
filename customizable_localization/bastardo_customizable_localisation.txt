@@ -1,0 +1,23 @@
+defined_text = {
+    name = GetTotalRulerSkill
+    text = {
+        localisation_key = educate_ruler_greater_than_9_total_key
+        trigger = {
+			check_variable = {
+				which = ruler_total_skill
+				value = 10
+			}
+        }
+    }
+    text = {
+        localisation_key = educate_ruler_less_than_9_total_key
+        trigger = {
+			NOT = {
+				check_variable = {
+					which = ruler_total_skill
+					value = 10
+				}
+			}
+        }
+    }
+}

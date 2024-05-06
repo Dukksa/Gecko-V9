@@ -1,0 +1,73 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_songhai_timbuktu_university"
+		texturefile = "gfx/interface/ages/songhai_timbuktu_university.dds"
+	}
+	spriteType = {
+		name = "GFX_crimean_raids"
+		texturefile = "gfx/interface/ages/crimean_raids.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_hungary_fort_defense"
+		texturefile = "gfx/interface/ages/ab_hungary_fort_defense.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_burgundy_merc_manpower"
+		texturefile = "gfx/interface/ages/ab_burgundy_mercs.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_timurids_tech"
+		texturefile = "gfx/interface/ages/ab_timurid_renaissance.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_mamluks_force_limit"
+		texturefile = "gfx/interface/ages/ab_mamluk_production.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_morocco_raids"
+		texturefile = "gfx/interface/ages/ab_moroccan_pirates.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_bukhara_arty"
+		texturefile = "gfx/interface/ages/ab_bukharan_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_arabia_speed"
+		texturefile = "gfx/interface/ages/ab_arabian_speed.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_hesse_mercs"
+		texturefile = "gfx/interface/ages/ab_hessian_mercs.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_minor_building_dev"
+		texturefile = "gfx/interface/ages/ab_minor_building_dev.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_million_rice_fields"
+		texturefile = "gfx/interface/ages/ab_million_rice_fields.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_dutch_trade"
+		texturefile = "gfx/interface/ages/ab_dutch_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_bushido"
+		texturefile = "gfx/interface/ages/ab_bushido.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_improved_weaponry1"
+		texturefile = "gfx/interface/ages/ab_improved_weaponry.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_improved_weaponry2"
+		texturefile = "gfx/interface/ages/ab_improved_weaponry.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_improved_weaponry3"
+		texturefile = "gfx/interface/ages/ab_improved_weaponry.dds"
+	}
+	
+}	

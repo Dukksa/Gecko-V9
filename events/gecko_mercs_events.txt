@@ -1,0 +1,85 @@
+namespace = gecko_mercs
+
+#Tier Selection
+country_event = {
+	id = gecko_mercs.1
+	title = gecko_mercs.1.t
+	desc = gecko_mercs.1.d1
+	picture = SCOTTISH_MERCENARIES_eventPicture
+
+	is_triggered_only = yes
+	
+	immediate = { hidden_effect = { set_country_flag = gecko_mercs_in_tier_selection_event_cflag } }
+	
+	option = { #Display 0 Tiers
+		name = gecko_mercs.1.a
+		hidden_effect = { 
+			gecko_mercs_tier_selection_effect = { tiers = 0 }
+		}
+	}
+	option = { #Display 1 Tier
+		name = gecko_mercs.1.b
+		hidden_effect = { 
+			gecko_mercs_tier_selection_effect = { tiers = 1 }
+		}
+	}
+	option = { #Display 2 Tiers
+		name = gecko_mercs.1.c
+		hidden_effect = { 
+			gecko_mercs_tier_selection_effect = { tiers = 2 }
+		}
+	}
+	option = { #Display 3 Tiers
+		name = gecko_mercs.1.d
+		hidden_effect = { 
+			gecko_mercs_tier_selection_effect = { tiers = 3 }
+		}
+	}
+	option = { #Display 4 Tiers
+		name = gecko_mercs.1.e
+		hidden_effect = { 
+			gecko_mercs_tier_selection_effect = { tiers = 4 }
+		}
+	}
+	option = { #Display 5 Tiers
+		name = gecko_mercs.1.f
+		hidden_effect = { 
+			gecko_mercs_tier_selection_effect = { tiers = 5 }
+		}
+	}
+	option = { #Display 6 Tiers
+		name = gecko_mercs.1.g
+		hidden_effect = { 
+			gecko_mercs_tier_selection_effect = { tiers = 6 }
+		}
+	}
+	option = { #Display 7 Tiers
+		name = gecko_mercs.1.h
+		hidden_effect = { 
+			gecko_mercs_tier_selection_effect = { tiers = 7 }
+		}
+	}
+	option = { #Display 8 Tiers
+		name = gecko_mercs.1.i
+		hidden_effect = { 
+			gecko_mercs_tier_selection_effect = { tiers = 8 }
+		}
+	}
+	option = { #Display 9 Tiers
+		name = gecko_mercs.1.j
+		hidden_effect = { 
+			gecko_mercs_tier_selection_effect = { tiers = 9 }
+		}
+	}
+	option = { #Display 10 Tiers
+		name = gecko_mercs.1.k
+		hidden_effect = { 
+			gecko_mercs_tier_selection_effect = { tiers = 10 }
+		}
+	}
+	option = { #Back
+		name = gecko_mercs.1.l
+	}
+	
+	after = { hidden_effect = { clr_country_flag = gecko_mercs_in_tier_selection_event_cflag } }
+}

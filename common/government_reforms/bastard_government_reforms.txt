@@ -1,0 +1,29 @@
+h_reform_dominion = {
+	icon = "constitution"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = yes
+	fixed_rank = 2
+	potential = {
+		is_colonial_nation = yes
+		OR = {
+			tag = AUS
+			tag = ORJ
+			tag = DSA
+		}	
+	}
+	modifiers = {
+		max_absolutism = -50
+		governing_capacity = 250
+		#build_cost = -0.1
+		#development_cost = -0.1
+		embracement_cost = -0.1
+		state_maintenance_modifier = -0.25
+		max_absolutism = 40
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	duration = 5
+}

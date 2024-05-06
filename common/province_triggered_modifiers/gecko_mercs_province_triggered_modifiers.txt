@@ -1,0 +1,42 @@
+gecko_mercs_ptmod = {
+	hidden = yes
+	potential = {
+		owner = {
+			ai = no
+		}
+	}
+	trigger = {
+		OR = {
+			AND = {
+				is_month = 0
+				NOT = { is_month = 1 }
+			}
+			AND = {
+				is_month = 2
+				NOT = { is_month = 3 }
+			}
+			AND = {
+				is_month = 4
+				NOT = { is_month = 5 }
+			}
+			AND = {
+				is_month = 6
+				NOT = { is_month = 7 }
+			}
+			AND = {
+				is_month = 8
+				NOT = { is_month = 9 }
+			}
+			AND = {
+				is_month = 10
+				NOT = { is_month = 11 }
+			}
+		}
+	}
+	on_activation = {
+		owner = { gecko_mercs = { update = yes } }
+	}
+	on_deactivation = {
+		owner = { gecko_mercs = { update = yes } }
+	}
+}

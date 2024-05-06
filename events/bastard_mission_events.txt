@@ -1,0 +1,700 @@
+########################################
+# Events for Venice
+########################################
+namespace = X_VEN_events
+
+#The Balkan Latin Republic
+country_event = {
+	id = X_VEN_events.1
+	title = X_VEN_events.1.t
+	desc = X_VEN_events.1.d1
+	picture = CITY_VIEW_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = X_VEN_events.1.a
+		add_adm_power = 100
+		137 = {
+			if = { 
+				limit = { owned_by = ROOT }
+				add_base_tax = 1
+				if = {
+					limit = {
+						religion = catholic
+						has_owner_religion = yes
+						has_cardinal = no
+					}
+					add_cardinal = yes
+				}
+				add_latest_building = {
+					tax = yes
+					builder = ROOT
+				}
+				add_province_modifier = {
+					name = X_VEN_basilica_di_san_biagio_pmod
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = X_VEN_events.1.b
+		add_dip_power = 100
+		137 = {
+			if = { 
+				limit = { owned_by = ROOT }
+				add_base_production = 1
+				add_latest_building = {
+					trade = yes
+					builder = ROOT
+				}
+				X_center_of_trade_effect = { cost_equivalency_max_lvl_2 = yes }
+			}
+		}
+	}
+	
+	option = {
+		name = X_VEN_events.1.c
+		add_mil_power = 100
+		137 = {
+			if = { 
+				limit = { owned_by = ROOT }
+				add_base_manpower = 1
+				if = {
+					limit {
+						all_neighbor_province = {
+							has_fort_building_trigger = no
+						}
+					}
+					add_latest_building = {
+						fort = yes
+						builder = ROOT
+					}
+				}
+			}
+		}
+		bosnia_area = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		rascia_area = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		serbia_area = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+}
+
+#A Pirate Captain
+country_event = {
+	id = X_VEN_events.2
+	title = X_VEN_events.2.t
+	desc = X_VEN_events.2.d1
+	picture = PIRATES_CAPTURED_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Execute him and commandeer their ships
+		name = X_VEN_events.2.a
+		add_navy_tradition = 30
+		4754 = {
+			custom_tooltip = X_VEN_event_2_tt
+			hidden_effect = {
+				ROOT = {
+					galley = PREV
+					galley = PREV
+					galley = PREV
+					galley = PREV
+					galley = PREV
+					galley = PREV
+					galley = PREV
+					galley = PREV
+					galley = PREV
+					galley = PREV
+				}
+			}
+		}
+	}
+	
+	option = { #More captains
+		name = X_VEN_events.2.b
+		add_navy_tradition = -30
+		create_admiral = { tradition = 90 culture = albanian}
+		add_yearly_sailors = 5
+	}
+	
+	option = { #An advisor
+		name = X_VEN_events.2.c
+		define_advisor = {
+			type = naval_reformer
+			skill = 3
+			discount = yes
+			culture = albanian
+			religion = orthodox
+		}
+	}
+}
+
+#The Sovereignty of Cyprus
+country_event = {
+	id = X_VEN_events.3
+	title = X_VEN_events.3.t
+	desc = X_VEN_events.3.d1
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			random_country = {
+				limit = {
+					owns_or_subject_of = 321
+					NOT = { tag = ROOT }
+					NOT = { tag = CYP }
+				}
+				save_event_target_as = X_previous_cyprus_controller_event_target
+			}
+		}
+	}
+	
+	option = { #At long last
+		name = X_VEN_events.3.a
+		321 = {
+			cede_province = ROOT
+			add_core = ROOT
+			X_center_of_trade_effect = { cost_equivalency_max_lvl_2 = yes }
+		}
+		if = {
+			limit = {
+				event_target:X_previous_cyprus_controller_event_target = {
+					NOT = { tag = ROOT }
+					NOT = { tag = CYP }
+				}
+			}
+			event_target:X_previous_cyprus_controller_event_target = {
+				country_event = { id = X_VEN_events.4 days = 30 }
+			}
+		}
+	}
+	
+	option = { #Now is not the time
+		name = X_VEN_events.3.b
+		add_prestige = -5
+	}
+}
+
+#Venice Lays Claim to Cyprus
+country_event = {
+	id = X_VEN_events.4
+	title = X_VEN_events.4.t
+	desc = X_VEN_events.4.d1
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes 
+	major_trigger = {
+		OR = {
+			tag = FROM
+			tag = ROOT
+		}
+	}
+	
+	option = { #An unacceptable offense
+		ai_chance = { factor = 0 }
+		name = X_VEN_events.4.a
+		if = {
+			limit = { is_core = 321 }
+			declare_war_with_cb = {
+				who = FROM
+				casus_belli = cb_core
+				war_goal_province = 321
+			}
+		}
+		else_if = {
+			limit = {
+				321 = { 
+					OR = {
+						is_permanent_claim = ROOT
+						is_claim = ROOT
+					}
+				}
+			}
+			declare_war_with_cb = {
+				who = FROM
+				casus_belli = cb_conquest
+				war_goal_province = 321
+			}
+		}
+		else = {
+			321 = { add_claim = ROOT }
+			declare_war_with_cb = {
+				who = FROM
+				casus_belli = cb_conquest
+				war_goal_province = 321
+			}
+		}
+	}
+	
+	option = { #Peace is the best option
+		ai_chance = { factor = 100 }
+		name = X_VEN_events.4.b
+		FROM = { add_truce_with = ROOT }
+		add_truce_with = FROM
+		add_prestige = -5
+	}	
+}
+
+#Cypriot Goods
+country_event = {
+	id = X_VEN_events.5
+	title = X_VEN_events.5.t
+	desc = X_VEN_events.5.d1
+	picture = TRADEGOODS_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = X_VEN_events.5.a
+		321 = {
+			change_trade_goods = salt
+			add_base_tax = 5
+		}
+	}
+	
+	option = {
+		name = X_VEN_events.5.b
+		321 = {
+			change_trade_goods = sugar
+			add_base_production = 5
+		}
+	}
+	
+	option = {
+		name = X_VEN_events.5.c
+		321 = {
+			change_trade_goods = grain
+			add_base_manpower = 5
+		}
+	}
+	
+	option = {
+		name = X_VEN_events.5.d
+		321 = {
+			change_trade_goods = silk
+			add_province_modifier = {
+				name = X_VEN_cypriot_sammet_pmod
+				duration = -1
+			}
+		}
+	}
+	
+	option = {
+		name = X_VEN_events.5.e
+		321 = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+		add_years_of_owned_provinces_production_income = {
+			years = 10
+			trigger = {
+				trade_goods = wine
+			}
+			custom_tooltip = MONOPOLY_INCOME_WINE_DESC
+		}
+	}
+}
+
+#Riches of the Aegean
+country_event = {
+	id = X_VEN_events.6
+	title = X_VEN_events.6.t
+	desc = X_VEN_events.6.d1
+	picture = TRADEGOODS_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = X_VEN_events.6.a
+		random_owned_province = {
+			limit = {
+				OR = {
+					region = balkan_region
+					region = anatolia_region
+				}
+				province_is_on_an_island = yes	
+				culture = greek
+				NOT = { province_has_center_of_trade_of_level = 1 }
+			}
+			X_center_of_trade_effect = { cost_equivalency_max_lvl_2 = yes }
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+	}
+}
+
+########################################
+# Events for Crimea
+########################################
+namespace = X_CRI_events
+
+#Tatar Yoke Crushed
+country_event = {
+	id = X_CRI_events.1
+	title = X_CRI_events.1.t
+	desc = X_CRI_events.1.d1
+	picture = LAND_MILITARY_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = X_CRI_events.1.a
+		add_stability_or_adm_power = yes
+		add_country_modifier = {
+			name = X_CRI_era_of_peace_cmod
+			duration = 3650
+		}
+	}
+}
+
+#Taming of the Steppes
+country_event = {
+	id = X_CRI_events.2
+	title = X_CRI_events.2.t
+	desc = X_CRI_events.2.d1
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	is_triggered_only = yes
+	trigger = { religion_group = christian }
+	option = {
+		name = X_CRI_events.2.a
+		custom_tooltip = X_CRI_event_2_tt
+		hidden_effect = {
+			every_province = {
+				limit = {
+					NOT = { country_or_non_sovereign_subject_holds = PREV }
+					culture_group = tartar
+				}
+				add_permanent_claim = PREV
+			}
+		}
+		add_splendor = 200
+		add_country_modifier = {
+			name = X_CRI_tatars_crushed_cmod
+			duration = 5475
+		}
+	}
+}
+
+#Strength of the Steppe
+country_event = {
+	id = X_CRI_events.3
+	title = X_CRI_events.3.t
+	desc = X_CRI_events.3.d1
+	picture = MONGOL_BANNERS_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = X_CRI_events.3.a
+		add_country_modifier = {
+			name = X_CRI_exact_tribute_cmod
+			duration = 3650
+		}
+	}
+}
+
+#A Failed Expedition
+country_event = {
+	id = X_CRI_events.4
+	title = X_CRI_events.4.t
+	desc = X_CRI_events.4.d1
+	picture = BORDER_TENSION_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = X_CRI_events.4.a
+		add_country_modifier = {
+			name = X_CRI_exacted_tribute_cmod
+			duration = 3650
+		}
+	}
+}
+
+#A Jewish Fortress
+country_event = {
+	id = X_CRI_events.5
+	title = X_CRI_events.5.t
+	desc = X_CRI_events.5.d1
+	picture = FORT_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = X_CRI_events.5.a
+		add_estate_loyalty_modifier = {
+			estate = estate_dhimmi
+			desc = X_CRI_estate_dhimmi_cufut_qale_lmod
+			loyalty = 5
+			duration = -1
+		}
+		284 = {
+			add_province_modifier = {
+				name = X_CRI_qaraylar_craftsmen_pmod
+				duration = -1
+			}
+		}
+	}
+}
+
+#Genoa Cedes Gazaria
+country_event = {
+	id = X_CRI_events.7
+	title = X_CRI_events.7.t
+	desc = X_CRI_events.7.d1
+	picture = DIPLOMACY_SIGNING_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = CRI
+		GEN = {
+			is_neighbor_of = PREV
+			OR = {
+				AND = {
+					NOT = { navy_size = TUR }
+					NOT = { army_size = TUR }
+					NOT = { monthly_income = TUR }
+				}
+				AND = {
+					NOT = { navy_size = ROOT }
+					NOT = { army_size = ROOT }
+					NOT = { monthly_income = ROOT }
+				}
+			}
+		}
+	}
+	immediate = {
+		set_country_flag = X_CRI_genoa_cedes_gazaria_cflag
+	}
+	option = {
+		name = X_CRI_events.7.a
+	}
+}
+
+#Negotiations with the Bank of Saint George
+country_event = {
+	id = X_CRI_events.8
+	title = X_CRI_events.8.t
+	desc = X_CRI_events.8.d1
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			GEN = {
+				set_variable = {
+					which = X_gazaria_development_variable
+					value = 0
+				}
+				set_variable = {
+					which = X_gazaria_total_development_variable
+					value = 0
+				}
+				every_owned_province = {
+					limit = { region = crimea_region }
+					export_to_variable = {
+						which = X_gazaria_development_variable
+						value = development
+					}
+					PREV = {
+						set_variable = {
+							which = X_gazaria_development_variable
+							which = PREV
+						}
+						change_variable = {
+							which = X_gazaria_total_development_variable
+							which = X_gazaria_development_variable
+						}
+					}
+				}
+				set_variable = {
+					which = X_gazaria_total_development_localization_variable
+					which = X_gazaria_total_development_variable
+				}
+				multiply_variable = {
+					which = X_gazaria_total_development_localization_variable
+					value = 5
+				}
+			}
+		}
+	}
+	option = {
+		name = X_CRI_events.8.a
+		every_province = {
+			limit = { 
+				owned_by = GEN
+				region = crimea_region
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		custom_tooltip = X_CRI_event_8_tt
+		custom_tooltip = X_CRI_event_8_tt2
+		hidden_effect = {
+			286 = { X_center_of_trade_effect = { cost_equivalency_max_lvl_2 = yes } }
+		}
+		GEN = {
+			while = {
+				limit = {		
+					check_variable = {
+						which = X_gazaria_total_development_variable
+						value = 1
+					}
+				}
+				add_treasury = 5
+				PREV = {
+					add_treasury = -5
+				}
+				subtract_variable = {
+					which = X_gazaria_total_development_variable
+					value = 1
+				}
+			}
+		}
+	}
+	option = {
+		name = X_CRI_events.8.b
+		declare_war_with_cb = {
+			who = GEN
+			casus_belli = cb_conquest
+			war_goal_province = 285
+		}
+	}
+	after = {
+		clr_country_flag = X_CRI_genoa_cedes_gazaria_cflag
+	}
+}
+
+#Qaraylar Influx
+country_event = {
+	id = X_CRI_events.9
+	title = X_CRI_events.9.t
+	desc = X_CRI_events.9.d1
+	picture = BIG_BOOK_eventPicture
+	fire_only_once = yes
+	trigger = {
+		NOT = { exists = BYZ }
+		151 = {
+			owner = {
+				NOT = { religion_group = christian }
+			}
+		}
+		OR = {
+			tag = CRI
+			tag = GLH
+		}
+		owns_or_subject_of = 284
+		owns_or_subject_of = 2410
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = X_CRI_events.9.a
+		random_country = {
+			limit = {
+				owns = 151
+			}
+			ROOT = {
+				reverse_add_opinion = { 
+					who = PREV
+					modifier = opinion_mildly_displeased 
+				}
+			}
+		}
+		add_country_modifier = {
+			name = X_CRI_qaraylar_lending_cmod
+			duration = 14600
+		}
+		284 = {
+			add_base_tax = 1
+		}
+		2410 = {
+			add_base_tax = 1
+		}
+		add_dip_power = -50
+		add_adm_power = -25
+		add_prestige_or_monarch_power = { amount = 5 }
+	}
+	option = {
+		name = X_CRI_events.9.b
+		151 = {
+			owner = {
+				ROOT = {
+					reverse_add_opinion = { 
+						who = PREV
+						modifier = opinion_pleased 
+					}
+				}
+			}
+		}
+		add_prestige = -15
+	}
+}
+
+#Collapse of the Great Horde
+country_event = {
+	id = X_CRI_events.10
+	title = X_CRI_events.10.t
+	desc = X_CRI_events.10.d1
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	fire_only_once = yes
+	major = yes
+	major_trigger = {
+		is_neighbor_of = GOL
+	}
+	trigger = {
+		NOT = { exists = AST }
+		NOT = { has_ruler = "Küchük Muhammad" }
+		tag = GOL
+	}
+	mean_time_to_happen = {
+		months = 3
+	}
+	option = {
+		name = X_CRI_events.10.a
+		release = AST
+	}
+}
+
+#Death of Küchük Muhammad
+country_event = {
+	id = X_CRI_events.11
+	title = X_CRI_events.11.t
+	desc = X_CRI_events.11.d1
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = X_CRI_events.11.a
+		custom_tooltip = X_CRI_event_11_tt
+		hidden_effect = {
+			every_province = {
+				limit = {
+					owned_by = GOL
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}

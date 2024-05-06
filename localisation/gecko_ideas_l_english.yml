@@ -1,0 +1,82 @@
+﻿l_english:
+
+  
+  #Great Zimbabwe
+  GZM_ideas:0 "Great Zimbabwean Ideas"
+  GZM_ideas_start:0 "Great Zimbabwean Traditions"
+  GZM_ideas_bonus:0 "Great Zimbabwean Ambition"
+
+  GZM_legacy_of_zimbabwe:0 "Legacy of Zimbabwe"
+  GZM_empowering_the_rozwi:0 "Empowering the Rozwi"
+  GZM_4:0 "Regular Training"
+  GZM_5:0 "Introduce new Conscription"
+  GZM_6:0 "Knowledge of Home Terrain"
+  GZM_vashambadzi:0 "Vashambadzi"
+
+  GZM_legacy_of_zimbabwe_desc:0 "With the fall of Great Zimbabwe many traditions and customs have been lost. The Mutapa has built a new kind of state, independent of the age old legacy of these lands. Our people on the other hand have chosen to cling to old traditions, we still construct stone buildings that leave outsiders in awe and we still cherish that which once was."
+  GZM_empowering_the_rozwi_desc:0 "A powerful faction has begun to grow in our lands, showing a strong loyalty to their leader and dissatisfaction with their lot in life in the Zimbabwe plateau. The Rozwi, or 'destroyers', are disciplined fighters ready to unify the Shona peoples and create a new type of state. If we do not embrace them we may well find ourselves overrun against our will."
+  GZM_4_desc:0 "Discipline, preparation and training are what win battles. With this in mind our commanders have successfully begun to pioneer elaborate new tactics and a new army organization. Let us make good use of these innovations by dividing our warriors into regiments and then let them train regularly with their bows, assegais, daggers and axes. Practice will also allow them to fight in formation without fear, defeating much more numerous enemies."
+  GZM_5_desc:0 "By Introducing a new System of Conscription we will ensure that we will have enough men to fill our ranks."
+  GZM_6_desc:0 "The People of Great Zimbabwe are home to hostile terrain. Their knowledge of their home region will prove benefitial."
+  GZM_vashambadzi_desc:0 "The growing intracontinental trade, with goods flowing back and forth from the central parts of the Kongo river basin to the trade cities of Eastern Africa, the Great Lakes and the Zimbabwe highlands has greatly enriched the Vashambadzi, our native merchant community. Let us support this group over all others by baring Swahili traders as well as European fortune seekers from trading within our borders."
+
+  
+  #Habsburg Empire
+  AHU_ideas:0 "Habsburg Empire Ideas"
+  AHU_ideas_start:0 "Habsburg Traditions"
+  AHU_ideas_bonus:0 "Habsburg Ambitions"
+  gc_AHU_NI_3:0 "Habsburg Dominance"
+  gc_AHU_NI_3_desc:0 "War is an extension of Diplomacy."
+  gc_military_border:0 "Military Border"
+  gc_military_border_desc:0 ""
+  gc_imperial_ambitions:0 "Imperial Ambition"
+  gc_imperial_ambitions_desc:0 ""
+  gc_fugger_banks:0 "Fugger Banks"
+  gc_fugger_banks_desc:0 ""
+  gc_edict_of_restitution:0 "Edict of Restitution"
+  gc_edict_of_restitution_desc:0 ""
+  gc_austrian_court:0 "Austrian Court"
+  gc_austrian_court_desc:0 ""
+
+ #arabia
+ ARB_ideas:0 "Arabian Empire Ideas"
+ ARB_ideas_start:0 "Arabian Empire Traditions"
+ ARB_ideas_bonus:0 "Arabian Empire Ambition"
+ arb_1:0 "Indian Ocean Trade"
+ arb_1_desc:0 "Our sailors have been to the Swahili coasts and as far as Hindustan and even the Malay lands. We can play a critical role in the flow of goods between these wealthy regions."
+ arb_2:0 "Arabian Horsemanship"
+ arb_2_desc:0 "The man who rides for pleasure or military occupation has no idea what true horsemanship is. The Bedouin rides to trade, to eat, to live. It should surprise no one that, in addition to the finest horses, Arabia produces the finest cavalrymen."
+ arb_3:0 "Bedouin Raiders"
+ arb_3_desc:0 "Since before the days of the Prophet, Bedouins have been experts at the art of the raid. An army may march on its stomach, but it won't march far when our raiders take the food right out of the army's mouth through rapid hit and run seizures of their supply lines. Pull back and let the raiders do their work and watch as the invader dies of thirst."
+ arb_4:0 "Spreading the Prophet's Word"
+ arb_4_desc:0 "There is no god but Allah, Muhammad is His messenger. By now, all men should know these holy words, but a shocking amount still dwell in the pitiable state of ignorance of Islam. Our missionaries are ready to spread the words of the Prophet."
+ arb_5:0 "Unite the Tribes"
+ arb_5_desc:0 "Our loosely-organized way of handling our affairs has its upsides. Perhaps we could allow the tribes to continue providing for the upkeep of their own soldiers and horsemen while bringing them together in a more modern military pointed outwards rather than within?"
+ arb_6:0 "Bedouin Traders"
+ arb_6_desc:0 "There aren't many sharply-delineated man-made borders in Arabia, and even if there were, the Bedouin would ignore them. Though the Bedouin nomadic journeys through our lands and into others has risks, it also facilitates easy access to trade through the entire region, as Bedouin nomads know no import tariffs or trade embargoes."
+ arb_7:0 "Arabia"
+ arb_7_desc:0 "Although Arabia has many different clans, tribes and countries, all share in the use of the Arabic language, it forms the unifying feature of all Arabs. Under a strong leadership we can unite all Arabian lands under a single flag and one ruler."
+
+
+ LOB_ideas_start:0 "Lombard Traditions"
+ LOB_ideas_bonus:0 "Lombard Ambitions"
+ LOB_ideas:0 "Lombard Ideas"
+ LOB_restore_edict_of_milan:0 "Restore the Edict of Milan"
+ LOB_restore_edict_of_milan_desc:0 "The restoration of the crown of Lombardy will bring about tremendous beaurocratic changes and alterations in the administrative branch of the realm. Let us bring back the Edict of Milan and give a fair ay to every religion that is loyal to our banner."
+ LOB_milanese_steel:0 "Milanese Steel" 
+ LOB_milanese_steel_desc:0 "Famed steel from the best workshops and smiths of the Milanese capital will fuel and bolster the prowess of our elite troops." 
+ LOB_imperial_diplomacy:0 "Imperial Diplomacy" 
+ LOB_imperial_diplomacy_desc:0 "As a member of the Empire and a rising Italian Great Power, we shall lay claim on all our eyes can see and expand our great nation to new heights of power." 
+ LOB_defy_feudalism:0 "Defy Feudalism"
+ LOB_defy_feudalism_desc:0 "Since times of old our people have been resistant to the ideas brought to our doorstep by feudalism." 
+ LOB_italian_industrialisation:0 "Italian Industrialization" 
+ LOB_italian_industrialisation_desc:0 "Our land is rich in unprecedented amounts of all manner of natural resources. By organizing and erecting manufactories, we will be able to tame our production and capitalize on immense profits and wealth." 
+ LOB_italian_scholars:0 "Italian Scholars" 
+ LOB_italian_scholars_desc:0 "Italy is the birthplace of the Renaissance. We cannot allow ourselves to not be the world's pioneers in regards to technological innovation. Let us establish Lombardy as the house of science and advancement!" 
+ LOB_rule_mediterranean:0 "Rule the Mediterranean" 
+ LOB_rule_mediterranean_desc:0 "The Mediterranean Sea has seen millenia of combat and prospecting conquerors. Our navy will reign supreme from the coasts of the Aegean to the Genoan coasts." 
+ 
+ #korean minors
+ fo_korean_city_ideas:0 "Korean City State Ideas"
+ fo_korean_city_ideas_start:0 "Korean City State Traditions"
+ fo_korean_city_ideas_bonus:0 "Korean City State Ambitions"

@@ -1,0 +1,1466 @@
+###################################
+# ME_Brandenburg_Prussia_Modifiers
+###################################
+BRA_geheimer_rat = {
+	same_culture_advisor_cost = -0.15
+}
+BRA_schwanenorden = {
+	nobles_loyalty_modifier = 0.05
+	tolerance_own = 1
+}
+BRA_rightful_duchy = {
+	diplomatic_upkeep = 1
+	monthly_splendor = 1
+}
+BRA_tamed_the_nobility = {
+	yearly_absolutism = 0.5
+	global_tax_modifier = 0.1
+}
+BRA_kirchenordnung = {
+	monthly_fervor_increase = 0.5
+	church_power_modifier = 0.1
+	stability_cost_modifier = -0.1
+}
+BRA_roman_law = {
+	reform_progress_growth = 0.1
+}
+BRA_hohenzollern_hegemony = {
+	diplomatic_reputation = 2
+	prestige_decay = -0.01
+}
+BRA_neumark_province = {
+	local_autonomy = -0.05
+}
+BRA_hohenzollern_bonds = {
+	land_morale = 0.1
+}
+BRA_the_pearl_of_hohenzollerns = { 
+	prestige = 0.5
+	legitimacy = 1
+}
+BRA_new_lords_of_brandenburg = {
+	global_unrest = -2
+}
+BRA_saxon_trading_company = {
+	local_development_cost = -0.1
+	province_trade_power_value = 5
+}
+BRA_absolute_upper_saxon_leader = {
+	unjustified_demands = -0.2
+	province_warscore_cost = -0.05
+}
+
+BRA_universita_viadrina_modifier = {
+	local_institution_spread = 0.25
+}
+BRA_firm_control = {
+	global_tax_modifier = 0.05
+	global_autonomy = -0.05
+}
+BRA_protestant_power = {
+	warscore_cost_vs_other_religion = -0.1
+	enforce_religion_cost = -0.5
+	tolerance_own = 1
+}
+BRA_prussian_ambition = {
+	adm_tech_cost_modifier = -0.1
+}
+BRA_bierziese = {
+	global_tax_modifier = 0.15
+	global_autonomy = -0.05
+}
+BRA_appeasement = {
+	global_tax_modifier = -0.1
+	global_autonomy = 0.1
+}
+BRA_nurturing_kinsmen = {
+	diplomatic_reputation = 1
+}
+BRA_controlling_the_circle = {
+	ae_impact = -0.1
+	prestige = 0.5
+}
+BRA_prussian_ambition_2 = {
+	mil_tech_cost_modifier = -0.1
+}
+BRA_hegemon = {
+	core_creation = -0.1
+}
+BRA_prussian_unity = {
+	num_accepted_cultures = 1
+}
+BRA_reformed_kreditwerk = {
+	interest = -0.5
+}
+BRA_abolished_kreditwerk = {
+	production_efficiency = 0.1
+}
+BRA_prussian_legacy = {
+	land_morale = 0.1
+}
+BRA_bonds_with_prussia = {
+	diplomatic_reputation = 1
+	diplomatic_upkeep = 1
+}
+PRU_scourge_of_the_west_defeated = {
+	diplomatic_reputation = 1
+}
+PRU_habsburgs_defeated = {
+	accept_vassalization_reasons = 15
+}
+PRU_splendour = {
+	monthly_splendor = 2
+	diplomatic_reputation = 2
+}
+PRU_splendour2 = {
+	prestige = 1
+	diplomatic_reputation = 2
+}
+PRU_important_foundries = {
+	trade_goods_size = 1
+}
+PRU_diplomatic_revolution_modifier = {
+	diplomatic_upkeep = 1
+	rival_change_cost = -0.5
+	improve_relation_modifier = 0.15
+}
+PRU_financial_capital = {
+	province_trade_power_value = 5
+}
+PRU_germanization = {
+	local_missionary_strength = 0.02
+	local_culture_conversion_cost = -0.2
+	local_autonomy = -0.05
+}
+PRU_fight_with_catholicism = {
+	global_heretic_missionary_strength = 0.03
+}
+PRU_kriegsakademie_modifier = {
+	local_manpower_modifier = 1
+	army_tradition = 0.25
+}
+PRU_prussian_union_of_churches = {
+	monthly_fervor_increase = 0.5
+	church_power_modifier = 0.25
+	tolerance_heretic = 1
+}
+PRU_reglement = {
+	local_regiment_cost = -0.5
+	regiment_recruit_speed = -0.5
+}
+PRU_prussian_waterways = {
+	trade_value_modifier = 0.5
+}
+PRU_general_staff_modifier = {
+	mil_advisor_cost = -0.1
+}
+PRU_handlerflotte = {
+	trade_efficiency = 0.1
+	global_ship_trade_power = 0.3
+}
+PRU_kriegsflotte = {
+	naval_morale = 0.1
+}
+PRU_balanced_fleet = {
+	trade_efficiency = 0.1
+	naval_morale = 0.05
+}
+PRU_potatoes = {
+	trade_value_modifier = 0.2
+}
+PRU_amber_center = {
+	trade_goods_size = 1
+}
+PRU_entering_the_world_stage = {
+	diplomatic_reputation = 2
+	monthly_splendor = 2
+}
+PRU_universita_albertina = {
+	advisor_pool = 1
+	local_institution_spread = 0.3
+}
+PRU_foreign_capital = {
+	local_build_cost = -0.15
+}
+PRU_the_lust_for_resources = {
+	range = 0.25
+	fabricate_claims_cost = -0.2
+}
+PRU_zollverein_modifier = {
+	global_trade_goods_size_modifier = 0.2
+}
+PRU_cornerstone_of_a_furnace = {
+	local_build_cost = -0.1
+	trade_goods_size = 0.4
+}
+PRU_excellent_arms_industry = {
+	global_regiment_cost = -0.05
+}
+PRU_early_industry = {
+	local_production_efficiency = 0.15
+}
+PRU_riches_from_china = {
+	trade_value = 5
+	trade_efficiency = 0.05
+}
+PRU_growing_cities = {
+	build_cost = -0.1
+	build_time = -0.25
+}
+PRU_oder_spree_kanal = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+PRU_bromberger_kanal = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+PRU_plauer_kanal = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+PRU_kanals = {
+	burghers_loyalty_modifier = 0.05
+	global_own_trade_power = 0.1
+}
+PRU_empowered_junkers = {
+	nobles_loyalty_modifier = 0.05
+	mil_advisor_cost = -0.1
+}
+PRU_breech_loaded_art = {
+	artillery_levels_available_vs_fort = 1
+	artillery_power = 0.1
+}
+PRU_schlosskirche = {
+	legitimacy = 0.5
+	local_defensiveness = 0.25
+}
+PRU_prussian_manufacture = {
+	trade_value_modifier = 0.1
+}
+PRU_the_prussian_main = {
+	local_tax_modifier = 0.1
+	local_governing_cost = -0.1
+	local_prosperity_growth = 0.25
+}
+PRU_glass_factory = {
+	trade_value = 4
+}
+PRU_hub_of_metalworking = {
+	local_development_cost = -0.1
+}
+PRU_investing = {
+	build_cost = -0.1
+	build_time = -0.25
+}
+PRU_reichsthaler = {
+	trade_efficiency = 0.15
+	global_prov_trade_power_modifier = 0.15
+}
+PRU_no_more_tariffs = {
+	local_production_efficiency = 0.15
+}
+PRU_freeing_the_peasants = {
+	manpower_recovery_speed = 0.2
+	global_unrest = -2
+}
+PRU_potsdamer_glass = {
+	trade_goods_size_modifier = 0.25
+}
+PRU_toleranzedikt = {
+	tolerance_heretic = 2
+	advisor_cost = -0.05
+}
+PRU_bitter_resistance = {
+	church_loyalty_modifier = -0.05
+}
+PRU_promoting_art = {
+	prestige = 0.5
+	monthly_splendor = 2
+}
+PRU_colonization = {
+	local_missionary_strength = 0.03
+	local_culture_conversion_cost = -0.25
+}
+PRU_governmental_help = {
+	expand_administration_cost = -0.1
+}
+PRU_german_ambition = {
+	land_morale = 0.1
+}
+PRU_GER_place_in_the_sun = {
+	administrative_efficiency = 0.05
+}
+PRU_army_with_a_state = {
+	mil_advisor_cost = -0.1
+}
+PRU_vassal_play = {
+	core_creation = 0.33
+	accept_vassalization_reasons = 5
+	development_cost = -0.05
+	vassal_forcelimit_bonus = 1
+}
+PRU_immigration_hub = {
+	local_development_cost = -0.1
+	local_governing_cost = -0.1
+}
+PRU_treaties_of_august = {
+	diplomatic_reputation = 1
+	accept_vassalization_reasons = 5
+}
+prussian_vassal_modifier = {
+	land_forcelimit_modifier = -0.5
+	build_cost = -0.2
+	development_cost = -0.05
+}
+prussian_vassal_modifier_overlord = {
+	technology_cost = -0.01
+	land_forcelimit_modifier = 0.05
+}
+PRU_dev_cost_boost = {
+	local_development_cost = -0.1
+	local_production_efficiency = 0.1
+}
+PRU_BAV_unification = {
+	diplomatic_reputation = 1
+}
+PRU_MKL_unification = {
+	diplomatic_reputation = 0.5
+}
+PRU_WUR_unification = {
+	diplomatic_reputation = 0.5
+}
+PRU_BAD_unification = {
+	diplomatic_reputation = 0.5
+}
+PRU_SAX_unification = {
+	diplomatic_reputation = 0.5
+}
+PRU_adleorden = {
+	army_tradition = 0.5
+	nobles_loyalty_modifier = 0.05
+}
+###################################
+# ME_Ducal_Prussia_Kurland_Modifiers
+###################################
+Ducal_PRU_krolewiec_fort = {
+	local_defensiveness = 0.1
+	land_forcelimit = 3
+	land_maintenance_modifier = -0.1
+}
+Ducal_PRU_influx_of_thought = {
+	tolerance_heretic = 1
+	tolerance_own = 1
+	idea_cost = -0.05
+}
+Ducal_KUR_ambitions = {
+	range = 0.5
+}
+Ducal_KUR_funds = {
+	global_tax_income = 120
+}
+Ducal_KUR_exotic_citizens = {
+	trade_efficiency = 0.2
+}
+Ducal_PRU_inquisitive = {
+	global_heretic_missionary_strength = 0.3
+}
+Ducal_PRU_peaceful = {
+	tolerance_heretic = 1
+}
+
+###################################
+# ME_Hannover_Modifiers
+###################################
+HAN_an_army_bred_for_a_single_purpose = {
+	cavalry_power = 0.1
+}
+
+HAN_stud = {
+	cavalry_cost = -0.1
+	local_regiment_cost = -0.25
+}
+
+HAN_salic_law_abolished = {
+	stability_cost_modifier = -0.1
+}
+
+HAN_salic_law_dynasty = {
+	diplomatic_reputation = 1
+}
+
+HAN_winner_of_tournaments = {
+	improve_relation_modifier = 0.15
+	monthly_splendor = 2
+}
+
+HAN_naval_expansion = {
+	global_ship_cost = -0.1
+	global_ship_trade_power = 0.2
+}
+
+HAN_horse_en_masse = {
+	cavalry_flanking = 0.5
+}
+
+HAN_fought_the_way_into = {
+	land_morale = 0.05
+	prestige = 1
+}
+
+HAN_the_true_saxons = {
+	diplomatic_reputation = 1
+}
+
+HAN_diplo_bonus_one = {
+	reduced_liberty_desire = 5
+}
+
+HAN_diplo_bonus_two = {
+	reduced_liberty_desire = 5
+	diplomatic_annexation_cost = -0.05
+}
+
+HAN_diplo_bonus_three = {
+	diplomatic_annexation_cost = -0.1
+}
+
+HAN_throne_game = {
+	diplomatic_reputation = 2
+	rival_change_cost = -0.5
+}
+
+HAN_agrarian_trade = {
+	development_cost = -0.1
+	trade_efficiency = 0.05
+}
+
+HAN_agrarian_trade_province = {
+	local_development_cost = -0.15
+}
+
+HAN_the_guard_of_hanover = {
+	army_tradition = 0.5
+	infantry_power = 0.05
+}
+
+HAN_new_technology_brings_new_thoughts = {
+	idea_cost = -0.1
+	adm_advisor_cost = -0.1
+}
+
+HAN_prussian_traditions = {
+	discipline = 0.05
+}
+
+HAN_conquest_of_denmark = {
+	global_own_trade_power = 0.25
+}
+
+HAN_extra_fortifications = {
+	hostile_attrition = 0.5
+	local_defensiveness = 0.1
+}
+
+HAN_the_house_of_hanover_is_triumphant = {
+	improve_relation_modifier = 0.15
+	imperial_authority = 0.1
+}
+
+HAN_the_state_of_hanover_is_triumphant = {
+	prestige = 1
+	ae_impact = -0.1
+}
+
+HAN_electoral_dignity = {
+	improve_relation_modifier = 0.2
+}
+
+HAN_dip_cost_cut = {
+	dip_advisor_cost = -0.1
+}
+
+HAN_munzverein = {
+	interest = -0.25
+	trade_efficiency = 0.05
+	burghers_loyalty_modifier = 0.05
+}
+
+HAN_cooperating_with_hanover = {
+	trade_efficiency = 0.1
+}
+
+HAN_maintain_the_status_quo = {
+	nobles_loyalty_modifier = 0.05
+	global_tax_modifier = 0.05
+}
+
+HAN_old_salt_road_modifier = {
+	province_trade_power_modifier = 0.2
+	trade_goods_size_modifier = 0.25
+	picture = "modifier_icon_salt"
+}
+
+HAN_advisor_board = {
+	stability_cost_modifier = -0.1
+	global_autonomy = -0.05
+}
+
+HAN_agrarian_constitution = {
+	global_tax_modifier = 0.1
+	global_trade_goods_size_modifier = 0.05
+}
+
+HAN_guilds = {
+	trade_efficiency = 0.1
+	burghers_loyalty_modifier = 0.05
+}
+
+HAN_ascanian_lineage_returns = {
+	land_morale = 0.1
+	prestige = 0.5
+}
+
+HAN_franconians = {
+	monthly_splendor = 1
+	prestige = 0.25
+}
+	
+HAN_toppled_the_giant = {
+	discipline = 0.05
+}
+
+HAN_the_home_of_weserrenaissance = {
+	global_institution_spread = 0.25
+	global_own_trade_power = 0.05
+}
+
+HAN_north_resolved = {
+	defensiveness = 0.1
+}
+
+HAN_propagation = {
+	ship_power_propagation = 0.25
+	trade_efficiency = 0.1
+}
+
+HAN_growing_capital = {
+	prestige = 1
+	production_efficiency = 0.1
+}
+
+HAN_the_dynastic_struggles = {
+	improve_relation_modifier = 0.1
+}
+
+HAN_hanover_reformed = {
+	legitimacy = 1
+	devotion = 1
+	republican_tradition = 0.5
+}
+
+HAN_loyal_to_emperor = {
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.1
+}
+
+HAN_in_defiance = {
+	ae_impact = -0.1
+}
+###################################
+# ME_Hesse_Modifiers
+###################################
+HES_independent_schmalkaldic_league = {
+	global_heretic_missionary_strength = 0.02
+	tolerance_own = 1
+}
+
+HES_loss_schmalkaldic_league = {
+	religious_unity = 0.25
+	global_heretic_missionary_strength = 0.02
+}
+
+HES_member_of_the_league = {
+	#army_tradition = 1
+	land_morale = 0.025
+}
+
+HES_mercs = {
+	possible_condottieri = 1
+}
+
+HES_militarization_modifier = {
+	war_exhaustion = -0.03
+	army_tradition_decay = -0.01
+}
+
+HES_emperorship_candidacy = {
+	improve_relation_modifier = 0.25
+	prestige_decay = -0.01
+}
+
+HES_united_the_realms = {
+	legitimacy = 0.5
+}
+
+HES_training_elsewhere = {
+	infantry_power = 0.1
+	drill_gain_modifier = 0.2
+}
+
+HES_mainzian_control_denied = {
+	diplomatic_reputation = 1
+	global_autonomy = -0.05
+}
+
+HES_political_manuevers = {
+	improve_relation_modifier = 0.25
+	dip_advisor_cost = -0.1
+}
+
+HES_peace_of_frankfurt = {
+	diplomatic_reputation = 1
+	prestige = 0.5
+}
+
+HES_philipps_university = {
+	global_institution_spread = 0.2
+	innovativeness_gain = 0.25
+}
+
+HES_prosperity = {
+	global_trade_goods_size_modifier = 0.1
+}
+
+HES_henry_ruspe = {
+	reduced_liberty_desire = 10
+}
+
+HES_catholic_unity = {
+	papal_influence = 1
+	improve_relation_modifier = 0.1
+}
+
+
+###################################
+# ME_Rhineland_Modifiers
+###################################
+### GENERIC MISSION MODIFIER
+### USED BY GENERIC RHENISH MISSIONS AND EVENTS
+rhn_generic_fc_mission_modifier = {
+	land_maintenance_modifier = -0.05
+	garrison_size = 0.1
+}
+
+rhn_generic_centralization = {
+	global_autonomy = -0.05
+}
+
+rhn_imperial_approval = {
+	improve_relation_modifier = 0.1
+	ae_impact = -0.05
+}
+
+rhn_generic_production_sector_expanding = {
+	production_efficiency = 0.1
+}
+
+RHN_great_arts = {
+	prestige = 0.5
+}
+
+RHN_generic_spread_knowledge = {
+	idea_cost = -0.05
+	global_institution_spread = 0.25
+}
+
+RHN_generic_propaganda = {
+	global_manpower_modifier = 0.05
+}
+
+RHN_akzise = {
+	global_tax_modifier = 0.15
+}
+
+RHN_promote_faith = {
+	global_heretic_missionary_strength = 0.02
+}
+
+RHN_promote_tolerance = {
+	tolerance_heretic = 2
+	religious_unity = 0.25
+}
+
+RHN_generic_faith = {
+	papal_influence = 2
+	church_power_modifier = 0.5
+	monthly_fervor_increase = 1
+	tolerance_own = 2
+}
+
+rhn_a_renaissance_court = {
+	adm_tech_cost_modifier = -0.1
+}
+###GENERIC END
+###################################
+# ME_Sicily_Modifiers
+###################################
+#1
+sic_subjucation_spanyards = {
+	global_trade_power = 0.20
+	global_autonomy = -0.05
+}
+#2
+sic_papal_delegation = {
+	papal_influence = 0.5
+	diplomatic_reputation = 2
+}
+sic_anti_pope_approval = {
+	legitimacy = 1
+	tolerance_heretic = 1
+}
+sic_marche_savoye = {
+	improve_relation_modifier = 0.25
+	global_tax_modifier = 0.10
+}
+sic_difendere_lu_mari = {
+	leader_naval_shock = 1
+}
+#3
+sic_norman_navy_modifier = {
+	galley_power = 0.2
+}
+
+#4
+sic_military_campaign = {
+	#movement_speed_onto_off_boat_modifier = 0.25
+	manpower_recovery_speed = 0.10
+}
+sic_calabrian_oil = {
+	province_trade_power_modifier = 0.15
+	local_friendly_movement_speed = 0.10
+}
+sic_thousand_sigil = {
+	global_trade_goods_size_modifier = 0.10
+	global_manpower_modifier = 0.10
+}
+#5
+sic_parramentu_sicilianu_modifier = {
+	reform_progress_growth = 0.15
+	local_tax_modifier = 0.10
+}
+sic_champion_christianity = {
+	monarch_military_power = 1
+}
+sic_norman_knights = {
+	infantry_power = 0.10
+}
+
+#Event modifiers
+sic_matteo_carnilivari = {
+	local_development_cost = -0.075
+}
+sic_antonello_messina = {
+	prestige = 0.15
+}
+sic_giorgio_milano = {
+	local_build_cost = -0.15
+	allowed_num_of_buildings = 1
+}
+sic_culummara = {
+	local_defensiveness = 0.10
+	local_monthly_devastation = -0.15
+}
+sic_darban = {
+	local_ship_cost = -0.25
+	ship_recruit_speed = -0.25
+}
+sic_salinagrande = {
+	local_production_efficiency = 0.25
+	trade_goods_size_modifier = 0.25
+}
+sic_guardia_ospitaliera = {
+	local_manpower_modifier = 0.25
+	local_regiment_cost = -0.25
+}
+sic_iron_fist = {
+	min_local_autonomy = -0.25
+	province_trade_power_modifier = -0.33
+}
+sic_preserving = {
+	min_local_autonomy = 0.25
+	province_trade_power_modifier = 0.15
+}
+###################################
+# ME_Naples_Modifiers
+###################################
+#1st column
+nap_dominus_vobiscum = {
+	diplomatic_reputation = 1
+	papal_influence = 1.5
+}
+nap_legacy_ruggero = {
+	local_development_cost = -0.1 
+	local_monthly_devastation = -0.1
+}
+nap_beauty_of_sicily = {
+	local_institution_spread = 0.10
+	local_production_efficiency = 0.10
+	local_tax_modifier = 0.10
+}
+nap_hunyady_legacy = {
+	fire_damage = 0.10
+	cavalry_power = 0.20
+}
+nap_italian_chestnut = {
+	trade_steering = 0.2
+}
+nap_spice_trade = {
+	ship_recruit_speed = -0.25 
+	local_ship_cost = -0.2
+}
+nap_controller_spice_trade = {
+	local_tax_modifier = 0.15
+}
+
+#2nd column
+nap_house_anjou_modifier = {
+	land_morale = 0.10
+	global_unrest = -1
+}
+nap_merchant_navy = {
+	global_ship_trade_power = 0.10
+}
+nap_counter_raids = {
+	galley_power = 0.1
+	#movement_speed_onto_off_boat_modifier = 0.33
+}
+nap_sicilian_ruling = {
+	local_missionary_strength = 0.02
+	local_unrest = -2
+}
+
+#3rd column
+nap_twenty_years_prosperity = {
+	global_unrest = -2
+	development_cost = -0.10
+	global_tax_modifier = 0.05
+}
+nap_liber_augustalis = {
+	church_loyalty_modifier = 0.10
+	burghers_loyalty_modifier = 0.10
+	nobles_loyalty_modifier = 0.10
+}
+nap_struggle_anew = {
+	land_morale = 0.05
+	infantry_power = 0.10
+}
+nap_restore_republic = {
+	trade_goods_size_modifier = 0.10
+	trade_value_modifier = 0.15
+}
+nap_republic_amalfi_modifier = {
+	#trade_deals_slots = 0.01
+}
+nap_lighthouse_otranto = {
+	local_ship_cost = -0.20
+	province_trade_power_modifier = 0.10
+	province_trade_power_value = 5
+}
+nap_le_castella = {
+	local_defensiveness = 0.15
+	ship_recruit_speed = -0.10
+}
+nap_commissioni_marittime = {
+	trade_efficiency = 0.1
+	global_trade_goods_size_modifier = 0.1
+}
+
+#4th column
+nap_military_campaign = {
+	siege_ability = 0.1
+	war_exhaustion = -0.03
+}
+nap_home_skanderbeg = {
+	local_defensiveness = 0.25
+	supply_limit_modifier = 0.25
+}
+nap_dominating_adriatic = {
+	trade_efficiency = 0.1
+}
+nap_champion_christianity = {
+	monarch_diplomatic_power = 1
+}
+nap_benedizione_san_nicola = {
+	papal_influence = 2
+	yearly_patriarch_authority = 0.002
+	improve_relation_modifier = 0.25
+}
+
+#5th column
+nap_sicilian_school = {
+	global_institution_spread = 0.2
+	embracement_cost = -0.10
+}
+nap_federico_II = {
+	technology_cost = -0.05
+	innovativeness_gain = 0.15
+	idea_cost = -0.05
+}
+nap_european_doors = {
+	army_tradition_decay = -0.01
+	navy_tradition_decay = -0.01
+	warscore_cost_vs_other_religion = -0.25
+}
+
+#Event
+nap_defender_christianity = {
+	land_morale = 0.1
+	global_missionary_strength = 0.02
+}
+nap_arsenale_amalfi = {
+	ship_recruit_speed = -0.20
+	local_ship_cost = -0.33
+}
+nap_charta_bambagina = {
+	local_tax_modifier = 0.15
+	institution_growth = 5
+}
+nap_sfusato_amalfitano = {
+	trade_goods_size_modifier = 0.15
+	trade_goods_size = 1
+}
+###################################
+# ME_The_Two_Sicilies_Modifiers
+###################################
+#1
+tts_transumanza = {
+	local_production_efficiency = 0.10
+	local_tax_modifier = 0.10
+}
+
+#2
+tts_army_preparation = {
+	land_maintenance_modifier = -0.15
+}
+tts_nunziatella = {
+	local_manpower_modifier = 0.25
+	local_regiment_cost = -0.25
+}
+
+#3
+tts_norman_sicilia = {
+	navy_tradition = 0.25
+	army_tradition = 0.25
+}
+
+#4
+tts_naval_preparation = {
+	naval_maintenance_modifier = -0.15
+}
+tts_marine_infrantry_corps = {
+	galley_power = 0.10
+	ship_durability = 0.05
+}
+tts_real_marina = {
+	local_sailors_modifier = 0.25
+	blockade_force_required = 0.25
+}
+
+#5
+tts_tonnara_siciliana = {
+	trade_value_modifier = 0.25
+	trade_goods_size = 0.50
+}
+
+#Events
+tts_genio = {
+	land_morale = 0.05
+}
+tts_infantry = {
+	discipline = 0.025
+}
+
+#Decisions
+tts_royal_palace_modifier = {
+	prestige_decay = -0.005
+	advisor_cost = -0.20
+	advisor_pool = 1
+}
+tts_maschio_angioino_modifier = {
+	fort_level = 1
+	local_defensiveness = 0.10
+	supply_limit_modifier = 0.25
+}
+tts_margherita = {
+	local_unrest = -2
+	trade_goods_size_modifier = 0.05
+}
+tts_margherita_tge = {
+	local_unrest = -2
+	trade_goods_size_modifier = 0.15
+}
+tts_deus_vult = {
+	manpower_recovery_speed = 0.10
+	land_morale = 0.05
+	global_missionary_strength = 0.01
+}
+tts_duomo_monreale = {
+	tolerance_heathen = 2
+	local_tax_modifier = 0.15
+	church_loyalty_modifier = 0.15
+}
+tts_parramentu_sicilianu = {
+	reform_progress_growth = 0.15
+	global_unrest = -2
+	nobles_loyalty_modifier = 0.15
+}
+
+###################################
+# ME_Westphalia_Modifiers
+###################################
+WES_lippstadt_cathechism = {
+	tolerance_own = 1
+	church_power_modifier = 0.25
+	monthly_fervor_increase = 1
+}
+
+WES_renaissance = {
+	adm_advisor_cost = -0.1
+}
+
+WES_seized_the_title = {
+	legitimacy = 1
+	republican_tradition = 0.3
+	devotion = 1
+}
+
+WES_consolidation_of_westphalia = {
+	adm_tech_cost_modifier = -0.1
+}
+
+WES_army_modifier = {
+	land_morale = 0.1
+}
+
+WES_control_regained = {
+	global_tax_modifier = 0.10
+	global_autonomy = -0.05
+}
+
+WES_tax = {
+	local_tax_modifier = 0.10
+	local_build_cost = -0.1
+}
+
+WES_unconquered_capital = {
+	defensiveness = 0.1
+	garrison_size = 0.1
+}
+
+WES_catholic_book = {
+	global_heretic_missionary_strength = 0.02
+	papal_influence = 1
+}
+
+OLD_valiant_claimant = {
+	core_creation = -0.1
+	prestige = 0.5
+}
+
+OLD_vri_jade = {
+	local_defensiveness = 0.1
+	local_manpower_modifier = 0.1
+}
+
+PAD_irrigation_modifier = {
+	local_development_cost = -0.15
+	local_monthly_devastation = -0.1
+}
+
+PAD_paderborner = {
+	army_tradition_decay = -0.01
+}
+
+PAD_libori = {
+	prestige = 0.25
+	monthly_splendor = 2
+}
+
+RVA_new_guilds_created = {
+	trade_goods_size_modifier = 0.25
+}
+
+RVA_a_new_heyday = {
+	all_power_cost = -0.01
+	trade_efficiency = 0.1
+}
+
+RVA_as_firm_as_dortmund_modifier = {
+	army_tradition = 0.2
+	local_defensiveness = 0.1
+}
+
+WES_tolerance = {
+	tolerance_heretic = 1
+}
+
+WES_ewalds = {
+	tolerance_own = 1
+	religious_unity = 0.25
+}
+
+WES_reformer = {
+	adm_tech_cost_modifier = -0.05
+}
+
+WES_reform_progress = {
+	global_tax_modifier = 0.1
+	global_autonomy = -0.05
+}
+
+WES_equal_opportunities = {
+	advisor_cost = -0.05
+}
+
+WES_empowered_the_parliament = {
+	reform_progress_growth = 0.25
+	stability_cost_modifier = -0.25
+}
+
+WES_central_power = {
+	max_absolutism = 5
+}
+
+WES_a_modern_state = {
+	administrative_efficiency = 0.05
+}
+
+WES_nobles_displeased = {
+	nobles_loyalty_modifier = -0.1
+}
+
+WES_land_ownership = {
+	global_tax_modifier = 0.1
+	global_unrest = -2
+	trade_goods_size_modifier = 0.05
+}
+
+WES_nobles_pleased = {
+	nobles_loyalty_modifier = 0.05
+	global_manpower_modifier = 0.15
+}
+
+WES_nobles_laws = {
+	nobles_loyalty_modifier = 0.05
+}
+
+WES_unification_of_laws = {
+	state_maintenance_modifier = -0.25
+	global_autonomy = -0.05
+}
+
+WES_courts_adapting = {
+	state_maintenance_modifier = 0.1
+	global_autonomy = 0.05
+}
+
+WES_radical_transition = {
+	global_unrest = 3
+}
+
+WES_progressive_society = {
+	idea_cost = -0.1
+}
+
+WES_rhenish_goods = {
+	production_efficiency = 0.1
+}
+
+WES_conquest = {
+	core_creation = -0.1
+}
+
+WES_defeated_the_southern_bastion = {
+	land_morale = 0.1
+}
+
+WES_saxon_traditions = {
+	#global_manpower_modifier = 0.1
+	discipline = 0.025
+}
+
+WES_soest_city_rights = {
+	diplomatic_reputation = 2
+	caravan_power = 0.15
+}
+
+WES_conscription = {
+	manpower_recovery_speed = 0.1
+	mil_tech_cost_modifier = -0.05
+}
+
+WES_discipline = {
+	land_morale = 0.1
+}
+
+WES_unbreakable_state = {
+	prestige_decay = -0.01
+	global_manpower_modifier = 0.1
+}
+
+WES_enemies_wont_survive = {
+	hostile_attrition = 1
+	mil_advisor_cost = -0.1
+}
+
+WES_compound = {
+	devotion = 0.5
+	prestige = 0.25
+	legitimacy = 0.5
+	republican_tradition = 0.25
+}
+
+WES_manufactory_advent = {
+	#production_efficiency = 0.1
+	global_prov_trade_power_modifier = 0.2
+}
+
+WES_hansa_modifier = {
+	trade_efficiency = 0.1
+	trade_steering = 0.2
+}
+
+WES_the_noble_of_westphalia = {
+	army_tradition = 0.5
+	prestige = 0.5
+}
+
+WES_more_property = {
+	development_cost = -0.1
+	state_maintenance_modifier = -0.1
+}
+
+WES_centralization_modifier = {
+	state_maintenance_modifier = -0.5
+}
+
+WES_favored = {
+	local_development_cost = -0.1
+	local_production_efficiency = 0.25
+	local_tax_modifier = 0.1
+}
+
+WES_equal = {
+	local_production_efficiency = 0.1
+	local_tax_modifier = 0.1
+}
+
+WES_theological_faculties = {
+	tolerance_own = 1
+	papal_influence = 2
+	church_power_modifier = 0.2
+	monthly_fervor_increase = 0.5
+}
+
+WES_united_in_faith = {
+	global_unrest = -1
+	church_loyalty_modifier = 0.05
+}
+
+WES_tolerance_all_around = {
+	tolerance_heretic = 1
+	religious_unity = 0.1
+}
+
+MUN_st_pauls_church_modifier = {
+	local_unrest = -2
+	production_efficiency = 0.1
+}
+
+MUN_the_pious_state = {
+	tolerance_own = 1
+	enforce_religion_cost = -0.5
+}
+
+CLB_the_guelphs = {
+	diplomatic_reputation = 1
+}
+
+OSN_diocese_founded_by_charlemagne = {
+	papal_influence = 1
+	church_loyalty_modifier = 0.025
+}
+
+OSN_city_of_peace = {
+	monthly_splendor = 1
+	improve_relation_modifier = 0.05
+}
+
+WES_significant_religious_minority = {
+	local_production_efficiency = 0.15
+	local_missionary_strength = -0.05
+}
+FKN_conquest_of_nuremburg = {
+	burghers_loyalty_modifier = 0.05
+	trade_efficiency = 0.1
+}
+FKN_conquest_of_wurzburg = {
+	church_loyalty_modifier = 0.05
+	global_tax_modifier = 0.1
+}
+FKN_conquest_of_ansbach = {
+	nobles_loyalty_modifier = 0.05
+	global_manpower_modifier = 0.1
+}
+FKN_imperial_diplomacy = {
+	diplomatic_reputation = 1
+}
+FKN_emperor_recogntion = {
+	ae_impact = -0.1
+}
+FKN_selfreliant_burghers = {
+	local_development_cost = -0.1
+}
+FKN_robber_barons_no_more = {
+	global_autonomy = -0.05
+	trade_efficiency = 0.05
+}
+FKN_territorium_clausum = {
+	yearly_absolutism = 0.4
+}
+FKN_loyal_knightly_estates= {
+	army_tradition_decay = -0.01
+	global_tax_modifier = 0.1
+}
+FKN_franconian_weimar = {
+	advisor_cost = -0.1
+	idea_cost = -0.05
+}
+FKN_the_imperial_cities = {
+	free_city_imperial_authority = 0.05
+}
+FKN_absolute_loyalty_of_electoral = {
+	imperial_authority = 0.2
+	improve_relation_modifier = 0.1
+}
+FKN_west_franconia_modifier = {
+	local_autonomy = -0.05
+}
+FKN_monk_beer = {
+	trade_goods_size = 1
+}
+FKN_new_power_in_germany ={
+	legitimate_subject_elector = 10
+}
+FKN_rising_metropoly = {
+	local_development_cost = -0.1
+}
+FKN_golden_era = {
+	idea_cost = -0.05
+}
+FKN_against_the_goliath = {
+	land_morale = 0.1
+	prestige = 1
+}
+FKN_alcohol = {
+	church_loyalty_modifier = 0.05
+	burghers_loyalty_modifier = 0.05
+}
+FKN_festival = {
+	monthly_splendor = 1
+	local_tax_modifier = 0.5
+}
+FKN_rapid_adoption = {
+	global_trade_goods_size_modifier = 0.05
+}
+FKN_the_protector_1 = {
+	land_morale = 0.05
+}
+FKN_the_protector_2 = {
+	land_morale = 0.05
+	imperial_mercenary_cost = -0.5
+}
+FKN_benevolent_emperor_1 = {
+	improve_relation_modifier = 0.1
+}
+FKN_benevolent_emperor_2 = {
+	improve_relation_modifier = 0.1
+	diplomatic_reputation = 1
+}
+FKN_final_modifier = {
+	improve_relation_modifier = 0.1
+	diplomatic_reputation = 1
+	land_morale = 0.05
+	imperial_mercenary_cost = -0.5
+}
+FKN_on_the_guard = {
+	discipline = 0.05
+}
+FKN_end_of_the_peasants_war = {
+	manpower_recovery_speed = 0.15
+	global_tax_modifier = 0.1
+}
+FKN_german_ambition = {
+	core_creation = -0.2
+}
+FKN_common_currency = {
+	trade_efficiency = 0.10
+}
+FKN_duke = {
+	legitimacy = 1
+	state_maintenance_modifier = -0.2
+	global_own_trade_power = 0.1
+}
+FKN_focus_on_image = {
+	imperial_authority = 0.05
+}
+FKN_focus_on_diplomacy = {
+	diplomatic_reputation = 1
+}
+FKN_focus_on_prosperity = {
+	development_cost = -0.1
+}
+FKN_focus_on_expansion = {
+	core_creation = -0.1
+}
+FKN_spy_activity = {
+	spy_offence = -0.25
+}
+FKN_bear = {
+	army_tradition = 1
+}
+FKN_unicorn = {
+	army_tradition = 0.5
+	nobles_loyalty_modifier = -0.025
+}
+FKN_no_autonomy = {
+	local_autonomy = 0.2
+}
+
+ROT_resistance_in_franconia = {
+	local_defensiveness = 0.15
+}
+ROT_against_the_heretics = {
+	tolerance_own = 1
+}
+ROT_terziarenkloster_modifier = {
+	papal_influence = 0.5
+}
+ROT_heilig_geist_spital_modifier = {
+	supply_limit_modifier = 0.25
+}
+ROT_resisting_foreign_powers = {
+	land_morale = 0.05
+	prestige = 0.5
+}
+ROT_tolerance = {
+	tolerance_heretic = 1
+	tolerance_heathen = 1
+}
+ROT_religion_enforced = {
+	global_heretic_missionary_strength = 0.02
+}
+ROT_the_wine = {
+	trade_value_modifier = 1
+}

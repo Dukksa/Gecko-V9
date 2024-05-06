@@ -1,0 +1,10 @@
+country_decisions = {
+	gecko_court_recruitment_decision = {
+		color = { 166  0  0 }
+		potential = { ai = no }
+		allow = { hidden_trigger = { NOT = { has_country_flag = gecko_mercs_in_tier_selection_event_cflag } } }
+		effect = {
+			country_event = { id = gecko_court.1 }
+		}
+	}
+}

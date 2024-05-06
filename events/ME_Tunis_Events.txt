@@ -1,0 +1,804 @@
+namespace = ME_Tunis_Events
+
+country_event = {
+	id = ME_Tunis_Events.1
+	title = ME_Tunis_Events.1.t
+	desc = ME_Tunis_Events.1.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+		tag = TUN
+	}
+	
+	option = {
+		name = ME_Tunis_Events.1.a
+		
+		ai_chance = { factor = 100 }
+		
+		set_ruler_flag = TUN_extra_ruler_reward
+		custom_tooltip = ME_Tunis_Events.1.tt
+		
+		hidden_effect = {
+			country_event = { id = ME_Tunis_Events.3 days = 60 random = 60 }
+		}
+	}
+}
+
+country_event = {
+	id = ME_Tunis_Events.2
+	title = ME_Tunis_Events.2.t #Oran Fatwa
+	desc = ME_Tunis_Events.2.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		OR = {
+			capital_scope = { region = iberia_region }
+			capital_scope = { region = maghreb_region }
+			capital_scope = { region = italy_region }
+			religion_group = muslim
+		}
+	}
+	
+	option = {
+		name = ME_Tunis_Events.2.a
+		
+		ai_chance = { factor = 100 }
+		
+		add_adm_power = 100
+		add_prestige_or_monarch_power = { amount = 25 }
+		
+		custom_tooltip = " "
+		custom_tooltip = TUN_fatwa_tooltip
+	}
+}
+
+country_event = {
+	id = ME_Tunis_Events.3
+	title = ME_Tunis_Events.3.t #Oran Fatwa
+	desc = ME_Tunis_Events.3.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		kabylia_area = {
+			country_or_non_sovereign_subject_holds = ROOT
+			controlled_by = owner
+		}
+		# 2458 = {
+			# country_or_non_sovereign_subject_holds = ROOT
+			# controlled_by = owner
+		# }
+		# 338 = {
+			# country_or_non_sovereign_subject_holds = ROOT
+			# controlled_by = owner
+		# }
+		OR = {
+			NOT = { exists = KBA }
+			KBA = { is_subject_of = ROOT }
+		}
+	}
+
+	hidden = yes
+	
+	immediate = {
+		kabylia_area = {
+			limit = {
+				country_or_non_sovereign_subject_holds = ROOT
+				controlled_by = owner
+			}
+			cede_province = ROOT
+			add_core = KBA
+		}
+		2458 = {
+			if = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+					controlled_by = owner
+				}
+				cede_province = ROOT
+				add_core = KBA
+			}
+		}
+		338 = {
+			if = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+					controlled_by = owner
+				}
+				cede_province = ROOT
+				add_core = KBA
+			}
+		}
+		
+		release = KBA
+		
+		KBA = {
+			define_ruler = {
+				name = "Abu-l-Hasan Ali"
+				dynasty = "Hafsid"
+				adm = 0
+				dip = 2
+				mil = 3
+				age = 45
+				claim = 95
+				culture = tunisian
+			}
+			kill_heir = { allow_new_heir = no }
+			add_country_modifier = {
+				name = TUN_abu_l_hasans_rebellion_modifier
+				duration = 9125
+			}
+			capital_scope = {
+				infantry = owner
+				infantry = owner
+				infantry = owner
+				infantry = owner
+				infantry = owner
+				infantry = owner
+				infantry = owner
+				infantry = owner
+				infantry = owner
+				infantry = owner
+				infantry = owner
+				infantry = owner
+				infantry = owner
+			}
+			add_manpower = 10
+			add_yearly_manpower = 1
+			if = {
+				limit = {
+					TUN = {
+						ai = yes
+					}
+				}	
+				create_general_with_pips = {
+					add_shock = 1
+					add_fire = 1
+					tradition = 40
+				}
+			}
+			else = {
+				create_general_with_pips = {
+					add_shock = 1
+					add_fire = 1
+					tradition = 30
+				}
+			}
+			set_country_flag = TUN_abu_l_hasan
+			change_primary_culture = tunisian
+		}
+		
+		country_event = { id = ME_Tunis_Events.4 }
+	}
+	
+	option = {
+		name = ME_Tunis_Events.3.a
+		
+		ai_chance = { factor = 100 }
+		
+	}
+}
+
+country_event = {
+	id = ME_Tunis_Events.4
+	title = ME_Tunis_Events.4.t #The Rebellion
+	desc = ME_Tunis_Events.4.d
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		religion_group = muslim
+		capital_scope = {
+			OR = {
+				region = maghreb_region
+				region = egypt_region
+				region = iberia_region
+				region = anatolia_region
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = TUN_abu_l_hasan_fired_flag
+		}
+	}
+	
+	option = {
+		name = ME_Tunis_Events.4.a
+		
+		ai_chance = { factor = 100 }
+		
+		custom_tooltip = TUN_rebellion
+		
+		custom_tooltip = " "
+		
+		declare_war_with_cb = {
+			who = KBA
+			casus_belli = cb_core
+			war_goal_province = 339
+		}
+	}
+	
+	option = {
+		name = ME_Tunis_Events.4.b
+		
+		ai_chance = { factor = 0 }
+		
+		add_legitimacy = -25
+	}
+}
+
+
+country_event = { # Pious Ruler founds a Madrasa - cheap temple
+	id = ME_Tunis_Events.6
+	title = ME_Tunis_Events.6.t
+	desc = ME_Tunis_Events.6.d
+	picture = CITY_VIEW_eventPicture
+      
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			capital_scope = {
+				save_event_target_as = Tunis_capital_Target
+			}
+		}
+	}
+
+	option = {
+		name = ME_Tunis_Events.6.a
+
+		ai_chance = { factor = 1 }
+		
+		trigger = {
+			capital_scope = {
+				NOT = { has_tax_building_trigger = yes }
+			}
+		}
+		
+		goto = Tunis_capital_Target
+		
+		add_treasury = -25
+		capital_scope = {
+			add_building = temple
+		}
+		
+		add_piety = 0.25
+	}
+	
+	option = {
+		name = ME_Tunis_Events.6.b
+		
+		ai_chance = { factor = 1 }
+		
+		add_years_of_income = -0.5
+		add_country_modifier = {
+			name = TUN_send_scholars_abroad
+			duration = 10950
+		}
+	}
+	
+	option = {
+		name = ME_Tunis_Events.6.c
+		
+		ai_chance = { factor = 1 }
+		
+		add_dip_power = 50
+	}
+}
+
+country_event = { # Hafsid Caliphate
+	id = ME_Tunis_Events.8
+	title = ME_Tunis_Events.8.t
+	desc = ME_Tunis_Events.8.d
+	picture = CITY_VIEW_eventPicture
+      
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { exists = GRA }
+				}
+				GRA = {
+					save_event_target_as = Rums_target
+				}
+			}
+			else = {
+				ADU = {
+					save_event_target_as = Rums_target
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = ME_Tunis_Events.8.a
+
+		ai_chance = { factor = 1 }
+		
+		lower_andalucia_area = {
+			limit = {
+				owned_by = ROOT
+			}
+			cede_province = event_target:Rums_target
+		}
+		
+		upper_andalucia_area = {
+			limit = {
+				owned_by = ROOT
+			}
+			cede_province = event_target:Rums_target
+		}
+		
+		event_target:Rums_target = {
+			change_religion = ROOT
+		}
+	}
+	
+	option = {
+		name = ME_Tunis_Events.8.b
+		
+		ai_chance = { factor = 1 }
+		
+		add_prestige_or_monarch_power = { amount = 25 }
+		add_adm_power = 200
+	}
+}
+
+country_event = { # Hafsid Caliphate
+	id = ME_Tunis_Events.9
+	title = ME_Tunis_Events.9.t
+	desc = ME_Tunis_Events.9.d
+	picture = CITY_VIEW_eventPicture
+      
+	is_triggered_only = yes
+
+	option = {
+		name = ME_Tunis_Events.9.a
+
+		ai_chance = { factor = 1 }
+		
+		override_country_name = TUN_ifriqiya
+	}
+	
+	option = {
+		name = ME_Tunis_Events.9.b
+		
+		ai_chance = { factor = 1 }
+		
+		
+	}
+}
+
+country_event = { # Golden Age of Barbary Piracy
+	id = ME_Tunis_Events.10
+	title = ME_Tunis_Events.10.t
+	desc = ME_Tunis_Events.10.d
+	picture = CITY_VIEW_eventPicture
+      
+	is_triggered_only = yes
+
+	option = {
+		name = ME_Tunis_Events.10.a
+
+		ai_chance = { factor = 1 }
+		
+		#give more looting amount
+	}
+	
+	option = {
+		name = ME_Tunis_Events.10.b
+		
+		ai_chance = { factor = 1 }
+		
+		
+	}
+}
+
+country_event = { # Golden Age of Barbary Piracy
+	id = ME_Tunis_Events.11
+	title = ME_Tunis_Events.11.t
+	desc = ME_Tunis_Events.11.d
+	picture = CITY_VIEW_eventPicture
+      
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					NOT = { has_province_flag = TUN_select }
+					NOT = { culture = andalucian }
+					any_neighbor_province = {
+						culture = andalucian
+					}
+				}
+				save_event_target_as = Tunis_target_1
+				set_province_flag = TUN_select
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { has_province_flag = TUN_select }
+					NOT = { culture = andalucian }
+					any_neighbor_province = {
+						culture = andalucian
+					}
+				}
+				save_event_target_as = Tunis_target_2
+				set_province_flag = TUN_select
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { has_province_flag = TUN_select }
+					NOT = { culture = andalucian }
+					any_neighbor_province = {
+						culture = andalucian
+					}
+				}
+				save_event_target_as = Tunis_target_3
+				set_province_flag = TUN_select
+			}
+			event_target:Tunis_target_1 = {
+				ROOT = { set_country_flag = TUN_select_1 }
+				clr_province_flag = TUN_select
+			}
+			event_target:Tunis_target_2 = {
+				ROOT = { set_country_flag = TUN_select_2 }
+				clr_province_flag = TUN_select
+			}
+			event_target:Tunis_target_3 = {
+				ROOT = { set_country_flag = TUN_select_3 }
+				clr_province_flag = TUN_select
+			}
+		}
+	}
+
+	option = {
+		name = ME_Tunis_Events.11.a
+
+		ai_chance = { factor = 1 }
+		
+		add_power_projection = { 
+		type = 10_permanent_power_projection
+		amount = 10 
+}
+		custom_tooltip = MAM_permanent_PP
+		
+		custom_tooltip = " "
+		
+		add_country_modifier = {
+			name = TUN_conquest_of_spain
+			duration = -1
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = TUN_select_1
+			}
+			event_target:Tunis_target_1 = {
+				change_culture = andalucian
+			}
+			if = {
+				limit = {
+					has_country_flag = TUN_select_2
+				}
+				event_target:Tunis_target_2 = {
+					change_culture = andalucian
+				}
+				if = {
+					limit = {
+						has_country_flag = TUN_select_3
+					}
+					event_target:Tunis_target_3 = {
+						change_culture = andalucian
+					}
+				}
+			}
+		}
+	}
+	
+	after = {
+		clr_country_flag = TUN_select_1
+		clr_country_flag = TUN_select_2
+		clr_country_flag = TUN_select_3
+	}
+}
+
+province_event = {
+	id = ME_Tunis_Events.12
+	title = ME_Tunis_Events.12.t
+	desc = ME_Tunis_Events.12.d
+	picture = CITY_VIEW_eventPicture
+
+	goto = 2954
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2954
+		is_year = 1492
+		NOT = { exists = GRA }
+		NOT = { exists = ADU }
+	}
+	
+	mean_time_to_happen = { months = 24 }
+
+	option = {
+		name = ME_Tunis_Events.12.a #we are jewish, we welcome them happily.
+
+		ai_chance = { factor = 1 }
+		trigger = {
+			owner = {
+				religion = jewish
+			}
+		}
+		add_base_tax = 2
+		add_base_production = 1 
+		
+		change_religion = jewish
+		if = {
+			limit = {
+				NOT = { has_building = temple }
+			}
+			add_building = temple
+		}
+		
+		#change_culture = sephardic
+		
+		add_stability_or_adm_power = yes
+	}
+	
+	option = {
+		name = ME_Tunis_Events.12.b #we are not jewish, but we welcome them nonetheless.
+
+		ai_chance = { factor = 1 }
+		trigger = {
+			owner = {
+				NOT = { religion = jewish }
+			}
+		}
+		
+		add_base_tax = 2
+		add_base_production = 1 
+		
+		change_religion = jewish
+		if = {
+			limit = {
+				NOT = { has_building = temple }
+			}
+			add_building = temple
+		}
+		
+		#change_culture = sephardic
+		
+		owner = {
+			add_country_modifier = {
+				name = TUN_jewish_tolerance
+				duration = 9125
+			}
+		}
+		
+		add_province_modifier = {
+			name = TUN_djerba_jewish_community
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = ME_Tunis_Events.12.c #we'd rather more didn't come.
+
+		ai_chance = { factor = 0 }
+		trigger = {
+			owner = {
+				NOT = { religion = jewish }
+			}
+		}
+		
+		add_base_tax = 1 
+		
+		change_religion = jewish	
+		
+		add_province_modifier = {
+			name = TUN_dont_want_sephardic_jews
+			duration = 9125
+		}
+	}
+	
+	option = {
+		name = ME_Tunis_Events.12.e #Ibadi are still here
+
+		ai_chance = { factor = 0 }
+		trigger = {
+			religion = ibadi
+		}
+		
+		add_dip_power = -50 #nothing happens
+	}
+}
+
+country_event = {
+	id = ME_Tunis_Events.13
+	title = ME_Tunis_Events.13.t #Oran Fatwa War - mudejars help out
+	desc = ME_Tunis_Events.13.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	goto = Tunis_the_province
+	
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				33 = {
+					set_country_flag = TUN_manpower
+				}
+				33 = {
+					set_country_flag = TUN_mil_power
+				}
+				33 = {
+					trigger = {
+						war_exhaustion = 1
+					}
+					set_country_flag = TUN_war_exhaustion
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = ME_Tunis_Events.13.a
+		
+		ai_chance = { factor = 100 }
+		
+		if = {
+			limit = {
+				has_country_flag = TUN_manpower
+			}
+			add_yearly_manpower = 0.5
+		}
+		else_if = {
+			limit = {
+				has_country_flag = TUN_mil_power
+			}
+			add_mil_power = 25
+		}
+		else_if = {
+			limit = {
+				has_country_flag = TUN_war_exhaustion
+			}
+			add_war_exhaustion = -0.5
+		}
+		else = { }
+		
+		random = {
+			chance = 10
+			
+			event_target:Tunis_the_province = {
+				change_religion = sunni
+			}
+		}
+	}
+	
+	after = {
+		clr_country_flag = TUN_war_exhaustion
+		clr_country_flag = TUN_mil_power
+		clr_country_flag = TUN_manpower
+	}
+}
+
+country_event = {
+	id = ME_Tunis_Events.22
+	title = ME_Tunis_Events.22.t #Emirate of Sicily
+	desc = ME_Tunis_Events.22.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ME_Tunis_Events.22.a
+		
+		ai_chance = { factor = 100 }
+		
+		#western_sicily_area = {
+		#	change_culture = sicilian_arabic
+		#}
+		
+		#sicily_area = {
+		#	change_culture = sicilian_arabic
+		#}
+		
+		western_sicily_area = {
+			limit = {
+				country_or_non_sovereign_subject_holds = ROOT 
+				owner = {
+					NOT = { ai = no } #do not take provinces away from player iwhtout consent
+				}
+			}
+			#change_culture = sicilian_arabic
+			
+			add_core = SIC
+			cede_province = SIC
+			add_nationalism = -10
+			add_province_modifier = {
+				name = TUN_muslims_in_sicily
+				duration = 9125
+			}
+		}
+		sicily_area = {
+			limit = {
+				country_or_non_sovereign_subject_holds = ROOT 
+				NOT = { province_id = 126 }
+				owner = {
+					NOT = { ai = no } #do not take provinces away from player iwhtout consent
+				}
+			}
+			#change_culture = sicilian_arabic
+			
+			add_core = SIC
+			cede_province = SIC
+			add_nationalism = -10
+			add_province_modifier = {
+				name = TUN_muslims_in_sicily
+				duration = 9125
+			}
+		}
+		
+		release = SIC
+		
+		SIC = {
+			#change_primary_culture = sicilian_arabic
+			override_country_name = SIC_emirate_of_siicly_str
+			
+			add_country_modifier = {
+				name = TUN_emirate_of_siicly
+				duration = -1
+			}
+			
+			#give cores on south italy
+			
+			hidden_effect = {
+				change_religion = ROOT
+				capital_scope = {
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+				}
+			}
+		}
+		vassalize = SIC
+	}
+	
+	option = {
+		name = ME_Tunis_Events.22.b
+		
+		ai_chance = { factor = 0 }
+	
+		western_sicily_area = {
+			add_nationalism = -10
+			add_province_modifier = {
+				name = TUN_muslims_in_sicily
+				duration = 9125
+			}
+		}
+		sicily_area = {
+			add_nationalism = -10
+			add_province_modifier = {
+				name = TUN_muslims_in_sicily
+				duration = 9125
+			}
+		}
+		
+		add_prestige_or_monarch_power = { amount = 15 }
+	}
+}

@@ -1,0 +1,10 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = chinese
+religion = confucianism
+primary_culture = korean 
+capital = 4227
+fixed_capital = 4227
+add_truce_with = MJZ
+historical_rival = MJZ

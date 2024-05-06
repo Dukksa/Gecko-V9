@@ -1,0 +1,529 @@
+X_center_of_trade_effect = { #Not using country flags to switch between max levels due to tooltips.
+	[[standard_max_lvl_2]
+		if = {
+			limit = {
+				NOT = { province_has_center_of_trade_of_level = 1 }
+			}
+			center_of_trade = 1
+		}
+		else = {
+			limit = {
+				NOT = { province_has_center_of_trade_of_level = 2 }
+			}
+			add_center_of_trade_level = 1
+		}
+	]
+	[[standard_max_lvl_3]
+		if = {
+			limit = {
+				NOT = { province_has_center_of_trade_of_level = 1 }
+			}
+			center_of_trade = 1
+		}
+		else = {
+			limit = {
+				NOT = { province_has_center_of_trade_of_level = 3 }
+			}
+			add_center_of_trade_level = 1
+		}
+	]
+	[[cost_equivalency_max_lvl_2]
+		if = {
+			limit = {
+				NOT = { province_has_center_of_trade_of_level = 1 }
+			}
+			center_of_trade = 1
+		}
+		else_if = {
+			limit = { NOT = { province_has_center_of_trade_of_level = 2 } }
+			add_center_of_trade_level = 1
+		}
+		else = { 
+			custom_tooltip = X_center_of_trade_effect_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						province_has_center_of_trade_of_level = 2
+						NOT = { province_has_center_of_trade_of_level = 3 }
+					}
+					owner = {
+						set_variable = {
+							which = X_center_of_trade_effect_cost_variable
+							value = 0
+						}
+						export_to_variable = {
+							variable_name = X_center_of_trade_effect_cost_variable
+							value = modifier:center_of_trade_upgrade_cost
+							who = ROOT
+						}
+						change_variable = {
+							which = X_center_of_trade_effect_cost_variable
+							value = 1
+						}
+						multiply_variable = {
+							which = X_center_of_trade_effect_cost_variable
+							value = 200
+						}
+						for_variable_amount = {
+							variable = X_center_of_trade_effect_cost_variable
+							effect = "
+								add_treasury = 1
+							"
+						}
+					}
+				}
+				else = {
+					owner = { 
+						set_variable = {
+							which = X_center_of_trade_effect_cost_variable
+							value = 0
+						}
+						export_to_variable = {
+							variable_name = X_center_of_trade_effect_cost_variable
+							value = modifier:center_of_trade_upgrade_cost
+							who = ROOT
+						}
+						change_variable = {
+							which = X_center_of_trade_effect_cost_variable
+							value = 1
+						}
+						multiply_variable = {
+							which = X_center_of_trade_effect_cost_variable
+							value = 1000
+						}
+						for_variable_amount = {
+							variable = X_center_of_trade_effect_cost_variable
+							effect = "
+								add_treasury = 1
+							"
+						}
+					}
+				}
+			}
+		}
+	]
+	[[cost_equivalency_max_lvl_3]
+		if = {
+			limit = {
+				NOT = { province_has_center_of_trade_of_level = 1 }
+			}
+			center_of_trade = 1
+		}
+		else_if = {
+			limit = { NOT = { province_has_center_of_trade_of_level = 3 } }
+			add_center_of_trade_level = 1
+		}
+		else = {
+			custom_tooltip = X_center_of_trade_effect_tt
+			hidden_effect = {
+				owner = {
+					set_variable = {
+						which = X_center_of_trade_effect_cost_variable
+						value = 0
+					}
+					export_to_variable = {
+						variable_name = X_center_of_trade_effect_cost_variable
+						value = modifier:center_of_trade_upgrade_cost
+						who = ROOT
+					}
+					change_variable = {
+						which = X_center_of_trade_effect_cost_variable
+						value = 1
+					}
+					multiply_variable = {
+						which = X_center_of_trade_effect_cost_variable
+						value = 1000
+					}
+					for_variable_amount = {
+						variable = X_center_of_trade_effect_cost_variable
+						effect = "
+							add_treasury = 1
+						"
+					}
+				}
+			}
+		}
+	]
+}
+
+bastard_golden_age_effect = {
+	if = {
+			limit = {
+				has_dlc = "Mandate of Heaven"
+			}
+			custom_tooltip = bastard_if_used_ge_rest_else_30_years_extension_tt 
+			if = {
+				limit = {
+					has_country_flag = urbanisation_taken 
+					NOT = { has_country_modifier = urbanisation }
+				} 
+				clr_country_flag = urbanisation_taken
+			}
+			else_if = {
+				limit = { 
+					has_country_modifier = urbanisation
+					has_country_flag = urbanisation_taken 
+				} 
+					extend_country_modifier = {
+						name = urbanisation
+						duration = 10950
+					}
+			}
+	}
+}	
+
+TUN_enable_colonize_tuat_decision = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = TUN_colonize_tuat_flag 
+			}
+		}
+		set_country_flag = TUN_colonize_tuat_flag
+		custom_tooltip = TUN_enable_colonize_tuat_decision
+	}
+}
+
+TUN_enable_colonize_djado_decision = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = TUN_colonize_djado_flag 
+			}
+		}
+		set_country_flag = TUN_colonize_djado_flag
+		custom_tooltip = TUN_enable_colonize_djado_decision
+	}
+}
+bastard_dev_cost_add_from_buildings = {
+	if = {
+		limit = {
+			num_of_buildings_in_province = 1
+			NOT = {num_of_buildings_in_province = 2}
+		}
+		add_province_modifier = {
+				name = bastard_dev_cost_modifier_1
+				duration = -1
+		}
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 2
+			NOT = {num_of_buildings_in_province = 3}
+		}
+		remove_province_modifier = bastard_dev_cost_modifier_1
+		add_province_modifier = {
+				name = bastard_dev_cost_modifier_2
+				duration = -1
+		}
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 3
+			NOT = {num_of_buildings_in_province = 4}
+		}
+		remove_province_modifier = bastard_dev_cost_modifier_2
+		add_province_modifier = {
+				name = bastard_dev_cost_modifier_3
+				duration = -1
+		}
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 4
+			NOT = {num_of_buildings_in_province = 5}
+		}
+		remove_province_modifier = bastard_dev_cost_modifier_3
+		add_province_modifier = {
+				name = bastard_dev_cost_modifier_4
+				duration = -1
+		}
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 5
+			NOT = {num_of_buildings_in_province = 6}
+		}
+		remove_province_modifier = bastard_dev_cost_modifier_4
+		add_province_modifier = {
+				name = bastard_dev_cost_modifier_5
+				duration = -1
+		}
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 6
+			NOT = {num_of_buildings_in_province = 7}
+		}
+		remove_province_modifier = bastard_dev_cost_modifier_5
+		add_province_modifier = {
+				name = bastard_dev_cost_modifier_6
+				duration = -1
+		}
+	}
+}
+
+bastard_dev_cost_remove_from_buildings = {
+	if = {
+		limit = {
+			NOT = {num_of_buildings_in_province = 1}
+		}
+		remove_province_modifier = bastard_dev_cost_modifier_1
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 1
+			NOT = {num_of_buildings_in_province = 2}
+		}
+		remove_province_modifier = bastard_dev_cost_modifier_2
+		add_province_modifier = {
+				name = bastard_dev_cost_modifier_1
+				duration = -1
+		}
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 2
+			NOT = {num_of_buildings_in_province = 3}
+		}
+		remove_province_modifier = bastard_dev_cost_modifier_3
+		add_province_modifier = {
+				name = bastard_dev_cost_modifier_2
+				duration = -1
+		}
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 3
+			NOT = {num_of_buildings_in_province = 4}
+		}
+		remove_province_modifier = bastard_dev_cost_modifier_4
+		add_province_modifier = {
+				name = bastard_dev_cost_modifier_3
+				duration = -1
+		}
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 4
+			NOT = {num_of_buildings_in_province = 5}
+		}
+		remove_province_modifier = bastard_dev_cost_modifier_5
+		add_province_modifier = {
+				name = bastard_dev_cost_modifier_4
+				duration = -1
+		}
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 5
+			NOT = {num_of_buildings_in_province = 6}
+		}
+		remove_province_modifier = bastard_dev_cost_modifier_6
+		add_province_modifier = {
+				name = bastard_dev_cost_modifier_5
+				duration = -1
+		}
+	}
+}
+
+bastard_dev_cost_terrain_add_from_buildings = {
+	if = {
+		limit = {
+			has_courthouse_building_trigger = yes
+			OR = {
+				has_terrain = woods
+				has_terrain = forest
+			}	
+		}
+		add_province_modifier = {
+			name = provincial_investment_woods
+			duration = -1
+		}	
+	}
+	if = {
+		limit = {
+			has_courthouse_building_trigger = yes
+			has_terrain = hills
+		}
+		add_province_modifier = {
+			name = provincial_investment_hills
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_courthouse_building_trigger = yes
+			has_terrain = mountain
+		}
+		add_province_modifier = {
+			name = provincial_investment_mountain
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_courthouse_building_trigger = yes
+			has_terrain = jungle
+		}
+		add_province_modifier = {
+			name = provincial_investment_jungle
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_courthouse_building_trigger = yes
+			has_terrain = marsh
+		}
+		add_province_modifier = {
+			name = provincial_investment_marsh
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_courthouse_building_trigger = yes
+			has_terrain = desert
+		}
+		add_province_modifier = {
+			name = provincial_investment_desert
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_courthouse_building_trigger = yes
+			has_terrain = coastal_desert
+		}
+		add_province_modifier = {
+			name = provincial_investment_coastal_desert
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_courthouse_building_trigger = yes
+			has_terrain = coastline
+		}
+		add_province_modifier = {
+			name = provincial_investment_coastline
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_courthouse_building_trigger = yes
+			has_terrain = highlands
+		}
+		add_province_modifier = {
+			name = provincial_investment_highlands
+			duration = -1
+		}
+	}
+	
+	if = {
+		limit = {
+			has_courthouse_building_trigger = yes
+			has_terrain = savannah
+		}
+		add_province_modifier = {
+			name = provincial_investment_savannah
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_courthouse_building_trigger = yes
+			has_terrain = steppe
+		}
+		add_province_modifier = {
+			name = provincial_investment_steppe
+			duration = -1
+		}
+	}
+}
+
+bastard_dev_cost_terrain_remove_from_buildings = {
+	if = {
+		limit = {
+			NOT = { has_courthouse_building_trigger = yes }
+			OR = {
+				has_terrain = woods
+				has_terrain = forest
+			}	
+		}
+		remove_province_modifier = provincial_investment_woods
+	}
+	if = {
+		limit = {
+			NOT = { has_courthouse_building_trigger = yes }
+			has_terrain = hills
+		}
+		remove_province_modifier = provincial_investment_hills
+	}
+	if = {
+		limit = {
+			NOT = { has_courthouse_building_trigger = yes }
+			has_terrain = mountain
+		}
+		remove_province_modifier = provincial_investment_mountain
+	}
+	if = {
+		limit = {
+			NOT = { has_courthouse_building_trigger = yes }
+			has_terrain = jungle
+		}
+		remove_province_modifier = provincial_investment_jungle
+	}
+	if = {
+		limit = {
+			NOT = { has_courthouse_building_trigger = yes }
+			has_terrain = marsh
+		}
+		remove_province_modifier = provincial_investment_marsh
+	}
+	if = {
+		limit = {
+			NOT = { has_courthouse_building_trigger = yes }
+			has_terrain = desert
+		}
+		remove_province_modifier = provincial_investment_desert
+	}
+	if = {
+		limit = {
+			NOT = { has_courthouse_building_trigger = yes }
+			has_terrain = coastal_desert
+		}
+		remove_province_modifier = provincial_investment_coastal_desert
+	}
+	if = {
+		limit = {
+			NOT = { has_courthouse_building_trigger = yes }
+			has_terrain = coastline
+		}
+		remove_province_modifier = provincial_investment_coastline
+	}
+	if = {
+		limit = {
+			NOT = { has_courthouse_building_trigger = yes }
+			has_terrain = highlands
+		}
+		remove_province_modifier = provincial_investment_highlands
+	}
+	
+	if = {
+		limit = {
+			NOT = { has_courthouse_building_trigger = yes }
+			has_terrain = savannah
+		}
+		remove_province_modifier = provincial_investment_savannah
+	}
+	if = {
+		limit = {
+			NOT = { has_courthouse_building_trigger = yes }
+			has_terrain = steppe
+		}
+		remove_province_modifier = provincial_investment_steppe
+	}
+}

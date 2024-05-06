@@ -1,0 +1,68 @@
+namespace = gc_burgundy_event
+
+country_event = { #Ascension of Burgundy
+	id = gc_burgundy_event.1
+	title = "gc_burgundy_event.1.t"
+	desc = "gc_burgundy_event.1.d"
+	picture = REFORM_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = gc_burgundy_event.1.a
+		
+		capital_scope = {
+			add_base_tax = 3
+			add_base_production = 3
+			add_base_manpower = 3
+		}
+		add_treasury = 200
+		change_adm = 1
+		change_dip = 1
+		change_mil = 1
+	}
+}
+
+country_event = { #purchase the counties
+	id = gc_burgundy_event.2
+	title = "gc_burgundy_event.2.t"
+	desc = "gc_burgundy_event.2.d"
+	picture = REFORM_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = gc_burgundy_event.2.a
+		
+		75 = {
+			cede_province = BUR
+		}
+		75 = {
+			add_core = BUR
+		}
+		75 = {
+			add_core = HAB
+		}
+		4765 = {
+			cede_province = BUR
+		}
+		4765 = {
+			add_core = BUR
+		}
+		4765 = {
+			add_core = HAB
+		}
+		1880 = {
+			cede_province = BUR
+		}
+		1880 = {
+			add_core = BUR
+		}
+		1880 = {
+			add_core = HAB
+		}
+		add_treasury = -750
+	}
+}

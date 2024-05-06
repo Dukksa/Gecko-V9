@@ -1,0 +1,15 @@
+#1142 - Dendi
+
+owner = SON
+controller = SON
+add_core = SON
+culture = songhai
+is_city = yes
+base_manpower = 1
+religion = sunni
+capital = "Lulama"
+trade_goods = ivory
+hre = no
+base_tax = 2
+base_production = 2
+discovered_by = sub_saharan

@@ -1,0 +1,26 @@
+custom_icon = { #Green alert that appears when free war taxes are available
+	name = alert_free_war_taxes
+	potential = {
+		ai = no
+		has_wartaxes = no
+		NOT = {
+			has_global_modifier_value = {
+				which = war_taxes_cost_modifier
+				value = -0.51
+			}
+		}
+	}
+	tooltip = alert_free_war_taxes_tooltip
+}
+custom_icon = { #Yellow alert that appears when you are paying for war taxes
+	name = alert_paying_war_taxes
+	potential = {
+		ai = no
+		has_wartaxes = yes
+		has_global_modifier_value = {
+			which = war_taxes_cost_modifier
+			value = -0.51
+		}
+	}
+	tooltip = alert_paying_war_taxes_tooltip
+}

@@ -1,0 +1,610 @@
+namespace = echo
+
+#advisors
+
+###we stand alone dev event####
+country_event = {
+    id = echo.2
+    title = echo.2.t
+    desc = echo.2.d
+    picture = COURT_eventPicture
+
+    trigger = {
+            has_country_modifier = We_stand_alone
+			NOT = {is_great_power = yes}
+			adm_tech = 5
+			
+			NOT = {
+				has_country_modifier = echo_development
+			}	
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+	
+    option = {
+		name = echo.2.a
+		add_country_modifier = {
+				name = echo_development
+				duration = 5475
+			}
+	}
+}
+
+# Revealing Africa to Africans
+country_event = {
+    id = echo.5
+    title = "echo.5.t"
+    desc = "echo.5.d"
+    picture = COURT_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+	
+    immediate = {
+		hidden_effect = {
+			set_country_flag = PR_discover_africa_flag
+			niger_region = {
+				ROOT = {
+								discover_province = PREV
+							}
+			}
+			guinea_region= {
+				ROOT = {
+								discover_province = PREV
+							}
+			}	
+			sahel_region = {
+				ROOT = {
+								discover_province = PREV
+							}
+			}	
+			horn_of_africa_region = {
+				ROOT = {
+								discover_province = PREV
+							}
+			}	
+			maghreb_region = {
+				ROOT = {
+								discover_province = PREV
+							}
+			}		
+
+			east_africa_region = {
+				ROOT = {
+								discover_province = PREV
+							}
+			}
+			kongo_region = {
+				ROOT = {
+								discover_province = PREV
+							}
+			}
+			south_africa_region = {
+				ROOT = {
+								discover_province = PREV
+							}
+			}
+			central_africa_region = {
+				ROOT = {
+								discover_province = PREV
+							}
+			}
+			egypt_region = {
+				ROOT = {
+								discover_province = PREV
+							}
+			}
+		}
+	}
+	
+	option = {
+        name = "echo.5.a"
+		custom_tooltip = echo.5.a
+		ai_chance = {
+			factor = 0
+		}
+    }
+}
+
+country_event = {
+    id = echo.6
+    title = echo.6.t
+    desc = echo.6.d
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+	
+    option = {
+		name = echo.6.a
+	}
+}	
+
+country_event = {
+    id = echo.7
+    title = echo.7.t
+    desc = echo.7.d
+    picture = COURT_eventPicture
+
+    trigger = {
+		NOT = {
+		 	current_age = age_of_discovery
+		}
+		has_country_modifier = mam_age_ability_modifier
+	}
+	hidden = yes
+    option = {
+		name = echo.7.a
+		remove_country_modifier = mam_age_ability_modifier
+	}
+}	
+
+country_event = {
+    id = echo.8
+    title = echo.8.t
+    desc = echo.8.d
+    picture = COURT_eventPicture
+
+    trigger = {
+		NOT = {
+		 	current_age = age_of_discovery
+		}
+		has_country_modifier = tur_age_ability_modifier
+	}
+	hidden = yes
+    option = {
+		name = echo.8.a
+		remove_country_modifier = tur_age_ability_modifier
+	}
+}
+
+country_event = {
+    id = echo.9
+    title = echo.9.t
+    desc = echo.9.d
+	picture = COURT_eventPicture
+
+	hidden = yes
+	trigger = {
+		NOT = { is_year = 1445}
+		NOT = { has_country_flag = start_estates_setup }
+		ai = no
+	}
+	option = {
+		change_estate_land_share = {
+			estate = all
+			share = 25
+		}
+		set_country_flag = start_estates_setup
+	}
+}
+country_event = { #Recruit Adm Advisor
+	id = echo.10
+	title = echo.10.title
+	desc = echo.10.desc
+	picture = AULIC_COUNCIL_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = echo.10.a
+
+		add_adm_power = -25
+		create_advisor = philosopher
+	}
+	option = {
+		name = echo.10.b
+
+		add_adm_power = -25
+		create_advisor = natural_scientist
+	}
+	option = {
+		name = echo.10.c
+
+		add_adm_power = -25
+		create_advisor = artist
+	}
+	option = {
+		name = echo.10.d
+
+		add_adm_power = -25
+		create_advisor = treasurer
+	}
+	option = {
+		name = echo.10.e
+
+		add_adm_power = -25
+		create_advisor = theologian 
+	}
+	option = {
+		name = echo.10.f
+
+		add_adm_power = -25
+		create_advisor = master_of_mint
+	}
+	option = {
+		name = echo.10.g
+
+		add_adm_power = -25
+		create_advisor = inquisitor
+	}
+	option = {
+		name = echo.10.h
+		#nothing
+	}
+}
+
+country_event = { #Recruit Dip advisor
+	id = echo.11
+	title = echo.11.title
+	desc = echo.11.desc
+	picture = DIPLOMACY_SIGNING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = echo.11.a
+
+		add_dip_power = -25
+		create_advisor = statesman
+	}
+	option = {
+		name = echo.11.b
+
+		add_dip_power = -25
+		create_advisor = naval_reformer
+	}
+	option = {
+		name = echo.11.c
+
+		add_dip_power = -25
+		create_advisor = trader
+	}
+	option = {
+		name = echo.11.d
+
+		add_dip_power = -25
+		create_advisor = spymaster
+	}
+	option = {
+		name = echo.11.e 
+
+		add_dip_power = -25
+		create_advisor = colonial_governor
+	}
+	option = {
+		name = echo.11.f
+
+		add_dip_power = -25
+		create_advisor = diplomat
+	}
+	option = {
+		name = echo.11.g
+
+		add_dip_power = -25
+		create_advisor = navigator
+	}
+	option = {
+		name = echo.11.h
+		#nothing
+	}
+}
+
+country_event = { #Recruit Mil Advisor 
+	id = echo.12
+	title = echo.12.title
+	desc = echo.12.desc
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = echo.12.a
+
+		add_mil_power = -25
+		create_advisor = army_reformer
+	}
+	option = {
+		name = echo.12.b
+
+		add_mil_power = -25
+		create_advisor = army_organiser
+	}
+	option = {
+		name = echo.12.c
+
+		add_mil_power = -25
+		create_advisor = commandant
+	}
+	option = {
+		name = echo.12.d
+
+		add_mil_power = -25
+		create_advisor = quartermaster
+	}
+	option = {
+		name = echo.12.e
+
+		add_mil_power = -25
+		create_advisor = recruitmaster
+	}
+	option = {
+		name = echo.12.f
+
+		add_mil_power = -25
+		create_advisor = fortification_expert
+	}
+	option = {
+		name = echo.12.g
+
+		add_mil_power = -25
+		create_advisor = grand_captain
+	}
+	option = {
+		name = echo.12.h
+		#nothing
+	}
+}
+
+###remove we stand alone dev event####
+country_event = {
+    id = echo.13
+    title = echo.13.t
+    desc = echo.13.d
+    picture = COURT_eventPicture
+	hidden = yes
+    trigger = {
+			is_great_power = yes	
+			has_country_modifier = echo_development	
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+	
+    option = {
+		name = echo.2.a
+		remove_country_modifier = echo_development
+	}
+}
+
+country_event = {
+    id = echo.14 #
+    title = echo.14.t
+    desc = echo.14.d
+    picture = COURT_eventPicture
+    is_triggered_only = yes
+	
+	option = {
+		name = echo.14.a
+		custom_tooltip = bastard_renew_burgher_priv_tooltip
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 10
+		}
+		reapply_estate_privilege = { privilege = estate_burghers_financial_demand }
+	}
+	option = {
+		name = echo.14.b
+		custom_tooltip = bastard_revoke_burgher_priv_tooltip
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -10
+		}
+		hidden_effect = {
+			remove_estate_privilege = estate_burghers_financial_demand
+		}
+	}
+}
+
+
+country_event = {
+    id = echo.16
+    title = echo.16.t
+    desc = echo.16.d
+    picture = COURT_eventPicture
+
+    trigger = {
+		NOT = { great_power_rank = 2 }
+		NOT = { has_country_modifier = Great_power_dominance_established }
+		NOT = { governing_capacity_percentage = 1.01 }
+		NOT = {
+		 	current_age = age_of_discovery
+		}
+	}
+	mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+		name = echo.16.a
+		add_country_modifier = {
+			name = Great_power_dominance_established
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = mid_power_dominance_established
+			}
+			remove_country_modifier = mid_power_dominance_established
+		}	
+	}
+}
+
+country_event = {
+    id = echo.17
+    title = echo.17.t
+    desc = echo.17.d
+    picture = COURT_eventPicture
+
+    trigger = {
+		great_power_rank = 4
+		has_country_modifier = Great_power_dominance_established
+		NOT = { is_lacking_institutions = yes }
+	}
+	mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+		name = echo.17.a
+		remove_country_modifier = Great_power_dominance_established
+		add_country_modifier = {
+			name = mid_power_dominance_established
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+    id = echo.18
+    title = echo.18.t
+    desc = echo.18.d
+    picture = COURT_eventPicture
+	hidden = yes
+    trigger = {
+		army_size = 750
+		NOT =  { has_country_modifier = anti_lag }
+	}
+	mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+		name = echo.18.a
+		add_country_modifier = {
+			name = anti_lag
+			duration = -1
+			hidden = yes
+		}
+	}
+}
+
+country_event = {
+    id = echo.19
+    title = echo.19.t
+    desc = echo.19.d
+    picture = COURT_eventPicture
+
+    trigger = {
+		NOT = { has_country_modifier = Merc_payments_reneged }
+		has_country_modifier = Merc_payments
+	}
+	mean_time_to_happen = {
+        months = 1
+    }
+	hidden = yes
+    option = {
+		name = echo.15.a
+		add_country_modifier = {
+			name = Merc_payments_reneged
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+    id = echo.20
+    title = echo.20.t
+    desc = v.d
+    picture = COURT_eventPicture
+
+    trigger = {
+		has_country_modifier = Merc_payments_reneged
+		NOT = {has_country_modifier = Merc_payments }
+	}
+	
+	mean_time_to_happen = {
+        months = 1
+    }
+	hidden = yes
+    option = {
+		name = echo.18.a
+		remove_country_modifier = Merc_payments_reneged
+	}
+}
+
+#End of the Righteous Army
+country_event = {
+	id = echo.21
+	title = echo.21.t
+	desc = echo.21.d
+	picture = BATTLE_eventPicture
+	is_triggered_only = yes
+
+	trigger = {
+		is_at_war = no
+		has_country_modifier = defense_of_the_low_countries
+	}
+
+	option = {
+		name = flavor_kor.21.a
+		remove_country_modifier = defense_of_the_low_countries
+	}
+}
+
+country_event = { #faceting failsafe
+	id = echo.22
+	title = echo.22.t
+	desc = echo.22.d
+	picture = TRADEGOODS_eventPicture
+	goto = diamond_city
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		ai = no
+		has_global_flag = faceting_happened
+		NOT = { has_global_flag = faceting_failsafe }
+		has_institution = renaissance
+		prestige = 50
+		151 = {
+			renaissance = 100
+			OR = {
+				trade_goods = glass
+				trade_goods = gems
+			}
+			development = 15
+			is_state = yes
+			is_city = yes
+			province_without_special_goods_produced_trigger = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = echo.22.a
+		151 = {
+			if = {
+				limit = {
+					NOT = { trade_goods = gems }
+				}
+				change_trade_goods = gems
+			}
+			add_permanent_province_modifier = {
+				name = diamond_district
+				duration = -1
+			}
+		}
+		set_global_flag = faceting_failsafe
+	}
+}
+
+country_event = {
+	id = echo.23
+	title = echo.23.t
+	desc = echo.23.d
+	picture = BATTLE_eventPicture
+	hidden = yes
+	trigger = {
+		is_march = yes
+		NOT = {has_country_flag = march_ideas_taken}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		swap_free_idea_group = yes
+		set_country_flag = march_ideas_taken
+	}
+}

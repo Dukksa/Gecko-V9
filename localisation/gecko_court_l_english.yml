@@ -1,0 +1,14 @@
+﻿l_english:
+ #Decisions
+ gecko_court_recruitment_decision_title:0 "Court Recruitment"
+ gecko_court_recruitment_decision_desc:0 ""
+ #Events
+ gecko_court.1.t:0 "Court Recruitment"
+ gecko_court.1.d1:0 ""
+ gecko_court.1.a:0 "Recruit Administrative advisor"
+ gecko_court.1.b:0 "Recruit Diplomatic advisor"
+ gecko_court.1.c:0 "Recruit Military advisor"
+ gecko_court.1.d:0 "Hire a foreign conquistador"
+ gecko_court.1.e:0 "Hire a foreign explorer"
+ gecko_court.1.f:0 "Promote colonial expansion"
+ gecko_court.1.g:0 "Back"

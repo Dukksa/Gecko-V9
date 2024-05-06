@@ -1,0 +1,103 @@
+illius_qui_se_pro_divini = {
+    mechanics = {
+        crusades_after_age_limit
+    }
+	modifier = {
+		ae_impact = -0.1
+	}
+	potential = {
+	}
+    trigger = {
+        is_papal_controller = yes
+		NOT = { 
+			OR = {
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+			}
+		}
+    }
+    ai_will_do = {
+        factor = 0
+    }
+}
+
+apostolicae_servitutis = {
+    modifier = {
+        curia_powers_cost = -0.5
+    }
+	potential = {
+	}
+    trigger = {
+        is_papal_controller = yes
+    }
+    ai_will_do = {
+        factor = 5
+    }
+}
+
+praeclara_carissimi = {
+    modifier = {
+		tolerance_heathen = 2
+        build_cost = -0.05
+    }
+	potential = {
+	}
+    trigger = {
+        is_papal_controller = yes
+    }
+    ai_will_do = {
+        factor = 2
+    }
+}
+
+immensa_aeterni_dei = {
+    modifier = {
+        embracement_cost = -0.1
+        global_institution_spread = 0.25
+    }
+    mechanics = {
+        cardinals_spread_institution
+    }
+	potential = {
+	}
+    trigger = {
+        is_papal_controller = yes
+    }
+    ai_will_do = {
+        factor = 0
+        modifier = {
+            factor = 3
+            is_lacking_institutions = yes
+        }
+    }
+}
+
+libertas_ecclesiae = {
+    modifier = {
+       technology_cost = -0.05
+    }
+	potential = {
+	}
+    trigger = {
+        is_papal_controller = yes
+    }
+    ai_will_do = {
+        factor = 0
+    }
+}
+
+dei_gratia_rex = {
+    modifier = {
+        manpower_in_true_faith_provinces = 0.10
+        unrest_catholic_provinces = -2
+        drill_decay_modifier = -0.15
+    }
+	potential = {
+	}
+    trigger = {
+        is_papal_controller = yes
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}

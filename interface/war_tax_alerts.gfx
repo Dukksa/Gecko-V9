@@ -1,0 +1,16 @@
+spriteTypes = {
+	spriteType = { #Free war tax alert
+		name = "GFX_alert_free_war_taxes"
+		texturefile = "gfx//interface//war_tax_alerts//alert_free_war_taxes.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = { #Paying war tax alert
+		name = "GFX_alert_paying_war_taxes"
+		texturefile = "gfx//interface//war_tax_alerts//alert_paying_war_taxes.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}

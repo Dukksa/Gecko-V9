@@ -1,0 +1,53 @@
+government = theocracy
+add_government_reform = holy_state_reform
+technology_group = western
+religion = catholic
+primary_culture = sicilian
+capital = 124	
+elector = yes
+
+1429.11.19 = {
+	monarch = { 
+		name = "Maria I"
+		dynasty = "d'Aragó"
+		birth_date = 1429.11.19
+		dip = 5
+		mil = 5
+		adm = 5
+		female = yes
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = careful_personality
+}
+1444.10.10 = { add_country_modifier = {
+				name = "norman_resurgence"
+				duration = 1825
+			}	
+		}
+1713.4.12 = {
+	monarch = {
+		name = "Vittorio Amedeo II"
+		dynasty = "di Savoia"
+		adm = 4
+		dip = 6
+		mil = 5
+		leader = { name = "Vittorio Amedeo II" type = general fire = 4 shock = 4 manuever = 2 siege = 2 }
+	}
+}
+
+# 1720.1.1 Vittorio Amedeo II becomes king of Sardinia-Piemont
+
+1806.3.11 = { government = monarchy
+# add_government_reform = letat_cest_moi_reform 
+}
+
+# Ferdinand/Ferrante flees to Sicily
+1806.3.11 = {
+	monarch = {
+		name = "Ferrante IV"
+		dynasty = "de Bourbon"
+		dip = 0
+		mil = 0
+		adm = 0
+	}		
+}

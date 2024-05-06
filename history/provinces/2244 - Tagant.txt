@@ -1,0 +1,27 @@
+# No previous file for Tagant
+
+owner = FUL 
+controller = FUL 
+add_core = FUL
+trade_goods = salt
+is_city = yes
+culture = fulani 
+religion = shamanism #Fetishism
+capital = "Kiffa"
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+
+
+
+discovered_by = sub_saharan
+
+
+1490.1.1 = {
+	owner = FUL 
+	controller = FUL 
+	add_core = FUL
+	trade_goods = salt
+	is_city = yes
+} #Rise of Great Fulo

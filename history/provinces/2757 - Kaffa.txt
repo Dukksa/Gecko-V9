@@ -1,0 +1,17 @@
+#2757 - Kaffa
+
+owner = ETH
+controller = ETH
+add_core = ETH
+culture = sidamo 
+religion = coptic
+capital = "Anderaccha"
+is_city = yes
+base_manpower = 2
+trade_goods = gold
+hre = no
+base_tax = 2
+base_production = 2
+fort_15th = yes
+discovered_by = east_african
+discovered_by = muslim

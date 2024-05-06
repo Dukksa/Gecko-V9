@@ -1,0 +1,16 @@
+﻿l_english:
+####################
+gc_truce_with_ally:0 "Cannot ally this nation until the "Broke Alliance" opinion modifier has ticked down to 0 as we recently broke alliance with them. This is usually 5 years, but is effected by Improve Relations."
+gecko_stability:0 "Must have 0 Stability or higher to declare war."
+bastard_mng_dec_horde:0 "Must have passed 5 Imperial Reforms or the target must not be a player Tributary State in order to declare war on them."
+bastard_mng_dec_mjz:0 "Jianzhou must have over 300 Development in order to be a valid target for us to attack."
+bastard_convert_trib_to_vassal:0 "Convert Tributary to Vassal"
+bastard_convert_trib_to_vassal_tooltip:0 "Convert Tributary to Vassal"
+bastard_convert_trib_to_vassal_title:0 "Convert Tributary to Vassal"
+bastard_convert_trib_to_vassal_desc:0 "Convert to Tributary at the cost of §R50§! Dip Power."
+b_gift_action:0 "Can only send gifts to our Subjects."
+b_warsubsidy_action:0 "Can only subsidise our subjects."
+b_takeondebt_action:0 "Can only take on the debts of our Subjects."
+b_offerloan_action:0 "Cannot offer loans."
+chinese_warlord_grace_period:0 "You must wait 20 years after the Ming Crisis Disaster fired to attack the successor state."
+bs_cant_remove_human_freecity:0 "You cannot remove player Free City Status."

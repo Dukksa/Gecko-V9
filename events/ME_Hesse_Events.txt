@@ -1,0 +1,43 @@
+namespace = ME_Hesse_Events
+
+country_event = {
+	id = ME_Hesse_Events.10
+	title = ME_Hesse_Events.10.t
+	desc = ME_Hesse_Events.10.d
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+	major_trigger = {
+		is_part_of_hre = yes
+	}
+	
+	option = {
+		name = "ME_Hesse_Events.10.b"
+	
+		ai_chance = { factor = 0.3 }
+		
+		custom_tooltip = HES_every_protestant
+		tooltip = {
+			add_church_power = 75
+			add_fervor = 75
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+					religion = protestant
+				}
+				add_church_power = 75
+			}
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+					religion = reformed
+				}
+				add_fervor = 75
+			}
+		}
+	}
+}

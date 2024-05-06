@@ -1,0 +1,24 @@
+government = republic
+add_government_reform = free_city
+government_rank = 1
+mercantilism = 25
+technology_group = western
+religion = catholic
+primary_culture = franconian
+capital = 4715	# Rothenburg
+fixed_capital = 4715 # Cannot move capital away from this province & no power cost to move to it
+elector = yes
+
+1419.9.11 = { leader = {	name = "John the Bastard"   	type = general	fire = 3	shock = 3	manuever = 3	siege = 3 } }
+1418.9.22 = {
+	monarch = {
+		birth_date = 1418.9.22
+		name = "Stadtrat"
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = calm_personality
+	add_ruler_personality = well_connected_personality
+}

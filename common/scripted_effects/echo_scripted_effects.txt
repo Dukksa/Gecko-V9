@@ -1,0 +1,137 @@
+development_counter = {
+	[[on_startup]
+		if = {
+			limit = {
+				ai = no	
+				NOT = { has_country_flag = has_development_counter_cflag }				
+			}
+			set_variable = {
+				which = adm_dev_counter
+				value = 0
+			}
+			set_variable = {
+				which = dip_dev_counter
+				value = 0
+			}
+			set_variable = {
+				which = mil_dev_counter
+				value = 0
+			}
+			set_variable = {
+				which = total_dev_counter
+				value = 0
+			}
+			set_country_flag = has_development_counter_cflag
+		}
+	]
+	
+	#All updates to variables in this section are in province scope.
+	[[adm]
+		owner = {
+			if = {
+				limit = { ai = no }
+				change_variable = {
+					which = adm_dev_counter
+					value = 1
+				}
+				change_variable = {
+					which = total_dev_counter
+					value = 1
+				}
+			}
+		}
+	]
+	[[dip]
+		owner = {
+			if = {
+				limit = { ai = no }
+				change_variable = {
+					which = dip_dev_counter
+					value = 1
+				}
+				change_variable = {
+					which = total_dev_counter
+					value = 1
+				}
+			}
+		}
+	]
+	[[mil]
+		owner = {
+			if = {
+				limit = { ai = no }
+				change_variable = {
+					which = mil_dev_counter
+					value = 1
+				}
+				change_variable = {
+					which = total_dev_counter
+					value = 1
+				}
+			}
+		}
+	]
+}
+
+educate_ruler = {
+	[[on_startup]
+		if = {
+			limit = { ai = no }
+			set_variable = {
+				which = educate_ruler_counter
+				value = 0
+			}
+		}
+	]
+	[[update]
+		if = {
+			limit = { ai = no }
+			hidden_effect = {
+				export_to_variable = {
+					which = ruler_adm_skill
+					value = trigger_value:ADM
+					who = ROOT
+				}
+				export_to_variable = {
+					which = ruler_dip_skill
+					value = trigger_value:DIP
+					who = ROOT
+				}
+				export_to_variable = {
+					which = ruler_mil_skill
+					value = trigger_value:MIL
+					who = ROOT
+				}
+				set_variable = {
+					which = ruler_total_skill
+					value = 0
+				}
+				change_variable = {
+					which = ruler_total_skill
+					which = ruler_adm_skill
+				}
+				change_variable = {
+					which = ruler_total_skill
+					which = ruler_dip_skill
+				}
+				change_variable = {
+					which = ruler_total_skill
+					which = ruler_mil_skill
+				}
+			}
+		]
+		[[educate]
+			add_years_of_income = -0.33
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+			hidden_effect = {
+				change_variable = {
+					which = educate_ruler_counter
+					value = 1
+				}
+				educate_ruler = { update = yes }
+			}
+		]
+	}
+}
