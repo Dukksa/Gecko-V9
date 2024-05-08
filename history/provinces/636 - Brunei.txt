@@ -1,6 +1,6 @@
 #636 - Brunei
 
-owner = BEI
+owner = 
 controller = BEI
 culture = bornean
 religion = sunni

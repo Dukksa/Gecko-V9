@@ -1,6 +1,6 @@
 #2389 - Phra Bang
 
-owner = SUK
+owner = 
 controller = SUK
 culture = central_thai
 religion = buddhism
@@ -23,7 +23,7 @@ discovered_by = indian
 #	add_core = AYU
 #} # Sukhothai is under Personal Union with Ayutthaya
 1530.1.1 = {
-	owner = AYU
+	owner = 
 	controller = AYU
 	remove_core = SUK
 } # Completely annexed by Ayutthaya

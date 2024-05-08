@@ -1,6 +1,6 @@
 #589 - Chiang Mai
 
-owner = LNA
+owner = 
 controller = LNA
 culture = northern_thai
 religion = buddhism

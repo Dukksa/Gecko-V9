@@ -1,6 +1,6 @@
 #2744 - Gyeongsang
 
-owner = FO4
+owner = 
 controller = FO4
 culture = korean
 religion = confucianism
@@ -21,7 +21,7 @@ extra_cost = 16
 1542.1.1 = { discovered_by = POR }
 1592.5.25 = { controller = ODA } # Japanese invasion - Siege of Busan
 1598.12.24 = { controller = KOR }
-1637.1.1 = { add_core = MNG } # Tributary of Qing China
-1644.1.1 = { add_core = MCH remove_core = MNG } # Part of the Manchu empire
+1637.1.1 = { add_core = owner =  } # Tributary of Qing China
+1644.1.1 = { add_core = MCH remove_core = owner =  } # Part of the Manchu empire
 1645.7.1 = { add_core = QNG remove_core = MCH }
 1653.1.1 = { discovered_by = NED } # Hendrick Hamel

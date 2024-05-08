@@ -1,6 +1,6 @@
 #585 - Toungoo
 
-owner = AVA
+owner = 
 controller = AVA
 culture = burmese
 religion = buddhism
@@ -22,7 +22,7 @@ discovered_by = indian
 
 1560.1.1 = { fort_15th = yes }
 1745.1.1 = {
-	owner = PEG
+	owner = 
 	controller = PEG
 	add_core = PEG
 }

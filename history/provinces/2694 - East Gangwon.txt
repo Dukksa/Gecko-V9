@@ -1,6 +1,6 @@
 #2694 - East Gangwon
 
-owner = FO6
+owner = 
 controller = FO6
 culture = korean
 religion = confucianism

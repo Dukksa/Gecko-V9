@@ -1,6 +1,6 @@
 #600 - Ayutthaya
 
-owner = AYU 
+owner =  
 controller = AYU
 culture = central_thai
 religion = buddhism

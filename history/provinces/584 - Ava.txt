@@ -1,6 +1,6 @@
 #584 - Ava
 
-owner = AVA
+owner = 
 controller = AVA
 culture = burmese
 religion = buddhism

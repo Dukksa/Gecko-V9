@@ -1,6 +1,6 @@
 #734 - Wonju
 
-owner = FO6
+owner = 
 controller = FO6
 culture = korean
 religion = confucianism
@@ -17,7 +17,7 @@ discovered_by = chinese
 discovered_by = nomad_group
 
 1542.1.1 = { discovered_by = POR }
-1637.1.1 = { add_core = MNG } # Tributary of Qing China
-1644.1.1 = { add_core = MCH remove_core = MNG } # Part of the Manchu empire
+1637.1.1 = { add_core = owner =  } # Tributary of Qing China
+1644.1.1 = { add_core = MCH remove_core = owner =  } # Part of the Manchu empire
 1645.7.1 = { add_core = QNG remove_core = MCH }
 1653.1.1 = { discovered_by = NED } # Hendrick Hamel

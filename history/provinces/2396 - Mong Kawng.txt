@@ -1,6 +1,6 @@
 #2396 - Mong Kawng
 
-owner = MKA
+owner = 
 controller = MKA
 culture = kachin
 religion = buddhism

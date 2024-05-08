@@ -1,8 +1,8 @@
 #667 - Guangzhou
 
-owner = MNG
-controller = MNG
-add_core = MNG
+owner = 
+controller = owner = 
+add_core = owner = 
 culture = cantonese
 religion = confucianism
 capital = "Canton"
@@ -35,8 +35,8 @@ add_province_triggered_modifier = conquest_of_canton
 	add_core = QNG
 }
 1648.4.15 = {
-	controller = MNG 
-	owner = MNG
+	controller = owner =  
+	owner = 
 }
 1650.11.11 = {
 	owner = QNG

@@ -1,6 +1,6 @@
 #582 - Mong Yang
 
-owner = MYA
+owner = 
 controller = MYA
 culture = shan
 religion = buddhism

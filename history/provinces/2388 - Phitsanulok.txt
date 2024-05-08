@@ -1,6 +1,6 @@
 #2388 - Phitsanulok
 
-owner = SUK 
+owner =  
 controller = SUK
 culture = central_thai
 religion = buddhism

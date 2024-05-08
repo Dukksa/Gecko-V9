@@ -14,8 +14,8 @@ native_size = 10
 native_ferocity = 1
 native_hostileness = 3
 add_core = BRT
-owner = BRT
-controller = BRT
+owner = 
+controller = 
 1632.1.1 = { discovered_by = RUS }
 
 1653.1.1 = {
