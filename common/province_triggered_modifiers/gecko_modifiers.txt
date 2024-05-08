@@ -1007,3 +1007,33 @@ conquest_of_toledo = {
 	
 	}
 }
+
+Easter_egg = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	trigger = {
+		owner = {
+			NOT = { tag = CRI }		#update this every time so it matches the nation pandur is playing
+			NOT = { tag = GLH }		#so he gets fucked and doesnt get this
+			NOT = { 	
+					has_global_modifier_value = {
+					which = discipline
+					value = 0.32
+					}
+				}								
+		}
+		controlled_by = ROOT
+		has_owner_accepted_culture = yes
+	}
+	discipline = 0.001
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
