@@ -1,7 +1,7 @@
 #4219 - Bayan Tu'men 
 
-owner = KHA
-controller = KHA
+owner = 
+controller = 
 add_core = KHA
 culture = khalkha
 religion = tengri_pagan_reformed

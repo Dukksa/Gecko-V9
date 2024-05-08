@@ -1,7 +1,7 @@
 #Edala
 
 owner = 
-controller = MHX
+controller = 
 add_core = MHX
 culture = manchu
 religion = confucianism

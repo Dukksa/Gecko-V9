@@ -1,6 +1,6 @@
 #710 - Hotan
 
-owner = KAS
+owner = 
 controller = KAS
 add_core = KAS
 culture = uyghur
@@ -15,7 +15,7 @@ is_city = yes
 discovered_by = chinese
 discovered_by = nomad_group
 extra_cost = 8
-center_of_trade = 1
+
 
 1682.1.1 = {
 	owner = ZUN

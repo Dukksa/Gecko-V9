@@ -15,7 +15,7 @@ add_core = FO4
 add_local_autonomy = 35
 discovered_by = chinese
 discovered_by = nomad_group
-center_of_trade = 2
+
 
 
 1519.1.1 = { discovered_by = POR } # Tome Pires

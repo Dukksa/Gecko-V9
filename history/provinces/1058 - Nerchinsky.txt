@@ -1,7 +1,7 @@
 #1058 - Nerchinsky
 
-owner = KHA
-controller = KHA
+owner = 
+controller = 
 add_core = KHA
 culture = buryat
 religion = tengri_pagan_reformed

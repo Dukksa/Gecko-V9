@@ -1,7 +1,7 @@
 #723 - Xilin Gol
 
-owner = KHA	# The Oirads united much of Mongolia
-controller = KHA
+owner = 	# The Oirads united much of Mongolia
+controller =
 add_core = KHA
 culture = mongol
 religion = vajrayana

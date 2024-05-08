@@ -1,6 +1,6 @@
 #707 - Yumen
 
-owner = HMI
+owner = 
 controller = HMI
 add_core = HMI
 culture = oirats
@@ -15,7 +15,7 @@ is_city = yes
 discovered_by = chinese
 discovered_by = nomad_group
 extra_cost = 16
-center_of_trade = 2
+
 
 1513.1.1 = { owner = CHG controller = CHG}
 1570.1.1 = {

@@ -1,6 +1,6 @@
 # 4678 - Qaraqorum
 
-owner = OIR
+owner = 
 controller = OIR
 add_core = OIR
 culture = khalkha
@@ -13,7 +13,7 @@ base_production = 3
 base_manpower = 3
 is_city = yes
 extra_cost = 8
-center_of_trade = 1
+
 
 add_province_triggered_modifier = mongol_kurultai
 add_province_triggered_modifier = conquest_of_qaraqorum

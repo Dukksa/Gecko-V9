@@ -1,6 +1,6 @@
 #709 - Alxa
 
-owner = OIR
+owner = 
 controller = OIR
 add_core = OIR
 culture = mongol

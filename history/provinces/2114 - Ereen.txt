@@ -1,7 +1,7 @@
 # 2114 - Ereen
 
-owner = KHA
-controller = KHA
+owner = 
+controller = 
 add_core = KHA
 culture = mongol
 religion = vajrayana

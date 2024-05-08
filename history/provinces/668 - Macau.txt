@@ -1,7 +1,7 @@
 #668 - Macau
 
 owner = MNG
-controller = owner = MNG
+controller = MNG
 add_core = owner = MNG
 culture = cantonese
 religion = confucianism
