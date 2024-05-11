@@ -2744,6 +2744,7 @@ WOC_NED_5 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
+	swap_non_generic_missions = yes
 	potential_on_load = {
 		always = yes
 	}
