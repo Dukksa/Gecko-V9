@@ -2739,16 +2739,16 @@ NED_4_1 = {
 	}
 }
 
-WOC_NED_5 = {
+NED_5 = {
 	slot = 5
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential_on_load = {
-		always = yes
+		has_dlc = "Winds of Change"
 	}
 	potential = { 
-		always = yes
+		has_dlc = "Winds of Change"
 		OR = {
 			tag = NED
 			tag = HOL
@@ -2955,7 +2955,7 @@ WOC_NED_5 = {
 	}
 }
 
-WOC_NED_5_1 = {
+NED_5_1 = {
 	slot = 5
 	generic = no
 	ai = yes
