@@ -1,4 +1,4 @@
-NED_1 = {
+WOC_NED_1 = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -94,7 +94,7 @@ NED_1 = {
 	}
 }
 
-NED_1_1 = {
+WOC_NED_1_1 = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -527,7 +527,7 @@ NED_1_1 = {
 	}
 }
 
-NED_2 = {
+WOC_NED_2 = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -724,7 +724,7 @@ NED_2 = {
 	}
 }
 
-NED_2_1 = {
+WOC_NED_2_1 = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -1340,7 +1340,7 @@ NED_2_1 = {
 	}
 }
 
-NED_3 = {
+WOC_NED_3 = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -1409,7 +1409,7 @@ NED_3 = {
 	}
 }
 
-NED_3_1 = {
+WOC_NED_3_1 = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -1974,7 +1974,7 @@ NED_3_1 = {
 	}
 }
 
-NED_4 = {
+WOC_NED_4 = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -2131,7 +2131,7 @@ NED_4 = {
 	}
 }
 
-NED_4_1 = {
+WOC_NED_4_1 = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -2739,16 +2739,16 @@ NED_4_1 = {
 	}
 }
 
-NED_5 = {
+WOC_NED_5 = {
 	slot = 5
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential_on_load = {
-		has_dlc = "Winds of Change"
+		always = yes
 	}
 	potential = { 
-		has_dlc = "Winds of Change"
+		always = yes
 		OR = {
 			tag = NED
 			tag = HOL
