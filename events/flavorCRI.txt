@@ -34,6 +34,115 @@ country_event = {
 	immediate = { set_global_flag = death_of_haji_giray }
 	
 	option = {
+		name = "flavor_cri.1.a" #We must seek Ottoman Protection!
+		trigger = { NOT = { war_with = TUR } } #Will never be an option if you're at war with TUR.
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 1.5
+				TUR = {
+					num_of_cities = 40
+				}
+			}
+			modifier = {
+				factor = 0.8
+				num_of_cities = 12 #5 extra
+			}
+			modifier = {
+				factor = 0.8
+				num_of_cities = 15 #7 extra
+			}
+			modifier = {
+				factor = 0.25
+				num_of_cities = 22
+			}
+			modifier = {
+				factor = 0.1
+				num_of_cities = 30
+			}
+			modifier = {
+				factor = 0
+				num_of_cities = TUR
+			}
+			modifier = {
+				factor = 1.1
+				crimea_region = { owned_by = TUR }
+			}
+			modifier = {
+				factor = 0
+				TUR = {
+					NOT = { num_of_cities = 5 }
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					anatolia_region = { owned_by = TUR }
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_regency = yes
+				has_heir = no
+			}
+			define_ruler = {
+				name = "Mengli"
+				dynasty = "Giray"
+				age = 33
+				claim = 75
+			}
+			if = {
+				limit = {
+					has_states_general_mechanic = yes
+				}
+				change_statists_vs_orangists = 1
+			}
+			if = {
+				limit = {
+					has_dlc = "Rights of Man" 
+				}
+				hidden_effect = { add_ruler_personality_ancestor = { key = conqueror } }
+			}
+		}
+		if = {
+			limit = {
+				has_regency = yes
+				has_heir = yes
+			}
+			kill_heir = { allow_new_heir = no }
+			define_ruler = {
+				name = "Mengli"
+				dynasty = "Giray"
+				age = 33
+				claim = 75
+			}
+			if = {
+				limit = {
+					has_states_general_mechanic = yes
+				}
+				change_statists_vs_orangists = 1
+			}
+			if = {
+				limit = {
+					has_dlc = "Rights of Man" 
+				}
+				hidden_effect = { add_ruler_personality_ancestor = { key = conqueror } }
+			}
+		}
+		custom_tooltip = flavor_cri.1.a.tt
+		TUR = {
+			country_event = { id = flavor_cri.2 days = 5 }
+		}
+		random_owned_province = {
+			limit = { is_capital = no }
+			spawn_rebels = {
+				size = 1
+				type = pretender_rebels
+			}
+		}
+	}
+	option = {
 		name = "flavor_cri.1.b" #We will be better of without Ottoman involvement.
 		ai_chance = {
 			factor = 65
@@ -110,6 +219,17 @@ country_event = {
 					has_dlc = "Rights of Man" 
 				}
 				hidden_effect = { add_ruler_personality_ancestor = { key = inspiring_leader } }
+			}
+		}
+		custom_tooltip = flavor_cri.1.b.tt
+		TUR = {
+			country_event = { id = flavor_cri.3 days = 5 }
+		}
+		random_owned_province = {
+			limit = { is_capital = no }
+			spawn_rebels = {
+				size = 1
+				type = pretender_rebels
 			}
 		}
 	}
@@ -556,36 +676,37 @@ country_event = {
 	major = yes
 	
 	option = {
-			custom_tooltip = bs_turkoman_iranian_repopulation_tt
-			add_country_modifier = {
-				name = turkoman_repopulate_persia
-				duration = 7300
+		name = flavor_cri.8.a
+		persia_region = {
+			limit = {
+				owned_by = ROOT
 			}
-			hidden_effect = {
-				for = {
-					amount = 10
-					effect = "
-						random_owned_province = {
-							limit = {
-								region = persia_region
-								region = khorasan_region
-							}
-							add_base_tax = 1
-						}
-					"
-				}
-				for = {
-					amount = 10
-					effect = "
-						random_owned_province = {
-							limit = {
-								region = persia_region
-								region = khorasan_region
-							}
-							add_base_manpower = 1
-						}
-					"
-				}
+			add_core = ILK
+			if = {
+				limit = { is_core = ROOT }
+				remove_core = ROOT
 			}
 		}
+		release = ILK
+		create_march = ILK
+		ILK = {
+			change_government = monarchy
+			#set_legacy_government = despotic_monarchy
+			change_primary_culture = ROOT
+			change_religion = ROOT
+			define_ruler = {
+				dynasty = ROOT
+				culture = ROOT
+				religion = ROOT
+			}
+		}
+	}
+	option = {
+		name = flavor_cri.8.b
+		4338 = {
+			add_base_tax = 2
+			add_base_manpower = 2
+			add_base_production = 2
+		}
+	}
 }
