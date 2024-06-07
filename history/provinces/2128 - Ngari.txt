@@ -1,7 +1,7 @@
 # 2128 - Ngari
 
-owner = GUG
-controller = GUG
+owner = 
+controller = 
 add_core = GUG
 culture = tibetan
 religion = vajrayana

@@ -1,7 +1,7 @@
 #4481 - Punakah
 
-owner = PHA
-controller = PHA
+owner = 
+controller = 
 culture = tibetan
 religion = vajrayana
 capital = "Punakha"

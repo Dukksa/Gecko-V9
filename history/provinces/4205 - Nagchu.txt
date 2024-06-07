@@ -1,7 +1,7 @@
 #4205 - Nagchu
 
-owner = UTS
-controller = UTS
+owner = 
+controller = 
 add_core = UTS
 culture = tibetan
 religion = vajrayana

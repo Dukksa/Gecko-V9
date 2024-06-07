@@ -105,7 +105,6 @@ the_motherland_calls = {
 	}
 }
 
-
 conquest_of_constantinople = {
 	potential = {
 		normal_or_historical_nations = yes
@@ -489,117 +488,10 @@ conquest_of_nogay = {
 	}
 }
 
-conquest_of_qaraqorum = {
-	potential = {
-		normal_or_historical_nations = yes
-	}
-	trigger = {
-		owner = {
-				NOT = { 	
-					has_global_modifier_value = {
-					which = discipline
-					value = 0.31
-					}
-				}
-				uliastai_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = PREV
-				}	
-			}
-		controlled_by = ROOT
-		has_owner_accepted_culture = yes	
-	}	
-	discipline = 0.025
-	land_morale = 0.025
-	#Province scope
-	on_activation = {
-	
-	}
-	
-	on_deactivation = {
-	
-	}
-}
 
-b_conquest_of_beijing = {
-	potential = {
-		normal_or_historical_nations = yes
-	}
-	trigger = {
-		owner = {
-				NOT = { tag = MNG }
-				hebei_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = PREV
-				}	
-			}
-		controlled_by = ROOT
-		has_owner_accepted_culture = yes	
-	}	
-	land_morale = 0.025
-	#Province scope
-	on_activation = {
-	
-	}
-	
-	on_deactivation = {
-	
-	}
-}
 
-conquest_of_nanjing = {
-	potential = {
-		normal_or_historical_nations = yes
-	}
-	trigger = {
-		owner = {
-				NOT = { tag = MNG }
-				south_jiangsu_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = PREV
-				}	
-			}
-		controlled_by = ROOT
-		has_owner_accepted_culture = yes	
-	}	
-	infantry_power = 0.05
-	
-	#Province scope
-	on_activation = {
-	
-	}
-	
-	on_deactivation = {
-	
-	}
-}
 
-conquest_of_canton = {
-	potential = {
-		normal_or_historical_nations = yes
-	}
-	trigger = {
-		owner = {
-				NOT = { tag = MNG }
-				guangdong_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = PREV
-				}	
-			}
-		controlled_by = ROOT
-		has_owner_accepted_culture = yes	
-	}	
-	infantry_power = 0.05
-	
-	#Province scope
-	on_activation = {
-	
-	}
-	
-	on_deactivation = {
-	
-	}
-}
+
 conquest_of_delhi = {
 	potential = {
 		normal_or_historical_nations = yes
@@ -632,104 +524,8 @@ conquest_of_delhi = {
 	
 	}
 }
-conquest_of_kyoto = {
-	potential = {
-		normal_or_historical_nations = yes
-	}
-	trigger = {
-		owner = {
-				NOT = { 	
-					has_global_modifier_value = {
-					which = discipline
-					value = 0.31
-					}
-				}
-				kinai_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = PREV
-				}	
-			}
-		controlled_by = ROOT
-		has_owner_accepted_culture = yes	
-	}	
-	discipline = 0.025
-	land_morale = 0.025
-	
-	#Province scope
-	on_activation = {
-	
-	}
-	
-	on_deactivation = {
-	
-	}
-}
-conquest_of_ayutthaya = {
-	potential = {
-		normal_or_historical_nations = yes
-	}
-	trigger = {
-		owner = {
-				NOT = { tag = AYU }
-				NOT = { tag = SIA }
-				NOT = { 	
-					has_global_modifier_value = {
-					which = discipline
-					value = 0.31
-					}
-				}
-				central_thai_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = PREV
-				}	
-			}
-		controlled_by = ROOT
-		has_owner_accepted_culture = yes	
-	}	
-	discipline = 0.025
-	land_morale = 0.025
-	
-	#Province scope
-	on_activation = {
-	
-	}
-	
-	on_deactivation = {
-	
-	}
-}
-conquest_of_brunei = {
-	potential = {
-		normal_or_historical_nations = yes
-	}
-	trigger = {
-		owner = {
-				NOT = { 	
-					has_global_modifier_value = {
-					which = discipline
-					value = 0.31
-					}
-				}
-				brunei_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = PREV
-				}	
-			}
-		controlled_by = ROOT
-		has_owner_accepted_culture = yes	
-	}	
-	discipline = 0.025
-	land_morale = 0.025
-	
-	#Province scope
-	on_activation = {
-	
-	}
-	
-	on_deactivation = {
-	
-	}
-}
+
+
 conquest_of_pest = {
 	potential = {
 		normal_or_historical_nations = yes

@@ -1,7 +1,7 @@
 #4520 - Rutog
 
-owner = GUG
-controller = GUG
+owner = 
+controller = 
 add_core = GUG
 add_core = LDK
 culture = tibetan

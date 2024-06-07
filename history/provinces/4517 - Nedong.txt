@@ -1,7 +1,7 @@
 #4517 - Nedong
 
-owner = PHA
-controller = PHA
+owner = 
+controller = 
 add_core = PHA
 culture = tibetan
 religion = vajrayana

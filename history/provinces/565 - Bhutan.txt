@@ -1,7 +1,7 @@
 #565 - Bhutan
 
-owner = PHA
-controller = PHA
+owner = 
+controller = 
 culture = tibetan
 religion = vajrayana
 #capital = "Thimbu"

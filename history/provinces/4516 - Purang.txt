@@ -1,7 +1,7 @@
 #4516 - Purang
 
-owner = GUG
-controller = GUG
+owner = 
+controller = 
 add_core = GUG
 culture = tibetan
 religion = vajrayana

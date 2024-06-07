@@ -3104,3 +3104,289 @@ estate_church_sponsor_waqf_payments = {
 		factor = 10
 	}
 }
+estate_church_INC_idol_making = {
+	icon = privilege_golden_idols
+	max_absolutism = -5
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes 
+		} 
+		modifier = { max_absolutism = 1 } 
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = INC_upgrade_idol_estate_privilege_flag
+		} 
+		modifier = { max_absolutism = 5 } 
+	}
+	influence = 0
+	loyalty = 0.1
+	is_valid = {
+		has_country_flag = INC_unlock_the_idol_privilege_flag
+	}
+	can_select = {
+		trade_goods_produced_amount = {
+			trade_goods = gold
+			amount = 1
+		}
+	}
+	on_granted = {
+		custom_tooltip = INC_every_gold_province
+		tooltip = {
+			add_province_modifier = {
+				name = INC_gold_debuff
+				duration = -1
+			}
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				trade_goods = gold 
+			}
+			add_province_modifier = {
+				name = INC_gold_debuff
+				duration = -1
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = INC_gold_income_return_to_normal
+		hidden_effect = { 
+			every_owned_province = {
+				remove_province_modifier = INC_gold_debuff
+			}
+		}
+	}
+	on_invalid = {
+		custom_tooltip = INC_gold_income_return_to_normal
+		hidden_effect = { 
+			every_owned_province = {
+				remove_province_modifier = INC_gold_debuff
+			}
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			NOT = { has_country_flag = INC_upgrade_idol_estate_privilege_flag }
+		}
+		modifier = {
+			monthly_divine_authority = 0.05
+			yearly_authority = 0.5
+			tolerance_own = 1
+			same_religion_advisor_cost = -0.1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = INC_upgrade_idol_estate_privilege_flag 
+		}
+		modifier = {
+			monthly_divine_authority = 0.1
+			yearly_authority = 1
+			tolerance_own = 2
+			same_religion_advisor_cost = -0.2
+		}
+	}
+	ai_will_do = {
+		factor = 100
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_church_MAY_cocoa_monopoly = {
+	icon = privilege_monopoly_of_cocoa
+	loyalty = 0.1
+	influence = 0
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	is_valid = {
+		has_country_flag = MAY_cocoa_monopoly_flag
+		any_owned_province = {
+			trade_goods = cocoa
+		}
+	}
+	on_granted = {
+		if = {
+			limit = {
+				cocoa = 1
+			}
+			add_mercantilism = 1
+		}
+		add_years_of_owned_provinces_production_income = {
+			years = 12
+			trigger = {
+				trade_goods = cocoa
+			}
+			custom_tooltip = MAY_MONOPOLY_COCOA_FROM_COCOA
+		}
+		custom_tooltip = estate_church_MAY_cocoa_monopoly_effect_tooltip
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				trade_goods = cocoa
+			}
+			add_province_modifier = {
+				name = estate_church_MAY_cocoa_monopoly_mod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_church_MAY_cocoa_monopoly_mod
+			}
+			remove_province_modifier = estate_church_MAY_cocoa_monopoly_mod
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_church_MAY_cocoa_monopoly_revoke_tooltip
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_church_MAY_cocoa_monopoly_mod
+			}
+			remove_province_modifier = estate_church_MAY_cocoa_monopoly_mod
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_church_MAY_cocoa_monopoly_revoke_tooltip
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_church_MAY_cocoa_monopoly_mod
+			}
+			remove_province_modifier = estate_church_MAY_cocoa_monopoly_mod
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	cooldown_years = 10
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = buffed_monopolies
+		}
+		modifier = {
+			max_absolutism = 10
+			church_privilege_slots = 1
+		}
+	}
+	on_cooldown_expires = {
+		country_event = { id = flavor_may.9 }
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_church_religious_tolerance = {
+	icon = privilege_nomadic_tolerance
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = {
+		has_country_flag = hordes_religious_tolerance_tribal_privilege_flag
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_nomadic_tribes_religious_tolerance }
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = { always = yes }
+		modifier = {
+			tolerance_heathen = 1
+			tolerance_heretic = 1
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_church_TIM_yasa_supremacy = {
+	icon = privilege_aged_paper
+	max_absolutism = 0
+	influence = 0.0
+	loyalty = -0.1
+	is_valid = {
+		OR = {
+			tag = TIM
+			was_tag = TIM
+		}
+		NOT = { has_country_flag = estate_church_TIM_yasa_supremacy_revoked }
+	}
+	penalties = {
+		tolerance_own = -1
+		religious_unity = -0.15
+	}
+	benefits = {
+		cavalry_power = 0.05
+		nobles_influence_modifier = 0.05
+	}
+	can_revoke = {
+		custom_trigger_tooltip = {
+			tooltip = BYZ_revokable_via_decision
+			always = no
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_church_TIM_promote_ijazah = {
+	icon = estate_church_fund_dar_al_hadith
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	influence = 0.05
+	loyalty = 0.1
+	land_share = 3
+	is_valid = {
+		has_country_flag = TIM_unlock_privilege_for_innovativeness_gain_flag
+	}
+	mechanics = {
+		exempt_from_seize_land
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = {
+			always = yes
+		}
+		modifier = {
+			yearly_innovativeness = 0.5
+		}
+	}
+	on_granted = {
+		scaling_with_loyalty_privilege_tooltip = {
+			estate_privilege = estate_church_TIM_promote_ijazah
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_church_MUG_promote_divine_religion = {
+	icon = privilege_legitimacy
+	loyalty = -0.1
+	max_absolutism = 10
+	is_valid = {
+		has_country_flag = MUG_promote_din_i_ilahi_flag
+	}
+	penalties = {
+		religious_unity = -0.1
+	}
+	benefits = {
+		yearly_absolutism = 1
+	}
+	
+	ai_will_do = {
+		factor = 0 #AI will not be able to handle this
+	}
+}

@@ -1,7 +1,7 @@
 #4514 - Sakya
 
-owner = UTS
-controller = UTS
+owner =
+controller = 
 add_core = UTS
 add_core = PHA
 culture = tibetan

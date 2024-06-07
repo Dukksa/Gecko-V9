@@ -3895,3 +3895,1074 @@ estate_nobles_enlist_the_mamluks = {
 		factor = 100
 	}
 }
+estate_nobles_ITA_military_governors = {
+	icon = estate_nobles_ITA_military_governors
+	loyalty = 0
+	influence = 0.1
+	max_absolutism = 0
+	is_valid = {
+		OR = {
+			has_country_flag = ITA_enable_privilege_for_military_governors_flag
+			tag = ROM 
+			was_tag = ROM
+		}
+	}
+	benefits = {
+		state_governing_cost = -0.05
+	}
+	on_granted = {
+		custom_tooltip = ITA_specify_the_conditional_effects
+	}
+	conditional_modifier = {
+		trigger = {
+			is_at_war = yes
+		}
+		modifier = {
+			global_autonomy = -0.05 #halve the penalty
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = ITA_upgrade_military_governorship_with_autonomy_in_terr_flag
+		}
+		modifier = {
+			min_autonomy_in_territories = -0.05
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = ITA_upgrade_military_governorship_with_abso_flag
+		}
+		modifier = {
+			max_absolutism = 5
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = ITA_upgrade_military_governorship_with_army_quality_flag
+		}
+		modifier = {
+			army_tradition = 1
+			leader_land_shock = 1
+		}
+	}
+	
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = enables_pronoias #for roman empire specifically
+		}
+		modifier = {
+			num_of_pronoiars = 1
+		}
+	}
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+estate_nobles_GER_diploma_andreanum = {
+	icon = estate_nobles_GER_diploma_andreanum
+	loyalty = 0.1
+	influence = 0.05
+	max_absolutism = -5
+	is_valid = {
+		has_country_flag = GER_unlock_diploma_andreanum_flag
+	}
+	benefits = {
+		territories_governing_cost = -0.05
+	}
+	on_granted = {
+		custom_tooltip = GER_low_average_autonomy_buff
+	}
+	conditional_modifier = {
+		trigger = {
+			NOT = { average_autonomy = 25 }
+		}
+		modifier = {
+			manpower_in_accepted_culture_provinces = 0.1
+		}
+	}
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+estate_nobles_orangist_privileges = {
+	icon = privilege_royal_authority
+	max_absolutism = 5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	influence = 0.1
+	is_valid = {
+		has_country_flag = ned_buff_orangist_candidates_flag
+	}
+	on_granted = {
+		custom_tooltip = NED_UNLOCK_OVERTHROW_STATIST_CANDIDATES
+	}
+	penalties = {
+	
+	}
+	benefits = {
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = -0.03 }
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_nobles_vegvar_system = {
+	icon = estate_nobles_vegvar_system
+	max_absolutism = -5
+	loyalty = 0.1
+	influence = 0.05
+	is_valid = {
+		has_unlocked_estate_privilege = {
+			estate_privilege = estate_nobles_vegvar_system
+		}
+	}
+	can_select = {
+		any_owned_province = {
+			any_neighbor_province = {
+				NOT = { owned_by = ROOT }
+			}
+			has_fort_building_trigger = yes
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_nobles_vegvar_system_tt
+		tooltip = {
+			add_province_modifier = {
+				name = estate_nobles_vegvar_system_modifier
+				duration = -1
+				desc = hun_vegvar_province_desc
+			}
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+				}
+				has_fort_building_trigger = yes
+			}
+			add_province_modifier = {
+				name = estate_nobles_vegvar_system_modifier
+				duration = -1
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_nobles_vegvar_system_rt
+	}
+	on_revoked_province = {
+		if = {
+			limit = { has_province_modifier = estate_nobles_vegvar_system_modifier }
+			remove_province_modifier = estate_nobles_vegvar_system_modifier
+		}
+	}
+	on_invalid = {
+	}
+	on_invalid_province = {
+		if = {
+			limit = { has_province_modifier = estate_nobles_vegvar_system_modifier }
+			remove_province_modifier = estate_nobles_vegvar_system_modifier
+		}
+	}
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+estate_nobles_MAY_arm_nobles_with_obsidian_blades = {
+	icon = privilege_macuahuitl
+	max_absolutism = -5
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes 
+		} 
+		modifier = { max_absolutism = 1 } 
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = MAY_upgrade_obsidian_privilege_flag
+		}
+		modifier = { max_absolutism = 5 }
+	}
+	influence = 0.05
+	loyalty = 0.1
+	is_valid = {
+		technology_group = mesoamerican
+	}
+	benefits = {
+		infantry_cost = -0.05
+	}
+	on_granted = {
+		if = {
+			limit = {
+				has_country_flag = azt_obsidian_blades_buff_flag
+			}
+			custom_tooltip = AZT_buffed_conditional_benefit_for_obsidian
+		}
+		else_if = {
+			limit = {
+				has_country_flag = MAY_upgrade_obsidian_privilege_flag
+			}
+			custom_tooltip = MAY_buffed_conditional_benefit_for_obsidian
+		}
+		else = {
+			custom_tooltip = MAY_conditional_benefit_for_obsidian
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			NOT = { has_country_flag = azt_obsidian_blades_buff_flag }
+			NOT = { has_country_flag = MAY_upgrade_obsidian_privilege_flag }
+			has_obsidian_source_trigger = yes
+		}
+		modifier = {
+			infantry_power = 0.1
+			nobles_influence_modifier = 0.05
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = MAY_upgrade_obsidian_privilege_flag
+			has_obsidian_source_trigger = yes
+		}
+		modifier = {
+			infantry_power = 0.1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = azt_obsidian_blades_buff_flag
+			has_obsidian_source_trigger = yes
+		}
+		modifier = {
+			infantry_power = 0.15
+			nobles_influence_modifier = 0.05
+		}
+	}
+	ai_will_do = {
+		factor = 100
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_nobles_MAY_spread_dynastic_influence = {
+	icon = privilege_mayan_crown
+	loyalty = 0
+	influence = 0.1
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	is_valid = {
+		has_country_flag = MAY_unlock_privilege_for_tributaries_flag
+	}
+	penalties = {
+		reduced_liberty_desire = -10
+	}
+	benefits = {
+		annexation_relations_impact = -0.25
+	}
+	on_granted = {
+		custom_tooltip = MAY_benefits_of_dynastic_influence
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_nobles_AZT_triple_alliance = {
+	icon = estate_burghers_monopoly_of_coffee
+	loyalty = 0.05
+	influence = 0.1
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	is_valid = {
+		has_estate_privilege = estate_nobles_AZT_triple_alliance
+	}
+	can_select = {
+	
+	}
+	benefits = {
+		vassal_forcelimit_bonus = 1
+		vassal_income = 0.3
+		liberty_desire_from_subject_development = -0.25
+	}
+	conditional_modifier = {
+		trigger = {
+			NOT = { has_country_flag = azt_triple_alliance_buff }
+		}
+		modifier = {
+			governing_capacity_modifier = -0.5
+			governing_capacity = -100
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = azt_triple_alliance_buff
+		}
+		modifier = {
+			governing_capacity_modifier = -0.25
+		}
+	}
+	can_revoke = {
+		custom_trigger_tooltip = {
+			tooltip = AZT_revokable_via_mission
+			always = no
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_nobles_AZT_warrior_culture = {
+	icon = privilege_demand_more_troops
+	loyalty = 0.05
+	influence = 0.1
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	is_valid = {
+		has_country_flag = azt_military_culture_flag
+	}
+	
+	on_granted = {
+		custom_tooltip = AZT_grant_bonuses_to_culture_province
+		tooltip	= {
+			if = {
+				limit = {
+					has_country_flag = azt_buffed_military_society_flag
+				}
+				add_province_modifier = {
+					name = azt_military_culture_modifier_buffed
+					duration = -1
+				}
+			}
+			else = {
+				add_province_modifier = {
+					name = azt_military_culture_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	on_granted_province = {
+		hidden_effect = {
+			if = {
+				limit = {
+					culture = ROOT
+					owner = {
+						NOT = { has_country_flag = azt_buffed_military_society_flag }
+					}
+				}
+				add_province_modifier = {
+					name = azt_military_culture_modifier
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					culture = ROOT
+					owner = {
+						has_country_flag = azt_buffed_military_society_flag
+					}
+				}
+				add_province_modifier = {
+					name = azt_military_culture_modifier_buffed
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	on_revoked = {
+		custom_tooltip = AZT_REVOKE_PRIVILEGE_BONUSES
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_province_modifier = azt_military_culture_modifier
+						has_province_modifier = azt_military_culture_modifier_buffed
+					}
+				}
+				remove_province_modifier = azt_military_culture_modifier
+				remove_province_modifier = azt_military_culture_modifier_buffed
+			}
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+estate_nobles_reformatio_sigismundi = {
+	icon = privilege_coup_detat
+	max_absolutism = -10
+	influence = 0.15
+	loyalty = 0.10
+	is_valid = {
+		has_unlocked_estate_privilege = {
+			estate_privilege = estate_nobles_reformatio_sigismundi
+		}
+		custom_trigger_tooltip = {
+			tooltip = estate_nobles_reformatio_sigismundi_has_eligible_province_tt
+			any_owned_province = {
+				has_owner_accepted_culture = no
+				culture_group = germanic
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = has_unlocked_estate_nobles_reformatio_sigismundi
+			has_unlocked_estate_privilege = {
+				estate_privilege = estate_nobles_reformatio_sigismundi
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = estate_nobles_reformatio_sigismundi_has_eligible_province_tt
+			any_owned_province = {
+				has_owner_accepted_culture = no
+				culture_group = germanic
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_nobles_reformatio_sigismundi_gt
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				NOT = {
+					has_owner_accepted_culture = yes
+				}
+				culture_group = germanic
+			}
+			add_province_modifier = {
+				name = boh_cultural_integration
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = boh_cultural_integration
+			}
+			remove_province_modifier = boh_cultural_integration
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_nobles_reformatio_sigismundi_rk
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = boh_cultural_integration
+			}
+			remove_province_modifier = boh_cultural_integration
+		}
+	}
+	on_invalid = {
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = boh_cultural_integration
+			}
+			remove_province_modifier = boh_cultural_integration
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+}
+
+estate_nobles_basqaq_autonomy = {
+	icon = privilege_basqaqs
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = {
+		has_country_flag = hordes_basqaqs_unlocked_flag
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_nomadic_tribes_basqaq_autonomy }
+	}
+	penalties = {
+		governing_capacity_modifier = -0.1
+	}
+	
+	benefits = {
+		monarch_power_tribute = 1
+		manpower_recovery_speed = 0.10
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_nobles_imperial_war_leader = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.0
+	influence = 0.05
+	is_valid = {
+		has_country_flag = hab_imperial_warleader_flag
+	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+		relation_with_same_culture_group = -10
+	}
+	benefits = {
+		army_tradition_from_battle = 0.5
+		land_morale = 0.05
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}
+
+estate_nobles_hab_habsburg_connections = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = {
+		has_country_flag = hab_unlocked_habsburg_connections
+	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = {
+			always = yes
+		}
+		modifier = {
+			country_diplomatic_power = 2
+			diplomatic_reputation = 2
+		}
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}
+
+estate_nobles_habsburg_disunity = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0
+	influence = 0.05
+	is_valid = {
+		has_country_flag = hab_ladislaus_postumus_heir
+		NOT = {
+			has_country_flag = hab_united_habsburg_land
+		}
+	}
+	can_select = {
+	}
+	penalties = {
+		global_autonomy = 0.05
+		global_tax_modifier = -0.1
+	}
+	can_revoke = {
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = HAB_LADISLAUS_IS_RULER_OR_DEAD
+				always = no
+			}
+			custom_trigger_tooltip = {
+				tooltip = HAB_ENACTED_UNITE_HABSBURG_LANDS_DECISION
+				always = no
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}
+
+estate_nobles_melting_pot_of_cultures = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0
+	influence = 0.05
+	is_valid = {
+		has_country_flag = hab_melting_pot_flag
+	}
+	on_granted = {
+		custom_tooltip = HAB_EXPLAIN_MODIFIERS_MELTING_POT
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					culture = hungarian
+					culture = transylvanian
+				}
+			}
+			add_province_modifier = {
+				name = hab_hungarian_province
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = {
+			limit = {
+				culture_group = west_slavic
+			}
+			add_province_modifier = {
+				name = hab_west_slavic_province
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					culture_group = ROOT
+					culture = hungarian
+					culture = transylvanian
+					culture_group = west_slavic
+				}
+			}
+			add_province_modifier = {
+				name = hab_minority_province
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
+
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = hab_hungarian_province
+			}
+			remove_province_modifier = hab_hungarian_province
+		}
+		if = {
+			limit = {
+				has_province_modifier = hab_west_slavic_province
+			}
+			remove_province_modifier = hab_west_slavic_province
+		}
+		if = {
+			limit = {
+				has_province_modifier = hab_minority_province
+			}
+			remove_province_modifier = hab_minority_province
+		}
+	}
+
+	penalties = {
+		global_autonomy = 0.05
+		global_tax_modifier = -0.1
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}
+
+estate_nobles_hab_von_raab_restructions = {
+	icon = privilege_grant_autonomy
+	max_absolutism = 5
+	loyalty = -0.1
+	influence = -0.05
+	is_valid = {
+		has_country_flag = hab_von_raab_restrictions_flag
+	}
+	can_select = {
+	}
+	on_granted = {
+		custom_tooltip = VON_RAAB_RESTRICTIONS_TOOLTIP
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = {
+			NOT = {
+				estate_influence = {
+					estate = estate_nobles
+					influence = 40
+				}
+			}
+		}
+		modifier = {
+			development_cost = -0.075
+		}
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}
+
+estate_nobles_TIM_soyurghal_grants = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	influence = 0.1
+	loyalty = 0.05
+	is_valid = {
+		OR = {
+			tag = TIM
+			was_tag = TIM
+		}
+		NOT = { has_country_flag = estate_nobles_TIM_soyurghal_grants_revoked }
+	}
+	penalties = {
+		global_tax_modifier = -0.1
+		reform_progress_growth = -0.1
+	}
+	benefits = {
+		army_tradition_decay = -0.01
+	}
+	can_revoke = {
+		custom_trigger_tooltip = {
+			tooltip = BYZ_revokable_via_decision
+			always = no
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_nobles_TIM_chagatai_warriors = {
+	icon = privilege_timurid_helmet
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	influence = 0.15
+	loyalty = 0.05
+	is_valid = {
+		has_country_flag = TIM_unlock_privilege_about_chagatai_flag
+	}
+	benefits = {
+		cavalry_power = 0.05
+		cav_to_inf_ratio = 0.25
+	}
+	influence_scaled_conditional_modifier = {
+		trigger = {
+			always = yes
+		}
+		modifier = {
+			army_tradition = 0.5
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_nobles_TIM_appease_the_elites = {
+	icon = privilege_army_tradition
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	influence = 0.15
+	loyalty = 0.05
+	is_valid = {
+		has_country_flag = TIM_unlock_appease_the_elites_privilege_flag
+	}
+	penalties = {
+		land_forcelimit_modifier = -0.1
+	}
+	
+	influence_scaled_conditional_modifier = {
+		trigger = {
+			has_dlc = "Cradle of Civilization"
+			NOT = { 
+				estate_influence = {
+					estate = estate_nobles
+					influence = 100
+				}
+			}
+		}
+		modifier = {
+			yearly_army_professionalism = 0.01
+		}
+	}
+	
+	influence_scaled_conditional_modifier = {
+		trigger = {
+			NOT = { has_dlc = "Cradle of Civilization" }
+			NOT = { 
+				estate_influence = {
+					estate = estate_nobles
+					influence = 100
+				}
+			}
+		}
+		modifier = {
+			army_tradition = 1
+		}
+	}
+	
+	conditional_modifier = {
+		trigger = {
+			NOT = { has_dlc = "Cradle of Civilization" }
+			estate_influence = {
+				estate = estate_nobles
+				influence = 100
+			}
+		}
+		modifier = {
+			army_tradition = 1
+		}
+	}
+	
+	conditional_modifier = {
+		trigger = {
+			has_dlc = "Cradle of Civilization"
+			estate_influence = {
+				estate = estate_nobles
+				influence = 100
+			}
+		}
+		modifier = {
+			yearly_army_professionalism = 0.01
+		}
+	}
+	
+	on_granted = {
+		custom_tooltip = scaling_with_estate_influence_tt
+		tooltip = {
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+				}
+				add_country_modifier = {
+					name = TIM_full_army_prof
+					duration = -1
+					desc = UNTIL_REVOKED
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = TIM_full_army_trad
+					duration = -1
+					desc = UNTIL_REVOKED
+				}
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 0 
+	}
+}
+
+estate_nobles_MUG_development_of_the_subah = {
+	icon = privilege_states
+	influence = 0.05
+	max_absolutism = -5
+	loyalty = 0
+	is_valid = {
+		has_country_flag = MUG_unlock_privilege_subahs_flag
+	}
+	
+	benefits = {
+		state_governing_cost = -0.15
+	}
+	penalties = {
+		province_warscore_cost = 0.05
+	}
+	
+	ai_will_do = {
+		factor = 1 #AI will not expand quickly enough
+	}
+}
+
+estate_nobles_four_class_system = {
+	icon = estate_eunuchs_establish_favor_system_privilege
+	max_absolutism = -10
+	influence = 0.05
+	loyalty = 0.05
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	is_valid = {
+		has_country_flag = yua_four_class_system_flag
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = { always = yes }
+		modifier = {
+			advisor_cost = -0.15
+		}
+	}
+	
+	loyalty_scaled_conditional_modifier = {
+		trigger = { is_emperor_of_china = yes }
+		modifier = {
+			imperial_mandate = 0.05
+		}
+	}
+	
+	loyalty_scaled_conditional_modifier = {
+		trigger = { is_emperor_of_china = no }
+		modifier = {
+			global_autonomy = -0.05
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_nobles_hungarian_nobility_privileges = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -15
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 3 } }
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = {
+		has_dlc = "Winds of Change"
+		OR = {
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+		}
+		NOT = { has_country_flag = hun_no_more_hungarian_privileges_flag }
+		NOT = { exists = HUN }
+		OR = {
+			tag = HAB
+			AND = {
+				was_tag = HAB
+				tag = AUH
+			}
+		}
+		num_of_owned_provinces_with = {
+			value = 5
+			OR = {
+				culture = hungarian
+				is_core = HUN
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = HAB_ALL_HUNGARIAN_PROVINCES_GAIN_THE_FOLLOWING
+		tooltip = {
+			add_province_modifier = {
+				name = hab_hungarian_privileges
+				duration = -1
+			}
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					culture = hungarian
+					is_core = HUN
+				}
+			}
+			add_province_modifier = {
+				name = hab_hungarian_privileges
+				duration = -1
+			}
+		}
+	}
+
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = hab_hungarian_privileges
+			}
+			remove_province_modifier = hab_hungarian_privileges
+		}
+	}
+	
+	can_revoke = {
+		NOT = { tag = AUH }
+	}
+	cooldown_years = 25
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_nobles_austrian_nobility_privileges = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -15
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 3 } }
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = {
+		has_dlc = "Winds of Change"
+		OR = {
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+		}
+		NOT = { has_country_flag = hun_no_more_austrian_privileges_flag }
+		NOT = { exists = HAB }
+		OR = {
+			tag = HUN
+			AND = {
+				was_tag = HUN
+				tag = AUH
+			}
+		}
+		num_of_owned_provinces_with = {
+			value = 5
+			OR = {
+				culture = austrian
+				is_core = HAB
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = HUN_ALL_AUSTRIAN_PROVINCES_GAIN_THE_FOLLOWING
+		tooltip = {
+			add_province_modifier = {
+				name = hun_austrian_privileges
+				duration = -1
+			}
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					culture = austrian
+					is_core = HAB
+				}
+			}
+			add_province_modifier = {
+				name = hun_austrian_privileges
+				duration = -1
+			}
+		}
+	}
+
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = hun_austrian_privileges
+			}
+			remove_province_modifier = hun_austrian_privileges
+		}
+	}
+	
+	can_revoke = {
+		NOT = { tag = AUH }
+	}
+	cooldown_years = 25
+	ai_will_do = {
+		factor = 1
+	}
+}

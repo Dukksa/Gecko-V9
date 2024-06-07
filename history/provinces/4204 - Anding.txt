@@ -1,7 +1,7 @@
 #4204 - Anding
 
-owner = SYG
-controller = SYG
+owner = 
+controller = 
 add_core = SYG
 culture = oirats
 religion = vajrayana
