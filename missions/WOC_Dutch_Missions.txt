@@ -1903,19 +1903,19 @@ NED_3_1 = {
 		position = 20
 		required_missions = { NED_malacca_trade } 
 		provinces_to_highlight = {  
-			area = taiwan_area
+			area = spice_islands_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
 		trigger = {  
-			taiwan_area = {
+			spice_islands_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		} 
 
 		effect = {  
-			738 = {
+			650 = {
 				add_or_upgrade_fort_building = yes
 				center_of_trade = 2
 				add_province_modifier = {
