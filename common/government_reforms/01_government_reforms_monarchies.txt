@@ -6833,3 +6833,90 @@ egyptian_government_reform = {
 		egyptian_westernization
 	}
 }
+gothic_monarchy_reform = {
+	icon = gothic_monarchy_reform
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			has_reform = gothic_monarchy_reform
+			have_had_reform = gothic_monarchy_reform
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = gothic_monarchy_reform
+			have_had_reform = gothic_monarchy_reform
+		}
+	} 
+	nation_designer_trigger = {
+		OR = {
+			primary_culture = goths
+			primary_culture = gothic_ger 
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+
+	custom_attributes = {
+		enables_recruit_foreign_generals = yes
+	}
+
+	modifiers = {
+		merc_maintenance_modifier = -0.15
+		mercenary_manpower = 0.25
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+
+empire_of_trebizond = {
+	icon = "pronoiar_monarchy_reform"
+	allow_normal_conversion = yes
+	potential = {
+		government = monarchy
+		religion_group = christian
+		tag = TRE
+	}
+	legacy_equivalent = feudal_monarchy
+	valid_for_nation_designer = no
+
+	modifiers = {
+		unjustified_demands = -0.25
+		tolerance_heathen = 1
+		reverse_relation_with_heathen_religion = 10
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Winds of Change"
+		}
+		custom_attributes = {
+			can_royal_marry_heathens = yes
+		}
+	}
+}
+
+crusader_nobility_reform = {
+	icon = "holy_state_reform"
+	allow_normal_conversion = yes
+	potential = {
+		has_unlocked_government_reform = {
+			government_reform = crusader_nobility_reform
+		}
+	}
+	valid_for_nation_designer = no
+
+	modifiers = {
+		reverse_relation_with_heretic_religion = 10
+		warscore_cost_vs_other_religion = -0.1
+		nobles_loyalty_modifier = 0.1
+		nobles_influence_modifier = 0.1
+	}
+
+	custom_attributes = {
+		pp_on_heathen_wars = yes
+	}
+
+}

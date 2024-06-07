@@ -4203,3 +4203,28 @@ millenarian_theocracy_reform = {
 		factor = 10
 	}
 }
+ven_promissione_ducale_reform = {
+	icon = "ven_promissione_ducale_reform"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_unlocked_government_reform = {
+				government_reform = ven_promissione_ducale_reform
+			}
+			have_had_reform = ven_promissione_ducale_reform
+		}
+	}
+	trigger = {
+		is_or_was_tag = { tag = VEN }
+		government = republic
+	}
+	modifiers = {
+		yearly_corruption = -0.25
+		candidate_random_bonus = 1
+		monthly_authority_power = 0.1
+
+	}
+	ai = {
+		factor = 10
+	}
+}
