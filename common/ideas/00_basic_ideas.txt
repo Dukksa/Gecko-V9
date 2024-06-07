@@ -102,7 +102,7 @@ religious_ideas = {
 	}
 	deus_vult = {
 		cb_on_religious_enemies = yes
-		warscore_cost_vs_other_religion = -0.05
+		warscore_cost_vs_other_religion = -0.1
 	}
 	church_attendance_duty = { 
 		same_religion_advisor_cost = -0.1
@@ -120,7 +120,7 @@ religious_ideas = {
 	}
 	devoutness = {
 		tolerance_own = 2
-		global_tax_modifier = 0.15
+		global_tax_modifier = 0.20
 		papal_influence = 2
 		monthly_fervor_increase = 0.30
 		church_power_modifier = 0.15
@@ -1027,7 +1027,7 @@ offensive_ideas = {
 
 	bonus = {
 		special_unit_forcelimit = 0.15
-		land_forcelimit_modifier = 0.1
+		land_forcelimit_modifier = 0.15
 	}
 
 	shock_tactics = {
@@ -1038,7 +1038,7 @@ offensive_ideas = {
 		warscore_from_battles_modifier = 0.15
 	}
 	volley_fire = {
-		fire_damage = 0.1
+		fire_damage = 0.15
 	}
 	engineer_corps = {
 		siege_ability = 0.15
@@ -1048,12 +1048,11 @@ offensive_ideas = {
 		discipline = 0.05
 	}
 	fort_breaker = {
-		assault_fort_ability = 0.33
 		assault_fort_cost_modifier = -1
-		artillery_barrage_cost = -0.25
+		artillery_barrage_cost = -0.50
 	}
 	superior_firepower = {
-		artillery_power = 0.1
+		artillery_power = 0.15
 		artillery_cost = -0.1
 	}
 
