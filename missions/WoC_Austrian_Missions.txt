@@ -1377,7 +1377,7 @@ WoC_austria_2_germany = {
 								NOT = { area = erzgebirge_area }
 								NOT = { area = bohemia_area }
 								NOT = { area = moravia_area }
-								value = 50
+								value = 90
 							}
 						}
 					}
