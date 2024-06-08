@@ -1,7 +1,7 @@
 # 2123 - Qakilik
 
-owner = CHG
-controller = CHG
+owner = 
+controller = 
 add_core = CHG
 culture = oirats
 religion = vajrayana

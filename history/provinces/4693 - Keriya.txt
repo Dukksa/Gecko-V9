@@ -1,7 +1,7 @@
 # 4693 - Keriya
 
-owner = KAS
-controller = KAS
+owner = 
+controller = 
 add_core = KAS
 culture = uyghur
 religion = sunni

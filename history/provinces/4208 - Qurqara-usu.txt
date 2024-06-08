@@ -1,7 +1,7 @@
 #4208 - Qurqara-usu
 
-owner = CHG		# ruled by a Chagataiid 
-controller = CHG
+owner = 		# ruled by a Chagataiid 
+controller = 
 add_core = CHG
 culture = uyghur
 religion = sunni

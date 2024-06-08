@@ -1,7 +1,7 @@
 # 2118 - Urzhar
 
-owner = OIR
-controller = OIR
+owner = 
+controller = 
 add_core = OIR
 culture = oirats
 religion = sunni

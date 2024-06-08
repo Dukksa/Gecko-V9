@@ -1,7 +1,7 @@
 #716 - Tannu Tuva
 
-owner = OIR		# The Oirads united much of Mongolia
-controller = OIR
+owner = 		# The Oirads united much of Mongolia
+controller = 
 add_core = OIR
 culture = buryat
 religion = tengri_pagan_reformed

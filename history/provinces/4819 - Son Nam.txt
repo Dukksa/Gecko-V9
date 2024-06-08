@@ -1,5 +1,5 @@
 owner = 
-controller = DAI
+controller = 
 culture = vietnamese
 religion = mahayana
 capital = "Son Nam"

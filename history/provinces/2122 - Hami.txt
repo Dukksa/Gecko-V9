@@ -1,7 +1,7 @@
 # 2122 - Hami
 
-owner = HMI
-controller = HMI
+owner = 
+controller = 
 add_core = HMI
 culture = oirats
 religion = vajrayana

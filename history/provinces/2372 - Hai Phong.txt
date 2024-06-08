@@ -1,7 +1,7 @@
 #2372 - Hai Phong
 
 owner = 
-controller = DAI
+controller = 
 culture = vietnamese
 religion = mahayana
 capital = "Hai Phong"

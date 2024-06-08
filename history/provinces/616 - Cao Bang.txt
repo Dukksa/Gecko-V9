@@ -1,7 +1,7 @@
 #616 - Cao Bang
 
 owner = 
-controller = DAI
+controller = 
 culture = zhuang
 religion = mahayana
 capital = "Cao Bang"

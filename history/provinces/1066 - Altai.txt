@@ -1,7 +1,7 @@
 #1066 - Altai
 
-owner = OIR
-controller = OIR
+owner = 
+controller = 
 add_core = OIR
 culture = buryat
 religion = tengri_pagan_reformed

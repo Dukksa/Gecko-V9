@@ -1,7 +1,7 @@
 # 2193 - Govi
 
-owner = OIR
-controller = OIR
+owner = 
+controller = 
 add_core = OIR
 culture = khalkha
 religion = tengri_pagan_reformed

@@ -1,7 +1,7 @@
 #719 - Sayin Noyan
 
-owner = OIR		# The Oirads united much of Mongolia
-controller = OIR
+owner = 		# The Oirads united much of Mongolia
+controller = 
 add_core = OIR
 culture = khalkha
 religion = tengri_pagan_reformed

@@ -1,7 +1,7 @@
 #610 - Thanh Hoa
 
 owner = 
-controller = DAI
+controller = 
 culture = vietnamese
 religion = mahayana
 capital = "Thanh Hoa"

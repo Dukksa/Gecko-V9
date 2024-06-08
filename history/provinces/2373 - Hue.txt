@@ -1,7 +1,7 @@
 #2373 - Hue
 
 owner = 
-controller = DAI
+controller = 
 culture = vietnamese
 religion = mahayana
 capital = "Hue"

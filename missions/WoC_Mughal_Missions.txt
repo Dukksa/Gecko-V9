@@ -355,18 +355,7 @@ WoC_mughals_1 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
-			if = {
-				limit = {
-					has_reform = mughal_government
-				}
-				custom_trigger_tooltip = {
-					tooltip = MUG_10_cultures_assimilated
-					num_accepted_cultures = 10
-				}
-			}
-			else = {
-				num_accepted_cultures = 5
-			}
+			num_accepted_cultures = 5
 		}
 		effect = {
 			hidden_effect = {

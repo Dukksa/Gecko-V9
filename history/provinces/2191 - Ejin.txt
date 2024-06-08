@@ -1,7 +1,7 @@
 # 2191 - Ejin
 
-owner = OIR
-controller = OIR
+owner = 
+controller = 
 add_core = OIR
 culture = oirats
 religion = vajrayana
