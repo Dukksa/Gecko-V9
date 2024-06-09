@@ -600,7 +600,7 @@ country_event = {
 			spawn_rebels = {
 				type = nationalist_rebels
 				size = 3
-				leader = "István Bocskay"
+				leader = "Istvï¿½n Bocskay"
 				friend = HUN
 			}
 			clr_province_flag = hungarian_revolt
@@ -809,7 +809,7 @@ country_event = {
 	}
 }
 
-# The Insurrection of Duke Imre Thököly
+# The Insurrection of Duke Imre Thï¿½kï¿½ly
 country_event = {
 	id = flavor_hab.3333
 	title = "flavor_hab.EVTNAME3333"
@@ -887,7 +887,7 @@ country_event = {
 				type = nationalist_rebels
 				size = 3
 				friend = HUN
-				leader = "Imre Thököly"
+				leader = "Imre Thï¿½kï¿½ly"
 			}
 			
 
@@ -1871,7 +1871,7 @@ country_event = {
 	}
 }
 
-# The Pestsäule of Vienna.
+# The Pestsï¿½ule of Vienna.
 country_event = {
 	id = flavor_hab.14
 	title = flavor_hab.14.t
@@ -1981,7 +1981,7 @@ country_event = {
 	}
 }
 
-# The Mühlviertel Textile Production
+# The Mï¿½hlviertel Textile Production
 country_event = {
 	id = flavor_hab.17
 	title = flavor_hab.17.t
@@ -2161,10 +2161,19 @@ country_event = {
 
 	option = {# Yes
 		name = flavor_hab.20.A
-
+		
 		add_government_reform = austrian_dual_monarchy
+		change_tag = AHU
+		if = {
+			limit = { NOT = { government_rank = 3 } }
+			set_government_rank = 3
+		}
+		country_event = {
+			id = ideagroups.1
+		}
+		add_prestige_or_monarch_power = { amount = 50 }
 		ai_chance = {
-			factor = 1
+			factor = 1000
 		}
 	}
 	
