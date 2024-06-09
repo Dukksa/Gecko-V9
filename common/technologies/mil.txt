@@ -95,6 +95,8 @@ technology = {
 	
 	land_morale = 	0.5
 	military_tactics 	= 	0.25
+	enable = large_cast_bronze_mortar 
+	enable = houfnice
 }
 
 technology = {
@@ -180,8 +182,6 @@ technology = {
 	cavalry_shock		=	0.25
 	infantry_shock		= 	0.15
 	infantry_fire 		= 	0.1
-	enable = large_cast_bronze_mortar 
-	enable = houfnice
 }
 
 technology = {
