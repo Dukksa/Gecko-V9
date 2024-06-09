@@ -11809,6 +11809,13 @@ dutch_polders = {
 	type = monument
 
 	build_trigger = {
+		OR = {
+			culture = dutch
+			culture = flemish
+			culture = frisian
+			culture = roman
+		}
+		province_is_or_accepts_culture = yes
 	}
 
 	on_built = {
@@ -11818,9 +11825,23 @@ dutch_polders = {
 	}
 
 	can_use_modifiers_trigger = {
+		OR = {
+			culture = dutch
+			culture = flemish
+			culture = frisian
+			culture = roman
+		}
+		province_is_or_accepts_culture = yes
 	}
 
 	can_upgrade_trigger = {
+		OR = {
+			culture = dutch
+			culture = flemish
+			culture = frisian
+			culture = roman
+		}
+		province_is_or_accepts_culture = yes
 	}
 
 	keep_trigger = {
@@ -11848,7 +11869,7 @@ dutch_polders = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 350
+			factor = 1000
 		}
 		province_modifiers = {
 		}
@@ -11869,7 +11890,7 @@ dutch_polders = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 750
+			factor = 2500
 		}
 		province_modifiers = {
 		}
@@ -11887,10 +11908,10 @@ dutch_polders = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 360
+			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 1500
+			factor = 5000
 		}
 		province_modifiers = {
 		}
@@ -11903,6 +11924,21 @@ dutch_polders = {
 			burghers_loyalty_modifier = 0.15
 		}
 		on_upgraded = {
+		}
+		
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = NED_COMPLETED_CANAL_WORKS_MISSION
+					owner = {
+						has_country_flag = ned_buff_dutch_polders_great_project_flag
+					}
+				}
+			}
+			modifier = {
+				global_trade_goods_size_modifier = 0.05
+				global_prov_trade_power_modifier = 0.2
+			}
 		}
 	}
 }
