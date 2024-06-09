@@ -231,6 +231,17 @@ artist = {
 	}
 
 	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_country_flag = ven_splendor_flag
+			}
+		}
+		modifier = {
+			monthly_splendor = 1
+		}
+	}
+
+	skill_scaled_modifier = {
 		trigger = { owner = {  has_country_modifier = mam_adm_advisors_generate_idea_cost_modifier  } }
 		modifier = { idea_cost = -0.01 }
 	}
@@ -319,6 +330,17 @@ artist = {
 		}
 	}
 
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_flag = ned_artist_is_architect_flag
+			}
+		}
+		modifier = {
+			build_cost = -0.025
+		}
+	}
+
 	chance = {
 		factor = 1
 	}
@@ -339,6 +361,17 @@ artist = {
 ######################################################
 treasurer = {
 	monarch_power = ADM
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_country_flag = ven_splendor_flag
+			}
+		}
+		modifier = {
+			monthly_splendor = 1
+		}
+	}
+	
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
