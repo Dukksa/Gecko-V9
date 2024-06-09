@@ -2339,8 +2339,7 @@ NED_4_1 = {
 		} 
 	
 		trigger = {  
-			army_size = 200
-			num_of_battles = { amount = 200 }
+			army_size = 250
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = low_countries_region
 				has_manpower_building_trigger = yes
