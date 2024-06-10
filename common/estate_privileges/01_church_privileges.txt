@@ -668,6 +668,12 @@ estate_church_freedom_of_interpretation = {
 			limit = { has_estate_privilege = estate_church_clerical_ministers }
 			remove_estate_privilege = estate_church_clerical_ministers
 		}
+		else_if = {
+			limit = {
+				has_country_flag = MUG_upgrade_freedom_of_interpretation_flag
+			}
+			custom_tooltip = MUG_conditional_modifier_info
+		}
 		else = {
 			custom_tooltip = has_no_effects_on_granted
 		}
@@ -678,6 +684,23 @@ estate_church_freedom_of_interpretation = {
 		}
 		modifier = {
 			technology_cost = -0.05
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = MUG_upgrade_freedom_of_interpretation_flag
+			NOT = { piety = -0.5 }
+		}
+		modifier = {
+			morale_damage = 0.1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = MUG_upgrade_freedom_of_interpretation_flag
+		}
+		modifier = {
+			global_unrest = -1
 		}
 	}
 	penalties = {

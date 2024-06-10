@@ -2697,14 +2697,13 @@ WoC_mughals_5 = {
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-		trigger = {
-			600 = { country_or_non_sovereign_subject_holds = ROOT }
+		trigger = {			
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
 					region = indo_china_region
 					area = north_tenasserim_area
 				}
-				value = 45
+				value = 5
 			}
 		}
 		effect = {
@@ -2782,7 +2781,7 @@ WoC_mughals_5 = {
 					area = guangdong_area
 					area = red_river_delta_area
 				}
-				value = 20
+				value = 1
 			}
 		}
 		effect = {

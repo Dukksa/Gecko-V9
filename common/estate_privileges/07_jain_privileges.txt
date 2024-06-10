@@ -990,6 +990,14 @@ estate_jains_private_trade_fleets = {
 		light_ship_cost = -0.2
 		global_ship_trade_power = 0.1
 	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = MUG_jain_trade_fleets 
+		}
+		modifier = {
+			trade_steering = 0.1
+		}
+	}
 	ai_will_do = {
 		factor = 1
 		modifier = {
