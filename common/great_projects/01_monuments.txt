@@ -15495,8 +15495,25 @@ sun_temple_konarak = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		if = {
+			limit = {
+				owner = {
+					mission_completed = MUG_mughal_architecture
+				}
+			}
+			OR = {
+				province_is_or_accepts_religion_group = {
+					religion_group = dharmic
+				}
+				owner = {
+					mission_completed = MUG_mughal_architecture
+				}
+			}
+		}
+		else = {
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
@@ -15507,14 +15524,48 @@ sun_temple_konarak = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		if = {
+			limit = {
+				owner = {
+					mission_completed = MUG_mughal_architecture
+				}
+			}
+			OR = {
+				province_is_or_accepts_religion_group = {
+					religion_group = dharmic
+				}
+				owner = {
+					mission_completed = MUG_mughal_architecture
+				}
+			}
+		}
+		else = {
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		if = {
+			limit = {
+				owner = {
+					mission_completed = MUG_mughal_architecture
+				}
+			}
+			OR = {
+				province_is_or_accepts_religion_group = {
+					religion_group = dharmic
+				}
+				owner = {
+					mission_completed = MUG_mughal_architecture
+				}
+			}
+		}
+		else = {
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
