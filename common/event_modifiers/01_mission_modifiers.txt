@@ -13064,7 +13064,7 @@ hun_imperial_crown_bid = {
 }
 
 hun_patrons_of_art = {
-	institution_spread_from_true_faith = 0.25
+	technology_cost = -0.10
 }
 
 hun_secured_succession = {

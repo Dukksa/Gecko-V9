@@ -1092,6 +1092,17 @@ trader = {
 		}
 	}
 	
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_flag = hun_trader_scaling_bonus_flag
+			}
+		}
+		modifier = {
+			reduced_trade_penalty_on_non_main_tradenode = 0.05
+		}
+	}
+
 	# Bonus
 	trade_efficiency = 0.10
 	

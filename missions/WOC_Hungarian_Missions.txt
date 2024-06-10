@@ -7,7 +7,11 @@ woc_hun_first_branch = {
 	}
 	potential = {
 		has_dlc = "Winds of Change"
-		tag = HUN
+		OR = {
+			tag = HUN
+			tag = EOH
+			}
+		
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -867,7 +871,10 @@ woc_hun_second_branch = {
 	}
 	potential = {
 		has_dlc = "Winds of Change"
-		tag = HUN
+		OR = {
+			tag = HUN
+			tag = EOH
+			}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -1505,7 +1512,10 @@ woc_hun_third_branch = {
 	}
 	potential = {
 		has_dlc = "Winds of Change"
-		tag = HUN
+		OR = {
+			tag = HUN
+			tag = EOH
+			}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -1548,7 +1558,7 @@ woc_hun_third_branch = {
 		effect = {
 			define_advisor = {
 				type = inquisitor
-				name = "Dénes Szécsi"
+				name = "Dï¿½nes Szï¿½csi"
 				skill = 2
 				culture = hungarian
 				religion = ROOT
@@ -2470,7 +2480,10 @@ woc_hun_fourth_branch = {
 	}
 	potential = {
 		has_dlc = "Winds of Change"
-		tag = HUN
+		OR = {
+			tag = HUN
+			tag = EOH
+			}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -2572,7 +2585,7 @@ woc_hun_fourth_branch = {
 			set_country_flag = hun_national_idea_bonus
 			define_advisor = {
 				type = diplomat
-				name = "János Vitéz"
+				name = "Jï¿½nos Vitï¿½z"
 				skill = 3
 				culture = hungarian
 				religion = ROOT
@@ -2930,7 +2943,10 @@ woc_hun_fifth_branch = {
 	}
 	potential = {
 		has_dlc = "Winds of Change"
-		tag = HUN
+		OR = {
+			tag = HUN
+			tag = EOH
+			}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -2941,13 +2957,15 @@ woc_hun_fifth_branch = {
 		position = 1
 		
 		trigger = {
-			owns = 154
-			154 = {
-				base_production = 6
-			}
-			OR = {
-				advisor = natural_scientist
-				gold_income_percentage = 0.2
+			AND = {
+				owns = 154
+				154 = {
+					base_production = 6
+				}
+				OR = {
+					advisor = natural_scientist
+					gold_income_percentage = 0.2
+				}
 			}
 		}
 		
@@ -3191,27 +3209,26 @@ woc_hun_fifth_branch = {
 		}
 	}
 	
-		hun_a_multicultural_empire = { 
+	hun_a_multicultural_empire = { 
 		icon = multicultural_empire 
 		required_missions = { hun_address_the_ethnic_situation }
 		position = 7
 		
 		provinces_to_highlight = {
-			AND = {
-				owned_by = ROOT
-				OR = {
-					unrest = 1
-					nationalism = 1 
-					local_autonomy = 1 
-				}
-				ROOT = {
-					NOT = {
-						num_of_owned_provinces_with = {
-							value = 30
-							NOT = { unrest = 1 }
-							NOT = { nationalism = 1 }
-							NOT = { local_autonomy = 1 }
-						}
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					OR = {
+						area = bohemia_area
+						area = erzgebirge_area
+						area = moravia_area
+						area = austria_proper_area
+						area = inner_austria_area
+						area = silesia_area
+						area = tirol_area
 					}
 				}
 			}
@@ -3220,42 +3237,78 @@ woc_hun_fifth_branch = {
 		trigger = {
 			stability = 3
 			num_accepted_cultures = 4
-			OR = {
-				tag = AUH
-				AND = {
-					total_development = 1000
-					OR = {
-						reform_level = 10
-						crown_land_share = 80
-					}
-				}
-			}
+			adm_tech = 10
+			NOT = { exists = EOH }
+			NOT ={ has_country_flag = formed_eoh_flag}
+			    bohemia_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+                erzgebirge_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+                moravia_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+                austria_proper_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+                inner_austria_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+                silesia_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+                tirol_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+			num_of_cities = 30
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+		}
+		
 			num_of_owned_provinces_with = {
 				value = 30
 				NOT = { unrest = 1 }
 				NOT = { nationalism = 1 }
 				NOT = { local_autonomy = 1 }
 			}
-		}
+		
 		
 		effect = {
-			custom_tooltip = hun_austria_hungary_requirement_tt
-			set_country_flag = hun_keep_order_of_the_dragon
-			hidden_effect = {
-				unlock_government_reform = {
-					government_reform = imperial_hungarian_government
-				}
+			change_tag = EOH
+			on_change_tag_effect = no
+			swap_non_generic_missions = no
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
 			}
 			if = {
 				limit = {
+					has_custom_ideas = no
+				}
+				set_country_flag = formed_eoh_flag
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					religion_group = christian
 					government = monarchy
 				}
-				add_government_reform = imperial_hungarian_government
+				add_government_reform = apostolic_kingdom
 			}
-			else = {
-				change_government_reform_progress = 100
-			}
-			custom_tooltip = hun_perma_access_order_of_the_dragon
 		}
 	}
 	
