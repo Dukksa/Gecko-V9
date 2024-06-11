@@ -1850,6 +1850,23 @@ fortification_expert = {
 		}
 		modifier = { meritocracy = 0.25 }
 	}
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				has_country_flag = hsn_has_scaling_advisors
+			}
+		}
+		modifier = { army_tradition_decay = -0.003 }
+	}
+
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				has_country_flag = ned_military_engineer_siege_ability_scaled_modifier_flag
+			}
+		}
+		modifier = { siege_ability = 0.05 }
+	}
 
 	chance = {
 		factor = 1
