@@ -7,37 +7,16 @@ woc_tatars_1 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-		if = {
 			limit = {
 				OR = {
-					is_tatar_nation = yes
-					is_mongol_nation = yes
-					is_monghulistan_nation = yes
-					was_tatar_nation = yes
-					was_mongol_nation = yes
-					was_monghulistan_nation = yes
+					tag = GOL
+					tag = KAZ
+					tag = NOG
+					tag = SIB
+					tag = TRS
+					tag = KHI
 				}
 			}
-			OR = {
-				is_tatar_nation = yes
-				AND = {
-					was_tatar_nation = yes
-					OR = {
-						is_mongol_nation = yes
-						is_monghulistan_nation = yes
-						tag = MGE
-						tag = YUA
-						tag = ILK
-						tag = GLH
-					}
-				}
-			}
-			NOT = { was_mongol_nation = yes }
-			NOT = { was_monghulistan_nation = yes }
-		}
-		else = {
-			tag = GLH
-		}
 		has_dlc = "Winds of Change"
 	}
 
@@ -76,7 +55,7 @@ woc_tatars_1 = {
 				duration = 5475
 			}
 			
-			add_legitimacy_equivalent = { amount = 10 }
+			add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
 		} 
 	}
 
@@ -149,7 +128,7 @@ woc_tatars_1 = {
 						}
 					}
 					owner = {
-						add_legitimacy_equivalent = { amount = 2 }
+						add_legitimacy_equivalent = { amount = 2 republican_tradition = 1 }
 					}
 				}
 			}
@@ -255,37 +234,16 @@ woc_tatars_2 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-		if = {
 			limit = {
 				OR = {
-					is_tatar_nation = yes
-					is_mongol_nation = yes
-					is_monghulistan_nation = yes
-					was_tatar_nation = yes
-					was_mongol_nation = yes
-					was_monghulistan_nation = yes
+					tag = GOL
+					tag = KAZ
+					tag = NOG
+					tag = SIB
+					tag = TRS
+					tag = KHI
 				}
 			}
-			OR = {
-				is_tatar_nation = yes
-				AND = {
-					was_tatar_nation = yes
-					OR = {
-						is_mongol_nation = yes
-						is_monghulistan_nation = yes
-						tag = MGE
-						tag = YUA
-						tag = ILK
-						tag = GLH
-					}
-				}
-			}
-			NOT = { was_mongol_nation = yes }
-			NOT = { was_monghulistan_nation = yes }
-		}
-		else = {
-			tag = GLH
-		}
 		has_dlc = "Winds of Change"
 	}
 
@@ -597,37 +555,16 @@ woc_tatars_3 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-		if = {
 			limit = {
 				OR = {
-					is_tatar_nation = yes
-					is_mongol_nation = yes
-					is_monghulistan_nation = yes
-					was_tatar_nation = yes
-					was_mongol_nation = yes
-					was_monghulistan_nation = yes
+					tag = GOL
+					tag = KAZ
+					tag = NOG
+					tag = SIB
+					tag = TRS
+					tag = KHI
 				}
 			}
-			OR = {
-				is_tatar_nation = yes
-				AND = {
-					was_tatar_nation = yes
-					OR = {
-						is_mongol_nation = yes
-						is_monghulistan_nation = yes
-						tag = MGE
-						tag = YUA
-						tag = ILK
-						tag = GLH
-					}
-				}
-			}
-			NOT = { was_mongol_nation = yes }
-			NOT = { was_monghulistan_nation = yes }
-		}
-		else = {
-			tag = GLH
-		}
 		has_dlc = "Winds of Change"
 	}
 
@@ -796,7 +733,7 @@ woc_tatars_3 = {
 			
 			custom_tooltip = SEPERATOR_TOOLTIP
 			
-			add_legitimacy_equivalent = { amount = 10 }
+			add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
 		}
 	}
 
@@ -847,37 +784,16 @@ woc_tatars_4 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-		if = {
 			limit = {
 				OR = {
-					is_tatar_nation = yes
-					is_mongol_nation = yes
-					is_monghulistan_nation = yes
-					was_tatar_nation = yes
-					was_mongol_nation = yes
-					was_monghulistan_nation = yes
+					tag = GOL
+					tag = KAZ
+					tag = NOG
+					tag = SIB
+					tag = TRS
+					tag = KHI
 				}
 			}
-			OR = {
-				is_tatar_nation = yes
-				AND = {
-					was_tatar_nation = yes
-					OR = {
-						is_mongol_nation = yes
-						is_monghulistan_nation = yes
-						tag = MGE
-						tag = YUA
-						tag = ILK
-						tag = GLH
-					}
-				}
-			}
-			NOT = { was_mongol_nation = yes }
-			NOT = { was_monghulistan_nation = yes }
-		}
-		else = {
-			tag = GLH
-		}
 		has_dlc = "Winds of Change"
 	}
 
@@ -901,7 +817,7 @@ woc_tatars_4 = {
 		} 
 
 		effect = {
-			add_legitimacy_equivalent = { amount = 10 }
+			add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
 			
 			custom_tooltip = SEPERATOR_TOOLTIP
 			
@@ -1197,7 +1113,7 @@ woc_tatars_4 = {
 				age = age_of_reformation
 			}
 			
-			add_legitimacy_equivalent = { amount = 15 }
+			add_legitimacy_equivalent = { amount = 15 republican_tradition = 10 }
 			
 			custom_tooltip = SEPERATOR_TOOLTIP
 			
@@ -1221,37 +1137,16 @@ woc_tatars_5 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-		if = {
 			limit = {
 				OR = {
-					is_tatar_nation = yes
-					is_mongol_nation = yes
-					is_monghulistan_nation = yes
-					was_tatar_nation = yes
-					was_mongol_nation = yes
-					was_monghulistan_nation = yes
+					tag = GOL
+					tag = KAZ
+					tag = NOG
+					tag = SIB
+					tag = TRS
+					tag = KHI
 				}
 			}
-			OR = {
-				is_tatar_nation = yes
-				AND = {
-					was_tatar_nation = yes
-					OR = {
-						is_mongol_nation = yes
-						is_monghulistan_nation = yes
-						tag = MGE
-						tag = YUA
-						tag = ILK
-						tag = GLH
-					}
-				}
-			}
-			NOT = { was_mongol_nation = yes }
-			NOT = { was_monghulistan_nation = yes }
-		}
-		else = {
-			tag = GLH
-		}
 		has_dlc = "Winds of Change"
 	}
 

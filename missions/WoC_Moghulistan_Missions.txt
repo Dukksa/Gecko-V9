@@ -6,26 +6,15 @@ woc_moghulistan_1 = {
 	potential_on_load = {
 		has_dlc = "Winds of Change"
 	}
-	potential = { 
-		OR = {
-			is_monghulistan_nation = yes 
-			AND = {
-				was_monghulistan_nation = yes
+	potential = {
+			limit = {
 				OR = {
-					is_mongol_nation = yes
-					is_tatar_nation = yes
-					tag = MGE
-					tag = YUA
-					tag = ILK
-					tag = GLH
+					tag = CHG
+					tag = KAS
 				}
 			}
-		}
-		NOT = { was_mongol_nation = yes }
-		NOT = { was_tatar_nation = yes }
 		has_dlc = "Winds of Change"
 	}
-
 	moghulistan_kazakhs = {
 		icon = mission_kazakh_tribes
 		position = 2
@@ -323,23 +312,13 @@ woc_moghulistan_2 = {
 	potential_on_load = {
 		has_dlc = "Winds of Change"
 	}
-	potential = { 
-		OR = {
-			is_monghulistan_nation = yes 
-			AND = {
-				was_monghulistan_nation = yes
+	potential = {
+			limit = {
 				OR = {
-					is_mongol_nation = yes
-					is_tatar_nation = yes
-					tag = MGE
-					tag = YUA
-					tag = ILK
-					tag = GLH
+					tag = CHG
+					tag = KAS
 				}
 			}
-		}
-		NOT = { was_mongol_nation = yes }
-		NOT = { was_tatar_nation = yes }
 		has_dlc = "Winds of Change"
 	}
 
@@ -604,23 +583,13 @@ woc_moghulistan_3 = {
 	potential_on_load = {
 		has_dlc = "Winds of Change"
 	}
-	potential = { 
-		OR = {
-			is_monghulistan_nation = yes 
-			AND = {
-				was_monghulistan_nation = yes
+	potential = {
+			limit = {
 				OR = {
-					is_mongol_nation = yes
-					is_tatar_nation = yes
-					tag = MGE
-					tag = YUA
-					tag = ILK
-					tag = GLH
+					tag = CHG
+					tag = KAS
 				}
 			}
-		}
-		NOT = { was_mongol_nation = yes }
-		NOT = { was_tatar_nation = yes }
 		has_dlc = "Winds of Change"
 	}
 
@@ -932,26 +901,15 @@ woc_moghulistan_4 = {
 	potential_on_load = {
 		has_dlc = "Winds of Change"
 	}
-	potential = { 
-		OR = {
-			is_monghulistan_nation = yes 
-			AND = {
-				was_monghulistan_nation = yes
+	potential = {
+			limit = {
 				OR = {
-					is_mongol_nation = yes
-					is_tatar_nation = yes
-					tag = MGE
-					tag = YUA
-					tag = ILK
-					tag = GLH
+					tag = CHG
+					tag = KAS
 				}
 			}
-		}
-		NOT = { was_mongol_nation = yes }
-		NOT = { was_tatar_nation = yes }
 		has_dlc = "Winds of Change"
 	}
-
 	moghulistan_secure_trade_posts = {
 		icon = mission_horde_caravans
 		position = 1
@@ -1206,23 +1164,13 @@ woc_moghulistan_5 = {
 	potential_on_load = {
 		has_dlc = "Winds of Change"
 	}
-	potential = { 
-		OR = {
-			is_monghulistan_nation = yes 
-			AND = {
-				was_monghulistan_nation = yes
+	potential = {
+			limit = {
 				OR = {
-					is_mongol_nation = yes
-					is_tatar_nation = yes
-					tag = MGE
-					tag = YUA
-					tag = ILK
-					tag = GLH
+					tag = CHG
+					tag = KAS
 				}
 			}
-		}
-		NOT = { was_mongol_nation = yes }
-		NOT = { was_tatar_nation = yes }
 		has_dlc = "Winds of Change"
 	}
 

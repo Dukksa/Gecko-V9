@@ -6,16 +6,17 @@ woc_flavor_hordes_1 = {
 	potential_on_load = {
 		has_dlc = "Winds of Change"
 	}
-	potential = { 
-		OR = {
-			is_tatar_nation = yes
-			is_mongol_nation = yes
-			is_monghulistan_nation = yes
-			tag = MGE
-			tag = ILK
-			tag = GLH
-		}
-		NOT = { was_tag = YUA }
+	potential = {
+			limit = {
+				OR = {
+					tag = GOL
+					tag = KAZ
+					tag = NOG
+					tag = SIB
+					tag = TRS
+					tag = KHI
+				}
+			}
 		has_dlc = "Winds of Change"
 	}
 	
@@ -70,16 +71,17 @@ woc_shared_hordes_1 = {
 	potential_on_load = {
 		has_dlc = "Winds of Change"
 	}
-	potential = { 
-		OR = {
-			is_tatar_nation = yes
-			is_mongol_nation = yes
-			is_monghulistan_nation = yes
-			tag = YUA
-			tag = MGE
-			tag = ILK
-			tag = GLH
-		}
+	potential = {
+			limit = {
+				OR = {
+					tag = GOL
+					tag = KAZ
+					tag = NOG
+					tag = SIB
+					tag = TRS
+					tag = KHI
+				}
+			}
 		has_dlc = "Winds of Change"
 	}
 
@@ -146,24 +148,18 @@ woc_hordes_1_branching = {
 	potential_on_load = {
 		has_dlc = "Winds of Change"
 	}
-	potential = { 
-		has_dlc = "Winds of Change"
-		NOT = {
-			OR = {
-				has_country_flag = hordes_tolerance_branch_flag
-				has_country_flag = hordes_devout_branch_flag
-				has_country_flag = hordes_confucian_branch_flag
+	potential = {
+			limit = {
+				OR = {
+					tag = GOL
+					tag = KAZ
+					tag = NOG
+					tag = SIB
+					tag = TRS
+					tag = KHI
+				}
 			}
-		}
-		OR = {
-			is_tatar_nation = yes
-			is_mongol_nation = yes
-			is_monghulistan_nation = yes
-			tag = YUA
-			tag = MGE
-			tag = ILK
-			tag = GLH
-		}
+		has_dlc = "Winds of Change"
 	}
 
 	tatars_branching1 = {
@@ -188,18 +184,18 @@ woc_hordes_1_tolerance = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
+			limit = {
+				OR = {
+					tag = GOL
+					tag = KAZ
+					tag = NOG
+					tag = SIB
+					tag = TRS
+					tag = KHI
+				}
+			}
 		has_dlc = "Winds of Change"
-		has_country_flag = hordes_tolerance_branch_flag
-		OR = {
-			is_tatar_nation = yes
-			is_mongol_nation = yes
-			is_monghulistan_nation = yes
-			tag = YUA
-			tag = MGE
-			tag = ILK
-			tag = GLH
-		}
 	}
 	
 	tatars_tolerance1 = {
@@ -288,20 +284,20 @@ woc_hordes_1_devout = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
+			limit = {
+				OR = {
+					tag = GOL
+					tag = KAZ
+					tag = NOG
+					tag = SIB
+					tag = TRS
+					tag = KHI
+				}
+			}
 		has_dlc = "Winds of Change"
-		has_country_flag = hordes_devout_branch_flag
-		OR = {
-			is_tatar_nation = yes
-			is_mongol_nation = yes
-			is_monghulistan_nation = yes
-			tag = YUA
-			tag = MGE
-			tag = ILK
-			tag = GLH
-		}
 	}
-	
+
 	tatars_devout1 = {
 		icon = mission_raid_on_genoa
 		position = 15
@@ -445,18 +441,18 @@ woc_hordes_1_confucian = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
+			limit = {
+				OR = {
+					tag = GOL
+					tag = KAZ
+					tag = NOG
+					tag = SIB
+					tag = TRS
+					tag = KHI
+				}
+			}
 		has_dlc = "Winds of Change"
-		has_country_flag = hordes_confucian_branch_flag
-		OR = {
-			is_tatar_nation = yes
-			is_mongol_nation = yes
-			is_monghulistan_nation = yes
-			tag = YUA
-			tag = MGE
-			tag = ILK
-			tag = GLH
-		}
 	}
 	
 	tatars_confucian1 = {
@@ -585,16 +581,17 @@ woc_flavor_hordes_2 = {
 	potential_on_load = {
 		has_dlc = "Winds of Change"
 	}
-	potential = { 
-		OR = {
-			is_tatar_nation = yes
-			is_mongol_nation = yes
-			is_monghulistan_nation = yes
-			tag = MGE
-			tag = ILK
-			tag = GLH
-		}
-		NOT = { was_tag = YUA }
+	potential = {
+			limit = {
+				OR = {
+					tag = GOL
+					tag = KAZ
+					tag = NOG
+					tag = SIB
+					tag = TRS
+					tag = KHI
+				}
+			}
 		has_dlc = "Winds of Change"
 	}
 	
@@ -705,16 +702,17 @@ woc_shared_hordes_2 = {
 	potential_on_load = {
 		has_dlc = "Winds of Change"
 	}
-	potential = { 
-		OR = {
-			is_tatar_nation = yes
-			is_mongol_nation = yes
-			is_monghulistan_nation = yes
-			tag = YUA
-			tag = MGE
-			tag = ILK
-			tag = GLH
-		}
+	potential = {
+			limit = {
+				OR = {
+					tag = GOL
+					tag = KAZ
+					tag = NOG
+					tag = SIB
+					tag = TRS
+					tag = KHI
+				}
+			}
 		has_dlc = "Winds of Change"
 	}
 
@@ -776,16 +774,17 @@ woc_flavor_hordes_3 = {
 	potential_on_load = {
 		has_dlc = "Winds of Change"
 	}
-	potential = { 
-		OR = {
-			is_tatar_nation = yes
-			is_mongol_nation = yes
-			is_monghulistan_nation = yes
-			tag = MGE
-			tag = ILK
-			tag = GLH
-		}
-		NOT = { was_tag = YUA }
+	potential = {
+			limit = {
+				OR = {
+					tag = GOL
+					tag = KAZ
+					tag = NOG
+					tag = SIB
+					tag = TRS
+					tag = KHI
+				}
+			}
 		has_dlc = "Winds of Change"
 	}
 	
@@ -902,16 +901,17 @@ woc_shared_hordes_3 = {
 	potential_on_load = {
 		has_dlc = "Winds of Change"
 	}
-	potential = { 
-		OR = {
-			is_tatar_nation = yes
-			is_mongol_nation = yes
-			is_monghulistan_nation = yes
-			tag = YUA
-			tag = MGE
-			tag = ILK
-			tag = GLH
-		}
+	potential = {
+			limit = {
+				OR = {
+					tag = GOL
+					tag = KAZ
+					tag = NOG
+					tag = SIB
+					tag = TRS
+					tag = KHI
+				}
+			}
 		has_dlc = "Winds of Change"
 	}
 
@@ -1003,19 +1003,19 @@ woc_flavor_hordes_4 = {
 	potential_on_load = {
 		has_dlc = "Winds of Change"
 	}
-	potential = { 
-		OR = {
-			is_tatar_nation = yes
-			is_mongol_nation = yes
-			is_monghulistan_nation = yes
-			tag = MGE
-			tag = ILK
-			tag = GLH
-		}
-		NOT = { was_tag = YUA }
+	potential = {
+			limit = {
+				OR = {
+					tag = GOL
+					tag = KAZ
+					tag = NOG
+					tag = SIB
+					tag = TRS
+					tag = KHI
+				}
+			}
 		has_dlc = "Winds of Change"
 	}
-	
 	tatars_strengthen_basqaq_governors = {
 		icon = mission_strengthen_basqaqs
 		position = 11
@@ -1150,16 +1150,17 @@ woc_shared_hordes_4 = {
 	potential_on_load = {
 		has_dlc = "Winds of Change"
 	}
-	potential = { 
-		OR = {
-			is_tatar_nation = yes
-			is_mongol_nation = yes
-			is_monghulistan_nation = yes
-			tag = YUA
-			tag = MGE
-			tag = ILK
-			tag = GLH
-		}
+	potential = {
+			limit = {
+				OR = {
+					tag = GOL
+					tag = KAZ
+					tag = NOG
+					tag = SIB
+					tag = TRS
+					tag = KHI
+				}
+			}
 		has_dlc = "Winds of Change"
 	}
 
@@ -1248,18 +1249,17 @@ woc_flavor_hordes_5 = {
 	potential_on_load = {
 		has_dlc = "Winds of Change"
 	}
-	potential = { 
-		OR = {
-			is_tatar_nation = yes
-			is_mongol_nation = yes
-			is_monghulistan_nation = yes
-			tag = MGE
-			tag = ILK
-			tag = GLH
-		}
-		NOT = { 
-			was_tag = YUA 
-		}
+	potential = {
+			limit = {
+				OR = {
+					tag = GOL
+					tag = KAZ
+					tag = NOG
+					tag = SIB
+					tag = TRS
+					tag = KHI
+				}
+			}
 		has_dlc = "Winds of Change"
 	}
 	
@@ -1315,16 +1315,17 @@ woc_shared_hordes_5 = {
 	potential_on_load = {
 		has_dlc = "Winds of Change"
 	}
-	potential = { 
-		OR = {
-			is_tatar_nation = yes
-			is_mongol_nation = yes
-			is_monghulistan_nation = yes
-			tag = YUA
-			tag = MGE
-			tag = ILK
-			tag = GLH
-		}
+	potential = {
+			limit = {
+				OR = {
+					tag = GOL
+					tag = KAZ
+					tag = NOG
+					tag = SIB
+					tag = TRS
+					tag = KHI
+				}
+			}
 		has_dlc = "Winds of Change"
 	}
 
