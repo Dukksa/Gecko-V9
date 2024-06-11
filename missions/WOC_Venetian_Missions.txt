@@ -2526,7 +2526,7 @@ venice_missions_slot_5 = {
 			define_advisor = {
 				name = "Ottaviano Petrucci"
 				type = natural_scientist
-				cost_multiplier = 0.25
+				cost_multiplier = 0.75
 				skill = 3
 			}
 			custom_tooltip = empty_line_tt
