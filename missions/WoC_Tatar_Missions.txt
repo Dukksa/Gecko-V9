@@ -7,15 +7,13 @@ woc_tatars_1 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-			limit = {
-				OR = {
-					tag = GOL
-					tag = KAZ
-					tag = NOG
-					tag = SIB
-					tag = TRS
-					tag = KHI
-				}
+			OR = {
+				tag = GOL
+				tag = KAZ
+				tag = NOG
+				tag = SIB
+				tag = TRS
+				tag = KHI
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -234,15 +232,13 @@ woc_tatars_2 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-			limit = {
-				OR = {
-					tag = GOL
-					tag = KAZ
-					tag = NOG
-					tag = SIB
-					tag = TRS
-					tag = KHI
-				}
+			OR = {
+				tag = GOL
+				tag = KAZ
+				tag = NOG
+				tag = SIB
+				tag = TRS
+				tag = KHI
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -555,15 +551,13 @@ woc_tatars_3 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-			limit = {
-				OR = {
-					tag = GOL
-					tag = KAZ
-					tag = NOG
-					tag = SIB
-					tag = TRS
-					tag = KHI
-				}
+			OR = {
+				tag = GOL
+				tag = KAZ
+				tag = NOG
+				tag = SIB
+				tag = TRS
+				tag = KHI
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -784,15 +778,13 @@ woc_tatars_4 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-			limit = {
-				OR = {
-					tag = GOL
-					tag = KAZ
-					tag = NOG
-					tag = SIB
-					tag = TRS
-					tag = KHI
-				}
+			OR = {
+				tag = GOL
+				tag = KAZ
+				tag = NOG
+				tag = SIB
+				tag = TRS
+				tag = KHI
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -1137,15 +1129,13 @@ woc_tatars_5 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-			limit = {
-				OR = {
-					tag = GOL
-					tag = KAZ
-					tag = NOG
-					tag = SIB
-					tag = TRS
-					tag = KHI
-				}
+			OR = {
+				tag = GOL
+				tag = KAZ
+				tag = NOG
+				tag = SIB
+				tag = TRS
+				tag = KHI
 			}
 		has_dlc = "Winds of Change"
 	}

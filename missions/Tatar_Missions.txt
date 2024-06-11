@@ -3,15 +3,13 @@ tatar_missions_1 = {
 	generic = no
 	ai = yes
 	potential = {
-			limit = {
-				OR = {
-					tag = GOL
-					tag = KAZ
-					tag = NOG
-					tag = SIB
-					tag = TRS
-					tag = KHI
-				}
+			OR = {
+				tag = GOL
+				tag = KAZ
+				tag = NOG
+				tag = SIB
+				tag = TRS
+				tag = KHI
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -318,15 +316,13 @@ tatar_missions_slot_2 = {
 	generic = no
 	ai = yes
 	potential = {
-			limit = {
-				OR = {
-					tag = GOL
-					tag = KAZ
-					tag = NOG
-					tag = SIB
-					tag = TRS
-					tag = KHI
-				}
+			OR = {
+				tag = GOL
+				tag = KAZ
+				tag = NOG
+				tag = SIB
+				tag = TRS
+				tag = KHI
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -608,15 +604,13 @@ tatar_missions_2 = {
 	generic = no
 	ai = yes
 	potential = {
-			limit = {
-				OR = {
-					tag = GOL
-					tag = KAZ
-					tag = NOG
-					tag = SIB
-					tag = TRS
-					tag = KHI
-				}
+			OR = {
+				tag = GOL
+				tag = KAZ
+				tag = NOG
+				tag = SIB
+				tag = TRS
+				tag = KHI
 			}
 		has_dlc = "Winds of Change"
 	}

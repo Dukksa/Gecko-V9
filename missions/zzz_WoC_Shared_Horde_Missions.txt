@@ -7,15 +7,13 @@ woc_flavor_hordes_1 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-			limit = {
-				OR = {
-					tag = GOL
-					tag = KAZ
-					tag = NOG
-					tag = SIB
-					tag = TRS
-					tag = KHI
-				}
+			OR = {
+				tag = GOL
+				tag = KAZ
+				tag = NOG
+				tag = SIB
+				tag = TRS
+				tag = KHI
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -72,19 +70,16 @@ woc_shared_hordes_1 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-			limit = {
-				OR = {
-					tag = GOL
-					tag = KAZ
-					tag = NOG
-					tag = SIB
-					tag = TRS
-					tag = KHI
-				}
+			OR = {
+				tag = GOL
+				tag = KAZ
+				tag = NOG
+				tag = SIB
+				tag = TRS
+				tag = KHI
 			}
 		has_dlc = "Winds of Change"
 	}
-
 	tatars_religious_question = {
 		icon = mission_hands_praying
 		position = 14
@@ -149,15 +144,13 @@ woc_hordes_1_branching = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-			limit = {
-				OR = {
-					tag = GOL
-					tag = KAZ
-					tag = NOG
-					tag = SIB
-					tag = TRS
-					tag = KHI
-				}
+			OR = {
+				tag = GOL
+				tag = KAZ
+				tag = NOG
+				tag = SIB
+				tag = TRS
+				tag = KHI
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -185,15 +178,13 @@ woc_hordes_1_tolerance = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-			limit = {
-				OR = {
-					tag = GOL
-					tag = KAZ
-					tag = NOG
-					tag = SIB
-					tag = TRS
-					tag = KHI
-				}
+			OR = {
+				tag = GOL
+				tag = KAZ
+				tag = NOG
+				tag = SIB
+				tag = TRS
+				tag = KHI
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -285,15 +276,13 @@ woc_hordes_1_devout = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-			limit = {
-				OR = {
-					tag = GOL
-					tag = KAZ
-					tag = NOG
-					tag = SIB
-					tag = TRS
-					tag = KHI
-				}
+			OR = {
+				tag = GOL
+				tag = KAZ
+				tag = NOG
+				tag = SIB
+				tag = TRS
+				tag = KHI
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -442,15 +431,13 @@ woc_hordes_1_confucian = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-			limit = {
-				OR = {
-					tag = GOL
-					tag = KAZ
-					tag = NOG
-					tag = SIB
-					tag = TRS
-					tag = KHI
-				}
+			OR = {
+				tag = GOL
+				tag = KAZ
+				tag = NOG
+				tag = SIB
+				tag = TRS
+				tag = KHI
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -582,7 +569,6 @@ woc_flavor_hordes_2 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-			limit = {
 				OR = {
 					tag = GOL
 					tag = KAZ
@@ -591,7 +577,6 @@ woc_flavor_hordes_2 = {
 					tag = TRS
 					tag = KHI
 				}
-			}
 		has_dlc = "Winds of Change"
 	}
 	
@@ -703,7 +688,6 @@ woc_shared_hordes_2 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-			limit = {
 				OR = {
 					tag = GOL
 					tag = KAZ
@@ -712,7 +696,6 @@ woc_shared_hordes_2 = {
 					tag = TRS
 					tag = KHI
 				}
-			}
 		has_dlc = "Winds of Change"
 	}
 
@@ -775,7 +758,6 @@ woc_flavor_hordes_3 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-			limit = {
 				OR = {
 					tag = GOL
 					tag = KAZ
@@ -784,7 +766,6 @@ woc_flavor_hordes_3 = {
 					tag = TRS
 					tag = KHI
 				}
-			}
 		has_dlc = "Winds of Change"
 	}
 	
@@ -902,7 +883,6 @@ woc_shared_hordes_3 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-			limit = {
 				OR = {
 					tag = GOL
 					tag = KAZ
@@ -911,7 +891,6 @@ woc_shared_hordes_3 = {
 					tag = TRS
 					tag = KHI
 				}
-			}
 		has_dlc = "Winds of Change"
 	}
 
@@ -1004,7 +983,6 @@ woc_flavor_hordes_4 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-			limit = {
 				OR = {
 					tag = GOL
 					tag = KAZ
@@ -1013,7 +991,6 @@ woc_flavor_hordes_4 = {
 					tag = TRS
 					tag = KHI
 				}
-			}
 		has_dlc = "Winds of Change"
 	}
 	tatars_strengthen_basqaq_governors = {
@@ -1151,7 +1128,6 @@ woc_shared_hordes_4 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-			limit = {
 				OR = {
 					tag = GOL
 					tag = KAZ
@@ -1160,7 +1136,6 @@ woc_shared_hordes_4 = {
 					tag = TRS
 					tag = KHI
 				}
-			}
 		has_dlc = "Winds of Change"
 	}
 
@@ -1250,7 +1225,6 @@ woc_flavor_hordes_5 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-			limit = {
 				OR = {
 					tag = GOL
 					tag = KAZ
@@ -1259,7 +1233,6 @@ woc_flavor_hordes_5 = {
 					tag = TRS
 					tag = KHI
 				}
-			}
 		has_dlc = "Winds of Change"
 	}
 	
@@ -1316,7 +1289,6 @@ woc_shared_hordes_5 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-			limit = {
 				OR = {
 					tag = GOL
 					tag = KAZ
@@ -1325,7 +1297,6 @@ woc_shared_hordes_5 = {
 					tag = TRS
 					tag = KHI
 				}
-			}
 		has_dlc = "Winds of Change"
 	}
 

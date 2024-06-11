@@ -7,11 +7,9 @@ woc_moghulistan_1 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-			limit = {
-				OR = {
-					tag = CHG
-					tag = KAS
-				}
+			OR = {
+				tag = CHG
+				tag = KAS
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -313,15 +311,12 @@ woc_moghulistan_2 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-			limit = {
-				OR = {
-					tag = CHG
-					tag = KAS
-				}
+			OR = {
+				tag = CHG
+				tag = KAS
 			}
 		has_dlc = "Winds of Change"
 	}
-
 	moghulistan_at_the_centre_of_asia = {
 		icon = mission_central_asian_steppes
 		position = 1
@@ -584,11 +579,9 @@ woc_moghulistan_3 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-			limit = {
-				OR = {
-					tag = CHG
-					tag = KAS
-				}
+			OR = {
+				tag = CHG
+				tag = KAS
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -902,11 +895,9 @@ woc_moghulistan_4 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-			limit = {
-				OR = {
-					tag = CHG
-					tag = KAS
-				}
+			OR = {
+				tag = CHG
+				tag = KAS
 			}
 		has_dlc = "Winds of Change"
 	}
@@ -1165,11 +1156,9 @@ woc_moghulistan_5 = {
 		has_dlc = "Winds of Change"
 	}
 	potential = {
-			limit = {
-				OR = {
-					tag = CHG
-					tag = KAS
-				}
+			OR = {
+				tag = CHG
+				tag = KAS
 			}
 		has_dlc = "Winds of Change"
 	}
