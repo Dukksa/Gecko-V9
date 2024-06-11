@@ -18,7 +18,6 @@ france_region = {
 		massif_central_area
 		savoy_dauphine_area
 		lorraine_area
-		picardy_area
 		champagne_area
 		ile_de_france_area
 		loire_area
@@ -59,6 +58,7 @@ low_countries_region = {
 		frisia_area
 		brabant_area
 		north_brabant_area
+		picardy_area
 	}
 
 }
