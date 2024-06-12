@@ -1242,6 +1242,7 @@ woc_hun_second_branch = {
 					desc = hun_first_ottoman_war
 				}
 			}
+			country_event = { id = new_flavour_hun.1 }
 			bulgaria_area = {
 				limit = {
 					NOT = { is_core = ROOT }
