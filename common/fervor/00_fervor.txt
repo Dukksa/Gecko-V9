@@ -69,9 +69,8 @@ fervor_stability = {
 	trigger = {
 	}
 	effect = {
-		development_cost = -0.1
 		global_unrest = -2
-		all_estate_loyalty_equilibrium = 0.1
+		all_estate_loyalty_equilibrium = 0.15
 	}
 	ai_will_do = {
 		factor = 1
@@ -101,8 +100,8 @@ fervor_diplomacy = {
 	}
 	effect = {
 		diplomatic_reputation = 2
-		improve_relation_modifier = 0.25
-		spy_action_cost_modifier = -0.25
+		improve_relation_modifier = 0.33
+		spy_action_cost_modifier = -0.33
 	}
 	ai_will_do = {
 		factor = 1
@@ -189,9 +188,9 @@ fervor_stability_buffed = {
 	trigger = {
 	}
 	effect = {
-		development_cost = -0.15
+		development_cost = -0.05
 		global_unrest = -3
-		all_estate_loyalty_equilibrium = 0.15
+		all_estate_loyalty_equilibrium = 0.20
 	}
 	ai_will_do = {
 		factor = 1
