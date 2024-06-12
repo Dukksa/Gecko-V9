@@ -960,26 +960,8 @@ WoC_austria_2 = {
 		}
 
 		trigger = {
-			if = {
-				limit = {
-					hre_size = 1
-				}
-				is_emperor = yes
-				calc_true_if = {
-					desc = WOC_secure_the_imperial_crown.tooltip
-					all_elector = {
-						preferred_emperor = ROOT
-						has_opinion = { who = ROOT value = 75 }
-					}
-					amount = 4
-				}
-			}
-			else = {
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 20
-					region = south_german_region
-				}
-			}
+			army_size_percentage = 0.5
+			num_of_generals = 1
 		}
 		effect = {
 			if = {
