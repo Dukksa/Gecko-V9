@@ -3731,7 +3731,7 @@ WoC_austria_4 = {
 				else = {
 					total_own_and_non_tributary_subject_development = 300
 				}
-				num_of_wars = { amount = 5 }
+				army_size = 55
 			}
 		}
 		effect = {
