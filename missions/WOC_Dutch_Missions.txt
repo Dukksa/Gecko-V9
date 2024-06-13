@@ -2038,7 +2038,7 @@ NED_4 = {
 				first_effect = "
 					12 = {
 						add_province_triggered_modifier = ned_sound_toll_ties
-						
+						save_global_event_target_as = dutch_country
 						custom_tooltip = NED_PROVINCE_TRIGGERED_MODIFIER_GRANTS_TRADE_POWER
 					}
 				"
@@ -2067,6 +2067,18 @@ NED_4 = {
 						\"
 					}
 				"
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						12 = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+					}
+					country_event = {
+						id = dutch_mission_events.4
+					}
+				}
 			}
 		} 
 	}

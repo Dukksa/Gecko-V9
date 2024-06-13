@@ -2609,6 +2609,7 @@ sinner_personality = {
 			religion_group = muslim
 			religion_group = jewish_group
 		}
+		NOT = { has_country_flag = MUG_disable_sinner_flag }
 	}
 	
 	chance = {

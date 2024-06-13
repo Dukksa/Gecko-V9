@@ -1748,8 +1748,26 @@ venice_missions_slot_3 = {
 		}
 		trigger = {
 			OR = {
-				NOT = { exists = HAB }
-				HAB = { is_subject_of = ROOT }
+				AND = {
+					NOT = { exists = HAB }
+					NOT = { exists = AHU }
+					NOT = { exists = AUH }
+				}
+				AND = {
+					HAB = { is_subject_of = ROOT }
+					NOT = { exists = AHU }
+					NOT = { exists = AUH }
+				}
+				AND = {
+					AHU = { is_subject_of = ROOT }
+					NOT = { exists = HAB }
+					NOT = { exists = AUH }
+				}
+				AND = {
+					AUH = { is_subject_of = ROOT }
+					NOT = { exists = HAB }
+					NOT = { exists = AHU }
+				}
 			}
 		}
 		effect = {
