@@ -5656,10 +5656,10 @@ estate_action_CALL_DIET_NOBLES = {
 	}
 }
 estate_action_GRANT_GENERALSHIP_NOBLES = {
-	create_leader_scaling_with_tradition = {
-		leader = general
-		type = army
-	}
+	create_general = {
+				tradition = 40
+				add_siege = 1
+			}
 	#add_estate_influence_modifier = {
 	#	estate = estate_nobles
 	#	desc = EST_VAL_GRANTED_GENERALSHIP
