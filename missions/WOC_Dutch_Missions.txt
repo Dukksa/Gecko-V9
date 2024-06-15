@@ -709,13 +709,13 @@ NED_2 = {
 				}
 				add_country_modifier = {
 					name = ned_je_maintiedrai
-					duration = 14600
+					duration = 7300
 				}
 			}
 			else = {
 				add_country_modifier = {
 					name = ned_je_maintiedrai
-					duration = 10950
+					duration = 7300
 				}
 				custom_tooltip = " "
 				custom_tooltip = NED_IF_NETHERLANDS_EXTEND_ABOVE_MODIFIER
