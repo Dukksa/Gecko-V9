@@ -2209,25 +2209,12 @@ ITA_non_conquest_2 = {
 			country_event_with_option_insight = {
 				id = flavor_ita.2
 				option_1 = "
-					hire_advisor = {
-						type = statesman
-						religion = root
-						culture = root
-						min_age = 25
-						max_age = 25
-						skill = 3
-						name = \"Camillo Benso di Cavour\"
-						cost_multiplier = 1
+					add_country_modifier = {
+						name = ITA_protectionism
+						duration = 10950
 					}
-					set_country_flag = ITA_camillo_is_alive
 					
-					custom_tooltip = \" \"
-					
-					custom_tooltip = ITA_while_cavour_is_active
-					
-					custom_tooltip = \" \"
-					
-					add_mercantilism = -5
+					add_mercantilism = 5
 				"
 				option_2 = "
 					add_country_modifier = {
@@ -2729,7 +2716,7 @@ ITA_non_conquest_3 = {
 		effect = {
 			add_country_modifier = {
 				name = ita_italian_prosperity
-				duration = 10950
+				duration = 7300
 			}
 			
 			custom_tooltip = ITA_spread_base_tax_and_base_production

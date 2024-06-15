@@ -71,21 +71,12 @@ country_event = {
 			factor = 1
 		}
 		
-		hire_advisor = {
-			type = statesman
-			religion = root
-			culture = root
-			min_age = 25
-			max_age = 25
-			skill = 3
-			name = "Camillo Benso di Cavour"
-			cost_multiplier = 1
+		add_country_modifier = {
+			name = ITA_protectionism
+			duration = 10950
 		}
-		
-		custom_tooltip = " "
-		
-		custom_tooltip = ITA_while_cavour_is_active
-		set_country_flag = ITA_cavour_alive
+
+		add_mercantilism = 5
 	}
 	
 	option = {

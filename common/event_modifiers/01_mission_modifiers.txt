@@ -12299,9 +12299,8 @@ ITA_integration_with_southern_france = {
 }
 
 ITA_unity = {
-	local_development_cost = -0.1
 	local_prosperity_growth = 0.33
-	trade_goods_size_modifier = 0.15
+	trade_goods_size_modifier = 0.10
 }
 
 ITA_allow_galleasses = {
@@ -12350,7 +12349,7 @@ ITA_renaissance = {
 
 ITA_new_renaissance = {
 	national_focus_years = -5
-	advisor_cost = -0.25
+	advisor_cost = -0.15
 	development_cost_in_primary_culture = -0.1
 }
 
