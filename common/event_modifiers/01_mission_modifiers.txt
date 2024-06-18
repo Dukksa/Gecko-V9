@@ -12361,7 +12361,9 @@ ITA_adapt_the_condotierri = {
 }
 
 ITA_modern_military = {
-	fire_damage = 0.1
+	fire_damage = 0.15
+	shock_damage = 0.10
+	shock_damage_received = -0.10
 }
 
 ITA_diplomatic_revolution_weaker = {
@@ -12804,7 +12806,6 @@ ned_found_dutch_states_army = {
 
 ned_empowered_staatse_leger = {
 	drill_gain_modifier = 0.15
-	discipline = 0.025
 }
 
 ned_low_countries_fort_buff = {
@@ -12838,8 +12839,7 @@ ned_reclamation_of_coast = {
 }
 
 ned_dutch_urbanization = {
-	trade_goods_size_modifier = 0.1
-	local_governing_cost = -0.1
+	trade_goods_size_modifier = 0.05
 	local_build_cost = -0.1
 }
 
@@ -12909,7 +12909,7 @@ ned_seat_of_many_artists = {
 
 ned_dutch_golden_age = {
 	monthly_splendor = 2
-	same_culture_advisor_cost = -0.2
+	same_culture_advisor_cost = -0.05
 }
 
 ned_set_sail_to_unknown = {

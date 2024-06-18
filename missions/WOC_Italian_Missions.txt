@@ -2935,7 +2935,6 @@ ITA_non_conquest_4 = {
 			}
 			num_of_generals = 1
 			reform_level = 5
-			num_of_battles = { amount = 40 }
 		}
 		effect = {
 			add_mil_power = 100 

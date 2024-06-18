@@ -1451,7 +1451,7 @@ NED_3_1 = {
 			define_advisor = {
 				type = trader
 				skill = 2
-				cost_multiplier = 0.5
+				cost_multiplier = 0.75
 			}
 			hidden_effect = {
 				1269 = {
@@ -3059,7 +3059,7 @@ NED_5_1 = {
 					define_advisor = {
 						type = fortification_expert
 						skill = 3
-						cost_multiplier = 0.5
+						cost_multiplier = 0.75
 						name = \"Menno van Coehoorn\"
 					}
 					custom_tooltip = NED_MILITARY_ENGINEER_GRANTS_SIEGE_ABILITY
@@ -3116,7 +3116,7 @@ NED_5_1 = {
 					define_advisor = {
 						type = artist
 						skill = 2
-						cost_multiplier = 0.25
+						cost_multiplier = 0.75
 						name = \"Jheronimus Bosch\"
 					}
 				"
