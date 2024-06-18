@@ -1,0 +1,270 @@
+﻿l_english:
+#Balkans
+ gme_great_palace_constantinople: "Great Palace of Constantinople"
+ gme_kruje_castle: "Kruje Castle"
+ gme_walls_ragusa: "Walls of Ragusa"
+ gme_constantinople_theodosian_walls: "Theodosian Walls"
+
+#Baltic
+ gme_dlugi_targ: "Dlugi Targ"
+ gme_vilnius_cathedral: "Vilnius Cathedral Basilica"
+
+#Britain
+ gme_blarney_castle: "Blarney Castle"
+ gme_kilkenny_castle: "Kilkenny Castle"
+ gme_newgrange_tomb: "Newgrange Tomb"
+ gme_patrick_cathedral: "St. Patrick's Cathedral"
+ gme_rock_chasel: "Rock of Chasel"
+
+#Carpathia
+ gme_pest_basilica_estergom: "Basilica of Esztergom"
+ gme_pest_buda_castle: "Buda Castle"
+ gme_sopron_reformatus_nagytemplom: "Református Nagytemplom"
+ gme_sopron_eszterhaza: "Eszterháza"
+
+#Caucasia
+ gme_alaverdi_monastery: "Alaverdi Monastery"
+ gme_derbent_fortifications: "Derbent Fortifications"
+ gme_gelati_monastery: "Gelati Monastery"
+ gme_narikala: "Narikala"
+ gme_noah_mausoleum: "Noah Mausoleum"
+ gme_vardzia: "Vardzia"
+
+#Deccan
+ gme_elephant_stables: "Elephant Stables and Enclosure"
+ gme_market_complex: "Market Complex"
+
+#France
+ gme_bretagne_castles: "Chateau des Ducs de Bretagne"
+ gme_chambord: "Chateau de Chambord"
+ gme_chenonceau: "Chateau de Chenonceau"
+ gme_mont_michel: "Mont Saint-Michel"
+ gme_palais_des_papes: "Palais des Papes"
+ gme_port_de_moon: "Port de la Lune"
+
+#Iberia
+ gme_alcazar_segovia: "Alcazar of Segovia"
+ gme_al_qasr_al_muriq: "Al-Qasr al-Muriq"
+ gme_casa_de_contratacion: "Casa de Contratación"
+ gme_cathedral_seville: "Cathredal of Sevilla"
+ gme_lonja_seda: "Lonja de la Seda"
+ gme_mosque_cathedral: "Mosque-Cathedral of Cordoba"
+ gme_rock_gibraltar: "Rock of Gibraltar"
+ gme_sagres_school_navigation: "Sagres School of Navigation"
+ gme_santa_barbara_castle: "Santa Barbara Castle"
+ gme_santiago_compostela: "Santiago de Compostela"
+ gme_tierra_castillos: "Tierra de Castillos"
+ gme_tower_hercules: "Tower of Hercules"
+
+#Italy
+ gme_altare_patria: "Altare della Patria"
+ gme_arsenale_veneziano: "Arsenale Veneziano"
+ gme_basilica_san_marco: "Basilica di San Marco"
+ gme_basilica_san_nicola: "Basilica di San Nicola"
+ gme_castello_estense: "Castello Estense"
+ gme_castel_sant_angelo: "Castel Sant'Angelo"
+ gme_castelvecchio: "Castelvecchio"
+ gme_duomo_monreale: "Duomo di Monreale"
+ gme_federico_II: "Federico II"
+ gme_fori_imperiali: "Fori Imperiali"
+ gme_lanterna_genova: "Lanterna di Genova"
+ gme_palazzo_pitti: "Palazzo Pitti"
+ gme_parramentu_sicilianu: "Parramentu Sicilianu"
+ gme_ponte_rialto: "Ponte di Rialto"
+ gme_ponte_vecchio: "Ponte Vecchio"
+ gme_sala_dei_cavalli: "Sala dei Cavalli"
+ gme_torre_pisa: "Torre di Pisa"
+ gme_universita_bologna: "Università di Bologna"
+
+#Japan
+
+#Korea
+ gme_beomeosa: "Beomeosa"
+ gme_dol_hareunbang: "Dol Hareubang"
+ gme_dosan_seowon: "Dosan Seowon"
+ gme_five_grand_palaces: "Five Grand Palaces"
+ gme_gakhwangsa: "Gakhwangsa"
+ gme_goguryeyo_tombs: "Goguryeyo Tombs"
+ gme_hallasan: "Hallasan"
+ gme_hwaseong_fortress: "Hwaseong Fortress"
+ gme_jinnamgwan_hall: "Jinnamgwan Hall"
+ gme_jongmyo_shrine: "Jongmyo Shrine"
+ gme_mt_paekdu: "Mt Paekdu"
+ gme_royal_tombs_joseon: "Royal Tombs of Joseon"
+ gme_seokguram: "Seokguram"
+ gme_sungkyunkwan: "Sungkyunkwan"
+ gme_tripitaka_koreana: "Tripitaka Koreana"
+
+#Low Countries
+ gme_binnenhof: "Binnenhof"
+ gme_bishop_palace: "Bishop's Palace"
+ gme_bruges_city_centre: "Bruges City Centre"
+ gme_domkerk: "Domkerk"
+ gme_grote_raad_mechelen: "Grote Raad van Mechelen"
+ gme_het_gravensteen: "Het Gravensteen"
+ gme_kasteel_de_haar: "Kasteel de Haar"
+ gme_leiden_university: "Leiden University"
+ gme_old_leuven_university: "Old Leuven University"
+ gme_paleis_koudenberg: "Paleis op de Koudenberg"
+ gme_sint_pietersabdij: "Sint-Pietersabdij"
+ gme_the_bock: "The Bock"
+
+#Mashriq
+ gme_alkarak_castle: "Kerak Castle"
+ gme_aleppo_citadel: "Citadel of Aleppo"
+ gme_damascus_al_azem_palace: "Qasr al-Azm"
+ gme_jerusalem_cave_patriarch: "Cave of the Patriarchs"
+ gme_tripoli_krak_des_chevaliers: "Krak des Chevaliers"
+ gme_tripoli_citadel: "Citadel of Tripoli"
+
+ gme_mustan_uni: "Al-Mustansiriya"
+
+#Mongolia
+ gme_alamliq: "Almaliq"
+ gme_forbidden_genghis_khan_golden_tent: "Genghis Khan's Golden Tent"
+ gme_mausoleum_genghis_khan: "Mausoleum of Genghis Khan"
+ gme_yili_general_government: "Yili General Government"
+
+#North China
+ gme_beihai_park: "Beihai Park"
+ gme_chengde_mountain_resort: "Chengde Mountain Resort"
+ gme_governor_office_of_zhili: "Governor Office of Zhili"
+ gme_mogao_grottoes: "Mogao Grottoes"
+ gme_old_summer_palace: "Old Summer Palace"
+ gme_prince_kungs_mansion: "Prince Kung's Mansion"
+ gme_thirteen_ming_tombs: "Thirteen Ming Tombs"
+ gme_temple_of_heaven: "Temple of Heaven"
+ gme_yungang_grottoes: "Yungang Grottoes"
+
+#North Germany
+ gme_externsteine: "Externsteine"
+ gme_schloss_neuhaus: "Neuhaus Palace"
+ gme_reichstag: "Reichstag"
+
+#Persia
+ gme_agha_bozorg_mosque: "Agha Bozorg Mosque"
+ gme_ali_qapu_palace: "Ali Qapu Palace"
+ gme_arg_kharim_khan: "Arg of Kharim Khan"
+ gme_bazaar_tabriz: "Bazaar of Tabriz"
+ gme_behistun_inscription: "Behistun Inscription"
+ gme_chaharbagh_school: "Chaharbagh School"
+ gme_chehel_sotun: "Chehel Sotun"
+ gme_dome_soltaniyeh: "Dome of Soltanieh"
+ gme_erbil_citadel: "Erbil Citadel"
+ gme_golestan_palace: "Golestan Palace"
+ gme_gonbad_qabus_tower: "Gonbad-e Qabus Tower"
+ gme_maragheh_observatory: "Maragheh Observatory"
+ gme_sheikh_safi: "Sheikh Safi al-Din"
+ gme_shrine_fatimah_masumeh: "Shrine of Fatimah al-Masumeh"
+ gme_towers_silence: "Towers of Silence"
+ gme_vank_cathedral: "Vank Cathedral"
+
+#Poland
+ gme_cathedral_poznan: "Cathedral of Poznan"
+ gme_jagielon_university: "Jagiellonian University"
+ gme_lazienki_park: "Lazienki Park"
+ gme_saint_mary_basilica: "Saint Mary's Basilica "
+ gme_salt_mines_wieliczka_bochnia: "Salt Mines of Wieliczka and Bochnia"
+ gme_sigismund_column: "Sigismund's Column"
+ gme_wawel: "Wawel"
+ gme_zamosc_city: "Zamosc City"
+
+#Pontic Steppe
+ gme_bakhchisaray_palace: "Bakhchisaray Palace"
+
+#Russia
+ gme_petersburg_admiralty: "Admiralty"
+ gme_peterhof_palace: "Peterhof Palace"
+ gme_bolshoi_theatre: "Bolshoi Theatre"
+
+#Ruthenia
+ gme_brotherhood_school: "Brotherhood School"
+ gme_mir_castle: "Mir Castle"
+
+#Sahel
+ gme_djinguereber_mosque: "Djinguereber Mosque"
+ gme_tomb_askia: "Tomb of Askia"
+
+#South China
+ gme_classical_gardens_suzhou: "Classical Gardens of Suzhou"
+ gme_donglin_academy: "Donglin Academy"
+ gme_grand_canal: "Grand Canal"
+ gme_igreja_madre_deus: "Igreja da Madre de Deus"
+ gme_jingdezhen_imperial_kiln_factory: "Jingdezhen Imperial Kiln Factory"
+ gme_quanzhou_port: "Quanzou Port"
+ gme_shi_bo_si: "Shi Bo Si"
+ gme_zhaozhou_bridge: "Zhaozhou Bridge"
+
+#South Germany
+ gme_bundeshaus: "Bundeshaus"
+ gme_chillon_castle: "Chillon Castle"
+ gme_college_geneve: "College de Genève"
+ gme_munich_neuschwanstein_castle: "Neuschwanstein Castle"
+ gme_regensburg_stone_bridge: "Stone Bridge of Regensburg"
+
+#Tibet
+ gme_mount_kailash: "Mount Kailash"
+ gme_padmasambhava_hidden_valley: "Padmasambhava's Hidden Valley"
+ gme_potala_palace: "Potala Palace"
+
+#Xinan
+ gme_leshan_giant_buddha: "Leshan Giant Buddha"
+
+ #Monument
+ fu_teatro_alla_scalla: "Teatro alla Scalla"
+ fu_vladislav_hall: "Vladislav Hall"
+ fu_hansehalle: "Hanseatic City Hall"
+ fu_la_scala: "La Scala"
+ fu_escola_de_marina: "Escola de Marina"
+ fu_kinkaku_ji: "Kinkaku Ji Temple"
+ fu_brandenburg_gate: "Brandenburg Gate"
+ fu_venetian_arsenal: "Arsenal of Venice"
+ fu_warsaw_palace: "Royal Castle of Warsaw"
+ fu_belgrade_fortress: "Belgrade Fortress" 
+ fu_arc_of_triumph: "Arc de Triomphe"
+ fu_black_stone: "Kaaba" 
+ #Monument Update May 2021#
+ fu_terracotta_army: "Terracotta Army"
+ fu_great_mosque_djenne: "Great Mosque of Djenne"
+ fu_colossus: "Colossus"
+ fu_pharos_alexandria: "Pharos of Alexandria"
+ fu_porcelain_tower: "Porcelain Tower"
+ fu_red_fort: "Red Fort" 
+ fu_globe_theatre: "Globe Theatre"
+ fu_duomo_di_firenze: "Cathedral of Florence"
+ fu_leaning_tower: "Leaning Tower" 
+ fu_theodosian_walls: "Theodosian Walls" 
+ fu_library_alexandria: "The Great Library" 
+ fu_kasbah_of_tunis: "Kasbah of Tunis" 
+ fu_winter_palace: "Winter Palace"
+ fu_blue_mosque: "Blue Mosque"  
+ fu_isfahan_city: "Isfahan City" 
+ fu_white_house: "White House"
+ fu_potala_palace: "Potala Palace" 
+ fu_walls_of_ragusa: "Walls of Dubrovnik" 
+ fu_foreign_quarters: "Foreign Quarters of Canton"
+ fu_lingyin_temple: "Lingyin Temple" 
+ fu_edinburgh_castle: "Edinburgh Castle"
+ fu_axum_obelisk: "Obelisk of Axum"
+ fu_amsterdam_stock_exchange: "Amsterdam Stock Exchange"
+ fu_university_vienna: "University of Vienna" 
+ fu_white_tower: "The White Tower" 
+ fu_ali_qapu: "Ali Qapu Palace"
+ fu_ishtar_gate: "Ishtar Gate"
+ fu_malbork_castle: "Malbork Castle"
+ fu_walls_benin: "Walls of Benin"
+ #
+ fu_brugge_dike: "Brugge Dike"
+ fu_gent_dike: "Gent Dike"
+ fu_antwerp_dike: "Antwerp Dike"
+ fu_zeeland_dike: "Zeeland Dike"
+ fu_den_haag_dike: "Den Haag Dike"
+ fu_amsterdam_dike: "Amsterdam Dike"
+ fu_admiralty_amsterdam: "Admiralty of Amsterdam" 
+ #
+ fu_topkapi_palace: "Topkapi Palace"
+ fu_bosphorus_toll: "Bosphorus Toll" 
+ fu_sari_markets: "Silk Markets of Sari" 
+ fu_hormuz_toll: "Hormuz Toll" 
+ fu_mehmed_pasha_mosque: "Mehmed Pasha Mosque" 
+ fu_acemi_oglan: "Acemi Oglan Academy" 

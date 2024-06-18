@@ -1,6 +1,10 @@
 # No previous file for Coyolapan
 
 culture = mixtec
+#owner = MIX
+#controller = MIX
+#add_core = MIX
+
 religion = nahuatl
 capital = "Coyolapan"
 trade_goods = gold

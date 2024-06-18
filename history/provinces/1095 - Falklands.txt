@@ -2,6 +2,7 @@
 
 capital = "Falklands"
 trade_goods = unknown
+religion = shamanism #Fetishism
 hre = no
 base_tax = 1 
 base_production = 1

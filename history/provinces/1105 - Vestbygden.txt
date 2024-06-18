@@ -1,7 +1,7 @@
 #1105 - Vestbygden
 
 culture = inuit
-religion = totemism
+religion = animism
 capital = "Vestbygden"
 trade_goods = unknown
 hre = no

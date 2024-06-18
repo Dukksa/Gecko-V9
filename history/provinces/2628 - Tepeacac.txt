@@ -1,6 +1,10 @@
 # No previous file for Tepeacac
 
 culture = aztek
+#owner = TEO
+#controller = TEO
+#add_core = TEO
+
 religion = nahuatl
 capital = "Tepeacac"
 trade_goods = grain

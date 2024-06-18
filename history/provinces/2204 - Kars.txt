@@ -11,16 +11,17 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = GEO
+#add_core = GEO
 add_core = SME
-add_core = ARM
-fort_15th = yes
+#add_core = ARM
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
 
+add_province_triggered_modifier=transcaucasian_wine_valleys
+	
 1458.1.1 = { unrest = 5 } # Safavid campaign against Georgia
 1460.1.1 = { unrest = 0 } # Defeated by Shirwan Shah
 1569.1.1 = {

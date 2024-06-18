@@ -1,0 +1,18 @@
+﻿l_english:
+
+ #Age 1
+ ab_burgundy_merc_manpower:0 "Burgundian Mercenaries"
+ ab_timurids_tech:0 "Timurid Renaissance"
+ ab_mamluks_force_limit:0 "Granary of the Mediterranean"
+ ab_morocco_raids:0 "Moroccan Pirates"
+ ab_hesse_mercs:0 "Hessian Mercenaries"
+ hesse_available_mercs_tt:0 "§G+10% Available Mercenaries§!"
+ bur_available_mercs_tt:0 "§G+10% Available Mercenaries§!"
+ ab_minor_building_dev:0 "Less than 300 Development - Development from Buildings"
+ #Age 2
+ ab_bukhara_arty:0 "Bukharan Artillery"
+ ab_arabia_speed:0 "Arabian Horses"
+
+ ab_improved_weaponry1:0 "Improved Weaponry"
+ ab_improved_weaponry2:0 "Improved Weaponry"
+ ab_improved_weaponry3:0 "Improved Weaponry"

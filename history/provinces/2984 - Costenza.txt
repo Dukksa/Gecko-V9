@@ -12,7 +12,7 @@ base_manpower = 1
 capital = "Cosenza"
 is_city = yes 
 add_core = NAP
-add_core = SIC
+
 
 
 discovered_by = western

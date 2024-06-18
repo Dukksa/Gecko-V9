@@ -1,0 +1,110 @@
+﻿l_english:
+ ##############################
+ # EU4_l_english
+ ##############################
+ meritocracy:0 "Horde Unity"
+ ADM_SCORE_MERITOCRACY:0 "Horde Unity: $VAL$\n"
+ ENACT_DECREE_ONLY_ONE:0 "Only one yarlig can be enacted at once, and they cannot be canceled before their end date.\n"
+ ENACT_DECREE_NOT_EMPEROR:0 "Only the Great Khan can enact Yarlig.
+ ENACT_DECREE_NOT_ENOUGH_MERITOCRACY:0 "Enacting this Decree requires $MERITOCRACYREQUIRED$ Horde Unity, you only have $CURRENTMERITOCRACY$."
+ YEARLY_MERITOCRACY:0 "Yearly Horde Unity"
+ MERITOCRACY_IRO:0 "§YHorde Unity§!\nHorde Unity changes by $CHANGE$ every year due to:\n$WHY$"
+ YOU_MERITOCRACY_DRO:1 "Horde Unity is a measure of the how much support a Khan has from the tribes. The higher it is, the more unified the nation, thus the more efficient our nation will run!\nIt can be increased through Strengthening Government, ideas, policies or events.\nThis level of Horde Unity gives the following effects:"
+ THEY_MERITOCRACY_DRO:0 "Horde Unity is a measure of the how much support a Khan has from the tribes. The higher it is, the more unified their nation, thus the more efficient it will run!\nThis level of Horde Unity gives the following effects:"
+ STR_MERITOCRACY:0 "gain $VAL|G$ Horde Unity"
+ STR_GOV_ALREADY_MAX_MERITOCRACY:0 "Horde Unity is already at its highest!"
+ ENACT_DECREE_COST_DESC:0 "This will cost us $MERITOCRACYCOST|R$ Horde Unity, and give us the following effects for $YEARS|Y$ years:\n$EFFECTS$"
+ alert_can_enact_decree_delayed:0 "Your level of Horde Unity is currently high enough to be able to enact a Decree."
+ ##############################
+ # diplo_reasons_l_english
+ ##############################
+ DIPLO_THREATHENING_MANDATE:0 "Legacy is threathened: "
+ ##############################
+ # government_l_english
+ ##############################
+ mechanic_has_meritocracy_yes:0 "Uses Horde Unity."
+ mechanic_has_meritocracy_no:0 "Does not use Horde Unity."
+ ##############################
+ # mandate_of_heaven_l_english
+ ##############################
+ REFUSED_CALL_FROM_TRIBUTARY_PENALTY:0 "If we decline, we will lose $MANDATE|R$ Legacy."
+ EST_VAL_CELESTIAL_EMPIRE:0 "Tradition of the Steppe: §Y$VAL$%§!"
+ ##############################
+ # modifers_l_english
+ ##############################
+ MODIFIER_IMPERIAL_MANDATE:1 "Legacy Growth Modifier"
+ ##############################
+ # text_l_english
+ ##############################
+ CELESTIAL_EMPIRE:0 "Tradition of the Steppe"
+ CELESTIAL_CELESTIAL:1 "Tradition of the Steppe"
+ CELESTIAL_EMPIRE_NO_EMPEROR:0 "The Great Khan's country is currently in an interregnum."
+ CELESTIAL_EMPEROR:0 "$EMPERORNAME|Y$ is the Great Khan"
+ CELESTIAL_MANDATE:0 "Legacy"
+ CELESTIAL_DECREES:0 "Yarlig"
+ CELESTIAL_DECISIONS:0 "Khanate Reforms"
+ bg_celestial_emperor:0 "In the year $YEAR$ $MONARCHTITLE$ $MONARCHNAME$ became the Great Khan"
+ IS_CELESTIAL_EMPEROR:0 "Is the Great Khan"
+ ISNT_CELESTIAL_EMPEROR:0 "Is NOT the Great Khan"
+ USE_MERITOCRACY:0 "Uses Horde Unity"
+ MANDATE_LESS_THAN:0 "Legacy less than"
+ MANDATE_AT_LEAST:0 "Legacy is at least"
+ MERITOCRACY_LESS_THAN:0 "Horde Unity less than"
+ MERITOCRACY_AT_LEAST:0 "Horde Unity is at least"
+ ADD_MERITOCRACY_EFFECT:0 "$DIRECTION$ $VALUE$ Horde Unity.\n"
+ SET_MERITOCRACY_EFFECT:0 "Horde Unity is set to $VALUE|Y$\n"
+ vassalize_tributaries_decision_desc:0 "The Great Khan is overlord over several tributary states which acknowledge our superiority. While most barbarians will remain foreign to our ideals, other tributaries strive to come closer to the greatness of Genghis Khan. It is the duty of the current Great Khan to elevate those who appease us the most."
+ vassalize_tributaries_decision_tt:0 "The Great Khan can use Legacy to elevate a Tributary State to a direct Vassal."
+ vassalize_tributaries_decision_ct:0 "The Great Khan can no longer elevate Tributaries to Vassals."
+ positive_mandate:0 "Positive Legacy"
+ negative_mandate:0 "Negative Legacy"
+ MANDATE_GROWTH_MODIFIERS:0 "Modifiers affecting monthly §YLegacy Growth§!:"
+ CELESTIAL_DECISION_MINIMUM_TO_ENACT:0 "Need a minimum of $MINVALUE|Y$ Legacy to take this Decision."
+ CELESTIAL_DECISION_NOT_ENOUGH_MANDATE:0 "This Decision costs $MANDATECOST|Y$ Legacy, but you only have $CURRENTMANDATE|Y$ Legacy."
+ CELESTIAL_DECISION_NOT_EMPEROR:0 "Must be the §YGreat Khan§! to enact Khanate Reforms."
+ CURRENT_CELESTIAL_EMPEROR:0 "$RULERNAME|Y$ is the current Great Khan."
+ IMPERIAL_MANDATE_DESC:0 "The Legacy value represents the authority of the current Great Khan. According to the Tradition of the Steppe, only those of Genghisid royal descent could claim a right to rule. Legacy can be used to enact Khanate Reforms to reform the Tradition of the Steppe."
+ IMPERIAL_MANDATE_CURRENT_DESC:0 "Current Legacy gives the following Modifier:\n$MODIFIERDESC$"
+ IMPERIAL_MANDATE_BONUS_DESC:0 "Legacy above §Y50§! gives the following Scaled Modifier:\n$MODIFIERDESC$"
+ IMPERIAL_MANDATE_PENALTY_DESC:0 "Legacy below §Y50§! gives the following Scaled Modifier:\n$MODIFIERDESC$"
+ CELESTIAL_EMPEROR_BENEFIT:0 "Being the §YGreat Khan§! gives the following benefits:\n"
+ CELESTIAL_EMPEROR_BENEFIT_DESC:0 " -Bonuses from High Legacy.\n -Bonuses from Tatar Unity.\n -Can enact Khanate Reforms.\n -Can Harvest the Steppe on Christian Neighbors"
+ CELESTIAL_EMPEROR_DIPLOMATIC_ACTIONS_DESC:0 "The §YGreat Khan§! may take the following additional diplomatic actions:\n$LIST|Y$"
+ vassalize_tributary_tooltip:0 "Use Legacy to elevate a Tributary to a Vassal."
+ HAS_MORE_MANDATE_THAN_TRIBUTARY_HAS_DEV:0 "Have Legacy of at least of §Y0.4 of [From.GetName]'s§! Total Development"
+ ##############################
+ # tmm_l_english
+ ##############################
+ WE_CONVERT_TRIBUTARY_TO_VASSAL_SETUP:0 "When we use Legacy to make a country into a Vassal."
+ WE_CONVERT_TRIBUTARY_TO_VASSAL_3:0 "in exchange for $MANDATE|Y$ Legacy."
+ WE_CONVERT_TRIBUTARY_TO_VASSAL_LOG:0 "We have converted $RECIPIENT$ into a Vassal using our Legacy."
+ CONVERT_TRIBUTARY_TO_VASSAL_SETUP:0 "When a country uses Legacy to make us into a Vassal."
+ CONVERT_TRIBUTARY_TO_VASSAL_4:0 "in exchange for Legacy."
+ OTHER_CONVERT_TRIBUTARY_TO_VASSAL_SETUP:0 "When a country uses Legacy to make another country into a Vassal."
+ OTHER_CONVERT_TRIBUTARY_TO_VASSAL_3:0 "converted $RECIPIENT$ into their Vassal using their Legacy."
+ OTHER_CONVERT_TRIBUTARY_TO_VASSAL_LOG:0 "$ACTOR$ has converted $RECIPIENT$ into their Vassals in exchange for Legacy."
+ CONVERT_TRIBUTARY_TO_VASSAL_CANNOT_NOT_ENOUGH_MANDATE:0 "You do not have the $MANDATE$ Legacy required."
+ CONVERT_TRIBUTARY_TO_VASSAL_DESC2:0 "Spend $MANDATE|Y$ Legacy ($PERCENT|%$ of their development) to convert $COUNTRY|Y$ from a Tributary State to a Vassal."
+ CONVERT_TRIBUTARY_TO_VASSAL_DESC:0 "We will spend $MANDATE|Y$ Legacy ($PERCENT|%$ of their development) to convert $COUNTRY|Y$ from a Tributary State to a Vassal."
+ EXPAND_INFRASTRUCTURE_COST_TOOLTIP:0 ""
+ EXPAND_INFRASTRUCTURE_NOT_OWNED:0 ""
+ EXPAND_INFRASTRUCTURE_NOPOWER:0 ""
+ ##############################
+ # triggers_and_effects_l_english
+ ##############################
+ DISMANTLE_CELESTIAL_EMPIRE_DESC:0 "The Tradition of the Steppe is dismantled.\n"
+ REFORM_CELESTIAL_EMPIRE_DESC:0 "The Tradition of the Steppe is re-formed.\n"
+ ADD_MANDATE_DESC:0 "$DIRECTION$ $MANDATECHANGE|Y$ Legacy.\n"
+ SET_MANDATE_DESC:0 "Set Legacy to $MANDATEVALUE|Y$.\n"
+ ##############################
+ # hnn_l_english
+ ##############################
+ MODIFIER_MILITARY_TACTICS:0 "Military Tactics$VALUE|G$"
+ ##############################
+ # leviathan_l_english
+ ##############################
+ EXPAND_INFRASTRUCTURE:0 "Estates & Expand Infrastructure"
+ EXPAND_INFRASTRUCTURE_DESC:0 "Estates & Expand Infrastructure for $NAME|Y$."
+ EXPAND_INFRASTRUCTURE_NEEDED_DEV:0 ""
+ EXPAND_INFRASTRUCTURE_TOOLTIP:0 "§YEstates & Expand Infrastructure§!"
+ EXPAND_INFRASTRUCTURE_TOOLTIP_MODIFIER:0 ""

@@ -1,6 +1,10 @@
 # No previous file for Coixtlahuacan
 
 culture = mixtec
+#owner = COI
+#controller = COI
+#add_core = COI
+
 religion = nahuatl
 capital = "Coixtlahuacan"
 trade_goods = dyes

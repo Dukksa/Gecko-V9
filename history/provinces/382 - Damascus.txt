@@ -1,7 +1,7 @@
 #382 - Damascus
 
-owner = SYR
-controller = SYR
+owner = MAM
+controller = MAM
 culture = al_suryah_arabic
 religion = sunni
 capital = "Dimashq"
@@ -12,7 +12,7 @@ base_production = 7
 base_manpower = 6
 is_city = yes
 add_core = SYR
-fort_15th = yes
+add_core = MAM
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern

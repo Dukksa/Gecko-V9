@@ -1,7 +1,6 @@
 # 2354 - Shegendyk
 
-owner = SHY
-controller = SHY
+
 culture = khazak
 religion = sunni
 capital = "Shegendyk"
@@ -10,10 +9,9 @@ hre = no
 base_tax = 2
 base_production = 2
 base_manpower = 2
-is_city = yes
-add_core = KZH
-add_core = SHY
 
+
+center_of_trade = 1
 
 
 discovered_by = KZH

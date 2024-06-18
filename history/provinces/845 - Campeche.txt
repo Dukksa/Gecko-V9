@@ -1,5 +1,7 @@
 #845 - Campeche
 
+#owner = CNP
+#controller = CNP
 culture = yucatec 
 religion = mesoamerican_religion
 capital = "Campeche" 
@@ -8,6 +10,8 @@ hre = no
 base_tax = 4 
 base_production = 4
 base_manpower = 1 
+
+#add_core = CNP
 
 
 

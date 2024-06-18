@@ -1,7 +1,285 @@
 ﻿l_english:
+ hungary_unleashed:0 "Hungary Unleashed"
+ desc_hungary_unleashed:0 "Janos Hunyadi is sole regent of Hungary. It would be wise to make use of his excellent statecraft."
+ burgundy_subjects_placated:0 "Burgundian Subjects Placated"
+ desc_burgundy_subjects_placated:0 "We have successfully placated our subjects"
+ free_colonist:0 "Colonial Fervour"
+ bukharan_wool:0 "Bukharan Wool"
+ silk_road_restored:0 "Silk Road Restored"
+ low_army_tradition:0 "Low Army Tradition"
+ gecko_estate_cossacks_exploration_expedition_effect_tooltip:0 "§G-10%§! local development cost in all Steppe provinces"
+ estate_cossacks_prime_herding_rights_effect_tooltip:0 "§G+25%§! manpower from all Steppe provinces\n§R-20%§! tax income from all Steppe provinces"
+ enlist_rajputs:0 "Rajputs Enlisted"
+ jihad:0 "Religious Fervour"
+ the_upper_nile:0 "The Upper Nile"
+ desc_the_upper_nile:0 "The fertile lands of the Upper Nile provide great potential for agriculture and further development."
+ isles_secured:0 "Isles Secured"
+ desc_isles_secured:0 "We have brought the Isles under our control, let us use this momentum to enforce our will elsewhere."
+ grand_armee:0 "Grande Armée"
+ desc_grand_armee:0 "We must assemble the greatest fighting force in history."
+ angevin_supremacy:0 "Angevin Supremacy"
+ desc_angevin_supremacy:0 "Our recent conquests on the mainland have demonstrated our abilities as the finest fighting force on the continent."
+ kaiser_of_europe:0 "Kayser of Europe"
+ desc_kaiser_of_europe:0 "Vienna is ours. Europe must recognise our supremacy."
+ third_rome:0 "The Third Rome"
+ desc_third_rome:0 "We have conquered the City of World's Desire. This achievement has provided our armies with unrelenting fervour for the Russian state."
+ gc_urbanisation:0 "Forced Urbanisation"
+ empowered_subjects:0 "Empowered Subject"
+ gc_african_corridor:0 "Trans-Saharan Corridor"
+ War_chest:0 "War Chest"
+ Peace_of_Italy:0 "Italian Renaissance"
+ consolidated_russia:0 "Rus Consolidation"
+ mongol_consolidation:0 "Mongol Consolidation"
+ norman_resurgence:0 "Norman Resurgence"
+ Defense_of_Europe:0 "Defense of Europe"
+ gc_thriving_arms_industry:0 "Thriving Arms Industry"
+ #Province Triggered Modifiers
+ conquest_of_constantinople:0 "Conquest of Constantinople"
+ conquest_of_paris:0 "Conquest of Paris"
+ conquest_of_vienna:0 "Conquest of Vienna"
+ conquest_of_jerusalem:0 "Conquest of Jerusalem"
+ conquest_of_baghdad:0 "Conquest of Baghdad"
+ conquest_of_delhi:0 "Conquest of Delhi"
+ conquest_of_kiev:0 "Conquest of Kiev"
+ conquest_of_cairo:0 "Conquest of Cairo"
+ conquest_of_london:0 "Conquest of London"
+ conquest_of_berlin:0 "Conquest of Berlin"
+ conquest_of_pest:0 "Conquest of Pest"
+ conquest_of_saint_petersburg:0 "Conquest of Moscow"
+ conquest_of_fez:0 "Conquest of Fez"
+ conquest_of_isfahan:0 "Conquest of Isfahan"
+ conquest_of_tabriz:0 "Conquest of Tabriz"
+ conquest_of_samarkand:0 "Conquest of Samarkand"
+ conquest_of_herat:0 "Conquest of Herat"
+ gc_mongol_kurultai:0 "Annual Kurultai"
+ the_motherland_calls:0 "The Motherland Calls"
+ gc_cagliari_copper:0 "Cagliari Copper"
+ gc_catanzaro_silk:0 "Catanzaro Silk"
+ conquest_of_copenhagen:0 "Conquest of Copenhagen"
+ conquest_of_amsterdam:0 "Conquest of Amsterdam"
+ conquest_of_prague:0 "Conquest of Prague"
+ conquest_of_frankfurt:0 "Conquest of Frankfurt"
+ conquest_of_toledo:0 "Conquest of Toledo"
+ caliph_of_cairo:0 "Seat of the Caliph of Cairo"
+ subsaharan_buildings:0 "Subsaharan Infrastructure"
+ #Advisor Event modifiers
+ gc_arty_officer_delayed:0 "Arty Officer Delayed"
+ gc_arty_officer_modifier:0 "Excellent Artillery Officers"
 
- echo_development:0 "Internal Development"
- free_colonist:0 "New World Ambition"
+ gc_drill_master_delayed:0 "Drill Master Delayed"
+ gc_drill_master_modifier:0 "Excellent Drill Master"
+
+ gc_siege_specialist_delayed:0 "Siege Specialist Delayed"
+ gc_siege_specialist_modifier:0 "Excellent Siege Specialist"
+
+ gc_infantry_leader_delayed:0 "Infantry Leader Delayed"
+ gc_infantry_leader_modifier:0 "Excellent Infantry Leader"
+
+ gc_cavalry_leader_delayed:0 "Cavalry Leader Delayed"
+ gc_cavalry_leader_modifier:0 "Excellent Cavalry Leader"
+
+ #Mamluks
+ mam_slave_soldiers:0 "Gihadiya Conscription"
+ desc_mam_slave_soldiers:0 "We have conquered the Sudan and enlisted their warriors into our regiments in return for them keeping their domains."
+ ethiopian_integration:0 "Ethiopian Integration"
+ desc_ethiopian_integration:0 "We have begun to install a new administration in Ethiopia."
+ mam_african_market:0 "African Market"
+ desc_mam_african_market:0 "We have conquered the narrow passage to the Sahel. Let our traders follow the flow of trade."
+ turks_defeated:0 "Turks Defeated"
+ gc_yemeni_trade_modifier:0 "Nile Control"
+ gc_beyliks_subjugated:0 "Beyliks Subjugated"
+
+ #Ethiopia
+ gecko_ethiopia_highlands_and_mountains_modifier:0 "Temper the Roof of Africa"
+ gc_ethiopia_prester_john:0 "Legacy of Prester John"
+ gc_ethiopia_crusade:0 "Crusade from Africa"
+
+ #Mysore
+ gecko_cannon_foundries:0 "Cannon Foundries"
+ gecko_mysorean_rockets:0 "Mysorean Rockets"
+ gecko_cannon_institute:0 "Artillery Research Institute"
+ gecko_handheld_rockets:0 "Handheld Rocketry"
+ gecko_mysore_encourage_production:0 "Encourage Craftsmanship"
+ gecko_mysore_expand_ports:0 "Mercantile Urbanization"
+ gecko_mysore_navy:0 "Merchant Fleet"
+ gecko_mysore_industrial_expansion:0 "Industral Expansion"
+ gecko_south_indian_empire:0 "South Indian Empire"
+ gecko_entrepreneural_spirit:0 "Entrepreneurial Spirit"
+ gecko_marathas_subdued:0 "Marathas Subdued"
+
+ #Salt Road
+ alte_salzstrase:0 "Alte Salzstraße"
+ desc_alte_salzstrase:0 "The Alte Salzstraße, also known as the Old Salt Road, was a very rich salt transporting network. Often called "White Gold", the salt mines were very lucrative for the northern parts of Germany, especially Lübeck, until the 17th century."
+
+ #Hansa Missions
+
+ hsa_north_sea:0 "Hanseatic Power Restored"
+ desc_hsa_north_sea:0 "We have restored our influence in the North Sea."
+
+ #France Missions
+
+ france_united:0 "France United"
+ desc_france_united:0 "We have united the French lands much to betterment of our armies"
+ lowland_conquest:0 "Conquest of Flanders"
+ desc_lowland_conquest:0 "We have re-integrated the lands of Flanders into our realm permanently. Show the rest of Europe our Elan!"
+ gc_fra_paper_industry:0 "Expansion of the Printing Press"
+ gc_land_reform:0 "Land Reform"
+ gc_french_development:0 "Urbanisation"
+ gc_milanese_development:0 "Urbanisation"
+ defense_of_france:0 "Defense of France"
+
+ #Ottoman Missions
+
+ caliphate_proclaimed:0 "Caliphate Proclaimed"
+ desc_caliphate_proclaimed:0 "Our control over the holy sites and destruction of the Mamluke Sultanate mean that we can claim the title of Caliph for the first time since the great Muslim empires."
+ defense_of_anatolia:0 "Defense of Anatolia"
+ gc_anatolia_eyalet:0 "Anatolia Eyalet"
+ gc_defeated_byzantine_empire:0 "Defeated Byzantine Empire"
+
  #Portugal
  cape_trade_established:0 "Cape City Established"
  prester_john_discovered:0 "Prester John Discovered"
+
+ #My Desert
+ my_desert:0 "My Desert, My Arrakis, My Dune."
+ desc_my_desert:0 "The Spice Must Flow."
+ gecko_hyw:0 "The last Bastion of English France"
+ desc_gecko_hyw:0 "The last Bastion of English France."
+
+ #buildup mission
+
+ gc_investment:0 "Internal Investment"
+ gc_growing_economy:0 "Growing Economy"
+ 
+ #arabia
+ 
+
+ Defense_of_Arabia:0 "Defense of Arabia"
+
+ #Italy 
+ gc_pope_controls_roman_empire:0 "Empire of God"
+
+ 
+
+ #persia
+
+ persia_united:0 "Persia United"
+ Defense_of_Persia:0 "Defense of Persia"
+
+ #morocco
+
+ berber_fury:0 "Berber Fury"
+
+#sicily
+ norman_legacy:0 "Norman Legacy"
+
+#austria
+ HRE_backup:0 "Legacy of Emperorship"
+
+ catholic_rome:0 "Italian Ambition"
+ desc_catholic_rome:1 ""
+ gc_habsburg_bohemia:0 "Habsburg Bohemia"
+
+ #Hungary
+ gc_hungary_anatolian_conquest:0 "Conquest of Anatolia"
+ gc_hungary_conquest_of_jerusalem:0 "Conquest of Jerusalem"
+ gc_hungary_italian_domination:0 "North Italian Domination"
+ gc_hungary_conquest_of_rome:0 "Protector of Rome"
+ gc_hungary_conquest_of_poland:0 "Integration of West Slavic Culture"
+ gc_hun_strong_economy:0 "Strong Economy"
+ hun_golden_kremnica:0 "Golden Kremnica"
+ hun_royal_town:0 "Royal Free Town"
+
+#Burgundy
+ lowland_integration:0 "Lowland Integration"
+ defense_of_burgundy:0 "Repulse the English"
+ gc_bur_realm_united_mod:0 "United Realm"
+ charles_court_reorganisation:0 "Reorganised Court"
+ charles_army_reorganisation:0 "Army Reorganised"
+#Swiss
+ swabian_trade:0 "Swabian Trade"
+
+ too_many_subjects:0 "Too Many Subjects"
+ too_many_subjects_influence:0 "Too Many Subjects - Influence Ideas"
+
+#Critical Province
+ critical_province:0 "Critical Province"
+
+ gecko_b:0 "Recent Bankruptcy"
+ gecko_debt_tackled:0 "Economic Recovery"
+ gecko_debt_tackled_2:0 "Slowed Military Build-up"
+
+ gc_mongol_rule_tibet:0 "Mongol Rule of Tibet"
+
+ X_full_state_prosperity_pmod:0 "Conquer Full State for Prosperity Growth"
+ emperor_renovatio_emperor:0 "Renovatio Imperii"
+ gecko_development:0 "Internal Development"
+ African_Slave_Trade:0 "African Slave Trade"
+ Control_African_Slave_Trade:0 "Full Control of African Slave Trade"
+ African_Gold_Monopoly:0 "African Gold Monopoly"
+ African_Gold:0 "African Gold"
+ African_Slave_Trade_Western:0 "African Slave Trade"
+ iberian_trade:0 "Iberian Trade"
+ Defense_of_the_Rus:0 "Defense of the Rus"
+ Ahead_of_time:0 "Ahead of Time"
+russian_consolidation:0 "Russian Consolidation"
+gecko_ipa:0 "Favourable Lending Terms"
+gecko_tackle_debt_timer_2:0 "Economic Recovery"
+HRE_Minor_defense:0 "Defense Against the Emperor"
+Rogue_Emperor:0 "Rogue Emperor"
+turkmen_recruitment:0 "Turkmen Recruitment"
+erzincan_copper:0 "Erzincan Copper Mine"
+gecko_recovery:0 "Revanchism"
+increased_merc_recruitment:0 "Increased Mercenary Recruitment"
+increased_merc_quality:0 "Increased Mercenary Quality"
+Over_merc_limit:0 "Over Mercenary Forcelimit"
+streltsy_buff:0 "Streltsy Expanded"
+sipahi_buff:0 "Timariot System Expanded"
+mamluk_buff:0 "Invested in the Mamluks"
+#venice
+
+gc_ven_urban_renewal:0 "Urban Renewal"
+gc_ven_venture_captain_recruitment:0 "Venture-Captain Recruitment"
+gc_ven_mercenaries_paid_with_land:0 "Mercenaries Receive Land Grants"
+gc_ven_genoese_humiliation:0 "Genoese Humiliation"
+gc_mediterranean_ambition:0 "Mediterranean Ambition"
+gc_ven_la_francocrazia:0 "La Francocrazia"
+
+#milan
+
+gc_mlo_lombard_renaissance:0 "Lombard Renaissance"
+
+#timurid prince
+gc_tim_resurgent:0 "Timurid Resurgence"
+gc_mug_formation_hope:0 "Indian Raid"
+
+berber_fury_2:0 "Berber Fury"
+gc_west_african_integration:0 "West African Integration"
+
+#sweden
+gc_swe_hakkapeliitta:0 "Hakkapeliitta"
+
+Standing_Army:0 "Standing Army"
+
+######province modifiers######
+ northern_dvina_estuary_modifier:0 "Northern Dvina Estuary"
+ desc_northern_dvina_estuary_modifier:0 "Controlling the important river estuary of Northern Dvina strengthens our hold of the trade in the region."
+ house_of_wisdom:0 "House of Wisdom"
+ desc_house_of_wisdom:0 "House of Wisdom Description"
+ kaffa_slave_market:0 "Kaffa Slave Market"
+ desc_kaffa_slave_market:0 "In the late 13th century, traders from the Republic of Genoa arrived and purchased Kaffa from the ruling Golden Horde. They established a flourishing trading settlement, which virtually monopolized trade in the Black Sea region and served as a major port and administrative center for the Genoese settlements around the Sea. It came to house one of Europe's biggest slave markets, where captured Europeans from raids by the military of the Crimean Khanate and the Nogai Horde were sold."
+ transcaucasian_wine_valleys:0 "Transcaucasian Wine Valleys"
+ desc_transcaucasian_wine_valleys:0 "The fertile valleys and protective slopes of Transcaucasia have made the region home to grapevine cultivation and wine production for millennia."
+
+ gc_mecca_agreement:0 "Warriors of the Faith"
+ merc_recruited:0 "Travel time to these provinces is delayed until our Mercenaries can organise."
+ gc_nap_italian_wars_modifier:0 "Victory in the Italian Wars"
+ gc_Letat_cest_moi:0 "L'Etat, c'est moi"
+ trade_hub_created_in_province:0 "Trade Hub Created in Province"
+ trade_hub_created:0 "Trade Hub Created"
+ trade_hub_created_2:0 "Production Hub Created"
+ trade_hub_created_in_province_grain:0 "Production Hub"
+ trade_hub_created_in_province_naval_supplies:0 "Production Hub"
+ trade_hub_created_in_province_livestock:0 "Production Hub"
+ gc_african_gold_modifier:0 "African Gold"
+ PR_manpower_edict_province_2:0 "Provincial Manpower Edict"

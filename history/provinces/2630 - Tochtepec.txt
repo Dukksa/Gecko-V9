@@ -1,6 +1,10 @@
 # No previous file for Tochtepec
 
 culture = chontales
+#owner = YOK
+#controller = YOK
+#add_core = YOK
+
 religion = mesoamerican_religion
 capital = "Tochtepec"
 trade_goods = fish

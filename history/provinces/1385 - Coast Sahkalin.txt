@@ -26,7 +26,7 @@ discovered_by = CHV
 discovered_by = KMC
 discovered_by = RFR
 discovered_by = AKM
-discovered_by = owner = 
+discovered_by = AKT
 discovered_by = CBA
 discovered_by = ISK
 discovered_by = ITO
@@ -45,9 +45,6 @@ discovered_by = CHU
 discovered_by = CHV
 discovered_by = KMC
 discovered_by = MYR
-discovered_by = NVK
-discovered_by = NHX
-discovered_by = SOL
 
 
 

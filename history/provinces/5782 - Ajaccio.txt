@@ -1,0 +1,21 @@
+#5782 - Ajaccio
+
+owner = COR
+controller = COR
+culture = sardinian 
+religion = catholic 
+hre = no 
+base_tax = 3
+base_production = 3
+trade_goods = naval_supplies
+base_manpower = 1
+capital = "Ajaccio" 
+is_city = yes 
+add_core = COR
+
+
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

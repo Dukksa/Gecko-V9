@@ -1,0 +1,26 @@
+﻿l_english:
+ gc_drill_master:0 "Drill Master"
+ gc_drill_master_desc:0 "Drill drill drill"
+
+ gc_arty_officer:0 "Artillery Officer"
+ gc_arty_officer_desc:0 "Cannon goes boom"
+
+ gc_inquisitor:0 "Minister of Culture"
+ gc_inquisitor_dec:0 "Uhhh"
+
+ siege_specialist:0 "Siege Specialist"
+ siege_specialist_desc:0 "Once more into the breach"
+ 
+ infantry_leader:0 "Infantry Leader"
+ infantry_leader_desc:0 "Rage my soldiers!"
+ cavalry_leader:0 "Cavalry Leader"
+ cavalry_leader_desc:0 "Chaaaaaaaaaaaaarge!"
+#drillmaster
+ excellent_drill:0 "Excellent Drill"
+ drillmaster_events.1.t:0 "$DRILLMASTER$"
+ drillmaster_events.1.d:0 "One of our advisors, $DRILLMASTER$ has drilled our men to the pitch of military efficiency. Like a coiled spring we cannot maintain this high level for too long. Still, for a while our armies will stand where lesser men would run."
+
+ gc_banker:0 "Banker"
+ gc_banker_desc:0 "It is not from the benevolence of the butcher, the brewer, or the baker that we expect our dinner, but from their regard to their own interest."
+ gc_banker_boost:0 "Generous Terms Secured by Banker"
+ 

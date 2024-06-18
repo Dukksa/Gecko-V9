@@ -13,6 +13,13 @@ base_manpower = 1
 is_city = yes
 add_core = POL
 
+###X###
+add_devastation = 35
+add_province_modifier = {
+	name = X_POL_silesian_raids_pmod
+	duration = -1
+}
+#######
 
 discovered_by = KAZ
 discovered_by = CRI

@@ -1,12 +1,10 @@
 #1200 - Tanga
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+
 culture = swahili
 religion = shamanism #Fetishism
 capital = "Vumba Kuu"
-is_city = yes
+
 base_manpower = 2
 add_local_autonomy = 35
 trade_goods = ivory

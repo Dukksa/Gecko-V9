@@ -1,0 +1,427 @@
+﻿l_english:
+#generic
+
+ gc_build_army_mission_title:0 "Build to Force Limit"
+ gc_build_army_mission_desc:0 ""
+ buk_mission_conquer_central_asia_title:0 "Dominate Central Asia"
+ buk_mission_conquer_central_asia_desc:0 "No Khan must be left in Central Asia to challenge our rule. Our dominance over the region must be absolute."
+ buk_mission_conquer_mongolia_title:0 "Khan of Khans"
+ buk_mission_conquer_mongolia_desc:0 "At least, Mongolia itself is within our reach. We must lead our armies into Karakorum and proclaim that the Mongol Empire has been restored!"
+ buk_mission_conquer_china_title:0 "Invade China"
+ buk_mission_conquer_china_desc:0 "China is the final obstacle to our great restoration of the Great Khan's empire. Temujin himself would look upon our empire with pride as the Heavenly Kingdom crumbles before us."
+ buk_mission_restore_silk_road_title:0 "Restore the Silk Road"
+ buk_mission_restore_silk_road_desc:0 "Ever since our nation was created, we have been adamant that we are the heir of the Khan, heir of the Steppes, and heir of the Silk Road. Our wealth and glory, our trade and armies, all of us within our nation knows this to be the truth. Sadly it has taken others a long time to realise this, to end their scoffing and for us to punish the upstarts. Through our importation of artisans, our rebuilding of critical trade infrastructure, our irrigation of the desert; we have been able to restore the Silk Road."
+ gecko_emp_hab_no_one_to_threaten_us_trigger_tooltip:0 "No HRE member state:\n         §Y30§! or more provinces in §YEurope§! are owned by §Ycountry§! or its by non-tributary subjects.\n         Is NOT subject to §YAustria§!."
+ conquer_habsburgs_title:0 "Conquer the Habsburgs"
+ conquer_habsburgs_desc:0 "We must conquer the great city of Vienna and establish our authority as Kayser of Europe."
+ change_estate_land_share_5_tt: "Gain §Y5% Estate Land§! for the §YCrown§!" 
+ #Mamluk & Egypt
+ gecko_mam_mission_1_title:0 "West African Market"
+ gecko_mam_mission_2_title:0 "Subjugate Dongola"
+ gecko_mam_mission_3_title:0 "Subjugate Funj"
+ gecko_mam_mission_4_title:0 "Dominate Ethiopia"
+ gecko_mam_mission_5_title:0 "Fortify the Frontier"
+ gecko_mam_mission_6_title:0 "Follow the Nile"
+ gecko_mam_mission_7_title:0 "Harvest the Nile"
+ gecko_mam_mission_8_title:0 "Slave Soldiers"
+ gecko_mam_mission_9_title:0 "Strike the Lion"
+ gecko_mam_mission_10_title:0 "Secure the Gulf of Aden"
+ gecko_mam_mission_11_title:0 "White Gold"
+ gecko_mam_mission_12_title:0 "Subjugate Beja"
+ gecko_mam_mission_13_title:0 "Subjugate Alodia"
+ gecko_mam_mission_14_title:0 "Arabian Coffee"
+ gecko_mam_mission_15_title:0 "Conquer Yemen"
+ gecko_mam_mission_16_title:0 "Improve the Economy"
+ mam_turks_defeated_title:0 "Turks Defeated"
+ unlock_privilege_estate_mamluks_recruit_turkmen_tt:0 "Unlock Recruit Turkmen Privilege"
+ gc_consolidate_asia_minor_title:0 "Consolidate Asia Minor"
+ gc_conquer_mesopotamia_title:0 "Conquer Mesopotamia"
+ gc_conquer_haasa_title:0 "Conquer Haasa"
+
+ gecko_mam_mission_1_desc:0 ""
+ gecko_mam_mission_2_desc:0 ""
+ gecko_mam_mission_3_desc:0 ""
+ gecko_mam_mission_4_desc:0 ""
+ gecko_mam_mission_5_desc:0 ""
+ gecko_mam_mission_6_desc:0 ""
+ gecko_mam_mission_7_desc:0 ""
+ gecko_mam_mission_8_desc:0 ""
+ gecko_mam_mission_9_desc:0 ""
+ gecko_mam_mission_10_desc:0 ""
+ gecko_mam_mission_11_desc:0 ""
+ gecko_mam_mission_12_desc:0 ""
+ gecko_mam_mission_13_desc:0 ""
+ gecko_mam_mission_14_desc:0 ""
+ gecko_mam_mission_15_desc:0 ""
+ gecko_mam_mission_16_desc:0 ""
+ mam_turks_defeated_desc:0 ""
+ mam_Mimar_Sinans_Great_Constructions_title:0 "Mimar Sinan's Great Constructions"
+ mam_Mimar_Sinans_Great_Constructions_desc:0 "Mimar Sinan planned and oversaw the construction of countless mosques, aqueducts, bathhouses, bridges, palaces, caravanserais and schools during his half-a-century long career. His masterpieces were the Selimiye and Suleymaniye Mosques in Adrianople and Constantinople respectively."
+ mam_Expansion_of_the_Royal_Bureaucracy_title:0 "Expansion of the Royal Bureaucracy"
+ mam_Expansion_of_the_Royal_Bureaucracy_desc:0 "Süleyman I was probably the greatest of the Ottoman Sultans. Called Kanuni (Lawgiver), he was an unsurpassed administrator who realized that the power of the provincial Beys had to be curbed by a strong central government. Thus he struggled to promote a powerful royal bureaucracy which was not popular in all camps..."
+ gc_consolidate_asia_minor_desc:0 ""
+ gc_conquer_mesopotamia_desc:0 ""
+ gc_conquer_haasa_desc:0 ""
+ gc_mecca_agreement_tt:0 "We will give Yemen the custodianship of Mecca and Medina and in return, they will provide us with their finest Holy Warriors. If we renege on this agreement, we will lose this benefit."
+#ottoman event missions
+
+ g_military_reforms_of_mehmet:0 "This event will grant§G 10% Infanty Combat Ability§! until the current ruler dies."
+ g_enderun_academy:0 "This event gives the choice of §G2.5% Discipline§! or §G10% Cavalry Combat Ability§! until the current ruler dies."
+ g_naval_reform:0 "This event gives §G-5% Ship Cost§! until the end of the game."
+ g_constructions:0 "This event gives §G-10% Development Cost§! and §G-10% Construction Cost§! until the current ruler dies."
+ g_expansion_of_the_royal_bureaucracy:0 "This event gives §G-10% Tech and Idea Cost§! and §G+10% Tax Modifier§! for the next 40 years."
+
+ military_reforms_title:0 "Military Reforms"
+ military_reforms_desc:0 "The reigns of Mehmed I and Murad II saw the Ottoman Empire reunified after the crushing defeat it had suffered at the hands of Tamerlane. The military was expanded and reformed to match any potential threat and ensure further expansion. It was also during this period that the Ottomans started to realize the vital importance of a strong navy."
+ enderun_academy_title:0 "Enderun Academy"
+ enderun_academy_desc:0 "In order to train administrators for his expanding empire, Mehmed II established an educational institution in the inner courtyard (Enderun) of the newly constructed Topkapi Palace. Students were chosen from among the most promising devshirme recruits (conscripted Christian youths mostly from the Balkans), and were trained in the Islamic faith, the sciences, and the military arts. They were expected to develop competency in the three languages of Turkish, Arabic, and Persian. This prepared them to serve in the Sultan's household, from which they could hope to graduate as government administrators with the rank of bey or pasha. The staffing of government posts with devshirme recruits trained in the palace school and loyal to the sultan formed the backbone of the Ottoman system of patrimonial rule throughout the fifteenth and sixteenth centuries."
+ Great_Naval_Reform_title:0 "The Great Naval Reform"
+ Great_Naval_Reform_desc:0 "Selim I, called the Grim, was an ascetic man with a sharp mind. Seeing the threat of the great Christian navies, especially the Venetian one, he realized that the Ottoman Empire had to greatly expand its navy. In emulation of the Arsenale in Venice, he thus ordered the construction of the 'Imperial Halic Shipyard' in Constantinople. The great shipyard stood complete in 1517."
+ Mimar_Sinans_Great_Constructions_title:0 "Mimar Sinan's Great Constructions"
+ Mimar_Sinans_Great_Constructions_desc:0 "Mimar Sinan planned and oversaw the construction of countless mosques, aqueducts, bathhouses, bridges, palaces, caravanserais and schools during his half-a-century long career. His masterpieces were the Selimiye and Suleymaniye Mosques in Adrianople and Constantinople respectively."
+ Expansion_of_the_Royal_Bureaucracy_title:0 "Expansion of the Royal Bureaucracy"
+ Expansion_of_the_Royal_Bureaucracy_desc:0 "Süleyman I was probably the greatest of the Ottoman Sultans. Called Kanuni (Lawgiver), he was an unsurpassed administrator who realized that the power of the provincial Beys had to be curbed by a strong central government. Thus he struggled to promote a powerful royal bureaucracy which was not popular in all camps..."
+ conquer_kurdistan_title:0 "Conquer Kurdistan"
+ conquer_caucasia_title:0 "Conquer Caucasia"
+ conquer_kurdistan_desc:0 ""
+ conquer_caucasia_desc:0 ""
+ repulse_gank_title:0 "Defense of Anatolia"
+ repulse_gank_desc:0 ""
+#Portuguese Missions
+
+ gc_por_discovers_prestor_john_title:0 "Find Prester John"
+ gc_por_discovers_prestor_john_desc:0 " "
+#Ethiopian missions
+
+ prestor_john_title:0 "Prestor John"
+ prestor_john_desc:0 " "
+ g_help_from_the_west:0 "This event will grant§G 5% Land Morale§!,§G 2.5% Discipline§! and §G15% Manpower§! for 10 years."
+
+ gc_eth_mission_1_title:0 "Prepare a Navy"
+ gc_eth_mission_2_title:0 "European Ties"
+ gc_eth_mission_3_title:0 "Help from Portugal"
+ gc_eth_mission_4_title:0 "Fortify Arabia"
+ gc_eth_mission_5_title:0 "Free Adan"
+ gc_eth_mission_6_title:0 "Arabian Foothold"
+ gc_eth_mission_7_title:0 "Dominate Yemen"
+ gc_eth_mission_8_title:0 "Advance on Hormuz"
+ gc_eth_mission_9_title:0 "Control Mecca"
+ gc_eth_mission_10_title:0 "Coptic Reformed"
+ gc_eth_mission_11_title:0 "Prepare for War"
+ gc_eth_mission_12_title:0 "Follow the Nile"
+ gc_eth_mission_13_title:0 "Subjugate Funj"
+ gc_eth_mission_14_title:0 "Conquer Sudan"
+ gc_eth_mission_15_title:0 "Free Qasr Ibrim"
+ gc_eth_mission_16_title:0 "Seize Cairo"
+ gc_eth_mission_17_title:0 "Free Alexandria"
+ gc_eth_mission_18_title:0 "Subjugate Somalia"
+ gc_eth_mission_19_title:0 "The Horn of Africa"
+ gc_eth_mission_20_title:0 "Along the Horn"
+ gc_eth_mission_21_title:0 "Religious Bastion"
+ gc_eth_mission_22_title:0 "Expand Gold Mines"
+ gc_eth_mission_23_title:0 "Spread our Faith"
+ gc_eth_mission_24_title:0 "Legacy of Prester John"
+ gc_eth_mission_25_title:0 "Crusade from Africa"
+
+ gc_eth_mission_1_desc:0 ""
+ gc_eth_mission_2_desc:0 ""
+ gc_eth_mission_3_desc:0 ""
+ gc_eth_mission_4_desc:0 ""
+ gc_eth_mission_5_desc:0 ""
+ gc_eth_mission_6_desc:0 ""
+ gc_eth_mission_7_desc:0 ""
+ gc_eth_mission_8_desc:0 ""
+ gc_eth_mission_9_desc:0 ""
+ gc_eth_mission_10_desc:0 "Changes Government Type to Ethiopian Theocracy."
+ gc_eth_mission_11_desc:0 ""
+ gc_eth_mission_12_desc:0 ""
+ gc_eth_mission_13_desc:0 ""
+ gc_eth_mission_14_desc:0 ""
+ gc_eth_mission_15_desc:0 ""
+ gc_eth_mission_16_desc:0 ""
+ gc_eth_mission_17_desc:0 ""
+ gc_eth_mission_18_desc:0 ""
+ gc_eth_mission_19_desc:0 ""
+ gc_eth_mission_20_desc:0 ""
+ gc_eth_mission_21_desc:0 ""
+ gc_eth_mission_22_desc:0 ""
+ gc_eth_mission_23_desc:0 ""
+ gc_eth_mission_24_desc:0 "Gives -1 Yearly Prestige Decay and 2 Tolerance of True Faith."
+ gc_eth_mission_25_desc:0 "Gives -1 Army Tradition Decay and 10% Movementspeed."
+
+ #Crimea 
+
+ gc_cri_mission_1_title:0 "Ruin Ruthenia"
+ gc_cri_mission_2_title:0 "Settle Ruthenia"
+ gc_cri_mission_3_title:0 "Crimean Expansion"
+ gc_cri_mission_4_title:0 "Conquer Moldavia"
+ gc_cri_mission_5_title:0 "Settle Moldavia"
+ gc_cri_mission_6_title:0 "Settle Crimea"
+ gc_cri_mission_7_title:0 "Settle the Coast"
+ gc_cri_mission_8_title:0 "Wolgan Settlements"
+ gc_cri_mission_9_title:0 "Claim the Hetmanate"
+ gc_cri_mission_10_title:0 "North Expansion"
+ gc_cri_mission_11_title:0 "Unite the Tatars"
+ gc_cri_mission_12_title:0 "Annex Bashkiria"
+ gc_cri_mission_13_title:0 "East Expansion"
+ gc_cri_mission_14_title:0 "Seize Nogai"
+
+ gc_cri_mission_1_desc:0 ""
+ gc_cri_mission_2_desc:0 ""
+ gc_cri_mission_3_desc:0 "The Event gives a bunch of development on the Crimean peninsula as well as cores."
+ gc_cri_mission_4_desc:0 ""
+ gc_cri_mission_5_desc:0 ""
+ gc_cri_mission_6_desc:0 ""
+ gc_cri_mission_7_desc:0 ""
+ gc_cri_mission_8_desc:0 ""
+ gc_cri_mission_9_desc:0 ""
+ gc_cri_mission_10_desc:0 ""
+ gc_cri_mission_11_desc:0 "The Event adds 4 development of each type to the Capital."
+ gc_cri_mission_12_desc:0 ""
+ gc_cri_mission_13_desc:0 ""
+ gc_cri_mission_14_desc:0 ""
+
+ #Russia
+ enserfed_peasants_title:0 "Enserfed Peasants"
+ enserfed_peasants_desc:0 ""
+ full_serfdom_title:0 "Full Serfdom"
+ full_serfdom_desc:0 ""
+ pomjestija_reform_title:0 "Pomjestija Reform"
+ pomjestija_reform_desc:0 "This event will grant§G 10% Land Morale§! and §G -10% Military Tech Cost§! or §G10% Trade Efficiency§! and §G25% Institution Spread§! for 25 Years."
+#high income missions
+
+ cri_high_income_mission_title:0 "High Income"
+ cri_high_income_mission_desc:0 "We must increase state income by any means necessary. Money is a requirement for any endeavor of the state, from the daily expenses of the government to the maintenance of armies to invade our enemies."
+ mer_high_income_mission_title:0 "High Income"
+ mer_high_income_mission_desc:0 "We must increase state income by any means necessary. Money is a requirement for any endeavor of the state, from the daily expenses of the government to the maintenance of armies to invade our enemies."
+ mor_high_income_mission_title:0 "High Income"
+ mor_high_income_mission_desc:0 "We must increase state income by any means necessary. Money is a requirement for any endeavor of the state, from the daily expenses of the government to the maintenance of armies to invade our enemies."
+ por_high_income_mission_title:0 "High Income"
+ por_high_income_mission_desc:0 "We must increase state income by any means necessary. Money is a requirement for any endeavor of the state, from the daily expenses of the government to the maintenance of armies to invade our enemies."
+ cas_high_income_mission_title:0 "High Income"
+ cas_high_income_mission_desc:0 "We must increase state income by any means necessary. Money is a requirement for any endeavor of the state, from the daily expenses of the government to the maintenance of armies to invade our enemies."
+ bur_high_income_mission_title:0 "High Income"
+ bur_high_income_mission_desc:0 "We must increase state income by any means necessary. Money is a requirement for any endeavor of the state, from the daily expenses of the government to the maintenance of armies to invade our enemies."
+ hsa_high_income_mission_title:0 "High Income"
+ hsa_high_income_mission_desc:0 "We must increase state income by any means necessary. Money is a requirement for any endeavor of the state, from the daily expenses of the government to the maintenance of armies to invade our enemies."
+ mos_high_income_mission_title:0 "High Income"
+ mos_high_income_mission_desc:0 "We must increase state income by any means necessary. Money is a requirement for any endeavor of the state, from the daily expenses of the government to the maintenance of armies to invade our enemies."
+ hab_high_income_mission_title:0 "High Income"
+ hab_high_income_mission_desc:0 "We must increase state income by any means necessary. Money is a requirement for any endeavor of the state, from the daily expenses of the government to the maintenance of armies to invade our enemies."
+ dlh_high_income_mission_title:0 "High Income"
+ dlh_high_income_mission_desc:0 "We must increase state income by any means necessary. Money is a requirement for any endeavor of the state, from the daily expenses of the government to the maintenance of armies to invade our enemies."
+ swi_high_income_mission_title:0 "High Income"
+ swi_high_income_mission_desc:0 "We must increase state income by any means necessary. Money is a requirement for any endeavor of the state, from the daily expenses of the government to the maintenance of armies to invade our enemies."
+ tur_high_income_mission_title:0 "High Income"
+ tur_high_income_mission_desc:0 "We must increase state income by any means necessary. Money is a requirement for any endeavor of the state, from the daily expenses of the government to the maintenance of armies to invade our enemies."
+ tim_high_income_mission_title:0 "High Income"
+ tim_high_income_mission_desc:0 "We must increase state income by any means necessary. Money is a requirement for any endeavor of the state, from the daily expenses of the government to the maintenance of armies to invade our enemies."
+#france
+
+ repulse_french_gank_title:0 "Defense of France"
+ repulse_french_gank_desc:0 ""
+ gc_french_development_tt:0 "You must have 30 Provinces or more with at least §Y10 Development§!. You must have 10 Provinces or more with at least §Y30 Development§!"
+ gc_french_development_tooltip:0 "All owned provinces in the France Region with at least §Y30 Development§! get '§YUrbanisation§!'for §Y50 years§!, giving the following effects:\nLocal Goods Produced: §G+0.25§!\nLocal Development Cost: §G-15.0%§!\nLocal Construction Cost: §G-15.0%§!\nLocal Manpower Modifier: §G33.0%§! \nLocal Governing Cost: §G-200.0%§! \nLocal Governing Cost Increase: §G-15§!"
+ gc_mlo_development_tt:0 "You must have 10 Provinces or more with at least §Y20 Development§!. You must have 10 Provinces or more with at least §Y30 Development§!"
+ gc_mlo_development_tooltip:0 "All owned provinces in the Italy Region with at least §Y30 Development§! get '§YUrbanisation§!'for §Y100 years§!, giving the following effects:\nLocal Goods Produced: §G+0.25§!\nLocal Development Cost: §G-15.0%§!\nLocal Construction Cost: §G-15.0%§!\nLocal Manpower Modifier: §G33.0%§! \nLocal Governing Cost: §G-200.0%§! \nLocal Governing Cost Increase: §G-15§!"
+ FRENCH_EMPIRE:0 "French Empire"
+ FRENCH_EMPIRE_ADJ:0 "French"
+
+#arabia
+
+ARB_conquest_1_title:0 "Conquest of Mesopotamia"
+ARB_conquest_1_desc:0 "Completing this mission and §Greaching 1600§! will grant access to the Wahabi Scholar, giving §G15% Land Morale§! but maluses to Heretic and Heathen religions."
+
+#sicily
+
+gc_emp_nap_dalmatian_conquest_title:0 "Italian Conquest"
+gc_emp_nap_dalmatian_conquest_desc:0 ""
+gc_emp_nap_despot_of_epirus_title:0 "Neapolitan Conquest"
+gc_emp_nap_despot_of_epirus_desc:0 ""
+sic_high_income_mission_title:0 "High Income"
+sic_high_income_mission_desc:0 ""
+
+#England
+
+gc_eng_rb_take_gibraltar_title:0 "Take Copenhagen"
+gc_eng_rb_take_gibraltar_desc:0 ""
+
+#songhai mission
+
+gc_son_take_djenne_title:0 "Conquer Zazzau"
+gc_son_take_djenne_desc:0 ""
+remove_subsaharan_buildings:0 "The Subsaharan Buildings modifier will be removed from all provinces."
+
+#Hungary
+
+gc_hungary_eoh_requirements_tooltip:0 "Directly controls all of Bohemia, Austria and Silesia."
+
+GREAT_HUNGARY:0 "Greater Hungary"
+GREAT_HUNGARY_ADJ:0 "Greater Hungarian"
+
+gc_hungary_mission_1_title:0 "A New Bloodline"
+gc_hungary_mission_1_desc:0 ""
+
+gc_hungary_mission_2_title:0 "Stabilize The Economy"
+gc_hungary_mission_2_desc:0 ""
+hun_kremnica_title:0 "Expand the Mint"
+hun_kremnica_desc:0 "Kremnica Mint was established in 1328 when Kremnica was promoted to a free royal town by the Hungarian King Charles Robert of Anjou; the mint issued several kinds of coins early on, of which the most successful was its ducat. Kremnica ducats are well-known because of their good quality and are considered the hardest currency in Central Europe. We must ensure that the reputation of our mint is preserved by further developing it."
+hun_royal_towns_title:0 "Develop Free Royal Towns"
+hun_royal_towns_desc:0 "Many cities of Hungary were given the privileges of Free Royal Towns in order to curtail the power of nobility. Investing in their growth would ensure that the balance of power in Hungary will be preserved."
+gc_hungary_mission_3_title:0 "Reform The Army"
+gc_hungary_mission_3_desc:0 ""
+
+gc_hungary_mission_4_title:0 "The Future of Hungary"
+gc_hungary_mission_4_desc:0 "§RChoose carefully, this will bind us to one path.§"
+
+gc_hungary_mission_5_title:0 "Prepare the Fleet"
+gc_hungary_mission_5_desc:0 ""
+
+gc_hungary_mission_6_title:0 "Foothold in Anatolia"
+gc_hungary_mission_6_desc:0 ""
+
+gc_hungary_mission_7_title:0 "Prepare Crusade"
+gc_hungary_mission_7_desc:0 ""
+
+gc_hungary_mission_8_title:0 "Control Anatolia"
+gc_hungary_mission_8_desc:0 ""
+
+gc_hungary_mission_9_title:0 "Anatolian Threat"
+gc_hungary_mission_9_desc:0 ""
+
+gc_hungary_mission_10_title:0 "Secure Bulgaria"
+gc_hungary_mission_10_desc:0 ""
+
+gc_hungary_mission_11_title:0 "Secure Macedon"
+gc_hungary_mission_11_desc:0 ""
+
+gc_hungary_mission_12_title:0 "Secure Greece"
+gc_hungary_mission_12_desc:0 ""
+
+gc_hungary_mission_13_title:0 "Secure Greek Islands"
+gc_hungary_mission_13_desc:0 ""
+
+gc_hungary_mission_14_title:0 "Free Jerusalem"
+gc_hungary_mission_14_desc:0 ""
+
+gc_hungary_mission_15_title:0 "Dominate Black Sea"
+gc_hungary_mission_15_desc:0 ""
+
+gc_hungary_mission_16_title:0 "Conquer Crimea"
+gc_hungary_mission_16_desc:0 ""
+
+gc_hungary_mission_17_title:0 "Interfere in Italy"
+gc_hungary_mission_17_desc:0 ""
+
+gc_hungary_mission_18_title:0 "Push Inland"
+gc_hungary_mission_18_desc:0 ""
+
+gc_hungary_mission_19_title:0 "Subjugate Milan"
+gc_hungary_mission_19_desc:0 ""
+
+gc_hungary_mission_20_title:0 "Consolidate the West"
+gc_hungary_mission_20_desc:0 ""
+
+gc_hungary_mission_21_title:0 "Seize Dalmatia"
+gc_hungary_mission_21_desc:0 ""
+
+gc_hungary_mission_22_title:0 "Italian Foothold"
+gc_hungary_mission_22_desc:0 ""
+
+gc_hungary_mission_23_title:0 "Expand the Frontier"
+gc_hungary_mission_23_desc:0 ""
+
+gc_hungary_mission_24_title:0 "Control Naples"
+gc_hungary_mission_24_desc:0 ""
+
+gc_hungary_mission_25_title:0 "March on Rome"
+gc_hungary_mission_25_desc:0 ""
+
+gc_hungary_mission_26_title:0 "Seize Vienna"
+gc_hungary_mission_26_desc:0 ""
+
+gc_hungary_mission_27_title:0 "Dominate Austria"
+gc_hungary_mission_27_desc:0 ""
+
+gc_hungary_mission_28_title:0 "Conquest of Tirol"
+gc_hungary_mission_28_desc:0 ""
+
+gc_hungary_mission_29_title:0 "The Austrian Menace"
+gc_hungary_mission_29_desc:0 ""
+
+gc_hungary_mission_30_title:0 "Conquest of Sicily"
+gc_hungary_mission_30_desc:0 ""
+
+gc_hungary_mission_31_title:0 "Raid on Vienna"
+gc_hungary_mission_31_desc:0 ""
+
+gc_hungary_mission_32_title:0 "Bohemian Entrance"
+gc_hungary_mission_32_desc:0 ""
+
+gc_hungary_mission_33_title:0 "The Bohemian Crown"
+gc_hungary_mission_33_desc:0 ""
+
+gc_hungary_mission_34_title:0 ""
+gc_hungary_mission_34_desc:0 ""
+
+gc_hungary_mission_35_title:0 "Empire of Hungary"
+gc_hungary_mission_35_desc:0 ""
+
+gc_hungary_mission_36_title:0 "Subjugate the Bavarians"
+gc_hungary_mission_36_desc:0 ""
+
+gc_hungary_mission_37_title:0 "Conquest of Silesia"
+gc_hungary_mission_37_desc:0 ""
+
+gc_hungary_mission_38_title:0 "Weaken Poland"
+gc_hungary_mission_38_desc:0 ""
+
+gc_hungary_mission_39_title:0 "March on Warsaw"
+gc_hungary_mission_39_desc:0 ""
+
+gc_hungary_mission_40_title:0 "Free Red Ruthenia"
+gc_hungary_mission_40_desc:0 ""
+
+#Burgundy
+
+repulse_gank_bur_title:0 "Dreams of Independence"
+repulse_gank_bur_desc:0 ""
+
+#morocco
+
+gc_gc_mor_palace_title:0 "Develop Sugar and Cloth"
+gc_gc_mor_palace_desc:0 ""
+mor_own_develop_clothes_and_salt_ct:0 "[Root.GetName] gets '§YSugar and Cloth Main Production§!' for §Y20 years§!, giving the following effects:\nGlobal Trade Power: §G+15.0%§!\n\nEvery owned province which produces §YSugar§! or §YCloth§! gets '§YAccelerated Production§!' for §Y20 years§!, giving the following effects:\nLocal Goods Produced: §G+1§!\nLocal Development Cost: §G-5.0%§!"
+gc_mor_flagship_title:0 "Launch a Flagship"
+gc_mor_flagship_desc:0 ""
+gc_mor_sugar_cloth_production:0 "Accelerated Production"
+gc_mor_sugar_cloth_trader:0 "Sugar and Cloth Main Production"
+desc_gc_mor_cloth_trader:0 "We have focused a great portion of our manufactories and workshops in the production of salt and cloth, which brings us a significant advantage in the trade nodes."
+gc_mor_italy_conquest_title:0 "Italian Conquest"
+gc_mor_italy_conquest_desc:0 ""
+gc_mor_italy:0 "Western Arms"
+gc_control_of_the_mediterranean_slave_trade:0 "Control of the Mediterranean Slave Trade"
+
+ #qq
+ PR_qar_missions4_reward:0 "Unlock Clergy Exploration Expeditions Estate Privilege"
+ PR_qar_missions3_desc_title:0 "Into Arabia"
+ PR_qar_missions3_desc_desc:0 ""
+ PR_qar_missions4_desc_title:0 "Settle the Deserts"
+ PR_qar_missions4_desc_desc:0 ""
+ PR_qar_missions5_desc_title:0 "Follow the Coast"
+ PR_qar_missions5_desc_desc:0 ""
+ PR_qar_missions6_desc_title:0 "Consolidate Yemen"
+ PR_qar_missions6_desc_desc:0 ""
+
+#mission tree
+ #persia
+ caucasus_conquest_title:0 "Georgian Jihad"
+ caucasus_conquest_desc:0 "The restless Safavid order demands we launch a grand Jihad against the upstart Georgians. Not only will this benefit our caravans, it will also allow for the blossoming slave trade to grow. Perhaps we may one day have Janissaries of our own."
+ gc_caucasus_integration:0 "Integration of the Caucasus"
+
+#venice
+
+ gc_emp_ven_aldine_monopoly_title:0 "Internal Investment"
+ gc_emp_ven_aldine_monopoly_desc:0 ""
+
+ ME_ALLOW_FORMATION_OF_TIMURIDS:0 "Timurid Re-formation Allowed"

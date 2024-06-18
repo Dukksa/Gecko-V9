@@ -1,6 +1,23 @@
 ﻿l_english:
 
-  
+  #Egypt
+  EGY_ideas:0 "Egyptian Ideas"
+  EGY_ideas_start:0 "Egyptian Ideas"
+  EGY_ideas_bonus:0 "Egyptian Ambition"
+  egy_1:0 "Reform the Army"
+  egy_2:0 "Reform the Fellah System"
+  egy_3:0 "Religious Tolerance"
+  egy_4:0 "Purchase New Mamluks"
+  egy_5:0 "Camel Breeding"
+  egy_7:0 "Breadbasket of the Mediterranean"
+
+  egy_1_desc:0 "Our victory over the Mongols is far in the past, when we were the foremost military power in the world. Times have changed and our armies are no longer what they were. It is time to improve the training of our troops to ensure we do not fall behind."
+  egy_2_desc:0 "Since time immemorial the basis of Egypt's economy has been the Fellah farmer who farms his land as no more than a slave. It is time to reform this system to ensure that our farmers have a good incentive to grow more."
+  egy_3_desc:0 "Religious toleration may signify 'no more than forbearance and the permission given by the adherents of a dominant religion for other religions to exist, even though the latter are looked on with disapproval as inferior, mistaken, or harmful'."
+  egy_4_desc:0 "Our administration is staffed with time servers who are too busy plotting against each other to aggrandize themselves. We shall return to the traditional ways and bring in new Mamluks to staff our administration."
+  egy_5_desc:0 "Africas finest Camel are bred and domesticated in Egypt."
+  egy_7_desc:0 "The breadbasket of a country or of a region is an area which, because of the richness of the soil and/or advantageous climate, produces large quantities of wheat or other grain."
+
   #Great Zimbabwe
   GZM_ideas:0 "Great Zimbabwean Ideas"
   GZM_ideas_start:0 "Great Zimbabwean Traditions"
@@ -20,7 +37,68 @@
   GZM_6_desc:0 "The People of Great Zimbabwe are home to hostile terrain. Their knowledge of their home region will prove benefitial."
   GZM_vashambadzi_desc:0 "The growing intracontinental trade, with goods flowing back and forth from the central parts of the Kongo river basin to the trade cities of Eastern Africa, the Great Lakes and the Zimbabwe highlands has greatly enriched the Vashambadzi, our native merchant community. Let us support this group over all others by baring Swahili traders as well as European fortune seekers from trading within our borders."
 
+  #North German
+  NGF_ideas:0 "North German Ideas"
+  NGF_ideas_start:0 "North German Traditions"
+  NGF_ideas_bonus:0 "North German Ambition"
+
+  NGF_national_idea_1:0 "North German Infantry"
+  NGF_national_idea_2:0 "Forwards to Unity"
+  NGF_national_idea_3:0 "Mandatory Service"
+  NGF_national_idea_4:0 "National Militarisation"
+  NGF_national_idea_5:0 "Reichsbank"
+  NGF_national_idea_6:0 "The Reichsflotte"
+  NGF_national_idea_7:0 "The Hanseatic Merchants"
+
+  NGF_national_idea_1_desc:0 "The North German Military is composed of many different Infantry Corps from various German regions. These Corps are formidable foes on their own."
+  NGF_national_idea_2_desc:0 "The first steps towards German Unity have been made. We must pursue the Unity of Germany."
+  NGF_national_idea_3_desc:0 "Every man above the age of 16 must serve a mandatory time in the Army."
+  NGF_national_idea_4_desc:0 "The Military is the focus of North German Society."
+  NGF_national_idea_5_desc:0 "The Reichsbank is responsible for the National Economy."
+  NGF_national_idea_6_desc:0 "Although Germany is not the greatest Naval Power, it can rely on the Reichsflotte to protect the German shore."
+  NGF_national_idea_7_desc:0 "The Hansa is incorporated into the Reichsbank and acts in interest for Germany."
+
+  #South German
+  SGF_ideas:0 "South German Ideas"
+  SGF_ideas_start:0 "South German Traditions"
+  SGF_ideas_bonus:0 "South German Ambition"
+
+  SGF_national_idea_1:0 "Mandatory Service"
+  SGF_national_idea_2:0 "Forwards to Unity"
+  SGF_national_idea_3:0 "Austrian Chain of Command"
+  SGF_national_idea_4:0 "Prosperous Nation"
+  SGF_national_idea_5:0 "Hessian Mercenaries"
+  SGF_national_idea_6:0 "South German Infantry"
+  SGF_national_idea_7:0 "South German Court"
+
+  SGF_national_idea_1_desc:0 "Every man above the age of 16 must serve a mandatory time in the Army."
+  SGF_national_idea_2_desc:0 "The first steps towards German Unity have been made. We must pursue the Unity of Germany."
+  SGF_national_idea_3_desc:0 "The Austrians have a very efficent way to deliver orders on the battlefield and to home."
+  SGF_national_idea_4_desc:0 "The South German Valleys are great for Urbanization."
+  SGF_national_idea_5_desc:0 "Hessian Mercenaries are famous for their efficency."
+  SGF_national_idea_6_desc:0 "The South German Army composes of many different formidable Armies."
+  SGF_national_idea_7_desc:0 "The South German Federation houses many competent Advisors."
+
+  UBV_ideas:0 "Munich Ideas"
+  UBV_ideas_start:0 "Munich Traditions"
+  UBV_ideas_bonus:0 "Munich Ambitions"
+
+  gc_UBV_NI_1:0 "The many houses of Bavaria"
+  gc_UBV_NI_2:0 "Reinheitsgebot"
+  gc_UBV_NI_3:0 "Chosen by Heaven"
+  gc_UBV_NI_4:0 "Bavarian mainland"
+  gc_UBV_NI_5:0 "Standing Army"
+  gc_UBV_NI_6:0 "The Garrison System"
+  gc_UBV_NI_7:0 "Devot Catholics"
   
+  gc_UBV_NI_1_desc:0 ""
+  gc_UBV_NI_2_desc:0 ""
+  gc_UBV_NI_3_desc:0 ""
+  gc_UBV_NI_4_desc:0 ""
+  gc_UBV_NI_5_desc:0 ""
+  gc_UBV_NI_6_desc:0 ""
+  gc_UBV_NI_7_desc:0 ""
+
   #Habsburg Empire
   AHU_ideas:0 "Habsburg Empire Ideas"
   AHU_ideas_start:0 "Habsburg Traditions"
@@ -37,7 +115,22 @@
   gc_edict_of_restitution_desc:0 ""
   gc_austrian_court:0 "Austrian Court"
   gc_austrian_court_desc:0 ""
+  #Empire of Hungary
+  EOH_ideas:0 "Empire of Hungary Ideas"
+  EOH_ideas_start:0 "Hungarian Traditions"
+  EOH_ideas_bonus:0 "Hungarian Ambitions"
+  MODIFIER_CAWA_COST:0 "Tercio Cost"
 
+  #persia
+ the_tupchi:0 "The Tupchiyan"
+ the_tupchi_desc:0 "Abbas has ordered the creation of an artillery corps, integrating the use of massed cannon into our newly reformed armies. Our use of combined firearms will ensure victory."
+ the_tofangchi:0 "Establish the Tufangchiyan"
+ the_tofangchi_desc:0 "Following a series of defeats, it is becoming evermore clear that our armies of Turkoman tribal supporters are struggling to keep pace on the battlefield with organized foot soldiers bearing firearms. We must learn from these defeats, and as such we will found our own corps of musketeers which will be outfitted with sophisticated firearms to handle any threat to our kingdom."
+ promotion_of_irrigation:0 "Promotion of Irrigation"
+ promotion_of_irrigation_desc:0 "If we encourage agriculture, we will increase our population so we will have more manpower for our army."
+ #ottomans
+ humbaraci_corps:0 "Establish the Humbaraci Corps"
+ humbaraci_corps_desc:0 "The Humbaraci Ocagi were in charge of the manufacturing, transportation, and use of cannons. The Ottoman army later established a workshop to cast humbaras in order to give the fire power of the artillery to the mobilized infantry groups."
  #arabia
  ARB_ideas:0 "Arabian Empire Ideas"
  ARB_ideas_start:0 "Arabian Empire Traditions"
@@ -57,6 +150,16 @@
  arb_7:0 "Arabia"
  arb_7_desc:0 "Although Arabia has many different clans, tribes and countries, all share in the use of the Arabic language, it forms the unifying feature of all Arabs. Under a strong leadership we can unite all Arabian lands under a single flag and one ruler."
 
+#EOH
+
+gc_reformed_coinage:0 "Reformed Coinage"
+gc_reformed_coinage_desc:0 ""
+gc_bulwark_of_christianity:0 "Bulwark of Christianity"
+gc_bulwark_of_christianity_desc:0 ""
+gc_hun_renaissanse_knowledge:0 "A Renaissance Prince"
+gc_hun_renaissanse_knowledge_desc:0 ""
+
+#Lombardy
 
  LOB_ideas_start:0 "Lombard Traditions"
  LOB_ideas_bonus:0 "Lombard Ambitions"
@@ -75,8 +178,5 @@
  LOB_italian_scholars_desc:0 "Italy is the birthplace of the Renaissance. We cannot allow ourselves to not be the world's pioneers in regards to technological innovation. Let us establish Lombardy as the house of science and advancement!" 
  LOB_rule_mediterranean:0 "Rule the Mediterranean" 
  LOB_rule_mediterranean_desc:0 "The Mediterranean Sea has seen millenia of combat and prospecting conquerors. Our navy will reign supreme from the coasts of the Aegean to the Genoan coasts." 
- 
- #korean minors
- fo_korean_city_ideas:0 "Korean City State Ideas"
- fo_korean_city_ideas_start:0 "Korean City State Traditions"
- fo_korean_city_ideas_bonus:0 "Korean City State Ambitions"
+
+ gc_mass_army:0 "Mass Army"

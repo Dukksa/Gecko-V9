@@ -22,7 +22,7 @@ discovered_by = chinese
 extra_cost = 8
 center_of_trade = 1
 
-1486.1.1 = {
+1444.1.1 = {
 	owner = DLH
 	controller = DLH
 } # Bahlul Lodi places his eldest surviving son Barbak Shah Lodi on the throne of Jaunpur, slowly integrated into Delhi's domains after this

@@ -1,7 +1,7 @@
 #151 - Constantinople
 
-owner = BYZ
-controller = BYZ
+owner = TUR
+controller = TUR
 culture = greek
 religion = orthodox
 capital = "Constantinople"
@@ -13,6 +13,7 @@ base_manpower = 4
 is_city = yes
 fort_15th = yes 
 add_core = BYZ
+add_core = TUR
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
@@ -25,21 +26,17 @@ add_permanent_province_modifier = {
 	name = bosphorous_sound_toll
 	duration = -1
 }
-#add_province_modifier = {
-#	name = BYZ_depopulation
-#	duration = -1
-#}
+add_permanent_province_modifier = {
+    name = critical_province
+    duration = -1
+}
 
-add_province_triggered_modifier = BYZ_galata
-
-
+add_province_triggered_modifier=conquest_of_constantinople
 
 1453.5.29 = {
 	owner = TUR
 	controller = TUR
 	add_core = TUR
-	remove_province_triggered_modifier = BYZ_galata
-	#remove_province_modifier = BYZ_depopulation
 } # The fall of the Byzantine Empire
 1459.1.1 = { culture = turkish religion = sunni }
 1481.6.1 = { unrest = 6 } # Civil war, Bayezid & Jem

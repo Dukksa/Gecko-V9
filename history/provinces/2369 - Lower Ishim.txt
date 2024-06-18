@@ -1,7 +1,6 @@
 # 2369 - Upper Ishim, formerly Lower Ishim
 
-owner = SHY
-controller = SHY
+
 culture = khazak
 religion = sunni
 capital = "Zhanibek"
@@ -10,9 +9,7 @@ hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 1
-is_city = yes
-add_core = KZH
-add_core = SHY
+
 
 
 

@@ -1,6 +1,10 @@
 # No previous file for Mani
 
 culture = yucatec
+#owner = XIU
+#controller = XIU
+#add_core = XIU
+
 religion = mesoamerican_religion
 capital = "Ceh Pech"
 trade_goods = cocoa

@@ -1,7 +1,7 @@
 #2062 - Panipat
 
-owner = MUL
-controller = MUL
+owner = DLH
+controller = DLH
 culture = kanauji
 religion = hinduism
 capital = "Panipat"
@@ -12,7 +12,6 @@ base_production = 5
 base_manpower = 3
 is_city = yes
 add_core = DLH
-add_core = SRH
 add_core = MUL
 add_jains_or_burghers_effect = yes
 discovered_by = indian
@@ -21,12 +20,6 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = chinese
 
-
-1414.1.1 = {
-	owner = DLH
-	controller = DLH
-	remove_core = MUL
-}
 1526.4.1 = { controller = TIM } #Conquered by Babur
 1526.4.21 = {
 	owner = MUG

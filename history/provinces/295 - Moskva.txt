@@ -21,9 +21,12 @@ extra_cost = 16
 center_of_trade = 2
 
 
-add_province_triggered_modifier=conquest_of_moscow
-#add_province_triggered_modifier=the_motherland_calls
-
+add_province_triggered_modifier=conquest_of_saint_petersburg
+add_province_triggered_modifier=the_motherland_calls
+add_permanent_province_modifier = {
+    name = critical_province
+    duration = -1
+}
 
 
 

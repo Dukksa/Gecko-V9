@@ -13,7 +13,7 @@ capital = "Przemysl"
 is_city = yes
 add_core = POL
 add_core = VOL
-
+fort_15th = yes
 
 discovered_by = KAZ
 discovered_by = CRI

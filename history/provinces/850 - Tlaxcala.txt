@@ -1,5 +1,7 @@
 #850 - Tlaxcala
 
+#owner = TLX
+#controller = TLX
 culture = aztek
 religion = nahuatl
 capital = "Tlaxcala"
@@ -8,7 +10,10 @@ hre = no
 base_tax = 4 
 base_production = 4
 base_manpower = 1
+
+#add_core = TLX
 discovered_by = mesoamerican
+
 
 1519.1.1 = { discovered_by = SPA } # Hernán Cortés
 1520.1.1 = { owner = SPA controller = SPA add_core = SPA remove_core = TLX} #Form a strong and long-lasting alliance with Spain

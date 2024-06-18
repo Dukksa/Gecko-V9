@@ -1,0 +1,9 @@
+﻿l_english:
+ transfer_all_provinces: "Transfer all occupations"
+ transfer_all_provinces_title: "Transfer all occupations"
+ transfer_all_provinces_desc: "Would you like to transfer all occupations?"
+ transfer_all_provinces_tooltip: "Allows transfer of occupations to a targeted §YCountry§!"
+ request_subject_transfer_all_provinces: "Request all occupations"
+ request_subject_transfer_all_provinces_title: "Request all occupations"
+ request_subject_transfer_all_provinces_desc: "Would you like to request transfer of all occupations?"
+ request_subject_transfer_all_provinces_tooltip: "Allows you to take over your subject's occupations"

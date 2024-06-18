@@ -3,7 +3,7 @@
 owner = LIV
 controller = LIV
 add_core = LIV
-add_core = LTG
+add_core = LVA
 culture = latvian
 religion = catholic
 capital = "Wenden"

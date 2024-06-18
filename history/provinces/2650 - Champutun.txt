@@ -1,6 +1,10 @@
 # No previous file for Champutun
 
 culture = yucatec
+#owner = CNP
+#controller = CNP
+#add_core = CNP
+
 religion = mesoamerican_religion
 capital = "Champutun"
 trade_goods = cocoa

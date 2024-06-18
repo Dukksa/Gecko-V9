@@ -1,0 +1,48 @@
+#For the record, UBV = Upper Bavaria
+
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = bavarian
+religion = catholic
+capital = 65	# M�nchen!
+
+
+1438.7.3 = {
+	monarch = {
+		name = "Albrecht III"
+		dynasty = "von Wittelsbach"
+		birth_date = 1401.3.27
+		adm = 4	
+		dip = 5
+		mil = 6
+    }
+	queen = { #If heir dies before reaching age 15 - so we dont need backup ruler lol
+		country_of_origin = BRU
+		name = "Anna"
+		dynasty = "von Welf"
+		birth_date = 1414.1.1
+		death_date = 1474.4.14
+		female = yes
+		adm = 4
+		dip = 5
+		mil = 6
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = benevolent_personality
+}
+
+1438.7.3 = {
+	heir = {
+		name = "Johann"
+		monarch_name = "Johann IV"
+		dynasty = "von Wittelsbach"
+		birth_date = 1438.7.3
+		death_date = 1463.11.18
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 3
+	}
+}

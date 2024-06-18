@@ -1,7 +1,7 @@
 #4510 - Shorkot
 
-owner = SRH
-controller = SRH
+owner = MUL
+controller = MUL
 culture = panjabi
 religion = hinduism
 capital = "Shorkot"
@@ -11,7 +11,7 @@ base_tax = 5
 base_production = 4
 base_manpower = 2
 is_city = yes
-add_core = DLH
+#add_core = DLH
 add_core = MUL
 add_core = PUN
 add_core = SRH

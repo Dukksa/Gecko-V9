@@ -1,5 +1,9 @@
 # No previous file for Xilotepec
 
+#owner = OTO
+#controller = OTO
+#add_core = OTO
+
 culture = otomi
 religion = nahuatl
 capital = "Xilotepec"

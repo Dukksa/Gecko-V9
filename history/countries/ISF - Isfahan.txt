@@ -1,0 +1,31 @@
+government = monarchy
+add_government_reform = iqta
+government_rank = 1
+primary_culture = persian
+religion = shiite
+technology_group = muslim
+capital = 429 # Isfahan
+add_army_professionalism = 0.11
+religious_school = jafari_school
+add_piety = -1
+
+
+1442.1.1 = { #Appointed as governor of Sultaniyya, Qazvin, Rayy and Qom, but takes up tribute from Kashan, Qazvin, Sari, Isfahan, Natanz, Firuzkuh, Sultaniyya, Tarum, Azerbaijan as well.
+	
+	monarch = {
+		name = "Muhammad bin Baysonqor"
+		birth_date = 1417.1.1
+		dynasty = "Timurid"
+		adm = 4
+		dip = 5
+		mil = 5
+		culture = uzbehk
+		religion = sunni
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = bold_fighter_personality
+}
+
+1504.1.1 = {
+	religious_school = jafari_school
+}

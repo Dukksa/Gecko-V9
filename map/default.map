@@ -1,6 +1,7 @@
 width = 5632
 height = 2048
-max_provinces = 4959
+
+max_provinces = 6255
 sea_starts = { 
 	1252 1253 1254 1255 1256 1257 1258 1259 1263 1264 1265 1266 1267 1268 1269 1270 1271 1272 1274 1275 1276 1277 1278 1279
 	1280 1281 1282 1283 1284 1285 1286 1287 1288 1289 1290 1291 1292 1293 1294 1295 1296 1297 1298 1299 1300 1301 1302 1303 1304
@@ -90,32 +91,32 @@ lakes = {
 	1250 1251 1260 1261 1262 1325 1326 1327 1648 1649 1650 1651 1653 1654 1655 1656 1657 1658 1659 1660 1661 1662 1663 1664 1665
 	1883 1884 1885 1886 1887 1888 1889 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1902 1903 1904 1905 1906 1907
 	1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1976 1977 2000 2001 2471 2953
-	4132 4133 4134 4135 4136 4137 4138 4139 4140 4940 4941
+	4132 4133 4134 4135 4136 4137 4138 4139 4140 4940 4941 5110
 	4235 #Vistula Lagoon
 	4870 #Australian Lakes
 	
 	#RNW Lake provinces
 	3600 3601 3602 3603 3604 3605 3606 3607 3608 3609 3610 3611 3612 3613 3614 3615 3616 3617 3618 3619 3620
-    4000 4001 4002 4003 4004 4005 4006 4007 4008 4009 4010 4011 4012 4013 4014 4015 4016 4017 4018 4019	
+    4000 4001 4002 4003 4004 4005 4006 4007 4008 4009 4010 4011 4012 4013 4014 4015 4016 4017 4018 4019 
 }
 
 force_coastal = {
 }
 
-definitions = "definition.csv"
-provinces = "provinces.bmp"
-positions = "positions.txt"
-terrain = "terrain.bmp"
+definitions = "gecko_definition.csv"
+provinces = "gecko_provinces.bmp"
+positions = "gecko_positions.txt"
+terrain = "gecko_terrain.bmp"
 rivers = "rivers.bmp"
-terrain_definition = "terrain.txt"
-heightmap = "heightmap.bmp"
+terrain_definition = "gecko_terrain.txt"
+heightmap = "gecko_heightmap.bmp"
 tree_definition = "trees.bmp"
-continent = "continent.txt"
-adjacencies = "adjacencies.csv"
-climate = "climate.txt"
-region = "region.txt"
+continent = "gecko_continent.txt"
+adjacencies = "gecko_adjacencies.csv"
+climate = "gecko_climate.txt"
+region = "gecko_region.txt"
 superregion = "superregion.txt"
-area = "area.txt"
+area = "gecko_area.txt"
 provincegroup = "provincegroup.txt"
 ambient_object = "ambient_object.txt"
 seasons = "seasons.txt"

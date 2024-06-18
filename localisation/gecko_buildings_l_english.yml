@@ -1,0 +1,9 @@
+﻿l_english:
+  INFRASTRUCTURE: "Infrastructure"
+ building_infrastructure_lvl_1:0 "Dirt Track"
+ building_infrastructure_lvl_2:0 "Basic Road"
+ building_infrastructure_lvl_3:0 "Paved Road"
+ building_infrastructure_lvl_4:0 "Main Road"
+ building_armory: "Armoury"
+ building_gc_bureaucracy_manufactory:0 "Centralized Bureacraucy"
+ building_gc_bureaucracy_manufactory_desc:0 "Centralising our bureaucracy will allow us to enact more efficient state edicts."

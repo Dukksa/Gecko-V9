@@ -1,7 +1,7 @@
 #4513 - Dipalpur
 
-owner = SRH
-controller = SRH
+owner = MUL
+controller = MUL
 culture = panjabi
 religion = hinduism
 capital = "Dipalpur"
@@ -12,7 +12,7 @@ base_production = 5
 base_manpower = 3
 is_city = yes
 add_core = MUL
-add_core = DLH
+#add_core = DLH
 add_core = PUN
 add_core = SRH
 discovered_by = indian

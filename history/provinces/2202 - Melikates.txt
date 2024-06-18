@@ -1,7 +1,7 @@
 #2202 - Melikates
 
-owner = MLK
-controller = MLK
+owner = ARM
+controller = ARM
 culture = armenian
 religion = coptic
 capital = "Khankendi"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = MLK
+add_core = ARM
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern

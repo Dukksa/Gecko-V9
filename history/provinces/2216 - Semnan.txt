@@ -3,7 +3,7 @@
 owner = TIM
 controller = TIM
 culture = persian
-religion = sunni
+religion = shiite
 capital = "Semnan"
 trade_goods = gems #Turquoise
 hre = no
@@ -19,9 +19,9 @@ discovered_by = indian
 discovered_by = nomad_group
 
 1442.1.1 = { #Death of Yusuf Khwaja, governor of Rayy. Appointment of Sultan Muhammad b. Baysunghur as governor of northern Iran.
-	owner = QOM
-	controller = QOM
-	add_core = QOM
+	owner = ISF
+	controller = ISF
+	add_core = ISF
 }
 #1446.1.1 #Revolt of Muhammad bin Baysonqor
 1451.1.1 = {
@@ -46,9 +46,6 @@ discovered_by = nomad_group
 	add_core = PER
 	remove_core = BUK
 } # Part of the Persian empire
-1532.1.1 = {
-	religion = shiite
-} # Estimated time when the Safavids convert the Sunni to Shia
 1597.12.1 = { base_tax = 3 base_production = 3 } # The Reforms of Abbas the Great
 1673.1.1 = { discovered_by = ENG }
 1707.5.12 = { discovered_by = GBR }

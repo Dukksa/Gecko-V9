@@ -1,12 +1,10 @@
 #1201 - Zanzibar
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+
 culture = swahili
 religion = ibadi
 capital = "Zanzibar"
-is_city = yes
+
 base_manpower = 1
 trade_goods = slaves
 hre = no

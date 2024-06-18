@@ -1,0 +1,22 @@
+#5779 - Feltre
+
+owner = VEN
+controller = VEN
+culture = venetian 
+religion = catholic 
+hre = yes 
+base_tax = 4
+base_production = 3    
+trade_goods = wine
+base_manpower = 2   
+capital = "Feltre" 
+is_city = yes # Estimated
+add_core = VEN
+add_core = AQU
+
+
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

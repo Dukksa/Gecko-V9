@@ -1,5 +1,9 @@
 # No previous file for Chortli
 
+#owner = CHT
+#controller = CHT
+
+#add_core = CHT
 culture = highland_mayan
 religion = mesoamerican_religion
 capital = "Chortli"

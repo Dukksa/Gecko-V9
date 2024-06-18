@@ -1,7 +1,7 @@
 #101 - Liguria
 
-owner = MLO
-controller = MLO
+owner = GEN
+controller = GEN
 add_core = GEN
 add_core = MLO
 culture = ligurian

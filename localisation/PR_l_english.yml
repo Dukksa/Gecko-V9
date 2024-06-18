@@ -1,0 +1,63 @@
+﻿l_english:
+ ############################################
+ # PR_countries_l_english
+ ############################################
+ PR2:0 "Sokoto"
+ PR2_ADJ:0 "Sokoto"
+ ############################################
+ # PR_decisions_l_english
+ ############################################
+ PR_muslim_school_title:0 "Invite an Islamic Scholar"
+ PR_muslim_school_desc:0 "The world of Islam is far and wide, we should learn from our brethren."
+ PR_sokoto_nation_title:0 "Form Sokoto Nation"
+ PR_sokoto_nation_desc:0 "The Sokoto Caliphate was a sovereign Sunni Muslim calpihate in West Africa that was developed in the context of the multiple Hausa Kingdoms."
+ ############################################
+ # PR_estate_modifiers_l_english
+ ############################################
+ PR_estate_clergy_exploration_expedition:0 "Clergy Exploration Expeditions"
+ PR_estate_clergy_exploration_expedition_desc:0 "[Root.GetClergyName] roam our desert frontiers, shifting them back year by year. We should harness their pioneering instincts to accelerate our settlement of these areas."
+ PR_estate_clergy_exploration_expedition_effect_tooltip:1 "§G-10%§! local development cost in all Desert provinces"
+ PR_estate_clergy_exploration_expedition_mod_revoke_tooltip:0 "Removes §YClergy Exploration§! from all owned Desert provinces."
+ ############################################
+ # PR_events_l_english
+ ############################################
+ PR_events.1.t:0 "Cartography of Africa"
+ PR_events.1.d:0 "Our scribes have recently found a cache of maps, detailing all of Africa. We will use these valuable pieces of information to our nations advantage!"
+ PR_events.1.a:0 "This makes life a lot easier - glory to Africa!"
+ PR_events.2.t:0 "Inviting Islamic Scholars"
+ PR_events.2.d:0 "Fiqh is often described as the human understanding and practices of the divine Islamic law as revealed in the Quran and the Sunnah. Figuratively, Fiqh means knowledge about Islamic legal rulings from their sources and deriving religious rulings from their sources necessitates the Mujtahid to have a deep understanding in the different discussions of jurisprudence. Perhaps it is time we invite a scholar of an alternate school, so that we may become better educated."
+ PR_events.2.a:0 "Invite the Hanafi scholar."
+ PR_events.2.b:0 "Invite the Hanbali scholar."
+ PR_events.2.c:0 "Invite the Maliki scholar."
+ PR_events.2.d2:0 "Invite the Shafii scholar."
+ PR_events.2.e:0 "Invite the Ismaili scholar."
+ PR_events.2.f:0 "Invite the Jafari scholar."
+ PR_events.2.g:0 "Invite the Zaidi scholar."
+ ############################################
+ # PR_general_l_english
+ ############################################
+ PR_muslim_school_cooldown:0 "Recently Invited Scholar"
+ ############################################
+ # PR_modifiers_l_english
+ ############################################
+ PR_tooltip_move_capital:0 "You may not move your colonial capital."
+ GC_tooltip_move_capital:0 "You may not move your capital to a colonial region."
+ PR_tooltip_cn_colonize:0 "You may not colonize provinces outside of your colonial region."
+ PR_tooltip_infiltrate:0 "Infiltrate Administration is disabled."
+ PR_tooltip_cn_support:0 "Colonial Nations may not ask other nations to support their independence."
+ PR_tooltip_cn_spy:0 "Colonial Nations may only perform covert actions against: Colonial Nations, Nations on their continent or their Overlord."
+ PR_tooltip_cn_money:0 "Colonial Nations may only give money to: Colonial Nations with the same overlord or their overlord."
+ PR_tooltip_money_to_cn:0 "Colonial Nations may only receive money from their Overlord."
+ PR_tooltip_to_cn_support:0 "You may not support the independence of a Colonial Nation."
+ PR_tooltip_cn_war:0 "You may not declare independence from your Colonial Overlord."
+ PR_tooltip_cn_assault:0 "Colonial Nations may not assault forts outside of Colonial Regions."
+ PR_tooltip_infiltrate:0 "A Player may not become a tributary."
+ PR_african_colonist_reform:0 "Land Reclamation"
+ PR_african_colonist_reform_desc:0 "The jungle has long been untamed and wild, to further our interests these areas must be reclaimed for human use."
+ PR_renaissance_capital_country_over_100_dev:0 "Renaissance in capital of nation with 100 development."
+ PR_colonialism_coastal:0 "Coastal province."
+ PR_colonialism_coastal_cot_lvl_3:0 "Coastal province with level 3 Centre of Trade."
+ PR_colonialism_capital_no_coast_in_country:0 "Capital of nation with no coast."
+ PR_colonialism_cot_lvl_3_no_coast_in_country:0 "Province with level 3 Centre of Trade and no coast."
+ PR_printing_press_capital_20_dev:0 "Capital with at least 20 development."
+ PR_printing_press_paper:0 "Province produces paper outside of Europe."

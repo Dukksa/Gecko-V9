@@ -1,0 +1,22 @@
+#5777 - Udine
+
+owner = VEN
+controller = VEN
+culture = venetian 
+religion = catholic 
+hre = yes 
+base_tax = 2
+base_production = 3    
+trade_goods = wine
+base_manpower = 1    
+capital = "Udine" 
+is_city = yes # Estimated
+add_core = VEN
+add_core = AQU
+fort_15th = yes
+
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

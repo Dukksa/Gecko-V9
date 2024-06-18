@@ -1,0 +1,11 @@
+﻿l_english:
+ # Burgundian Missions
+ emp_bur_nevers_title:0 "Integrate Nevers" #copied from bur_nevers
+ emp_bur_nevers_desc:0 "Rumor has it that our puppet on the throne of Nevers is a practitioner of black magics. It wouldn't do to associate with such heresy; Nevers is better off brought into the fold." #copied from bur_nevers
+ emp_bur_romandie_title:0 "Purchase the Counties" #copied from bur_romandie
+ emp_bur_romandie_desc:0 ""
+ emp_bur_cisjurania_title:0 "Reorganise the Army"
+ emp_bur_cisjurania_desc:0 ""
+ emp_bur_lombardy_title:0 "Reform The Administration"
+ emp_bur_lombardy_desc:0 ""
+ 

@@ -1,6 +1,10 @@
 # No previous file for Cuitzeo
 
 culture = purepecha
+#owner = TAR
+#controller = TAR
+#add_core = TAR
+
 religion = nahuatl
 capital = "Zinapecuaro"
 trade_goods = grain

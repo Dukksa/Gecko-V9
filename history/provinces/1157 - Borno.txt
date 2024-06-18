@@ -1,17 +1,17 @@
 #1157 - Borno
 
-owner = KBO
-controller = KBO
-add_core = KBO
+owner = YAO
+controller = YAO
+add_core = YAO
 culture = kanuri
 religion = sunni
 capital = "Gatiga"
 is_city = yes
-base_manpower = 1
-trade_goods = grain
+base_manpower = 2
+trade_goods = gold
 hre = no
-base_tax = 4 
-base_production = 4
+base_tax = 2
+base_production = 3
 discovered_by = sub_saharan
 fort_15th = yes
 extra_cost = 16

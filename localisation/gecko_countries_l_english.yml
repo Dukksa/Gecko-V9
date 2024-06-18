@@ -1,25 +1,26 @@
 ﻿l_english:
-  
+  HET:0 "Hetmanate"
+  HET_ADJ:0 "Hetmanate"
   GZM:0 "Great Zimbabwe"
   GZM_ADJ:0 "Great Zimbabwe"
+  STI:0 "Asti"
+  STI_ADJ:0 "Astese"
+  RIM:0 "Rimini"
+  RIM_ADJ:0 "Riminese"
+
+ 
+  #Germans
+  NGF:0 "North German Federation"
+  NGF_ADJ:0 "North German"
+  SGF:0 "South German Federation"
+  SGF_ADJ:0 "South German"
+  ZGB:0 "Ten Jurisdictions"
+  ZGB_ADJ:0 "Ten Jurisdictions"
   AHU:0 "Habsburg Empire"
   AHU_ADJ:0 "Austrian"
-  FO1:0 "Goguryeo"
-  FO1_ADJ:0 "Goguryeo"
-  FO2:0 "Mahan"
-  FO2_ADJ:0 "Mahan"
-  FO3:0 "Byeonham"
-  FO3_ADJ:0 "Byeonham"
-  FO4:0 "Jinhan"
-  FO4_ADJ:0 "Jinhan"
-  FO5:0 "Baekje"
-  FO5_ADJ:0 "Baekje"
-  FO6:0 "Ye"
-  FO6_ADJ:0 "Ye"
-  FO7:0 "Dongye"
-  FO7_ADJ:0 "Dongye"
-  PR2:0 "Sokoto"
-  PR2_ADJ:0 "Sokotian"
+  #Italy
+  GC_EMPIRE_OF_GOD:0 "Empire of God"
+  GC_EMPIRE_OF_GOD_ADJ:0 "Heavenly"
   #Hungary
   EOH:0 "Empire of Hungary"
   EOH_ADJ:0 "Hungarian"

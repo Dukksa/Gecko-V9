@@ -1,6 +1,10 @@
 # No previous file for Tulucan
 
 culture = matlatzinca
+#owner = MAT
+#controller = MAT
+#add_core = MAT
+
 religion = nahuatl
 capital = "Matlatzinca"
 trade_goods = gold

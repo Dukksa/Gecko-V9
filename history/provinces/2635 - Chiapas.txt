@@ -1,6 +1,10 @@
 # No previous file for Chiapas
 
 culture = lacandon
+#owner = LAC
+#controller = LAC
+#add_core = LAC
+
 religion = mesoamerican_religion
 capital = "Chiapas"
 trade_goods = cocoa

@@ -1,6 +1,10 @@
 # No previous file for Xicallanco
 
 culture = chontales
+#owner = YOK
+#controller = YOK
+#add_core = YOK
+
 religion = mesoamerican_religion
 capital = "Xicallanco"
 trade_goods = cocoa

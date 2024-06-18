@@ -1,0 +1,19 @@
+
+#PROV4790
+add_core = DAN
+owner = DAN
+controller = DAN
+culture = danish
+religion = catholic
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fish
+base_manpower = 2
+capital = "Aalborg"
+is_city = yes
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman

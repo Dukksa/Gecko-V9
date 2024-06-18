@@ -13,7 +13,7 @@ native_size = 15
 native_ferocity = 1
 native_hostileness = 3
 extra_cost = 8
-#center_of_trade = 1
+center_of_trade = 1
 
 1500.1.26 = { discovered_by = CAS } # Vicente Y��ez Pinz�n, couldn't make a claim due to the Treaty of Tordesillas
 1500.4.23 = { discovered_by = POR } # Pedro �lvares Cabral

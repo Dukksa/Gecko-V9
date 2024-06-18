@@ -1,8 +1,8 @@
 #Sönderjylland-Slesvig, incl. Slesvig, Haderslev and Flensborg
 
-add_core = HSA
-owner = HSA
-controller = HSA
+add_core = SHL
+owner = SHL
+controller = SHL
 culture = danish
 religion = catholic
 hre = no

@@ -1,0 +1,29 @@
+﻿l_english:
+
+ 
+ ######estates and loyalty/influence modifiers######
+ #ghilman#
+ estate_ghilman: "Ghilman"
+ estate_ghilman_desc: "Although a term reserved for slaves, the Ghilman represent an educated class of military commanders and skilled soldiers."
+ ghilman_loyalty_modifier: "Ghilman Loyalty Equilibrium"
+ ghilman_influence_modifier: "Ghilman Influence"
+ estate_ghilman_ownership: "Ghilman Land Ownership"
+ #qizilbash#
+ estate_qizilbash: "Qizilbash"
+ estate_qizilbash_desc: "The Qizilbash are a Shiite militant group comprised of mostly Turkoman tribes, whose dominance on the battlefield has led to the consolidation of Persia under our control. While they remain fierce raiders of the border regions, the Qizilbash aspire to be recognized as an estate of the same importance as the nobility. Following the establishment of our kingdom, the loyalty of the Qizilbash has shifted from a purely religious relationship to a political one as well."
+ qizilbash_loyalty_modifier: "Qizilbash Loyalty Equilibrium"
+ qizilbash_influence_modifier: "Qizilbash Influence"
+ estate_qizilbash_ownership: "Qizilbash Land Ownership"
+ TURKOMAN_TRIBES: "Turkoman Tribes: §Y$VAL$%§!"
+ HERETIC_WAR: "At war with heretic or heathen nation: §G$VAL$§!"
+ #janissaries#
+ estate_janissary:0 "Janissaries"
+ estate_janissary_desc:0 "This estate represents the Janissaries, a warrior class in the Ottoman Empire that consisted of children taxed from Christian families in Anatolia and the Balkans. Known for their strict discipline and quick adoption of better weaponry, they became essential to Ottoman military power as their elite corps of infantry."
+ janissary_loyalty_modifier: "Janissaries Loyalty Equilibrium"
+ janissary_influence_modifier: "Janissaries Influence"
+ estate_janissary_ownership: "Janissaries Land Ownership"
+ #safavid order#
+ estate_safavid_order:0 "Safavid Order" #description and loyalty/influence modifiers same as churc2h
+ 
+
+ 

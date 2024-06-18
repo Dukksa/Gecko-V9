@@ -2,4 +2,4 @@
 
 
 discovered_by = central_african
-
+discovered_by = east_african

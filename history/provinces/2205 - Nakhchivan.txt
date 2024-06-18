@@ -1,7 +1,7 @@
 #2205 - Nakhchivan
 
-owner = TIM
-controller = TIM
+owner = ARM 
+controller = ARM 
 culture = armenian
 religion = coptic
 capital = "Nakhchevani"
@@ -11,7 +11,6 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = TIM
 add_core = ARM 
 discovered_by = east_african
 discovered_by = western
@@ -20,13 +19,8 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = nomad_group
 
-1402.1.1 = {
-	owner = QAR
-	controller = QAR
-	add_core = QAR
-	remove_core = TIM
-} 
-1435.1.1 = { unrest = 10 }
+add_province_triggered_modifier=transcaucasian_wine_valleys
+	
 1453.1.1 = { unrest = 0 }
 1453.1.1 = { discovered_by = western }
 1468.1.1 = {

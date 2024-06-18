@@ -1,0 +1,87 @@
+﻿l_english:
+ silk_road_empire:0 "Silk Road Empire"
+ silk_road_empire_desc:0 "With the destruction of the Mongol Empire, the unity of the silk road ended. The Yams disappeared, the postal system was destroyed, and banditry became rife. If we are ever to restore the Silk Road, the foundation of our entire state must be geared towards this. Our people must be one in aim, we will be like the Arab traders, spreading our faith and commerce wherever we can."
+ pope_reform:0 "Papacy"
+ pope_reform_desc:0 "A political structure where the nation is governed by a spiritual leader, the Pope, the highest ranking office of the Roman Catholic Church."
+ empire_of_hungary_reform:0 "Empire of Hungary"
+ empire_of_hungary_reform_desc:0 "The former Kingdom of Hungary has been elevated to an empire through its just conquests."
+ gecko_noble_regiments_reform:0 "Noble Regiments"
+ gecko_noble_regiments_reform_desc:0 "The state is me. And my armies.."
+ gecko_professional_army_reform:0 "Professional Army"
+ gecko_professional_army_reform_desc:0 "An army with a state."
+ tribal_innovation:0 "Innovation"
+
+ #Ethiopia
+ gc_ethiopian_theocracy_reform:0 "Coptic Theocracy"
+ gc_ethiopian_theocracy_reform_desc:0 "The Coptic Theocracy is lead by an Emperor who is also the Head of the Church."
+ gc_ethiopian_government_name:0 "Coptic Theocracy"
+ GC_Ethiopia_Mechanic:0 "Coptic Theocracy"
+
+ #Spain
+ gc_imperial_spain_reform:0 "Imperio Español"
+ gc_imperial_spain_reform_desc:0 "The Spanish Empire also know as the 'Imperio Español' or the Catholic Monarchy during the Early Modern period, was a colonial empire governed by Spain and its predecessor states between 1492 and 1976. One of the largest empires in history, it was, in conjunction with the Portuguese, the first to usher the European Age of Discovery and achieve a global scale, controlling vast portions of the Americas, the archipelago of Philippines, various islands in the Pacific and territories in Western Europe and Africa. It was one of the world's most powerful empires of the early modern period, becoming known as 'the empire on which the sun never sets' and reached its maximum extent in the 18th century."
+ 
+ #France
+
+ gc_french_empire:0 "French Empire"
+ gc_french_empire_desc:0 "Veillons au salut de l'Empire"
+ #horde
+ gc_tribe_becomes_horde_reform:0 "Settle Down"
+ gc_tribe_becomes_horde_reform_desc:0 "The steppes are no longer suitable for our people. Let us abandon the nomadic traditions of our ancestors and fully embrace the civilised life so many others have chosen."
+
+ #Hungary
+ gc_greater_hungary_reform:0 "Bulwark of Christianity"
+ gc_greater_hungary_reform_desc:0 "As the principal defenders of Christendom against the Muslim threat, we have come to be known as the Bulwark of Christianity. By demonstrating our ability to match anything the infidel can throw at us, we can ensure that this title is thoroughly deserved."
+
+ ######goverment reforms######
+ #government reforms
+ #common
+ gecko_building_dev:0 "Promote Local Investiture"
+ gecko_building_dev_desc:0 "Latest buildings will add Local Development Cost to our provinces."
+ mechanic_building_dev_yes:0 "Every latest building in a province gives '§YLocal Investment§!', adding §G-1.0%§! Local Development Cost per building."
+ mechanic_building_dev_no:0 ""
+ #persia#
+ persian_theocracy:0 "Persian Theocracy"
+ persian_theocracy_desc:0 "After declaring our lands to be a bastion of Shi'ism, we must now launch a vigorous campaign to convert those who would oppose the true faith, ridding our kingdom of the Sunni population by either persuasion or force. Political and religious power will remain completely intertwined, and encapsulated in the person of the Shah."
+ establish_qurchi_corps_reform:0 "Establish Qurchi Corps"
+ establish_qurchi_corps_reform_desc:0 "The Qizilbash tribes are the core of our military strength, and their nobles already occupy the Office of the Sepahsalar. If we trust them to protect our kingdom, we should extend this trust to ourselves by establishing a permanent royal guard. Naturally, the newly created Office of the Qurchi-bashi will also need to be filled. Who better to command our royal guard than the same nobles who have led our armies?"
+ foreign_ghilman_reform:0 "Enlist Ghilman"
+ foreign_ghilman_reform_desc:0 "As we conquer deeper into the Caucasus, our lands have become full of Christian tribes and clans that we could put to good use if we gave them a place within our system of state. Their people consist of tough warriors and innovative thinkers. If we can convert them from their heathen ways, they could make excellent advisors, military officers, and act as local representatives. Most of all they could mobilize their kinsmen and provice us with a source of elite soldiers who could counter the immense influence of the Qizilbash in our armies and military command."
+ qizilbash_in_officer_corps_reform:0 "Qizilbash Officer Corps Influence"
+ qizilbash_in_officer_corps_reform_desc:0 "With the important military administrative position of the Office of the Qullar-bashi firmly in control of the Ghilman, the jealous Qizilbash have pushed for control of the Office of the Tupchi-bashi and the Office of the Tufangchi-bashi, commanders of our musketeer and artillery corps respectively. With the Qizilbash already having such power, it would be wise to appease them... for now."
+ reforms_of_abbas_i_reform:0 "Reforms of Abbas I"
+ reforms_of_abbas_i_reform_desc:0 "Far too much power has been concentrated by the Qizilbash tribes, and we have become far too reliant on them for our military might. It is time to restructure the army. We should bolster our military with a greater emphasis on artillery and firearms, and shift the backbone of our armies from the untrustworthy Turkoman tribes to the Ghilman, who have become solely loyal to us.\n\nBeyond this, as our kingdom grows our lands have become home to many Christians. Despite our tradition of zealotry, it would be wise to show tolerance for their practices, if only to further integrate them and quell any spark of rebellion.\n\nHowever, it is not only the army and bureaucracy that need change, but our kingdom's economy as well. We will foster our diminishing trade back to health by reestablishing the security of our roads so that caravans may travel our lands unmolested."
+ ghilman_administrative_positions_reform:0 "Ghilman Administrative Positions"
+ ghilman_administrative_positions_reform_desc:0 "Over time it has become evermore clear that we cannot trust our conflict prone Qizilbash commanders and administrators. If we are to acquire officials we can trust we must look to recruit elite slaves to fill these positions instead."
+ #ottomans#
+ upgrade_janissary_weaponry_reform:0 "Upgrade Janissary Weaponry"
+ upgrade_janissary_weaponry_reform_desc:0 "During the initial period of formation, Janissaries were expert archers, but they began adopting firearms as soon as they became available."
+ derbend_organization_reform:0 "Derbend Organization"
+ derbend_organization_reform_desc:0 "Derbendjis were the most important and largest Ottoman military auxiliary constabulary units usually responsible for guarding important roads, bridges, fords or mountain passes. Usually, the population of an entire village near some important pass would be assigned with Derbendji status in exchange for tax exemptions. By rehabilitating the Derbendjis, the Ottomans released conventional military units from routine internal duties, such as guarding and repairing roads and bridges."
+ establish_auxiliary_support_system_reform:0 "Establish Auxiliary Support System"
+ establish_auxiliary_support_system_reform_desc:0 "The Ottoman armies were distinguished from their contemporaries not just by the numerical predominance of its military forces but by the thoroughness of the administrative backup and general support that maintained them in the field. The Ottoman army had a corps to prepare the road, a corps to pitch the tents ahead, a corps to bake the bread. The Djebedji Corps, a subunit of the Ottoman artillery corps, functioned as part of the Janissaries, who also maintained its own medical auxiliaries."
+ reform_the_janissaries_reform:0 "Reform the Janissary Corps"
+ reform_the_janissaries_reform_desc:0 "Despite an early adoption of firearm technology, the Janissaries have become increasingly resistant to changes, often rising in rebellion when feeling threatened by outside influence, leaving our infantry in a weakened state as Western nations modernize their militaries. We must enforce a change and reorganize the Janissary Corps, or risk falling indefinitely behind our rivals."
+ janissary_administrative_positions_reform:0 "Janissary Administrative Positions"
+ janissary_administrative_positions_reform_desc:0 "Likely a product of the disciplined lifestyle that is standard to the Janissaries, many have become well-educated members of the askeri class, whose talents would be better served as administrators and scholars than soldiers... for a price."
+ #goverment reform mechanics
+ #persia#
+ mechanic_enables_ghilman_estate_yes: "Ghilman Estate becomes available."
+ mechanic_enables_ghilman_estate_no: " " #intentionally empty
+ mechanic_qizilbash_qurchis_privilege_interaction_yes: "Enables the Qizilbash Estate Privilege §YEstablish Qurchi Corps§!, which grants §G-10%§! Shock Damage Received and §R-10%§! Tax Income."
+ mechanic_qizilbash_qurchis_privilege_interaction_no: " " #intentionally empty
+ mechanic_qizilbash_discipline_looting_interaction_yes: "Enables the Qizilbash Estate Privilege §YEnforced Discipline§!, which grants §G+2.5%§! Discipline and §R-90%§! Looting Efficiency.\n"
+ mechanic_qizilbash_discipline_looting_interaction_no: " " #intentionally empty
+ mechanic_qizilbash_officer_interaction_yes: "Enables the Qizilbash Estate Privilege §YQizilbash in Officer Corps§!, which gives the Qizilbash control of the Office of the Tufangchi-bashi and §G+10%§! Fire Damage."
+ mechanic_qizilbash_officer_interaction_no: " " #intentionally empty
+ mechanic_ghilman_morale_interaction_yes: "Enables the Ghilman Estate Privilege §YReform the Ghilman Corps§!, which grants §G+5%§! Land Morale on Janissaries."
+ mechanic_ghilman_morale_interaction_no: " " #intentionally empty
+ #ottomans#
+ mechanic_enables_janissary_estate_yes: "Janissaries Estate becomes available."
+ mechanic_enables_janissary_estate_no: " " #intentionally empty
+ mechanic_upgrade_janissary_weaponry_privilege_interaction_yes: "Enables the Janissaries Estate Privilege §YUpgrade Janissary Weaponry§!, which grants §G5% Combat Ability§! and §G+0.10§! Infantry Fire to §YJanissary Regiments§!"
+ mechanic_upgrade_janissary_weaponry_privilege_interaction_no: " " #intentionally empty
+ mechanic_establish_auxiliary_support_system_privilege_interaction_yes: "Enables the Janissaries Estate Privilege §YEstablish Janissary Auxiliary Corps§!, which grants §G+5.0%§! Manpower Recovery Speed and §G+10.0%§! Reinforce Speed."
+ mechanic_establish_auxiliary_support_system_privilege_interaction_no: " " #intentionally empty
+ mechanic_reform_the_janissaries_privilege_interaction_yes: "Enables the Janissaries Estate Privilege §YReform the Janissary Corps§!, which grants §G+5%§! Discipline to §YJanissary Regiments§!."
+ mechanic_reform_the_janissaries_privilege_interaction_no: " " #intentionally empty

@@ -18,6 +18,8 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
 
+add_province_triggered_modifier=transcaucasian_wine_valleys
+	
 1458.1.1 = { unrest = 5 } # Safavid campaign against Georgia
 1460.1.1 = { unrest = 0 } # Defeated by Shirwan Shah
 1569.1.1 = {

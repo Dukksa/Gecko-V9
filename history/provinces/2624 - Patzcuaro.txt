@@ -1,6 +1,10 @@
 # No previous file for Patzcuaro
 
 culture = purepecha
+#owner = TAR
+#controller = TAR
+#add_core = TAR
+
 religion = nahuatl
 capital = "Tzintzuntzan"
 trade_goods = grain

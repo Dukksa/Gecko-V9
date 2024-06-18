@@ -1,6 +1,10 @@
 # No previous file for Chacujal
 
 culture = highland_mayan
+#owner = KAQ
+#controller = KAQ
+#add_core = KAQ
+
 religion = mesoamerican_religion
 capital = "Chacujal"
 trade_goods = gems

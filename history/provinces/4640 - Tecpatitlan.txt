@@ -2,6 +2,9 @@
 
 culture = tepic
 religion = nahuatl
+#owner = TON
+#controller = TON
+#add_core = TON
 capital = "Tonala"
 trade_goods = wool
 hre = no
