@@ -342,20 +342,66 @@ country_event = {
 	option = {
 		name = flavor_mor.9.a #Let us cross the Sahara!
 		ai_chance = { factor = 1 }
+		5800 = {
+			add_core = MOR
+			cede_province = MOR
+		}
 		1127 = {
 			add_core = MOR
 			cede_province = MOR
 		}
-		every_province = {
+		5801 = {
+			add_core = MOR
+			cede_province = MOR
+		}
+		5803 = {
+			add_core = MOR
+			cede_province = MOR
+		}
+		5802 = {
+			add_core = MOR
+			cede_province = MOR
+		}
+		5804 = {
+			add_core = MOR
+			cede_province = MOR
+		}
+		5812 = {
+			add_core = MOR
+			cede_province = MOR
+		}
+		5805 = {
+			add_core = MOR
+			cede_province = MOR
+		}
+		5806 = {
+			add_core = MOR
+			cede_province = MOR
+		}
+		pr_africa_area_2 = {
 			limit = {
-				OR = {
-					province_id = 1128
-					province_id = 1129
-					province_id = 1132
-					province_id = 2247
+				NOT = { is_permanent_claim = ROOT	}
+				NOT = { is_core = ROOT	}
+				}
+			add_permanent_claim = ROOT
+		}
+		5809 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
 			}
-			add_permanent_claim = MOR
+		western_sahara_area = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT	}
+				NOT = { is_core = ROOT	}
+				}
+			add_permanent_claim = ROOT
 		}
 		every_country = {
 			limit = { has_country_flag = mor_crosses_sahara }
