@@ -100,11 +100,3 @@
  # hnn_l_english
  ##############################
  MODIFIER_MILITARY_TACTICS:0 "Military Tactics$VALUE|G$"
- ##############################
- # leviathan_l_english
- ##############################
- EXPAND_INFRASTRUCTURE:0 "Estates & Expand Infrastructure"
- EXPAND_INFRASTRUCTURE_DESC:0 "Estates & Expand Infrastructure for $NAME|Y$."
- EXPAND_INFRASTRUCTURE_NEEDED_DEV:0 ""
- EXPAND_INFRASTRUCTURE_TOOLTIP:0 "§YEstates & Expand Infrastructure§!"
- EXPAND_INFRASTRUCTURE_TOOLTIP_MODIFIER:0 ""
