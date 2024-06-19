@@ -1,3 +1,4 @@
+
 ########################################
 # Major Flavor Events                  #
 ########################################
@@ -34,7 +35,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 60
+		months = 241
 	}
 
 	immediate = {
@@ -256,7 +257,7 @@ country_event = {
 	option = {		# We will never give this up!
 		name = "flavor_eng.EVTOPTB9104"
 		ai_chance = { factor = 20 }
-		add_stability = -1
+		add_prestige = -0.2
 		FRA = {
 			add_opinion = {
 				who = ROOT
@@ -690,7 +691,7 @@ country_event = {
 	}
 }
 
-# Bloody Mary and King Felipé of England
+# Bloody Mary and King FelipÃ© of England
 country_event = {
 	id = flavor_eng.9114
 	title = "flavor_eng.EVTNAME9114"
