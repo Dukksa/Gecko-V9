@@ -1,0 +1,604 @@
+fu_ardabil_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = ARL
+	}
+	has_country_shield = yes
+	
+	arl_mystic_order = {
+		icon = fu_white_sheep
+		required_missions = {  } 
+		position = 1
+		trigger = { 
+			army_size_percentage = 1
+			OR = {
+				has_estate_privilege = estate_nobles_levies
+				has_mil_advisor = yes 
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_regency = no 
+				}
+				define_ruler_to_general = { 
+					fire = 2
+					shock = 6
+					manuever = 3
+					siege = 1
+				}
+			}
+			else = {
+				define_general = {
+					fire = 1
+					shock = 4
+					manuever = 2
+					siege = 1
+					trait = fu_ambusher_personality
+				}
+			}
+			add_army_tradition = 20
+			imereti_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kartli_kakheti_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			samtskhe_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			armenia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ardabil_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	arl_successors_to_the_aswaran = {
+		icon = mission_abu_saids_dream
+		required_missions = { arl_mystic_order } 
+		position = 2
+		trigger = {
+			num_of_cavalry = 4
+			num_of_generals = 1
+			is_at_war = yes
+		}
+		effect = {
+			if = {
+				limit = { has_unit_type = muslim_cavalry_archers }
+				add_country_modifier = {
+					name = arl_arsacid_legacy_modifier
+					duration = -1 
+					desc = qar_until_we_form_another_nation_desc
+				}
+			}
+			if = {
+				limit = { has_unit_type = persian_cavalry_charge }
+				add_country_modifier = {
+					name = arl_sassanid_legacy_modifier
+					duration = -1 
+					desc = qar_until_we_form_another_nation_desc
+				}
+			}
+			if = {
+				limit = { has_unit_type = mamluk_cavalry_charge }
+				add_country_modifier = {
+					name = arl_slave_cavalry_modifier
+					duration = -1 
+					desc = qar_until_we_form_another_nation_desc
+				}
+			}
+			if = {
+				limit = { 
+					NOT = { has_unit_type = muslim_cavalry_archers }
+					NOT = { has_unit_type = persian_cavalry_charge }
+					NOT = { has_unit_type = mamluk_cavalry_charge }
+				}
+				add_country_modifier = {
+					name = arl_advanced_cavalry_tactics_modifier
+					duration = -1 
+					desc = qar_until_we_form_another_nation_desc
+				}
+			}
+			custom_tooltip = arl_based_cavalry_tt
+		}
+	}
+	
+	arl_revenge_for_haydar = {
+		icon = mission_crush_delhi
+		required_missions = { arl_successors_to_the_aswaran } 
+		position = 3
+		provinces_to_highlight = { 
+			area = shirvan_area 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			shirvan_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			army_size = SRV 
+			total_development = SRV 
+		}
+		effect = {
+			country_event = { id = FU_Ardabil_Events.1 }
+		}
+	}
+	
+	arl_many_capitals = { 
+		icon = mission_into_persia_2
+		required_missions = { arl_the_rise_of_the_safavids }
+		position = 4 
+		trigger = {
+			num_of_owned_provinces_with = {
+				development = 25 
+				value = 3 
+			}
+		}
+		effect = {
+			every_owned_province = {
+				limit = { development = 25 } 
+				add_province_modifier = {
+					name = arl_many_caps_of_safavids_modifier
+					duration = -1 
+				}
+			}
+			if = {
+				limit = { 
+					capital_scope = { development = 40 } 
+				}
+				capital_scope = {
+					add_province_modifier = {
+						name = arl_citadel_shahanshah_modifier
+						duration = -1 
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					any_owned_province = { development = 40 }
+				}
+				random_owned_province = {
+					limit = { development = 40 }
+					add_province_modifier = {
+						name = arl_citadel_persia_modifier
+						duration = -1 
+					}
+				}
+			}
+			else = { custom_tooltip = arl_if_cap_or_any_40_dev_tt }
+		}
+	}
+}
+
+fu_ardabil_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = ARL
+	}
+	has_country_shield = yes
+	
+	arl_cultural_shift = {
+		icon = mission_vedic_education 
+		required_missions = { arl_the_rise_of_the_safavids }
+		position = 4
+		trigger = {
+			if = { 
+				limit = { primary_culture = azerbaijani }
+				dominant_culture = persian 
+				employed_advisor = { culture = azerbaijani }
+			}
+			else_if = {
+				limit = { primary_culture = persian }
+				capital_scope = { culture = persian }
+				employed_advisor = { culture = persian }
+			}
+		}
+		effect = {
+			country_event = { id = FU_Ardabil_Events.2 }
+		}
+	}
+}
+
+fu_ardabil_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = ARL
+	}
+	has_country_shield = yes	
+	
+	arl_potent_salt = {
+		icon = fu_advent_gunpowder
+		required_missions = {  }
+		position = 1
+		provinces_to_highlight = {
+			province_id = 4300
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			OR = {
+				4300 = { controlled_by = ROOT }
+				4300 = { owned_by = ROOT }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = arl_chinese_salt_modifier
+				duration = 7300
+			}
+			if = {
+				limit = {
+					4300 = { controlled_by = ROOT }
+				}
+				4300 = { cede_province = ARL }
+			}	
+		}
+	}
+	
+	arl_a_new_challenger_approaches = {
+		icon = mission_restore_faith_in_the_throne 
+		required_missions = { arl_potent_salt arl_mystic_order arl_the_zaidist_school }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4300
+				province_id = 4340
+				province_id = 2212
+			}
+			NOT = { owned_by =ROOT }
+		}
+		trigger = {
+			AND = {
+				owns = 4340
+				owns = 4300
+				owns = 2212
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = arl_a_new_challenger_modifier
+				duration = 7300
+			}
+			#hidden_effect = { set_country_flag = arl_a_new_challenger }
+			#custom_tooltip = arl_special_cb_tt
+		}
+	}		
+	
+	arl_the_rise_of_the_safavids = {
+		icon = mission_levantine_restoration 
+		required_missions = { arl_a_new_challenger_approaches } 
+		position = 3
+		provinces_to_highlight = {
+			region = persia_region 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			OR = {
+				num_of_owned_provinces_with = {
+					value = 10 
+					region = persia_region
+					
+				}
+				total_development = 100 
+			}
+		}
+		effect = {
+			country_event = { id = FU_Ardabil_Events.3 }
+		}
+	}
+	
+	arl_spreading_twelver_islam = {
+		icon = fu_shia_mosque
+		required_missions = { arl_the_rise_of_the_safavids } 
+		position = 4
+		trigger = {
+			religion = shiite
+			religious_unity = 0.8
+			at_war_with_religious_enemy = yes
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				OR = {
+					mil = 5 
+					NOT = { piety = -0.5 }
+					piety = 0.75
+				}
+			}
+			else = { has_idea = arl_safavid_order }
+			is_defender_of_faith = yes
+		}
+		effect = {
+			add_country_modifier = {
+				name = arl_war_of_faithful_modifier
+				duration = 7300
+			}
+			add_country_modifier = {
+				name = arl_spreading_twelver_islam_modifier
+				duration = -1
+				desc = arl_until_we_form_persia_or_at_peace_with_heretics_for_over_15_years_desc
+			}
+		}
+	}
+
+	arl_sheep_to_shepherds = {
+		icon = fu_shepherd_king
+		required_missions = { arl_spreading_twelver_islam } 
+		position = 5
+		trigger = {
+			army_size = AFG
+			total_development = AFG
+			army_size = TRS
+			total_development = TRS
+		}
+		effect = { 
+			persia_region = {
+				limit = {
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+	
+fu_ardabil_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = ARL
+	}
+	has_country_shield = yes
+	
+	arl_the_great_shahs_court = {
+		icon = mission_patronize_sufi_scholars
+		required_missions = { arl_the_rise_of_the_safavids } 
+		position = 4
+		trigger = {
+			AND = {
+				employed_advisor = { category = ADM }
+				employed_advisor = { category = DIP }
+				employed_advisor = { category = MIL }
+			}
+			current_income_balance = 0
+		}
+		effect = {
+			custom_tooltip = arl_50_pp_per_advisor_tt
+			hidden_effect = {
+				if = { 
+					limit = { has_adm_advisor_3 = yes }
+					add_adm_power = 150
+				}
+				else_if = {
+					limit = { has_adm_advisor_2 = yes }
+					add_adm_power = 100 
+				}
+				else = { add_adm_power = 50 }
+				if = { 
+					limit = { has_dip_advisor_3 = yes }
+					add_dip_power = 150
+				}
+				else_if = {
+					limit = { has_dip_advisor_2 = yes }
+					add_dip_power = 100 
+				}
+				else = { add_dip_power = 50 }
+				if = { 
+					limit = { has_mil_advisor_3 = yes }
+					add_mil_power = 150
+				}
+				else_if = {
+					limit = { has_mil_advisor_2 = yes }
+					add_mil_power = 100 
+				}
+				else = { add_mil_power = 50 }
+			}
+			custom_tooltip = arl_if_level_3_adm_advisor_tt 
+			tooltip = {
+				add_country_modifier = {
+					name = arl_efficient_integrateion_modifier
+					duration = 7300
+				}
+			}
+			custom_tooltip = arl_if_level_3_dip_advisor_tt 
+			tooltip = {
+				add_country_modifier = {
+					name = arl_masterful_negotiators_modifier
+					duration = 7300
+				}
+			}
+			custom_tooltip = arl_if_level_3_mil_advisor_tt 
+			tooltip = {
+				add_country_modifier = {
+					name = arl_valuable_lessons_of_war_modifier
+					duration = 7300
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { has_adm_advisor_3 = yes }
+					add_country_modifier = {
+						name = arl_efficient_integrateion_modifier
+						duration = 7300
+					}
+				}
+				if = {
+					limit = { has_dip_advisor_3 = yes }
+					add_country_modifier = {
+						name = arl_masterful_negotiators_modifier
+						duration = 7300
+					}
+				}
+				if = {
+					limit = { has_mil_advisor_3 = yes }
+					add_country_modifier = {
+						name = arl_valuable_lessons_of_war_modifier
+						duration = 7300
+					}
+				}
+			}
+		}
+	}			
+}
+
+fu_ardabil_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = ARL
+	}
+	has_country_shield = yes
+	
+	arl_the_zaidist_school = {
+		icon = mission_ahmadabad_paper 
+		required_missions = {  } 
+		position = 1
+		provinces_to_highlight = { 
+			province_id = 417
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" } 
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = arl_has_zaidi_scholar_invited_modifier
+						has_country_modifier = zaidi_scholar_modifier 
+					}
+					owns = 417 
+				}
+			}
+			else = { 
+				OR = { 
+					KRY = {
+						has_opinion = {
+							who = ROOT 
+							value = 150 
+						}
+						alliance_with = ROOT 
+					}
+					owns = 417 
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = { has_country_modifier = zaidi_scholar_modifier }
+				add_country_modifier = {
+					name = arl_zaidi_scripture_modifier
+					duration = 5475
+				}
+			}
+			if = { 
+				limit = { owns = 417 } 
+				add_country_modifier = {
+					name = arl_heart_of_zaidi_school_modifier
+					duration = 5475 
+				}
+			}
+		}
+	}
+	
+	arl_the_disgraced = {
+		icon = mission_kowtow 
+		required_missions = { arl_the_zaidist_school arl_a_new_challenger_approaches } 
+		position = 3
+		trigger = {
+			AND = {	
+				owns = 426
+				owns = 4341
+			}
+			army_size = TAB
+			total_development = TAB
+		}
+		effect = {
+			4341 = { add_center_of_trade_level = 1 }
+			country_event = { id = FU_Ardabil_Events.5 }
+		}
+	}
+	
+	arl_legacy_of_the_silk_road = {
+		icon = mission_gujarati_textiles
+		required_missions = { arl_the_disgraced arl_the_rise_of_the_safavids } 
+		position = 4 
+		trigger = {
+			num_of_owned_provinces_with = { 
+				province_has_center_of_trade_of_level = 1 
+				value = 3
+			}
+			num_of_owned_provinces_with = {
+				trade_goods = silk
+				value = 5 
+			}
+		}
+		effect = {
+			random_owned_province = {
+				limit = {
+					AND = {
+					 	NOT = { province_has_center_of_trade_of_level = 3 }
+						province_has_center_of_trade_of_level = 1
+					}
+				}
+				add_center_of_trade_level = 1
+			}
+			random_owned_province = {
+				limit = {
+					AND = {
+					 	NOT = { province_has_center_of_trade_of_level = 3 }
+						province_has_center_of_trade_of_level = 1
+					}
+				}
+				add_center_of_trade_level = 1
+			}
+			every_owned_province = {
+				limit = { trade_goods = silk }
+				add_province_modifier = arl_on_the_silk_road_modifier
+			}
+			if = { 
+				limit = { 
+					trading_bonus = {
+						trade_goods = silk 
+						value = yes 
+					}
+				}
+				every_owned_province = {
+					limit = { trade_goods = silk }
+					add_province_modifier = {
+						name = arl_silk_road_renewal_modifier
+						duration = 5475
+					}
+				}
+			}
+		}
+	}
+}

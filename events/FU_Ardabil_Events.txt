@@ -1,0 +1,408 @@
+namespace = FU_Ardabil_Events
+
+country_event = { 
+	id = FU_Ardabil_Events.1
+	title = FU_Ardabil_Events.1.t 
+	desc = FU_Ardabil_Events.1.d 
+	picture = GOOD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Ardabil_Events.1.a
+		
+		421 = {
+			add_province_modifier = {
+				name = arl_the_caspian_lion_modifier
+				duration = -1
+			}
+		}
+		if = { 
+			limit = { 
+				NOT = { government_rank = 2 }
+			}
+			set_government_rank = 2
+		}
+	}
+}
+country_event = { 
+	id = FU_Ardabil_Events.2
+	title = FU_Ardabil_Events.2.t 
+	desc = FU_Ardabil_Events.2.d 
+	picture = CULTURE_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ardabil_Events.2.a 
+		
+		ai_chance = { factor = 10 } 
+		if = { 
+			limit = { 
+				NOT = { primary_culture = persian }
+			}
+			change_primary_culture = persian 
+		}
+		if = { 
+			limit = { has_ruler = yes }
+			set_ruler_culture = persian 
+		}
+		every_owned_province = {
+			limit = { culture = azerbaijani }
+			change_culture = persian 
+		}
+		if = { 
+			limit = { has_heir = yes }
+			set_heir_culture = persian 
+		}
+		add_country_modifier = {
+			name = arl_homogenous_court_modifier 
+			duration = 7300
+		}
+		every_owned_province = { 
+			limit = { culture = persian } 
+			add_province_modifier = {
+				name = arl_unified_majority_modifier
+				duration = 7300 
+			}
+		}
+	}
+	
+	option = { 
+		name = FU_Ardabil_Events.2.b 
+		
+		ai_chance = { factor = 1 }
+		if = { 
+			limit = { 
+				NOT = { primary_culture = azerbaijani }
+			}
+			change_primary_culture = azerbaijani	 
+		}
+		custom_tooltip = arl_accept_persian_no_slot
+		hidden_effect = {
+			add_country_modifier = {
+				name = arl_accepted_persian_culture_modifier
+				duration = -1 
+			}
+			add_accepted_culture_or_dip_power = { culture = persian }
+		}
+		if = { 
+			limit = { has_heir = yes }
+			set_heir_culture = azerbaijani 
+		}
+		add_country_modifier = {
+			name = arl_homogenous_court_modifier 
+			duration = 7300
+		}
+		every_owned_province = { 
+			limit = { culture = azerbaijani } 
+			add_province_modifier = {
+				name = arl_maintained_azerbaijani_roots_modifier
+				duration = 7300 
+			}
+		}
+		custom_tooltip = arl_maintain_azer_culture_for_persia_tt
+		hidden_effect = { set_country_flag = arl_kept_azerbaijani_culture_flag }
+	}
+}
+	
+country_event = { 
+	id = FU_Ardabil_Events.3
+	title = FU_Ardabil_Events.3.t 
+	desc = FU_Ardabil_Events.3.d 
+	picture = CITY_DEVELOPMENT_eventPicture
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Ardabil_Events.3.a
+		
+		ai_chance = { factor = 1 }
+		capital_scope = {
+			if = {
+				limit = { has_building = fort_17th }
+				remove_building = fort_17th
+				add_building = fort_18th
+			}
+			else_if = {
+				limit = { has_building = fort_16th }
+				remove_building = fort_16th
+				add_building = fort_17th
+			}
+			else_if = {
+				limit = { has_building = fort_15th }
+				remove_building = fort_15th
+				add_building = fort_16th
+			}
+			else_if = {
+				limit = { has_building = fort_18th }
+				add_province_modifier = {
+					name = arl_fort_defense_18_modifier
+					duration = -1
+				}
+			}
+			else = {
+				add_building_construction = {
+					building = fort_15th 
+					speed = 0.33
+					cost = 0
+				}
+			}
+			add_province_modifier = {
+				name = arl_renovations_in_the_old_capital_modifier
+				duration = -1
+			}
+		}
+		
+		add_country_modifier = {
+			name = arl_prestigious_capital_modifier
+			duration = 7300
+		}
+		
+		change_government_reform_progress = 100
+	}
+	
+	option = {
+		name = FU_Ardabil_Events.3.b
+		
+		ai_chance = { factor = 10 }
+		trigger = {
+			owns = 2215 
+			2215 = { is_capital = no }
+		}
+		highlight = yes
+		
+		set_capital = 2215
+		2215 = {
+			if = {
+				limit = { has_building = fort_17th }
+				remove_building = fort_17th
+				add_building = fort_18th
+			}
+			else_if = {
+				limit = { has_building = fort_16th }
+				remove_building = fort_16th
+				add_building = fort_17th
+			}
+			else_if = {
+				limit = { has_building = fort_15th }
+				remove_building = fort_15th
+				add_building = fort_16th
+			}
+			else_if = {
+				limit = { has_building = fort_18th }
+				add_province_modifier = {
+					name = arl_fort_defense_18_modifier
+					duration = -1
+				}
+			}
+			else = {
+				add_building_construction = {
+					building = fort_15th 
+					speed = 0.33
+					cost = 0
+				}
+			}
+			add_province_modifier = {
+				name = arl_calligraphy_capital_modifier
+				duration = -1
+			}
+		}
+		
+		add_country_modifier = {
+			name = arl_prestigious_capital_modifier
+			duration = 7300
+		}
+		
+		change_government_reform_progress = 100
+	}
+	
+	option = {
+		name = FU_Ardabil_Events.3.c
+		
+		ai_chance = { factor = 100 }
+		trigger = {
+			owns = 2215 
+			2215 = { is_capital = no }
+			ruler_has_personality = entrepreneur_personality
+		}
+		highlight = yes
+		
+		set_capital = 2215
+		2215 = {
+			if = {
+				limit = { has_building = fort_17th }
+				remove_building = fort_17th
+				add_building = fort_18th
+			}
+			else_if = {
+				limit = { has_building = fort_16th }
+				remove_building = fort_16th
+				add_building = fort_17th
+			}
+			else_if = {
+				limit = { has_building = fort_15th }
+				remove_building = fort_15th
+				add_building = fort_16th
+			}
+			else_if = {
+				limit = { has_building = fort_18th }
+				add_province_modifier = {
+					name = arl_fort_defense_18_modifier
+					duration = -1
+				}
+			}
+			else = {
+				add_building_construction = {
+					building = fort_15th 
+					speed = 0.33
+					cost = 0
+				}
+			}
+			add_province_modifier = {
+				name = arl_calligraphy_capital_modifier
+				duration = -1
+			}
+			if = {
+				limit = { has_building = marketplace }
+				remove_building = marketplace 
+				add_building = trade_depot
+				add_base_production = 1
+			}
+			else_if = {
+				limit = { has_building = trade_depot }
+				add_base_production = 3
+			}
+			else = { add_building = trade_depot }
+		}		
+		add_country_modifier = {
+			name = arl_prestigious_capital_modifier
+			duration = 7300
+		}		
+		change_government_reform_progress = 100
+	}
+}
+
+country_event = { #Spoopy Magic to Vanish Modifier
+	id = FU_Ardabil_Events.4 
+	title = FU_Ardabil_Events.4.t 
+	desc = FU_Ardabil_Events.4.d 
+	picture = BIG_BOOK_eventPicture
+	hidden = yes 
+	
+	trigger = {
+		has_country_modifier = arl_spreading_twelver_islam_modifier
+		OR = { 	
+			NOT = { tag = ARL }
+			at_war_with_religious_enemy = no
+		}
+	}
+	
+	immediate = { 
+		hidden_effect = { 
+			remove_country_modifier = arl_spreading_twelver_islam_modifier 
+		}
+	}
+	
+	option = { name = FU_Ardabil_Events.4.a }
+}
+
+country_event = { 
+	id = FU_Ardabil_Events.5
+	title = FU_Ardabil_Events.5.t 
+	desc = FU_Ardabil_Events.5.d 
+	picture = UNIVERSITY_eventPicture
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Ardabil_Events.5.a
+		
+		ai_chance = { factor = 1 }
+		add_prestige_or_monarch_power = { amount = 20 }
+		add_years_of_income = 1
+	}
+	
+	option = {
+		name = FU_Ardabil_Events.5.b
+		
+		ai_chance = { factor = 1 }
+		custom_tooltip = arl_sassanid_legacy_tt
+		hidden_effect = { set_country_flag = arl_sassanid_legacy_flag }
+	}
+}
+
+country_event = { 
+	id = FU_Ardabil_Events.6
+	title = FU_Ardabil_Events.6.t 
+	desc = FU_Ardabil_Events.6.d 
+	picture = NEW_HEIR_eventPicture
+	
+	fire_only_once = yes
+	trigger = {
+		is_year = 1475 
+		OR = {
+			tag = PER
+			tag = ARL
+		}
+		OR = {
+			was_player = yes 
+			total_development = 150
+		}
+	}
+	mean_time_to_happen = { months = 20 }
+	
+	option = {
+		name = FU_Ardabil_Events.6.a
+		
+		ai_chance = { factor = 10 }
+		remove_heir = { }
+		define_heir = { 
+			name = "Ismail I"
+			dynasty = "Safavid"
+			change_adm = 3
+			change_dip = 2
+			change_mil = 2 
+			age = 5
+			claim = 100
+		}
+		add_heir_personality = conqueror_personality
+		add_heir_personality = patron_of_arts_personality
+	}
+	
+	option = {
+		name = FU_Ardabil_Events.6.b
+		
+		ai_chance = { factor = 1 }
+		change_heir_adm = 1
+		add_legitimacy = 10
+	}
+}
+
+country_event = { #event to remove cav mod 
+	id = FU_Ardabil_Events.7
+	title = FU_Ardabil_Events.7.t 
+	desc = FU_Ardabil_Events.7.d 
+	picture = UNIVERSITY_eventPicture
+	hidden = yes 
+	
+	trigger = {
+		ROOT = {	
+			OR = {
+				has_country_modifier = arl_arsacid_legacy_modifier
+				has_country_modifier = arl_sassanid_legacy_modifier
+				has_country_modifier = arl_slave_cavalry_modifier
+				has_country_modifier = arl_advanced_cavalry_tactics_modifier 
+			}
+			NOT = { tag = ARL } 
+		}
+	}
+	
+	immediate = {
+		remove_country_modifier = arl_arsacid_legacy_modifier
+		remove_country_modifier = arl_sassanid_legacy_modifier
+		remove_country_modifier = arl_slave_cavalry_modifier
+		remove_country_modifier = arl_advanced_cavalry_tactics_modifier
+	}
+	
+	option = {
+		name = FU_Ardabil_Events.7.a 
+	}
+}
+	

@@ -1217,7 +1217,6 @@ SON_ideas = {
 	}
 }
 
-
 PR2_ideas = {
     start = {
         global_regiment_cost = -0.05
