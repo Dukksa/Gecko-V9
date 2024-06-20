@@ -10334,8 +10334,14 @@ TRS_ideas = {
 	}
 	free = yes
 	
+	trs_entrepot_of_the_silk_road = {
+		global_own_trade_power = 0.25
+	}
+	trs_scientific_patronage = {
+		technology_cost = -0.05
+	}
 	trs_mawarannahr = {
-		cavalry_power = 0.2
+		cavalry_power = 0.10
 	}
 	trs_threshold_of_paradise = {
 		prestige = 1
@@ -10346,17 +10352,51 @@ TRS_ideas = {
 	trs_turkoman_cannoneers = { #Babur's ambition
 		artillery_cost = -0.15
 	}
-	trs_scientific_patronage = {
-		technology_cost = -0.05
-	}
-	trs_entrepot_of_the_silk_road = {
-		global_own_trade_power = 0.25
-	}
-	chagatai_literature = {
+	
+	
+	reform_the_diwan = {
 		#Same as Timurids
 	}
 }
 
+ARL_ideas = {
+	start = {
+		global_manpower_modifier = 0.15
+		land_morale = 0.1
+		
+	}
+	bonus = {
+		prestige = 1
+	}
+	trigger = {
+		tag = ARL
+		religion = shiite
+	}
+	free = yes
+	
+	arl_qizilbash = {
+		cavalry_power = 0.10
+	}
+	arl_safavid_order = {
+		manpower_recovery_speed = 0.1
+		#monthly_piety = -0.001
+	}
+	arl_shiite_leadership = {
+		tolerance_own = 2
+	}
+	arl_conversion_of_the_masses = {
+		global_heretic_missionary_strength = 0.02
+	}
+	arl_religious_war = {
+		spy_offence = 0.2
+	}
+	arl_amili_mujtahids = {
+		stability_cost_modifier = -0.1
+	}
+	arl_shahs_of_iran = {
+		legitimacy = 1
+	}
+}
 
 
 FRS_ideas = {
