@@ -1,7 +1,7 @@
 #4281 - Dhamar
 
-owner = YEM #Tahirids
-controller = YEM #Tahirids
+owner = RAS #Tahirids
+controller = RAS #Tahirids
 culture = yemeni_culture
 religion = shiite
 capital = "Dhamar"
@@ -11,9 +11,8 @@ base_tax = 4
 base_production = 4
 base_manpower = 3
 is_city = yes
-#add_core = RAS
+add_core = RAS
 #add_core = ADE #Tahirids
-add_core = YEM
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = indian

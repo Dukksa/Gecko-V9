@@ -1,7 +1,7 @@
 #388 - Aden
 
-owner = YEM #Tahirids
-controller = YEM #Tahirids
+owner = RAS #Tahirids
+controller = RAS #Tahirids
 culture = yemeni_culture
 religion = sunni
 capital = "Aden"
@@ -11,7 +11,7 @@ base_tax = 4
 base_production = 5
 base_manpower = 3
 is_city = yes
-add_core = YEM
+add_core = RAS
 
 discovered_by = muslim
 discovered_by = ottoman
