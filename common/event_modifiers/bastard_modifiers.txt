@@ -124,3 +124,7 @@ imp_ambition_timer = {
 anti_lag = {
 	global_supply_limit_modifier = 1
 }
+
+critical_province = {
+	local_warscore_cost_modifier = 0.15
+}
