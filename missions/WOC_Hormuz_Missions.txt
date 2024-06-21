@@ -1126,7 +1126,6 @@ ORM_4 = {
 			}
 			custom_tooltip = " "
 			give_claims = { area = sistan_area }
-			give_claims = { area = herat_area }
 			give_claims = { area = birjand_area }
 		} 
 	}
@@ -1141,7 +1140,6 @@ ORM_4 = {
 		provinces_to_highlight = {  
 			OR = {
 				area = sistan_area
-				area = herat_area
 				area = birjand_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1152,7 +1150,6 @@ ORM_4 = {
 				value = 7
 				OR = {
 					area = sistan_area
-					area = herat_area
 					area = birjand_area
 				}
 			}

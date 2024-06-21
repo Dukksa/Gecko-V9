@@ -1993,7 +1993,6 @@ is_in_persian_trade_node = {
 		area = isfahan_area
 		area = birjand_area
 		area = sistan_area
-		area = herat_area
 		area = mashhad_area
 	}
 }

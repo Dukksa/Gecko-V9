@@ -854,9 +854,10 @@ SWA_ideas = {
 }
 
 
+
 SWI_ideas = {
 	start = {
-		merc_maintenance_modifier = -0.15
+		republican_tradition = 0.5
 		infantry_power = 0.1
 	}
 	
@@ -870,28 +871,31 @@ SWI_ideas = {
 	free = yes  #will be triggered at load
 	
 	swiss_mercenaries = {
-		mercenary_discipline = 0.03
-	}
-	swiss_tolerance = {
-		tolerance_heretic = 2
-	}
-	the_swiss_confederation = {
-		stability_cost_modifier = -0.1
+		merc_maintenance_modifier = -0.25
+		mercenary_cost = -0.25
 	}
 	oasis_of_peace_and_prosperity = {
 		build_cost = -0.05
+		#development_cost = -0.05
 	}
 	alpine_defensiveness = {
 		fort_maintenance_modifier = -0.2
 		defensiveness = 0.25
 	}
-	haven_for_refugees = {
-		prestige = 1
-	}
 	clockwork = {
 		production_efficiency = 0.1
 	}
+	the_swiss_confederation = {
+		stability_cost_modifier = -0.1
+	}
+	haven_for_refugees = {
+		prestige = 1
+	}
+	swiss_tolerance = {
+		tolerance_heretic = 2
+	}
 }
+
 ZAN_ideas = {
 	start = {  
 		land_morale = 0.1

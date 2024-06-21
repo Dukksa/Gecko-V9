@@ -104,15 +104,6 @@ mug_timurid_resurgence = {
 				}
 				add_permanent_claim = ROOT
 			}
-			herat_area = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
 			balkh_area = {
 				limit = {
 					NOT = {
@@ -143,7 +134,6 @@ mug_timurid_resurgence = {
 			OR = {
 				area = ghor_area
 				area = sistan_area
-				area = herat_area
 				area = balkh_area
 				area = kabulistan_area
 			}
@@ -157,10 +147,6 @@ mug_timurid_resurgence = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			sistan_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			herat_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

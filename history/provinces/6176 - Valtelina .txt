@@ -1,6 +1,7 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Valtelina 
 add_core = TTL
+add_core = SWI
 owner = TTL
 controller = TTL
 culture = swiss

@@ -14869,5 +14869,3 @@ ARM1_ideas = {
 		manpower_in_own_culture_provinces = 0.2
 	}
 }
-
-

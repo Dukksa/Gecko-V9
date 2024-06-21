@@ -90,3 +90,7 @@ echo_por_colonist = {
 
 enacted_states_general_reform = {
 }
+
+gc_african_corridor = {
+	local_production_efficiency = -0.1
+}
