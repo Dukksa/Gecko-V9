@@ -3,27 +3,7 @@ country_decisions = {
 	bukharan_nation = {
 		major = yes
 		potential = {
-			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
-			NOT = { has_country_flag = formed_bukhara_flag }
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
-			tag = SHY
-			NOT = { exists = BUK }
-			NOT = { has_reform = celestial_empire }
-			OR = {
-				ai = no
-				AND = {
-					ai = yes
-					num_of_cities = 5
-				}
-			}
+			tag = TRS
 			NOT = { has_country_flag = bukharan_nation }
 		}
 		provinces_to_highlight = {
@@ -43,6 +23,12 @@ country_decisions = {
 				#province_id = 457 
 				#province_id = 2356 
 				province_id = 439
+				province_id = 4325
+				province_id = 4325
+				province_id = 2221
+				province_id = 4326
+				province_id = 2235
+				province_id = 2236
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -51,7 +37,7 @@ country_decisions = {
 		}
 		allow = {
 			#always = no
-			#adm_tech = 8
+			adm_tech = 10
 			has_institution = feudalism
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
@@ -69,7 +55,15 @@ country_decisions = {
 			#owns_core_province = 457 
 			#owns_core_province = 2356 
 			owns_core_province = 439
+			owns_core_province = 4325
+			owns_core_province = 2221
+			owns_core_province = 4326
+			owns_core_province = 2235
+			owns_core_province = 2236
 			#owns_core_province = 476		
+			NOT = { 
+				overlord_of = SIB
+			}
 		}
 		effect = {
 			change_tag = BUK
@@ -77,16 +71,9 @@ country_decisions = {
 			442 = {
 				move_capital_effect = yes
 			}
-			on_change_tag_effect = yes
-			swap_non_generic_missions = yes
+			#swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			add_prestige_or_monarch_power = { amount = 25 }
-			if = {
-				limit = {
-					NOT = { government_rank = 2 }
-				}
-				set_government_rank = 2
-			}
 			if = {
 				limit = {
 					NOT = { has_global_flag = bukhara_formed }
@@ -94,15 +81,10 @@ country_decisions = {
 				442 = {
 					add_base_tax = 2 #Only the first time Bukhara is formed by anyone.
 				}
-			}
-			if = {
-				limit = {
-					NOT = { technology_group = muslim }
-				}
-				change_technology_group = muslim
-				change_unit_type = muslim
 			}	
 			change_government_to_monarchy = yes
+			set_government_rank = 3			
+			#add_government_reform = silk_road_empire
 			add_permanent_claim = 441 #Khiva
 			add_permanent_claim = 444 #Charjuy
 			add_permanent_claim = 453 #Qarshi
@@ -124,14 +106,12 @@ country_decisions = {
 				add_permanent_claim = BUK
 			}
 			set_global_flag = bukhara_formed
+			#country_event = { id = ideagroups.1 } #Swap Ideas		#Removed for now, add back if Bukhara gets own ideas
+			set_country_flag = formed_bukhara_flag
 			if = {
-				limit = { 
-					has_custom_ideas = no
-					NOT = { has_idea_group = BUK_ideas }
-				}
+				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
-			set_country_flag = formed_bukhara_flag
 		}
 
 		ai_will_do = {

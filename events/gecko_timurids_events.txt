@@ -1,0 +1,28 @@
+namespace = gc_tim_events
+
+country_event = { #New Heir of Timur
+	id = gc_tim_events.1
+	title = gc_tim_events.1.t
+	desc = gc_tim_events.1.d
+	picture = BIG_BOOK_eventPicture
+    major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gc_tim_events.1.a
+		add_prestige_or_monarch_power = { amount = 25 }
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_country_modifier = {
+			name = gc_tim_resurgent
+			duration = 6083
+		}
+		454 = {
+				set_great_project_tier_3 = {
+					type = registan_square
+				}
+			}
+	}
+}
