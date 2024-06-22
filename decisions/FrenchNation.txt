@@ -119,5 +119,82 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	french_empire = {
+		major = yes
+		potential = {
+			always = yes
+			tag = FRA
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = wallonia_area
+				area = brabant_area
+				area = flanders_area
+				area = north_brabant_area
+				area = holland_area
+				area = picardy_area
+				region = france_region
+			}
+		}
+		allow = {
+			wallonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			brabant_area= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			flanders_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_brabant_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			holland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			france_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			north_german_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			south_german_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			add_prestige_or_monarch_power = { amount = 50 }
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 3
+					}
+				}
+				set_government_rank = 3
+			}
+			add_government_reform = gc_french_empire
+			override_country_name = FRENCH_EMPIRE
+		}
+
+	}
+
+
 	
 }
