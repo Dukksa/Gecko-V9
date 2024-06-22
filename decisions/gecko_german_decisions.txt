@@ -1,0 +1,156 @@
+country_decisions = {
+
+    #North German Federation
+    gc_form_ngf = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = gc_formed_ngf }
+			NOT = { exists = NGF }
+            OR = {
+                tag = PRU
+                tag = WES
+                tag = HAN
+            }
+			culture_group = germanic
+		}
+        provinces_to_highlight = {
+            OR = {
+				province_id = 50	# Berlin
+				province_id = 61 # Dresden
+				province_id = 1876 # Frankfurt
+				province_id = 84 # Düsseldorf
+				province_id = 1878 # Aachen
+				province_id = 1758 # Hannover
+				province_id = 45 # Lübeck
+				province_id = 44 # Hamburg
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+
+		allow = {
+			adm_tech = 14
+            is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			is_emperor = no
+            owns_core_province = 50	# Berlin
+            owns_core_province = 45 # Lübeck
+            owns_core_province = 44 # Hamburg
+            owns_core_province = 84 # Düsseldorf
+            owns_core_province = 1878 # Aachen
+            num_of_owned_provinces_with = {
+				is_core = ROOT
+				region = north_german_region
+				value = 65
+			}
+		}
+		effect = {
+			change_tag = NGF
+            restore_country_name_effect = yes
+            emperor = {
+				add_opinion = {
+					who = root
+					modifier = opinion_left_empire
+				}
+			}
+			set_in_empire = no
+			emperor = {
+				country_event = { id = hre_event.5 }
+			}
+            set_government_rank = 3
+            north_german_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            south_german_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            set_country_flag = gc_formed_ngf
+            country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+	}
+
+    #South German Federation
+    gc_form_sgf = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = gc_formed_sgf }
+			NOT = { exists = SGF }
+            OR = {
+                tag = WES
+                tag = HAB
+				tag = SWI
+				tag = BAV
+				tag = SWA
+				tag = ROT
+            }
+			culture_group = germanic
+		}
+        provinces_to_highlight = {
+            OR = {
+				province_id = 65	# München
+				province_id = 134 # Vienna
+				province_id = 75 # Straßburg
+				province_id = 67 # Nürnberg
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+
+		allow = {
+			adm_tech = 14
+            is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			is_emperor = no
+            owns_core_province = 65	# München
+			owns_core_province = 134 # Vienna
+			owns_core_province = 75 # Straßburg
+			owns_core_province = 67 # Nürnberg
+            num_of_owned_provinces_with = {
+				is_core = ROOT
+				region = south_german_region
+				value = 65
+			}
+		}
+		effect = {
+			change_tag = SGF
+            restore_country_name_effect = yes
+            emperor = {
+				add_opinion = {
+					who = root
+					modifier = opinion_left_empire
+				}
+			}
+			set_in_empire = no
+			emperor = {
+				country_event = { id = hre_event.5 }
+			}
+            set_government_rank = 3
+            north_german_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            south_german_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            set_country_flag = gc_formed_sgf
+            country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+	}
+}

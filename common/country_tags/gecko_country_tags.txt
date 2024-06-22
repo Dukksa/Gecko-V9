@@ -3,6 +3,9 @@ GZM = "countries/Great Zimbabwe.txt"
 PR2 = "countries/PRSokoto.txt"
 AHU = "countries/HabsburgEmpire.txt"
 EOH = "countries/EmpireOfHungary.txt"
+#Gecko Germans
+NGF = "countries/NorthGermanFederation.txt"
+SGF = "countries/SouthGermanFederation.txt"
 #Korea
 FO1 = "countries/Goguryeo.txt"
 FO2 = "countries/Mahan.txt"
