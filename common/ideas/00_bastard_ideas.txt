@@ -1184,8 +1184,6 @@ SGF_ideas = {
 	}
 }
 
-
-
 AFG_ideas = {
 	start = {
 		army_tradition = 0.5

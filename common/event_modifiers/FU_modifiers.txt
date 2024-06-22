@@ -98,6 +98,456 @@ arl_silk_road_renewal_modifier = {
 }
 
 ##########################
+# FU_Persia_Modifiers
+##########################
+per_vanquished_caucasus_tribesmen_modifier = {
+	cavalry_cost = -0.1 
+}
+per_royal_resting_place_modifier = {
+	prestige = 0.5
+	nobles_loyalty_modifier = 0.05
+}
+per_accepted_georgian_culture = {
+	num_accepted_cultures = 1 
+}
+per_assured_qizilbash_authority_modifier = {
+	nobles_influence_modifier = 0.05
+}
+per_adyghe_beauty_modifier = {
+	heir_chance = 0.25
+}
+per_servitude_to_the_qizilbash_modifier = {
+	local_manpower_modifier = 0.25
+	local_regiment_cost = -0.1 
+}
+per_campaign_in_india_modifier = {
+	ae_impact = -0.1
+	siege_ability = 0.1
+}
+per_campaign_in_india2_modifier = {
+	ae_impact = -0.15
+	siege_ability = 0.1
+}
+per_pureblood_iranian_mercenaries_modifier = {
+	mercenary_discipline = 0.03
+	mercenary_cost = -0.05
+}
+per_crossing_hindus_river_modifier = {
+	land_attrition = -0.15 
+	manpower_recovery_speed = 0.1
+}
+per_muzaffarid_centre_of_admin_modifier = {
+	local_governing_cost_increase = -20
+	trade_goods_size_modifier = 0.1
+	local_tax_modifier = 0.5
+}
+per_wealth_of_western_india_modifier = {
+	trade_goods_size_modifier = 0.25
+	trade_value = 1
+}
+per_conquest_western_india_modifier = {
+	trade_efficiency = 0.1
+}
+per_king_of_kings_modifier = {
+	governing_capacity_modifier = 0.1
+	num_accepted_cultures = 1 
+}
+per_renowned_madrasa_of_the_persian_crown_modifier = {
+	#innovativeness_gain = 0.025
+	local_institution_spread = 0.25
+}
+per_revamped_persian_administration_modifier = {
+	reform_progress_growth = 0.2
+	yearly_absolutism = 0.5 
+	country_admin_power = 1 
+}
+per_wasp_artillery_modifier = {
+	#artillery_shock = 1
+	movement_speed = 0.1
+}
+per_cavalry_muskets_modifier = {
+	cavalry_fire = 0.5
+	#leader_land_fire = 1 
+}
+per_expanded_the_royal_qurci_guard_modifier = {
+	infantry_power = 0.05
+	army_tradition = 0.5 
+}
+per_modernized_gunpowder_artillery_modifier = {
+	siege_ability = 0.05
+}
+per_islamic_celebrations_modifier = {
+	global_tax_modifier = 0.10
+}
+per_magnificent_blue_mosque_of_tabriz_modifier = {
+	global_missionary_strength = 0.01 
+	church_loyalty_modifier = 0.05
+	prestige_per_development_from_conversion = 0.1
+}
+per_preservation_of_islamic_tradition_modifier = {
+	global_missionary_strength = 0.02
+	culture_conversion_cost = -0.2
+}
+per_efficient_dhimmi_exploitation_modifier = {
+	technology_cost = -0.05
+	promote_culture_cost = -0.25
+}
+per_wave_of_religious_thought_modifier = {
+	global_missionary_strength = 0.1
+	missionary_maintenance_cost = -0.15
+}
+per_revival_of_zoroastrianism_modifier = {
+	tolerance_own = 1 
+}
+per_restoration_of_yasna_ceremonies_modifier = {
+	church_loyalty_modifier = 0.1
+	global_unrest = -1 
+}
+per_zoroastrian_militant_resurgence_modifier = {
+	warscore_cost_vs_other_religion = -0.15
+}
+per_egalitarian_society_modifier = {
+	global_unrest = -1
+	free_policy = 1 
+}
+per_sponsorship_of_christian_armenians_modifier = {
+	tolerance_heathen = 1 
+}
+per_accepted_armenian_culture_modifier = {
+	num_accepted_cultures = 1 
+}
+per_elitist_caste_modifier = {
+	same_culture_advisor_cost = -0.1
+	culture_conversion_cost = -0.2 
+}
+per_ensured_armenian_qizilbash_rights_modifier = {
+	nobles_influence_modifier = 0.05
+}
+per_glory_of_monarch_modifier = {
+	country_military_power = 1 
+}
+per_collapse_ottoman_empire_modifier = {
+	core_creation = -0.1
+}
+per_get_fucked_modifier = { 
+	global_unrest = 3 
+	prestige = -1 
+}
+per_greater_than_tamerlane_modifier = {
+	monarch_military_power = 1 
+	years_of_nationalism = -5 
+	monthly_splendor = 2 
+}
+per_persian_cultural_centre_of_india_modifier = {
+	culture_conversion_cost = -0.15 
+	same_culture_advisor_cost = -0.10
+}
+per_elevation_of_panjabi_culture_modifier = {
+	local_build_cost = -0.15
+	local_governing_cost = -0.5
+	local_production_efficiency = 0.1
+}
+per_accepted_panjabi_culture_modifier = {
+	num_accepted_cultures = 1 
+}
+per_land_of_purbias_modifier = {
+	fire_damage = 0.05
+}
+per_patronage_of_thought_modifier = {
+	technology_cost = -0.05
+	adm_advisor_cost = -0.1
+}
+per_persian_illuminated_manuscript_modifier = {
+	trade_goods_size_modifier = 0.20
+}
+per_healthy_administration_modifier = {
+	church_loyalty_modifier = 0.05 
+	nobles_loyalty_modifier = 0.05 
+	burghers_loyalty_modifier = 0.05 
+	yearly_corruption = -0.1
+	country_admin_power = 1 
+}
+per_abandoned_qizilbash_system_modifier = {
+	global_manpower_modifier = 0.1
+}
+per_golam_administration_modifier = {
+	advisor_pool = 1 
+	state_maintenance_modifier = -0.25
+	reinforce_speed = 0.2
+}
+per_golam_stronghold_modifier = {
+	local_manpower_modifier = 0.15
+	regiment_recruit_speed = -0.1
+}
+per_adherence_to_the_pillars_of_islam_modifier = {
+	tolerance_own = 1 
+}
+per_banner_call_to_arms_modifier = {
+	manpower_recovery_speed = 0.1
+	war_taxes_cost_modifier = -0.5
+}
+per_fire_temple_of_ateshgah_modifier = {
+	discipline = 0.1
+	fire_damage_received = -0.05
+	fire_damage = 0.05
+	culture_conversion_cost = -0.1
+}
+per_militant_doctrine_of_ahura_modifier = {
+	land_morale = 0.1
+	drill_gain_modifier = 0.25
+	war_exhaustion = -0.03
+}
+per_god_emperor_general_modifier = {
+	monarch_lifespan = 0.25
+}
+per_shah_of_azerbaijan_modifier = {
+	power_projection_from_insults = 0.5
+	prestige_decay = -0.01
+}
+per_turkmen_recruits_modifier = {
+	local_manpower_modifier = 0.33 
+}
+per_powerful_religious_doctrine_modifier = {
+	prestige_per_development_from_conversion = 0.5
+	global_missionary_strength = 0.02
+}
+per_triumph_in_cairo_modifier = {	
+	trade_efficiency = 0.1
+	prestige = 1 
+}
+per_guardians_of_the_grand_trunk_road_modifier = {
+	merchants = 1 
+	trade_steering = 0.1
+}
+per_hindustani_elements_modifier = {
+	religious_unity = 0.25 
+	development_cost = -0.05 
+}
+per_continental_trading_modifier = {
+	caravan_power = 0.15
+	global_own_trade_power = 0.1 
+}
+per_splendid_court_modifier = {
+	advisor_cost = -0.1
+} 
+per_swift_horses_modifier = {
+	movement_speed = 0.15
+}
+per_swift_horses2_modifier = {
+	movement_speed = 0.1
+}
+per_swift_horses3_modifier = {
+	movement_speed = 0.05
+}
+per_mount_discipline_modifier = {
+	fire_damage_received = -0.05
+}
+per_mount_discipline2_modifier = {
+	fire_damage_received = -0.025
+}
+per_horse_population_boom_modifier = {
+	cav_to_inf_ratio = 0.25
+	cavalry_cost = -0.15
+}
+per_horse_population_boom2_modifier = {
+	cav_to_inf_ratio = 0.25
+	cavalry_cost = -0.1 
+}
+per_horse_population_boom4_modifier = {
+	cav_to_inf_ratio = 0.25 
+	cavalry_cost = -0.05 
+}
+per_firearm_charge_modifier = {
+	cavalry_fire = 0.35 
+}
+per_firearm_charge2_modifier = {
+	cavalry_fire = 0.25 
+}
+per_defender_of_the_islamic_world_modifier = {
+	land_morale = 0.1
+	global_regiment_recruit_speed = -0.1
+}
+per_adherence_to_ahura_mazda_modifier1 = {
+	global_unrest = -1 
+}
+per_adherence_to_ahura_mazda_modifier2 = {
+	global_unrest = -2 
+}
+per_adherence_to_ahura_mazda_modifier3 = {
+	global_unrest = -3 
+}
+per_qizilbash_doctrine_modifier = {
+	land_morale = 0.1
+}
+per_qizilbash_doctrine2_modifier = {	
+	land_morale = 0.05
+}
+per_safe_mountain_roads_modifier = {
+	local_friendly_movement_speed = 0.5
+	province_trade_power_modifier = 0.15
+}
+per_king_of_kings_modifier = {
+	legitimacy = 1 
+	republican_tradition = 0.35
+	devotion = 1 
+	horde_unity = 1 
+}
+per_conquest_of_baghdad_modifier = {
+	tolerance_own = 1 
+	technology_cost = -0.05 
+}
+per_defied_iron_monarch_modifier = {
+	core_creation = -0.15
+}
+per_persian_reign_modifier = {
+	local_monthly_devastation = -0.1
+	local_autonomy = -0.05
+}
+per_expanded_registan_square_modifier = {
+	province_trade_power_modifier = 0.25
+	trade_goods_size_modifier = 0.2 
+	local_build_cost = -0.15
+}
+per_caravanserais_modifier = {
+	province_trade_power_value = 5
+	local_defensiveness = 0.15 
+	burghers_loyalty_modifier = 0.01
+}
+per_sponsored_the_arts_modifier = {	
+	dip_tech_cost_modifier = -0.1 
+	diplomatic_reputation = 2 
+}
+per_centralization_reforms_of_ruler_modifier = {
+	global_autonomy = -0.075
+	build_cost = -0.05
+}
+per_expanded_capital_area_infrastructure_modifier = {
+	allowed_num_of_manufactories = 1
+}
+per_islam_reigns_modifier = {
+	warscore_cost_vs_other_religion = -0.1 
+	all_power_cost = -0.025 
+}
+per_proclamation_of_twelver_islam_modifier = {
+	stability_cost_modifier = -0.2
+	global_unrest = -1 
+}
+per_restored_pars_karyan_modifier = {
+	tax_income = 12 
+	local_defensiveness = 0.2
+}
+per_victorious_fire_modifier = {
+	province_warscore_cost = -0.05 
+	available_province_loot = 0.5
+}
+per_strategic_fort_of_zagros_modifier = {
+	local_defensiveness = 0.15
+	local_hostile_attrition = 1 
+}
+per_trade_in_persian_gulf_modifier = {
+	trade_efficiency = 0.05 
+}
+per_establishment_of_the_armenian_mercantile_gentry_modifier = {
+	mercantilism_cost = -0.15
+	center_of_trade_upgrade_cost = -0.15
+}
+per_naval_command_modifier = {	
+	navy_tradition = 1
+	global_naval_engagement_modifier = 0.2 
+	naval_forcelimit_modifier = 0.25
+}
+per_kingdom_of_hormuz_province_modifier = {
+	local_production_efficiency = 0.2
+	province_trade_power_modifier = 0.3
+}
+per_irrigation_system_yemen_modifier = {
+	local_development_cost = -0.20 
+	trade_value_modifier = 0.1
+}
+per_centralized_steppes_modifier = {
+	development_cost = -0.05 
+	max_absolutism = 5 
+	global_autonomy = -0.05 
+}
+per_monarch_steppes_modifier = {
+	cavalry_power = 0.1
+	nomadic_tribes_loyalty_modifier = 0.05 
+}
+per_important_silk_trade_station_modifier = {
+	trade_value_modifier = 0.2
+}
+per_persian_carpet_industry_modifier = {
+	trade_goods_size = 1 
+}
+per_royal_porcelain_collection_modifier = {
+	improve_relation_modifier = 0.2 
+	diplomats = 1 
+}
+per_grandeur_ali_qapu_modifier = {
+	diplomatic_upkeep = 1 
+	diplomatic_reputation = 1 
+}
+per_grandeur_ali_qapu2_modifier = {
+	diplomatic_reputation = 2 
+	accept_vassalization_reasons = 35
+	transfer_trade_power_reasons = 150 
+}
+per_persian_golden_era_modifier = {
+	all_power_cost = -0.025
+	institution_spread_from_true_faith = 0.25
+}
+per_secured_the_hajj_and_kaaba_modifier = {
+	manpower_in_true_faith_provinces = 0.15
+	prestige = 1 
+}
+per_custodians_of_jerusalem_modifier = {
+	harsh_treatment_cost = -0.25 
+	country_diplomatic_power = 1 
+}
+per_sacred_book_urva_modifier = {	
+	adm_tech_cost_modifier = -0.05
+	monarch_admin_power = 1 
+}
+per_harun_i_vilayat_tomb_modifier = {
+	enforce_religion_cost = -0.25 
+	church_influence_modifier = 0.05
+}
+per_urban_planning_of_shah_abbas_modifier = {
+	local_build_cost = -0.15 
+}
+per_gardens_of_chahar_bagh_modifier = {
+	monarch_lifespan = 0.1
+}
+per_nashq_e_jahan_square_modifier = {
+	province_trade_power_value = 10 
+	trade_goods_size_modifier = 0.15
+}
+per_horde_shock_tactics_modifier = {
+	shock_damage = 0.1
+}
+per_shahnameh_modifier = {
+	diplomatic_reputation = 1 
+	innovativeness_gain = 0.25
+}
+per_persian_arquebusiers_modifier = {
+	infantry_shock = 0.25 
+	movement_speed = 0.15
+}
+per_sassanid_legacy_preserved = {
+	technology_cost = -0.05 
+}
+per_shirley_reforms_the_army1_modifier = {
+	drill_gain_modifier = 0.25
+	yearly_army_professionalism = 0.0025 
+	drill_decay_modifier = -0.1
+}
+per_shirley_reforms_the_army2_modifier = {
+	army_tradition = 0.1
+}
+per_porcelain_exports_to_the_west_modifier = {
+	trade_efficiency = 0.10
+}
+##########################
 # FU_Switzerland_Modifiers
 ##########################
 swi_period_of_stability_modifier = {

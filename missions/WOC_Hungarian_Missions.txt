@@ -3272,7 +3272,6 @@ woc_hun_fifth_branch = {
 			num_of_cities = 30
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-		}
 		
 			num_of_owned_provinces_with = {
 				value = 30
@@ -3281,7 +3280,7 @@ woc_hun_fifth_branch = {
 				NOT = { local_autonomy = 1 }
 			}
 		
-		
+		}
 		effect = {
 			change_tag = EOH
 			on_change_tag_effect = no

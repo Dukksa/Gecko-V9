@@ -144,6 +144,7 @@ country_decisions = {
 				duration = 7300
 			}
 			set_country_flag = formed_spain_flag
+			add_government_reform = gc_imperial_spain_reform
 			add_prestige = 25
 		}
 		ai_will_do = {
@@ -312,7 +313,8 @@ country_decisions = {
 					add_permanent_claim = SPA
 				}
 			}
-			set_country_flag = formed_spain_flag
+			set_country_flag = formed_spain_flag‚
+			add_government_reform = gc_imperial_spain_reform
 		}
 		ai_will_do = {
 			factor = 1

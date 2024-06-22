@@ -1,0 +1,108 @@
+######province modifiers######
+northern_dvina_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+
+transcaucasian_wine_valleys = {
+	trade_goods_size = 1.0
+}
+	
+######estate changes######
+estate_qizilbash_levies_mod = {
+	local_manpower_modifier = 0.10
+	}
+
+estate_ghilman_discipline_modifier = {
+	is_janissary_modifier = yes
+	discipline = 0.05
+}	
+
+estate_ghilman_morale_modifier = {
+	is_janissary_modifier = yes
+	land_morale = 0.05
+}
+
+estate_qizilbash_officers_modifier = {
+	#siege_ability = 0.10
+	fire_damage = 0.10
+}
+
+estate_janissary_phase_modifier = {
+	is_janissary_modifier = yes
+	drill_decay_modifier = -0.1
+	drill_gain_modifier = 0.25
+}
+	
+estate_janissary_weaponry_modifier = {
+	is_janissary_modifier = yes
+	infantry_fire = 0.10
+	infantry_power = 0.05
+}
+	
+estate_janissary_discipline_modifier = {
+	is_janissary_modifier = yes
+	discipline = 0.05
+	infantry_power = 0.05
+}
+
+estate_janissary_auxiliaries_modifier = {
+	manpower_recovery_speed = 0.05
+	reinforce_speed = 0.10
+}
+
+estate_nomadic_tribes_steppes_devcost = {
+	local_production_efficiency = 0.33
+	local_development_cost = -0.025
+}
+
+force_janissaries_to_undergo_yoklama = {
+	land_morale = 0.15
+}
+# Persian Missions
+
+gc_caucasus_integration = {
+	local_unrest = -2
+	local_autonomy = -0.05
+	local_development_cost = -0.25
+}
+
+######event changes######
+
+bad_sufi_modifier = {
+	religion = yes
+	legitimacy = 0.5
+	monthly_piety = -0.001
+	
+}
+
+per_abbas_advisors = {
+	technology_cost = -0.05
+	infantry_fire = 0.2
+
+}
+
+ok_sufi_modifier = {
+	religion = yes
+	legitimacy = 1
+	monthly_piety = -0.002
+}
+
+good_sufi_modifier = {
+	religion = yes
+	legitimacy = 1
+	global_missionary_strength = 0.02
+	monthly_piety = -0.003
+}
+
+excellent_drill = {
+	yearly_army_professionalism = 0.02
+	drill_decay_modifier = -0.25
+}
+
+#bukhara cloth
+
+bukharan_wool = {
+	local_production_efficiency = 0.2
+	local_development_cost = 0.1
+}

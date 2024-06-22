@@ -128,3 +128,12 @@ anti_lag = {
 critical_province = {
 	local_warscore_cost_modifier = 0.15
 }
+
+persia_united = {
+	interest = -1
+	inflation_reduction = 0.5
+	global_monthly_devastation = -1
+	land_morale = 0.1
+	core_creation = -0.25
+	global_tax_income = 48
+}

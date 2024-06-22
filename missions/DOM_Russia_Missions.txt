@@ -1822,13 +1822,6 @@ mos_rus_russian_consolidation = {
 					}
 					add_russian_claim = yes
 				}
-				herat_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_russian_claim = yes
-				}
 				mashhad_area = {
 					limit = {
 						NOT = { is_core = ROOT }
@@ -1927,13 +1920,6 @@ mos_rus_russian_consolidation = {
 						}
 						add_russian_claim = yes
 					}
-					herat_area = {
-						limit = {
-							NOT = { is_core = ROOT }
-							NOT = { is_permanent_claim = ROOT }
-						}
-						add_russian_claim = yes
-					}
 					mashhad_area = {
 						limit = {
 							NOT = { is_core = ROOT }
@@ -2013,7 +1999,6 @@ mos_rus_russian_consolidation = {
 				area = isfahan_area
 				area = birjand_area
 				area = sistan_area
-				area = herat_area
 				area = mashhad_area
 			}
 			OR = {
@@ -2037,7 +2022,6 @@ mos_rus_russian_consolidation = {
 							area = isfahan_area
 							area = birjand_area
 							area = sistan_area
-							area = herat_area
 							area = mashhad_area
 						}
 					}
