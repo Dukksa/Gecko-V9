@@ -61,28 +61,6 @@
   SGF_national_idea_5_desc:0 "Hessian Mercenaries are famous for their efficency."
   SGF_national_idea_6_desc:0 "The South German Army composes of many different formidable Armies."
   SGF_national_idea_7_desc:0 "The South German Federation houses many competent Advisors."
-
-  UBV_ideas:0 "Munich Ideas"
-  UBV_ideas_start:0 "Munich Traditions"
-  UBV_ideas_bonus:0 "Munich Ambitions"
-
-  gc_UBV_NI_1:0 "The many houses of Bavaria"
-  gc_UBV_NI_2:0 "Reinheitsgebot"
-  gc_UBV_NI_3:0 "Chosen by Heaven"
-  gc_UBV_NI_4:0 "Bavarian mainland"
-  gc_UBV_NI_5:0 "Standing Army"
-  gc_UBV_NI_6:0 "The Garrison System"
-  gc_UBV_NI_7:0 "Devot Catholics"
-  
-  gc_UBV_NI_1_desc:0 ""
-  gc_UBV_NI_2_desc:0 ""
-  gc_UBV_NI_3_desc:0 ""
-  gc_UBV_NI_4_desc:0 ""
-  gc_UBV_NI_5_desc:0 ""
-  gc_UBV_NI_6_desc:0 ""
-  gc_UBV_NI_7_desc:0 ""
-
-
   
   #Habsburg Empire
   AHU_ideas:0 "Habsburg Empire Ideas"
