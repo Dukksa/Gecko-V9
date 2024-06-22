@@ -876,7 +876,7 @@ SWI_ideas = {
 	}
 	oasis_of_peace_and_prosperity = {
 		build_cost = -0.05
-		#development_cost = -0.05
+		development_cost = -0.05
 	}
 	alpine_defensiveness = {
 		fort_maintenance_modifier = -0.2
