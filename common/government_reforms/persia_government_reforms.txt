@@ -1,0 +1,260 @@
+######################
+##PERSIAN GOVERNMENT##
+######################
+persian_theocracy = { #tier 1
+	icon = "feudal_theocracy"
+	lock_level_when_selected = yes
+	maintain_dynasty = yes
+	potential = {
+		AND = {
+			religion = shiite
+			tag = PER
+			}
+		}
+	modifiers = {
+		land_morale = 0.10
+		missionaries = 1
+		global_missionary_strength = 0.01
+		tolerance_own = 2
+		monthly_piety = -0.001
+		governing_capacity = 150
+		move_capital_cost_modifier = 0.33
+	}
+	government_abilities = {
+		feudal_theocracy_mechanic
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+establish_qurchi_corps_reform = { #tier 2
+	icon = "feudal_theocracy"
+	potential = {
+		tag = PER
+	}
+	modifiers = {
+		global_manpower_modifier = 0.10
+		qizilbash_influence_modifier = 0.1
+		qizilbash_loyalty_modifier = 0.05
+	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
+	}
+	custom_attributes = {
+		qizilbash_qurchis_privilege_interaction = yes #used for localization of estate privilege
+	}
+	ai = {
+		factor = 1000
+		}
+}
+
+foreign_ghilman_reform = { #tier 3
+	icon = "feudal_theocracy"
+	potential = {
+		tag = PER 
+		}	
+	trigger = {			
+		tag = PER
+		}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		has_pashas = yes
+		}
+	custom_attributes = {
+		enables_ghilman_estate = yes #used for localization of estate privilege
+		}
+	modifiers = {
+		advisor_pool = 1
+		free_leader_pool = 1
+		ghilman_loyalty_modifier = 0.10
+		qizilbash_loyalty_modifier = -0.05
+		qizilbash_influence_modifier = -0.10
+		}
+	ai = {
+		factor = 1000
+		}		
+}
+
+qizilbash_in_officer_corps_reform = { #tier 4
+	icon = "feudal_theocracy"
+	potential = {
+		tag = PER
+	}
+	modifiers = {
+		recover_army_morale_speed = 0.05
+		qizilbash_influence_modifier = 0.1
+		qizilbash_loyalty_modifier = 0.05
+		ghilman_loyalty_modifier = -0.05
+		ghilman_influence_modifier = -0.05
+		nobles_loyalty_modifier = -0.05
+		nobles_influence_modifier = -0.05
+	}
+	custom_attributes = {
+		qizilbash_officer_interaction = yes #used for localization of estate privilege
+		}
+	ai = {
+		factor = 1000
+		}		
+}
+	
+reforms_of_abbas_i_reform = { #tier 5
+	icon = "feudal_theocracy"
+	potential = {
+		tag = PER
+	}
+	modifiers = {
+		#fire_damage = 0.10
+		global_autonomy = -0.05
+		tolerance_heathen = 1
+		global_unrest = -1
+		global_own_trade_power = 0.25
+		qizilbash_influence_modifier = -0.25
+		qizilbash_loyalty_modifier = -0.1
+		ghilman_loyalty_modifier = 0.05
+		ghilman_influence_modifier = 0.10
+		yearly_army_professionalism= 0.00250
+	}
+	custom_attributes = {
+		qizilbash_discipline_looting_interaction = yes #used for localization of estate privilege
+	}
+	custom_attributes = {
+		ghilman_morale_interaction = yes #used for localization of estate privilege
+	}
+	ai = {
+		factor = 1000
+		}
+}
+
+ghilman_administrative_positions_reform = { #tier 6
+	icon = "paper_money_map"
+	potential = {
+		tag = PER
+	}
+	modifiers = {
+		administrative_efficiency = 0.05
+		global_tax_modifier = 0.1
+		governing_capacity_modifier = 0.1
+		qizilbash_influence_modifier = -0.05
+		qizilbash_loyalty_modifier = -0.05
+		ghilman_influence_modifier = 0.05
+		ghilman_loyalty_modifier = 0.10
+		possible_policy = 1
+	}
+	ai = {
+		factor = 1000
+		}
+}
+
+######################
+##OTTOMAN GOVERNMENT##
+######################
+
+upgrade_janissary_weaponry_reform = { #tier 2
+	icon = "ottoman_government"
+	potential = {
+		has_reform = ottoman_government
+		NOT = { has_country_modifier = force_janissaries_to_undergo_yoklama }
+	}
+	modifiers = {
+		global_manpower_modifier = 0.05
+		global_tax_modifier = 0.10
+		janissary_influence_modifier = 0.1
+		janissary_loyalty_modifier = 0.05
+		yearly_army_professionalism = 0.001
+	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
+	}
+	custom_attributes = {
+		upgrade_janissary_weaponry_privilege_interaction = yes #used for localization of estate privilege
+	}
+	ai = {
+		factor = 1000
+		}
+}
+
+
+derbend_organization_reform = { #tier 3
+	icon = "ottoman_government"
+	potential = {
+		has_reform = ottoman_government
+	}
+	modifiers = {
+		global_tax_modifier = -0.05
+		global_manpower_modifier = 0.05
+		defensiveness = 0.10
+		global_autonomy = -0.025
+		
+		
+	}
+	ai = {
+		factor = 1000
+		}
+}
+
+establish_auxiliary_support_system_reform = { #tier 4
+	icon = "ottoman_government"
+	potential = {
+		has_reform = ottoman_government
+		#NOT = { has_country_modifier = force_janissaries_to_undergo_yoklama }
+	}
+	modifiers = {
+		movement_speed = 0.10
+		land_attrition = -0.10
+	}
+	custom_attributes = {
+		establish_auxiliary_support_system_privilege_interaction = yes #used for localization of estate privilege
+	}
+	ai = {
+		factor = 1000
+		}
+}
+
+janissary_administrative_positions_reform = { #tier 5
+	icon = "paper_money_map"
+	potential = {
+		has_reform = ottoman_government
+		NOT = { has_country_modifier = force_janissaries_to_undergo_yoklama }
+	}
+	modifiers = {
+		global_tax_modifier = -0.1
+		governing_capacity_modifier = 0.15
+		free_adm_policy = 1
+		state_maintenance_modifier = -0.25
+		advisor_pool = 1
+		janissary_influence_modifier = 0.1
+		janissary_loyalty_modifier = 0.05
+		yearly_army_professionalism= 0.00250
+	}
+	ai = {
+		factor = 1000
+		}
+}
+
+reform_the_janissaries_reform = { #tier 6
+	icon = "ottoman_government"
+	potential = {
+		has_reform = ottoman_government
+		NOT = { has_country_modifier = force_janissaries_to_undergo_yoklama }
+	}
+	modifiers = {
+		janissary_influence_modifier = 0.10
+		janissary_loyalty_modifier = -0.10
+		possible_policy = 1
+	}
+	custom_attributes = {
+		reform_the_janissaries_privilege_interaction = yes #used for localization of estate privilege
+	}
+	conditional = {
+		allow = { has_dlc = "Common Sense" }
+		has_parliament = yes
+	}
+	ai = {
+		factor = 1000
+		}
+}

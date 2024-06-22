@@ -1,4 +1,5 @@
 country_decisions = {
+
 	persian_nation = {
 		major = yes
 		potential = {
@@ -10,29 +11,12 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
-			OR = {
 				ai = no
 				NOT = { exists = PER }
-			}
-			if = {
-				limit = {
-					OR = {
-						tag = QAR
-						was_tag = QAR
-						tag = AKK
-						was_tag = AKK
-					}
-					has_dlc = "King of Kings"
-				}
-				has_country_flag = turkoman_can_form_persia
 			}
 			NOT = { tag = MUG }
 			NOT = { tag = TIM }
 			NOT = { tag = PER }
-			NOT = { tag = ERS }
 			NOT = { tag = HLR }
 			NOT = { tag = ROM }
 			NOT = { tag = PAP }
@@ -40,8 +24,8 @@ country_decisions = {
 			NOT = { tag = BYZ }
 			NOT = { tag = ARB }
 			OR = {
-				culture_group = iranian
-				primary_culture = azerbaijani
+				tag = AFG
+				tag = ARL
 			}
 			is_colonial_nation = no
 			OR = {
@@ -54,24 +38,14 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				and = {
-					root = { tag = TIM }
-					or = {
-						owned_by = TRS
-						owned_by = AFG
-						owned_by = SIS
-						owned_by = FRS
-						owned_by = KHO
-						owned_by = QOM
-						owned_by = LRI
-						owned_by = ARD
-					}
-				}
 				province_id = 414		# Hamadan
 				province_id = 429		# Isfahan
-				#province_id = 433		# Yazd
 				province_id = 2213		# Qom
 				province_id = 2215		# Qazvin
+				province_id = 2218      # Shiraz
+				province_id = 4341
+				province_id = 416  
+				province_id = 429
 				AND = {
 					province_id = 426
 					ROOT = { NOT = { owns_core_province = 2218 } }
@@ -85,6 +59,14 @@ country_decisions = {
 					ROOT = { NOT = { owns_core_province = 432 } }
 					ROOT = { NOT = { owns_core_province = 2221 } }
 				}
+				AND = {
+					province_id = 432
+					ROOT = { NOT = { owns_core_province = 2221 } }
+				}
+				AND = {
+					province_id = 2221
+					ROOT = { NOT = { owns_core_province = 432 } }
+				}
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -95,36 +77,22 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-			#is_tribal = no
 			NOT = { exists = PER }
-			NOT = { exists = ERS }
 			owns_core_province = 414		# Hamadan
 			owns_core_province = 429		# Isfahan
-			#owns_core_province = 433		# Yazd
 			owns_core_province = 2213		# Qom
 			owns_core_province = 2215		# Qazvin
-			OR = {
-				owns_core_province = 426		# Amol
-				owns_core_province = 2218		# Shiraz
-			}
-			owns_core_province = 416		# Tabriz
-			if = {
-				limit = {
-					tag = TIM
-				}
-				not = { exists = TRS }
-				not = { exists = AFG }
-				not = { exists = SIS }
-				not = { exists = FRS }
-				not = { exists = KHO }
-				not = { exists = QOM }
-				not = { exists = LRI }
-				not = { exists = ARD }
+			owns_core_province = 2218		# Shiraz
+			owns_core_province = 4341
+			owns_core_province = 416 
+			owns_core_province  = 429
+			OR = {		
+				owns_core_province = 432		# Kerman
+				owns_core_province = 2221		# Mashhad
 			}
 		}
 		effect = {
 			change_tag = PER
-			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -132,16 +100,18 @@ country_decisions = {
 					NOT = { government = monarchy }
 					is_revolutionary = no
 				}
-				change_government = monarchy
+				change_government_to_monarchy = yes
 			}
 			set_government_rank = 3
 			if = {
-				limit = { is_revolutionary = no NOT = { religion_group = zoroastrian_group } }
-				add_government_reform = persian_government_reform
-			}
-			if = {
-				limit = { is_revolutionary = no religion_group = zoroastrian_group }
-				add_government_reform = zoroastrian_persian_government_reform
+				limit = { has_country_flag = arl_sassanid_legacy_flag } 
+				custom_tooltip = per_sassanid_legacy_preserved_tt
+				add_ruler_modifier = {
+					name = per_sassanid_legacy_preserved
+					duration = -1
+				}
+				change_government_reform_progress = 50
+				clr_country_flag = arl_sassanid_legacy_flag
 			}
 			if = {
 				limit = {
@@ -160,13 +130,9 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			add_prestige = 25
+			add_prestige_or_monarch_power = { amount = 25 }
 			if = {
 				limit = {
-					OR = {
-						NOT = { has_dlc = "King of Kings" }
-						NOT = { primary_culture = mazandarani }
-					}
 					NOT = { primary_culture = persian }
 				}
 				change_primary_culture = persian
@@ -176,82 +142,320 @@ country_decisions = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
+			change_religion = shiite
+			add_government_reform = persian_theocracy
+			define_ruler = {
+				name = "Ismail I"
+				dynasty = "Safavid"
+				
+				religion = shiite
+				claim = 100
+				adm = 5
+				dip = 4
+				mil = 5
+				}							
 			if = {
-				limit = { has_dlc = "King of Kings" }
-				unlock_estate = {
-					estate = estate_qizilbash
+				limit = { has_heir = yes }
+				kill_heir = {}
+			}	
+			change_unit_type = gunpowder_empire
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = -10
+				}
+			change_estate_land_share = {
+				estate = estate_burghers
+				share = -10
+				}
+			change_estate_land_share = {
+				estate = estate_church
+				share = 10
+				}
+	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400	
+	}
+	
+	persian_nation_isfahan = {
+		major = yes
+		potential = {
+					always = no
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_persia_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				ai = no
+				NOT = { exists = PER }
+			}
+			
+			tag = ISF
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
 				}
 			}
 		}
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				NOT = {
-					calc_true_if = {
-						owns_core_province = 414		# Hamadan
-						owns_core_province = 429		# Isfahan
-						owns_core_province = 433		# Yazd
-						owns_core_province = 2213		# Qom
-						owns_core_province = 2215		# Qazvin
-						OR = {
-							owns_core_province = 426		# Amol
-							owns_core_province = 2218		# Shiraz
-						}
-						OR = {
-							owns_core_province = 416		# Tabriz
-							owns_core_province = 432		# Kerman
-							owns_core_province = 2221		# Mashhad
-						}
-						amount = 5
-					}
+		provinces_to_highlight = {
+				province_id = 416      
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			#is_at_war = no
+			NOT = { exists = PER }
+			OR = {
+				416 = {
+					controlled_by = ISF	
+				}
+				416 = {
+					owned_by = ISF	
 				}
 			}
 		}
-		ai_importance = 400
-	}
-	rename_to_iran = {
-		potential = {
-			or = {
-				tag = ERS
-				tag = PER
-			}
-			is_revolutionary = yes
-			NOT = { has_country_flag = is_revolutionary_iran_flag }
-		}
-		allow = {
-			is_at_war = no
-		}
 		effect = {
-			restore_country_name = yes
-			override_country_name = REV_IRAN_STRING
-			set_country_flag = is_revolutionary_iran_flag
+			change_tag = PER
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government = monarchy }
+					is_revolutionary = no
+				}
+				change_government_to_monarchy = yes
+			}
+			set_government_rank = 3
+			if = {
+				limit = {
+					has_reform = states_general_reform
+				}
+				remove_government_reform = states_general_reform
+			}
+			persia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = PER
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige_or_monarch_power = { amount = 25 }
+			if = {
+				limit = {
+					NOT = { primary_culture = persian }
+				}
+				change_primary_culture = persian
+			}
+			set_country_flag = formed_persia_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			change_religion = shiite
+			add_government_reform = persian_theocracy
+			define_ruler = {
+				name = "Ismail I"
+				dynasty = "Safavid"
+				
+				religion = shiite
+				claim = 100
+				adm = 5
+				dip = 4
+				mil = 5
+				}							
+			if = {
+				limit = { has_heir = yes }
+				kill_heir = {}
+			}	
+			change_unit_type = gunpowder_empire
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = -10
+				}
+			change_estate_land_share = {
+				estate = estate_burghers
+				share = -10
+				}
+			change_estate_land_share = {
+				estate = estate_church
+				share = 10
+				}
+			add_country_modifier = {
+				name = "persia_united"
+				duration = 5475
+			}
+			if = {
+				limit = { has_estate_privilege = estate_burghers_indebted_to_burghers }
+				remove_estate_privilege = estate_burghers_indebted_to_burghers
+			}
+			add_war_exhaustion = -20
+			if = {
+				limit = { corruption = 5 }
+				add_corruption = -10
+			}
+			add_manpower = 30
+			add_treasury = 1000
+			if = {
+				limit = { stability = -3 }
+				add_stability = 3
+			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
-		ai_importance = 0
+		ai_importance = 400	
 	}
-	rename_to_iran_non_rev = {
-		potential = {
-			or = {
-				tag = ERS
-				tag = PER
+	
+	persian_nation_ardabil = {
+		major = yes
+
+		potential = {	
+					always = no
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_persia_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
 			}
-			is_revolutionary = no
-			NOT = { has_country_flag = is_iran_flag }
+			OR = {
+				ai = no
+				NOT = { exists = PER }
+			}
+			tag = ARL
+
+			
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+				province_id = 429		# Isfahan
 		}
 		allow = {
-			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			#is_at_war = no
+			NOT = { exists = PER }
+			OR = {
+				429 = {
+					controlled_by = ARL
+				}
+				429 = {
+					owned_by = ARL
+				}
+			}
 		}
 		effect = {
-			restore_country_name = yes
-			override_country_name = IRAN_STRING
-			set_country_flag = is_iran_flag
+			change_tag = PER
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government = monarchy }
+					is_revolutionary = no
+				}
+				change_government_to_monarchy = yes
+			}
+			set_government_rank = 3
+			if = {
+				limit = {
+					has_reform = states_general_reform
+				}
+				remove_government_reform = states_general_reform
+			}
+			persia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = PER
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige_or_monarch_power = { amount = 25 }
+			if = {
+				limit = {
+					NOT = { primary_culture = persian }
+				}
+				change_primary_culture = persian
+			}
+			set_country_flag = formed_persia_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			change_religion = shiite
+			add_government_reform = persian_theocracy
+			define_ruler = {
+				name = "Ismail I"
+				dynasty = "Safavid"
+				
+				religion = shiite
+				claim = 100
+				adm = 5
+				dip = 4
+				mil = 5
+				}							
+			if = {
+				limit = { has_heir = yes }
+				kill_heir = {}
+			}	
+			change_unit_type = gunpowder_empire
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = -10
+				}
+			change_estate_land_share = {
+				estate = estate_burghers
+				share = -10
+				}
+			change_estate_land_share = {
+				estate = estate_church
+				share = 10
+				}
+			add_country_modifier = {
+				name = "persia_united"
+				duration = 5475
+			}
+			if = {
+				limit = { has_estate_privilege = estate_burghers_indebted_to_burghers }
+				remove_estate_privilege = estate_burghers_indebted_to_burghers
+			}
+			add_war_exhaustion = -20
+			if = {
+				limit = { corruption = 5 }
+				add_corruption = -10
+			}
+			add_manpower = 20
+			add_treasury = 1000
+			if = {
+				limit = { stability = -3 }
+				add_stability = 3
+			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
-		ai_importance = 0
+		ai_importance = 400	
 	}
 }

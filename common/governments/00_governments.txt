@@ -129,6 +129,14 @@ monarchy = {
 				austrian_absolute_monarchy
 				merchant_aristocracy_reform
 				gothic_monarchy_reform
+				###Gecko###
+				persian_theocracy
+				mughal_government
+				silk_road_empire
+				gc_imperial_spain_reform
+				empire_of_hungary_reform
+				gc_greater_hungary_reform
+				gc_french_empire
 			}
 		}
 		hereditary_vs_nobility = {
@@ -184,6 +192,9 @@ monarchy = {
 				#1.37 Trebizond
 				crusader_nobility_reform
 				TIM_plunder_economy
+				###Gecko###
+				establish_qurchi_corps_reform
+				upgrade_janissary_weaponry_reform
 			}
 		}
 		bureaucracy = {
@@ -215,6 +226,10 @@ monarchy = {
 				#1.37 Hungary
 				continue_the_renaissance_reform
 				timurid_diwan_reform
+				###Gecko###
+				foreign_ghilman_reform
+				derbend_organization_reform
+				zabt_reform
 			}
 		}
 		state_and_religion = {
@@ -258,6 +273,9 @@ monarchy = {
 				#1.36
 				legacy_of_the_safavid_reform
 				state_madrasas_reform
+				###Gecko###
+				establish_auxiliary_support_system_reform
+				qizilbash_in_officer_corps_reform
 			}
 		}
 		military_doctrines = {
@@ -384,6 +402,9 @@ monarchy = {
 				legacy_of_eranshahr_reform
 				superiority_of_the_state_reform
 				divided_aristocracy_reform
+				###Gecko###
+				reforms_of_abbas_i_reform
+				janissary_administrative_positions_reform
 			}
 		}
 		economical_matters = {
@@ -448,6 +469,9 @@ monarchy = {
 				#1.35
 				peters_government_reform
 				nizam_i_cedid_reform
+				###Gecko###
+				gecko_noble_regiments_reform
+				gecko_professional_army_reform
 			}
 		}
 	}
@@ -622,6 +646,7 @@ republic = {
 		#Mamluks
 		egyptian_government_reform
 		h_reform_dominion
+		united_cantons_legacy
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
@@ -944,6 +969,7 @@ republic = {
 				rule_through_plunder_reform
 				admiralty_reform
 				military_rulership_reform
+				gecko_professional_army_reform
 			}
 		}
 		office_selection = {
@@ -1161,6 +1187,10 @@ tribal = {
 				tribe_becomes_horde_reform
 				tribe_remain_tribal_reform
 				tribe_tribal_unity
+				###Gecko###
+				#gc_tribe_becomes_horde_reform
+				gecko_professional_army_reform
+				gecko_noble_regiments_reform
 			}
 		}
 	}
@@ -1474,6 +1504,9 @@ theocracy = {
 				pursuit_of_knowledge_reform
 				#1.37
 				seven_provinces_reform
+				###Gecko###
+				gecko_noble_regiments_reform
+				gecko_professional_army_reform
 			}
 		}
 		separation_of_power_theocracy = {

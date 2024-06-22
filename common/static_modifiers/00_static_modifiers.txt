@@ -2421,3 +2421,10 @@ sailors_percentage = {
 reverse_sailors_percentage = {
 
 }
+
+janissary_regiment = {
+	assault_fort_ability = 0.5
+	drill_gain_modifier = 0.5
+	reinforce_cost_modifier = 1
+}
+
