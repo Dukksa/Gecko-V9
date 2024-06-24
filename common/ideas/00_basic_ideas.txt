@@ -418,7 +418,7 @@ infrastructure_ideas = {
 	category = ADM
 	
 	bonus = {
-		development_cost = -0.75
+		development_cost = -0.075
 	}
 	state_efficiency = {
 		global_prosperity_growth = 0.25
