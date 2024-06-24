@@ -471,26 +471,58 @@ estate_nobles_right_of_counsel = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	is_valid = {
 		has_dlc = "Domination"
+		cavalry_fraction = 0.01
 	}
 	can_select = {
 	}
 	influence = 0.1
+	mechanics = {
+		enables_cossack_regiments
+	}
 	benefits = {
 		cav_to_inf_ratio = 0.15
-		cavalry_power = 0.05
 	}
 	penalties = {
 		cavalry_cost = 0.1
 	}
+	modifier = {
+		special_unit_forcelimit = 0.1
+	}
 	on_granted = {
-		enable_estate_action = {
-			estate_action = RAISE_HOST_NOMADIC_TRIBES
+		if = {
+			limit = {
+				capital_scope = { 
+					owned_by = ROOT
+				}
+			}
+			capital_scope = { 
+				add_unit_construction = {
+					type = cavalry
+					amount = 5
+					speed = 1 #seems to be capped to some point
+					cost = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+			}
+			random_owned_province = { 
+				add_unit_construction = {
+					type = cavalry
+					amount = 5
+					speed = 1 #seems to be capped to some point
+					cost = 0
+				}
+			}
 		}
 	}
 	on_revoked = {
-		disable_estate_action = {
-			estate_action = RAISE_HOST_NOMADIC_TRIBES
-		}
 	}
 	on_invalid = {
 		disable_estate_action = {

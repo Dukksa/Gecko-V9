@@ -1377,6 +1377,11 @@ streltsy_modifier = {
 }
 
 cossacks_modifier = {
+	cavalry_power = 0.75
+	cavalry_cost = -0.75
+	cav_to_inf_ratio = 0.5
+	#fire_damage_received = -0.25
+	#shock_damage_received = -0.25
 }
 
 tercio_modifier = {
@@ -2130,7 +2135,8 @@ voc_indiamen_ship = {
 
 
 cossacks_regiment = {
-    shock_damage = 0.10
+    shock_damage = 0.15
+	fire_damage_received = -0.1
 }
 
 carolean_regiment = {
