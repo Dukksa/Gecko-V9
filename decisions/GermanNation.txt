@@ -11,6 +11,10 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
+				tag = NGF
+				tag = SGF
+			}
+			OR = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
