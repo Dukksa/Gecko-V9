@@ -61,6 +61,7 @@ country_decisions = {
 					}
 		}
 		potential = {
+			ai = no
 			any_owned_province = {
 					area_for_scope_province = {
 								type = all
@@ -100,6 +101,7 @@ country_decisions = {
 		}
 		potential = { 
 			any_owned_province = {
+				ai = no
 				base_production = 10
 				is_state = yes
 				hidden_trigger = { NOT = { has_province_flag = echo_provincial_investment_pflag } }
@@ -697,6 +699,7 @@ country_decisions = {
         color = { 166  0  0 }
 		potential = {
 			splendor = 600
+			ai = no
 		}
 		allow = {	
 			splendor = 800
