@@ -2639,7 +2639,7 @@ impressment_offices = {
 	}
 
 	modifier = {
-		local_sailors = 250
+		local_sailors = 750
 		ship_recruit_speed = -0.1
 		local_ship_cost = -0.05
 	}
