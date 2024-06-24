@@ -1919,8 +1919,7 @@ RUS_ideas = {
 		shock_damage_received = -0.15
 	}
 	siberian_frontier = {
-		may_establish_frontier = yes
-		auto_explore_adjacent_to_colony = yes
+		infantry_power = 0.10
 	}
 	russian_artillery_yard = {
 		artillery_cost = -0.2
