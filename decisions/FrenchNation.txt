@@ -124,6 +124,7 @@ country_decisions = {
 		potential = {
 			always = yes
 			tag = FRA
+			NOT = { has_country_flag = formed_france_flag }
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -191,6 +192,7 @@ country_decisions = {
 			}
 			add_government_reform = gc_french_empire
 			override_country_name = FRENCH_EMPIRE
+			set_country_flag = formed_france_flag
 		}
 
 	}
