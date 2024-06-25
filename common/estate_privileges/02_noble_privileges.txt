@@ -478,7 +478,6 @@ estate_nobles_right_of_counsel = {
 	influence = 0.1
 	mechanics = {
 		enables_cossack_regiments
-		allowed_cossack_fraction = 0.2
 	}
 	benefits = {
 		cav_to_inf_ratio = 0.15
@@ -488,6 +487,9 @@ estate_nobles_right_of_counsel = {
 	}
 	modifier = {
 		special_unit_forcelimit = 0.1
+	}
+	modifier_by_land_ownership = {
+		allowed_cossack_fraction = 0.5
 	}
 	on_granted = {
 		if = {
