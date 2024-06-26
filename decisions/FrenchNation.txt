@@ -134,7 +134,13 @@ country_decisions = {
 				area = north_brabant_area
 				area = holland_area
 				area = picardy_area
+				area = catalonia_area
+				area = piedmont_area 
 				region = france_region
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
 			}
 		}
 		allow = {
@@ -159,6 +165,14 @@ country_decisions = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			france_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			piedmont_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			catalonia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

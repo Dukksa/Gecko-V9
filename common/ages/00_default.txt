@@ -244,7 +244,7 @@ age_of_discovery = {
 		songhai_timbuktu_university = {
 			allow = {
 					OR = {
-						tag = SON
+						tag = YAO
 						tag = PR2
 					}	
 				}	
@@ -289,7 +289,7 @@ age_of_discovery = {
 		ab_timurids_tech = {
 			allow = {
 				OR = {
-					tag = SHY
+					tag = TRS
 					tag = BUK
 					tag = TIM
 				}	
@@ -752,41 +752,6 @@ age_of_absolutism = {
 				factor = 100
 			}
 		}
-		ab_million_rice_fields = {
-			allow = {
-				OR = {
-					culture_group = burman
-					culture_group = malay
-					culture_group = thai_group
-					tag = YUE
-					tag = CXI
-					tag = WUU
-				}
-			}
-			modifier = {
-				land_forcelimit_modifier = 0.2
-				global_manpower_modifier = 0.2
-			}
-			ai_will_do = {
-				factor = 100
-			}
-		}
-		ab_bushido = {
-			allow = {
-				OR = {
-					culture_group = japanese_g
-					culture_group = korean_g
-					tag = JAP
-					tag = KOR
-				}
-			}
-			modifier = {
-				land_morale = 0.1
-			}
-			ai_will_do = {
-				factor = 100
-			}
-		}
 		ab_sweden_manpower = {
 			allow = {
 				OR = {
@@ -796,31 +761,6 @@ age_of_absolutism = {
 			}
 			modifier = {
 				manpower_recovery_speed = 0.35
-			}
-			ai_will_do = {
-				factor = 100
-			}
-		}
-
-		ab_manchu_banner = {
-			allow = {
-				OR = {
-					tag = MCH
-					tag = QNG
-				}
-			}
-			effect = {
-				if = {
-					limit = {
-						NOT = { primary_culture = manchu }
-						NOT = { primary_culture = manchu_new }
-						NOT = { has_government_attribute = allow_banners }
-					}
-					custom_tooltip = ab_manchu_banner_tt
-				}
-			}
-			modifier = {
-				amount_of_banners = 0.75
 			}
 			ai_will_do = {
 				factor = 100
@@ -973,6 +913,7 @@ age_of_revolutions = {
 			allow = {
 				OR = {
 					tag = PRU
+					tag = NGF
 					tag = GER
 				}
 			}
