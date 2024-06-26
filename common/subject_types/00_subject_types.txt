@@ -462,7 +462,7 @@ appanage = {
 	}
 	
 	# Subject Interactions
-	seize_court_resources = yes
+	seize_court_resources = no
 	request_extra_levies = yes
 	grant_administrative_autonomy = yes
 	#(disable)
