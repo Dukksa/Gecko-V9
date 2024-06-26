@@ -150,14 +150,6 @@ union = {
 	end_date = 1469.8.27
 }
 
-#Ardalan
-vassal = {
-	first = QOM
-	second = ARD
-	start_date = 1444.1.1
-	end_date = 1446.1.1
-}
-
 vassal = {
 	first = QAR
 	second = ARD
@@ -222,14 +214,6 @@ vassal = {
 	second = TBR
 	start_date = 1792.1.1
 	end_date = 1809.1.1
-}
-
-#Luristan
-vassal = {
-	first = QOM
-	second = LRI
-	start_date = 1444.1.1
-	end_date = 1446.1.1
 }
 
 #Sistan
