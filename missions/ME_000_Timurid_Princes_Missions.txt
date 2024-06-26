@@ -64,7 +64,7 @@
 		}
 		position = 4
 		trigger = {
-			
+			tag = TRS
 		}
 		effect = {
 			set_country_flag = ME_ALLOW_FORMATION_OF_TIMURIDS

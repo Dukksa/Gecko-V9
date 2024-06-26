@@ -552,25 +552,6 @@ WoC_austria_2 = {
 			num_of_generals = 1
 		}
 		effect = {
-			if = {
-				limit = {
-					ai = yes
-				}
-				random_list = {
-					50 = { set_country_flag = hab_hre_branch }
-					10 = { set_country_flag = hab_germany_branch }
-				}
-				swap_non_generic_missions = yes
-			}
-			else = {
-				enable_branching_mission_review_without_ai = {
-					key = HAB
-				}
-			}
-
-			custom_tooltip = SEPERATOR_TOOLTIP
-
-
 			bohemia_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
