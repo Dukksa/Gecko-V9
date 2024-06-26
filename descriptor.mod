@@ -1,4 +1,5 @@
 version="1.37.*"
+picture="thumbnail.png"
 tags={
 	"Balance"
 	"Missions And Decisions"
