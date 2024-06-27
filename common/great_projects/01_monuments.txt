@@ -20167,7 +20167,6 @@ X_SPA_lonja_de_la_seda = {
 			mercantilism_cost = -0.10
 		}
 		on_upgraded = {
-			owner = { add_mercantilism = 5 }
 		}
 	}
 	tier_2 = {
@@ -20187,7 +20186,7 @@ X_SPA_lonja_de_la_seda = {
 			mercantilism_cost = -0.20
 		}
 		on_upgraded = {
-			owner = { add_mercantilism = 10 }
+			owner = { add_mercantilism = 5 }
 		}
 	}
 	tier_3 = {
@@ -20208,7 +20207,7 @@ X_SPA_lonja_de_la_seda = {
 			merchants = 1
 		}
 		on_upgraded = {
-			owner = { add_mercantilism = 20 }
+			owner = { add_mercantilism = 10 }
 		}
 	}
 	

@@ -19,6 +19,11 @@ discovered_by = muslim
 discovered_by = ottoman
 add_province_triggered_modifier = religious_center
 add_province_triggered_modifier = non_catholic_rome
+add_province_triggered_modifier = conquest_of_rome
+add_province_modifier = {
+	name = critical_province
+	duration = -1
+}
 
 extra_cost = 8
 center_of_trade = 1

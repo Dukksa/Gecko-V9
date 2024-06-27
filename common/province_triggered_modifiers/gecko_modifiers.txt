@@ -476,6 +476,42 @@ conquest_of_london = {
 	
 	}
 }
+conquest_of_rome = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+				NOT = { 	
+					has_global_modifier_value = {
+					which = discipline
+					value = 0.31
+					}
+				}
+				lazio_area = {	
+					type = all
+					country_or_non_sovereign_subject_holds = PREV
+				}
+				
+			}
+		controlled_by = ROOT
+		has_owner_accepted_culture = yes	
+		}
+				
+
+	discipline = 0.025
+	land_morale = 0.025
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
 
 conquest_of_berlin = {
 	potential = {
