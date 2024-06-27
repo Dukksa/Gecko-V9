@@ -91,6 +91,7 @@ country_decisions = {
 				tag = BAV
 				tag = SWA
 				tag = ROT
+				tag = FKN
             }
 			culture_group = germanic
 		}
