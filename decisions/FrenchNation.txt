@@ -136,6 +136,7 @@ country_decisions = {
 				area = picardy_area
 				area = catalonia_area
 				area = piedmont_area 
+				area = alsace_area
 				region = france_region
 			}
 			OR = {
@@ -173,6 +174,10 @@ country_decisions = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			catalonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			alsace_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
