@@ -1110,7 +1110,7 @@ defensive_ideas = {
 		military_tactics = 0.1
 	}
 	improved_body_armor = {
-		shock_damage_received = -0.2
+		shock_damage_received = -0.15
 	}
 	defensive_mentality = {
 		defensiveness = 0.15

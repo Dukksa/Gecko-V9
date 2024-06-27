@@ -38,7 +38,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 4000
+		months = 40
 		
 		modifier = {
 			factor = 2
