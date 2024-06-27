@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = musa_rule
 primary_culture = serbian
-religion = jewish
+religion = orthodox
 technology_group = eastern
 capital = 4176	# Krusevac
 historical_friend = BOS

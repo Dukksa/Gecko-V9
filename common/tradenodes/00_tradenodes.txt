@@ -166,6 +166,9 @@ katsina = {
 ethiopia={
 	location=2772
 	inland=yes
+	color = {
+		173 216 230
+	}
 	outgoing={
 		name="alexandria"
 		path={
@@ -438,6 +441,9 @@ lahore={
 
 
 gulf_of_aden={
+	color = {
+		200 20 30
+	}
 	location=4346
 	outgoing={
 		name="zanzibar"
@@ -473,6 +479,9 @@ gulf_of_aden={
 	}
 }
 basra={
+	color = {
+		160 32 240
+	}
 	location=1335
 	outgoing={
 		name="aleppo"
