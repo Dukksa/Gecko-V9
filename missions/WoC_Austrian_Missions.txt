@@ -1768,6 +1768,7 @@ WoC_austria_3_1 = {
 					exists = HUN
 				}
 			}
+			tag = HAB
 			custom_trigger_tooltip = {
 				tooltip = gecko_habsburg_empire_requirements_tooltip
 				erzgebirge_area = {

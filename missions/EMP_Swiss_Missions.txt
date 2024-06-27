@@ -983,6 +983,22 @@ swiss_missions_5 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			alsace_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					is_empty = no
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_rhineland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					is_empty = no
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 

@@ -100,6 +100,8 @@ country_decisions = {
 				province_id = 134 # Vienna
 				province_id = 75 # Straßburg
 				province_id = 67 # Nürnberg
+				province_id = 165 #bern 
+				province_id = 4715 #rothenburg
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -117,6 +119,8 @@ country_decisions = {
 			owns_core_province = 134 # Vienna
 			owns_core_province = 75 # Straßburg
 			owns_core_province = 67 # Nürnberg
+			owns_core_province = 165 # bern
+			owns_core_province = 4715 #rothenburg
             num_of_owned_provinces_with = {
 				is_core = ROOT
 				region = south_german_region
