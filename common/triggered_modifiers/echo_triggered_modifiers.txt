@@ -709,3 +709,153 @@ qolu_ai_sieges = {
 	yearly_corruption = -0.1
 	diplomatic_upkeep = -2
 }
+
+Peace_of_Italy = {
+	potential = {
+		OR = {
+			tag = MLO
+			tag = VEN
+			tag = SIC
+			tag = TTS
+			tag = ITA
+			tag = ROM
+		}
+		
+	}
+
+	trigger = {
+		italy_region = {
+			owner = { culture_group = latin }
+		}
+		OR = {
+				great_power_rank = 5
+				 is_great_power = no
+				}
+		#is_at_war = no
+		NOT = { is_lacking_institutions = yes }
+		NOT = {	
+			italy_region = {
+					owner = {
+						OR = {
+						  culture_group = germanic
+						  culture_group = french
+						  culture_group = iberian
+						  culture_group = carpathian
+						  culture_group = maghrebi
+						  culture_group = turko_semitic 
+						  }
+					}
+			}											
+		}			
+	}
+	#all_power_cost = -0.025
+	#build_cost = -0.05
+	production_efficiency = 0.05
+	global_tax_modifier = 0.05
+	global_manpower_modifier = 0.05
+	global_autonomy = -0.025
+	monthly_reform_progress_modifier = 0.075
+	infantry_power = 0.05
+}
+
+Control_African_Slave_Trade = {
+	potential = {
+		num_of_owned_provinces_with = {
+			value = 1
+			continent = africa
+			trade_goods = slaves
+		}
+		NOT = { technology_group = western }
+	}
+
+	trigger = {
+		owns_all_provinces = {
+			continent = africa
+			trade_goods = slaves
+		}		
+	}
+	global_manpower_modifier = 0.25
+	infantry_power = 0.2
+	discipline = 0.05
+	land_morale = 0.1
+	land_forcelimit_modifier = 0.25
+}
+
+African_Gold_Monopoly = {
+	potential = {
+		num_of_owned_provinces_with = {
+			value = 1
+			continent = africa
+			trade_goods = gold
+		}
+	}
+
+	trigger = {
+		owns_all_provinces = {
+			continent = africa
+			trade_goods = gold
+		}		
+	}
+	global_trade_goods_size_modifier = 0.1
+	gold_depletion_chance_modifier = -1
+	global_prosperity_growth  = 0.1
+	monthly_gold_inflation_modifier = -1
+	development_cost = -0.1
+	build_time = -0.5
+	build_cost = -0.1
+}
+
+African_Gold = {
+	potential = {
+		num_of_owned_provinces_with = {
+			value = 1
+			continent = africa
+			trade_goods = gold
+		}
+	}
+
+	trigger = {
+		num_of_owned_provinces_with = {
+			value = 3
+			continent = africa
+			trade_goods = gold
+		}			
+	}
+	global_trade_goods_size_modifier = 0.05
+	monthly_gold_inflation_modifier = -0.25
+	gold_depletion_chance_modifier = -0.25
+	#build_time = -0.25
+	build_cost = -0.05
+}
+
+African_Slave_Trade = {
+	potential = {
+
+	}
+
+	trigger = {
+		num_of_owned_provinces_with = {
+			value = 5
+			continent = africa
+			trade_goods = slaves
+		}		
+	}
+	mil_tech_cost_modifier = -0.05
+	infantry_power = 0.05
+}
+
+African_Slave_Trade_Western = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		num_of_owned_provinces_with = {
+			value = 5
+			continent = africa
+			trade_goods = slaves
+		}		
+	}
+	global_trade_goods_size_modifier = 0.1
+	global_tariffs = 0.1
+}
