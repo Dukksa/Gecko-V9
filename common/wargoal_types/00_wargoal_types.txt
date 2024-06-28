@@ -759,6 +759,7 @@ take_capital_conquest = {
 
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 	}
 	
@@ -769,6 +770,7 @@ take_capital_conquest = {
 
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 	}
 
@@ -790,6 +792,7 @@ take_core = {
 		peace_options = {
 			po_demand_provinces
 			po_return_cores
+			make_canton
 		}
 		
 		prov_desc = ALL_CORES
@@ -806,6 +809,7 @@ take_core = {
 		
 		peace_options = {
 			po_demand_provinces
+			make_canton
 			po_return_cores
 		}
 		
@@ -829,6 +833,7 @@ take_capital_claim = {
 		
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 
 		prov_desc = ALL_CLAIMS
@@ -841,6 +846,7 @@ take_capital_claim = {
 
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 	}
 
@@ -862,6 +868,7 @@ take_claim = {
 		}
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 		prov_desc = ALL_CLAIMS
 	}
@@ -878,6 +885,7 @@ take_claim = {
 		}
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 		prov_desc = ALL_CLAIMS
 	}
@@ -898,6 +906,7 @@ take_province_nationalist = {
 		
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 		
 		country_desc = ALL_CGROUP_COUNTRIES
@@ -915,6 +924,7 @@ take_province_nationalist = {
 		
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 		
 		country_desc = ALL_CGROUP_COUNTRIES
@@ -939,6 +949,7 @@ take_capital_imperial = {
 		
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 		
 		country_desc = ALL_COUNTRIES
@@ -957,6 +968,7 @@ take_capital_imperial = {
 		
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 		
 		country_desc = ALL_COUNTRIES
@@ -1065,6 +1077,7 @@ take_province_revolutionary = {
 		
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 		
 		country_desc = ALL_GOV_ENEMIES
@@ -1082,6 +1095,7 @@ take_province_revolutionary = {
 		
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 		
 		country_desc = ALL_GOV_ENEMIES
@@ -1142,6 +1156,7 @@ take_capital_liberation = {
 			po_release_vassals
 			po_release_annexed
 			po_return_cores
+			make_canton
 		}
 		
 		country_desc = ALL_OPPRESSORS
@@ -1154,6 +1169,7 @@ take_capital_liberation = {
 
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 	}
 
@@ -1250,6 +1266,7 @@ superiority_war_against_heresy = {
 			po_change_religion
 			po_raid_churches
 			po_release_vassals
+			make_canton
 		}
 		
 		country_desc = ALL_INFIDELS
@@ -1268,6 +1285,7 @@ superiority_war_against_heresy = {
 		peace_options = {
 			po_demand_provinces
 			po_release_vassals
+			make_canton
 		}
 		
 		country_desc = ALL_INFIDELS
@@ -1383,6 +1401,7 @@ take_province_religion = {
 		
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 		
 		prov_desc = ALL_REL_GROUP_PROVS
@@ -1399,6 +1418,7 @@ take_province_religion = {
 		
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 		
 		prov_desc = ALL_REL_GROUP_PROVS
@@ -1421,6 +1441,7 @@ superiority_heretic = {
 		
 		peace_options = {
 			po_change_religion
+			make_canton
 			po_demand_provinces
 		}
 
@@ -1435,6 +1456,7 @@ superiority_heretic = {
 
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 	}
 
@@ -1472,6 +1494,7 @@ take_province_excommunication = {
 			po_become_vassal
 			po_gold
 			po_concede_defeat
+			make_canton
 		}
 		prov_desc = ALL_CORES_AND_CLAIMS_AND_NEIGHBORS
 	}
@@ -1485,6 +1508,7 @@ take_province_excommunication = {
 
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 	}
 
@@ -1577,6 +1601,7 @@ take_province_ban = {
 			po_release_annexed
 			po_return_cores
 			po_demand_provinces
+			make_canton
 		}
 
 		prov_desc = ALL_HRE_PROVS
@@ -1589,6 +1614,7 @@ take_province_ban = {
 
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 	}
 
@@ -1617,6 +1643,7 @@ take_capital_ban = {
 			po_release_annexed
 			po_return_cores
 			po_demand_provinces
+			make_canton
 		}
 
 		prov_desc = ALL_HRE_PROVS
@@ -1629,6 +1656,7 @@ take_capital_ban = {
 
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 	}
 
@@ -1951,6 +1979,7 @@ annex_country = {
 
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 		
 		allow_annex = yes
@@ -1963,6 +1992,7 @@ annex_country = {
 
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 	}
 
@@ -2308,6 +2338,7 @@ superiority_religious_league = {
 			po_gold
 			po_annul_treaties
 			po_change_hre_religion
+			make_canton
 		}
 	}
 	
@@ -2326,6 +2357,7 @@ superiority_religious_league = {
 			po_gold
 			po_annul_treaties
 			po_change_hre_religion
+			make_canton
 		}
 	}
 	
@@ -2450,6 +2482,7 @@ take_capital_force_join_hre = {
 		peace_options = {
 			po_join_empire
 			po_release_annexed
+			make_canton
 		}
 	}
 
@@ -2457,6 +2490,7 @@ take_capital_force_join_hre = {
 		badboy_factor = 1.0
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 	}
 
@@ -2473,6 +2507,7 @@ take_capital_reintegrate_into_hre = {
 		peace_options = {
 			po_reintegrate_into_hre
 			po_release_annexed
+			make_canton
 		}
 	}
 
@@ -2480,6 +2515,7 @@ take_capital_reintegrate_into_hre = {
 		badboy_factor = 1.0
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 	}
 
@@ -2501,6 +2537,7 @@ superiority_reichskrieg = {
 		peace_options = {
 			po_demand_provinces
 			po_guaranteed_join_empire
+			make_canton
 			po_release_annexed
 		}
 	}
@@ -2516,6 +2553,7 @@ superiority_reichskrieg = {
 		
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 	}	
 	
@@ -2807,6 +2845,7 @@ war_goal_usurp_electorate = {
 			po_trade_power
 			po_steer_trade
 			po_humiliate
+			make_canton
 		}
 		
 		deny_annex = yes
@@ -2821,6 +2860,7 @@ war_goal_usurp_electorate = {
 
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 	}
 
@@ -2936,6 +2976,7 @@ war_empire_cb_wgt = {
 		}
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 		prov_desc = ALL_CLAIMS
 	}
@@ -2952,6 +2993,7 @@ war_empire_cb_wgt = {
 		}
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 		prov_desc = ALL_CLAIMS
 	}
@@ -3003,6 +3045,7 @@ superiority_spread_the_true_faith = {
 			po_gold
 			po_change_culture
 			po_change_culture_same_culture_group
+			make_canton
 		}
 		
 		deny_annex = yes
@@ -3021,6 +3064,7 @@ superiority_spread_the_true_faith = {
 		
 		peace_options = {
 			po_demand_provinces
+			make_canton
 			po_release_vassals
 		}
 		

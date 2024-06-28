@@ -53,9 +53,6 @@ swiss_missions_1 = {
 				}
 				add_core = ROOT
 			}
-			hidden_effect = {
-				clr_country_flag = swi_had_canton_event_flag
-			}
 		}
 	}
 	
