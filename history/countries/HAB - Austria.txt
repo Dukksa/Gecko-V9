@@ -17,6 +17,7 @@ add_truce_with = MLO
 add_truce_with = HSA
 add_truce_with = SIC
 add_truce_with = ROT
+add_truce_with = SWI
 add_accepted_culture = slovene
 
 1395.8.29 = {
