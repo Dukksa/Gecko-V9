@@ -21811,7 +21811,7 @@ gme_pest_basilica_estergom = {
 }
 
 gme_bretagne_castles = {
-	start = 172
+	start = 4384
 	date = 1.01.01
 	time = { months = 120 }
 	build_cost = 1000

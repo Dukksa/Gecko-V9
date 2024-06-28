@@ -3,6 +3,7 @@
 owner = JOL
 controller = JOL
 add_core = JOL
+add_core = POR
 is_city = yes
 culture = senegambian
 capital = "Awlil"

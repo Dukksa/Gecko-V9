@@ -10549,7 +10549,7 @@ YEM_ideas = {
 
 RAS_ideas = {
 	start = {
-		infantry_power = 0.1
+		infantry_power = 0.15
 		global_manpower_modifier = 0.2
 	}
 	bonus = {
@@ -10561,7 +10561,7 @@ RAS_ideas = {
 	free = yes
 	
 	ras_living_imam = {
-		land_morale = 0.1
+		land_morale = 0.15
 	}
 	ras_yemeni_highlands = {
 		global_trade_goods_size_modifier = 0.1
