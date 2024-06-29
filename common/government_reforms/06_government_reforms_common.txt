@@ -5335,8 +5335,8 @@ cuman_lancers_reform = {
 		army_tradition_on_stackwipe = yes
 	}
 	modifiers = {
-		cav_to_inf_ratio = 0.25
-		cavalry_cost = -0.2
+		cav_to_inf_ratio = 0.15
+		cavalry_cost = -0.1
 	}
 	
 	ai = {

@@ -11,5 +11,7 @@ gc_imperial_spain_reform = { #tier 1
 	    manpower_in_true_faith_provinces = 0.1
 		governing_capacity = 150
 		vassal_income = 0.1
+		has_tercio = yes
+		allowed_tercio_fraction = 0.1
 	}
 }
