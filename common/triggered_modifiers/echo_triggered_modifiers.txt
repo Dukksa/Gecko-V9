@@ -774,11 +774,11 @@ Control_African_Slave_Trade = {
 			trade_goods = slaves
 		}		
 	}
-	global_manpower_modifier = 0.25
-	infantry_power = 0.2
-	discipline = 0.05
-	land_morale = 0.1
-	land_forcelimit_modifier = 0.25
+	global_manpower_modifier = 0.125
+	infantry_power = 0.1
+	discipline = 0.025
+	land_morale = 0.05
+	land_forcelimit_modifier = 0.125
 }
 
 African_Gold_Monopoly = {
@@ -796,13 +796,13 @@ African_Gold_Monopoly = {
 			trade_goods = gold
 		}		
 	}
-	global_trade_goods_size_modifier = 0.1
-	gold_depletion_chance_modifier = -1
-	global_prosperity_growth  = 0.1
-	monthly_gold_inflation_modifier = -1
-	development_cost = -0.1
-	build_time = -0.5
-	build_cost = -0.1
+	global_trade_goods_size_modifier = 0.05
+	gold_depletion_chance_modifier = -0.25
+	global_prosperity_growth  = 0.05
+	monthly_gold_inflation_modifier = -0.25
+	development_cost = -0.05
+	build_time = -0.25
+	build_cost = -0.05
 }
 
 African_Gold = {
