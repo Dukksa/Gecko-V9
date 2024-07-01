@@ -1,0 +1,133 @@
+calculate_council_support = {
+	set_variable = {
+		which = odds_to_accept
+		value = 50
+	}
+	set_variable = {
+		which = odds_to_reject
+		value = 40
+	}
+	if = {
+		limit = {
+			has_country_flag = me_bur_council_of_war_acceptance_chance_tournament_flag
+			NOT = {
+				had_country_flag = {
+					flag = me_bur_council_of_war_acceptance_chance_tournament_flag
+					days = 1825
+				}
+			}
+		}
+		multiply_variable = {
+			which = odds_to_accept
+			value = 1.3
+		}
+	}
+	if = {
+		limit = {
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 75
+			}
+		}
+		multiply_variable = {
+			which = odds_to_accept
+			value = 1.5
+		}
+	}
+	if = {
+		limit = {
+			manpower_percentage = 0.65
+		}
+		multiply_variable = {
+			which = odds_to_accept
+			value = 1.5
+		}
+	}
+	if = {
+		limit = {
+			NOT = { had_recent_war = 5 }
+		}
+		multiply_variable = {
+			which = odds_to_accept
+			value = 2
+		}
+	}
+	if = {
+		limit = {
+			ME_toison_dor = 1
+		}
+		multiply_variable = {
+			which = odds_to_accept
+			value = 1.25
+		}
+	}
+	if = {
+		limit = {
+			ruler_has_personality = charismatic_negotiator_personality
+		}
+		multiply_variable = {
+			which = odds_to_accept
+			value = 1.1
+		}
+	}
+	
+	set_variable = {
+		which = odds_to_accept_divider
+		which = odds_to_accept
+	}
+	
+	multiply_variable = {
+		which = odds_to_accept_divider
+		value = 100
+	}
+	
+	change_variable = {            
+		which = odds_to_reject
+		which = odds_to_accept
+	}
+	
+	divide_variable = {
+		which = odds_to_accept_divider
+		which = odds_to_reject
+	}
+	
+	set_variable = {
+		which = chance_to_accept
+		which = odds_to_accept_divider
+	}
+}
+
+bur_add_effect_from_selling_fashion_efficiency = {
+	multiply_variable = {
+		which = ME_sale_cost_fashion_bur
+		value = 0.15 #nerf
+	}
+	export_to_variable = {
+		variable_name = temp_var
+		value = modifier:art_selling_efficiency
+		who = ROOT
+	}
+	change_variable = {
+		which = temp_var
+		value = 1
+	}
+	multiply_variable = {
+		which = ME_sale_cost_fashion_bur
+		which = temp_var
+	}
+}
+
+bur_sell_fashion_effect = {
+	add_estate_loyalty = {
+		estate = all
+		loyalty = 20
+	}
+	
+	custom_tooltip = " "
+	
+	add_prestige_or_monarch_power = { amount = 30 }
+	
+	custom_tooltip = " "
+	
+	add_splendor = 300
+}

@@ -1,0 +1,55 @@
+carolingian_brother_union = {
+	copy_from = personal_union
+	can_have_great_projects_moved_by_overlord = yes
+
+	sprite = GFX_subject_tributary_state
+	diplomacy_overlord_sprite = GFX_diplomacy_leadtributary
+	diplomacy_subject_sprite = GFX_diplomacy_amtributary
+	
+	has_overlords_ruler = no
+	joins_overlords_wars = yes
+	can_fight_independence_war = yes
+	can_be_integrated = yes
+	takes_diplo_slot = no
+	relative_power_class = 1
+	uses_military_focus = yes
+	can_release_in_peace = no
+	overlord_protects_external = yes
+	counts_for_borders = yes
+	can_use_claims = yes
+	gets_help_with_rebels = yes
+	trust_on_start = 20
+	base_liberty_desire = -25.0
+	liberty_desire_development_ratio = 0.01
+	forcelimit_to_overlord = 1
+	military_focus = 1.0
+	share_rebel_popup = yes
+	can_set_mil_focus = yes
+	can_send_missionary_to_subject = yes
+	relative_power_class = 0
+	pays_overlord = 2
+	
+	restoration_cb = cb_restore_personal_union
+
+	can_fight = {
+	}
+	can_rival = {
+	}
+	can_ally = {
+	}
+	can_marry = {
+	}
+
+	# Subject Interactions:
+	placate_rulers = no
+	enforce_culture = yes
+	siphon_income = yes
+	support_loyalists = yes
+	knowledge_sharing = yes
+	# (continuous)
+	embargo_rivals = yes
+
+	modifier_overlord = {
+		modifier = bur_carolingian_realm_buffs
+	}
+}
