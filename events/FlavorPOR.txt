@@ -1112,8 +1112,6 @@ country_event = {
 				overextension_percentage = 1.5
 			}
 		}
-		1248 = { cede_province = POR }
-		add_claim = 1248
 		add_prestige = 10
 	}
 	option = {		# Glorious!
@@ -1126,7 +1124,6 @@ country_event = {
 			}
 		}
 		ai_chance = { factor = 10 }
-		add_claim = 1248
 		add_prestige = 10
 	}
 }
