@@ -3,7 +3,7 @@
 owner = FRS
 controller = FRS
 culture = persian
-religion = sunni
+religion = shiite
 capital = "Bandar Langeh"
 trade_goods = spices
 hre = no

@@ -25,6 +25,7 @@ country_decisions = {
 			NOT = { tag = ARB }
 			OR = {
 				tag = AFG
+				tag = FRS
 				tag = ARL
 			}
 			is_colonial_nation = no
@@ -182,7 +183,7 @@ country_decisions = {
 	persian_nation_isfahan = {
 		major = yes
 		potential = {
-					always = no
+				always = no
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_persia_flag }
@@ -195,7 +196,7 @@ country_decisions = {
 				NOT = { exists = PER }
 			}
 			
-			tag = ISF
+			tag = FRS
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -215,10 +216,10 @@ country_decisions = {
 			NOT = { exists = PER }
 			OR = {
 				416 = {
-					controlled_by = ISF	
+					controlled_by = FRS	
 				}
 				416 = {
-					owned_by = ISF	
+					owned_by = FRS	
 				}
 			}
 		}

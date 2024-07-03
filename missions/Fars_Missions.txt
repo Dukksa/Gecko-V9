@@ -1,18 +1,13 @@
-﻿Timurid_princes_missions_1 = {
+Fars_Missions_slot_1 = {
 	slot = 1
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = TRS
-			tag = AFG
-			tag = QOM
-			tag = KHO
-		}
-		
+		tag = FRS
+
 	}
 	has_country_shield = yes
-	
+
 	Timurid_prince_power_strugle = {
 		icon = me_mission_timurids_princedom_the_power_struggle
 		required_missions = { }
@@ -63,7 +58,7 @@
 		}
 		position = 4
 		trigger = {
-			tag = TRS
+			tag = FRS
 		}
 		effect = {
 			set_country_flag = ME_ALLOW_FORMATION_OF_TIMURIDS
@@ -72,79 +67,120 @@
 	}
 }
 
-Timurid_princes_missions_2 = {
-	slot = 2
-	generic = no
-	ai = yes
-	potential = {
-		OR = {
-			tag = TRS
-			tag = AFG
-			tag = QOM
-			tag = KHO
+	Fars_Missions_slot_2 = {
+		slot = 2
+		generic = no
+		ai = yes
+		potential = {
+			tag = FRS
+
 		}
-		
-	}
-	has_country_shield = yes
-	
-	Timurid_support_within_the_people = {
-		icon = me_mission_timurids_princedom_support_by_the_people
-		required_missions = {
-			Timurid_prince_power_strugle
-			Timurid_heir_of_timur
-		}
-		position = 2
-		provinces_to_highlight = {
-			owned_by = ROOT
-			unrest = 0.01
-		}
-		trigger = {
-			all_owned_province = { 
-				NOT = { unrest = 0.01 }
+		has_country_shield = yes
+
+		Timurid_support_within_the_people = {
+			icon = me_mission_timurids_princedom_support_by_the_people
+			required_missions = {
+				Timurid_prince_power_strugle
+				Timurid_heir_of_timur
 			}
-		}
-		effect = {
-			add_dip_power = 50
-		}
-	}
-	
-	Timurid_grand_ruler = {
-		icon = me_mission_timurids_princedom_the_great_ruler
-		required_missions = {
-			Timurid_support_within_the_people
-		}
-		position = 3
-		trigger = {
-			OR = {
-				total_development = 400
-				AND = {
-					ADM = 3
-					DIP = 3
-					MIL = 3
+			position = 2
+			provinces_to_highlight = {
+				owned_by = ROOT
+				unrest = 0.01
+			}
+			trigger = {
+				all_owned_province = { 
+					NOT = { unrest = 0.01 }
 				}
 			}
+			effect = {
+				add_dip_power = 50
+			}
 		}
-		effect = {
-			add_prestige_or_monarch_power = { amount = 20 }
+		
+		Timurid_grand_ruler = {
+			icon = me_mission_timurids_princedom_the_great_ruler
+			required_missions = {
+				Timurid_support_within_the_people
+			}
+			position = 3
+			trigger = {
+				OR = {
+					total_development = 400
+					AND = {
+						ADM = 3
+						DIP = 3
+						MIL = 3
+					}
+				}
+			}
+			effect = {
+				add_prestige_or_monarch_power = { amount = 20 }
+			}
+		}
+
+		Fars_conquer_mushasha = {
+			position = 7
+			required_missions = {
+				Fars_conquer_Kerman
+			}
+			provinces_to_highlight = {
+				OR = {
+					area = khuzestan_area
+					area = basra_area
+				}
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			}
+			trigger = {
+			khuzestan_area = { 
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+			basra_area = { 
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		} 
+		}
+			effect = { 
+				add_yearly_manpower = 1.6
+				add_years_of_income = 1.5
+				bahrain_area = {
+					add_permanent_claim = ROOT
+				}
+				nafud_area ={
+					add_permanent_claim = ROOT
+				}
+				qasim_area ={
+					add_permanent_claim = ROOT
+				}
+				yamamah_area = {
+					add_permanent_claim = ROOT
+				}
+				pirate_coast_area = {
+					add_permanent_claim = ROOT
+				}
+				oman_area = {
+					add_permanent_claim = ROOT
+				}
+				muscat_area = {
+					add_permanent_claim = ROOT
+				}
+				2999 = {add_permanent_claim = ROOT}
+			}
 		}
 	}
-}
+	
 
-Timurid_princes_missions_3 = {
+Fars_Missions_slot_3 = {
 	slot = 3
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = TRS
-			tag = AFG
-			tag = QOM
-			tag = KHO
-		}
-		
+		tag = FRS
+
 	}
 	has_country_shield = yes
-	
+
 	Timurid_heir_of_timur = {
 		icon = me_mission_timurids_princedom_heir_of_timur
 		required_missions = { }
@@ -277,23 +313,73 @@ Timurid_princes_missions_3 = {
 			}
 		}
 	}
+
+	Fars_build_to_forcelimit = {
+		position = 5
+		icon = mission_assemble_an_army
+		required_missions = { }
+		trigger = {
+			army_size_percentage = 0.9
+			num_of_generals = 1
+		}
+		effect = {
+			4345 ={ add_core = ROOT}
+			2234 ={ add_core = ROOT}
+			432 ={ add_core = ROOT}
+			2220 ={ add_core = ROOT}
+			431 ={ add_core = ROOT}
+			4327 ={ add_core = ROOT}
+
+		}
+	}
+	Fars_conquer_Kerman = {
+		position = 6
+		required_missions = {
+			Fars_build_to_forcelimit
+		}
+		icon = league_of_the_public_weal
+		provinces_to_highlight = {
+			OR {
+			province_id = 4345 
+			province_id = 2234 
+			province_id = 432 
+			province_id = 2220 
+			province_id = 431 
+			province_id = 4327 
+		}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = { 
+			owns_core_province= 4345 
+			owns_core_province= 2234 
+			owns_core_province= 432 
+			owns_core_province= 2220 
+			owns_core_province= 431 
+			owns_core_province= 4327 
+		}
+		effect = {
+			makran_area = { add_permanent_claim = ROOT}
+			kalat_area = { add_permanent_claim = ROOT}
+			khuzestan_area = { add_permanent_claim = ROOT}
+			basra_area = { add_permanent_claim = ROOT}
+			add_great_project_tier = {
+				type = bam_citadel
+				tier = 1
+			}
+		}
+	}
+
 }
 
-Timurid_princes_missions_4 = {
+Fars_Missions_slot_4 = {
 	slot = 4
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = TRS
-			tag = AFG
-			tag = QOM
-			tag = KHO
-		}
-		
+		tag = FRS
+
 	}
 	has_country_shield = yes
-	
 	Timurid_pacify_the_persian_people = {
 		icon = me_mission_timurids_princedom_pacify_the_persians
 		required_missions = { 
@@ -383,24 +469,99 @@ Timurid_princes_missions_4 = {
 			}
 		}
 	}
-}
 
-Timurid_princes_missions_5 = {
+	Fars_conquer_baluchistan = {
+		position = 7
+		required_missions = {
+			Fars_conquer_Kerman
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = kalat_area
+				area =makran_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+		kalat_area = { 
+		type = all
+		country_or_non_sovereign_subject_holds = ROOT
+	}
+		makran_area = { 
+		type = all
+		country_or_non_sovereign_subject_holds = ROOT
+	} 
+	}
+		effect = { 
+			add_prestige = 15
+			add_years_of_income = 1.5
+			persia_region = {
+				add_permanent_claim = ROOT
+			}
+			sistan_area = {
+				add_permanent_claim = ROOT
+			}
+			mashhad_area = {
+				add_permanent_claim = ROOT
+			}
+			ghor_area = {
+				add_permanent_claim = ROOT
+			}
+			balkh_area = {
+				add_permanent_claim = ROOT
+			}
+			khabulistan_area = {
+				add_permanent_claim = ROOT
+			}
+			northern_sindh_area = {
+				add_permanent_claim = ROOT
+			}
+			sindh_area ={
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	Fars_advance_into_persia ={
+		position = 8
+		required_missions = {
+			Fars_conquer_baluchistan
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = isfahan_area
+				area = birjand_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			isfahan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			birjand_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 9125 #25 years
+			}
+		}
+	}
+}
+Fars_Missions_slot_5 = {
 	slot = 5
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = TRS
-			tag = AFG
-			tag = QOM
-			tag = KHO
-		}
+		tag = FRS
 		
 	}
 	has_country_shield = yes
-	
-	
+
 	Timurid_follow_seljuk_architecture = {
 		icon = me_mission_timurids_princedom_seljuk_architecture
 		required_missions = { }
@@ -490,6 +651,47 @@ Timurid_princes_missions_5 = {
 					duration = 7300
 					hidden = yes
 				}
+			}
+		}
+	}
+	Fars_advance_into_india ={
+		position = 8
+		required_missions = {
+			Fars_conquer_baluchistan
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = sindh_area
+				area = northern_sindh_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			sindh_area  = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			northern_sindh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			marwar_area = {
+				add_permanent_claim = ROOT
+			}
+			patan_area = {
+				add_permanent_claim = ROOT
+			}
+			saurashtra_area = {
+				add_permanent_claim = ROOT
+			}
+			ahmedabad_area = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "hajj_ports"
+				duration = 7300
 			}
 		}
 	}

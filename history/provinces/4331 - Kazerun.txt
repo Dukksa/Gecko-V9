@@ -3,7 +3,7 @@
 owner = FRS
 controller = FRS
 culture = luri
-religion = sunni
+religion = shiite
 capital = "Kazerun"
 trade_goods = wine #and cotton and Dates
 hre = no

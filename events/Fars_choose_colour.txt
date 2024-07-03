@@ -1,0 +1,105 @@
+country_event = {
+	id = frscolor.1
+	title = "flavor_tim.18.t"
+	desc = "flavor_tim.18.d"
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = no
+	major = yes
+	trigger = {
+		tag = FRS
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = frscolor.1.a
+		
+		custom_tooltip = " "
+		
+		custom_tooltip = FRS_color_will_change
+		hidden_effect = {
+			FRS = {
+				change_country_color = { color = { 79 0 185 } }
+			}
+		}
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = frscolor.1.b
+		
+		custom_tooltip = " "
+		
+		custom_tooltip = FRS_color_will_change
+		hidden_effect = {
+			FRS = {
+				change_country_color = { color = { 254 197 229 } }
+			}
+		}
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = frscolor.1.c
+		
+			
+		custom_tooltip = " "
+		
+		custom_tooltip = FRS_color_will_change
+		hidden_effect = {
+			FRS = {
+				change_country_color = { color = { 0 62 107 } }
+			}
+		}
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = frscolor.1.e
+
+		custom_tooltip = " "
+		
+		custom_tooltip = FRS_color_will_change
+		hidden_effect = {
+			FRS = {
+				change_country_color = { color = { 232 206 0 } }
+			}
+		}
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = frscolor.1.g
+		
+		custom_tooltip = " "
+		
+		custom_tooltip = FRS_color_will_change
+		hidden_effect = {
+			FRS = {
+				change_country_color = { color = { 100 255 200 } }
+			}
+		}
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		
+		name = frscolor.1.f
+		
+		
+	}
+}
