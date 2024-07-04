@@ -2071,7 +2071,7 @@ streltsy_regiment = {
 }
 
 tercio_regiment = {
-	shock_damage_received = -0.3
+	shock_damage_received = -0.2
 	#morale_damage_received = -0.1
 }
 
