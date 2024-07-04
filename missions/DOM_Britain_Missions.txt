@@ -21,7 +21,7 @@ eng_wotr_row_slot_1 = {
 	}
 	has_country_shield = yes
 
-	eng_war_of_the_roses = {
+	eng_war_of_the_roses_test_penis = {
 		icon = mission_rb_war_of_the_roses
 		required_missions = {  }
 		position = 1
