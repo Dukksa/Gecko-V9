@@ -8,8 +8,8 @@ capital = "Angoche"
 base_manpower = 1
 trade_goods = ivory
 hre = no
-base_tax = 3
-base_production = 3
+base_tax = 1	
+base_production = 1
 add_local_autonomy = 25
 
 discovered_by = east_african
