@@ -8,11 +8,11 @@ country_event = {
 	major = yes
 	trigger = {
 		tag = FRS
-		NOT = { has_country_flag = changed_color_fars }
 	}
 	mean_time_to_happen = {
 		days = 1
 	}
+	fire_only_once = yes
 	option = {
 		ai_chance = {
 			factor = 1
@@ -26,7 +26,6 @@ country_event = {
 			FRS = {
 				change_country_color = { color = { 79 0 185 } }
 			}
-			set_country_flag = changed_color_fars
 		}
 	}
 	
@@ -43,7 +42,7 @@ country_event = {
 			FRS = {
 				change_country_color = { color = { 254 197 229 } }
 			}
-			set_country_flag = changed_color_fars
+			
 		}
 	}
 	
@@ -61,7 +60,7 @@ country_event = {
 			FRS = {
 				change_country_color = { color = { 0 62 107 } }
 			}
-			set_country_flag = changed_color_fars
+			
 		}
 	}
 	
@@ -78,7 +77,7 @@ country_event = {
 			FRS = {
 				change_country_color = { color = { 232 206 0 } }
 			}
-			set_country_flag = changed_color_fars
+			
 		}
 	}
 	
@@ -95,7 +94,7 @@ country_event = {
 			FRS = {
 				change_country_color = { color = { 100 255 200 } }
 			}
-			set_country_flag = changed_color_fars
+			
 		}
 	}
 	
@@ -106,7 +105,7 @@ country_event = {
 		
 		name = frscolor.1.f
 		hidden_effect = {
-			set_country_flag = changed_color_fars
+			
 		}
 		
 	}
