@@ -4,11 +4,11 @@ culture = swahili
 religion = sunni
 capital = "Malindi"
 
-base_manpower = 2
+base_manpower = 1
 trade_goods = iron
 hre = no
-base_tax = 4
-base_production = 4
+base_tax = 1
+base_production = 1
 discovered_by = east_african
 discovered_by = indian
 discovered_by = muslim

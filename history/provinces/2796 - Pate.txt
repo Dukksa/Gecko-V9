@@ -5,11 +5,11 @@ culture = swahili
 religion = sunni
 capital = "Siyu"
 
-base_manpower = 2
+base_manpower = 1
 trade_goods = cloth
 hre = no
-base_tax = 3 
-base_production = 3
+base_tax = 1
+base_production = 1
 discovered_by = east_african
 discovered_by = indian
 discovered_by = muslim

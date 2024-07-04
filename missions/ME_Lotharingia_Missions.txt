@@ -218,7 +218,7 @@ ME_bur_1 = {
 			define_advisor = {
 				type = diplomat
 				skill = 3
-				cost_multiplier = 0.25
+				cost_multiplier = 0.75
 			}
 		} 
 	}
@@ -786,9 +786,9 @@ ME_bur_2 = {
 
 		effect = {  
 			define_advisor = {
-				type = ME_toison_dor
+				type = army_reformer
 				skill = 3
-				cost_multiplier = 0.25
+				cost_multiplier = 0.75
 			}
 			custom_tooltip = " "
 			custom_tooltip = ME_BUR_BUFF_NOBILITY_IN_OFFICER_CORPS
@@ -868,10 +868,10 @@ ME_lot_2 = {
 			custom_tooltip = SEPERATOR_TOOLTIP
 
 			define_advisor = {
-				type = GRA_alchemist
+				type = diplomat
 				skill = 2
 				culture = frankish
-				cost_multiplier = 0.25
+				cost_multiplier = 0.75
 			}
 			hidden_effect = {
 				every_owned_province = {
@@ -970,10 +970,10 @@ ME_bur_3 = {
 			custom_tooltip = SEPERATOR_TOOLTIP
 			
 			define_advisor = {
-				type = ME_mercenary_commander
+				type = commandant
 				culture = swiss
 				skill = 3
-				cost_multiplier = 0.25
+				cost_multiplier = 0.75
 			}
 			custom_tooltip = " "
 			custom_tooltip = ME_BUR_UNLOCK_SWISS_MERCENARIES
@@ -1978,16 +1978,9 @@ ME_lot_5 = {
 		} 
 
 		effect = {  
-			change_country_color = { 
-				color = { 254  220  0 }
-			}
-			set_country_flag = has_overriden_color_flag
-
-			custom_tooltip = SEPERATOR_TOOLTIP
-
 			add_corruption = -2
 
-			ME_add_power_projection = {
+			add_power_projection = {
 				amount = 15
 			}
 		} 
