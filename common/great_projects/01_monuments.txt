@@ -25141,7 +25141,7 @@ gme_santiago_compostela = {
 		country_modifiers = {
 			papal_influence = 0.5
 			church_loyalty_modifier = 0.05
-			land_morale = 0.0125
+			land_morale = 0.0325
 		}
 		on_upgraded = { }
 	}
@@ -25159,7 +25159,7 @@ gme_santiago_compostela = {
 		country_modifiers = {
 			global_missionary_strength = 0.01
 			papal_influence = 1
-			land_morale = 0.025
+			land_morale = 0.075
 			church_loyalty_modifier = 0.10
 		}
 		on_upgraded = { }
