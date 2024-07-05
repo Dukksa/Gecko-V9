@@ -49,22 +49,6 @@ Steppe_rule_2 = {
 	}
 	horde_unity = 5
 }
-
-Tortilla_workaround_POR = {
-	potential = {
-		ai = no
-		OR = {
-			tag = POR
-			overlord = {tag = POR}
-		}	
-	}
-	
-
-	trigger = {	
-		religion = catholic
-	}
-	global_colonial_growth = -20
-}
 Minor = {
 	potential = {
 	OR = {
