@@ -11,8 +11,8 @@ religious_school = maliki_school
 	monarch = {
 		name = "Mohammed Shah IV"
 		dynasty = "Sayyid"
-		ADM = 3
-		DIP = 4
+		ADM = 5
+		DIP = 3
 		MIL = 4
 	}
 }	
