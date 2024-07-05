@@ -2318,7 +2318,7 @@ MAM_ideas = {
 
 EGY_ideas = {
 	start = {
-		trade_efficiency = 0.1
+		trade_efficiency = 0.15
 		administrative_efficiency = 0.05
 	}
 
@@ -2342,7 +2342,7 @@ EGY_ideas = {
 		infantry_power = 0.1
 	}
 	nile_production = {
-		production_efficiency = 0.10
+		production_efficiency = 0.15
 	}
 	westernize_the_military = {
 		max_general_fire = 1
