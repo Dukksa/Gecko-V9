@@ -8,7 +8,7 @@ trade_company_west_africa = {
 		1147 2289 2290 2294 #Benin
 		1112 1113 1116 2239 #Jolof
 		1114 1117 2238 #Futa Jalon
-		1167 1171 1172 1174 #Angola
+		1167 1171 1172 #Angola
 	}
 	
 	# Specific
