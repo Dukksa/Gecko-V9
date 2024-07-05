@@ -79,7 +79,7 @@ timbuktu = {
 	inland = yes
 	color = { 230 231 62 }
 	outgoing = {
-		name = "tunis"
+		name = "sevilla"
 		path = {
 		}
 		control = {
