@@ -1143,7 +1143,7 @@ lubeck_missions_3 = {
 				type = treasurer
 				skill = 3 
 				culture = tuscan
-				cost_multiplier = 0.3
+				cost_multiplier = 0.75
 				name = "Luca Pacioli" 
 			}
 			add_adm_power = 100 
