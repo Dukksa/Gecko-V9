@@ -580,6 +580,9 @@ WoC_austria_2 = {
 				name = "succesful_bid_for_imperial_crown"
 				duration = 5475 #15 years
 			}
+			2967 = {
+				add_core = root
+			}			
 		}
 		ai_weight = {
 			factor = 500	#Austria should ALWAYS want to be the Emperor
