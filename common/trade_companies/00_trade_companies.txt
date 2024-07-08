@@ -56,43 +56,8 @@ trade_company_east_africa = {
 	names = {
 		name = "TRADE_COMPANY_EAST_AFRICA_Africa_Trade_Company"
 	}
-}
 
-trade_company_west_india = {
-	color = { 135 104 85 }
-	
-	provinces = {
-		518 2058 2087 4501 4462 #mewar_area
-		512 4502 4507 2066 #jangladesh_area
-		513 514 2067 4506 #marwar_area
-		504 2088 4503 4504 #sindh_area
-		505 2072 4505 #northern_sindh_area
-		529 530 2089 4429 #konkan_area
-		515 521 2052 4454 4455 #saurashtra_area
-		517 2036 4430 #tapti_area
-		503 2053 4456 4480 #patan_area
-		516 2051 2054 4512 4457 #ahmedabad_area
-	}
-	
-	# Generic
-	names = {
-		trigger = {
-			OR = {
-				tag = GBR
-				tag = ENG
-			}
-			primary_culture = english
-		}
-		name = "TRADE_COMPANY_INDIA_British_trade_company_south_india"
-	}
-	names = {
-		name = "TRADE_COMPANY_WEST_INDIA_Root_Culture_GetName"
-	}
-	names = {
-		name = "TRADE_COMPANY_WEST_INDIA_India_Trade_Company"
-	}
 }
-
 trade_company_east_india = {
 	color = { 230 0 0 }
 	
@@ -224,6 +189,19 @@ trade_company_north_india = {
 		522 2060 2062 2061 4498 4499 519 520 2064 4500 523 2094 4494 4495 4497 555 2055 2095 4490 524 556 2063 4496 525 528 740 4464 4465 559 2059 4459 4466 4467 2097 2098 4468      
 		1785 1787 2200 507 2075 2076 4510 4513 2077 2078 4511 510 2065 4411 4463
 		506 4509 4508 2079 2086
+		2129 2128 676 705 706 2134 4204 677 2130 4205 565 4481 4482 557 2070 2071 4483 4485 4514 4515 4516 4517 4518 4519 4520 
+		4521 2074 2073 508 4449
+		509 4493 511 2069 4492 4491 554
+		18 2058 2087 4501 4462 #mewar_area
+		512 4502 4507 2066 #jangladesh_area
+		513 514 2067 4506 #marwar_area
+		504 2088 4503 4504 #sindh_area
+		505 2072 4505 #northern_sindh_area
+		529 530 2089 4429 #konkan_area
+		515 521 2052 4454 4455 #saurashtra_area
+		517 2036 4430 #tapti_area
+		503 2053 4456 4480 #patan_area
+		516 2051 2054 4512 4457 #ahmedabad_area		
 	}
 	
 	# Generic
@@ -1333,24 +1311,6 @@ trade_company_chengdu = {
 	}
 }
 
-trade_company_lhasa = {
-	color = { 106 112 138 }
-	
-	provinces = {
-		2129 2128 676 705 706 2134 4204 677 2130 4205 565 4481 4482 557 2070 2071 4483 4485 4514 4515 4516 4517 4518 4519 4520 
-		4521 2074 2073 508 4449
-		509 4493 511 2069 4492 4491 554
-	}
-	
-	# Specific
-	# Generic
-	names = {
-		name = "TRADE_COMPANY_LHASA_Root_Culture_GetName"
-	}
-	names = {
-		name = "TRADE_COMPANY_LHASA_Asia_Trade_Company"
-	}
-}
 
 trade_company_lahore = {
 	color = { 63 150 30 }
