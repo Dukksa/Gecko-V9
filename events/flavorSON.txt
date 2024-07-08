@@ -257,6 +257,7 @@ country_event = {
 			estate = estate_dhimmi
 			loyalty = -10
 		}
+		swap_non_generic_missions = yes
 
 		ai_chance = {
 			factor = 1
@@ -294,6 +295,7 @@ country_event = {
 			estate = estate_dhimmi
 			loyalty = 10
 		}
+		swap_non_generic_missions = yes
 
 		ai_chance = {
 			factor = 1
@@ -310,10 +312,6 @@ country_event = {
 				has_idea_group = humanist_ideas
 			}
 		}
-	}
-
-	after = {
-		swap_non_generic_missions = yes
 	}
 }
 

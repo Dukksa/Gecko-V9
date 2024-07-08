@@ -912,8 +912,8 @@ songhai_question_mark_slot = {
 			was_tag = YAO
 			tag = YAO
 		}	
-		NOT = { has_country_flag = son_islamtic_focus }
-		NOT = { has_country_flag = son_tolderance_focus }
+		NOT = { has_country_flag = son_islamic_focus }
+		NOT = { has_country_flag = son_tolerance_focus }
 	}
 	has_country_shield = yes
 
@@ -1318,7 +1318,7 @@ songhai_jihad_slot = {
 			was_tag = YAO
 			tag = YAO
 		}	
-		has_country_flag = son_islamtic_focus
+		has_country_flag = son_islamic_focus
 	}
 	has_country_shield = yes
 
@@ -1614,7 +1614,7 @@ songhai_protection_slot = {
 			was_tag = YAO
 			tag = YAO
 		}	
-		has_country_flag = son_tolderance_focus
+		has_country_flag = son_tolerance_focus
 	}
 	has_country_shield = yes
 
