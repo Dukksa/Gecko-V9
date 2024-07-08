@@ -515,7 +515,10 @@ age_of_reformation = {
 		}
 		ab_mughal_artillery = {
 			allow = {
-				tag = MUG
+				OR ={
+					tag = HIN
+					tag = DLH
+				}
 			}
 			modifier = {
 				fire_damage = 0.15

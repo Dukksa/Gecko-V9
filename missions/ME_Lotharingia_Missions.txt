@@ -1133,11 +1133,6 @@ ME_bur_3 = {
 			else = {
 				theologian = 2
 			}
-			has_government_power = {
-				mechanic_type = golden_fleece_mechanic
-				power_type = golden_fleece_support
-				value = 35
-			}
 			monthly_mil = 9
 		} 
 
