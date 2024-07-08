@@ -1098,7 +1098,7 @@ ME_healed_religious_turmoil = {
 }
 
 ME_seljuk_architecture = {
-	build_cost = -0.2
+	build_cost = -0.1
 	prestige = 1
 }
 
