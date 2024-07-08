@@ -150,7 +150,7 @@ country_event = {
 		ARA = {
 			had_country_flag = {
 				flag = alfonso_died_yes_really
-				days = 7
+				days = 700
 			}
 		}
 		OR = {
