@@ -160,11 +160,11 @@ ship_names = {
 	"Gr�ner Drache" "Herzogtum Cleve" "Kastell Spandau" "Kronprinz van Preu�en" "K�nig von Preu�en" "K�nig von Spanien" "K�nig Wilhelm" "Littauer Bauer" "Maria Catharina"
 	"Markgraf von Brandenburg" "Nordischer L�ve" "Preu�ischer Adler" "Princess Maria" "Prinz Adalbert" "Prinz Ludwig" "Prinz Philipp" "Prinz von Preu�en" "Prinz Wilhelm"
 	"Prinzess Maria" "Rother L�ve" "Sankt Johannes der T�ufer" "Sankt Josef" "Sankt Peter" "Schloss Oranienburg" "Stad Emden" "Vogel Greif" "Wappen von Brandenburg"
-	"Wappen von Cleve" "Wilhelmine Margrethe" Afrikaner Amazone Arminius Barbarossa Basilisk Berlin Bersteinf�nger Bielefeld Blitz Britannia Bulle Camaeleon Churprinz
-	Clementia Cleve Comet Cyclop Danzig Delphin Derffinger Dorothea Drache Eichhorn Falke Fortuna Frauenlob Frede Fuchs Gazelle Gefion Grille Grossfriedrichburg Habicht
-	Hansa Hay Hela Hertha Hy�ne Jupiter Kronprinz Leopard Makarele Maria Mars Merkur Meteor Mohrian Morian Mummelpot Musquito Natter Neptun Niobe Pallas Pax Pfeil
-	Pierlepomp Post Potsdam Prosperpina Rommelpot Rosenfelde Rover Salamander Schwalbe Seeritter Spandau Sperber Stralsund Thetis Tiger Undine Vineta Wasserhund Wespe
-	Wolkens�ule
+	"Wappen von Cleve" "Wilhelmine Margrethe" "Afrikaner Amazone" "Arminius Barbarossa" "Basilisk" "Berlin" "Bersteinf�nger" "Bielefeld" "Blitz" "Britannia" "Bulle Camaeleon" "Churprinz"
+	"Clementia" "Cleve" "Comet" "Cyclop" "Danzig" "Delphin" "Derffinger" "Dorothea" "Drache" "Eichhorn" "Falke" "Fortuna" "Frauenlob" "Frede" "Fuchs" "Gazelle" "Gefion" "Grille" "Grossfriedrichburg Habicht"
+	"Hansa" "Hay Hela Hertha Hy�ne" "Jupiter" "Kronprinz" "Leopard" "Makarele" "Maria" "Mars" "Merkur" "Meteor" "Mohrian" "Morian Mummelpot" "Musquito" "Natter" "Neptun" "Niobe" "Pallas" "Pax Pfeil"
+	"Pierlepomp" "Post" "Potsdam" "Prosperpina" "Rommelpot" "Rosenfelde" "Rover" "Salamander" "Schwalbe" "Seeritter" "Spandau" "Sperber" "Stralsund" "Thetis" "Tiger" "Undine" "Vineta" "Wasserhund" "Wespe"
+	"Wolkens�ule"
 }
 
 army_names = {

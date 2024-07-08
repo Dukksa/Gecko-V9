@@ -39,10 +39,6 @@ country_event = {
 						NOT = { had_recent_war = 5 }
 					}
 					modifier = {
-						factor = 1.25
-						ME_toison_dor = 1
-					}
-					modifier = {
 						factor = 1.1
 						ruler_has_personality = charismatic_negotiator_personality
 					}
