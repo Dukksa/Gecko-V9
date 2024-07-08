@@ -1694,16 +1694,8 @@ venice_missions_slot_3 = {
 			num_of_galley = 10
 		}
 		effect = {
-			if = {
-				limit = { ai = no }
-				enable_branching_mission_review_without_ai = { key = VEN }
-			}
-			else = {
-				random_list = {
-					10 = { set_country_flag = ven_standing_army_missions_flag }
-					10 = { set_country_flag = ven_mercenary_army_missions_flag }
-					10 = { set_country_flag = ven_navy_missions_flag }
-				}
+			country_event = {
+				id = flavor_ven.55
 			}
 			lombardy_area = {
 				limit = {

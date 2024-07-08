@@ -8,4 +8,12 @@
  emp_bur_cisjurania_desc:0 ""
  emp_bur_lombardy_title:0 "Reform The Administration"
  emp_bur_lombardy_desc:0 ""
- 
+ #event for venice to get new missions
+ flavor_ven.55.t: "Directon of our army"
+ flavor_ven.55.d: "The time has come for us to chose in which direction will our army be further developed"
+ flavor_ven.55.a: "Professional direction"
+ flavor_ven.55.a.tt: "we must build ourselves a better professionally trained troops"
+ flavor_ven.55.b: "Mercenary direction"
+ flavor_ven.55.b.tt: "we must build ourselves a better mercenary focused force paid by our glorious economy"
+ flavor_ven.55.c: "Naval direction"
+ flavor_ven.55.c.tt: "we must build ourselves a bigger navy if we wish to have any trade and naval dominance in mediteraneo"

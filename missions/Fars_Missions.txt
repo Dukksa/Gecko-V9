@@ -359,10 +359,12 @@ Fars_Missions_slot_3 = {
 			kalat_area = { add_permanent_claim = ROOT}
 			khuzestan_area = { add_permanent_claim = ROOT}
 			basra_area = { add_permanent_claim = ROOT}
-			#add_great_project_tier = {
-			#	type = bam_citadel
-			#	tier = 1
-			#}
+			2220 = {
+				add_great_project_tier = {
+					type = bam_citadel
+					tier = 1
+				}
+			}
 		}
 	}
 
