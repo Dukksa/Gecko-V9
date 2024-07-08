@@ -1536,13 +1536,7 @@ ned_glorious_revolution_effect_opt_1 = {
 INC_upgrade_pachakuti = {
 	if = {
 		limit = {
-			OR = {
-				has_ruler_flag = CSU_pachakuti_upgrades_flag
-				AND = {
-					NOT = { mission_completed = CSU_ground_shaker }
-					has_mission = CSU_ground_shaker
-				}
-			}
+			has_ruler_flag = CSU_pachakuti_upgrades_flag
 		}
 		change_$type$ = 1
 		custom_tooltip = CSU_only_for_this_ruler
