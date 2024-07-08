@@ -546,7 +546,7 @@ songhai_maghreb_slot = {
 				}
 				add_permanent_claim = ROOT
 			}
-			add_permanent_claim = 2247‚
+			add_permanent_claim = 2247
 			5829 = {
 				add_core = ROOT
 				cede_province = ROOT

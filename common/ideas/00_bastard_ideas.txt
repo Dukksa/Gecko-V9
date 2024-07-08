@@ -1348,7 +1348,7 @@ PR2_ideas = {
 FRA_ideas = {
 	start = {
 		country_military_power = 1
-		global_manpower_modifier = 0.2
+		global_manpower_modifier = 0.1
 	}
 	
 	bonus = {
