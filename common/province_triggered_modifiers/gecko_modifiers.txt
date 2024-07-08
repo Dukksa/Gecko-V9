@@ -513,6 +513,47 @@ conquest_of_rome = {
 	}
 }
 
+conquest_of_warszawa = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	trigger = {
+		owner = {
+				NOT = { tag = POL }
+				NOT = { tag = PLC }
+				NOT = { 	
+					has_global_modifier_value = {
+					which = infantry_power
+					value = 0.31
+					}
+				}
+				NOT = { 	
+					has_global_modifier_value = {
+					which = cavalry_power
+					value = 0.61
+					}
+				}
+				mazovia_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = PREV
+				}	
+			}
+		controlled_by = ROOT
+		has_owner_accepted_culture = yes	
+		}	
+	infantry_power = 0.05
+	cavalry_power = 0.05
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
 conquest_of_berlin = {
 	potential = {
 		normal_or_historical_nations = yes
