@@ -1,0 +1,14 @@
+bookmark =
+{
+	name = "RISE_OF_THE_OTTOMANS"
+	desc = "RISE_OF_THE_OTTOMANS_DESC"
+	date = 1444.11.11
+	
+	center = 112
+	default = yes
+	
+	country = SER
+
+	easy_country = SER
+
+}
