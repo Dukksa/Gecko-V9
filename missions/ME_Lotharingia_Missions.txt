@@ -900,11 +900,6 @@ ME_lot_2 = {
 		}
 
 		trigger = {  
-			has_government_power = {
-				mechanic_type = golden_fleece_mechanic
-				power_type = golden_fleece_support
-				value = 80
-			}
 			army_size = 100
 			army_tradition = 50
 		} 
