@@ -187,7 +187,7 @@ hin_slot_2 = {
 		}
 		trigger = {
 			OR = {
-				AND = {
+				or = {
 					production_leader = {
 						trade_goods = cotton
 					}
@@ -196,7 +196,7 @@ hin_slot_2 = {
 						value = yes
 					}
 				}
-				AND = {
+				or = {
 					production_leader = {
 						trade_goods = cloth
 					}
@@ -223,16 +223,12 @@ hin_slot_2 = {
 		trigger = {
 			522 = {
 				owned_by = ROOT
-				development = 20
-				OR = {
-					has_building = furnace
-					has_building = wharf
-				}
+				development = 35
 			}
 			num_of_owned_provinces_with = {
-				value = 8
+				value = 10
 				region = hindusthan_region
-				has_building = state_house
+				has_building = barracks
 			}
 			calc_true_if = {
 				all_owned_province = {
