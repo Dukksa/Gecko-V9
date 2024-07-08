@@ -24380,9 +24380,6 @@ kronborg = {
 			naval_tradition_from_trade = 0.25
 		}
 		on_upgraded = {
-			owner = {
-				add_mercantilism = 5
-			}
 		}
 	}
 
@@ -24405,7 +24402,7 @@ kronborg = {
 		}
 		on_upgraded = {
 			owner = {
-				add_mercantilism = 10
+				add_mercantilism = 5
 			}
 		}
 	}
@@ -24429,7 +24426,7 @@ kronborg = {
 		}
 		on_upgraded = {
 			owner = {
-				add_mercantilism = 20
+				add_mercantilism = 10
 			}
 		}
 	}
