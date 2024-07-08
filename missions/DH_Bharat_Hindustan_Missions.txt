@@ -225,11 +225,9 @@ hin_slot_2 = {
 				owned_by = ROOT
 				development = 35
 			}
-			num_of_owned_provinces_with = {
-				value = 10
-				region = hindusthan_region
-				has_building = barracks
-			}
+			all_owned_provinces = {
+				has_building = courthouse
+			}		
 			calc_true_if = {
 				all_owned_province = {
 					region = hindusthan_region
