@@ -26,6 +26,10 @@ country_decisions = {
 			OR = {
 				tag = AFG
 				tag = FRS
+				AND ={
+					tag = AKK
+					has_country_flag = turkoman_can_form_persia
+				}
 				tag = ARL
 			}
 			is_colonial_nation = no
