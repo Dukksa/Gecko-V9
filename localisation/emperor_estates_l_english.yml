@@ -237,6 +237,7 @@
  LAND_OWNERSHIP_MODIFIER:1 "$PERCENT|Y0&$ land ownership giving:\n$MODIFIERS$\n"
  estate_privilege_cannot_be_revoked:0 "This estate privilege cannot be revoked."
  estate_burghers_monopoly_of_textiles_effect_tooltip:2 "§RNo income from §YCloth§! or §YSilk§!§!"
+ MONOPOLY_INCOME_CLOTH_SILK_DESC: "from cloth and silk production"
  estate_burghers_monopoly_of_dyes:0 "Monopoly on Dyes"
  estate_burghers_monopoly_of_dyes_effect_tooltip:2 "§RNo income from §YDyes§!§!"
  estate_burghers_monopoly_of_dyes_mod:1 "Monopoly on Dyes"
