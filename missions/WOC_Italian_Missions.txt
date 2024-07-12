@@ -2947,7 +2947,7 @@ ITA_non_conquest_4 = {
 				option_1 = "
 					add_country_modifier = {
 						name = ITA_adapt_the_condotierri
-						duration = -1 
+						duration = 1826 
 					}
 					
 					custom_tooltip = ITA_cruelty_of_mercenaries_event_will_no_longer_happen
@@ -2956,7 +2956,7 @@ ITA_non_conquest_4 = {
 				option_2 = "
 					add_country_modifier = {
 						name = ITA_modern_military
-						duration = -1
+						duration = 1826
 					}
 				"
 			}
