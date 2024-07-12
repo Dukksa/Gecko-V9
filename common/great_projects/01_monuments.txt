@@ -25033,9 +25033,7 @@ gme_mosque_cathedral = {
 		cost_to_upgrade = { factor = 350 }
 		province_modifiers = { }
 		area_modifier = { }
-		region_modifier = {
-			local_amount_of_cawa = 0.05
-		}
+		region_modifier = { }
 		country_modifiers = {
 			tolerance_heathen = 0.5
 			tolerance_of_heathens_capacity = 0.5
@@ -25048,9 +25046,7 @@ gme_mosque_cathedral = {
 		cost_to_upgrade = { factor = 750 }
 		province_modifiers = { }
 		area_modifier = { }
-		region_modifier = {
-			local_amount_of_cawa = 0.125
-		}
+		region_modifier = { }
 		country_modifiers = {
 			tolerance_heathen = 1
 			tolerance_of_heathens_capacity = 1
@@ -25063,9 +25059,7 @@ gme_mosque_cathedral = {
 		cost_to_upgrade = { factor = 1500 }
 		province_modifiers = { }
 		area_modifier = { }
-		region_modifier = {
-			local_amount_of_cawa = 0.25
-		}
+		region_modifier = { }
 		country_modifiers = {
 			tolerance_heathen = 2
 			tolerance_of_heathens_capacity = 2
