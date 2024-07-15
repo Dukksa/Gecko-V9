@@ -278,7 +278,6 @@ expansion_ideas = {
 		num_accepted_cultures = 2
 	}
 	competetive_merchants  = {
-		placed_merchant_power_modifier = 0.25
 		trade_steering = 0.1
 		reduced_trade_penalty_on_non_main_tradenode = 0.15
 	}
@@ -722,7 +721,6 @@ maritime_ideas = {
 	}
 	overseas_merchants = {
 		merchants = 1
-		placed_merchant_power = 15
 	}
 	sea_hawks = {
 		center_of_trade_upgrade_cost = -0.2
@@ -1821,7 +1819,6 @@ extra_ideas = {
 	}
 	free_merchants = {
 		merchants = 1
-		placed_merchant_power_modifier = 0.5
 	}
 	bill_of_rights = {
 		idea_cost = -0.1

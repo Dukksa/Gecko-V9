@@ -194,7 +194,7 @@ naval_infrastructure_act = {
 
 
 	merchants = 1
-	placed_merchant_power = 15
+	global_trade_power = 0.1
 
 	effect = {}
 	removed_effect = {}

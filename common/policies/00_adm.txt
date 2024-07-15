@@ -267,8 +267,7 @@ the_loyalty_act = {
 		full_idea_group = expansion_ideas
 	}
 	
-	global_trade_power = 0.15
-	placed_merchant_power = 15
+	global_trade_power = 0.2
  
 
 	effect = {}

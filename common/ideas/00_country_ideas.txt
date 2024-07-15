@@ -157,8 +157,7 @@ EIC_ideas = {
 		global_trade_goods_size_modifier = 0.15
 	}
 	eic_chartered_merchants = {
-		merchants = 1
-		placed_merchant_power = 10
+		merchants = 2
 	}
 	eic_presidency_armies = {
 		global_manpower_modifier = 0.1
@@ -12517,7 +12516,7 @@ SND_ideas = {
 		global_missionary_strength = 0.02
 	}
 	snd_gujarati_connections = {
-		placed_merchant_power = 5
+		merchants = 1
 	}
 	snd_makli_necropolis = {
 		tolerance_own = 1

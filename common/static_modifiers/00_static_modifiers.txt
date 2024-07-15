@@ -119,7 +119,7 @@ in_capital_state = {
 	local_state_maintenance_modifier = -0.5
 	local_governing_cost_increase = -30
 	local_build_cost = -0.05
-	local_development_cost -0.05
+	local_development_cost = -0.05
 	local_has_qizilbash = yes
 }
 
