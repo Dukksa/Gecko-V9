@@ -17,10 +17,11 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR ={
+		OR = {
+			tag = SON
 			tag = YAO
 			tag = PR2
-		}
+		}	
 		owns = 1132
 		NOT = {
 			piety = 0
@@ -57,10 +58,11 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR ={
+		OR = {
+			tag = SON
 			tag = YAO
 			tag = PR2
-		}
+		}		
 		owns = 1132
 		is_core = 1132
 		OR = {
@@ -102,10 +104,11 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR ={
+		OR = {
+			tag = SON
 			tag = YAO
 			tag = PR2
-		}
+		}		
 		is_year = 1625
 		NOT = { is_year = 1660 }
 		religion_group = muslim
@@ -117,7 +120,7 @@ country_event = {
 
 	option = { 
 		name = flavor_son.3.a
-		add_prestige = 25
+		add_prestige_or_monarch_power = { amount = 25 }
 		add_stability_or_adm_power = yes
 		add_legitimacy = 25
 	}
@@ -139,10 +142,11 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR ={
+		OR = {
+			tag = SON
 			tag = YAO
 			tag = PR2
-		}
+		}		
 		is_year = 1480
 		NOT = { is_year = 1525 }
 		OR = {
@@ -257,7 +261,6 @@ country_event = {
 			estate = estate_dhimmi
 			loyalty = -10
 		}
-		swap_non_generic_missions = yes
 
 		ai_chance = {
 			factor = 1
@@ -295,7 +298,6 @@ country_event = {
 			estate = estate_dhimmi
 			loyalty = 10
 		}
-		swap_non_generic_missions = yes
 
 		ai_chance = {
 			factor = 1
@@ -313,6 +315,10 @@ country_event = {
 			}
 		}
 	}
+
+	after = {
+		swap_non_generic_missions = yes
+	}
 }
 
 # Ali Ber becomes heir
@@ -323,10 +329,11 @@ country_event = {
 	picture = SONGHAI_RULER_eventPicture
 	fire_only_once = yes
 	trigger = {
-		OR ={
+		OR = {
+			tag = SON
 			tag = YAO
 			tag = PR2
-		}
+		}	
 		is_year = 1450
 		NOT = { adm = 3 }
 		NOT = { mil = 5 }
@@ -366,7 +373,7 @@ country_event = {
 
 	option = {	#Naaah
 		name = flavor_son.6.b
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 
 		ai_chance = {
 			factor = 0
@@ -464,7 +471,7 @@ country_event = {
 
 	option = {
 		name = flavor_son.10.b
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 
 		ai_chance = {
 			factor = 0
@@ -578,14 +585,14 @@ country_event = {
 	option = {	#Offer the Songhain a marriage!
 		name = flavor_son.13.a
 		tooltip = {
-			white_peace = SON
-			create_marriage = SON
-			SON = {
+			white_peace = YAO
+			create_marriage = YAO
+			YAO = {
 				vassalize = JNN
 			}
 		}
 		hidden_effect = {
-			SON = {
+			YAO = {
 				country_event = {
 					id = flavor_son.10
 				}
@@ -597,7 +604,7 @@ country_event = {
 			modifier = {
 				factor = 0
 				war_score_against = {
-					who = SON
+					who = YAO
 					value = 30
 				}
 			}
@@ -635,10 +642,11 @@ country_event = {
 	hidden = yes
 
 	trigger = {
-		OR ={
+		OR = {
+			tag = SON
 			tag = YAO
 			tag = PR2
-		}
+		}	
 		war_with = JNN
 		is_female = no
 		JNN = {
