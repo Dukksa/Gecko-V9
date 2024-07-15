@@ -2296,7 +2296,7 @@ l_english:
  swi_2_years_income_from_cloth_tt: "from our provinces that produce §YCloth§!"
  swi_capital_venture: "Swiss Capital Venture"
  swi_income_from_silver_tt: "from our Silver production"
- swi_enable_cantons_tt: "Enables the §YCanton§! subject type which can be established either via diplomacy or military means. \nEach Canton will grant Republican Tradition and you may only have 4 Cantons at one time."
+ swi_enable_cantons_tt: "Enables the §YCanton§! subject type which can be established via military means. \nEach Canton will grant Republican Tradition and you may only have 4 Cantons at one time."
  swi_relations_with_heretics: "Every §RHeretic§! country will gain §G25§! opinion of us"
  #Modifiers#
  swi_period_of_stability_modifier: "Period of Stability"
