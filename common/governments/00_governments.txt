@@ -645,7 +645,6 @@ republic = {
 		united_cantons_legacy
 		#Mamluks
 		egyptian_government_reform
-		h_reform_dominion
 		united_cantons_legacy
 	}
 	reform_levels = {
@@ -691,6 +690,8 @@ republic = {
 				parliamentary_republic_reform
 				absolute_shogunate_reform
 				japanese_divine_empire
+				#bastard 
+				h_reform_dominion
 			}
 		}
 		republican_virtues = {
