@@ -1661,7 +1661,6 @@ CAS_ideas = {
 	spanish_inquisition = {
 		global_missionary_strength = 0.02
 		missionaries = 1
-		same_religion_advisor_cost = -0.15
 	}
 	cabildos = {
 		production_efficiency = 0.1

@@ -341,7 +341,7 @@ administrative_ideas = {
 	category = ADM
 
 	bonus = {
-		 monarch_military_power = 1
+		monarch_military_power = 1
 	}
 	stable_government = {
 		stability_cost_modifier = -0.10 
@@ -357,13 +357,13 @@ administrative_ideas = {
 	}
 	centralization = {
 		global_autonomy = -0.05
-		centralize_state_cost = -0.2
+		centralize_state_cost = -0.5
 	}
 	bookkeeping = {
 		interest = -0.25
 	}
 	cultural_regulations = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	resilient_state = {
 		manpower_recovery_speed = 0.1
