@@ -131,7 +131,7 @@ ME_bur_1 = {
 					}
 				"
 			}
-				tooltip = ME_BUR_ONLY_IN_REQUIRED_PROVINCES
+				custom_tooltip = "ME_BUR_ONLY_IN_REQUIRED_PROVINCES"
 			}
 		} 
 	
@@ -265,12 +265,6 @@ ME_bur_1 = {
 				NOT = {
 					has_fort_building_trigger = yes
 				}
-				NOT = {
-					has_great_project = {
-						type = the_bock
-						tier = 3
-					}
-				}
 			}
 		} 
 
@@ -279,10 +273,6 @@ ME_bur_1 = {
 				country_or_non_sovereign_subject_holds = ROOT
 				base_manpower = 5
 				has_fort_building_trigger = yes
-				has_great_project = {
-					type = the_bock
-					tier = 3
-				}
 			}
 		} 
 
@@ -322,12 +312,6 @@ ME_lot_1 = {
 					limit = {
 						has_dlc = "Leviathan"
 					}
-					NOT = {
-						has_great_project = {
-							type = ME_aachen_palace
-							tier = 3
-						}
-					}
 				}
 			}
 		}
@@ -336,15 +320,6 @@ ME_lot_1 = {
 			1878 = {
 				owned_by = ROOT
 				development = 25
-				if = {
-					limit = {
-						has_dlc = "Leviathan"
-					}
-					has_great_project = {
-						type = ME_aachen_palace
-						tier = 3
-					}
-				}
 			}
 		} 
 
@@ -749,7 +724,7 @@ ME_bur_2 = {
 		effect = {  
 			add_army_tradition_or_mil_power = { amount = 10 }
 			custom_tooltip = " "
-			ME_distribute_development = {
+			distribute_development = {
 				type = manpower
 				amount = 5
 			}
@@ -765,21 +740,14 @@ ME_bur_2 = {
 
 		trigger = {  
 			has_mil_advisor_3 = yes
-			OR = {
-				has_government_power = {
-					mechanic_type = golden_fleece_mechanic
-					power_type = golden_fleece_support
-					value = 50
+			AND = {
+				estate_influence = {
+					estate = estate_nobles
+					influence = 70
 				}
-				AND = {
-					estate_influence = {
-						estate = estate_nobles
-						influence = 70
-					}
-					estate_loyalty = {
-						estate = estate_nobles
-						loyalty = 70
-					}
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 70
 				}
 			}
 		} 
@@ -815,7 +783,17 @@ ME_bur_2 = {
 		}
 
 		trigger = {  
-			is_ahead_of_time_in_specific_tech = { type = mil }
+			custom_trigger_tooltip = {
+				tooltip = son_modernize_army_tt
+					NOT = {
+					any_country = {
+						technology_group = western
+						ROOT = {
+							NOT = { mil_tech = PREV }	#Checks if no country with western tech has more mil tech than Songhai. Double negations are fun!
+						}
+					}
+				}
+			}
 		}
 		
 		effect = {
@@ -1446,7 +1424,9 @@ ME_bur_4 = {
 				}
 			}
 			else = {
-				add_base_production = 2
+				104 = {
+					add_base_production = 2
+				}
 			}
 
 			custom_tooltip = SEPERATOR_TOOLTIP
