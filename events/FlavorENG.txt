@@ -3075,3 +3075,52 @@ country_event = {
 
 
 }
+
+country_event = {
+	id = flavor_eng.100
+	title = flavor_eng.100.t
+	desc = flavor_eng.100.d
+	picture = ARTWORK_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_eng.100.a
+		custom_tooltip = flavor_eng.100.a.tt
+		hidden_effect = {
+			set_country_flag = england_path_one
+			clr_country_flag = england_path_two
+			clr_country_flag = england_path_three
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = flavor_eng.100.b
+		custom_tooltip = flavor_eng.100.b.tt
+		hidden_effect = {
+			clr_country_flag = england_path_one
+			set_country_flag = england_path_two
+			clr_country_flag = england_path_three
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = flavor_eng.100.c
+		custom_tooltip = flavor_eng.100.c.tt
+		hidden_effect = {
+			clr_country_flag = england_path_one
+			clr_country_flag = england_path_two
+			set_country_flag = england_path_three
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	after = {
+		swap_non_generic_missions = yes
+	}
+}
