@@ -1818,7 +1818,7 @@ petra = {
 			diplomatic_reputation = 2
 			envoy_travel_time = -0.33
 			diplomatic_upkeep = 1
-			vassal_forcelimit_bonus = 1
+			vassal_forcelimit_bonus = 0.5
 		}
 
 		#what effects happen when this tier is achieved
@@ -3183,7 +3183,7 @@ stpeters_cathedral = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			monthly_splendor = 3
-			curia_powers_cost = -0.35
+			curia_powers_cost = -0.2
 			church_power_modifier = 0.33
 			monthly_fervor_increase = 1	
 			idea_cost = -0.05
@@ -3653,44 +3653,8 @@ tenochtitlan = {
 						NOT = { trade_goods = gold }
 					}
 				change_trade_goods = gold 
-			}
-			else = { add_base_production = 1 }
-			}
-			4570 = {
-				if = {
-					limit = {	
-						NOT = { trade_goods = gold }
-					}
-				change_trade_goods = gold 
-			}
-			else = { add_base_production = 1 }
-			}
-			4571 = {
-				if = {
-					limit = {	
-						NOT = { trade_goods = gold }
-					}
-				change_trade_goods = gold 
-			}
-			else = { add_base_production = 1 }
-			}
-			4572 = {
-				if = {
-					limit = {	
-						NOT = { trade_goods = gold }
-					}
-				change_trade_goods = gold 
-			}
-			else = { add_base_production = 1 }
-			}
-			2626 = {
-				if = {
-					limit = {	
-						NOT = { trade_goods = gold }
-					}
-				change_trade_goods = gold 
-			}
-			else = { add_base_production = 1 }
+				}
+				else = { add_base_production = 1 }
 			}
 		}
 	}
@@ -11791,7 +11755,6 @@ duomo_milano = {
 			church_power_modifier = 0.15
 			global_religious_conversion_resistance = 0.5
 			church_loyalty_modifier = 0.15
-			development_cost = -0.05
 		}
 		on_upgraded = {			
 		}
@@ -13166,7 +13129,6 @@ holy_city_kairouan = {
 			
 		}
 		country_modifiers = {
-			placed_merchant_power_modifier = 1
 			center_of_trade_upgrade_cost = -0.1
 		}
 		on_upgraded = {
@@ -13190,9 +13152,8 @@ holy_city_kairouan = {
 			
 		}
 		country_modifiers = {
-			placed_merchant_power_modifier = 1
 			center_of_trade_upgrade_cost = -0.2
-			reduced_trade_penalty_on_non_main_tradenode = 0.2
+			reduced_trade_penalty_on_non_main_tradenode = 0.1
 		}	
 		on_upgraded = {
 		}
@@ -13211,9 +13172,8 @@ holy_city_kairouan = {
 			
 		}
 		country_modifiers = {
-			placed_merchant_power_modifier = 1
 			center_of_trade_upgrade_cost = -0.25
-			reduced_trade_penalty_on_non_main_tradenode = 0.4 
+			reduced_trade_penalty_on_non_main_tradenode = 0.2 
 		}
 		on_upgraded = {
 			
@@ -14098,7 +14058,6 @@ malta_forts = {
 		}
 		country_modifiers = {
 			warscore_cost_vs_other_religion = -0.075
-			galley_power = 0.05
 		}
 		on_upgraded = {
 		}
@@ -14120,7 +14079,6 @@ malta_forts = {
 		}
 		country_modifiers = {
 			warscore_cost_vs_other_religion = -0.10
-			galley_power = 0.1
 		}
 		on_upgraded = {
 		}
@@ -16389,7 +16347,7 @@ walls_benin = {
 
 	build_trigger = {
 		province_is_or_accepts_religion_group = {
-			religion_group = pagan
+			religion_group = muslim
 		}
 	}
 
@@ -16673,7 +16631,6 @@ zacatecas_mine_city = {
 			factor = 350
 		}
 		province_modifiers = {
-			trade_goods_size = 1.0
 		}
 		area_modifier = {
 			trade_goods_size_modifier = 0.05
@@ -16702,7 +16659,6 @@ zacatecas_mine_city = {
 			trade_goods_size = 2.0
 		}
 		area_modifier = {
-			trade_goods_size_modifier = 0.1
 		}
 		country_modifiers = {
 			interest = -0.25
@@ -16726,10 +16682,9 @@ zacatecas_mine_city = {
 			factor = 1500
 		}
 		province_modifiers = {
-			trade_goods_size = 3.0
+			trade_goods_size = 2.0
 		}
 		area_modifier = {
-			trade_goods_size_modifier = 0.15
 		}
 		country_modifiers = {
 			interest = -0.5
@@ -17577,7 +17532,7 @@ st_basil_cathedral = {
 			
 		}
 		country_modifiers = {
-			same_religion_advisor_cost = -0.2
+			same_religion_advisor_cost = -0.1
 			tolerance_own = 2 
 			all_estate_loyalty_equilibrium = 0.1
 		}
@@ -18792,7 +18747,7 @@ nizwa_fort = {
 			autonomy_change_time = -0.15
 		}
 		on_upgraded = {
-			add_base_manpower = 1
+			#add_base_manpower = 1
 		}
 	}
 
@@ -18817,7 +18772,7 @@ nizwa_fort = {
 			max_absolutism = 5
 		}	
 		on_upgraded = {
-			add_base_manpower = 2
+			#add_base_manpower = 2
 		}
 	}
 
@@ -18839,7 +18794,7 @@ nizwa_fort = {
 			max_absolutism = 10
 		}
 		on_upgraded = {
-			add_base_manpower = 3
+			#add_base_manpower = 3
 		}
 	}
 }
@@ -20173,7 +20128,7 @@ X_SPA_lonja_de_la_seda = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 750 }
 		province_modifiers = {
-			province_trade_power_modifier = 0.33
+			province_trade_power_modifier = 0.2
 			trade_goods_size = 0.5
 		}
 		area_modifier = {
@@ -20193,8 +20148,8 @@ X_SPA_lonja_de_la_seda = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = { factor = 1500 }
 		province_modifiers = {
-			province_trade_power_modifier = 0.50
-			trade_goods_size = 1
+			province_trade_power_modifier = 0.33
+			trade_goods_size = 0.5
 		}
 		area_modifier = {
 			local_development_cost = -0.20
@@ -20319,7 +20274,7 @@ gme_ponte_rialto = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 750 }
 		province_modifiers = {
-			province_trade_power_modifier = 0.25
+			province_trade_power_modifier = 0.15
 			local_development_cost = -0.10
 		}
 		area_modifier = {
@@ -20332,7 +20287,7 @@ gme_ponte_rialto = {
 		upgrade_time = { months = 360 }
 		cost_to_upgrade = { factor = 1500 }
 		province_modifiers = {
-			province_trade_power_modifier = 0.33
+			province_trade_power_modifier = 0.2
 			local_development_cost = -0.15
 		}
 		area_modifier = {
@@ -21229,7 +21184,7 @@ gme_parramentu_sicilianu = {
 		province_modifiers = { }
 		area_modifier = { }
 		country_modifiers = {
-			reform_progress_growth = 0.15
+			reform_progress_growth = 0.1
 		}
 		on_upgraded = { }
 	}
@@ -21238,9 +21193,9 @@ gme_parramentu_sicilianu = {
 		cost_to_upgrade = { factor = 750 }
 		province_modifiers = {
 		}
-		area_modifier = { local_tax_modifier = 0.15 }
+		area_modifier = { local_tax_modifier = 0.1 }
 		country_modifiers = {
-			reform_progress_growth = 0.25
+			reform_progress_growth = 0.2
 		}
 		on_upgraded = { }
 	}
@@ -21249,7 +21204,7 @@ gme_parramentu_sicilianu = {
 		cost_to_upgrade = { factor = 1500 }
 		province_modifiers = {
 		}
-		area_modifier = { local_tax_modifier = 0.33}
+		area_modifier = { local_tax_modifier = 0.2}
 		country_modifiers = {
 			reform_progress_growth = 0.25
 			global_unrest = -1
@@ -21460,7 +21415,7 @@ gme_duomo_monreale = {
 		cost_to_upgrade = { factor = 350 }
 		province_modifiers = {
 		}
-		area_modifier = { local_tax_modifier = 0.15}
+		area_modifier = { local_tax_modifier = 0.1}
 		country_modifiers = { }
 		on_upgraded = { }
 	}
@@ -21469,7 +21424,7 @@ gme_duomo_monreale = {
 		cost_to_upgrade = { factor = 750 }
 		province_modifiers = {
 		}
-		area_modifier = {local_tax_modifier = 0.25 }
+		area_modifier = {local_tax_modifier = 0.2 }
 		country_modifiers = {
 			church_loyalty_modifier = 0.05
 		}
@@ -21480,7 +21435,7 @@ gme_duomo_monreale = {
 		cost_to_upgrade = { factor = 1500 }
 		province_modifiers = {
 		}
-		area_modifier = {local_tax_modifier = 0.33 }
+		area_modifier = {local_tax_modifier = 0.2 }
 		country_modifiers = {
 			church_loyalty_modifier = 0.05
 			tolerance_heretic = 1
@@ -21950,7 +21905,6 @@ gme_chillon_castle = {
 		country_modifiers = { }
 		on_upgraded = {
 			add_devastation = -10
-			 add_base_manpower = 2
 		}
 	}
 	tier_2 = {
@@ -21967,7 +21921,8 @@ gme_chillon_castle = {
 		country_modifiers = {
 			defensiveness = 0.15
 		}
-		on_upgraded = { add_base_manpower = 3 }
+		on_upgraded = { #add_base_manpower = 3 
+		}
 	}
 	tier_3 = {
 		upgrade_time = { months = 360 }
@@ -21982,9 +21937,10 @@ gme_chillon_castle = {
 		}
 		country_modifiers = {
 			defensiveness = 0.33
-			fort_maintenance_modifier = -0.33
+			fort_maintenance_modifier = -0.2
 		}
-		on_upgraded = { add_base_manpower = 5 }
+		on_upgraded = { #add_base_manpower = 5 
+	}
 	}
 }
 
@@ -22080,7 +22036,6 @@ fu_kasbah_of_tunis = {
 			local_defensiveness = 0.1 
 			local_development_cost = -0.1
 			local_monthly_devastation = -0.025
-			allowed_num_of_buildings = 1 
 		}
 
 		country_modifiers = {
@@ -22107,7 +22062,6 @@ fu_kasbah_of_tunis = {
 		area_modifier = {
 			local_development_cost = -0.2
 			local_monthly_devastation = -0.05
-			allowed_num_of_buildings = 1 
 			local_defensiveness = 0.15
 		}
 
@@ -22244,7 +22198,6 @@ gme_castello_estense = {
 		province_modifiers = {
 			local_defensiveness = 0.15
 			local_regiment_cost = -0.10
-			trade_goods_size = 0.5
 		}
 		area_modifier = { }
 		country_modifiers = { }
@@ -22255,7 +22208,6 @@ gme_castello_estense = {
 		cost_to_upgrade = { factor = 750 }
 		province_modifiers = {
 			local_defensiveness = 0.25
-			trade_goods_size = 0.5
 		}
 		area_modifier = {
 			local_governing_cost = -0.10
@@ -22272,7 +22224,6 @@ gme_castello_estense = {
 		cost_to_upgrade = { factor = 1500 }
 		province_modifiers = {
 			local_defensiveness = 0.33
-			trade_goods_size = 0.5
 		}
 		area_modifier = {
 			local_governing_cost = -0.15
@@ -22281,7 +22232,7 @@ gme_castello_estense = {
 			local_regiment_cost = -0.15
 		}
 		country_modifiers = {
-			artillery_cost = -0.15
+			artillery_cost = -0.1
 		}
 		on_upgraded = { }
 	}
@@ -22715,7 +22666,6 @@ gme_salt_mines_wieliczka_bochnia = {
 		upgrade_time = { months = 360 }
 		cost_to_upgrade = { factor = 1500 }
 		province_modifiers = {
-			trade_goods_size = 1
 		}
 		area_modifier = {
 			local_production_efficiency = 0.15
@@ -22845,9 +22795,7 @@ fu_topkapi_palace = {
 
 		country_modifiers = {
 			all_estate_loyalty_equilibrium = 0.1
-			yearly_corruption = -0.05
 			monthly_favor_modifier = 0.25
-			development_cost = -0.05
 			build_cost = -0.05
 		}
 		
@@ -23274,7 +23222,7 @@ fu_toob_benadir = {
 			local_development_cost = -0.15
 		}
 		region_modifier = {
-			trade_goods_size = 0.25
+			#trade_goods_size = 0.25
 		}
 		country_modifiers = { 
 			trade_efficiency = 0.1
@@ -23346,7 +23294,6 @@ fu_colossus = {
 		}
 
 		province_modifiers = {
-			trade_value = 1
 		}
 
 		area_modifier = {
@@ -23372,7 +23319,6 @@ fu_colossus = {
 		}
 
 		province_modifiers = {
-			trade_value = 5
 		}
 
 		area_modifier = {
@@ -23393,7 +23339,6 @@ fu_colossus = {
 		}
 
 		province_modifiers = {
-			trade_value = 5 
 		}
 
 		area_modifier = {
@@ -23626,7 +23571,6 @@ fu_globe_theatre = {
 		}
 
 		country_modifiers = {
-			country_diplomatic_power = 1
 			dip_tech_cost_modifier = -0.05
 		}
 		
@@ -23655,7 +23599,6 @@ fu_globe_theatre = {
 		}
 
 		country_modifiers = {
-			country_diplomatic_power = 1
 			promote_culture_cost = -0.25
 		}
 	}
@@ -23677,7 +23620,7 @@ fu_globe_theatre = {
 		}
 
 		country_modifiers = {
-			country_diplomatic_power = 1
+			#country_diplomatic_power = 1
 			promote_culture_cost = -0.5
 		}
 		
@@ -24723,7 +24666,6 @@ salvador_da_bahia = {
 		area_modifier = {
 		}
 		region_modifier = {
-			trade_goods_size = 0.1
 		}
 		country_modifiers = {
 			global_trade_power = 0.15
@@ -24746,7 +24688,6 @@ salvador_da_bahia = {
 		area_modifier = {
 		}
 		region_modifier = {
-			trade_goods_size = 0.25
 		}
 		country_modifiers = {
 			global_trade_power = 0.2
@@ -25132,7 +25073,6 @@ gme_santiago_compostela = {
 		country_modifiers = {
 			papal_influence = 0.5
 			church_loyalty_modifier = 0.05
-			land_morale = 0.0325
 		}
 		on_upgraded = { }
 	}
@@ -25150,7 +25090,6 @@ gme_santiago_compostela = {
 		country_modifiers = {
 			global_missionary_strength = 0.01
 			papal_influence = 1
-			land_morale = 0.075
 			church_loyalty_modifier = 0.10
 		}
 		on_upgraded = { }
@@ -25228,14 +25167,14 @@ gme_cathedral_seville = {
 		upgrade_time = { months = 360 }
 		cost_to_upgrade = { factor = 1500 }
 		province_modifiers = {
-			local_tax_modifier = 0.33
+			local_tax_modifier = 0.25
 		}
 		area_modifier = {
 			local_unrest = -2
 		}
 		region_modifier = { }
 		country_modifiers = {
-			papal_influence_from_cardinals = 1
+			papal_influence_from_cardinals = 0.5
 			build_cost = -0.05
 		}
 		on_upgraded = { }
@@ -25285,7 +25224,6 @@ gme_casa_de_contratacion = {
 			colonist_placement_chance = 0.025
 			global_colonial_growth = 5
 			global_tariffs = 0.025
-			treasure_fleet_income = 0.05
 		}
 		on_upgraded = { }
 	}
@@ -25299,7 +25237,6 @@ gme_casa_de_contratacion = {
 			colonist_placement_chance = 0.05
 			global_colonial_growth = 10
 			global_tariffs = 0.05
-			treasure_fleet_income = 0.10
 		}
 		on_upgraded = { }
 	}
@@ -25313,7 +25250,6 @@ gme_casa_de_contratacion = {
 			colonist_placement_chance = 0.10
 			global_colonial_growth = 15
 			global_tariffs = 0.1
-			treasure_fleet_income = 0.15
 		}
 		on_upgraded = { }
 	}
@@ -25382,7 +25318,7 @@ gme_al_qasr_al_muriq = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			establish_order_cost = -0.15
+			establish_order_cost = -0.1
 		}
 		on_upgraded = { }
 	}
@@ -25400,7 +25336,7 @@ gme_al_qasr_al_muriq = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			establish_order_cost = -0.20
+			establish_order_cost = -0.15
 		}
 		on_upgraded = { }
 	}
@@ -25418,7 +25354,7 @@ gme_al_qasr_al_muriq = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			establish_order_cost = -0.25
+			establish_order_cost = -0.20
 		}
 		on_upgraded = { }
 	}
