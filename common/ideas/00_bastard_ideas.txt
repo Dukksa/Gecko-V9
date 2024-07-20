@@ -1442,7 +1442,7 @@ FRA_ideas_2 = {
 BUR_Ideas = {
 	start = {
 		land_morale = 0.1
-		global_manpower_modifier = 0.1
+		global_manpower_modifier = 0.15
 	}
 	
 	bonus = {
