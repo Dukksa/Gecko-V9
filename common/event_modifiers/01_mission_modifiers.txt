@@ -1641,7 +1641,7 @@ gbr_light_ships = {
 }
 
 eng_germany = {
-	discipline = 0.025
+	discipline = 0.05
 	land_forcelimit_modifier = 0.05
 }
 

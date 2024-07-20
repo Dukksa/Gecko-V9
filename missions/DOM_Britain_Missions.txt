@@ -727,7 +727,7 @@ gbr_identity_row_slot_2 = {
 				add_dip_power = 50
 				add_country_modifier = {
 					name = gbr_cultural_unity
-					duration = 1825
+					duration = 3650
 			}
 				"
 			}
@@ -1753,7 +1753,7 @@ gbr_colonisation_mission_row_slot_5 = {
 			add_dip_power = 75
 			add_country_modifier = {
 				name = eng_navy_big
-				duration = 1825
+				duration = 9125
 			}
 		}
 		ai_weight = {
