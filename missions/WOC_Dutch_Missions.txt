@@ -1033,19 +1033,9 @@ NED_2_1 = {
 		} 
 
 		effect = {  
-			if = {
-				limit = { has_dlc = "Emperor" }
-				custom_tooltip = NED_HALVE_THE_NAVAL_HEGEMONY_REQUIREMENTS
-				set_country_flag = jap_halve_naval_hegemony_requirements
-			}
-			else = {
-				add_prestige_or_monarch_power = { amount = 25 }
-				
-				custom_tooltip = SEPERATOR_TOOLTIP
-				
-				add_dip_power = 100
-			}
-			
+			add_prestige_or_monarch_power = { amount = 25 }
+			custom_tooltip = SEPERATOR_TOOLTIP
+			add_dip_power = 100
 			custom_tooltip = " "
 			add_country_modifier = {
 				name = ned_one_world
@@ -1642,10 +1632,7 @@ NED_3_1 = {
 		} 
 
 		effect = {  
-			custom_tooltip = NED_MODIFY_FREE_ENTERPRISES_PRIVILEGE
-			set_country_flag = ned_buffed_free_enterprises
-			custom_tooltip = " "
-			add_dip_power = 100
+			add_dip_power = 150
 		} 
 	}
 
@@ -2373,8 +2360,6 @@ NED_4_1 = {
 				limit = {
 					has_dlc = "Domination"
 				}
-				custom_tooltip = NED_MODIFY_STAATSE_LEGER_REFORM
-				set_country_flag = ned_staatse_leger_buff_flag
 				hidden_effect = {
 					if = {
 						limit = {
