@@ -1851,11 +1851,47 @@ country_event = {
 			}
 			set_country_flag = lit_decline_pu_flag
 		}
+		
 		if = {
 			limit = { has_dlc = "Emperor" }
 			custom_tooltip = pol_impact_future_missions_tt 
 			set_country_flag = pol_denied_pu_flag
 		}
+
+		custom_tooltip = pol_claim_lithuanian_lands
+		hidden_effect = {
+			samogitia_area = {
+				add_permanent_claim = ROOT
+			}
+			lithuania_area ={
+				add_permanent_claim = ROOT
+			}
+			podlasie_area = {
+				add_permanent_claim = ROOT
+			}
+			pripyat_area = {
+				add_permanent_claim = ROOT
+			}
+			volhynia_area = {
+				add_permanent_claim = ROOT
+			}
+			podolia_volhynia_area = {
+				add_permanent_claim = ROOT
+			}
+			west_dniepr_area = {
+				add_permanent_claim = ROOT
+			}
+			minsk_area = {
+				add_permanent_claim = ROOT
+			}
+			white_ruthenia_area = {
+				add_permanent_claim = ROOT
+			}
+			smolensk_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+		
 	}
 }
 

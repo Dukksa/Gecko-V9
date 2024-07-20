@@ -21048,7 +21048,6 @@ gme_het_gravensteen = {
 		country_modifiers = {
 			global_unrest = -2
 			stability_cost_modifier = -0.05
-			land_morale = 0.05
 		}
 		on_upgraded = { }
 	}

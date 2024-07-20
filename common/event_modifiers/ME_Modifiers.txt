@@ -854,7 +854,7 @@ POL_rejoice_mother_poland = {
 }
 
 POL_honorable_people = {
-	land_morale = 0.025
+	land_morale = 0.075
 }
 
 POL_few_indeed = {
