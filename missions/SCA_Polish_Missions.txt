@@ -1804,6 +1804,8 @@ POL_Missions_4_Piast = {
 		position = 2
 		provinces_to_highlight = {
 			area = silesia_area
+			area = breg_area
+			area = opole_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
