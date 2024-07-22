@@ -17,7 +17,7 @@ council_of_ten = {
 				modifier = {
 					max_absolutism = -50
 					all_estate_influence_modifier = 0.1
-					min_autonomy = 20
+					all_estate_loyalty_equilibrium = -0.05
 				}
 			}
 			scaled_modifier = {
