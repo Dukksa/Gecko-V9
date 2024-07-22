@@ -680,7 +680,7 @@ gbr_identity_row_slot_2 = {
 				}
 				num_of_owned_provinces_with = {
 					culture_group = ROOT
-					value = 50
+					value = 40
 				}
 			}
 		}
