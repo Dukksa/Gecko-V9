@@ -1279,19 +1279,11 @@ reform_government_act = {
 	}
 	
 	effect = {
-		issue_effect_scaling_with_estate_influence = {
-			estate = estate_nobles
-			effect1 = "change_government_reform_progress = 15"
-			effect2 = "change_government_reform_progress = 30"
-			effect3 = "change_government_reform_progress = 45"
-			effect4 = "change_government_reform_progress = 60"
-			effect5 = "change_government_reform_progress = 75"
-			fallback_effect = "change_government_reform_progress = 30"
-		}
+
 	}
 	
 	modifier = {
-		reform_progress_growth = 0.25
+		reform_progress_growth = 0.3
 	}
 	
 	chance = {
