@@ -132,7 +132,7 @@ country_decisions = {
 				tooltip = urbanisation_tt
 				OR = {
 					AND = {
-						ai  = yes
+						ai  = no
 						is_colonial_nation = no
 					}
 					AND = {
