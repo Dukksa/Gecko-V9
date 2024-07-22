@@ -717,7 +717,7 @@ gbr_identity_row_slot_2 = {
 				second_limit = "
 				num_of_owned_provinces_with = {
 					culture_group = ROOT
-					value = 50
+					value = 40
 				}
 				"
 				second_effect = "
