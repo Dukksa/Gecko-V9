@@ -1025,6 +1025,8 @@ la_plata_region = {
 		misiones_area
 		patagonian_andes
 		bahia_blanca_area
+		tucuman_area
+		chaco_area
 	}
 }
 
@@ -1069,21 +1071,6 @@ peru_region = {
 		00.11.30
 	}
 }
-
-upper_peru_region = {
-	areas = {
-		beni_area
-		upper_peru
-		tucuman_area
-		chaco_area
-		paraguay_area
-		northern_chile_area
-		potosi_area
-		jujuy_area
-		moxos_area
-	}
-}
-
 malaya_region = {	#Western Indonesia Malaya.
 	areas = {
 		north_sumatra_area
@@ -1237,6 +1224,9 @@ great_lakes_region = {
 		lake_superior_area 
 		wisconsin_area
 		southern_illinois_area
+		appalachia_area
+		iowa_area
+		minnessota_area
 	}
 }
 
@@ -1286,7 +1276,6 @@ mississippi_region = {
 		alabama_area
 		kentucky_area
 		mississippi_area
-		appalachia_area
 
 
 		choctaw_area
@@ -1297,21 +1286,6 @@ mississippi_region = {
 	monsoon = {
 		00.06.01
 		00.11.30
-	}
-}
-
-great_plains_region = {
-	areas = {
-		central_plains_area
-		high_plains_area
-	
-		dakota_area
-		south_dakota_area
-		upper_missouri_area
-		badlands_area
-		iowa_area
-		minnessota_area
-		kansas_area
 	}
 }
 

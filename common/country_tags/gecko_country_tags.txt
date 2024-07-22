@@ -17,3 +17,11 @@ FO7 = "countries/Dongye.txt"
 
 DSA = "countries/SouthAfrica.txt"
 ORJ = "countries/Oranje.txt"
+
+BEO = "countries/Beornia.txt"
+GCA = "countries/GranColumbia.txt"
+AME = "countries/Ameriga.txt"
+HER = "countries/Hereria.txt"
+PLA = "countries/Plantagenia.txt"
+ARC = "countries/Arcadia.txt"
+VIN = "countries/Vinland.txt"

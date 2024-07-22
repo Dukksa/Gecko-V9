@@ -158,4 +158,446 @@ country_decisions = {
 				factor = 0
 			}
 	}		
+	h_form_beornia = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = became_dominion }
+			was_never_end_game_tag_trigger = yes
+			is_colonial_nation = yes
+			la_plata_region = {
+				owned_by = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			region = la_plata_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			la_plata_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			NOT = { exists = BEO }
+		}
+		effect  = {
+			change_tag = BEO
+			remove_non_electors_emperors_from_empire_effect = yes
+			#add_government_reform = h_reform_dominion
+			#if = {
+			#	limit = { has_custom_ideas = no }
+			#	country_event = { id = ideagroups.1 } #Swap Ideas
+			#}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = became_dominion
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	h_form_ameriga = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = became_dominion }
+			was_never_end_game_tag_trigger = yes
+			is_colonial_nation = yes
+			brazil_region = {
+				owned_by = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			region = brazil_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			brazil_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			NOT = { exists = AME }
+		}
+		effect  = {
+			change_tag = AME
+			remove_non_electors_emperors_from_empire_effect = yes
+			#add_government_reform = h_reform_dominion
+			#if = {
+			#	limit = { has_custom_ideas = no }
+			#	country_event = { id = ideagroups.1 } #Swap Ideas
+			#}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = became_dominion
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	h_form_hereria = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = became_dominion }
+			was_never_end_game_tag_trigger = yes
+			is_colonial_nation = yes
+			colombia_region = {
+				owned_by = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			region = colombia_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			colombia_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			NOT = { exists = HER }
+		}
+		effect  = {
+			change_tag = HER
+			remove_non_electors_emperors_from_empire_effect = yes
+			#add_government_reform = h_reform_dominion
+			#if = {
+			#	limit = { has_custom_ideas = no }
+			#	country_event = { id = ideagroups.1 } #Swap Ideas
+			#}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = became_dominion
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	h_form_gc = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = became_dominion }
+			was_never_end_game_tag_trigger = yes
+			is_colonial_nation = yes
+			OR = {
+				mexico_region = {
+					owned_by = ROOT
+				}
+				central_america_region ={
+					owned_by = ROOT
+				}
+			}
+		}
+		provinces_to_highlight = {
+			region = mexico_region
+			region = central_america_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			
+		}
+		allow = {
+			is_at_war = no
+			mexico_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			central_america_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			NOT = { exists = GCA }
+		}
+		effect  = {
+			change_tag = GCA
+			remove_non_electors_emperors_from_empire_effect = yes
+			#add_government_reform = h_reform_dominion
+			#if = {
+			#	limit = { has_custom_ideas = no }
+			#	country_event = { id = ideagroups.1 } #Swap Ideas
+			#}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = became_dominion
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	h_form_plantagenia = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = became_dominion }
+			was_never_end_game_tag_trigger = yes
+			is_colonial_nation = yes
+			mississippi_region = {
+				owned_by = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			region = mississippi_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			
+		}
+		allow = {
+			is_at_war = no
+			mississippi_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			NOT = { exists = PLT }
+		}
+		effect  = {
+			change_tag = PLT
+			remove_non_electors_emperors_from_empire_effect = yes
+			#add_government_reform = h_reform_dominion
+			#if = {
+			#	limit = { has_custom_ideas = no }
+			#	country_event = { id = ideagroups.1 } #Swap Ideas
+			#}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = became_dominion
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	h_form_arcadia = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = became_dominion }
+			was_never_end_game_tag_trigger = yes
+			is_colonial_nation = yes
+			OR = {
+				northeast_america_region = {
+					owned_by = ROOT
+				}
+				southeast_america_region = {
+					owned_by = ROOT
+				}
+			}
+		}
+		provinces_to_highlight = {
+			region = northeast_america_region
+			region = southeast_america_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			
+		}
+		allow = {
+			is_at_war = no
+			northeast_america_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			southeast_america_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			NOT = { exists = ARC }
+		}
+		effect  = {
+			change_tag = ARC
+			remove_non_electors_emperors_from_empire_effect = yes
+			#add_government_reform = h_reform_dominion
+			#if = {
+			#	limit = { has_custom_ideas = no }
+			#	country_event = { id = ideagroups.1 } #Swap Ideas
+			#}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = became_dominion
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	h_form_vinland = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = became_dominion }
+			was_never_end_game_tag_trigger = yes
+			is_colonial_nation = yes
+			OR = {
+				canada_region = {
+					owned_by = ROOT
+				}
+				hudson_bay_region = {
+					owned_by = ROOT
+				}
+			}
+		}
+		provinces_to_highlight = {
+			region = canada_region
+			region = hudson_bay_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			
+		}
+		allow = {
+			is_at_war = no
+			canada_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			hudson_bay_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			NOT = { exists = VIN }
+		}
+		effect  = {
+			change_tag = VIN
+			remove_non_electors_emperors_from_empire_effect = yes
+			#add_government_reform = h_reform_dominion
+			#if = {
+			#	limit = { has_custom_ideas = no }
+			#	country_event = { id = ideagroups.1 } #Swap Ideas
+			#}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = became_dominion
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	h_form_texas = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = became_dominion }
+			was_never_end_game_tag_trigger = yes
+			is_colonial_nation = yes
+			rio_grande_region = {
+				owned_by = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			region = rio_grande_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			rio_grande_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			NOT = { exists = TEX }
+		}
+		effect  = {
+			change_tag = TEX
+			remove_non_electors_emperors_from_empire_effect = yes
+			#add_government_reform = h_reform_dominion
+			#if = {
+			#	limit = { has_custom_ideas = no }
+			#	country_event = { id = ideagroups.1 } #Swap Ideas
+			#}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = became_dominion
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	h_form_cuba = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = became_dominion }
+			was_never_end_game_tag_trigger = yes
+			is_colonial_nation = yes
+			caribbean_sea_region = {
+				owned_by = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			region = caribbean_sea_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			caribbean_sea_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			NOT = { exists = CUB }
+		}
+		effect  = {
+			change_tag = CUB
+			remove_non_electors_emperors_from_empire_effect = yes
+			#add_government_reform = h_reform_dominion
+			#if = {
+			#	limit = { has_custom_ideas = no }
+			#	country_event = { id = ideagroups.1 } #Swap Ideas
+			#}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = became_dominion
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }		

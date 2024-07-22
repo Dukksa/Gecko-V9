@@ -50,7 +50,7 @@ bad_building_production = {
 }
 
 b_colony_warscore = {
-	local_warscore_cost_modifier = 1.5
+	local_warscore_cost_modifier = 1.25
 }
 
 Merc_payments_reneged = {
