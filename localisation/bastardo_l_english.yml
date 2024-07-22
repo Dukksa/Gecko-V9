@@ -345,5 +345,10 @@ black_chamber_act_2:0 "The Black Chamber Act II"
  crimean_raids:0 "Crimean Raids"
 
 ###netherlands###
-mechanic_has_defense_of_the_united_provinces_yes:1 "Can use the §YDefend the United Provinces§! Decision during Defensive Wars"
-bastard_ned_formed:0 "Birth of the United Provinces"
+ mechanic_has_defense_of_the_united_provinces_yes:1 "Can use the §YDefend the United Provinces§! Decision during Defensive Wars"
+ bastard_ned_formed:0 "Birth of the United Provinces"
+#edict decisions
+ manpower_edict_decision_title:0 "Enable Manpower Edict"
+ manpower_edict_decision_desc:0 "Sets every state in our nation to the 'Promote Military Recruitment' state edict."	
+ institution_edict_decision_title:0 "Enable Advancement Effort Edict"
+ institution_edict_decision_desc:0 "Sets every state in our nation to the 'Advancement Effort' state edict."	
