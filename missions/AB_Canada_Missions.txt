@@ -1,0 +1,641 @@
+AB_canada_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = VIN
+	}
+	has_country_shield = yes
+	
+	canada_cod = {
+		icon = mission_rb_cod_wars
+		position = 2
+		required_missions = { canada_gateway }
+		
+		trigger = {
+			1490 = {	
+				is_strongest_trade_power = ROOT
+			}
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						trade_goods = fish
+					}
+				}
+				amount = 5
+			}
+		}
+		
+		effect = {
+			add_mercantilism = 3
+			add_country_modifier = {
+				name = "canada_cod"
+				duration = -1
+			}
+		}
+	}
+
+	canada_north = {
+		icon = mission_north
+		position = 4
+		required_missions = { canada_bay }
+	
+		provinces_to_highlight = {
+			region = canada_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = miss_colonize_canada_25
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 25
+					region = canada_region
+					is_city = yes
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "canada_develop"
+				duration = 9125
+			}
+		}
+	}
+	
+	
+	
+}
+
+AB_canada_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = VIN
+	}
+	has_country_shield = yes
+	
+	canada_gateway = {
+		icon = mission_rb_scottish_north_sea_trade
+		position = 1
+		required_missions = { }
+		
+		trigger = {
+			OR = {
+			newfoundland_area = {
+			    type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		    lower_acadia_area = {
+			    type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			}
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				area = lower_acadia_area
+				area = newfoundland_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		effect = {
+			create_conquistador = { tradition = 50 }
+			1490 = {
+				add_trade_modifier = {
+					who = root
+					duration = 7300
+					power = 20
+					key = canada_gulf
+				}
+			}
+		}
+	}
+	
+	canada_expand = {
+		icon = mission_rb_colonise_canada
+		position = 2
+		required_missions = { canada_gateway }
+	
+		provinces_to_highlight = {
+			region = canada_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = miss_colonize_canada_ten
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 10
+					region = canada_region
+					is_city = yes
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "canada_colonization"
+				duration = 9125
+			}
+		}
+	}
+	
+	canada_bay = {
+		icon = mission_scandinavian_port_authority
+		position = 3
+		required_missions = { canada_expand }
+		
+		trigger = {
+			OR = {
+			james_bay_area = {
+			    type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		    hudson_bay_area = {
+			    type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			}
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				area = james_bay_area
+				area = hudson_bay_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "canada_inuit"
+				duration = 7300
+			}
+		}
+	}
+	
+	canada_control = {
+		icon = mission_protect_white_sea_trade
+		position = 5
+		required_missions = { canada_bay }
+		
+		trigger = {
+			1516 = {	
+				is_strongest_trade_power = ROOT
+			}
+		}
+		
+		effect = {
+			add_mercantilism = 3
+			define_advisor = {
+				type = trader
+				skill = 3
+				religion = ROOT
+				cost_multiplier = 0.75
+			}
+		}
+	}
+}
+
+AB_canada_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = VIN
+	}
+	has_country_shield = yes
+
+	canada_capital = {
+	    icon = mission_barlin
+		required_missions = { canada_gateway }
+		position = 2
+		
+		trigger = {
+			capital_scope = {
+				development = 20
+					OR = {
+						has_building = temple
+						has_building = cathedral
+					}
+					has_production_building_trigger = yes
+			}
+		}
+		
+		effect = {
+			capital_scope = {
+				add_province_modifier = {
+					name = "colonial_capital"
+					duration = -1
+				}
+			}
+		}
+	}
+	canada_fur = {
+		icon = mission_collect_yasak
+		position = 3
+		required_missions = { canada_capital }
+	
+		provinces_to_highlight = {
+			colonial_region = colonial_louisiana
+			NOT = { trade_goods = fur }
+			has_discovered = ROOT
+		}
+	
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						trade_goods = fur
+					}
+				}
+				amount = 10
+			}
+			calc_true_if = {
+				all_owned_province = {
+					has_production_building_trigger = yes
+				}
+				amount = 5
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "canada_fur"
+				duration = 7300
+			}
+		}
+	}
+	
+	canada_hegemony = {
+		icon = mission_extent_yasak_to_the_east
+		position = 4
+		required_missions = { canada_fur }
+		
+		trigger = {
+			production_leader = {
+				trade_goods = fur
+			}
+		}
+		
+		effect = {
+			add_treasury = 500
+			add_country_modifier = {
+				name = "canada_lead"
+				duration = -1
+			}
+		}
+	}
+	
+	canada_greenland	= {
+		icon = mission_rb_settle_the_north
+		position = 5
+		required_missions = { fr1_independence }
+	
+		trigger = {
+		    greenland_area = {
+			    type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				area = greenland_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		effect = {
+			1104 = {
+				change_culture = ROOT
+				change_religion = ROOT
+				change_trade_goods = ivory
+			}
+			1105 = {
+				change_culture = ROOT
+				change_religion = ROOT
+				change_trade_goods = ivory
+			}
+			iceland_area = {
+			        limit = {
+					        NOT = { is_core = ROOT}
+							NOT = {owned_by = ROOT}
+						}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	canada_iceland	= {
+		icon = mission_invade_island
+		position = 6
+		required_missions = { canada_greenland }
+	
+		trigger = {
+		    iceland_area = {
+			    type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				area = iceland_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		effect = {
+			add_army_tradition = 20
+			add_navy_tradition = 20
+			add_mil_power = 200
+		}
+	}
+	
+}
+
+canada_mission_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = VIN
+	}
+	has_country_shield = yes
+	
+	canada_dock = {
+		icon = mission_great_trading_houses
+		position = 2
+		required_missions = { }
+	
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = dock
+						has_building = drydock
+					}
+					OR = {
+						has_building = shipyard
+						has_building = grand_shipyard
+					}
+				}
+				amount = 1
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "carribean_building_fleet"
+				duration = 7300
+			}
+		}
+	}
+	
+	canada_naval = {
+		icon = mission_spanish_armada
+		position = 3
+		required_missions = { canada_dock }
+		
+		trigger = {
+			naval_forcelimit = 25
+			navy_size_percentage = 0.8
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "carribean_morale"
+				duration = 7300
+			}
+		}
+	}
+}
+
+canada_flagship = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Golden Century"
+	}
+	potential = {
+		tag = VIN
+	}
+	has_country_shield = yes
+	
+	canada_flagship = {
+		icon = mission_launch_a_flagship
+		required_missions = { canada_naval }
+		position = 4
+		
+		trigger = {
+			has_flagship = yes
+		}
+	
+		effect = {
+			add_navy_tradition = 20
+			define_advisor = {
+				type = naval_reformer
+				skill = 3
+				religion = ROOT
+				cost_multiplier = 0.75
+			}
+		}
+	}
+}
+
+canada_missions_4_2 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = VIN
+	}
+	has_country_shield = yes
+
+	canada_northeast	= {
+		icon = mission_rb_the_thirteen_colonies
+		position = 5
+		required_missions = { fr1_independence }
+	
+		trigger = {
+		    northeast_america_region = {
+			    type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				region = northeast_america_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "canada_plata"
+				duration = 7300
+			}
+			cascadia_region = {
+			        limit = {
+					        NOT = { is_core = ROOT}
+							NOT = {owned_by = ROOT}
+						}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	canada_alaska	= {
+		icon = mission_colonize_alaska
+		position = 7
+		required_missions = { canada_northeast }
+	
+		trigger = {
+		    cascadia_region = {
+			    type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				region = cascadia_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		effect = {
+			add_prestige = 25
+			add_adm_power = 250
+		}
+	}
+}
+
+canada_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = VIN
+	}
+	has_country_shield = yes
+	
+	canada_grow = {	
+		icon = mission_rb_scottish_the_darien_scheme
+		position = 1
+		required_missions = { }
+	
+		trigger = { 
+			total_development = 150
+		}
+		
+		effect = {
+			add_adm_power = 50
+			add_mil_power = 50
+			add_dip_power = 50
+		}
+	}
+	
+	canada_army = {
+		icon = mission_cannons_firing
+		position = 2
+		required_missions = { canada_grow }
+	
+		trigger = {
+			OR = {
+				army_size = 50
+				army_size_percentage = 0.85
+			}
+			total_development = 300
+			OR = {
+				current_age = age_of_revolutions
+				current_age = age_of_imperialism
+			}
+		}
+		
+		effect = {
+			create_general = { tradition = 75 }
+			add_country_modifier = {
+				name = "fr1_army"
+				duration = 9125
+			}
+		}
+	}
+	
+	canada_independence = {
+		icon = mission_rb_monopolize_the_channel
+		position = 4
+		required_missions = { canada_army }
+	
+		trigger = { 
+			is_subject = no
+			is_at_war = no
+		}
+		
+		effect = {
+			add_prestige = 25
+			add_country_modifier = {
+				name = "colonial_independence"
+				duration = 7300
+			}
+			northeast_america_region = {
+			        limit = {
+					        NOT = { is_core = ROOT}
+							NOT = {owned_by = ROOT}
+						}
+				add_permanent_claim = ROOT
+			}
+			greenland_area = {
+			        limit = {
+					        NOT = { is_core = ROOT}
+							NOT = {owned_by = ROOT}
+						}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	canada_allies = {
+		icon = mission_alliances
+		position = 5
+		required_missions = { canada_independence }
+	
+		trigger = { 
+			num_of_allies = 3
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "colonial_allies"
+				duration = 7300
+			}
+		}
+	}
+	
+	canada_power = {
+		icon = mission_empire
+		position = 6
+		required_missions = { canada_allies }
+	
+		trigger = { 
+			is_great_power = yes
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "colonial_great_power"
+				duration = 9125
+			}
+		}
+	}
+}
