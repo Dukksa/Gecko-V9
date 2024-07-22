@@ -2236,7 +2236,7 @@ orinoco_estuary_modifier = {
 # England flavor modifiers
 
 gbr_cultural_unity = {
-	development_cost = -0.05
+	development_cost = -0.1
 }
 
 lollards = {
