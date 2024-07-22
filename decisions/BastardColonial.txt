@@ -243,6 +243,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_country_flag = became_dominion
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0
@@ -345,6 +346,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_country_flag = became_dominion
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0
@@ -391,6 +393,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_country_flag = became_dominion
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0
@@ -505,6 +508,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_country_flag = became_dominion
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0
@@ -595,6 +599,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_country_flag = became_dominion
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0

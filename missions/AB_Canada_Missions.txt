@@ -501,7 +501,7 @@ canada_missions_4_2 = {
 		required_missions = { canada_northeast }
 	
 		trigger = {
-		    cascadia_region = {
+		    great_lakes_region = {
 			    type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -509,7 +509,7 @@ canada_missions_4_2 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				region = cascadia_region
+				region = great_lakes_region
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
