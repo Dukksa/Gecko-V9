@@ -3901,3 +3901,364 @@ MARCH_ideas = {
 		land_morale = 0.1
 	}
 }
+#formable cn ideas
+AME_ideas = { #Brazil - Ameriga
+	start = {
+		land_attrition = -0.1
+		reinforce_speed = 0.2
+	}
+	bonus = {
+		prestige_decay = -0.01
+	}	
+	trigger = {
+		tag = AME
+	}
+	free = yes
+
+	governorate_general = {
+		monthly_reform_progress = 0.5
+	}
+	research_of_nassau = {
+		yearly_innovativeness = 0.25
+		innovativeness_gain = 0.5
+	}
+	mines_of_minas_gerais = {
+		gold_depletion_chance_modifier = -0.5
+		global_trade_goods_size_modifier = 0.1
+	}
+	halting_foreign_incursions = {
+		fire_damage_received = -0.15
+	}
+	entradas_and_bandeiras = {
+		same_culture_advisor_cost = -0.1
+	}
+	inconfidencia_mineira = {
+		discipline = 0.05
+	}
+	old_seat_of_the_empire = {
+		republican_tradition = 0.2
+	}
+}
+
+VIN_ideas = { #Canada - Vinland
+	start = {
+		idea_cost = -0.1
+		navy_tradition = 1
+	}
+	
+	bonus = {
+		naval_forcelimit_modifier = 0.25
+	}
+	
+	trigger = {
+		tag = VIN
+	}
+	free = yes
+	
+		
+	singing_lumberjacks = {
+		global_trade_goods_size_modifier = 0.15
+	}	
+	the_hudson_bay_company = {
+		country_diplomatic_power = 1
+	}
+    settling_the_interior = {
+		development_cost = -0.15
+	}
+	the_maritimes = {
+		global_sailors_modifier = 0.3
+		allowed_marine_fraction = 0.2
+	}
+	the_quebec_act = {
+		republican_tradition = 0.2
+	}
+	legacy_of_the_empire = {
+		embracement_cost = -0.2
+		global_institution_spread = 0.5
+	}
+	the_forests_of_canada = {
+		build_cost = -0.1
+	}
+}
+
+CUB_ideas = { #Cuba
+	start = {
+		naval_forcelimit_modifier = 0.2
+		sailors_recovery_speed = 0.2
+	}
+	
+	bonus = {
+		naval_tradition_from_battle = 0.5
+	}
+	
+	trigger = {
+		tag = CUB
+	}
+	free = yes
+	
+	cub_1 = { #Privateer Spirit
+		may_perform_slave_raid = yes
+		coast_raid_range = 1
+	}
+	cub_2 = { #Impressment
+		global_sailors_modifier = 0.5
+	}
+	cub_3 = { #The Arsenal
+		global_ship_cost = -0.1
+		global_ship_recruit_speed = -0.1
+	}
+	cub_4 = { #Sugar and Slaves
+		global_trade_goods_size_modifier = 0.1
+	}
+	cub_5 = { #The Crossroads
+		global_ship_trade_power = 0.25
+	}
+	cub_6 = { #Coartacion
+		country_diplomatic_power = 1
+	}
+	cub_7 = { #The Bourbon Reforms
+		republican_tradition = 0.2
+	}
+}
+
+HER_ideas = { #Colombia - Hereria
+	start = {
+		army_tradition = 0.5
+		general_cost = -0.25
+	}
+	
+	bonus = {
+		shock_damage_received = -0.15
+	}
+	
+	trigger = {
+		tag = HER
+	}
+	free = yes
+	
+	col_1 = { #Sons of Bolivar
+		infantry_power = 0.1
+	}
+	col_2 = { #Gran Colombia
+		prestige_decay = -0.01
+	}
+	col_3 = { #Jungle Plantations
+		production_efficiency = 0.1
+	}
+	col_4 = { #Muisca Heritage
+		manpower_in_true_faith_provinces= 0.2
+	}
+	col_5 = { #Little Hell
+		land_morale = 0.1
+	}
+	col_6 = { #Patrol the Caribbean
+		trade_efficiency = 0.1
+		global_own_trade_power = 0.1
+	}
+	col_7 = { #Sublime Liberty
+		republican_tradition = 0.2
+	}
+}
+
+ARC_ideas = { #United States - Arcadia
+	start = {
+		war_exhaustion = -0.05
+		fort_maintenance_modifier = -0.2
+	}
+	
+	bonus = {
+		army_tradition_from_battle = 0.5
+	}
+	
+	trigger = {
+		tag = ARC
+	}
+	free = yes
+	
+	freedom_of_religion = {
+		no_religion_penalty = yes
+		manpower_in_true_faith_provinces= 0.15
+	}
+	usa_bill_of_rights = {
+		republican_tradition = 0.2
+	}
+	empire_of_liberty = {
+		prestige = 1
+	}
+	lessons_of_valley_forge = {
+		infantry_power = 0.15
+		infantry_fire = 0.25
+	}
+	workshop_of_the_world = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	shining_city_on_a_hill = {
+		defensiveness = 0.2
+		hostile_attrition = 1
+		max_hostile_attrition = 1
+	}
+	indian_removal = {
+		culture_conversion_cost = -0.25
+		development_cost_in_primary_culture = -0.05
+ 	}
+}
+
+BEO_ideas = { #La Plata - Beornia
+	start = {
+		global_tax_modifier = 0.2
+		land_morale = 0.1
+	}
+	
+	bonus = {
+		morale_damage = 0.1
+	}
+	
+	trigger = {
+		tag = BEO
+	}
+	free = yes
+	
+	lap_1 = { #Wealth of the Atacama
+		production_efficiency = 0.1
+	}
+	lap_2 = { #Transverse Valleys
+		prestige = 1
+	}
+	lap_3 = { #Sun of May
+		morale_damage_received = -0.1
+	}
+	lap_4 = { #Made of Steel
+		global_regiment_cost = -0.1
+		shock_damage_received = -0.15
+	}
+	lap_5 = { #Made of Silver
+		global_trade_goods_size_modifier = 0.1
+	}
+	lap_6 = { #Hardy People
+		defensiveness = 0.25
+		hostile_attrition = 1
+		max_hostile_attrition = 1
+	}
+	lap_7 = { #The Argentine
+		country_admin_power = 1
+	}
+}
+
+TEX_ideas = { #Texas
+	start = {
+		global_tax_modifier = 0.2
+		cavalry_cost = -0.1
+	}
+	bonus = {
+		leader_land_shock = 1
+	}
+	trigger = {
+		tag = TEX
+	}
+	free = yes
+	lone_star_state = {
+		prestige = 1
+	}
+	tex_revolution = { #Texas Rangers
+		shock_damage = 0.1
+	}
+	cotton_plantations = {
+		production_efficiency = 0.1
+	}
+	vaqueros = {
+		cavalry_power = 0.15
+		cav_to_inf_ratio = 0.25
+	}
+	tex_native_frontiers = {
+		land_attrition = -0.15
+		movement_speed = 0.15
+	}
+	tejanos = {
+		war_exhaustion = -0.05
+	}
+	adelsverin = {
+		army_tradition = 0.5
+	}
+}
+
+PLA_ideas = { #Louisiana - Plantagenia
+	start = {
+		mercenary_cost = -0.25
+		mercenary_manpower = 1
+	}
+	
+	bonus = {
+		merc_maintenance_modifier = -0.25
+	}
+	
+	trigger = {
+		tag = PLA
+	}
+	free = yes
+	
+	lou_1 = { #Masters of the Gulf
+		prestige_decay = -0.01
+	}
+	lou_2 = { #Port of New Orleans
+		naval_forcelimit_modifier = 0.25
+		global_sailors_modifier = 0.5
+	}
+	lou_3 = { #Breadbasket of America
+		global_trade_goods_size_modifier = 0.1
+	}
+	lou_4 = { #Voodoo
+		morale_damage = 0.2
+	}
+	lou_5 = { #Mississippi Watershed
+		development_cost = -0.1
+	}
+	lou_6 = { #Slave Labor
+		build_time = -0.25
+		build_cost = -0.1
+	}
+	lou_7 = { #Soldiers of Fortune
+		mercenary_discipline = 0.1
+	}
+}
+
+GCA_ideas = { #Mexico - GranColumbia
+	start = {
+		regiment_manpower_usage = -0.1
+		reinforce_speed = 0.33
+	}
+	
+	bonus = {
+		morale_damage_received = -0.2
+	}
+	
+	trigger = {
+		tag = GCA
+	}
+	free = yes
+	
+	cam_1 = { #Grand Commissariat
+		recover_army_morale_speed = 0.1
+	}
+	cam_2 = { #Arm the Masses
+		infantry_power = -0.2
+		infantry_cost = -0.2
+	}
+	cam_3 = { #Imperial Schools
+		technology_cost = -0.1
+	}
+	cam_4 = { #Forced Conversion
+		culture_conversion_cost = -0.5
+		manpower_in_own_culture_provinces = 0.5
+	}
+	cam_5 = { #Highland Conscription
+		manpower_recovery_speed = 0.33
+	}
+	cam_6 = { #Redoubts
+		defensiveness = 0.2
+		garrison_size = 0.1
+	}
+	cam_7 = { #Militia
+		land_forcelimit_modifier = 0.33
+	}
+}	
+

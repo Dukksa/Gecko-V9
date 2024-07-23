@@ -116,223 +116,97 @@ mlo_court_stability_modifier = {
 #colonies
 #Colonies
 
-colonial_capital = {
-	local_development_cost = -0.1
-	local_build_cost = -0.1
-	local_build_time = -0.1
-}
-
-colonial_independence = {
-	global_unrest = -2
-	stability_cost_modifier = -0.15
-}
-
-fr1_delta = {
-	trade_efficiency = 0.15
-}
-
-fr1_army = {
-	land_morale = 0.15
-	liberty_desire = 50
-}
-
-fr1_river = {
-	global_colonial_growth = 15
-}
-
-fr1_fur = {
-	global_own_trade_power = 0.15
-}
-
-fr1_plains = {
-	colonists = 1
-}
-
-fr1_boom = {
-	global_tax_modifier = 0.15
-	production_efficiency = 0.15
-}
-
-fr1_jesuit = {
-	missionaries = 1
-}
-
-fr1_converting = {
-	global_missionary_strength = 0.02
-}
-
-carribean_plantations = {
-	global_own_trade_power = 0.15
-	global_trade_goods_size_modifier = 0.15
-}
-
-carribean_protection = {
-	global_ship_trade_power = 0.15
-}
-
-carribean_colonizers = {
-	global_colonial_growth = 15
-}
-
-carribean_haiti = {
-	colonist_placement_chance = 0.1
-}
-
-carribean_reduction = {
-	culture_conversion_cost = -0.15
-}
-
-carribean_cuba = {
-	native_assimilation = 0.5
-	native_uprising_chance = -0.5
-}
-
-carribean_building_fleet = {
-	global_ship_recruit_speed = -0.35
-}
-
-carribean_morale = {
-	naval_morale = 0.15
-}
-
-colonial_allies = {
-	diplomatic_reputation = 1
-}
-
-colonial_great_power = {
-	all_power_cost = -0.1
-}
-
-carribean_expanding = {
-	ae_impact = -0.15
-}
-
-carribean_florida = {
-	local_defensiveness = 0.25
-}
-
-colonial_pearl_antilles = {
-	trade_value = 3
-}
-
-brazil_delta = {
-	trade_efficiency = 0.15
-}
-
-brazil_amazonia = {
-	global_trade_goods_size_modifier = 0.1
-}
-
-brazil_wood = {
-	production_efficiency = 0.15
-}
-
-brazil_lead = {
-	global_trade_goods_size_modifier = 0.05
-}
-
-carribean_claiming = {
-	colonists = 1
-}
-
-colonial_trade_hegemony = {
-	province_trade_power_modifier = 0.25
-}
-
-brazil_lucrative = {
-	global_tax_modifier = 0.15
-}
-
-brazil_peru = {
-	ae_impact = -0.15
-}
-
-brazil_plata = {
-	global_trade_power = 0.2
-}
-
-brazil_colonialism = {
-	global_colonial_growth = 25
-}
-
-canada_colonization = {
+h_colony_founded_modifier = {
+	#advisor_cost = -0.05
+	core_creation = -0.10
 	global_colonial_growth = 10
 }
 
-canada_inuit = {
-	native_assimilation = 0.35
-	native_uprising_chance = -0.35
+h_colony_develop_economy_modifier = {
+	global_tax_income = 48
+	production_efficiency = 0.10	
 }
 
-canada_cod = {
-	global_prov_trade_power_modifier = 0.1
+h_colony_expand_infrastructure_modifier = {
+	build_cost = -0.10
+	build_time = -0.2
 }
 
-canada_develop = {
-	development_cost = -0.15
-	build_cost = -0.15
+h_colony_infrastructure_center_modifier = {
+	local_development_cost = -0.1
+	trade_goods_size = 1
 }
 
-canada_fur = {
-	production_efficiency = 0.15
+h_colony_colonial_militia = {
+	global_manpower = 5
+	land_forcelimit = 5
+	infantry_cost = -0.1
 }
 
-canada_lead = {
-	global_trade_goods_size_modifier = 0.05
+h_colony_train_militia = {
+	yearly_army_professionalism = 0.0025
+	drill_decay_modifier = -0.15
 }
 
-canada_plata = {
-	ae_impact = -0.15
+h_colony_train_militia_drill = {
+	drill_gain_modifier = 0.15
 }
 
-mexico_yucatan = {
-	province_warscore_cost = -0.15
+h_colony_governor_general = {
+	free_leader_pool = 1
+	infantry_power = 0.05
+	cavalry_power = 0.05
 }
 
-mexico_coastlines = {
-	trade_efficiency = 0.1
-	province_trade_power_modifier = 0.1
+h_colony_colonial_marines = {
+	allowed_marine_fraction = 0.1
 }
 
-mexico_gold = {
-	inflation_action_cost = -0.15
+h_colony_expand_frontier = {
+	colonist_placement_chance = 0.03
+	global_colonial_growth = 15
 }
 
-mexico_consolidate = {
-	harsh_treatment_cost = -0.2
+h_colony_dominion_founded = {
+	expand_administration_cost = -0.15
 }
 
-mexico_treasure = {
-	ship_power_propagation = 0.2
+h_colony_parliament_established = {
+	republican_tradition = 0.1
 }
 
-mexico_north = {
-	global_colonial_growth = 25
+h_colony_government_reform = {
+	reform_progress_growth = 0.33
 }
 
-mexico_panama = {
-	global_trade_power = 0.2
+h_colony_center_of_government = {
+	local_tax_modifier = 0.25
+	statewide_governing_cost = -0.25
 }
 
-mexico_influence = {
-	province_warscore_cost = -0.15
-	ae_impact = -0.15
+h_colony_age_of_liberty = {
+	idea_cost = -0.05
+	global_institution_spread = 0.33
 }
 
-mexico_florida = {
-	core_creation = -0.1
+h_colony_fortify = {
+	local_defensiveness = 0.1
 }
 
-mexico_economy = {
-	global_tax_modifier = 0.15
-	global_trade_goods_size_modifier = 0.15
+h_colony_fortify_country = {
+	rival_border_fort_maintenance = -0.25
 }
 
-colonial_protect = {
-	discipline = 0.05
+h_colony_culture = {
+	same_culture_advisor_cost = -0.25
 }
 
-fr1_retaliation = {
-	province_warscore_cost = -0.15
-	ae_impact = -0.15
+h_colony_religion = {
+	papal_influence = 2
+	church_power_modifier = 0.25
+	monthly_fervor_increase = 1
+}
+
+h_colonial_industry = {
+	global_trade_goods_size_modifier = 0.1
 }

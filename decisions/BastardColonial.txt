@@ -187,11 +187,11 @@ country_decisions = {
 		effect  = {
 			change_tag = BEO
 			remove_non_electors_emperors_from_empire_effect = yes
-			#add_government_reform = h_reform_dominion
-			#if = {
-			#	limit = { has_custom_ideas = no }
-			#	country_event = { id = ideagroups.1 } #Swap Ideas
-			#}
+			add_government_reform = h_reform_dominion
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -232,18 +232,17 @@ country_decisions = {
 		effect  = {
 			change_tag = AME
 			remove_non_electors_emperors_from_empire_effect = yes
-			#add_government_reform = h_reform_dominion
-			#if = {
-			#	limit = { has_custom_ideas = no }
-			#	country_event = { id = ideagroups.1 } #Swap Ideas
-			#}
+			add_government_reform = h_reform_dominion
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
 			add_prestige = 25
 			set_country_flag = became_dominion
-			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0
@@ -278,11 +277,11 @@ country_decisions = {
 		effect  = {
 			change_tag = HER
 			remove_non_electors_emperors_from_empire_effect = yes
-			#add_government_reform = h_reform_dominion
-			#if = {
-			#	limit = { has_custom_ideas = no }
-			#	country_event = { id = ideagroups.1 } #Swap Ideas
-			#}
+			add_government_reform = h_reform_dominion
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -335,18 +334,17 @@ country_decisions = {
 		effect  = {
 			change_tag = GCA
 			remove_non_electors_emperors_from_empire_effect = yes
-			#add_government_reform = h_reform_dominion
-			#if = {
-			#	limit = { has_custom_ideas = no }
-			#	country_event = { id = ideagroups.1 } #Swap Ideas
-			#}
+			add_government_reform = h_reform_dominion
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
 			add_prestige = 25
 			set_country_flag = became_dominion
-			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0
@@ -382,18 +380,17 @@ country_decisions = {
 		effect  = {
 			change_tag = PLT
 			remove_non_electors_emperors_from_empire_effect = yes
-			#add_government_reform = h_reform_dominion
-			#if = {
-			#	limit = { has_custom_ideas = no }
-			#	country_event = { id = ideagroups.1 } #Swap Ideas
-			#}
+			add_government_reform = h_reform_dominion
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
 			add_prestige = 25
 			set_country_flag = became_dominion
-			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0
@@ -440,11 +437,11 @@ country_decisions = {
 		effect  = {
 			change_tag = ARC
 			remove_non_electors_emperors_from_empire_effect = yes
-			#add_government_reform = h_reform_dominion
-			#if = {
-			#	limit = { has_custom_ideas = no }
-			#	country_event = { id = ideagroups.1 } #Swap Ideas
-			#}
+			add_government_reform = h_reform_dominion
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -497,18 +494,17 @@ country_decisions = {
 		effect  = {
 			change_tag = VIN
 			remove_non_electors_emperors_from_empire_effect = yes
-			#add_government_reform = h_reform_dominion
-			#if = {
-			#	limit = { has_custom_ideas = no }
-			#	country_event = { id = ideagroups.1 } #Swap Ideas
-			#}
+			add_government_reform = h_reform_dominion
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
 			add_prestige = 25
 			set_country_flag = became_dominion
-			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0
@@ -543,11 +539,11 @@ country_decisions = {
 		effect  = {
 			change_tag = TEX
 			remove_non_electors_emperors_from_empire_effect = yes
-			#add_government_reform = h_reform_dominion
-			#if = {
-			#	limit = { has_custom_ideas = no }
-			#	country_event = { id = ideagroups.1 } #Swap Ideas
-			#}
+			add_government_reform = h_reform_dominion
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -588,18 +584,17 @@ country_decisions = {
 		effect  = {
 			change_tag = CUB
 			remove_non_electors_emperors_from_empire_effect = yes
-			#add_government_reform = h_reform_dominion
-			#if = {
-			#	limit = { has_custom_ideas = no }
-			#	country_event = { id = ideagroups.1 } #Swap Ideas
-			#}
+			add_government_reform = h_reform_dominion
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
 			add_prestige = 25
 			set_country_flag = became_dominion
-			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0

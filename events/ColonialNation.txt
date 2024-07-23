@@ -5086,3 +5086,54 @@ province_event = {
 		add_unrest = 1
 	}
 }
+
+country_event = {
+	id = hashmp.18
+	title = hashmp.18.title
+	desc = hashmp.18.desc
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hashmp.18.a
+		add_adm_power = 25
+		add_country_modifier = {
+			name = h_event_adm
+			duration = -1
+		}
+		define_advisor = {
+			type = treasurer
+			skill = 1
+			discount = yes
+		}
+	}
+	
+	option = {
+		name = hashmp.18.b
+		add_dip_power = 25
+		add_country_modifier = {
+			name = h_event_dip
+			duration = -1
+		}
+		define_advisor = {
+			type = statesman
+			skill = 1
+			discount = yes
+		}
+	}
+	
+	option = {
+		name = hashmp.18.c
+		add_mil_power = 25
+		add_country_modifier = {
+			name = h_event_mil
+			duration = -1
+		}
+		define_advisor = {
+			type = grand_captain
+			skill = 1
+			discount = yes
+		}
+	}
+}

@@ -2093,54 +2093,6 @@ TUS_ideas = {
 }
 
 
-USA_ideas = {
-	start = {
-		merchants = 1
-		allowed_marine_fraction = 0.5
-	}
-	
-	bonus = {
-		legitimacy = 1
-		devotion = 1
-		republican_tradition = 0.3
-		meritocracy = 1
-		horde_unity = 1
-	}
-	
-	trigger = {
-		tag = USA
-	}
-	free = yes
-	
-	freedom_of_religion = {
-		tolerance_heretic = 5
-	}
-	usa_bill_of_rights = {
-		global_unrest = -2
-	}
-	manifest_destiny = {
-		colonists = 1
-		effect = { remove_temporary_colonist = yes }
-	}
-	lessons_of_valley_forge = {
-		land_morale = 0.10
-	}
-	workshop_of_the_world = {
-		global_trade_goods_size_modifier = 0.15
-	}
-	shining_city_on_a_hill = {
-		prestige = 1
-	}
-	empire_of_liberty = {
-		min_autonomy_in_territories = -0.10
-		global_autonomy = -0.025
- 	}
-}
-
-
-
-
-
 BRI_ideas = {
 	start = {
 		navy_tradition = 1
@@ -5727,45 +5679,6 @@ CND_ideas = {
 	}
 }
 
-BRZ_ideas = {
-	start = {
-		hostile_attrition = 1
-		envoy_travel_time = -0.25
-	}
-	bonus = {
-		global_trade_goods_size_modifier = 0.1
-	}	
-	trigger = {
-		tag = BRZ
-	}
-	free = yes
-
-	governorate_general = {
-		global_tax_modifier = 0.1
-	}
-	research_of_nassau = {
-		global_institution_spread = 0.1
-	}
-	mines_of_minas_gerais = {
-		inflation_reduction = 0.1
-	}
-	halting_foreign_incursions = {
-		infantry_power = 0.1
-	}
-	entradas_and_bandeiras = {
-		core_creation = -0.15
-	}
-	inconfidencia_mineira = {
-		stability_cost_modifier = -0.1
-	}
-	old_seat_of_the_empire = {
-		legitimacy = 1
-		devotion = 1
-		republican_tradition = 0.3
-		meritocracy = 1
-		horde_unity = 1
-	}
-}
 
 CAB_ideas = {
 	start = {
@@ -12801,45 +12714,6 @@ SYN_ideas = {
 	}
 }
 
-
-
-
-
-TEX_ideas = {
-	start = {	
-		fire_damage_received = -0.1
-		no_religion_penalty = yes
-	}
-	bonus = {
-		land_morale = 0.15
-	}
-	trigger = {
-		tag = TEX
-	}
-	free = yes
-	lone_star_state = {
-		prestige = 1
-	}
-	tex_revolution = {
-		fire_damage = 0.1
-	}
-	cotton_plantations = {
-		global_trade_goods_size_modifier = 0.1
-	}
-	vaqueros = {
-		land_attrition = -0.1
-		movement_speed = 0.1
-	}
-	tex_native_frontiers = {
-		army_tradition_decay = -0.01
-	}
-	tejanos = {
-		stability_cost_modifier = -0.15
-	}
-	adelsverin = {
-		development_cost = -0.1
-	}
-}
 
 NZL_ideas = {
 	start = {	
