@@ -2846,9 +2846,33 @@ POL_Missions_5_Jagiellon = {
 				}
 				custom_tooltip = POL_reward_if_bohemia_valid_yes
 				hidden_effect = {
-					add_casus_belli = {
-						target = BOH
-						type = cb_restore_personal_union 
+					bohemia_area = {
+						limit = {
+							NOT = { is_permanent_claim = ROOT }
+							NOT = { is_core = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					hradecko_area = {
+						limit = {
+							NOT = { is_permanent_claim = ROOT }
+							NOT = { is_core = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					moravia_area = {
+						limit = {
+							NOT = { is_permanent_claim = ROOT }
+							NOT = { is_core = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					erzgebirge_area = {
+						limit = {
+							NOT = { is_permanent_claim = ROOT }
+							NOT = { is_core = ROOT }
+						}
+						add_permanent_claim = ROOT
 					}
 					country_event = { id = ME_Poland_Events.8 }
 				}
