@@ -1707,7 +1707,7 @@ WoC_austria_3_1 = {
 					define_advisor = {
 						type = diplomat
 						skill = 2
-						cost_multiplier = 0.5
+						cost_multiplier = 0.25
 						culture = hungarian
 					}
 				"
