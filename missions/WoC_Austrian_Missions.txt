@@ -36,6 +36,7 @@ WoC_austria_1_germany = {
 				OR = {
 					area = switzerland_area
 					area = romandie_area
+					area = bern_area			
 				}
 			}
 		} 
