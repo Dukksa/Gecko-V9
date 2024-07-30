@@ -2097,7 +2097,13 @@ manufactory = {
 	time = 60
 	modifier = {
 		trade_goods_size = 0.8
-	}
+		if = { 
+			province = {
+				not = { development = 10 }
+			}
+			local_allowed_num_of_buildings = 1
+		}
+	}	
 }
 
 #If trade good assignment changes, also update scripted trigger "has_manufactory trigger"!
