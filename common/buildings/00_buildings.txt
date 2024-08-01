@@ -2097,14 +2097,6 @@ manufactory = {
 	time = 60
 	modifier = {
 		trade_goods_size = 0.8
-		if = { 
-			limit = {		
-				province = {
-					not = { development = 10 }
-				}
-			}			
-			local_allowed_num_of_buildings = 1
-		}
 	}	
 }
 
