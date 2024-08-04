@@ -1894,18 +1894,18 @@ lubeck_missions_5 = {
 			custom_tooltip = general_tooltip_dynamic_reward
 			if = {
 				limit = {
-					12 = { owned_by = ROOT }
+					5004 = { owned_by = ROOT }
 				}
-				12 = { change_culture = ROOT }
+				5004 = { change_culture = ROOT }
 			}
 			if = {
 				limit = {
-					12 = { country_or_non_sovereign_subject_holds = ROOT }
+					5004 = { country_or_non_sovereign_subject_holds = ROOT }
 				}
-				12 = { add_center_of_trade_level = 1 }
+				5004 = { add_center_of_trade_level = 1 }
 			}
 			else = {
-				12 = { remove_province_modifier = sound_toll }
+				5004 = { remove_province_modifier = sound_toll }
 				45 = { 
 					add_province_modifier = {
 						name = sound_toll

@@ -903,6 +903,7 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = HAN
+			on_change_tag_effect = yes
 			restore_country_name_effect = yes
 			1758 = {
 				add_base_tax = 1
@@ -941,7 +942,6 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			swap_non_generic_missions = yes
 			if = {
 				limit = {
 					is_playing_custom_nation = no
