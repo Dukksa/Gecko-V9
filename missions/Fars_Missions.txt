@@ -8,7 +8,7 @@ Fars_Missions_slot_1 = {
 	}
 	has_country_shield = yes
 
-	Timurid_prince_power_strugle = {
+	Timurid_prince_power_strugle_frs = {
 		icon = me_mission_timurids_princedom_the_power_struggle
 		required_missions = { }
 		position = 1
@@ -20,9 +20,9 @@ Fars_Missions_slot_1 = {
 		}
 	}
 	
-	Timurid_prince_expand_the_state = {
+	Timurid_prince_expand_the_state_frs = {
 		icon = me_mission_timurids_princedom_expand_our_realm
-		required_missions = { Timurid_prince_power_strugle }
+		required_missions = { Timurid_prince_power_strugle_frs }
 		position = 3
 		trigger = {
 			grown_by_development = 75
@@ -50,7 +50,7 @@ Fars_Missions_slot_1 = {
 		}
 	}
 	
-	Timurid_prince_claim_the_empire = {
+	Timurid_prince_claim_the_empire_frs = {
 		icon = me_mission_timurids_princedom_claim_timur_empire
 		required_missions = { 
 			Timurid_prince_expand_the_state
@@ -77,11 +77,11 @@ Fars_Missions_slot_1 = {
 		}
 		has_country_shield = yes
 
-		Timurid_support_within_the_people = {
+		Timurid_support_within_the_people_frs = {
 			icon = me_mission_timurids_princedom_support_by_the_people
 			required_missions = {
-				Timurid_prince_power_strugle
-				Timurid_heir_of_timur
+				Timurid_prince_power_strugle_frs
+				Timurid_heir_of_timur_frs
 			}
 			position = 2
 			provinces_to_highlight = {
@@ -98,10 +98,10 @@ Fars_Missions_slot_1 = {
 			}
 		}
 		
-		Timurid_grand_ruler = {
+		Timurid_grand_ruler_frs = {
 			icon = me_mission_timurids_princedom_the_great_ruler
 			required_missions = {
-				Timurid_support_within_the_people
+				Timurid_support_within_the_people_frs
 			}
 			position = 3
 			trigger = {
@@ -178,7 +178,7 @@ Fars_Missions_slot_3 = {
 	}
 	has_country_shield = yes
 
-	Timurid_heir_of_timur = {
+	Timurid_heir_of_timur_frs = {
 		icon = me_mission_timurids_princedom_heir_of_timur
 		required_missions = { }
 		position = 1
@@ -255,9 +255,9 @@ Fars_Missions_slot_3 = {
 		}
 	}
 	
-	Timurid_stronger_than_our_competitors = {
+	Timurid_stronger_than_our_competitors_frs = {
 		icon = me_mission_timurids_princedom_strongest_amongst_many
-		required_missions = { Timurid_heir_of_timur }
+		required_missions = { Timurid_heir_of_timur_frs }
 		position = 3
 		trigger = {
 			OR = {
@@ -282,11 +282,11 @@ Fars_Missions_slot_3 = {
 		}
 	}
 	
-	Timurid_ruler_of_our_region = {
+	Timurid_ruler_of_our_region_frs = {
 		icon = me_mission_timurids_princedom_ruler_of_our_region
 		required_missions = { 
-			Timurid_stronger_than_our_competitors
-			Timurid_grand_ruler
+			Timurid_stronger_than_our_competitors_frs
+			Timurid_grand_ruler_frs
 		}
 		position = 4
 		provinces_to_highlight = {
@@ -379,7 +379,7 @@ Fars_Missions_slot_4 = {
 
 	}
 	has_country_shield = yes
-	Timurid_pacify_the_persian_people = {
+	Timurid_pacify_the_persian_people_frs = {
 		icon = me_mission_timurids_princedom_pacify_the_persians
 		required_missions = { 
 			Timurid_follow_seljuk_architecture
@@ -411,10 +411,10 @@ Fars_Missions_slot_4 = {
 		}
 	}
 	
-	Timurid_heal_the_persian_religious_turmoil = {
+	Timurid_heal_the_persian_religious_turmoil_frs = {
 		icon = me_mission_timurids_princedom_ending_the_turmoil
 		required_missions = { 
-			Timurid_pacify_the_persian_people
+			Timurid_pacify_the_persian_people_frs
 		}
 		position = 2
 		provinces_to_highlight = {
@@ -558,7 +558,7 @@ Fars_Missions_slot_5 = {
 	}
 	has_country_shield = yes
 
-	Timurid_follow_seljuk_architecture = {
+	Timurid_follow_seljuk_architecture_frs = {
 		icon = me_mission_timurids_princedom_seljuk_architecture
 		required_missions = { }
 		position = 1
@@ -581,9 +581,9 @@ Fars_Missions_slot_5 = {
 		}
 	}
 	
-	Timurid_pinnacle_of_islamic_art = {
+	Timurid_pinnacle_of_islamic_art_frs = {
 		icon = me_mission_timurids_princedom_pinnacle_of_islamic_art
-		required_missions = { Timurid_follow_seljuk_architecture }
+		required_missions = { Timurid_follow_seljuk_architecture_frs }
 		position = 3
 		trigger = {
 			religion_group = muslim
@@ -609,11 +609,11 @@ Fars_Missions_slot_5 = {
 		}
 	}
 	
-	Timurid_restore_persia_and_khorasan_areas = {
+	Timurid_restore_persia_and_khorasan_areas_frs = {
 		icon = me_mission_timurids_princedom_reconstruct_the_persian_lands
 		required_missions = { 
-			Timurid_pinnacle_of_islamic_art
-			Timurid_heal_the_persian_religious_turmoil
+			Timurid_pinnacle_of_islamic_art_frs
+			Timurid_heal_the_persian_religious_turmoil_frs
 		}
 		position = 4
 		provinces_to_highlight = {
