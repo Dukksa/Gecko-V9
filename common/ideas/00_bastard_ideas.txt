@@ -3983,12 +3983,12 @@ VIN_ideas = { #Canada - Vinland
 
 CUB_ideas = { #Cuba
 	start = {
-		naval_forcelimit_modifier = 0.2
-		sailors_recovery_speed = 0.2
+		merchants = 1
+		development_cost = -0.1
 	}
 	
 	bonus = {
-		naval_tradition_from_battle = 0.5
+		colonists = 1
 	}
 	
 	trigger = {
@@ -3997,27 +3997,27 @@ CUB_ideas = { #Cuba
 	free = yes
 	
 	cub_1 = { #Privateer Spirit
-		may_perform_slave_raid = yes
-		coast_raid_range = 1
+		production_efficiency = 0.1
+		build_cost = -0.10
 	}
 	cub_2 = { #Impressment
-		global_sailors_modifier = 0.5
+		global_institution_spread = 0.2
 	}
 	cub_3 = { #The Arsenal
-		global_ship_cost = -0.1
-		global_ship_recruit_speed = -0.1
+		global_unrest = -2
 	}
 	cub_4 = { #Sugar and Slaves
-		global_trade_goods_size_modifier = 0.1
+		global_trade_power = 0.05
+		trade_range_modifier = 0.1
 	}
 	cub_5 = { #The Crossroads
-		global_ship_trade_power = 0.25
+		num_accepted_cultures = 2
 	}
 	cub_6 = { #Coartacion
-		country_diplomatic_power = 1
+		diplomatic_reputation = 1
 	}
 	cub_7 = { #The Bourbon Reforms
-		republican_tradition = 0.2
+		naval_forcelimit_modifier = 0.25
 	}
 }
 
@@ -4240,7 +4240,8 @@ GCA_ideas = { #Mexico - GranColumbia
 		recover_army_morale_speed = 0.1
 	}
 	cam_2 = { #Arm the Masses
-		infantry_power = -0.2
+		infantry_power = -0.15
+		cavalry_power = -0.15
 		infantry_cost = -0.2
 	}
 	cam_3 = { #Imperial Schools

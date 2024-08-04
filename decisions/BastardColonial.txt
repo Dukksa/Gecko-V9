@@ -375,10 +375,10 @@ country_decisions = {
 				owned_by = ROOT
 				is_core = ROOT
 			}
-			NOT = { exists = PLT }
+			NOT = { exists = PLA }
 		}
 		effect  = {
-			change_tag = PLT
+			change_tag = PLA
 			remove_non_electors_emperors_from_empire_effect = yes
 			add_government_reform = h_reform_dominion
 			if = {
@@ -561,12 +561,12 @@ country_decisions = {
 			NOT = { has_country_flag = became_dominion }
 			was_never_end_game_tag_trigger = yes
 			is_colonial_nation = yes
-			caribbean_sea_region = {
+			carribeans_region = {
 				owned_by = ROOT
 			}
 		}
 		provinces_to_highlight = {
-			region = caribbean_sea_region
+			region = carribeans_region
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
@@ -574,7 +574,7 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war = no
-			caribbean_sea_region = {
+			carribeans_region = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT
