@@ -464,6 +464,77 @@ country_decisions = {
 		}
 	}
 
+	show_no_slots = {
+		color = { 41  233  249 }
+		potential = {
+			ai = no
+			adm_tech = 11
+			NOT = {has_country_flag = hide_extra_decisions}
+		}
+		provinces_to_highlight = {
+			NOT = { num_free_building_slots = 1 }
+			OR = {
+				NOT = { has_manpower_building_trigger = yes }
+				NOT = { has_forcelimit_building_trigger = yes  }
+				NOT = {
+					OR = {
+						has_building = wharf
+						has_building = weapons
+						has_building = textile
+						has_building = tradecompany
+						has_building = farm_estate
+						has_building = mills
+						has_building = plantations
+					}
+				}
+				NOT = {has_production_building_trigger = yes }		
+			}	
+			OR = {
+				owned_by = ROOT 
+				is_core = ROOT 
+			}
+		}
+		allow = {
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					NOT = { num_free_building_slots = 1 }
+					OR = {
+						NOT = { has_manpower_building_trigger = yes }
+						NOT = { has_forcelimit_building_trigger = yes  }
+						NOT = {
+							OR = {
+								has_building = wharf
+								has_building = weapons
+								has_building = textile
+								has_building = tradecompany
+								has_building = farm_estate
+								has_building = mills
+								has_building = plantations
+							}
+						}
+					NOT = {has_production_building_trigger = yes }		
+					}	
+					OR = {
+						owned_by = ROOT 
+						is_core = ROOT 
+					}
+				}
+				add_province_modifier = { 
+					name = bad_building_temple
+					duration = 3650 
+				}
+			}
+			every_owned_province = {
+					limit = {
+						has_province_modifier = bad_building_temple
+						has_tax_building_trigger = no	
+					}
+					remove_province_modifier = bad_building_temple
+			}			
+		}
+	}
 
 	development_counter = {
 		color = { 166  0  0 }
