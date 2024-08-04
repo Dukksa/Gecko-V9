@@ -841,6 +841,7 @@ country_decisions = {
 			NOT = { tag = PAP }
 			NOT = { tag = GER }
 			NOT = { tag = PRU }
+			NOT = { tag = NGF }
 			NOT = { tag = SAX } #Saxe-Lauenburg should form either Saxony or Hannover, not both
 			NOT = { exists = HAN }
 			OR = {
@@ -902,7 +903,6 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = HAN
-			on_change_tag_effect = yes
 			restore_country_name_effect = yes
 			1758 = {
 				add_base_tax = 1
