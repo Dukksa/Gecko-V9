@@ -15,10 +15,10 @@ christian = {
 	flag_emblem_index_range = { 1 57 }
 
 	
-	
 	catholic = {
 		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
+		can_have_secondary_religion = yes
 		color = { 204 204 0 }
 		icon = 1
 		allowed_conversion = {
@@ -315,6 +315,7 @@ christian = {
 		color = { 135 77 255 }
 		icon = 28
 		allow_female_defenders_of_the_faith = yes
+		can_have_secondary_religion = yes
 		declare_war_in_regency = yes
 		allowed_center_conversion = {
 			catholic
@@ -349,7 +350,7 @@ christian = {
 	hussite = {
 		color = { 244 55 9 }
 		icon = 22
-
+		can_have_secondary_religion = yes
 		allowed_center_conversion = {
 			catholic
 		}
@@ -383,7 +384,7 @@ christian = {
 		declare_war_in_regency = yes
 		color = { 0 0 178 }
 		icon = 2
-
+		can_have_secondary_religion = yes
 		allowed_conversion = {
 			reformed
 			catholic
@@ -522,6 +523,7 @@ christian = {
 	reformed = {
 		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
+		can_have_secondary_religion = yes
 		color = { 76 76 229 }
 		icon = 3
 		allowed_conversion = {
@@ -639,6 +641,7 @@ christian = {
 	orthodox = {
 		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
+		can_have_secondary_religion = yes
 		color = { 178 127 0 }
 		icon = 4
 		country = {
@@ -796,6 +799,7 @@ christian = {
 		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		flags_with_emblem_percentage = 20
+		can_have_secondary_religion = yes
 		flag_emblem_index_range = { 1 4 }
 
 		color = { 178 38 76 }
@@ -1200,6 +1204,7 @@ eastern = {
 	buddhism = { #Theravada
 		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
+		can_have_secondary_religion = yes
 		color = { 204 76 0 }
 		icon = 24
 		allowed_conversion = {
@@ -1229,6 +1234,7 @@ eastern = {
 	vajrayana = {
 		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
+		can_have_secondary_religion = yes
 		color = { 204 76 76 }
 		icon = 25
 		allowed_conversion = {
@@ -1258,6 +1264,7 @@ eastern = {
 	mahayana = {
 		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
+		can_have_secondary_religion = yes
 		color = { 204 76 127 }
 		icon = 23
 		allowed_conversion = {
@@ -1287,6 +1294,7 @@ eastern = {
 	confucianism = {
 		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
+		can_have_secondary_religion = yes
 		color = { 214 229 140 }
 		icon = 9
 		country = {
@@ -1300,6 +1308,7 @@ eastern = {
 	shinto = {
 		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
+		can_have_secondary_religion = yes
 		color = { 204 0 0 }
 		icon = 10
 		country = {
@@ -1328,6 +1337,7 @@ dharmic = {
 	hinduism = {
 		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
+		can_have_secondary_religion = yes
 		color = { 0 204 204 }
 		icon = 8
 		allowed_conversion = {
@@ -1357,6 +1367,7 @@ dharmic = {
 	sikhism = {
 		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
+		can_have_secondary_religion = yes
 		color = { 0 153 153 }
 		icon = 15
 		allowed_conversion = {
@@ -1977,6 +1988,7 @@ pagan = {
 	animism = {
 		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
+		can_have_secondary_religion = yes
 		color = { 127 0 0 }
 		icon = 11
 		country = {
@@ -1990,6 +2002,7 @@ pagan = {
 		heretic = { SNAKE_CLAN }
 	}
 	shamanism = { #Fetishism, tag kept to avoid breaking saves.
+		can_have_secondary_religion = yes
 		color = { 127 76 76 }
 		icon = 12
 		country = {
@@ -2001,6 +2014,7 @@ pagan = {
 		heretic = { GOAT_SKULL }
 	}
 	totemism = {
+		can_have_secondary_religion = yes
 		color = { 127 115 115 }
 		icon = 13
 		country = {
@@ -2017,6 +2031,7 @@ pagan = {
 	}
 	
 	inti = {
+		can_have_secondary_religion = yes
 		color = { 64 115 115 }
 		icon = 18
 		country = {
@@ -2037,6 +2052,7 @@ pagan = {
 	}
 	
 	nahuatl = {
+		can_have_secondary_religion = yes
 		color = { 64 115 64 }
 		icon = 17
 		country = {
@@ -2057,6 +2073,7 @@ pagan = {
 	}
 	
 	mesoamerican_religion = {
+		can_have_secondary_religion = yes
 		#color = { 76 25 178 }
 		color = { 127 25 178 }
 		icon = 19
@@ -2075,6 +2092,7 @@ pagan = {
 	}
 	
 	norse_pagan_reformed = {
+		can_have_secondary_religion = yes
 		icon = 21
 		color = { 191 191 191 }
 		country = {
@@ -2104,6 +2122,7 @@ pagan = {
 	}
 	
 	dreamtime = {
+		can_have_secondary_religion = yes
 		icon = 29
 		color = { 197 133 43 }
 		country = {
@@ -2120,13 +2139,13 @@ pagan = {
 }
 
 jewish_group = {
-
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 106 107 }
 	defender_of_faith = yes
 
 	jewish = {
 		icon = 20
+		can_have_secondary_religion = yes
 		color = { 0 156 231 }
 		country = {
 			tolerance_own = 2
@@ -2251,6 +2270,7 @@ zoroastrian_group = {
 	flag_emblem_index_range = { 110 110 }
 	defender_of_faith = yes
 	zoroastrian = {
+		can_have_secondary_religion = yes
 		icon = 26
 		color = { 127 178 51 }
 		province = {

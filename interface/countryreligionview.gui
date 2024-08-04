@@ -466,13 +466,14 @@ guiTypes = {
 		{
 			name ="convert_secondary_button"
 			quadTextureSprite = "GFX_religion_secondary_convert_button"
-			position = { x= 5000 y = 148 }
+			position = { x= 153 y = 151 }
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
 			buttonFont = "Main_14"
 			Orientation = "UPPER_LEFT"
 			hint_tag = "hint_changereligion"
+			scale = 0.8
 		}	
 		
 		###Tolerance
