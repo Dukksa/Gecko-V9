@@ -36,6 +36,7 @@ WoC_austria_1_germany = {
 				OR = {
 					area = switzerland_area
 					area = romandie_area
+					area = bern_area			
 				}
 			}
 		} 
@@ -573,6 +574,13 @@ WoC_austria_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			hradecko_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}		
 
 			custom_tooltip = SEPERATOR_TOOLTIP
 
@@ -1700,7 +1708,7 @@ WoC_austria_3_1 = {
 					define_advisor = {
 						type = diplomat
 						skill = 2
-						cost_multiplier = 0.5
+						cost_multiplier = 0.75
 						culture = hungarian
 					}
 				"

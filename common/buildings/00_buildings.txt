@@ -2097,7 +2097,7 @@ manufactory = {
 	time = 60
 	modifier = {
 		trade_goods_size = 0.8
-	}
+	}	
 }
 
 #If trade good assignment changes, also update scripted trigger "has_manufactory trigger"!
