@@ -1,0 +1,16 @@
+spriteTypes = {
+
+
+#############################################
+	
+####### COMBAT TERRAIN PICTURES #########
+	spriteType = {
+		name = "GFX_combat_terrain_Oasis"
+		texturefile = "gfx/interface/Oasis.dds"
+	}
+	spriteType = {
+		name = "GFX_colony_terrain_Oasis"
+		texturefile = "gfx/interface/colony_terrain_Oasis.dds"
+	}
+
+}
