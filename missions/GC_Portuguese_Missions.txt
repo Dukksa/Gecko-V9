@@ -1787,7 +1787,7 @@ gc_por_5_bb = {
 	
 	dom_por_clash_ottomans = {
 		icon = mission_the_bospborus
-		required_missions = { gc_por_oman gc_portugal_discovers_india }
+		required_missions = { gc_por_oman }
 		position = 6
 		provinces_to_highlight = {
 			is_capital = yes 
