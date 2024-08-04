@@ -20,6 +20,27 @@ transcaucasian_wine_valleys = {
 	
 }
 
+my_desert = {
+	potential = {
+			normal_or_historical_nations = yes
+		}
+
+		trigger = {
+			controlled_by = ROOT
+		}
+
+		trade_goods_size= 1
+		
+		#Province scope
+		on_activation = {
+		
+		}
+		
+		on_deactivation = {
+		
+		}
+}	
+
 kaffa_slave_market = {
 	potential = {
 		normal_or_historical_nations = yes
