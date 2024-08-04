@@ -1360,12 +1360,17 @@ low_army_professionalism = {
 }
 
 high_army_professionalism = {
-	fire_damage = 0.1
-	shock_damage = 0.1
-	discipline = 0.05
-	#drill_decay_modifier = -0.5
-	allowed_samurai_fraction = 0.1
-	reinforce_speed = 0.33
+	#fire_damage = 0.1	#0.1→0
+	#shock_damage = 0.1		#0.1→0
+	discipline = 0.05	#0→0.05
+	mercenary_discipline = -0.05	#0→-0.05
+	land_morale = 0.1	#0→0.1
+	siege_ability = 0.2
+	drill_decay_modifier = -0.2
+	reserves_organisation = 0.5	#0→0.5
+	land_maintenance_modifier = 0.2	#0→0.2
+	land_attrition = -0.25	#0→-0.25
+	yearly_army_professionalism = -0.01	#0→-0.01
 }
 
 streltsy_modifier = {
@@ -2018,15 +2023,11 @@ zaidi_scholar_modifier = {
 # Regiment Types Modifiers
 ########################################
 regiment_drill_modifier = { # Used by individual regiments
-	shock_damage = 0.1
-	fire_damage = 0.1
-	fire_damage_received = -0.25
-	shock_damage_received = -0.25
+	discipline = 0.15
 }
 
 army_drill_modifier = { # Used by an entire army, is the average of all subunits drill
 	movement_speed = 0.2
-	land_attrition = -0.33
 }
 
 janissary_regiment = {
