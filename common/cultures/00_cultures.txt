@@ -7908,46 +7908,6 @@ eastern_aryan = {
 			Syamadevi Vijnayavati Vina Yajnavati
 		}
 	}
-	bihari = {
-		primary = TRT
-		dynasty_names = {
-			"Sugauna" "Sharqi" "Suri" "Oinwara"
-		}
-		male_names = {
-			"Shiv Singh" "Padma Singh" "Hari Singh" "Nar Singh" "Dhir Singh" "Bhairav Singh" "Rambhadra Singh" 
-			"Laxminath Singh"
-		}
-		female_names = {
-			"Bishwas Devi" "Bhanumati" "Sharat" Amrapali Amritakala Asima Bhavashankari Bishwas Bhogavati Bibibai Dattadevi 
-			Devavati Devi Ahiylya Gandharavati "Malika Bibi" "Kamala"
-		}
-	}
-	pahari = {
-		primary = GHR
-		dynasty_names = {
-			Chand Parmar Prakash Katoch
-		}
-	}
-	nepali = {
-		primary = NPL
-		dynasty_names = {
-			"Malla" "Ghorka" Limbu
-		}
-		male_names = {
-			Jayajyotimalla Jayayakshamalla Ratmamalla Suryamalla Amaramalla Narendramalla Mahendramalla Sadashivamalla 
-			Shivasimhamalla Lakshminarasimhamalla Pratapamalla Jayanripendramalla Parthivendramalla Bhupendramalla 
-			Bhaskaramalla Mahendrasimhamalla Jayaprakasamalla Bhimsen Amar Singh Ranjur Singh Bhakti
-		}
-		female_names = {
-			Devaladevi Kaushalyawati Rajendralakshmi Maiya Nanu Nani Maya Pragya Anu Chameli Nirmala Anushka Sarmila Komal 
-			Rita Kamala Goma Srijana Bhawana Pramila Saraswati Laxmi Ganga Radha Radhika Krishna Bishnu Sarita Kalpana 
-			Shanti Aayusha Ramita Gita Sita Sangita Mira Ranjita Ranju Manju Punam Maili Kaili Saili Jamuna Shova Pratiksha 
-			Sanjila Anita Nilam Nira Urmila Kopila Pavitra Iswari Khusbhu Rina Junu Tika Kali Rasmi Rupa Puja Aarati 
-			Mankumari Dhankumari Bechani Mangita Uru Lalita Rekha Prabha Shushila Laila Renu Muna Amrita Seti Gauri 
-			Kaushilya Rama Madhu Madhurima Renuka Chandrakala Fulkumari Indrakala Sabitri Archana Kamana Puspa Putali 
-			Suntali Dipa Ambika Dipshika Sabita Suravi Ramabati Mainabati Kabita Champa Kusum Rampyari
-		}
-	}
 	oriya = {
 		primary = ORI
 		dynasty_names = {
@@ -8168,6 +8128,46 @@ hindusthani = {
 		"Mana" "Chanda" "Haihaya" "Sailavamsa" "Singara" "Gopala" "Baghela" "Baland"  "Bundela" "Rajgond" 
 		"Bhar" "Sonhat" "Chaulukya" "Jadon" "Surasena" "Dahiya" "Mir" "Yayvapala" "Khichar" 
 		"Gahirawar" "Kalachuri"
+	}
+	bihari = {
+		primary = TRT
+		dynasty_names = {
+			"Sugauna" "Sharqi" "Suri" "Oinwara"
+		}
+		male_names = {
+			"Shiv Singh" "Padma Singh" "Hari Singh" "Nar Singh" "Dhir Singh" "Bhairav Singh" "Rambhadra Singh" 
+			"Laxminath Singh"
+		}
+		female_names = {
+			"Bishwas Devi" "Bhanumati" "Sharat" Amrapali Amritakala Asima Bhavashankari Bishwas Bhogavati Bibibai Dattadevi 
+			Devavati Devi Ahiylya Gandharavati "Malika Bibi" "Kamala"
+		}
+	}
+	pahari = {
+		primary = GHR
+		dynasty_names = {
+			Chand Parmar Prakash Katoch
+		}
+	}
+	nepali = {
+		primary = NPL
+		dynasty_names = {
+			"Malla" "Ghorka" Limbu
+		}
+		male_names = {
+			Jayajyotimalla Jayayakshamalla Ratmamalla Suryamalla Amaramalla Narendramalla Mahendramalla Sadashivamalla 
+			Shivasimhamalla Lakshminarasimhamalla Pratapamalla Jayanripendramalla Parthivendramalla Bhupendramalla 
+			Bhaskaramalla Mahendrasimhamalla Jayaprakasamalla Bhimsen Amar Singh Ranjur Singh Bhakti
+		}
+		female_names = {
+			Devaladevi Kaushalyawati Rajendralakshmi Maiya Nanu Nani Maya Pragya Anu Chameli Nirmala Anushka Sarmila Komal 
+			Rita Kamala Goma Srijana Bhawana Pramila Saraswati Laxmi Ganga Radha Radhika Krishna Bishnu Sarita Kalpana 
+			Shanti Aayusha Ramita Gita Sita Sangita Mira Ranjita Ranju Manju Punam Maili Kaili Saili Jamuna Shova Pratiksha 
+			Sanjila Anita Nilam Nira Urmila Kopila Pavitra Iswari Khusbhu Rina Junu Tika Kali Rasmi Rupa Puja Aarati 
+			Mankumari Dhankumari Bechani Mangita Uru Lalita Rekha Prabha Shushila Laila Renu Muna Amrita Seti Gauri 
+			Kaushilya Rama Madhu Madhurima Renuka Chandrakala Fulkumari Indrakala Sabitri Archana Kamana Puspa Putali 
+			Suntali Dipa Ambika Dipshika Sabita Suravi Ramabati Mainabati Kabita Champa Kusum Rampyari
+		}
 	}
 }
 
