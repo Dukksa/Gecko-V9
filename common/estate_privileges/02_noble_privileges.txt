@@ -499,12 +499,11 @@ estate_nobles_right_of_counsel = {
 				}
 			}
 			capital_scope = { 
-				add_unit_construction = {
-					type = cavalry
-					amount = 5
-					speed = 1 #seems to be capped to some point
-					cost = 0
-				}
+				cavalry = root
+				cavalry = root
+				cavalry = root
+				cavalry = root
+				cavalry = root
 			}
 		}
 		if = {
@@ -516,12 +515,11 @@ estate_nobles_right_of_counsel = {
 				}
 			}
 			random_owned_province = { 
-				add_unit_construction = {
-					type = cavalry
-					amount = 5
-					speed = 1 #seems to be capped to some point
-					cost = 0
-				}
+				cavalry = root
+				cavalry = root
+				cavalry = root
+				cavalry = root
+				cavalry = root
 			}
 		}
 	}
