@@ -1,4 +1,4 @@
-edict_advancement_effort = {
+edict_centralization_effort = {
 	potential = {
 		always = yes		#we support "potential" if modders want to have lots and just show some.
 	}
@@ -18,40 +18,27 @@ edict_advancement_effort = {
 	}
 	
 	modifier = {
-		institution_growth = 6
+		local_autonomy = -0.1
 	}
 	
-	notify_trigger = {
-		FROM = {
-			current_institution = 100
-		}
-	}
+	color = {  220 178 155 }
+	on_state_edict_revoked = { FROM = { clr_country_flag = sea_state_edicts_decision_edict_centralization_effort_flag } }
 	
-	color = { 50 173 192 }
-	
-	on_state_edict_revoked = { FROM = { clr_country_flag = sea_state_edicts_decision_edict_advancement_effort_flag } }
 	
 	ai_will_do = {
-		# has to be around at least 10 to be picked (depends on maintainance cost and general economy)
 		factor = 10
 		modifier = {
 			factor = 0
 			all_province_in_state = {
-				NOT = { current_institution_growth = 0.5 }
-			}
-		}
-		modifier = {
-			factor = 5
-			area_for_scope_province = {
-				is_capital = yes
+				NOT = {
+					local_autonomy_above_min = 10
+				}
 			}
 		}
 		modifier = {
 			factor = 3
 			all_province_in_state = {
-				AND = {
-					current_institution_growth = 0.5
-				}
+				local_autonomy_above_min = 10
 			}
 		}
 	}

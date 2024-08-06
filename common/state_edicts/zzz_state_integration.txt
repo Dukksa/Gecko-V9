@@ -1,0 +1,32 @@
+state_integration_state_edict = {
+	potential = {
+		current_age = age_of_absolutism
+		has_government_attribute = unlock_special_state_edicts
+	}
+	
+	allow = {
+		has_government_attribute = unlock_special_state_edicts
+		current_age = age_of_absolutism
+		custom_trigger_tooltip = {
+			tooltip = sea_remove_state_edicts_flag_tt
+			OR = {
+				NOT = { has_country_flag = sea_state_edicts_clear_flag }
+				had_country_flag = {
+					flag = sea_state_edicts_clear_flag
+					days = 33
+				}
+			}
+		}
+	}
+	
+	modifier = {
+		local_years_of_nationalism = -10
+	}
+	
+	color = { 255 255 128 }
+	on_state_edict_revoked = { FROM = { clr_country_flag = sea_state_edicts_decision_state_integration_state_edict_flag } }
+	
+	ai_will_do = {
+		factor = 5
+	}
+}

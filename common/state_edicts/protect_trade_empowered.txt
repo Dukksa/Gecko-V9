@@ -1,10 +1,13 @@
-edict_protect_trade = {
+protect_trade_empowered = {
 	potential = {
-		always = yes		#we support "potential" if modders want to have lots and just show some.
+		has_country_flag = fra_improve_trade_power_state_edict_flag
 	}
 	
 	allow = {
-		always = yes
+		custom_trigger_tooltip = {
+			tooltip = unlocked_if_tt
+			has_country_flag = fra_improve_trade_power_state_edict_flag
+		}
 		custom_trigger_tooltip = {
 			tooltip = sea_remove_state_edicts_flag_tt
 			OR = {
@@ -18,15 +21,15 @@ edict_protect_trade = {
 	}
 	
 	modifier = {
-		province_trade_power_modifier = 0.5
+		province_trade_power_modifier = 0.75
 	}
 	
 	color = {  113 11 43 }
-	on_state_edict_revoked = { FROM = { clr_country_flag = sea_state_edicts_decision_edict_protect_trade_flag } }
-
+	on_state_edict_revoked = { FROM = { clr_country_flag = sea_state_edicts_decision_protect_trade_empowered_flag } }
+	
 	
 	ai_will_do = {
-		factor = 10
+		factor = 12
 		modifier = {
 			factor = 0
 			all_province_in_state = {
@@ -35,7 +38,7 @@ edict_protect_trade = {
 		}
 		modifier = {
 			factor = 4
-			area_for_scope_province = {
+			any_province_in_state = {
 				province_trade_power = 60
 			}
 		}

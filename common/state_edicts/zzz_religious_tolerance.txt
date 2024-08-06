@@ -1,13 +1,11 @@
-edict_religion_enforced = {
+religious_tolerance_state_edict = {
 	potential = {
 		current_age = age_of_reformation
+		has_government_attribute = unlock_special_state_edicts
 	}
 	
 	allow = {
-		custom_trigger_tooltip = {
-			tooltip =edict_religion_enforced_tooltip
-			has_country_flag = religion_enforced_edict
-		}
+		has_government_attribute = unlock_special_state_edicts
 		current_age = age_of_reformation
 		custom_trigger_tooltip = {
 			tooltip = sea_remove_state_edicts_flag_tt
@@ -22,14 +20,13 @@ edict_religion_enforced = {
 	}
 	
 	modifier = {
-		local_religious_conversion_resistance = 1
+		local_religious_unity_contribution = -0.5
 	}
 	
-	color = {  116 198 240  }
-	on_state_edict_revoked = { FROM = { clr_country_flag = sea_state_edicts_decision_edict_religion_enforced_flag } }
-	
+	color = { 255 255 128 }
+	on_state_edict_revoked = { FROM = { clr_country_flag = sea_state_edicts_decision_religious_tolerance_state_edict_flag } }
 	
 	ai_will_do = {
-		factor = 0
+		factor = 5
 	}
 }

@@ -5,6 +5,16 @@ edict_defensive_edict = {
 	
 	allow = {
 		always = yes
+		custom_trigger_tooltip = {
+			tooltip = sea_remove_state_edicts_flag_tt
+			OR = {
+				NOT = { has_country_flag = sea_state_edicts_clear_flag }
+				had_country_flag = {
+					flag = sea_state_edicts_clear_flag
+					days = 33
+				}
+			}
+		}
 	}
 	
 	modifier = {
@@ -12,9 +22,30 @@ edict_defensive_edict = {
 	}
 	
 	color = {  46 114 55  }
+	on_state_edict_revoked = { FROM = { clr_country_flag = sea_state_edicts_decision_edict_defensive_edict_flag } }
 	
 	
 	ai_will_do = {
-		factor = 0
+		factor = 100
+		modifier = {
+			factor = 0
+			all_province_in_state = {
+				NOT = { fort_level = 1 }
+			}
+		}
+		modifier = {
+			factor = 10
+			any_province_in_state = {
+				fort_level = 1
+				has_siege = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			all_province_in_state = {
+				fort_level = 1
+				NOT = { controlled_by = owner }
+			}
+		}
 	}
 }

@@ -1,0 +1,34 @@
+french_infrastructure_network = {
+	potential = {
+		custom_trigger_tooltip = {
+			tooltip = unlocked_if_tt
+			has_country_flag = fra_enable_infrastructure_network_flag
+		}
+	}
+	
+	allow = {
+		custom_trigger_tooltip = {
+			tooltip = sea_remove_state_edicts_flag_tt
+			OR = {
+				NOT = { has_country_flag = sea_state_edicts_clear_flag }
+				had_country_flag = {
+					flag = sea_state_edicts_clear_flag
+					days = 33
+				}
+			}
+		}
+	}
+	
+	modifier = {
+		local_friendly_movement_speed = 0.2
+	}
+	
+	color = { 51 93 159 }
+	on_state_edict_revoked = { FROM = { clr_country_flag = sea_state_edicts_decision_french_infrastructure_network_flag } }
+	
+	
+	ai_will_do = {
+		factor = 0
+	}
+	
+}

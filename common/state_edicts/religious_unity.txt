@@ -5,13 +5,30 @@ edict_religious_unity = {
 	
 	allow = {
 		always = yes
+		custom_trigger_tooltip = {
+			tooltip = sea_remove_state_edicts_flag_tt
+			OR = {
+				NOT = { has_country_flag = sea_state_edicts_clear_flag }
+				had_country_flag = {
+					flag = sea_state_edicts_clear_flag
+					days = 33
+				}
+			}
+		}
 	}
 	
 	modifier = {
-		local_missionary_strength = 0.01
+		local_missionary_strength = 0.02
+	}
+	
+	notify_trigger = {
+		FROM = {
+			has_owner_religion = yes
+		}
 	}
 	
 	color = { 117 38 143 }
+	on_state_edict_revoked = { FROM = { clr_country_flag = sea_state_edicts_decision_edict_religious_unity_flag } }
 	
 	ai_will_do = {
 		factor = 100

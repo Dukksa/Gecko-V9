@@ -1,6 +1,16 @@
 edict_devastation_edict = {
 	potential = {
-		always = yes		#we support "potential" if modders want to have lots and just show some.
+		always = yes	
+		custom_trigger_tooltip = {
+			tooltip = sea_remove_state_edicts_flag_tt
+			OR = {
+				NOT = { has_country_flag = sea_state_edicts_clear_flag }
+				had_country_flag = {
+					flag = sea_state_edicts_clear_flag
+					days = 33
+				}
+			}
+		}
 	}
 	
 	allow = {
@@ -13,7 +23,7 @@ edict_devastation_edict = {
 	}
 	
 	color = {  46 187 508  }
-	
+	on_state_edict_revoked = { FROM = { clr_country_flag = sea_state_edicts_decision_edict_defensive_edict_flag } }
 	
 	ai_will_do = {
 		factor = 0

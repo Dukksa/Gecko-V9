@@ -1,0 +1,37 @@
+edict_feudal_de_jure_law = {
+	potential = {
+		current_age = age_of_discovery
+	}
+	
+	allow = {
+		always = yes
+		#custom_trigger_tooltip = {
+		#	tooltip = edict_feudal_de_jure_law_tooltip
+		#	has_country_flag = feudal_de_jure_law
+		#}
+		current_age = age_of_discovery
+		custom_trigger_tooltip = {
+			tooltip = sea_remove_state_edicts_flag_tt
+			OR = {
+				NOT = { has_country_flag = sea_state_edicts_clear_flag }
+				had_country_flag = {
+					flag = sea_state_edicts_clear_flag
+					days = 33
+				}
+			}
+		}
+	}
+	
+	modifier = { # OBS: Modify AI accordingly if this is changed
+		local_unrest = -2
+	}
+	
+	color = {  116 198 240  }
+	on_state_edict_revoked = { FROM = { clr_country_flag = sea_state_edicts_decision_edict_feudal_de_jure_law_flag } }
+	
+	
+	ai_will_do = {
+		factor = 0
+	}
+	
+}

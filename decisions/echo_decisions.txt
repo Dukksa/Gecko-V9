@@ -722,53 +722,37 @@ country_decisions = {
 		}
 		ai_will_do = {factor = 1}
 	}
-	manpower_edict_decision = {
-		color = { 166  0  0 }
-		major = yes
-		potential = {
-			ai = no
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		allow = {
-			any_state = {
-				NOT = { has_state_edict = edict_promote_military_recruitment }
-			}
-		}
-		effect = {
-			
-			every_owned_province = {
-				limit = {
-					is_state = yes
-				}
-				set_state_edict = edict_promote_military_recruitment
-			}
-		}
-	}
 	
-	institution_edict_decision = {
-		color = { 166  0  0 }
+	sea_state_edicts_decision = {
 		major = yes
+		provinces_to_highlight = {
+			has_state_edict_enabled = yes
+			owned_by = ROOT
+		}
 		potential = {
 			ai = no
-		}
-		ai_will_do = {
-			factor = 0
+			NOT = { has_country_flag = sea_state_edicts_flag }
+			OR = {
+				NOT = { has_country_flag = sea_state_edicts_clear_flag }
+				had_country_flag = {
+					flag = sea_state_edicts_clear_flag
+					days = 33
+				}
+			}
 		}
 		allow = {
-			any_state = {
-				NOT = { has_state_edict = edict_advancement_effort }
+			custom_trigger_tooltip = {
+				tooltip = sea_state_edicts_decision_ttt
+				always = yes
 			}
 		}
 		effect = {
-			
-			every_owned_province = {
-				limit = {
-					is_state = yes
-				}
-				set_state_edict = edict_advancement_effort
-			}
+			set_country_flag = sea_state_edicts_flag
+			country_event = { id = sealand_events.28 }
+			custom_tooltip = sea_state_edicts_decision_tt
+		}
+		ai_will_do = {
+			factor = 0
 		}
 	}
 }

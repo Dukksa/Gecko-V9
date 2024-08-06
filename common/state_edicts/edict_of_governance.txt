@@ -1,0 +1,30 @@
+edict_of_governance = {
+	potential = {
+		has_country_flag = hab_prosperity_edict
+	}
+	
+	allow = {
+		has_country_flag = hab_prosperity_edict
+		custom_trigger_tooltip = {
+			tooltip = sea_remove_state_edicts_flag_tt
+			OR = {
+				NOT = { has_country_flag = sea_state_edicts_clear_flag }
+				had_country_flag = {
+					flag = sea_state_edicts_clear_flag
+					days = 33
+				}
+			}
+		}
+	}
+	
+	modifier = {
+		local_governing_cost = -0.05
+	}
+	
+	color = { 69 122 232 }
+	on_state_edict_revoked = { FROM = { clr_country_flag = sea_state_edicts_decision_edict_of_governance_flag } }
+	
+	ai_will_do = {
+		factor = 5
+	}
+}

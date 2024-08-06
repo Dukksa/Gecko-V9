@@ -5,6 +5,16 @@ edict_promote_military_recruitment = {
 	
 	allow = {
 		always = yes
+		custom_trigger_tooltip = {
+			tooltip = sea_remove_state_edicts_flag_tt
+			OR = {
+				NOT = { has_country_flag = sea_state_edicts_clear_flag }
+				had_country_flag = {
+					flag = sea_state_edicts_clear_flag
+					days = 33
+				}
+			}
+		}
 	}
 	
 	modifier = {
@@ -12,6 +22,7 @@ edict_promote_military_recruitment = {
 	}
 	
 	color = {  188 90 27  }
+	on_state_edict_revoked = { FROM = { clr_country_flag = sea_state_edicts_decision_edict_promote_military_recruitment_flag } }
 	
 	
 	ai_will_do = {
