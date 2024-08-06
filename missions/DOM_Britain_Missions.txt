@@ -879,7 +879,10 @@ gbr_in_iberia_mission_row_slot_2 = {
 			}
 		}
 		effect = {
-			add_power_projection = 30
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 30
+			}
 			add_country_modifier = {
 				name = eng_berber_defeated
 				duration = 1460
@@ -961,7 +964,7 @@ gbr_in_scandinavia_row_slot_2 = {
 	gbr_the_fur_trade = {
 		icon = mission_empire
 		required_missions = { gbr_secure_the_iron }
-		position 9
+		position = 9
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -1081,7 +1084,7 @@ gbr_economy_row_slot_3 = {
 				duration = 3650
 			}
 		}
-		ai_weight ) {
+		ai_weight = {
 			factor = 250 
 		}
 	}
