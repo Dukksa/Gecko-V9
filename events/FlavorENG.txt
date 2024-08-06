@@ -174,56 +174,6 @@ country_event = {
 	}
 }
 
-# Future Expansion
-country_event = {
-	id = flavor_eng.6996
-	title = "flavor_eng.EVTNAME6996"
-	desc = "flavor_eng.EVTDESC6996"
-	picture = DIPLOMACY_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-			value = 14
-			region = france_region
-			has_port = yes
-		}
-		173 = {
-			owned_by = root
-		}
-	}
-	
-	#option = {			# continue on to iberia
-		#name = "flavor_eng.EVTOPTA6996"
-		#ai_chance = { factor = 80 }
-		#galicia_area = {
-			#add_claim = root
-		#}
-		#1746 = {
-			#add_claim = ROOT
-		#}
-		#1745 = {
-			#add_claim = ROOT
-		#}
-		#208 = {
-			#add_claim = ROOT
-		#}
-		#set_country_flag = eng_in_iberia
-	#}
-	option = {		# we shall return to scandinavia
-		name = "flavor_eng.EVTOPTB6996"
-		ai_chance = { factor = 20 }
-		denmark_area = {
-			add_claim = root
-		}
-		jutland_area = {
-			add_claim = root
-		}
-		set_country_flag = eng_in_scandinavia
-	}
-}
-
 # The End of the Hundred Years War
 country_event = {
 	id = flavor_eng.9104
@@ -742,7 +692,7 @@ country_event = {
 	}
 }
 
-# Bloody Mary and King Felipé of England
+# Bloody Mary and King FelipÃ© of England
 country_event = {
 	id = flavor_eng.9114
 	title = "flavor_eng.EVTNAME9114"
@@ -3072,49 +3022,86 @@ country_event = {
 			duration = 3650
 		}
 	}
-
-
 }
 
 country_event = {
-	id = flavor_eng.100
-	title = flavor_eng.100.t
-	desc = flavor_eng.100.d
+	id = flavor_eng.2121
+	title = flavor_eng.2121.t
+	desc = flavor_eng.2121.d
 	picture = ARTWORK_eventPicture
 
 	is_triggered_only = yes
 	
 	option = {
-		name = flavor_eng.100.a
-		custom_tooltip = flavor_eng.100.a.tt
+		name = flavor_eng.2121.a
+		custom_tooltip = flavor_eng.2121.a.tt
+		add_prestige = 10
 		hidden_effect = {
-			set_country_flag = england_path_one
-			clr_country_flag = england_path_two
-			clr_country_flag = england_path_three
+			set_country_flag = gbr_in_iberia
+			clr_country_flag = gbr_in_scandinavia
+			clr_country_flag = gbr_in_netherlands
+			clr_country_flag = gbr_deving
+			clr_country_flag = gbr_in_france
 		}
 		ai_chance = {
 			factor = 1
 		}
 	}
 	option = {
-		name = flavor_eng.100.b
-		custom_tooltip = flavor_eng.100.b.tt
+		name = flavor_eng.2121.b
+		custom_tooltip = flavor_eng.2121.b.tt
+		add_prestige = 10
 		hidden_effect = {
-			clr_country_flag = england_path_one
-			set_country_flag = england_path_two
-			clr_country_flag = england_path_three
+			clr_country_flag = gbr_in_iberia
+			set_country_flag = gbr_in_scandinavia
+			clr_country_flag = gbr_in_netherlands
+			clr_country_flag = gbr_deving
+			clr_country_flag = gbr_in_france
 		}
 		ai_chance = {
 			factor = 0
 		}
 	}
 	option = {
-		name = flavor_eng.100.c
-		custom_tooltip = flavor_eng.100.c.tt
+		name = flavor_eng.2121.c
+		custom_tooltip = flavor_eng.2121.c.tt
+		add_prestige = 10			
 		hidden_effect = {
-			clr_country_flag = england_path_one
-			clr_country_flag = england_path_two
-			set_country_flag = england_path_three
+			clr_country_flag = gbr_in_iberia
+			clr_country_flag = gbr_in_scandinavia
+			set_country_flag = gbr_in_netherlands
+			clr_country_flag = gbr_deving
+			clr_country_flag = gbr_in_france
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = flavor_eng.2121.d
+		custom_tooltip = flavor_eng.2121.d.tt
+		add_prestige = 10
+		hidden_effect = {
+			clr_country_flag = gbr_in_iberia
+			clr_country_flag = gbr_in_scandinavia
+			clr_country_flag = gbr_in_netherlands
+			set_country_flag = gbr_deving
+			clr_country_flag = gbr_in_france
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = flavor_eng.2121.e
+		custom_tooltip = flavor_eng.2121.e.tt
+		add_prestige = 10
+		hidden_effect = {
+			clr_country_flag = gbr_in_iberia
+			clr_country_flag = gbr_in_scandinavia
+			clr_country_flag = gbr_in_netherlands
+			clr_country_flag = gbr_deving
+			set_country_flag = gbr_in_france
 		}
 		ai_chance = {
 			factor = 0
