@@ -879,13 +879,13 @@ gbr_in_iberia_mission_row_slot_2 = {
 			}
 		}
 		effect = {
+			add_country_modifier = {
+				name = eng_berberbros_defeated
+				duration = 1460
+			}
 			add_power_projection = {
 				type = mission_rewards_power_projection
 				amount = 30
-			}
-			add_country_modifier = {
-				name = eng_berber_defeated
-				duration = 1460
 			}
 		}
 		ai_weight = {
@@ -1250,13 +1250,12 @@ gbr_in_iberia_mission_row_slot_3 = {
 				name = eng_iberia
 				duration = 1825
 			}
-			every_province = {
+			maghreb_region = {
 				limit = {
-					region = maghreb_region
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}
-				add_claim = ROOT
+				add_permanent_claim = ROOT
 			}
 		}
 		ai_weight = {
@@ -1331,7 +1330,7 @@ gbr_in_scandinavia_row_slot_3 = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}			
-				add_claim = root
+				add_permanent_claim = root
 			}
 			12 = {
 				limit = {owned_by = root }
@@ -1595,35 +1594,35 @@ gbr_in_iberia_mission_row_slot_4 = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}
-				add_claim = root
+				add_permanent_claim = root
 			}
 			galicia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}
-				add_claim = root
+				add_permanent_claim = root
 			}
 			leon_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}
-				add_claim = root
+				add_permanent_claim = root
 			}
 			basque_country = {
-				limit = {
-					NOT = { is_core = ROOT }
+				limit = { 
 					NOT = { is_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
-				add_claim = root
+				add_permanent_claim = ROOT 
 			}
 			beieras_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}
-				add_claim = root
+				add_permanent_claim = root
 			}
 			1276 = {
 				limit = { }
@@ -1668,14 +1667,14 @@ gbr_in_iberia_mission_row_slot_4 = {
 				name = eng_enemies_defeated
 				duration = 3650
 			}
-			every_province = {
+			iberia_region = {
 				limit = {
-					region = iberia_region
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 					
 				}
-				add_claim = root
+				
+				= root
 			}
 			368 = {
 				limit = {
@@ -1683,7 +1682,7 @@ gbr_in_iberia_mission_row_slot_4 = {
 					NOT = { is_claim = ROOT }
 					
 				}
-				add_claim = root
+				add_permanent_claim = root
 			}
 		}
 		ai_weight = {
@@ -1729,35 +1728,35 @@ gbr_in_scandinavia_mission_row_slot_4 = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}
-				add_claim = root
+				add_permanent_claim = root
 			}
 			jutland_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}
-				add_claim = root
+				add_permanent_claim = root
 			}
 			western_norway = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}
-				add_claim = root
+				add_permanent_claim = root
 			}
 			eastern_norway = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}			
-				add_claim = root
+				add_permanent_claim = root
 			}
 			northern_norway = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}
-				add_claim = root
+				add_permanent_claim = root
 			}
 		}
 		ai_weight = {
@@ -1791,49 +1790,49 @@ gbr_in_scandinavia_mission_row_slot_4 = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}			
-				add_claim = root
+				add_permanent_claim = root
 			}
 			south_jutland_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}			
-				add_claim = root
+				add_permanent_claim = root
 			}
 			holstein_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}			
-				add_claim = root
+				add_permanent_claim = root
 			}
 			jemtland_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}			
-				add_claim = root
+				add_permanent_claim = root
 			}
 			svealand_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}			
-				add_claim = root
+				add_permanent_claim = root
 			}
 			skaneland_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}			
-				add_claim = root
+				add_permanent_claim = root
 			}
 			dalarna_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}			
-				add_claim = root
+				add_permanent_claim = root
 			}
 			add_treasury = 500
 		}
