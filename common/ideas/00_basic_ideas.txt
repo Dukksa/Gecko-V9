@@ -1028,14 +1028,14 @@ offensive_ideas = {
 	}
 
 	shock_tactics = {
-		shock_damage = 0.15
+		shock_damage = 0.1
 	}
 	glory_on_the_battlefield = {
 		army_tradition_from_battle = 0.25
 		warscore_from_battles_modifier = 0.15
 	}
 	volley_fire = {
-		fire_damage = 0.15
+		fire_damage = 0.1
 	}
 	engineer_corps = {
 		siege_ability = 0.15
@@ -1049,7 +1049,7 @@ offensive_ideas = {
 		artillery_barrage_cost = -0.50
 	}
 	superior_firepower = {
-		artillery_power = 0.15
+		artillery_power = 0.1
 		artillery_cost = -0.1
 	}
 
@@ -1198,7 +1198,7 @@ quality_ideas = {
 		army_tradition = 0.5
 	}
 	military_drill = {
-		drill_gain_modifier = 0.15
+		drill_gain_modifier = 0.1
 		drill_decay_modifier = -0.1
 	}
 	quality_education = {

@@ -2010,7 +2010,7 @@ PLC_ideas = {
 	
 	plc_the_obrona_potoczna = { #Same for all of them
 		army_tradition = 1
-		drill_gain_modifier = 0.25
+		drill_gain_modifier = 0.2
 	}
 	winged_hussars = { 
 		cavalry_power = 0.1

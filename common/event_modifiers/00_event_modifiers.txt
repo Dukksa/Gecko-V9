@@ -5853,7 +5853,7 @@ guru_granth_sahib_spread = {
 }
 
 guru_granth_sahib_military = {
-	drill_gain_modifier = 0.5
+	drill_gain_modifier = 0.25
 	drill_decay_modifier = -0.25
 	religion = yes
 }
@@ -9923,13 +9923,12 @@ reassessement_provinces = {
 }
 
 gunpowder_core = {
-	drill_gain_modifier = 0.4
+	drill_gain_modifier = 0.2
 	land_maintenance_modifier = 0.1
 }
 
 standardized_uniforms_modifier = {
-	drill_gain_modifier = 0.4
-	drill_gain_modifier = -0.1
+	drill_gain_modifier = 0.2
 	land_maintenance_modifier = 0.1
 }
 
@@ -12955,7 +12954,7 @@ internal_marriage = {
 estate_nobles_cawa_peace_keepers_modifier = {
 	land_maintenance_modifier = -0.15
 	global_rebel_suppression_efficiency = 0.25
-	drill_gain_modifier = 0.25
+	drill_gain_modifier = 0.1
 	is_cawa_modifier = yes
 }
 
@@ -13957,7 +13956,7 @@ per_persian_arquebusiers_modifier = {
 	movement_speed = 0.15
 }
 per_shirley_reforms_the_army1_modifier = {
-	drill_gain_modifier = 0.25
+	drill_gain_modifier = 0.1
 	yearly_army_professionalism = 0.0025 
 	drill_decay_modifier = -0.1
 }
