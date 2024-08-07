@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sea_edict_logo"
+		texturefile = "gfx/interface/sea_decision_logos/sea_edict_logo.dds"
+	}
+}

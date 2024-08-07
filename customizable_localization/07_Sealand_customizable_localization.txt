@@ -1,0 +1,81 @@
+####################
+# State edict names:
+defined_text = {
+	name = SeaStateEdictName
+	random = no
+	text = {
+		localisation_key = sea_state_edicts_decision_edict_advancement_effort
+		trigger = { has_country_flag = sea_state_edicts_decision_edict_advancement_effort_flag }
+	}
+	text = {
+		localisation_key = sea_state_edicts_decision_edict_centralization_effort
+		trigger = { has_country_flag = sea_state_edicts_decision_edict_centralization_effort_flag }
+	}
+	text = {
+		localisation_key = sea_state_edicts_decision_edict_defensive_edict
+		trigger = { has_country_flag = sea_state_edicts_decision_edict_defensive_edict_flag }
+	}
+	text = {
+		localisation_key = sea_state_edicts_decision_edict_of_devastation
+		trigger = { has_country_flag = sea_state_edicts_decision_edict_devastation_edict_flag }
+	}
+	text = {
+		localisation_key = sea_state_edicts_decision_edict_of_governance
+		trigger = { has_country_flag = sea_state_edicts_decision_edict_of_governance_flag }
+	}
+	text = {
+		localisation_key = sea_state_edicts_decision_edict_encourage_development
+		trigger = { has_country_flag = sea_state_edicts_decision_edict_encourage_development_flag }
+	}
+	text = {
+		localisation_key = sea_state_edicts_decision_edict_feudal_de_jure_law
+		trigger = { has_country_flag = sea_state_edicts_decision_edict_feudal_de_jure_law_flag }
+	}
+	text = {
+		localisation_key = sea_state_edicts_decision_french_infrastructure_network
+		trigger = { has_country_flag = sea_state_edicts_decision_french_infrastructure_network_flag }
+	}
+	text = {
+		localisation_key = sea_state_edicts_decision_edict_promote_military_recruitment
+		trigger = { has_country_flag = sea_state_edicts_decision_edict_promote_military_recruitment_flag }
+	}
+	text = {
+		localisation_key = sea_state_edicts_decision_edict_protect_trade
+		trigger = { has_country_flag = sea_state_edicts_decision_edict_protect_trade_flag }
+	}
+	text = {
+		localisation_key = sea_state_edicts_decision_protect_trade_empowered
+		trigger = { has_country_flag = sea_state_edicts_decision_protect_trade_empowered_flag }
+	}
+	text = {
+		localisation_key = sea_state_edicts_decision_edict_religion_enforced
+		trigger = { has_country_flag = sea_state_edicts_decision_edict_religion_enforced_flag }
+	}
+	text = {
+		localisation_key = sea_state_edicts_decision_edict_religious_unity
+		trigger = { has_country_flag = sea_state_edicts_decision_edict_religious_unity_flag }
+	}
+	text = {
+		localisation_key = sea_state_edicts_decision_chinese_industrialization
+		trigger = { has_country_flag = sea_state_edicts_decision_chinese_industrialization_flag }
+	}
+	text = {
+		localisation_key = sea_state_edicts_decision_feudal_taxes_state_edict
+		trigger = { has_country_flag = sea_state_edicts_decision_feudal_taxes_state_edict_flag }
+	}
+	text = {
+		localisation_key = sea_state_edicts_decision_religious_tolerance_state_edict
+		trigger = { has_country_flag = sea_state_edicts_decision_religious_tolerance_state_edict_flag }
+	}
+	text = {
+		localisation_key = sea_state_edicts_decision_state_integration_state_edict
+		trigger = { has_country_flag = sea_state_edicts_decision_state_integration_state_edict_flag }
+	}
+	text = {
+		localisation_key = sea_state_edicts_decision_urbanization_state_edict
+		trigger = { has_country_flag = sea_state_edicts_decision_urbanization_state_edict_flag }
+	}
+	text = {
+		localisation_key = sea_state_edicts_decision_no_edict
+	}
+}
