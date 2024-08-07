@@ -53,8 +53,8 @@ Fars_Missions_slot_1 = {
 	Timurid_prince_claim_the_empire_frs = {
 		icon = me_mission_timurids_princedom_claim_timur_empire
 		required_missions = { 
-			Timurid_prince_expand_the_state
-			Timurid_grand_ruler
+			Timurid_prince_expand_the_state_frs
+			Timurid_grand_ruler_frs
 		}
 		position = 4
 		trigger = {
@@ -382,8 +382,8 @@ Fars_Missions_slot_4 = {
 	Timurid_pacify_the_persian_people_frs = {
 		icon = me_mission_timurids_princedom_pacify_the_persians
 		required_missions = { 
-			Timurid_follow_seljuk_architecture
-			Timurid_heir_of_timur
+			Timurid_follow_seljuk_architecture_frs
+			Timurid_heir_of_timur_frs
 		}
 		position = 2
 		trigger = {
