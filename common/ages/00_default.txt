@@ -558,7 +558,7 @@ age_of_reformation = {
 				}
 			}
 			modifier = {
-				development_cost_in_primary_culture = -0.2
+				reinforce_cost_modifier = -0.35
 			}
 			ai_will_do = {
 				factor = 100
