@@ -23,7 +23,7 @@ edict_devastation_edict = {
 	}
 	
 	color = {  46 187 508  }
-	on_state_edict_revoked = { FROM = { clr_country_flag = sea_state_edicts_decision_edict_defensive_edict_flag } }
+	on_state_edict_revoked = { FROM = { clr_country_flag = sea_state_edicts_decision_edict_devastation_edict_flag } }
 	
 	ai_will_do = {
 		factor = 0
