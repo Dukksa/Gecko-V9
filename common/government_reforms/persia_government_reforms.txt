@@ -44,6 +44,7 @@ establish_qurchi_corps_reform = { #tier 2
 		claim_states = yes
 	}
 	custom_attributes = {
+		enables_estate_qizilbash = yes
 		qizilbash_qurchis_privilege_interaction = yes #used for localization of estate privilege
 	}
 	ai = {
@@ -64,12 +65,12 @@ foreign_ghilman_reform = { #tier 3
 		has_pashas = yes
 		}
 	custom_attributes = {
-		enables_ghilman_estate = yes #used for localization of estate privilege
+		enables_ghulam_estate = yes #used for localization of estate privilege
 		}
 	modifiers = {
 		advisor_pool = 1
 		free_leader_pool = 1
-		ghilman_loyalty_modifier = 0.10
+		ghulam_loyalty_modifier = 0.10
 		qizilbash_loyalty_modifier = -0.05
 		qizilbash_influence_modifier = -0.10
 		}
@@ -87,8 +88,8 @@ qizilbash_in_officer_corps_reform = { #tier 4
 		recover_army_morale_speed = 0.05
 		qizilbash_influence_modifier = 0.1
 		qizilbash_loyalty_modifier = 0.05
-		ghilman_loyalty_modifier = -0.05
-		ghilman_influence_modifier = -0.05
+		ghulam_loyalty_modifier = -0.05
+		ghulam_influence_modifier = -0.05
 		nobles_loyalty_modifier = -0.05
 		nobles_influence_modifier = -0.05
 	}
@@ -113,15 +114,15 @@ reforms_of_abbas_i_reform = { #tier 5
 		global_own_trade_power = 0.25
 		qizilbash_influence_modifier = -0.25
 		qizilbash_loyalty_modifier = -0.1
-		ghilman_loyalty_modifier = 0.05
-		ghilman_influence_modifier = 0.10
+		ghulam_loyalty_modifier = 0.05
+		ghulam_influence_modifier = 0.10
 		yearly_army_professionalism= 0.00250
 	}
 	custom_attributes = {
 		qizilbash_discipline_looting_interaction = yes #used for localization of estate privilege
 	}
 	custom_attributes = {
-		ghilman_morale_interaction = yes #used for localization of estate privilege
+		ghulam_morale_interaction = yes #used for localization of estate privilege
 	}
 	ai = {
 		factor = 1000
@@ -139,8 +140,8 @@ ghilman_administrative_positions_reform = { #tier 6
 		governing_capacity_modifier = 0.1
 		qizilbash_influence_modifier = -0.05
 		qizilbash_loyalty_modifier = -0.05
-		ghilman_influence_modifier = 0.05
-		ghilman_loyalty_modifier = 0.10
+		ghulam_influence_modifier = 0.05
+		ghulam_loyalty_modifier = 0.10
 		possible_policy = 1
 	}
 	ai = {

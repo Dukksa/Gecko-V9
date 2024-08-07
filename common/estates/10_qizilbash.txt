@@ -369,6 +369,10 @@ estate_qizilbash = {
 		estate_qizilbash_tupchi_artillery_corps
 		estate_qizilbash_qurchi_service
 		estate_qizilbash_mamlukian_administration
+		estate_qizilbash_levies
+		estate_qizilbash_establish_qurchis
+		estate_qizilbash_officer_corps
+		estate_qizilbash_disciplined_enforced
 	}
 	
 	agendas = {

@@ -785,3 +785,149 @@ estate_qizilbash_mamlukian_administration = {
 		factor = 100
 	}
 }
+
+estate_qizilbash_levies = {
+	icon = privilege_demand_more_troops
+	#land_share = 5
+	max_absolutism = -5        
+	loyalty = -0.05               
+	influence  = 0.05            
+ is_valid = { 
+	any_owned_province = {
+		OR = {
+			culture = azerbaijani
+			#culture = mazandarani
+			#culture = kurdish
+			culture = luri
+			culture = turkish
+			}
+		}
+	}	
+can_select = {
+	
+}
+on_granted = {
+	custom_tooltip = estate_qizilbash_levies_effect_tooltip
+	hidden_effect = {
+		every_owned_province = {
+			limit = {
+				OR = {
+				culture = azerbaijani
+				#culture = mazandarani
+				#culture = kurdish
+				culture = luri
+				culture = turkish
+				}
+			}
+			add_province_modifier = {
+				name = estate_qizilbash_levies_mod
+				duration = -1
+			}
+		}
+	}
+}
+on_revoked = {
+	custom_tooltip = estate_qizilbash_levies_revoke_effect_tooltip
+	hidden_effect = {
+		every_owned_province = {
+			limit = {
+				has_province_modifier = estate_qizilbash_levies_mod
+			}
+			remove_province_modifier = estate_qizilbash_levies_mod
+		}
+	}
+}
+on_invalid = {
+	custom_tooltip = estate_qizilbash_levies_revoke_effect_tooltip
+	hidden_effect = {
+		every_owned_province = {
+			limit = {
+				has_province_modifier = estate_qizilbash_levies_mod
+			}
+			remove_province_modifier = estate_qizilbash_levies_mod
+		}
+	}
+}	
+ai_will_do = {					
+	factor = 1000                               
+	}
+}
+
+estate_qizilbash_establish_qurchis = {
+icon = privilege_promote_maratha_nobility
+#land_share = 5
+max_absolutism = -5
+loyalty = 0.10
+influence = 0.05
+is_valid = {
+	has_reform = establish_qurchi_corps_reform
+}
+can_select = {
+	
+}
+penalties = {
+	global_tax_modifier = -0.1
+}
+benefits = {
+	shock_damage_received = -0.10
+}
+ai_will_do = {					
+	factor = 1000                               
+	}
+}
+
+
+estate_qizilbash_officer_corps = {
+icon = privilege_promote_purbias
+max_absolutism = -5
+loyalty = 0.05
+influence = 0.05
+#land_share = 5
+is_valid = {
+	has_reform = qizilbash_in_officer_corps_reform
+}
+can_select = {
+	army_tradition = 50
+	
+}
+on_granted = {
+	custom_tooltip = estate_qizilbash_officer_corps_effect_tooltip
+	add_country_modifier = {
+		name = estate_qizilbash_officers_modifier
+		duration = -1
+		}
+}
+on_revoked = {
+	custom_tooltip = estate_qizilbash_officer_corps_revoke_effect_tooltip
+	remove_country_modifier = estate_qizilbash_officers_modifier
+	}
+on_invalid = {
+	custom_tooltip = estate_qizilbash_officer_corps_revoke_effect_tooltip
+	remove_country_modifier = estate_qizilbash_officers_modifier
+	}
+ai_will_do = {					
+	factor = 1000                               
+	}
+}
+
+estate_qizilbash_disciplined_enforced = {
+icon = privilege_promote_maratha_nobility
+max_absolutism = -5
+loyalty = -0.05
+influence = 0.05
+is_valid = {
+	has_reform = reforms_of_abbas_i_reform
+}
+can_select = {
+	
+}
+penalties = {
+		loot_amount = -0.90
+}
+benefits = {
+	discipline = 0.025
+}
+ai_will_do = {					
+	factor = 1000                               
+	}
+}
