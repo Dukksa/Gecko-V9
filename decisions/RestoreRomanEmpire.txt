@@ -21,6 +21,8 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
+				region = iberia_region
+				region = maghreb_region
 				region = egypt_region
 				region = italy_region
 				area = thrace_area
@@ -33,37 +35,53 @@ country_decisions = {
 			NOT = { owned_by = ROOT }
 		}
 		allow = {
-			egypt_region = {
-				type = all
-				owned_by = ROOT
-			}
-			italy_region = {
-				type = all
-				owned_by = ROOT
-			}
-			thrace_area = {
-				type = all
-				owned_by = ROOT 
-			}
-			macedonia_area = {
-				type = all
-				owned_by = ROOT 
-			}
-			albania_area = {
-				type = all
-				owned_by = ROOT 
-			}
-			northern_greece_area = {
-				type = all
-				owned_by = ROOT 
-			}
-			X_central_greece_area = {
-				type = all
-				owned_by = ROOT 
-			}
-			morea_area = {
-				type = all
-				owned_by = ROOT 
+			OR = {
+				AND = {
+					has_country_flag = ITA_genoa_missions
+					iberia_region = {
+						type = all
+						owned_by = root
+					}
+					maghreb_region = {
+						type = all
+						owned_by = root
+					}
+				}
+				AND = {
+					has_country_flag = ITA_venice_missions
+					egypt_region = {
+						type = all
+						owned_by = ROOT
+					}
+					italy_region = {
+						type = all
+						owned_by = ROOT
+					}
+					thrace_area = {
+						type = all
+						owned_by = ROOT 
+					}
+					macedonia_area = {
+						type = all
+						owned_by = ROOT 
+					}
+					albania_area = {
+						type = all
+						owned_by = ROOT 
+					}
+					northern_greece_area = {
+						type = all
+						owned_by = ROOT 
+					}
+					X_central_greece_area = {
+						type = all
+						owned_by = ROOT 
+					}
+					morea_area = {
+						type = all
+						owned_by = ROOT 
+					}
+				}
 			}
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
