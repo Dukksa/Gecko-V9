@@ -9928,7 +9928,7 @@ gunpowder_core = {
 }
 
 standardized_uniforms_modifier = {
-	drill_gain_modifier = 0.2
+	drill_gain_modifier = 0.4
 	land_maintenance_modifier = 0.1
 }
 

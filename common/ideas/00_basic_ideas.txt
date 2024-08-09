@@ -39,7 +39,7 @@ innovativeness_ideas = {
 	}
 	optimism = {
 		war_exhaustion = -0.05
-		land_morale = 0.025
+		land_morale = 0.05
 	}
 	expanded_policies = {
 		possible_policy = 1
