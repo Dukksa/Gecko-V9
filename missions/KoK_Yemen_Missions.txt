@@ -664,8 +664,7 @@ KoK_YEM_missions_4 = {
 		position = 4
 		provinces_to_highlight = {
 			OR = {
-				province_id = 504
-				province_id = 1340
+				province_id = 524
 			}
 			NOT = {
 				trade_share = {
@@ -676,13 +675,7 @@ KoK_YEM_missions_4 = {
 		}
 		trigger = {
 			num_of_centers_of_trade = 15
-			504 = {
-				trade_share = {
-					country = ROOT
-					share = 25 
-				}
-			}
-			1340 = {
+			524 = {
 				trade_share = {
 					country = ROOT
 					share = 25 
@@ -820,8 +813,7 @@ KoK_YEM_missions_5 = {
 		position = 3
 		provinces_to_highlight = {
 			OR = {
-				province_id = 504
-				province_id = 1340
+				province_id = 524
 			}
 			NOT = {
 				trade_share = {
@@ -832,18 +824,10 @@ KoK_YEM_missions_5 = {
 		}
 		trigger = {
 			num_ships_protecting_trade = 25
-			OR = {
-				504 = { #gujarat
-					trade_share = {
-						country = ROOT
-						share = 15
-					}
-				}
-				1340 = { #coromandel
-					trade_share = {
-						country = ROOT
-						share = 15
-					}
+			524 = { #gujarat
+				trade_share = {
+					country = ROOT
+					share = 15
 				}
 			}
 		}
