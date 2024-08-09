@@ -276,19 +276,12 @@ emperor_erbkaisertum = {
 		imperial_authority = 0.25
 		manpower_recovery_speed = 0.20
 	}
-	#on_effect = {
-	#	if = {
-	#		limit = {
-	#			hre_religion_locked = no
-	#			hre_religion_treaty = no
-	#		}
-	#		set_hre_religion_treaty = yes
-	#	}
-	#	hre_inheritable = yes
-	#}
-	#off_effect = {
-	#	hre_inheritable = no
-	#}
+	on_effect = {
+		hre_inheritable = yes
+	}
+	off_effect = {
+		hre_inheritable = no
+	}
 	required_reform = emperor_imperial_estates
 	gui_container = right_branch
 }
