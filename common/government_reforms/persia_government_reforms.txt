@@ -65,8 +65,8 @@ foreign_ghilman_reform = { #tier 3
 		has_pashas = yes
 		}
 	custom_attributes = {
-		enables_ghulam_estate = yes #used for localization of estate privilege
-		}
+		enables_estate_ghulams = yes
+	}
 	modifiers = {
 		advisor_pool = 1
 		free_leader_pool = 1
@@ -213,7 +213,7 @@ establish_auxiliary_support_system_reform = { #tier 4
 	}
 	ai = {
 		factor = 1000
-		}
+	}
 }
 
 janissary_administrative_positions_reform = { #tier 5
@@ -234,7 +234,7 @@ janissary_administrative_positions_reform = { #tier 5
 	}
 	ai = {
 		factor = 1000
-		}
+	}
 }
 
 reform_the_janissaries_reform = { #tier 6
@@ -257,5 +257,5 @@ reform_the_janissaries_reform = { #tier 6
 	}
 	ai = {
 		factor = 1000
-		}
+	}
 }
