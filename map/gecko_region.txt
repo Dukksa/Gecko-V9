@@ -982,8 +982,6 @@ brazil_region = {
 	areas = {
 		rio_grande_do_sol_area
 		minas_gerais_area
-		goias_area
-		mato_grosso_area
 		sao_paolo_area
 		rio_de_janeiro_area
 		bahia_area
@@ -993,11 +991,8 @@ brazil_region = {
 		grao_para_area
 		amazon_area
 		diamantina_area
-		pontal_area
-		ofaie_area
 		piaui_area
 		amapa_area
-		guapore_area
 		ceara_area
 		west_sao_paolo_area
 	}
@@ -1021,7 +1016,6 @@ la_plata_region = {
 		banda_oriental_area
 		south_atlantic_islands_area
 		southern_chile_area
-		central_chile_area
 		misiones_area
 		patagonian_andes
 		bahia_blanca_area
@@ -1041,7 +1035,6 @@ colombia_region = {
 		western_llanos
 		coquivacoa_area
 		bogota_area
-		popayan_area
 		panama_area
 		maracaibo_area
 		central_llanos_area
@@ -1321,12 +1314,7 @@ hudson_bay_region = {
 	areas = {
 		james_bay_area
 		hudson_bay_area
-		red_river_area
-		saskatchewan_area
-		prairies_area
-		athabasca_area
 		inner_ontario_area
-		assiniboia_area
 		manitoba_area
 	}
 }
@@ -1336,12 +1324,9 @@ mexico_region = {
 		eastern_mexico_area
 		mexico_area
 		michoacan_area
-		guerrero_area
 		oaxaca_area
-		durango_area
 		jalisco_area
 		gran_chichimeca_area
-		nayarit_area
 		zacatecas_area
 		tierra_caliente_area
 		puebla_area
@@ -1358,12 +1343,10 @@ mexico_region = {
 rio_grande_region = {
 	areas = {
 		rio_grande_area
-		northeast_mexico_area
+		northeast_mexico_area	
 		texas_area
 		coastal_prarie_area
 		pecos_area
-		llano_estacado_area
-		chihuahua_area
 		texas_plains_area
 		lower_plains_area
 	}
@@ -1375,7 +1358,6 @@ rio_grande_region = {
 
 central_america_region = {
 	areas = {
-		guatemala_area
 		honduras_area
 		nicaragua_area
 		yucatan_area
