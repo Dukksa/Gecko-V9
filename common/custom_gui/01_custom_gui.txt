@@ -220,3 +220,27 @@ custom_button = {
 		}
 	}	
 }
+
+#Splendor blender button
+custom_button = {
+    name = splendor_into_monarch_power
+    tooltip = splendor_into_monarch_power_title
+    potential = {
+        FROM = {
+            ai  = no
+        }
+    }
+    trigger = { 
+        FROM = {
+            splendor = 800
+        }
+    }
+    effect = { 
+        FROM = { #This will apply to the country
+            add_splendor = -800
+            add_adm_power = 50
+            add_dip_power = 50
+            add_mil_power = 50
+        }
+    }
+}

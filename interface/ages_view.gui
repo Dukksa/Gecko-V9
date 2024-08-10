@@ -206,6 +206,14 @@ guiTypes = {
 			buttonFont = "vic_18"
 		}
 
+		guiButtonType = {
+            name = "splendor_into_monarch_power"
+            quadTextureSprite ="GFX_icon_splendor_tiny"
+            position = { x = 135 y = 155 }
+            buttonFont = "vic_18"
+            scripted = yes
+            scale = 2.0
+        }
 		#This is for the economic golden era
 		guiButtonType = {
 			name = "economic_golden_age"

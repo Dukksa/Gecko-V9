@@ -705,23 +705,6 @@ country_decisions = {
 			factor = 0 #doubt ai can use it
 		}
 	}
-	splendor_into_power = {
-        color = { 166  0  0 }
-		potential = {
-			splendor = 600
-			ai = no
-		}
-		allow = {	
-			splendor = 800
-		}
-		effect = {
-			add_splendor = -800
-			add_adm_power = 50
-			add_dip_power = 50
-			add_mil_power = 50
-		}
-		ai_will_do = {factor = 1}
-	}
 	
 	sea_state_edicts_decision = {
 		major = yes
