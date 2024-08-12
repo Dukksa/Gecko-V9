@@ -121,55 +121,7 @@ country_decisions = {
 		effect = {
 		}
 	}
-	urbanisation = {
-		color = { 166  0  0 }
-		potential = {
-			NOT = { has_country_flag = urbanisation_taken }
-			NOT = { has_country_flag = X_POR_economic_golden_age_cflag }
-		}
-		allow = {
-			custom_trigger_tooltip = {
-				tooltip = urbanisation_tt
-				OR = {
-					AND = {
-						ai  = no
-						is_colonial_nation = no
-					}
-					AND = {
-						ai  = no
-						is_colonial_nation = yes
-					}
-					AND = {
-						ai  = no
-						is_colonial_nation = no
-					}
-				}	
-				adm_power = 100
-				dip_power = 100
-				mil_power = 100
-				splendor = 200
-				if = {
-					limit = { tag = POR }
-					hidden_trigger = {
-						NOT = { has_country_flag = X_POR_economic_golden_age_cflag }
-					}
-				}
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = "urbanisation"
-				duration = 18250
-			}
-			if = {
-				limit = { NOT = { tag = POR } }
-				set_country_flag = urbanisation_taken
-			}
-			else = {
-				set_country_flag = X_POR_economic_golden_age_cflag
-			}
-		}
-	}	
+
 	echo_critical_events = {
 		color = { 166  0  0 }
 		potential = {
