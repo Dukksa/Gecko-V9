@@ -1742,6 +1742,7 @@ country_event = {
 				}
 		}				
 			add_truce_with = FRA
+			add_truce_with = BUR
 	
 		FRA = { country_event = { id = flavor_fra.8 } }
 		#add_prestige = -10

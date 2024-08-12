@@ -184,6 +184,10 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
 		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 			value = 14
 			region = france_region
