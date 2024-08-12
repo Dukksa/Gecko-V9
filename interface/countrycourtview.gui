@@ -61,7 +61,14 @@ guiTypes = {
 		
 		
 		### ------- Ruler -------	
-		
+		guiButtonType = {
+			name = gecko_court_recruitment
+			position = { x = 16 y = 71}
+			scripted = yes
+			Orientation = "UPPER_LEFT"
+			quadTextureSprite = "GFX_first_chairman_icon"
+			scale = 0.90
+		}
 		iconType =
 		{
 			name ="monarch_gender"

@@ -3,4 +3,8 @@ spriteTypes = {
 		name = "GFX_sea_edict_logo"
 		texturefile = "gfx/interface/sea_decision_logos/sea_edict_logo.dds"
 	}
+	spriteType = {
+		name = "GFX_first_chairman_icon" 
+		texturefile = "gfx//interface//bertus//first_chairman_icon.dds"
+	}
 }

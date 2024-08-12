@@ -380,3 +380,11 @@ custom_button = {
 		change_mil = 1
 	}	
 }
+
+custom_button = {
+	name = gecko_court_recruitment
+	tooltip = gecko_court_recruitment_decision_desc
+	potential = { ai = no }
+	trigger = { hidden_trigger = { NOT = { has_country_flag = gecko_mercs_in_tier_selection_event_cflag } } }
+	effect = {country_event = { id = gecko_court.1 } }
+}
