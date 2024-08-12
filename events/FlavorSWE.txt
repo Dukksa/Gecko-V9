@@ -3313,7 +3313,7 @@ country_event = {
 		name = flavor_swe.112.a
 		trigger = {
 			has_dlc = "Leviathan"
-			8 = {
+			4 = {
 				NOT = {
 					has_great_project = {
 						type = falun_copper_mine
@@ -3328,7 +3328,7 @@ country_event = {
 				}
 			}
 		}
-		8 = {
+		4 = {
 			set_great_project_tier_2 = {
 				type = falun_copper_mine
 			}

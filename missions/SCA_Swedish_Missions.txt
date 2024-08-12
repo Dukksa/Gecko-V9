@@ -1882,7 +1882,7 @@ swe_kalmar_union_mission_slot = {
 		}
 		trigger = {
 			owns_core_province = 8
-			8 = {
+			4 = {
 				if = {
 					limit = { has_dlc = "Mandate of Heaven" }
 					prosperity = 25
