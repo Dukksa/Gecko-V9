@@ -20,27 +20,6 @@ transcaucasian_wine_valleys = {
 	
 }
 
-my_desert = {
-	potential = {
-			normal_or_historical_nations = yes
-		}
-
-		trigger = {
-			controlled_by = ROOT
-		}
-
-		trade_goods_size= 1
-		
-		#Province scope
-		on_activation = {
-		
-		}
-		
-		on_deactivation = {
-		
-		}
-}	
-
 kaffa_slave_market = {
 	potential = {
 		normal_or_historical_nations = yes
@@ -608,6 +587,12 @@ conquest_of_saint_petersburg = {
 	}
 	trigger = {
 		owner = {
+			NOT = {
+				OR ={
+					tag = MOS
+					tag = RUS
+				}
+			}
 				moscow_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = PREV
