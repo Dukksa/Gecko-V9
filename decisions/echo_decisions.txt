@@ -570,38 +570,7 @@ country_decisions = {
 			}
 		}
 	}
-	educate_ruler = {
-		color = { 166  0  0 }
-		potential = {
-			ai = no
-			NOT = { government = republic }
-			NOT = { has_ruler_flag = educate_ruler_rflag }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		allow = {
-			custom_trigger_tooltip = {
-				tooltip = educate_ruler_tt
-				NOT = {
-					check_variable = {
-						which = ruler_total_skill
-						value = 10
-					}
-				}
-				NOT = {
-					check_variable = { 
-						which = educate_ruler_counter
-						value = 3
-					}
-				}
-			}
-		}
-		effect = {
-			educate_ruler = { educate = yes }
-			set_ruler_flag = educate_ruler_rflag
-		}
-	}
+
 	prepare_for_holy_war = {	
 			###X###
 			major = yes

@@ -244,3 +244,115 @@ custom_button = {
         }
     }
 }
+
+custom_button = {
+    name = improve_adm_button
+	tooltip = improve_heir_adm_button_title
+    potential = {
+		NOT = { adm = 4 }
+    }
+    trigger = { 
+		if = {
+			limit = { NOT = { adm = 2 } }
+			legitimacy_equivalent = 90
+		}
+		else_if = {
+			limit = { NOT = { adm = 3 }  }
+			legitimacy_equivalent = 90
+		}
+		else_if = {
+			limit = { NOT = { adm = 4 } }
+			legitimacy_equivalent = 90
+		}
+	}
+    effect = {
+		if = {
+			limit = { NOT = { adm = 1 } }
+			add_years_of_income = -0.025
+		}
+		else_if = {
+			limit = { NOT = { adm = 2 } legitimacy_equivalent = 90 }
+			reduce_legitimacy_small_effect = yes
+		}
+		else_if = {
+			limit = { NOT = { adm = 3 } legitimacy_equivalent = 90 }
+			reduce_legitimacy_medium_effect = yes
+		}
+		else_if = {
+			limit = { NOT = { adm = 4 } legitimacy_equivalent = 90 }
+			reduce_legitimacy_large_effect = yes
+		}
+		change_adm = 1
+	}	
+}
+
+custom_button = {
+    name = improve_dip_button
+	tooltip = improve_heir_dip_button_title
+    potential = {
+		NOT = { dip = 4 }
+    }
+    trigger = { 
+	}
+    effect = {
+		if = {
+			limit = { NOT = { dip = 1 } }
+			add_years_of_income = -0.025
+		}
+		else_if = {
+			limit = { NOT = { dip = 2 } }
+			add_years_of_income = -0.025
+			add_navy_tradition = -5
+		}
+		else_if = {
+			limit = { NOT = { dip = 3 } }
+			add_years_of_income = -0.05
+		}
+		else_if = {
+			limit = { NOT = { dip = 4 } }
+			add_years_of_income = -0.10
+		}
+		change_dip = 1
+	}	
+}
+
+custom_button = {
+    name = improve_mil_button
+	tooltip = improve_heir_mil_button_title
+    potential = {
+		NOT = { mil = 4 }
+    }
+    trigger = { 
+		if = {
+			limit = { NOT = { mil = 2 } }
+			army_tradition = 10 
+		}
+		else_if = {
+			limit = { NOT = { mil = 3 } }
+			army_tradition = 20 
+		}
+		else_if = {
+			limit = { NOT = { mil = 4 } }
+			army_tradition = 50 
+		}
+	}
+    effect = {
+		if = {
+			limit = { NOT = { mil = 1 } }
+			add_years_of_income = -0.025
+		}
+		else_if = {
+			limit = { NOT = { mil = 2 } army_tradition = 10 }
+			add_army_tradition = -5
+		}
+		else_if = {
+			limit = { NOT = { mil = 3 } army_tradition = 20 }
+			add_army_tradition = -10
+		}
+		else_if = {
+			limit = { NOT = { mil = 4 } army_tradition = 50 }
+			add_army_tradition = -25
+		}
+		change_mil = 1
+	}	
+}
