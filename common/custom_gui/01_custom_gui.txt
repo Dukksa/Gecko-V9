@@ -155,7 +155,7 @@ custom_button = {
 				duration = -1
 			}
 		}
-		else = {
+		else_if = {
 			limit = { trade_goods = wool }
 			change_trade_goods = cloth
 		}
@@ -250,6 +250,14 @@ custom_button = {
 	tooltip = improve_heir_adm_button_title
     potential = {
 		NOT = { adm = 4 }
+		NOT = {
+			OR = {
+				has_government_attribute = has_term_election
+				has_government_attribute = election_on_death
+				has_government_attribute = lottery_election
+				has_government_attribute = is_merchant_republic
+			}
+		}
     }
     trigger = { 
 		if = {
@@ -291,6 +299,14 @@ custom_button = {
 	tooltip = improve_heir_dip_button_title
     potential = {
 		NOT = { dip = 4 }
+		NOT = {
+			OR = {
+				has_government_attribute = has_term_election
+				has_government_attribute = election_on_death
+				has_government_attribute = lottery_election
+				has_government_attribute = is_merchant_republic
+			}
+		}
     }
     trigger = { 
 	}
@@ -321,6 +337,14 @@ custom_button = {
 	tooltip = improve_heir_mil_button_title
     potential = {
 		NOT = { mil = 4 }
+		NOT = {
+			OR = {
+				has_government_attribute = has_term_election
+				has_government_attribute = election_on_death
+				has_government_attribute = lottery_election
+				has_government_attribute = is_merchant_republic
+			}
+		}
     }
     trigger = { 
 		if = {
