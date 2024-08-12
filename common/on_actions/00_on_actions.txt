@@ -25,7 +25,6 @@ on_startup = {
 
 	gecko_mercs = { update = yes on_startup = yes }
 	development_counter = { on_startup = yes }
-	educate_ruler = { update = yes on_startup = yes }
 	if = {
 		limit = {
 				OR = {
@@ -924,7 +923,6 @@ on_new_monarch = {
 	hab_remove_mission_mods_if_not_emperor_effect = yes
 	thu_remain_von_wettin_effect = yes
 	ladislaus_postumus_union_effect = yes
-	educate_ruler = { update = yes }
 	events = {
 		tribal_succession.1		# Harsh anti-tribals.
 		9492 					# Remove some event modifiers
@@ -1190,6 +1188,25 @@ on_diplomatic_annex = {
 	events = {
 		610
 		appanages_event.1
+	}
+	FROM = {
+        set_variable = {which = treasury_var value = 0}    #bertus mod
+        export_to_variable = {which = treasury_var value = treasury}
+        while = {
+            limit = {check_variable = {which = treasury_var value = 100}}
+            change_variable = {which = treasury_var value = -100}
+            ROOT = {add_treasury = 100}
+        }
+        while = {
+            limit = {check_variable = {which = treasury_var value = 10}}
+            change_variable = {which = treasury_var value = -10}
+            ROOT = {add_treasury = 10}
+        }
+        while = {
+            limit = {check_variable = {which = treasury_var value = 1}}
+            change_variable = {which = treasury_var value = -1}
+            ROOT = {add_treasury = 1}
+        }
 	}
 	FRA = { 
 		if = {
@@ -1524,6 +1541,23 @@ on_annexed = {
 	}
 	on_annexed_estate_privileges_effect = yes
 	FROM = {
+		set_variable = {which = treasury_var value = 0}    #bertus mod
+        export_to_variable = {which = treasury_var value = treasury}
+        while = {
+            limit = {check_variable = {which = treasury_var value = 100}}
+            change_variable = {which = treasury_var value = -100}
+            ROOT = {add_treasury = 100}
+        }
+        while = {
+            limit = {check_variable = {which = treasury_var value = 10}}
+            change_variable = {which = treasury_var value = -10}
+            ROOT = {add_treasury = 10}
+        }
+        while = {
+            limit = {check_variable = {which = treasury_var value = 1}}
+            change_variable = {which = treasury_var value = -1}
+            ROOT = {add_treasury = 1}
+        }
 		if = {
 			limit = { is_emperor_of_china = yes }
 			dismantle_empire_of_china = yes
