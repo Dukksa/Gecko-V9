@@ -433,4 +433,7 @@ alerts = {
 	edict_set_for_too_long = {
 		category = MEDIUM
 	}
+	eco_golden_age_alert = {
+		category = LOW
+	}
 }
