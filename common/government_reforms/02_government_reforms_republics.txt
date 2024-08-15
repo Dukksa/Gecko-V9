@@ -17,7 +17,9 @@ republic_mechanic = {
 		max_absolutism = -40
 		max_terms = 5
 	}
-
+	government_abilities = {
+		eco_golden_age
+	}
 	valid_for_nation_designer = no
 }
 
@@ -44,6 +46,9 @@ oligarchy_reform = {
 		global_tax_modifier = 0.05
 		global_unrest = -0.5
 		max_terms = 5
+	}
+	government_abilities = {
+		eco_golden_age
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -78,6 +83,9 @@ signoria_reform = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
 		enables_nepotism = yes
+	}
+	government_abilities = {
+		eco_golden_age
 	}
 	conditional = {
 		allow = { has_dlc = "Domination" }
@@ -126,7 +134,9 @@ protectorate_parliament_reform = {
 		max_absolutism = 20
 		republican_tradition = -0.5
 	}
-
+	government_abilities = {
+		eco_golden_age
+	}
 	conditional = {
 		allow = {
 			has_dlc = "Common Sense"
@@ -175,7 +185,9 @@ parliamentary_republic_reform = {
 		parliament_backing_chance = 0.25
 		num_of_parliament_issues = 1
 	}
-
+	government_abilities = {
+		eco_golden_age
+	}
 	conditional = {
 		allow = {
 			has_dlc = "Common Sense"
