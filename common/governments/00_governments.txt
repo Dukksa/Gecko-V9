@@ -194,7 +194,7 @@ monarchy = {
 				TIM_plunder_economy
 				###Gecko###
 				establish_qurchi_corps_reform
-				upgrade_janissary_weaponry_reform
+				#upgrade_janissary_weaponry_reform
 			}
 		}
 		bureaucracy = {
