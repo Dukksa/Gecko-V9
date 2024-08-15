@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+	  name = "eco_golden_age"
+	  texturefile = "gfx/interface/eco_golden_age_alert.dds"
+	}
+	spriteType ={
+		name = "eco_golden_age_button_icon"
+		texturefile = "interface/custom_alerts/invisible.png"
+	}
+  }

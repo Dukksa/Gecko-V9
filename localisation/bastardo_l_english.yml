@@ -516,3 +516,7 @@ black_chamber_act_2:0 "The Black Chamber Act II"
  manpower_edict_decision_desc:0 "Sets every state in our nation to the 'Promote Military Recruitment' state edict."	
  institution_edict_decision_title:0 "Enable Advancement Effort Edict"
  institution_edict_decision_desc:0 "Sets every state in our nation to the 'Advancement Effort' state edict."	
+
+ ability_eco_golden_age: ""
+ eco_golden_era: "Eco Golden Era"
+ eco_golden_era_desc: "You  Can Start Your Eco Golden Era"

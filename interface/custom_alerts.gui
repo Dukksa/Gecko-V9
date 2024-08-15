@@ -1,0 +1,15 @@
+guiTypes = {
+	windowType = {
+			name = "eco_golden_era"
+			size = { x = 1 y = 1 }
+			moveable = 0
+
+			# Interaction button, graphics replaced from the interaction icon specification
+			guiButtonType = {
+				name = "government_interaction_button"
+				quadTextureSprite = "eco_golden_age_button_icon"
+				buttonFont = "vic_18"
+				clicksound = back_click
+			}
+	}
+}
