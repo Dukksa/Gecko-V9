@@ -887,7 +887,7 @@ slesvig_question_effect = {
 			tag = SHL
 			NOT = { has_global_flag = death_of_adolf_of_slesvig } #
 			is_subject_of = DAN
-			ai = yes
+			SHL = {ai = yes}
 		}
 		DAN = { country_event = { id = flavor_dan.4 } } # Death of Adolf VIII
 		set_global_flag = death_of_adolf_of_slesvig
@@ -3142,7 +3142,7 @@ on_colonist_boosting_colony_effect = {
 on_alliance_broken_effect = {
 	if = {
 		limit = { 
-			ai = no
+			ROOT = {ai = no}
 			is_at_war = yes
 			NOT = {
 				is_in_war = {

@@ -2,7 +2,7 @@ development_counter = {
 	[[on_startup]
 		if = {
 			limit = {
-				ai = no	
+				ROOT = {ai = no}
 				NOT = { has_country_flag = has_development_counter_cflag }				
 			}
 			set_variable = {
