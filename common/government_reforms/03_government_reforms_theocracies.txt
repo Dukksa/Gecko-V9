@@ -15,6 +15,9 @@ theocracy_mechanic = {
 		enables_aristocratic_idea_group = no
 	}
 
+	government_abilities = {
+		eco_golden_age
+	}
 	modifiers = {
 		brahmins_hindu_influence_modifier = 0.1
 		church_loyalty_modifier = 0.1

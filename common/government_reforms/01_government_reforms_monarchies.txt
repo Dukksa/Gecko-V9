@@ -34,9 +34,6 @@ feudalism_reform = {
 	custom_attributes = {
 		buffed_strong_duchies = yes #+5% Loyalty
 	}
-	government_abilities = {
-		eco_golden_age
-	}
 	ai = {
 		factor = 0.5 #generic
 	}
@@ -53,9 +50,6 @@ autocracy_reform = {
 		harsh_treatment_cost = -0.1
 		global_rebel_suppression_efficiency = 0.1
 		
-	}
-	government_abilities = {
-		eco_golden_age
 	}
 	ai = {
 		factor = 0.5 #generic
@@ -77,9 +71,6 @@ elective_monarchy_reform = {
 	custom_attributes = {
 		has_ruler_election = yes
 	}	
-	government_abilities = {
-		eco_golden_age
-	}
 	ai = {
 		factor = 0.5
 	}
@@ -118,9 +109,6 @@ plutocratic_reform = {
 		enables_aristocratic_idea_group = no
 	}
 	boost_income = yes
-	government_abilities = {
-		eco_golden_age
-	}
 	conditional = {
 		allow = {
 			has_dlc = "Leviathan"
@@ -182,9 +170,6 @@ austrian_archduchy_reform = {
 	custom_attributes = {
 		buffed_strong_duchies = yes #+5% Loyalty
 	}
-	government_abilities = {
-		eco_golden_age
-	}
 }
 
 grand_duchy_reform = {
@@ -206,9 +191,6 @@ grand_duchy_reform = {
 	fixed_rank = 1
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
-	government_abilities = {
-		eco_golden_age
-	}
 	modifiers = {
 		governing_capacity = 200
 	}
@@ -245,9 +227,6 @@ indian_sultanate_reform = {
 		government_abilities = {
 			iqta_mechanic
 		}
-	}
-	government_abilities = {
-		eco_golden_age
 	}
 }
 
@@ -330,9 +309,6 @@ daimyo = {
 		infantry_power = 0.1
 		amount_of_samurai = 4
 	}
-	government_abilities = {
-		eco_golden_age
-	}
 	custom_attributes = {
 		locked_government_type = yes
 	}
@@ -358,9 +334,6 @@ feudal_france_reform = {
 		vassal_income = 0.1
 		max_absolutism = -50
 	}
-	government_abilities = {
-		eco_golden_age
-	}
 	custom_attributes = {
 		has_appanages = yes
 	}
@@ -384,9 +357,6 @@ appanage_reform = {
 	}
 	custom_attributes = {
 		locked_government_type = yes
-	}
-	government_abilities = {
-		eco_golden_age
 	}
 }
 
@@ -425,9 +395,6 @@ absolutist_france_reform = {
 		max_absolutism = 10
 		development_cost = -0.05
 		#fire_damage = 0.1
-	}
-	government_abilities = {
-		eco_golden_age
 	}
 	custom_attributes = {
 		centralize_state_development = yes 
@@ -472,9 +439,6 @@ indep_daimyo = {
 	}
 	custom_attributes = {
 		locked_government_type = yes
-	}
-	government_abilities = {
-		eco_golden_age
 	}
 }
 
@@ -531,9 +495,6 @@ celestial_empire = {
 		nobles_influence_modifier = -0.1
 		burghers_influence_modifier = -0.1
 		governing_capacity = 500
-	}
-	government_abilities = {
-		eco_golden_age
 	}
 	ai = {
 		factor = 1000 # should always be picked if available
@@ -609,9 +570,6 @@ chinese_warlord = {
 		governing_capacity = 500
 		liberty_desire = 50
 	}
-	government_abilities = {
-		eco_golden_age
-	}
 	ai = {
 		factor = 1000
 	}
@@ -651,9 +609,6 @@ kalmar_union = {
 			}
 		}
 	}
-	government_abilities = {
-		eco_golden_age
-	}
 	custom_attributes = {
 		locked_government_type = yes
 		kalmar_union_succession = yes
@@ -682,9 +637,6 @@ danish_archkingdom = {
 		nobles_influence_modifier = -0.1
 		years_to_integrate_personal_union = -40
 	}	
-	government_abilities = {
-		eco_golden_age
-	}
 	custom_attributes = {
 		personal_union_war_contribution = yes
 	}
@@ -717,9 +669,6 @@ elective_monarchy = {
 		global_unrest = -1
 		max_absolutism = -30
 		governing_capacity = 100
-	}
-	government_abilities = {
-		eco_golden_age
 	}
 	conditional = {
 		allow = { has_dlc = "Res Publica" }
@@ -762,9 +711,6 @@ iqta = {
 		government_abilities = {
 			iqta_mechanic
 		}
-	}
-	government_abilities = {
-		eco_golden_age
 	}
 	ai = {
 		factor = 1
@@ -817,9 +763,6 @@ english_monarchy = {
 			english_parliament = yes
 		}
 	}
-	government_abilities = {
-		eco_golden_age
-	}
 }
 
 british_monarchy = {
@@ -864,9 +807,6 @@ british_monarchy = {
 	}
 	ai = {
 		factor = 100
-	}
-	government_abilities = {
-		eco_golden_age
 	}
 }
 
@@ -922,9 +862,6 @@ angevin_monarchy = {
 	ai = {
 		factor = 100
 	}
-	government_abilities = {
-		eco_golden_age
-	}
 }
 
 absolute_british_monarchy = {
@@ -966,9 +903,6 @@ absolute_british_monarchy = {
 			english_parliament = yes
 			can_force_issue_through = yes
 		}
-	}
-	government_abilities = {
-		eco_golden_age
 	}
 }
 
@@ -1032,9 +966,6 @@ ottoman_government = {
 		has_pashas = yes
 		has_janissaries = yes
 	}
-	government_abilities = {
-		eco_golden_age
-	}
 	conditional = {
 		allow = {
 			has_dlc = "Rights of Man" 
@@ -1061,9 +992,6 @@ byzantine_autocracy_reform = {
 	modifiers = {
 		max_absolutism = -25
 		prestige = 0.5
-	}
-	government_abilities = {
-		eco_golden_age
 	}
 	conditional = {
 		allow = { has_dlc = "King of Kings" }
@@ -1103,9 +1031,6 @@ reformed_byzantine_monarchy_reform = {
 		}
 		has_parliament = yes
 	}
-	government_abilities = {
-		eco_golden_age
-	}
 	conditional = {
 		allow = { has_dlc = "King of Kings" }
 		custom_attributes = {
@@ -1132,9 +1057,6 @@ margraviate_reform = {
 	modifiers = {
 		fort_maintenance_modifier = -0.2
 		defensiveness = 0.1
-	}
-	government_abilities = {
-		eco_golden_age
 	}
 	ai = {
 		factor = 1
@@ -1169,9 +1091,6 @@ serbian_despotate_reform = {
 		global_autonomy = -0.05
 		warscore_cost_vs_other_religion = -0.1
 		tolerance_own = 1
-	}
-	government_abilities = {
-		eco_golden_age
 	}
 	ai = {
 		factor = 1
@@ -1214,9 +1133,6 @@ bulgarian_tsardom_reform = {
 	ai = {
 		factor = 100
 	}
-	government_abilities = {
-		eco_golden_age
-	}
 }
 
 tanistry_reform = {
@@ -1241,9 +1157,6 @@ tanistry_reform = {
 			has_ruler_election = yes
 			can_elect_from_relative = yes
 		}
-	}
-	government_abilities = {
-		eco_golden_age
 	}
 	ai = {
 		factor = 1
@@ -1277,9 +1190,6 @@ irish_highkingdom_reform = {
 		same_culture_advisor_cost = -0.15
 		global_manpower_modifier = 0.15
 	}
-	government_abilities = {
-		eco_golden_age
-	}
 	conditional = {
 		allow = {
 			OR = {
@@ -1295,9 +1205,6 @@ irish_highkingdom_reform = {
 			has_ruler_election = yes
 			can_elect_from_relative = yes
 		}
-	}
-	government_abilities = {
-		eco_golden_age
 	}
 	ai = {
 		factor = 1
@@ -1336,9 +1243,6 @@ scottish_monarchy_reform = {
 		}
 		has_parliament = yes
 	}
-	government_abilities = {
-		eco_golden_age
-	}
 	ai = {
 		factor = 1
 	}
@@ -1372,9 +1276,6 @@ sharifate_reform = {
 		government_abilities = {
 			iqta_mechanic
 		}
-	}
-	government_abilities = {
-		eco_golden_age
 	}
 	ai = {
 		factor = 1
@@ -1420,9 +1321,6 @@ caliphate_reform = {
 			feudal_theocracy_mechanic
 		}
 	}
-	government_abilities = {
-		eco_golden_age
-	}
 	ai = {
 		factor = 1
 	}
@@ -1446,9 +1344,6 @@ league_of_lezhe_reform = {
 	}
 	custom_attributes = {
 		winning_battles_increases_legitimacy = yes
-	}
-	government_abilities = {
-		eco_golden_age
 	}
 	ai = {
 		factor = 1
