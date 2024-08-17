@@ -3334,8 +3334,7 @@ kok_persia_culture_mission_slot_2 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
-			monthly_income = 200
-			trade_income_percentage = 0.5
+			monthly_income = 400
 			calc_true_if = {
 				trading_bonus = { trade_goods = silk value = yes }
 				trading_bonus = { trade_goods = cloth value = yes }

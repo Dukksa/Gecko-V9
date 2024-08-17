@@ -20,7 +20,7 @@ Splendid_Court= {
 
 Steppe_rule = {
 	potential = {
-		ai = no
+		ROOT = {ai = no}
 		is_nomad= yes
 		religion = sunni
 		current_age = age_of_discovery
@@ -36,7 +36,7 @@ Steppe_rule = {
 }
 Steppe_rule_2 = {
 	potential = {
-		ai = no
+		ROOT = {ai = no}
 		is_nomad= yes
 		religion = tengri_pagan_reformed
 		current_age = age_of_discovery
@@ -667,7 +667,7 @@ Stop_the_raids = {
 }
 Merc_payments = {
 	potential = {
-		ai = no
+		ROOT = {ai = no}
 	}
 		
 	trigger = {
@@ -680,7 +680,7 @@ Merc_payments = {
 }
 qolu_ai_sieges = {
 	potential = {
-		ai = yes
+		ROOT = {ai = no}
 		is_subject = no
 	}
 
