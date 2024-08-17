@@ -1,7 +1,7 @@
 Splendid_Court= {
 	potential = {
 		current_age = age_of_discovery
-		ai = no
+		ROOT = {ai = no}
 	}
 	
 
