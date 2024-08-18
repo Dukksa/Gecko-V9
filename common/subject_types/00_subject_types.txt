@@ -271,6 +271,15 @@ vassal = {
 			}
 		}
 	}
+	modifier_subject = {
+		trigger = {
+			OR = {
+				overlord = { ai = no }
+				ai = no
+			}
+		}
+		modifier = ai_overlord_modifier
+	}
 
 	overlord_opinion_modifier = is_vassal
 	subject_opinion_modifier = is_vassal

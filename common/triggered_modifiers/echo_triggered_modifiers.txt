@@ -678,21 +678,6 @@ Merc_payments = {
 	}
 	mercenary_manpower = -0.01
 }
-qolu_ai_sieges = {
-	potential = {
-		ROOT = {ai = no}
-		is_subject = no
-	}
-
-	trigger = {
-		always = yes
-	}
-
-	defensiveness = -0.5
-	global_autonomy = -0.1
-	yearly_corruption = -0.1
-	diplomatic_upkeep = -2
-}
 
 Peace_of_Italy = {
 	potential = {
