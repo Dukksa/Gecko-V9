@@ -100,8 +100,8 @@ country_decisions = {
 					}
 		}
 		potential = { 
+			ai = no
 			any_owned_province = {
-				ai = no
 				base_production = 10
 				is_state = yes
 				hidden_trigger = { NOT = { has_province_flag = echo_provincial_investment_pflag } }
