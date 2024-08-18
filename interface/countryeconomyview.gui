@@ -56,14 +56,14 @@ guiTypes = {
 		#WAR TAX ALERTS
 			iconType = {
 				name = "alert_free_war_taxes"
-				position = { x = 206 y = 390 }
+				position = { x = 42 y = 430 }
 				quadTextureSprite ="GFX_alert_free_war_taxes"
 				Orientation = "LOWER_LEFT"
 				scripted = yes
 			}
 			iconType = {
 				name = "alert_paying_war_taxes"
-				position = { x = 206 y = 390 }
+				position = { x = 42 y = 430 }
 				quadTextureSprite ="GFX_alert_paying_war_taxes"
 				Orientation = "LOWER_LEFT"
 				scripted = yes
