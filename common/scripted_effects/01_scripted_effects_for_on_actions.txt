@@ -2804,6 +2804,18 @@ remove_all_age_of_discovery_modifiers = {
 			limit = { has_country_modifier = Steppe_rule_2 }
 			remove_country_modifier = Steppe_rule_2
 		}
+		if = {
+			limit = { has_country_modifier = NED_early_netherlands }
+			remove_country_modifier = NED_early_netherlands
+		}
+		if = {
+			limit = { has_country_modifier = NED_humanism_modifier }
+			remove_country_modifier = NED_humanism_modifier
+		}
+		if = {
+			limit = { has_country_modifier = me_bur_burgundian_ambition }
+			remove_country_modifier = me_bur_burgundian_ambition
+		}
 	}
 }
 remove_all_age_of_reformation_modifiers = {
@@ -2846,6 +2858,10 @@ remove_all_age_of_reformation_modifiers = {
 		if = {
 			limit = { has_country_modifier = BYZ_roman_vigour }
 			remove_country_modifier = BYZ_roman_vigour
+		}
+		if = {
+			limit = { has_country_modifier = me_bur_new_succession_laws }
+			remove_country_modifier = me_bur_new_succession_laws
 		}
 	}
 }

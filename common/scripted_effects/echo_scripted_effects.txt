@@ -1,4 +1,19 @@
 
+add_age_modifier = {
+	if = {
+		limit = {
+			current_age = $age$
+		}
+		add_country_modifier = {
+			name = $name$
+			duration = $duration$
+			desc = until_end_of_$age$_desc
+		}
+	}
+	else = {
+		add_prestige_or_monarch_power = { amount = 50 }
+	}
+}
 add_legitimacy_or_reform_progress = {
 	tooltip = {
 		legitimacy = $amount$

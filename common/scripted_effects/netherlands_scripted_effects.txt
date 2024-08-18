@@ -42,9 +42,6 @@ NED_auxilliary_effect = {
 		name = NED_early_netherlands
 		duration = -1
 		age = age_of_discovery
-		else = "
-			add_prestige_or_monarch_power = { amount = 50 }
-		"
 	}
 	ME_override_country_name = { string = NED_united_provinces_name }
 	custom_tooltip = " "
