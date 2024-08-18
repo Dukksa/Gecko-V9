@@ -1,4 +1,12 @@
 ﻿l_english:
+ colonize_the_south_tt:0 "Colonised the South"
+ colonize_the_north_tt:0 "Colonised the North"
+ colonize_mexico_tt:0 "Colonised Mexico"
+ colonize_caribbean_tt:0 "Colonised Caribbean"
+ colonize_canada_tt:0 "Colonised Canada"
+ colonize_caribbean_tt:0 "Colonised Colombia"
+ colonize_argentina_tt:0 "Colonised Argentina"
+ colonize_brazil_tt:0 "Colonised Brazil"
  #powers_and_ideas_l_english
  MODIFIER_MERCENARY_MANPOWER:1 "Mercenary Force Limit"
  #cradle_of_civilization_l_english

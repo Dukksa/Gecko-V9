@@ -851,7 +851,7 @@ gbr_identity_row_slot_2 = {
 	gbr_the_fur_trade = {
 		icon = mission_empire
 		required_missions = { gbr_secure_the_iron }
-		position 9
+		position = 9
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -948,17 +948,17 @@ gbr_economy_row_slot_3 = {
 			and = {
 				region = british_isles_region
 				NOT = { development = 20 }
-				has_center_of_trade = yes
+				province_has_center_of_trade_of_level = 1
 			}
 		}
 		trigger = {
 			num_of_owned_provinces_with = {
-					region = british_isles_region
-					development = 20
-					province_has_center_of_trade_of_level = 3
-					value = 8
-				}
+				region = british_isles_region
+				development = 20
+				province_has_center_of_trade_of_level = 3
+				value = 8
 			}
+		}
 		effect = {
 			6191 = {
 				center_of_trade = 1
@@ -968,7 +968,7 @@ gbr_economy_row_slot_3 = {
 				duration = 3650
 			}
 		}
-		ai_weight ) {
+		ai_weight = {
 			factor = 250 
 		}
 	}
@@ -1121,7 +1121,6 @@ gbr_economy_row_slot_3 = {
 				add_claim = root
 			}
 			12 = {
-				limit = {owned_by = root }
 				add_trade_modifier = {
 					who = root
 					duration = 5475
@@ -1352,17 +1351,9 @@ gbr_ave_hundred_years_mission_row_slot_4 = {
 		}
 		effect = {
 			6096 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_claim = ROOT }
-				}
 				add_claim = ROOT
 			}
 			173 = {
-				limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_claim = ROOT }
-				}
 				add_claim = ROOT
 			}
 			poitou_area = {
@@ -1870,7 +1861,7 @@ gbr_colonisation_mission_row_slot_5 = {
 		effect = {
 			custom_tooltip = " "
 			complex_dynamic_effect = {
-            first_custom_tooltip = "Colonised the South"
+            first_custom_tooltip = colonize_the_south_tt
 				first_limit = "
                 num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                     or = {
@@ -1887,7 +1878,7 @@ gbr_colonisation_mission_row_slot_5 = {
 					}
 				"
 				
-			second_custom_tooltip = "Colonised the North"
+			second_custom_tooltip = colonize_the_north_tt
 				second_limit = "
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						region = northeast_america_region
@@ -1901,7 +1892,7 @@ gbr_colonisation_mission_row_slot_5 = {
 					}
 				"
 				
-			third_custom_tooltip = "Colonised Mexico"
+			third_custom_tooltip = colonize_mexico_tt
 				third_limit = "
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						or = {
@@ -1918,7 +1909,7 @@ gbr_colonisation_mission_row_slot_5 = {
 					}
 				"
 				
-			fourth_custom_tooltip = "Colonised the Caribbean"
+			fourth_custom_tooltip = colonize_caribbean_tt
 				fourth_limit = "
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						region = carribeans_region
@@ -1932,7 +1923,7 @@ gbr_colonisation_mission_row_slot_5 = {
 					}
 				"
 				
-			fifth_custom_tooltip = "Colonised Canada"
+			fifth_custom_tooltip = colonize_canada_tt
 				fifth_limit = "
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						or = {
@@ -1950,7 +1941,7 @@ gbr_colonisation_mission_row_slot_5 = {
 					}
 				"
 				
-			sixth_custom_tooltip = "Colonised Colombia"
+			sixth_custom_tooltip = colonize_colombia_tt
 				sixth_limit = "
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						region = colombia_region
@@ -1964,7 +1955,7 @@ gbr_colonisation_mission_row_slot_5 = {
 					}
 				"
 				
-			seventh_custom_tooltip = "Colonised Argentina"
+			seventh_custom_tooltip = colonize_argentina_tt
 				seventh_limit = "
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						region = la_plata_region
@@ -1978,7 +1969,7 @@ gbr_colonisation_mission_row_slot_5 = {
 					}
 				"
 				
-			eighth_custom_tooltip = "Colonised Brazil"
+			eighth_custom_tooltip = colonize_brazil_tt
 				eighth_limit = "
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						region = brazil_region
