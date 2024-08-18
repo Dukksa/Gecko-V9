@@ -564,7 +564,8 @@ trade_company_timbuktu = {
 		1122 1125 2252 2253 #kong_area
 		1138 2254 2255 2256 2267 #lower_volta_area
 		1140 1143 2291 2292 2295 #atacora_oueme_area
-		1142 2268 2269 2270 #dendi_area	}
+		1142 2268 2269 2270 #dendi_area
+	}
 	
 	# Specific
 	# Generic
@@ -914,7 +915,8 @@ trade_company_katsina = {
 		5819 5823 5822 5818 #pr_africa_area_5
 		2475 5821 5816 #pr_africa_area_6
 		5814 5815 5813 #pr_africa_area_7
-		2474 5827	}
+		2474 5827
+	}
 	
 	# Specific
 	# Generic
@@ -942,7 +944,8 @@ trade_company_ethiopia = {
 		2757 2758 2759 4158 #southern_ethiopia_area
 		1218 2756 2760 #hadiya_area
 		1213 2761 2791 #shewa_area
-		1207 1208 1210 2778 2779 #ogaden_area	}
+		1207 1208 1210 2778 2779 #ogaden_area
+	}
 	
 	# Specific
 	# Generic
@@ -1424,7 +1427,7 @@ trade_company_lahore = {
 		432 2220 2234 4345
 		435 2224 2229 2230 #sistan_area
 		436 4334 4336 #birjand_area
-		446 4324 4325 #herat_area
+		446 4324 #herat_area
 		2221 2235 2236 4326 #mashhad_area
 	}
 	
