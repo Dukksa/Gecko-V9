@@ -2796,6 +2796,14 @@ remove_all_age_of_discovery_modifiers = {
 			limit = { has_country_modifier = YEM_rise_of_yemen }
 			remove_country_modifier = YEM_rise_of_yemen
 		}
+		if = {
+			limit = { has_country_modifier = Steppe_rule }
+			remove_country_modifier = Steppe_rule
+		}
+		if = {
+			limit = { has_country_modifier = Steppe_rule_2 }
+			remove_country_modifier = Steppe_rule_2
+		}
 	}
 }
 remove_all_age_of_reformation_modifiers = {
@@ -4082,6 +4090,33 @@ on_non_estate_disaster_end = {
 }
 
 on_startup_effect = {
+	if = {
+		limit = {
+			ai = no
+			is_nomad= yes
+			current_age = age_of_discovery
+		}
+		if = {
+			limit = {
+				religion = sunni
+			}
+			add_country_modifier = {
+				name = Steppe_rule
+				duration = -1
+				desc = until_end_of_age_desc
+			}
+		}
+		if = {
+			limit = {
+				religion = tengri_pagan_reformed
+			}
+			add_country_modifier = {
+				name = Steppe_rule_2
+				duration = -1
+				desc = until_end_of_age_desc
+			}
+		}
+	}
 	if = {
 		limit = {
 			NOT = { has_country_flag = new_flavour_bav_13_has_been_triggered }
