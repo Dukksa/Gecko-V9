@@ -1,3 +1,26 @@
+
+add_legitimacy_or_reform_progress = {
+	tooltip = {
+		legitimacy = $amount$
+	}
+	custom_tooltip = add_legitimacy_or_reform_progress_tt
+	hidden_effect = {
+		for = {
+			amount = $amount$
+			effect = "
+				if = {
+					limit = {
+						NOT = { legitimacy = 99.9 }
+					}
+					add_legitimacy = 1
+				}
+				else = {
+					change_government_reform_progress = 5
+				}
+			"
+		}
+	}
+}
 development_counter = {
 	[[on_startup]
 		if = {
