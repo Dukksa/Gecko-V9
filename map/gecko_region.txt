@@ -1282,6 +1282,10 @@ mississippi_region = {
 	}
 }
 
+great_plains_region = {
+	areas = {
+	}
+}
 california_region = {
 	areas = {
 		california_area
