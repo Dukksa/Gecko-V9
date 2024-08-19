@@ -1856,7 +1856,7 @@ bad_french_forts = {
 	local_defender_dice_roll_bonus = -1
 	local_defensiveness = -0.15
 	local_garrison_growth = -0.9
- }
+}
 
 gbr_unified_british_isles_culture = {	#Permanent until either Irish or Highlander get demoted
 	num_accepted_cultures = 2
@@ -12440,8 +12440,8 @@ ITA_conquest_of_britain = {
 }
 
 ITA_blatant_roman_larp = {
-	diplomatic_reputation = -2
 	diplomatic_upkeep = -2
+	improve_relation_modifier = -15
 }
 
 ITA_constantinople_taken = {
