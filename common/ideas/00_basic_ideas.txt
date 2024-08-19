@@ -129,9 +129,11 @@ religious_ideas = {
 	religious_tradition = {
 		yearly_government_power = 1.5
 		prestige = 1
+		great_project_upgrade_time = -0.25
+		great_project_upgrade_cost = -0.25
 	}
 	inquisition = {
-		manpower_in_own_culture_provinces = 0.25
+		manpower_in_own_faith_provinces = 0.25
 		development_cost_in_primary_culture = -0.05
 	}
 
