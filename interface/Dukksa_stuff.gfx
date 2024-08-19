@@ -7,4 +7,88 @@ spriteTypes = {
 		name = "GFX_first_chairman_icon" 
 		texturefile = "gfx//interface//bertus//first_chairman_icon.dds"
 	}
+	spriteType = {
+		name = "GFX_sea_naval_morale"
+		texturefile = "gfx/interface/sea_event_logos/sea_naval_morale.dds"
+	}
+	spriteType = {
+		name = "GFX_sea_prestige"
+		texturefile = "gfx/interface/sea_event_logos/sea_prestige.dds"
+	}
+	spriteType = {
+		name = "GFX_sea_production_efficiency"
+		texturefile = "gfx/interface/sea_event_logos/sea_production_efficiency.dds"
+	}
+	spriteType = {
+		name = "GFX_sea_monthly_splendor"
+		texturefile = "gfx/interface/sea_event_logos/sea_monthly_splendor.dds"
+	}
+	spriteType = {
+		name = "GFX_sea_global_tariffs"
+		texturefile = "gfx/interface/sea_event_logos/sea_global_tariffs.dds"
+	}
+	spriteType = {
+		name = "GFX_sea_global_tax_modifier"
+		texturefile = "gfx/interface/sea_event_logos/sea_global_tax_modifier.dds"
+	}
+	spriteType = {
+		name = "GFX_sea_global_unrest"
+		texturefile = "gfx/interface/sea_event_logos/sea_global_unrest.dds"
+	}
+	spriteType = {
+		name = "GFX_sea_global_manpower_modifier"
+		texturefile = "gfx/interface/sea_event_logos/sea_global_manpower_modifier.dds"
+	}
+	spriteType = {
+		name = "GFX_sea_global_missionary_strength"
+		texturefile = "gfx/interface/sea_event_logos/sea_global_missionary_strength.dds"
+	}
+	spriteType = {
+		name = "GFX_sea_diplomatic_reputation"
+		texturefile = "gfx/interface/sea_event_logos/sea_diplomatic_reputation.dds"
+	}
+	spriteType = {
+		name = "GFX_sea_discipline"
+		texturefile = "gfx/interface/sea_event_logos/sea_discipline.dds"
+	}
+	spriteType = {
+		name = "GFX_sea_spy_offence"
+		texturefile = "gfx/interface/sea_event_logos/sea_spy_offence.dds"
+	}
+	spriteType = {
+		name = "GFX_sea_trade_efficiency"
+		texturefile = "gfx/interface/sea_event_logos/sea_trade_efficiency.dds"
+	}
+	spriteType = {
+		name = "GFX_sea_improve_relation_modifier"
+		texturefile = "gfx/interface/sea_event_logos/sea_improve_relation_modifier.dds"
+	}
+	spriteType = {
+		name = "GFX_sea_colonist_placement_chance"
+		texturefile = "gfx/interface/sea_event_logos/sea_colonist_placement_chance.dds"
+	}
+	spriteType = {
+		name = "GFX_sea_defensiveness"
+		texturefile = "gfx/interface/sea_event_logos/sea_defensiveness.dds"
+	}
+	spriteType = {
+		name = "GFX_sea_land_forcelimit_modifier"
+		texturefile = "gfx/interface/sea_event_logos/sea_land_forcelimit_modifier.dds"
+	}
+	spriteType = {
+		name = "GFX_sea_land_maintenance_modifier"
+		texturefile = "gfx/interface/sea_event_logos/sea_land_maintenance_modifier.dds"
+	}
+	spriteType = {
+		name = "GFX_sea_land_morale"
+		texturefile = "gfx/interface/sea_event_logos/sea_land_morale.dds"
+	}
+	spriteType = {
+		name = "GFX_sea_reinforce_speed"
+		texturefile = "gfx/interface/sea_event_logos/sea_reinforce_speed.dds"
+	}
+	spriteType = {
+		name = "GFX_sea_development_logo"
+		texturefile = "gfx/interface/sea_decision_logos/sea_development_logo.dds"
+	}
 }

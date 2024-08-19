@@ -4,35 +4,34 @@
 ####################
 echo.10.title:0 "Recruit Administrative Advisor"
 echo.10.desc:0 "Recruit Administrative Advisor"
-echo.10.a:0 "Recruit Philosopher"
-echo.10.b:0 "Recruit Natural Scientist"
-echo.10.c:0 "Recruit Artist"
-echo.10.d:0 "Recruit Treasurer"
-echo.10.e:0 "Recruit Theologian"
-echo.10.f:0 "Recruit Master Of Mint"
-echo.10.g:0 "Recruit Inquisitor"
+echo.10.a:0 "£sea_prestige£Yearly Prestige: §G+1.00§!"
+echo.10.b:0 "£sea_production_efficiency£ Production Efficiency: §G+10.0%§!"
+echo.10.c:0 "£sea_monthly_splendor£ Monthly Splendor: §G+1.00§!"
+echo.10.d:0 "£sea_global_tax_modifier£ National Tax Modifier: §G+10.0%§!"
+echo.10.e:0 "£sea_global_unrest£ National Unrest: §G-2.00§!"
+echo.10.f:0 "£GFX_text_province_trade_power_value£ Domestic Trade power value: §G+15.0%§!"
+echo.10.g:0 "£sea_global_missionary_strength£ Missionary Strength: §G+2.0§!"
 echo.10.h:0 "£no£ Don't Recruit Anyone"
 echo.11.title:0 "Recruit Diplomatic Advisor"
 echo.11.desc:0 "Recruit Diplomatic Advisor"
-echo.11.a:0 "Recruit Statesman"
-echo.11.b:0 "Recruit Naval Reformer"
-echo.11.c:0 "Recruit Trader"
-echo.11.d:0 "Recruit Spymaster"
-echo.11.e:0 "Recruit Colonial Governor"
-echo.11.f:0 "Recruit Diplomat"
-echo.11.g:0 "Recruit Navigator"
+echo.11.a:0 "£sea_diplomatic_reputation£ Diplomatic Reputation: §G+1.00§!"
+echo.11.b:0 "£sea_naval_morale£ Morale of Navies: §G+10.0%§!"####
+echo.11.c:0 "£sea_trade_efficiency£ Trade Efficiency: §G+10.0%§!"
+echo.11.d:0 "£sea_spy_offence£ Spy Network Construction: §G+25.%§!"
+echo.11.e:0 "£sea_global_tariffs£ Global Tariffs: §G+10.0%§!"$$$
+echo.11.f:0 "£sea_improve_relation_modifier£ Improve Relations: §G+20.0%§!"
+echo.11.g:0 "£sea_colonist_placement_chance£ Colonial Growth: §G+25.0§!"
 echo.11.h:0 "£no£ Don't Recruit Anyone"
 echo.12.title:0 "Recruit Military Advisor"
 echo.12.desc:0 "Recruit Military Advisor"
-echo.12.a:0 "Recruit Army Reformer"
-echo.12.b:0 "Recruit Army Organiser"
-echo.12.c:0 "Recruit Commandant"
-echo.12.d:0 "Recruit Quartermaster"
-echo.12.e:0 "Recruit Recruitmaster"
-echo.12.f:0 "Recruit Fortifcation Expert"
-echo.12.g:0 "Recruit Grand Captain"
+echo.12.a:0 "£sea_land_morale£ Morale of Armies: §G+10.0%§!"#
+echo.12.b:0 "£sea_land_forcelimit_modifier£ Land Force Limit Modifier: §G+15.0%§!"#
+echo.12.c:0 "£sea_discipline£ Discipline: §G+5.0%§!"###
+echo.12.d:0 "£sea_reinforce_speed£ Reinforce Speed: §G+33.0%§!"
+echo.12.e:0 "£sea_global_manpower_modifier£ Manpower Recovery Speed Modifier: §G+20.0%§!"#
+echo.12.f:0 "£sea_defensiveness£ Fort Defence: §G+20.0%§!"
+echo.12.g:0 "£sea_land_maintenance_modifier£ Land Maintenance Modifier: §G-10.0%§!"##
 echo.12.h:0 "£no£ Don't Recruit Anyone"
-
 #####
 #estate privileges
 ####

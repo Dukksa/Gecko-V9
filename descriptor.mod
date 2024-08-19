@@ -11,6 +11,7 @@ tags={
 	"New Nations"
 	"Events"
 }
+replace_path = "gfx/loadingscreens"
 name="Bastard x Gecko (Gecko V9??)"
 picture="thumbnail.png"
 supported_version="v1.37.2.0"

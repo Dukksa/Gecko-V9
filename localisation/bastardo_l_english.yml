@@ -13,7 +13,7 @@
  # Decisions
  ####################
  #Development Counter
- development_counter_title:0 "Total Development Improvements"
+ development_counter_title:0 "£sea_development_logo£Total Development Improvements"
  development_counter_desc:0 "" 
  development_counter_tt:0 "Development Improvements:\n\n£adm£ Development Gained: §G[Root.adm_dev_counter.GetValue]§! \n£dip£ Development Gained: §G[Root.dip_dev_counter.GetValue]§! \n£mil£ Development Gained: §G[Root.mil_dev_counter.GetValue]§! \n\nTotal Development Gained: §G[Root.total_dev_counter.GetValue]§!"
  development_counter_update_tt:0 "Add §YDevelopment Improvement Counter§!".
