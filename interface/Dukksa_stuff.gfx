@@ -16,6 +16,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/sea_event_logos/sea_prestige.dds"
 	}
 	spriteType = {
+		name = "GFX_sea_domestic_trade_power"
+		texturefile = "gfx/interface/sea_event_logos/sea_domestic_trade_power.dds"
+	}
+	spriteType = {
 		name = "GFX_sea_production_efficiency"
 		texturefile = "gfx/interface/sea_event_logos/sea_production_efficiency.dds"
 	}
