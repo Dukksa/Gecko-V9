@@ -7583,7 +7583,7 @@ priests_may_marry_aspect_modifier = {
 	tolerance_own = 1 
 }
 adult_baptism_aspect_modifier = {
-	manpower_in_true_faith_provinces = 0.1
+	manpower_in_true_faith_provinces = 0.125
 }
 holy_sacraments_aspect_modifier = {
 	morale_damage = 0.05
@@ -7595,10 +7595,10 @@ icons_images_aspect_modifier = {
 	same_culture_advisor_cost = -0.05
 }
 legalised_divorces_aspect_modifier = {
-	reform_progress_growth = 0.1
+	reform_progress_growth = 0.2
 }
 heretics_deported_aspect_modifier = {
-	colonist_placement_chance = 0.1
+	colonist_placement_chance = 0.2
 }
 parish_registers_aspect_modifier = {
 	yearly_corruption = -0.25
@@ -7610,7 +7610,7 @@ allow_usury_aspect_modifier = {
 	interest = -0.15
 }
 translated_bibles_aspect_modifier = {
-	institution_spread_from_true_faith = 0.5
+	trade_goods_size_modifier = 0.1
 }
 justified_religious_war_aspect_modifier = {
 	warscore_cost_vs_other_religion = -0.1 
