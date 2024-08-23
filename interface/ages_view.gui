@@ -208,7 +208,7 @@ guiTypes = {
 
 		guiButtonType = {
             name = "splendor_into_monarch_power"
-            quadTextureSprite ="GFX_icon_splendor_tiny"
+            quadTextureSprite ="GFX_icon_splendor_button"
             position = { x = 135 y = 155 }
             buttonFont = "vic_18"
             scripted = yes
