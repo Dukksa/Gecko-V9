@@ -19,7 +19,7 @@ eng_wotr_row_slot_1 = {
 		}
 		NOT = { map_setup = map_setup_random }
 	} 
-	has_country_shield = yes
+	has_country_shield = yes 
 
 	eng_war_of_the_roses = {
 		icon = mission_rb_war_of_the_roses
@@ -1842,6 +1842,125 @@ gbr_in_scandinavia_mission_row_slot_4 = {
 	}
 }
 
+gbr_dev_mission_row_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc_ = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		has_country_flag = gbr_deving
+	}
+	
+	has_country_shield = yes
+	
+	gbr_dev_focus = {
+		icon = mission_rb_grow_the_channel
+		required_missions = { gbr_preparation_of_a_conflict }
+		position = 4
+		provinces_to_highlight = {
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				num_of_buildings_in_province = 3
+				development = 20
+				value = 5
+			}
+			has_mil_advisor_3 = yes
+			has_dip_advisor_3 = yes
+			has_adm_advisor_3 = yes
+		}
+		effect = {
+			add_country_modifier = {
+				name = gbr_advisorcost_modifier
+				duration = 5475
+			}
+			every_owned_province = {
+				limit = {
+					development = 20 
+				}
+				add_province_modifier = {
+					name = eng_devmissionreward
+					duration = 7300
+				}
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	gbr_ = {
+		icon = mission_rb_grow_the_channel
+		required_missions = { gbr_dev_focus }
+		position = 7
+		provinces_to_highlight = {
+		}
+		trigger = {
+			calc_true_if = {
+				amount = 5
+				all_country = {
+					OR = {
+						tag = CRN
+						tag = WLS
+						tag = NOL
+						tag = KOI
+						tag = SCO
+						tag = HSC
+						tag = LOI
+						tag = ULS
+						tag = MTH
+						tag = TYR
+						tag = TRY
+						tag = SLN
+						tag = CNN
+						tag = MNS
+						tag = DMS
+						tag = MCM
+						tag = ORD
+						tag = FLY
+						tag = KID
+						tag = LEI
+						tag = MTH
+						tag = NOR
+					}
+					is_subject_of = ROOT
+					has_opinion = {
+						who = root
+						value = 100
+					}
+				}
+			}
+		}
+		
+		effect = {
+			every_subject_country = {
+				limit = {
+					is_subject_of_type = vassal
+				}
+				
+				add_country_modifier = {
+					name = gbr_vassal
+					duration = 7300
+				}
+			}
+			add_country_modifier = {
+				name = gbr_having_vassals
+				duration = 7300
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+}
+
 gbr_in_iberia_mission_row_slot_4_continuation = {
 	slot = 4
 	generic = no
@@ -1937,7 +2056,7 @@ gbr_in_scandinavia_mission_row_slot_4_continuation = {
 		has_dlc = "Domination"
 	}
 	
-	potential = { 
+	potential = {
 		has_dlc = "Domination"
 		OR = {
 			tag = ENG
