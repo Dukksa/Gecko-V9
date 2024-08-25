@@ -1634,6 +1634,30 @@ eng_irish_revolts = {
 	trade_goods_size_modifier = 0.35
 }
 
+gbr_vassal = {
+	development_cost_in_primary_culture = -0.25
+	country_admin_power = 1
+	country_diplomatic_power = 2
+	country_military_power = 2
+	monthly_mil = 2
+	build_cost = -0.4
+	build_time = -0.8
+	governing_cost = -0.5
+}
+
+gbr_having_vassals = {
+	vassal_forcelimit_bonus = 0.5
+	vassal_manpower_bonus = 0.25
+	reduced_liberty_desire = 20
+	diplomatic_upkeep = 1
+}
+
+gbr_advisorcost_modifier = {
+	advisor_cost = -0.10
+	advisor_pool = 1
+	yearly_government_power = 0.1
+}
+
 gbr_light_ships = {
 	global_ship_trade_power = 0.2
 	placed_merchant_power = 10
@@ -1806,6 +1830,11 @@ gbr_rb_indian_integration = {
 eng_rb_coal_produced_mod = {
 	trade_goods_size_modifier = 0.15
 	local_development_cost = -0.1
+}
+
+eng_devmissionreward = {
+	local_prosperity_growth = 1
+	trade_value_modifier = 0.2
 }
 
 eng_preparing_the_people = {
