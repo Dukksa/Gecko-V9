@@ -415,13 +415,6 @@ ME_lot_1 = {
 		}
 
 		trigger = {  
-			custom_trigger_tooltip = {
-				tooltip = ME_BUR_USED_TOURNAMENT_INTERACTION_25_TIMES
-				check_variable = {
-					which = MeBurTournamentCount
-					value = 25
-				}
-			}
 			estate_loyalty = {
 				estate = estate_nobles
 				loyalty = 75
@@ -1654,13 +1647,6 @@ ME_bur_4 = {
 			has_dip_advisor_3 = yes
 			has_adm_advisor_3 = yes
 			has_mil_advisor_3 = yes
-			custom_trigger_tooltip = {
-				tooltip = ME_BUR_USED_TOURNAMENT_INTERACTION_10_TIMES
-				check_variable = {
-					which = MeBurTournamentCount
-					value = 10
-				}
-			}
 		} 
 
 		effect = {
@@ -1733,7 +1719,7 @@ ME_bur_5 = {
 		position = 2
 		required_missions = { ME_bur_low_countries_conquest } 
 		provinces_to_highlight = {  
-			province_id = 4383
+			province_id = 97
 			OR = {
 				NOT = {
 					country_or_non_sovereign_subject_holds = ROOT
@@ -1748,7 +1734,7 @@ ME_bur_5 = {
 		} 
 
 		trigger = {  
-			4383 = {
+			97 = {
 				country_or_non_sovereign_subject_holds = ROOT
 				has_great_project = {
 					type = dutch_polders 
@@ -1871,11 +1857,7 @@ ME_bur_5 = {
 		required_missions = { ME_bur_charles_bold }
 
 		trigger = {  
-			grown_by_development = 75
-			custom_trigger_tooltip = {
-				tooltip = ME_BUR_CALLED_AT_LEAST_ONE_MEETING
-				has_country_flag = me_but_called_meeting
-			}
+			grown_by_development = 275
 		}
 
 		effect = {
@@ -1888,7 +1870,7 @@ ME_bur_5 = {
 				target = emperor
 				type = cb_burgundian_campaign
 				months = 600
-			}
+			}	
 			add_casus_belli = {
 				target = FRA
 				type = cb_burgundian_campaign

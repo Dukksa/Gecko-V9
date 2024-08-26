@@ -3477,3 +3477,30 @@ ITA_dismantle_hre_wargoal = {
 	
 	war_name = ITA_HRE_DISMANTLEMENT_WARNAME	
 }
+
+BUR_burgundian_campaign = {
+	type = superiority
+	
+	attacker = {
+		badboy_factor = 0.9
+		prestige_factor = 1
+		peace_cost_factor = 0.9
+
+		peace_options = {
+			po_demand_provinces
+			po_show_burgundian_superiority
+		}
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+
+	war_name = BURGUNDIAN_CAMPAIGN_NAME
+}

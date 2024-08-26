@@ -968,7 +968,6 @@ mission_to_civilize_reform = {
 	}
 	modifiers = {
 		colonist_placement_chance = 0.1
-		native_uprising_chance = -0.5
 	}
 conditional = {
 		allow = {
