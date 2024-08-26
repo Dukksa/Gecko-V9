@@ -210,3 +210,36 @@ h_colony_religion = {
 h_colonial_industry = {
 	global_trade_goods_size_modifier = 0.1
 }
+
+gc_investment = {
+	build_cost = -0.10
+	build_time = -0.25
+	great_project_upgrade_cost = -0.25
+	development_cost = -0.05
+	interest = -0.25
+}
+
+gc_ven_mercenaries_paid_with_land = {
+	mercenary_cost = -0.1
+	merc_maintenance_modifier = -0.2
+	mercenary_discipline = 0.05
+}
+
+gc_ven_venture_captain_recruitment = {
+	land_forcelimit_modifier = 0.10
+	free_leader_pool = 3
+}
+
+gc_ven_genoese_humiliation = {
+	trade_steering = 0.2
+	trade_efficiency = 0.1
+}
+
+gc_ven_urban_renewal = {
+	development_cost = -0.05
+}
+
+gc_ven_la_francocrazia = {
+	naval_morale = 0.1
+	trade_efficiency = 0.05
+}
