@@ -298,6 +298,59 @@ gbr_mynewworld_desc: "A new world? it shall be ours!"
 gbr_our_place_in_the_sun_title: "Our place in the sun!"
 gbr_our_place_in_the_sun_desc: "Our place in the sun shall be taken by no one! oh but someone has a better spot?"
 
+
+gbr_english_renaissance_title: "English Renaissance"
+gbr_english_renaissance_desc: "The English Renaissance has sprung up once more!"
+
+gbr_early_industry_title: "Early Industry"
+gbr_early_industry_desc: "An early English Industry has begun"
+
+gbr_renovate_universities_title: "Rennovate Universities"
+gbr_renovate_universities_desc: "Rennovating old Universities will benefit us greatly"
+
+gbr_preparation_of_a_conflict_title: "Preparing a Conflict"
+gbr_preparation_of_a_conflict_desc: "We must prepare ourselfes for renewed Conflict"
+
+gbr_monopolize_the_channel_title: "Channel Monopoly"
+gbr_monopolize_the_channel_desc: "Full controll of our Tradenode is of utter importance"
+
+gbr_center_of_worlds_trade_title: "Center of Worldtrade"
+gbr_center_of_worlds_trade_desc: "We are the Center of all Trade"
+
+gbr_the_men_of_war_title: "Men o War"
+gbr_the_men_of_war_desc: "Men o War"
+
+gbr_the_royal_marines_title: "Royal Marines"
+gbr_the_royal_marines_desc: "Our Royal Marines are elite"
+
+gbr_southern_focus_title: "Southern Focus"
+gbr_southern_focus_desc: "Our Focus for now shall be to our South"
+
+gbr_iberia_defeate_title: "Iberia defeated"
+gbr_iberia_defeate_desc: "Our enemy has been sleighn"
+
+gbr_create_standing_army_title: "Standing Army"
+gbr_create_standing_army_desc: "A modern State has a modern army"
+
+gbr_the_redcoats_title: "The Redcoats"
+gbr_the_redcoats_desc: "The Redcoats are our elite fighting force on the land"
+
+gbr_southern_ports_title: "Southern Ports"
+gbr_southern_ports_desc: "The southern ports are of large importance to us"
+
+gbr_into_marroco_title: "Into marroco"
+gbr_into_marroco_desc: "Marroco must now be conquered"
+
+gbr_sugar_of_madeira_title: "Sugar of Madeira"
+gbr_sugar_of_madeira_desc: "Sugar is sweet YUM"
+
+gbr_end_berber_raids_title: "End Berber raids"
+gbr_end_berber_raids_desc: "We must end the Berber menace"
+
+gbr_hundred_years_war_title: "Hundret years war"
+gbr_hundred_years_war_desc: ""
+
+
 #songhai mission
 
 gc_son_take_djenne_title:0 "Conquer Zazzau"
