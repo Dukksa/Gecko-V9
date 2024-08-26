@@ -28,15 +28,17 @@ eng_wotr_row_slot_1 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = eng_rb_war_of_roses.tooltip
-				OR = {
-					has_country_flag = war_of_the_roses_ended
-					NOT = { current_age = age_of_discovery }
+			or = {
+				custom_trigger_tooltip = {
+					tooltip = eng_rb_war_of_roses.tooltip
+					OR = {
+						has_country_flag = war_of_the_roses_ended
+						NOT = { current_age = age_of_discovery }
+					}
 				}
+				is_at_war = yes
 			}
 		}
-		
 		effect = {
 			simple_dynamic_effect = {
 				first_custom_tooltip = eng_war_of_the_roses_at
@@ -494,6 +496,7 @@ gbr_wales_row_slot_2 = {
 				}
 			}
 			else = {
+				add_mil_power = 150
 				add_dip_power = 75
 			}
 		}
