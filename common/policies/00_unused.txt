@@ -1696,7 +1696,6 @@ armed_neutrality_act = {
  	}
  	
  	colonist_placement_chance = 0.05
- 	native_uprising_chance = -0.5
  
  	effect = {}
  	removed_effect = {}
@@ -2367,7 +2366,6 @@ encouragement_of_merchant_navy = {
  	}		
  
  	global_colonial_growth = 15
- 	native_uprising_chance = -0.5
  	
  	effect = {}
  	removed_effect = {}

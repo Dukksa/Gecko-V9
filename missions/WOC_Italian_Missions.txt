@@ -3430,9 +3430,17 @@ ITA_non_conquest_5 = {
 					num_of_times_improved = 10
 				}
 			}
-			is_ahead_of_time_in_technology = { tech = adm }
-			is_ahead_of_time_in_technology = { tech = dip }
-			is_ahead_of_time_in_technology = { tech = mil }
+			custom_trigger_tooltip = {
+				tooltip = son_modernize_army_tt
+					NOT = {
+					any_country = {
+						technology_group = western
+						ROOT = {
+							NOT = { mil_tech = PREV }	#Checks if no country with western tech has more mil tech than Songhai. Double negations are fun!
+						}
+					}
+				}
+			}
 		}
 		effect = {
 			set_country_flag = ITA_flowering_of_renaissance_flag

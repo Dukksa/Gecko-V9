@@ -12810,7 +12810,6 @@ CSC_ideas = {
 		num_accepted_cultures = 2
 	}
 	CSC_chinook_jargon = {
-		native_uprising_chance = -0.5
 		native_assimilation = 0.5
 	}
 	CSC_forts_of_hudson_bay = {
@@ -12927,7 +12926,6 @@ VRM_ideas = {
 		prestige = 0.5
 	}
 	VRM_American_Frontier = {
-		native_uprising_chance = -0.5
 		native_assimilation = 0.5
 	}
 	VRM_Cheese_wheels = {

@@ -521,7 +521,6 @@ colonial_enthusiasm = {
 }
 
 colonial_assimilation_of_natives_mod = {
-	native_uprising_chance = -0.2
 	native_assimilation = 0.4
 }
 
@@ -7610,7 +7609,7 @@ allow_usury_aspect_modifier = {
 	interest = -0.15
 }
 translated_bibles_aspect_modifier = {
-	trade_goods_size_modifier = 0.1
+	global_trade_goods_size_modifier = 0.1
 }
 justified_religious_war_aspect_modifier = {
 	warscore_cost_vs_other_religion = -0.1 

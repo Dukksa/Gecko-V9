@@ -5611,7 +5611,6 @@ france_rules_the_waves = {
 }
 
 fra_native_relations_mission = {
-	native_uprising_chance = -0.5
 	improve_relation_modifier = 0.15
 	trade_efficiency = 0.1
 }
@@ -6199,7 +6198,6 @@ siam_accepted_mon = {
 # Spice Islands missions
 
 spice_colony_modifier = {
-	native_uprising_chance = -0.5
 	colonists = 1
 }
 
