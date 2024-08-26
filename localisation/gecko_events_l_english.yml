@@ -224,3 +224,12 @@ create_45_mercs_tt:0 "Hire 45 Mercenary Regiments"
 create_50_mercs_tt:0 "Hire 50 Mercenary Regiments"
 create_100_mercs_tt:0 "Hire 100 Mercenary Regiments"
 create_200_mercs_tt:0 "Hire 200 Mercenary Regiments"
+
+#Englan
+
+flavor_eng.2121.t: "A great choice for the future"
+flavor_eng.2121.a: "Iberian path"
+flavor_eng.2121.b: "Scandinavian path"
+flavor_eng.2121.c: "Coming soon"
+flavor_eng.2121.d: "Coming soon"
+flavor_eng.2121.e: "Coming soon"
