@@ -2433,7 +2433,7 @@ gbr_colonisation_mission_row_slot_5 = {
 				first_effect = "
 					add_country_modifier = {
 						name = eng_dixie
-						duration = 1825
+						duration = 3650
 					}
 				"
 				
@@ -2447,7 +2447,7 @@ gbr_colonisation_mission_row_slot_5 = {
 				second_effect =  "
 					add_country_modifier = {
 						name = eng_yankee
-						duration = 1825
+						duration = 3650
 					}
 				"
 				
@@ -2464,7 +2464,7 @@ gbr_colonisation_mission_row_slot_5 = {
 				third_effect = "
 					add_country_modifier = {
 						name = eng_mexico
-						duration = 1825
+						duration = 3650
 					}
 				"
 				
@@ -2478,7 +2478,7 @@ gbr_colonisation_mission_row_slot_5 = {
 				fourth_effect = "
 					add_country_modifier = {
 						name = eng_caribbean
-						duration = 1825
+						duration = 3650
 					}
 				"
 				
@@ -2496,7 +2496,7 @@ gbr_colonisation_mission_row_slot_5 = {
 				fifth_effect = "
 					add_country_modifier = {
 						name = eng_canada
-						duration = 1825
+						duration = 3650
 					}
 				"
 				
@@ -2510,7 +2510,7 @@ gbr_colonisation_mission_row_slot_5 = {
 				sixth_effect = "
 					add_country_modifier = {
 						name = eng_colombia
-						duration = 1825
+						duration = 3650
 					}
 				"
 				
@@ -2524,7 +2524,7 @@ gbr_colonisation_mission_row_slot_5 = {
 				seventh_effect = "
 					add_country_modifier = {
 						name = eng_argentina
-						duration = 1825
+						duration = 3650
 					}
 				"
 				
