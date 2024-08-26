@@ -326,8 +326,8 @@ gbr_the_royal_marines_desc: "Our Royal Marines are elite"
 gbr_southern_focus_title: "Southern Focus"
 gbr_southern_focus_desc: "Our Focus for now shall be to our South"
 
-gbr_iberia_defeate_title: "Iberia defeated"
-gbr_iberia_defeate_desc: "Our enemy has been sleighn"
+gbr_iberia_defeated_title: "Iberia defeated"
+gbr_iberia_defeated_desc: "Our enemy has been sleighn"
 
 gbr_create_standing_army_title: "Standing Army"
 gbr_create_standing_army_desc: "A modern State has a modern army"
