@@ -8,9 +8,6 @@ tribe_mechanic = {
 	custom_attributes = {
 		enables_aristocratic_idea_group = yes
 	}
-	government_abilities = {
-		eco_golden_age
-	}
 }
 
 steppe_horde = {

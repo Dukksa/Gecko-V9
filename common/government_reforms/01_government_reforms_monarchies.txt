@@ -12,9 +12,6 @@ monarchy_mechanic = {
 	modifiers = {
 		nobles_influence_modifier = 0.05
 	}
-	government_abilities = {
-		eco_golden_age
-	}
 }
 
 #Feudalism vs Autocracy:

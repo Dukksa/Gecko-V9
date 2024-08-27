@@ -17,9 +17,6 @@ republic_mechanic = {
 		max_absolutism = -40
 		max_terms = 5
 	}
-	government_abilities = {
-		eco_golden_age
-	}
 	valid_for_nation_designer = no
 }
 
