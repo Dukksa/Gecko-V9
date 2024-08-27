@@ -223,11 +223,7 @@ eng_brazil: "Brazilia"
 eng_caribbean: "Caribean"
 eng_canada: "Canada"
 eng_colombia: "Colombia"
-eng_prepared_for_conquest: "Prepared for Conquest"
-eng_enemies_defeated: "Enemies defeated"
-eng_iberia: "England in Iberia"
-eng_new_word: "English new World"
-eng_berberbros_defeated: "Berberbros defeated"
+
 
 #Critical Province
  critical_province:0 "Critical Province"
