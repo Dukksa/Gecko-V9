@@ -209,10 +209,10 @@ guiTypes = {
 		guiButtonType = {
             name = "splendor_into_monarch_power"
             quadTextureSprite ="GFX_icon_splendor_button"
-            position = { x = 135 y = 155 }
+            position = { x = 130 y = 160 }
             buttonFont = "vic_18"
             scripted = yes
-            scale = 2.0
+            scale = 1
         }
 		#This is for the economic golden era
 		guiButtonType = {
