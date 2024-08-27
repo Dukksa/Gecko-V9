@@ -657,7 +657,7 @@ swi_canton_republican_ties_modifier = {
 	republican_tradition = 0.1
 	vassal_income = 0.05
 	advisor_cost = -0.025
-	development_cost = -0.025
+	development_cost = -0.02
 }
 
 swi_bastion_catholicism_modifier = {
