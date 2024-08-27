@@ -86,37 +86,37 @@ bastard_dev_cost_modifier_6 = {
 	local_development_cost_modifier = -0.1
 }
 provincial_investment_woods = {
-	local_development_cost_modifier = -0.0375
+	local_development_cost_modifier = -0.025
 }
 provincial_investment_hills = {
-	local_development_cost_modifier = -0.0625
+	local_development_cost_modifier = -0.025
 }	
 provincial_investment_mountain = {
-	local_development_cost_modifier = -0.0875
+	local_development_cost_modifier = -0.025
 }	
 provincial_investment_jungle = {
-	local_development_cost_modifier = -0.0875
+	local_development_cost_modifier = -0.025
 }	
 provincial_investment_marsh = {
-	local_development_cost_modifier = -0.0625
+	local_development_cost_modifier = -0.025
 }	
 provincial_investment_desert = {
-	local_development_cost_modifier = -0.04375
+	local_development_cost_modifier = -0.025
 }	
 provincial_investment_coastal_desert = {
-	local_development_cost_modifier = -0.04375
+	local_development_cost_modifier = -0.025
 }	
 provincial_investment_coastline = {
-	local_development_cost_modifier = -0.0375
+	local_development_cost_modifier = -0.025
 }	
 provincial_investment_highlands = {
-	local_development_cost_modifier = -0.05
+	local_development_cost_modifier = -0.025
 }	
 provincial_investment_savannah = {
-	local_development_cost_modifier = -0.0375
+	local_development_cost_modifier = -0.025
 }	
 provincial_investment_steppe = {
-	local_development_cost_modifier = -0.05
+	local_development_cost_modifier = -0.025
 }	
 imp_ambition_timer = {
 
