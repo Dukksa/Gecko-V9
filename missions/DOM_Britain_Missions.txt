@@ -18,8 +18,8 @@ eng_wotr_row_slot_1 = {
 			tag = GBR
 		}
 		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
+	} 
+	has_country_shield = yes 
 
 	eng_war_of_the_roses = {
 		icon = mission_rb_war_of_the_roses
@@ -28,15 +28,17 @@ eng_wotr_row_slot_1 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = eng_rb_war_of_roses.tooltip
-				OR = {
-					has_country_flag = war_of_the_roses_ended
-					NOT = { current_age = age_of_discovery }
+			or = {
+				custom_trigger_tooltip = {
+					tooltip = eng_rb_war_of_roses.tooltip
+					OR = {
+						has_country_flag = war_of_the_roses_ended
+						NOT = { current_age = age_of_discovery }
+					}
 				}
+				is_at_war = yes
 			}
 		}
-		
 		effect = {
 			simple_dynamic_effect = {
 				first_custom_tooltip = eng_war_of_the_roses_at
@@ -238,7 +240,7 @@ eng_britain_row_slot_1 = {
 	}
 }
 
-gbr_ave_row_slot_1 = {
+gbr_row_slot_1 = {
 	slot = 1
 	generic = no
 	ai = yes	
@@ -256,7 +258,7 @@ gbr_ave_row_slot_1 = {
 	}
 	has_country_shield = yes
 
-	gbr_ave_english_renaissance = {
+	gbr_english_renaissance = {
 		icon = mission_english_renaissance
 		required_missions = {
 			gbr_develop_ireland
@@ -299,9 +301,9 @@ gbr_ave_row_slot_1 = {
 		}
 	}
 
-	gbr_ave_renovate_universities = {
+	gbr_renovate_universities = {
 		icon = mission_rb_renovate_oxbridge
-		required_missions = { gbr_ave_english_renaissance }
+		required_missions = { gbr_english_renaissance }
 		position = 8		
 		provinces_to_highlight = {
 			OR = {
@@ -494,6 +496,7 @@ gbr_wales_row_slot_2 = {
 				}
 			}
 			else = {
+				add_mil_power = 150
 				add_dip_power = 75
 			}
 		}
@@ -801,6 +804,119 @@ gbr_identity_row_slot_2 = {
 			factor = 250
 		}
 	}
+}
+
+gbr_in_iberia_mission_row_slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			AND = {
+				tag = ENG
+				NOT = { has_country_flag = eng_took_ave_branch }
+			}
+			tag = GBR
+		}
+		
+		has_country_flag = gbr_in_iberia
+	}
+	
+	has_country_shield = yes
+	
+	gbr_sugar_of_madeira = {
+		icon = mission_secure_hajj_ports
+		position = 8
+		required_missions = { gbr_iberia_defeated }
+		provinces_to_highlight = {
+			province_id = 368 
+		}
+		trigger = {
+			368 = {
+				owned_by = ROOT
+				higher_development_than = 321
+				has_building = workshop
+				base_production = 12
+				has_building = manufactory
+			}
+			trade_goods_produced_amount = {
+				trade_goods = sugar
+				amount = 10
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			368 = {
+				change_trade_goods = sugar 
+				add_prosperity = 100
+				add_base_manpower = 4
+				add_base_production = 4
+				add_center_of_trade_level = 3
+			}
+			add_country_modifier = {
+				name = eng_new_world
+				duration = 7300
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	gbr_end_berber_raids = {
+		icon = mission_secure_hajj_ports
+		position = 9
+		required_missions = { gbr_sugar_of_madeira }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			1301 = {
+				is_strongest_trade_power = ROOT
+			}
+			341 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = eng_berberbros_defeated
+				duration = 1460
+			}
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 30
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+}
+
+gbr_in_scandinavia_row_slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			AND = {
+				tag = ENG
+				NOT = { has_country_flag = eng_took_ave_branch }
+			}
+			tag = GBR
+		}
+		has_country_flag = gbr_in_scandinavia
+	}
+	
+	has_country_shield = yes
 	
 	gbr_secure_the_iron = {
 		icon = mission_assemble_an_army
@@ -871,6 +987,9 @@ gbr_identity_row_slot_2 = {
 			}
 			add_dip_power = 50
 		}
+		ai_weight = {
+			factor = 250
+		}
 	}
 }
 
@@ -907,7 +1026,7 @@ gbr_economy_row_slot_3 = {
 		effect = {
 			add_country_modifier = {
 				name = eng_preparing_the_people
-				duration = 1825
+				duration = 5475
 			}
 		}
 		ai_weight = {
@@ -917,7 +1036,7 @@ gbr_economy_row_slot_3 = {
 
 	gbr_abolish_villeinage = {
 		icon = mission_peasantry
-		required_missions = { gbr_end_the_french_conflict }
+		required_missions = { gbr_preparation_of_a_conflict }
 		position = 3
 		provinces_to_highlight = {
 		}		
@@ -948,17 +1067,17 @@ gbr_economy_row_slot_3 = {
 			and = {
 				region = british_isles_region
 				NOT = { development = 20 }
-				province_has_center_of_trade_of_level = 1
+				has_center_of_trade = yes
 			}
 		}
 		trigger = {
 			num_of_owned_provinces_with = {
-				region = british_isles_region
-				development = 20
-				province_has_center_of_trade_of_level = 3
-				value = 8
+					region = british_isles_region
+					development = 20
+					province_has_center_of_trade_of_level = 3
+					value = 8
+				}
 			}
-		}
 		effect = {
 			6191 = {
 				center_of_trade = 1
@@ -1005,7 +1124,7 @@ gbr_economy_row_slot_3 = {
 		}
 	}
 	
-	gbr_ave_early_industry = {
+	gbr_early_industry = {
 		icon = mission_rb_prospect_for_coal
 		required_missions = {
 			gbr_well_developed
@@ -1094,6 +1213,102 @@ gbr_economy_row_slot_3 = {
 			factor = 250
 		}
 	}
+}
+
+gbr_in_iberia_mission_row_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		has_country_flag = gbr_in_iberia
+	}
+	has_country_shield = yes
+	
+	gbr_southern_ports = {
+		icon = mission_assemble_an_army
+		required_missions = { gbr_iberia_defeated }
+		position = 8
+		provinces_to_highlight = {
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = upper_andalucia_area
+					area = lower_andalucia_area
+					area = alentejo_area
+				}
+				value = 14
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = eng_iberia
+				duration = 1825
+			}
+			maghreb_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	gbr_into_marroco = {
+		icon = mission_assemble_an_army
+		required_missions = { gbr_southern_ports }
+		position = 9
+		provinces_to_highlight = {
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 20
+				region = maghreb_region
+			}
+			346 = {
+				owned_by = root
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = eng_iberia
+				duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+}
+
+gbr_in_scandinavia_row_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		has_country_flag = gbr_in_scandinavia
+	}
+	has_country_shield = yes
 	
 	gbr_consoledate_the_foothold = {
 		icon = mission_assemble_an_army
@@ -1118,9 +1333,10 @@ gbr_economy_row_slot_3 = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}			
-				add_claim = root
+				add_permanent_claim = root
 			}
 			12 = {
+				limit = {owned_by = root }
 				add_trade_modifier = {
 					who = root
 					duration = 5475
@@ -1157,8 +1373,26 @@ gbr_economy_row_slot_3 = {
 			factor = 250
 		}
 	}
+}
 
-	gbr_ave_monopolize_the_channel = {
+gbr_economy_row_slot_3_continuation = {
+	slot = 3
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	gbr_monopolize_the_channel = {
 		icon = mission_rb_monopolize_the_channel
 		required_missions = { gbr_build_dockyards }
 		position = 10		
@@ -1196,9 +1430,9 @@ gbr_economy_row_slot_3 = {
 		}
 	}
 
-	gbr_ave_center_of_worlds_trade = {
+	gbr_center_of_worlds_trade = {
 		icon = mission_control_the_channel
-		required_missions = { gbr_ave_monopolize_the_channel }
+		required_missions = { gbr_monopolize_the_channel }
 		position = 11
 		provinces_to_highlight = {
 			province_id = 236
@@ -1226,7 +1460,7 @@ gbr_economy_row_slot_3 = {
 	}
 }
 
-gbr_ave_hundred_years_mission_row_slot_4 = {
+gbr_hundred_years_mission_row_slot_4 = {
 	slot = 4
 	generic = no
 	ai = yes	
@@ -1242,7 +1476,7 @@ gbr_ave_hundred_years_mission_row_slot_4 = {
 	}
 	has_country_shield = yes
 
-	gbr_ave_hundred_years_war = {
+	gbr_hundred_years_war = {
 		icon = mission_hundred_years_war
 		required_missions = {  }
 		position = 1
@@ -1289,89 +1523,8 @@ gbr_ave_hundred_years_mission_row_slot_4 = {
 		}		
 		effect = {
 			country_event_with_insight = {
-				id = flavor_gbr.1   #ave path doesnt work but i cant find it to delete it
-				insight_tooltip = gbr_ave_hundred_years_war_at
-			}
-		}
-		ai_weight = {
-			factor = 250
-		}
-	}
-
-	gbr_end_the_french_conflict = {
-		icon = king_of_france
-		required_missions = { gbr_ave_hundred_years_war }
-		position = 2
-		provinces_to_highlight = {
-		}
-		trigger = { 
-			4385 = {
-			owned_by = root
-			development = 10
-			}
-			6082 = { 
-			owned_by = root
-			development = 10
-			}
-			army_size = 25
-			num_of_generals = 2
-			}	
-		effect = {
-			4385 = {
-				infantry = root
-				infantry = root
-				infantry = root
-				infantry = root
-				infantry = root
-			}
-			
-			add_casus_belli = {
-				target = BRI
-				type = cb_vassalize_mission
-				months = 360
-			}
-		}
-		ai_weight = {
-			factor = 250
-		}
-	}
-
-	gbr_war_mission = {
-		icon = king_of_france
-		required_missions = { gbr_end_the_french_conflict }
-		position = 4
-		provinces_to_highlight = {
-			area = brittany_area
-		}
-		trigger = {
-			brittany_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			6096 = {
-				add_claim = ROOT
-			}
-			173 = {
-				add_claim = ROOT
-			}
-			poitou_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_claim = ROOT }
-				}
-				add_claim = ROOT
-			}
-			guyenne_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_claim = ROOT }
-				}
-				add_claim = ROOT
-			}
-			brittany_area = {
-				add_devastation = -15
+				id = flavor_eng.2121
+				insight_tooltip = eng_future_conquest
 			}
 		}
 		ai_weight = {
@@ -1379,10 +1532,190 @@ gbr_ave_hundred_years_mission_row_slot_4 = {
 		}
 	}
 	
+	gbr_preparation_of_a_conflict = {
+		icon = king_of_france
+		required_missions = { gbr_hundred_years_war }
+		position = 2
+		provinces_to_highlight = {
+		}
+		trigger = { 
+			num_of_owned_provinces_with = {
+				region = british_isles_region
+				province_has_center_of_trade_of_level = 2
+				value = 4
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = eng_prepared_for_conquest
+				duration = 3650
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+}
+
+gbr_in_iberia_mission_row_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc_ = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		has_country_flag = gbr_in_iberia
+	}
+	
+	has_country_shield = yes
+	
+	gbr_southern_focus = {
+		icon = mission_rb_grow_the_channel
+		required_missions = { gbr_preparation_of_a_conflict }
+		position = 4
+		provinces_to_highlight = {
+			province_id = 1276
+		}
+		trigger = {
+			1276 = {
+				trade_share = {
+					country = ROOT 
+					share = 30
+				}
+			}
+			num_of_heavy_ship = 10
+		}
+		effect = {
+			asturias_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = root
+			}
+			galicia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = root
+			}
+			leon_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = root
+			}
+			basque_country = {
+				limit = { 
+					NOT = { is_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT 
+			}
+			beieras_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = root
+			}
+			1276 = {
+				limit = { }
+				add_trade_modifier = {
+					who = root
+					duration = 5475
+					power = 80
+					key = STRONG_MERCHANTS
+				}
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	gbr_iberia_defeated = {
+		icon = mission_rb_grow_the_channel
+		required_missions = { gbr_southern_focus }
+		position = 7
+		provinces_to_highlight = {
+			region = iberia_region
+			province_id = 1746
+			province_id = 231
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 12
+					region = iberia_region
+			}
+			or = {
+				1746 = {
+					owned_by = root
+				}
+				231 = { 
+					owned_by = root
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = eng_enemies_defeated
+				duration = 3650
+			}
+			iberia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+					
+				}
+				
+				= root
+			}
+			368 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+					
+				}
+				add_permanent_claim = root
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+}
+	
+
+gbr_in_scandinavia_mission_row_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		has_country_flag = gbr_in_scandinavia
+	}
+	has_country_shield = yes
+		
 	gbr_into_the_north = {
 		icon = mission_rb_grow_the_channel
-		required_missions = { gbr_war_mission }
-		position = 6
+		required_missions = { gbr_preparation_of_a_conflict }
+		position = 4
 		provinces_to_highlight = {
 			area = subarctic_islands_area
 		}
@@ -1398,35 +1731,35 @@ gbr_ave_hundred_years_mission_row_slot_4 = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}
-				add_claim = root
+				add_permanent_claim = root
 			}
 			jutland_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}
-				add_claim = root
+				add_permanent_claim = root
 			}
 			western_norway = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}
-				add_claim = root
+				add_permanent_claim = root
 			}
 			eastern_norway = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}			
-				add_claim = root
+				add_permanent_claim = root
 			}
 			northern_norway = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}
-				add_claim = root
+				add_permanent_claim = root
 			}
 		}
 		ai_weight = {
@@ -1442,7 +1775,7 @@ gbr_ave_hundred_years_mission_row_slot_4 = {
 		}		
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 12
+					value = 13 
 					region = scandinavia_region
 			}
 			or = {
@@ -1460,49 +1793,49 @@ gbr_ave_hundred_years_mission_row_slot_4 = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}			
-				add_claim = root
+				add_permanent_claim = root
 			}
 			south_jutland_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}			
-				add_claim = root
+				add_permanent_claim = root
 			}
 			holstein_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}			
-				add_claim = root
+				add_permanent_claim = root
 			}
 			jemtland_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}			
-				add_claim = root
+				add_permanent_claim = root
 			}
 			svealand_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}			
-				add_claim = root
+				add_permanent_claim = root
 			}
 			skaneland_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}			
-				add_claim = root
+				add_permanent_claim = root
 			}
 			dalarna_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}			
-				add_claim = root
+				add_permanent_claim = root
 			}
 			add_treasury = 500
 		}
@@ -1510,8 +1843,234 @@ gbr_ave_hundred_years_mission_row_slot_4 = {
 			factor = 250
 		}
 	}
+}
+
+gbr_dev_mission_row_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc_ = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		has_country_flag = gbr_deving
+	}
 	
-	gbr_ave_create_standing_army = {
+	has_country_shield = yes
+	
+	gbr_dev_focus = {
+		icon = mission_rb_grow_the_channel
+		required_missions = { gbr_preparation_of_a_conflict }
+		position = 4
+		provinces_to_highlight = {
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				num_of_buildings_in_province = 3
+				development = 20
+				value = 5
+			}
+			has_mil_advisor_3 = yes
+			has_dip_advisor_3 = yes
+			has_adm_advisor_3 = yes
+		}
+		effect = {
+			add_country_modifier = {
+				name = gbr_advisorcost_modifier
+				duration = 5475
+			}
+			every_owned_province = {
+				limit = {
+					development = 20 
+				}
+				add_province_modifier = {
+					name = eng_devmissionreward
+					duration = 7300
+				}
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	gbr_ = {
+		icon = mission_rb_grow_the_channel
+		required_missions = { gbr_dev_focus }
+		position = 7
+		provinces_to_highlight = {
+		}
+		trigger = {
+			calc_true_if = {
+				amount = 5
+				all_country = {
+					OR = {
+						tag = CRN
+						tag = WLS
+						tag = NOL
+						tag = KOI
+						tag = SCO
+						tag = HSC
+						tag = LOI
+						tag = ULS
+						tag = MTH
+						tag = TYR
+						tag = TRY
+						tag = SLN
+						tag = CNN
+						tag = MNS
+						tag = DMS
+						tag = MCM
+						tag = ORD
+						tag = FLY
+						tag = KID
+						tag = LEI
+						tag = MTH
+						tag = NOR
+					}
+					is_subject_of = ROOT
+					has_opinion = {
+						who = root
+						value = 100
+					}
+				}
+			}
+		}
+		
+		effect = {
+			every_subject_country = {
+				limit = {
+					is_subject_of_type = vassal
+				}
+				
+				add_country_modifier = {
+					name = gbr_vassal
+					duration = 7300
+				}
+			}
+			add_country_modifier = {
+				name = gbr_having_vassals
+				duration = 7300
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+}
+
+gbr_in_iberia_mission_row_slot_4_continuation = {
+	slot = 4
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		
+		has_country_flag = gbr_in_iberia
+		
+	}
+	
+	has_country_shield = yes
+
+	gbr_create_standing_army = {
+		icon = mission_assemble_an_army
+		required_missions = { gbr_iberia_defeated }
+		position = 7
+		provinces_to_highlight = {
+		}		
+		trigger = {
+			max_manpower = 100
+			army_size = 100
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				army_professionalism = 0.30
+			}
+			army_tradition = 30
+		}	
+		effect = {
+			#unlock_issue = {
+			#	issue = military_reform_acts
+			#}
+			unlock_issue = {
+				issue = discipline_for_the_marines_acts
+			}
+			unlock_issue = {
+				issue = improved_man_of_war_acts
+			}
+			unlock_issue = {
+				issue = army_reform_acts
+			}
+			define_general = {
+				shock = 5
+				fire = 6
+				manuever = 3
+				siege = 4
+			}
+			add_army_tradition = 15
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+
+	gbr_the_redcoats = {
+		icon = mission_redcoats
+		required_missions = { gbr_create_standing_army }
+		position = 8
+		provinces_to_highlight = {
+		}		
+		trigger = { 
+			max_manpower = 150
+			army_size = 160
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				army_professionalism = 0.5
+			}
+		}	
+		effect = {
+			add_country_modifier = {
+				name = eng_the_redcoat
+				duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+}
+
+gbr_in_scandinavia_mission_row_slot_4_continuation = {
+	slot = 4
+	generic = no
+	ai = yes	
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		has_country_flag = gbr_in_scandinavia
+	}
+	
+	has_country_shield = yes
+
+	gbr_create_standing_army = {
 		icon = mission_assemble_an_army
 		required_missions = { gbr_scandinavia_defeated }
 		position = 7
@@ -1552,9 +2111,9 @@ gbr_ave_hundred_years_mission_row_slot_4 = {
 		}
 	}
 
-	gbr_ave_the_redcoats = {
+	gbr_the_redcoats = {
 		icon = mission_redcoats
-		required_missions = { gbr_ave_create_standing_army }
+		required_missions = { gbr_create_standing_army }
 		position = 8
 		provinces_to_highlight = {
 		}		
@@ -1595,7 +2154,7 @@ gbr_mission_row_slot_4 = {
 	
 	has_country_shield = yes
 	
-	gbr_ave_the_men_of_war = {
+	gbr_the_men_of_war = {
 		icon = mission_rb_grow_the_channel
 		required_missions = { gbr_build_dockyards }
 		position = 10
@@ -1626,9 +2185,9 @@ gbr_mission_row_slot_4 = {
 		}
 	}
 
-	gbr_ave_the_royal_marines = {
+	gbr_the_royal_marines = {
 		icon = mission_plc_lifetime_of_war
-		required_missions = { gbr_ave_the_men_of_war }
+		required_missions = { gbr_the_men_of_war }
 		position = 11
 		provinces_to_highlight = {
 		}		
@@ -1666,7 +2225,7 @@ gbr_colonisation_mission_row_slot_5 = {
 	
 	gbr_we_need_a_navy = {
 		icon = mission_rb_unite_the_clans
-		required_missions = { gbr_ave_hundred_years_war }
+		required_missions = { gbr_hundred_years_war }
 		position = 2
 		provinces_to_highlight = {
 		}
@@ -1687,9 +2246,9 @@ gbr_colonisation_mission_row_slot_5 = {
 		
 	gbr_prepare_a_exploration_fleet = {
 		icon = mission_rb_a_mighty_fleet
-		required_missions = { 
-		gbr_end_the_french_conflict
-		gbr_we_need_a_navy
+		required_missions = {
+			gbr_we_need_a_navy
+			gbr_preparation_of_a_conflict
 		}
 		position = 3
 		provinces_to_highlight = {
@@ -1861,7 +2420,7 @@ gbr_colonisation_mission_row_slot_5 = {
 		effect = {
 			custom_tooltip = " "
 			complex_dynamic_effect = {
-            first_custom_tooltip = colonize_the_south_tt
+            first_custom_tooltip = "Colonised the South"
 				first_limit = "
                 num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                     or = {
@@ -1874,11 +2433,11 @@ gbr_colonisation_mission_row_slot_5 = {
 				first_effect = "
 					add_country_modifier = {
 						name = eng_dixie
-						duration = 1825
+						duration = 3650
 					}
 				"
 				
-			second_custom_tooltip = colonize_the_north_tt
+			second_custom_tooltip = "Colonised the North"
 				second_limit = "
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						region = northeast_america_region
@@ -1888,11 +2447,11 @@ gbr_colonisation_mission_row_slot_5 = {
 				second_effect =  "
 					add_country_modifier = {
 						name = eng_yankee
-						duration = 1825
+						duration = 3650
 					}
 				"
 				
-			third_custom_tooltip = colonize_mexico_tt
+			third_custom_tooltip = "Colonised Mexico"
 				third_limit = "
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						or = {
@@ -1905,11 +2464,11 @@ gbr_colonisation_mission_row_slot_5 = {
 				third_effect = "
 					add_country_modifier = {
 						name = eng_mexico
-						duration = 1825
+						duration = 3650
 					}
 				"
 				
-			fourth_custom_tooltip = colonize_caribbean_tt
+			fourth_custom_tooltip = "Colonised the Caribbean"
 				fourth_limit = "
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						region = carribeans_region
@@ -1919,11 +2478,11 @@ gbr_colonisation_mission_row_slot_5 = {
 				fourth_effect = "
 					add_country_modifier = {
 						name = eng_caribbean
-						duration = 1825
+						duration = 3650
 					}
 				"
 				
-			fifth_custom_tooltip = colonize_canada_tt
+			fifth_custom_tooltip = "Colonised Canada"
 				fifth_limit = "
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						or = {
@@ -1937,11 +2496,11 @@ gbr_colonisation_mission_row_slot_5 = {
 				fifth_effect = "
 					add_country_modifier = {
 						name = eng_canada
-						duration = 1825
+						duration = 3650
 					}
 				"
 				
-			sixth_custom_tooltip = colonize_colombia_tt
+			sixth_custom_tooltip = "Colonised Colombia"
 				sixth_limit = "
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						region = colombia_region
@@ -1951,11 +2510,11 @@ gbr_colonisation_mission_row_slot_5 = {
 				sixth_effect = "
 					add_country_modifier = {
 						name = eng_colombia
-						duration = 1825
+						duration = 3650
 					}
 				"
 				
-			seventh_custom_tooltip = colonize_argentina_tt
+			seventh_custom_tooltip = "Colonised Argentina"
 				seventh_limit = "
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						region = la_plata_region
@@ -1965,11 +2524,11 @@ gbr_colonisation_mission_row_slot_5 = {
 				seventh_effect = "
 					add_country_modifier = {
 						name = eng_argentina
-						duration = 1825
+						duration = 3650
 					}
 				"
 				
-			eighth_custom_tooltip = colonize_brazil_tt
+			eighth_custom_tooltip = "Colonised Brazil"
 				eighth_limit = "
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						region = brazil_region
