@@ -26,11 +26,7 @@ kaffa_slave_market = {
 	}
 
 	trigger = {
-		owner = {
-			###X###
-			is_emperor_of_china = yes
-			#######
-		}
+		owned_by = ROOT
 		controlled_by = ROOT
 	}
 

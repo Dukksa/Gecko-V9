@@ -10275,8 +10275,9 @@ ARL_ideas = {
 
 FRS_ideas = {
 	start = {
-		global_trade_goods_size_modifier = 0.1
-		idea_cost = -0.1
+		infantry_power = 0.1
+		infantry_cost = -0.1
+		land_morale = 0.15
 	}
 	bonus = {
 		dip_tech_cost_modifier = -0.1
@@ -10287,15 +10288,14 @@ FRS_ideas = {
 	free = yes
 	
 	frs_land_of_the_persians = {
-		land_morale = 0.1
+		idea_cost = -0.1
 	}
 	frs_center_of_religion_and_philosophy = {
 		embracement_cost = -0.1
 		prestige = 0.5
 	}
 	frs_diplomatic_prudence = {
-		infantry_power = 0.05
-		infantry_cost = -0.05
+		global_trade_goods_size_modifier = 0.1
 	}
 	frs_shirazi_wine = {
 		production_efficiency = 0.1
