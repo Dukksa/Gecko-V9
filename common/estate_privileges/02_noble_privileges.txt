@@ -499,11 +499,11 @@ estate_nobles_right_of_counsel = {
 				}
 			}
 			capital_scope = { 
-				cavalry = root
-				cavalry = root
-				cavalry = root
-				cavalry = root
-				cavalry = root
+				cossack_cavalry = ROOT
+				cossack_cavalry = ROOT
+				cossack_cavalry = ROOT
+				cossack_cavalry = ROOT
+				cossack_cavalry = ROOT
 			}
 		}
 		if = {
@@ -515,11 +515,11 @@ estate_nobles_right_of_counsel = {
 				}
 			}
 			random_owned_province = { 
-				cavalry = root
-				cavalry = root
-				cavalry = root
-				cavalry = root
-				cavalry = root
+				cossack_cavalry = ROOT
+				cossack_cavalry = ROOT
+				cossack_cavalry = ROOT
+				cossack_cavalry = ROOT
+				cossack_cavalry = ROOT
 			}
 		}
 	}
