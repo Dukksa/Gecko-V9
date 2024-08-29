@@ -135,9 +135,12 @@
  gc_burgundy_event.1.a:0 "So be it."
 
  gc_burgundy_event.2.t:0 "The Purchase of the Counties of Elsass and Ferrette"
- gc_burgundy_event.2.d:0 "Through our deft diplomacy, we have convinced the Emperor to sell us the Counties of Ferrette, Mulhousen and Elsass. The Emperor has however now also gained a claim on these territories.."
- gc_burgundy_event.2.a:0 "It is our right."
-
+ gc_burgundy_event.2.d:0 "Through our deft diplomacy, we will try to convince the Emperor to sell us the Counties of Ferrette, Mulhousen and Elsass."
+ gc_burgundy_event.2.a:0 "Ask the Empire."
+ gc_burgundy_event.3.t:0 "Burgundian offer"
+ gc_burgundy_event.3.d:0 "The Burgundians have approached us with a cunning offer of them buying the Counties of Ferrette, Mulhousen and Elsass.\n\n\n We have two choices. If we accept they will give us 750 gold for the ownership of those Counties. However if we decline the offer they will still lay claim on those Counties and might use other means such as war to obtain the Counties."
+ gc_burgundy_event.3.a:0 "Accept the offer."
+ gc_burgundy_event.3.b:0 "Decline the offer."
  #Gecko Austria
  flavor_hab.20.gc:0 "We may not abandon our German roots."
  gecko_habsburg_empire_requirements_tooltip:0 "The Entirety of Austria, Bohemia and Royal Hungary must be directly controlled by us. Furthermore we must secure our Ambitions in Italy and conquer the City of Venice."

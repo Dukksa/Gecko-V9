@@ -36,6 +36,99 @@ country_event = { #purchase the counties
 	option = {
 		name = gc_burgundy_event.2.a
 		
+		if = {
+			limit = { SWI = { ai = no}}
+			SWI = {
+				country_event = { id = gc_burgundy_event.3 }
+			}
+		}
+		else = {
+			HAB = {
+				country_event = { id = gc_burgundy_event.4 }
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = gc_burgundy_event.3
+	title = "gc_burgundy_event.3.t"
+	desc = "gc_burgundy_event.3.d"
+	picture = REFORM_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = gc_burgundy_event.3.a
+
+		75 = {
+			cede_province = BUR
+		}
+		75 = {
+			add_core = BUR
+		}
+		75 = {
+			add_core = SWI
+		}
+		4765 = {
+			cede_province = BUR
+		}
+		4765 = {
+			add_core = BUR
+		}
+		4765 = {
+			add_core = SWI
+		}
+		1880 = {
+			cede_province = BUR
+		}
+		1880 = {
+			add_core = BUR
+		}
+		1880 = {
+			add_core = SWI
+		}
+		add_treasury = 750
+		BUR = {
+			add_treasury = -750
+		}
+		ai_chance = {
+			factor = 9999
+		}
+	}
+
+	option = {
+		name = gc_burgundy_event.3.b
+
+		75 = {
+			add_permanent_claim = BUR
+		}
+		4765 = {
+			add_permanent_claim = BUR
+		}
+		1880 = {
+			add_permanent_claim = BUR
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = gc_burgundy_event.4
+	title = "gc_burgundy_event.3.t"
+	desc = "gc_burgundy_event.3.d"
+	picture = REFORM_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = gc_burgundy_event.3.a
+
 		75 = {
 			cede_province = BUR
 		}
@@ -63,6 +156,28 @@ country_event = { #purchase the counties
 		1880 = {
 			add_core = HAB
 		}
-		add_treasury = -750
+		add_treasury = 750
+		BUR = {
+			add_treasury = -750
+		}
+		ai_chance = {
+			factor = 9999
+		}
+	}
+
+	option = {
+		name = gc_burgundy_event.3.b
+		75 = {
+			add_permanent_claim = BUR
+		}
+		4765 = {
+			add_permanent_claim = BUR
+		}
+		1880 = {
+			add_permanent_claim = BUR
+		}
+		ai_chance = {
+			factor = 0
+		}
 	}
 }

@@ -71,6 +71,10 @@ emp_burgundy_1 = {
 					who = HAB
 					value = 100
 				}
+				reverse_has_opinion = {
+					who = SWI
+					value = 100
+				}
 				army_size = HAB
 			}
 			75 = {
