@@ -1174,6 +1174,7 @@ milan_missions_5 = { #Made by Big Boss for Flavor Universalis
 		position = 2 
 		trigger = {
 			has_institution = renaissance
+			owns = 104
 			OR = {
 				AND = {
 					has_estate_privilege = estate_burghers_patronage_of_the_arts
@@ -1190,6 +1191,7 @@ milan_missions_5 = { #Made by Big Boss for Flavor Universalis
 				limit = {
 					NOT = { has_global_flag = had_leo_flag }
 				}
+				set_global_flag = had_leo_flag
 				country_event = { id = flavor_mlo.9 } 
 			}
 			else_if = {
