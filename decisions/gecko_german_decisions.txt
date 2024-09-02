@@ -90,7 +90,6 @@ country_decisions = {
 				tag = SWI
 				tag = BAV
 				tag = SWA
-				tag = ROT
 				tag = FKN
             }
 			culture_group = germanic
