@@ -10,6 +10,15 @@ h_reform_dominion = {
 			tag = AUS
 			tag = ORJ
 			tag = DSA
+			tag = TEX 
+			tag = BEO
+			tag = AME
+			tag = GCA
+			tag = HER
+			tag = PLA
+			tag = ARC
+			tag = VIN
+			tag = CUB
 		}	
 	}
 	modifiers = {
