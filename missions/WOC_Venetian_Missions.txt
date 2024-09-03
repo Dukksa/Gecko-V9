@@ -71,7 +71,7 @@ X_VEN_slot_1 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				AND {
+				AND = {
 					is_capital_of = ROOT
 					TUR = { exists = yes }
 					ROOT = {
@@ -256,7 +256,7 @@ X_VEN_slot_1 = {
 		required_missions = { }
 		
 		provinces_to_highlight = {
-			OR {
+			OR = {
 				AND = {
 					province_id = 142
 					NOT = { X_has_latest_building_trigger = { fort = yes builder = ROOT } }
@@ -1131,7 +1131,7 @@ X_VEN_slot_3 = {
 							NOT = { mil_tech = 10 }
 							NOT = { num_of_artillery = 20 }
 							AND = {
-								NOT = { full_idea_group = trade_ideas }
+								NOT = { full_idea_group = maritime_ideas }
 								NOT = { full_idea_group = plutocracy_ideas }
 							}
 						}
@@ -1229,7 +1229,7 @@ X_VEN_slot_3 = {
 					is_capital = yes
 					NOT = { owned_by = ROOT }
 					owner = {
-						AND {
+						AND = {
 							any_owned_province = {
 								sea_zone = {
 									OR = {
@@ -1549,7 +1549,7 @@ X_VEN_slot_4 = {
 					is_capital = yes
 					NOT = { owned_by = ROOT }
 					owner = {
-						AND {
+						AND = {
 							any_owned_province = {
 								sea_zone = {
 									region = mediterrenean_region
