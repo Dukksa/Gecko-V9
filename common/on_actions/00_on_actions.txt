@@ -25,6 +25,15 @@ on_startup = {
 
 	gecko_mercs = { update = yes on_startup = yes }
 	development_counter = { on_startup = yes }
+
+	if = { 
+		limit ={ ai = no
+			is_part_of_hre = yes
+			is_elector = no
+		}
+		elector = yes
+	}
+
 	if = {
 		limit = {
 				OR = {

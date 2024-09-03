@@ -5,7 +5,6 @@ primary_culture = venetian
 religion = catholic
 add_accepted_culture = greek
 add_accepted_culture = dalmatian
-elector = yes
 technology_group = western
 capital = 112 # Venezia
 fixed_capital = 112 # Cannot move capital away from this province & no power cost to move to it

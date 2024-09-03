@@ -2,7 +2,6 @@ government = republic
 add_government_reform = ambrosian_republic
 government_rank = 1
 primary_culture = lombard
-elector = yes
 religion = catholic
 technology_group = western
 capital = 104 # Milano
