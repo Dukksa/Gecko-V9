@@ -1366,6 +1366,8 @@ barbary_sultanate_reform = {
 		may_perform_slave_raid = yes
 		coast_raid_range = 1 
 		navy_tradition_decay = -0.005
+		has_samurai = yes
+		allowed_samurai_fraction = 0.15
 	}
 	conditional = {
 		allow = { has_dlc = "Cradle of Civilization" }
