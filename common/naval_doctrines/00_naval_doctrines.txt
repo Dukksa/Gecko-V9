@@ -1,5 +1,6 @@
 fleet_in_being = {
 	can_select = {
+
 		is_primitive = no
 	}
 
@@ -15,6 +16,7 @@ fleet_in_being = {
 
 free_oarsmen = {
 	can_select = {
+
 		is_primitive = no
 	}
 
@@ -30,6 +32,7 @@ free_oarsmen = {
 
 merchant_navy = {
 	can_select = {
+
 		is_primitive = no
 	}
 
@@ -45,6 +48,7 @@ merchant_navy = {
 
 ship_boarding = {
 	can_select = {
+
 		is_primitive = no
 	}
 
@@ -58,6 +62,7 @@ ship_boarding = {
 
 wooden_wall = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
 		OR = {
@@ -78,6 +83,7 @@ wooden_wall = {
 
 grand_armada = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
 		NOT = {
@@ -105,6 +111,7 @@ grand_armada = {
 
 portuguese_marines = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
 		OR = {
@@ -127,6 +134,7 @@ portuguese_marines = {
 
 aragonese_fleet = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
 		OR = {
@@ -147,6 +155,7 @@ aragonese_fleet = {
 
 danish_admirality = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
 		primary_culture = danish
@@ -165,6 +174,7 @@ danish_admirality = {
 
 norwegian_sailors = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		OR = {
 			has_country_flag = unlock_norwegian_naval_doctrine
@@ -186,6 +196,7 @@ norwegian_sailors = {
 
 norwegian_sailors_upgraded = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		primary_culture = norwegian
 		has_country_flag = nor_upgraded_norwegian_sailors_doctrine
@@ -205,6 +216,7 @@ norwegian_sailors_upgraded = {
 
 dutch_trade_fleet = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
 		OR = {
@@ -226,6 +238,7 @@ dutch_trade_fleet = {
 
 norse_raid_fleet = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
 		primary_culture = norse
@@ -244,6 +257,7 @@ norse_raid_fleet = {
 
 venetian_arsenal_naval_doctrine = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
 		primary_culture = venetian
@@ -262,6 +276,7 @@ venetian_arsenal_naval_doctrine = {
 
 korean_panokseon = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
 		OR = {
@@ -282,6 +297,7 @@ korean_panokseon = {
 
 japanese_atakebune = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
 		culture_group = japanese_g
@@ -298,6 +314,7 @@ japanese_atakebune = {
 
 hanseatic_trade_fleet = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
 		primary_culture = lower_saxon
@@ -316,6 +333,7 @@ hanseatic_trade_fleet = {
 
 ottoman_great_navy = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
 		primary_culture = turkish
@@ -334,6 +352,7 @@ ottoman_great_navy = {
 
 maghrebi_corsairs = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
 		culture_group = maghrebi
@@ -352,6 +371,7 @@ maghrebi_corsairs = {
 
 letter_of_marque = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
 		culture_group = french
@@ -372,6 +392,7 @@ letter_of_marque = {
 
 novgorodian_ushkuiniks = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
 		OR = {
@@ -393,6 +414,7 @@ novgorodian_ushkuiniks = {
 
 dvoyane_admiralty = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
 		OR = {
@@ -414,6 +436,7 @@ dvoyane_admiralty = {
 
 malayan_seafaring = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
 		culture_group = malay
@@ -435,6 +458,7 @@ malayan_seafaring = {
 
 the_junk_fleet = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
 		culture_group = east_asian
@@ -455,6 +479,7 @@ the_junk_fleet = {
 
 chinese_treasure_fleet = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		always = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
@@ -474,6 +499,7 @@ chinese_treasure_fleet = {
 
 maratha_naval_bombards = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
 		culture_group = western_aryan
@@ -493,6 +519,7 @@ maratha_naval_bombards = {
 
 polynesian_navigation_seas = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
 		culture_group = pacific
@@ -511,6 +538,7 @@ polynesian_navigation_seas = {
 
 naval_tactica = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
 		OR = {
@@ -532,6 +560,7 @@ naval_tactica = {
 
 basque_marines = {
 	can_select = {
+		is_colonial_nation = no
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
 		primary_culture = basque
@@ -553,6 +582,7 @@ basque_marines = {
 
 mamluk_galley_doctrine = {
 	can_select = {
+		is_colonial_nation = no
 		has_country_flag = mam_unlock_galley_doctrine_flag
 	}
 
@@ -568,6 +598,7 @@ mamluk_galley_doctrine = {
 
 mamluk_light_doctrine = {
 	can_select = {
+		is_colonial_nation = no
 		has_country_flag = mam_unlock_light_doctrine_flag
 	}
 
@@ -583,6 +614,7 @@ mamluk_light_doctrine = {
 
 mamluk_warships_doctrine = {
 	can_select = {
+		is_colonial_nation = no
 		has_country_flag = mam_unlock_warships_doctrine_flag
 	}
 
@@ -598,6 +630,7 @@ mamluk_warships_doctrine = {
 
 mamluk_transports_doctrine = {
 	can_select = {
+		is_colonial_nation = no
 		has_country_flag = mam_unlock_transports_doctrine_flag
 	}
 	

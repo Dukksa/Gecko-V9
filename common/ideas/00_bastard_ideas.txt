@@ -4046,14 +4046,15 @@ CUB_ideas = { #Cuba
 		global_institution_spread = 0.2
 	}
 	cub_3 = { #The Arsenal
-		global_unrest = -2
+		has_marines = yes
+		allowed_marine_fraction = 0.25
 	}
 	cub_4 = { #Sugar and Slaves
-		global_trade_power = 0.05
+		global_trade_power = 0.1
 		trade_range_modifier = 0.1
 	}
 	cub_5 = { #The Crossroads
-		num_accepted_cultures = 2
+		trade_efficiency = 0.1
 	}
 	cub_6 = { #Coartacion
 		diplomatic_reputation = 1
