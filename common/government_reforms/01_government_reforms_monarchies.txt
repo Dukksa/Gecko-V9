@@ -2156,6 +2156,7 @@ al_andalusia_government = {
 		idea_cost = -0.1
 		tolerance_of_heathens_capacity = 2
 		tolerance_heathen = 1
+		has_samurai = yes
 	}
 	conditional = {
 		allow = { has_dlc = "Cradle of Civilization" }
