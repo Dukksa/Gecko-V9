@@ -2000,9 +2000,7 @@ CENTRE_OF_TRADE_MAX_BUILDINGS:0 "Center of Trade Maximum: $VAL$"
  SAMURAI_FORCELIMIT:0 "We can recruit up to $LIMIT|Y$ §GSaqaliba§! owing to:\n$FLAMOUNT|Y$ from $PERC|%Y$ of our force-limit of $FL$:\n"
  SAMURAI_LIMIT_CULTURE:0 "$PROVINCE$ is a $CULTURE$ province, so can not recruit Saqaliba Infantry here."
  ADD_SAMURAI_SUB_UNIT_EFFECT:0 "Get '§GSaqaliba§!' $UNIT$ in $WHERE|Y$."
- SAMURAI_DESC:0 "Ṣaqālibah, in medieval Muslim Spain, Slavs, or people from the Black Sea coast north of Constantinople. Later, by extension, the term came to designate all foreign slaves in the military.
-
-The custom in 10th-century Spain was to buy Slavs captured by the Germans on their expeditions into eastern Europe. These and other slaves from Galicia, Lombardy, Calabria, and the land of the Franks—generally young boys—became Muslims, learned Arabic, and were then trained for military service or for administrative positions in the palaces and harems.\nSamurai can be recruited in owned provinces that belong to the §YJapanese§! cultural group, and the number of Samurai that can be raised is dependent on the development of those provinces."
+ SAMURAI_DESC:0 "Saqalibah, in medieval Muslim Spain, Slavs, or people from the Black Sea coast north of Constantinople. Later, by extension, the term came to designate all foreign slaves in the military.\n\nThe custom in 10th-century Spain was to buy Slavs captured by the Germans on their expeditions into eastern Europe. These and other slaves from Galicia, Lombardy, Calabria, and the land of the Franks—generally young boys—became Muslims, learned Arabic, and were then trained for military service or for administrative positions in the palaces and harems.\nSamurai can be recruited in owned provinces that belong to the §YJapanese§! cultural group, and the number of Samurai that can be raised is dependent on the development of those provinces."
  REGCAT_samurai:0 "Saqaliba"
  SAMURAI_REGIMENT:0 "Saqaliba Regiment\n$EFFECT$"
  HAVE_LESS_SAMURAI_THAN:0 "Have less Saqaliba than §Y$VALUE$§!.\n"

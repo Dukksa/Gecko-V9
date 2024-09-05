@@ -2087,8 +2087,8 @@ musketeer_regiment = {
 
 samurai_regiment = {
 	discipline = 0.05
-	#morale_damage_received = -0.1
-	reinforce_cost_modifier = 0.5
+	morale_damage_received = -0.1
+	reinforce_cost_modifier = 0.25
 }
 
 qizilbash_regiment = {

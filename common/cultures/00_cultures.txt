@@ -1513,7 +1513,7 @@ iberian	= {
 	}
 	andalucian = {
 		primary = GRA
-		province = { local_has_caravel = yes local_has_galleon = yes }
+		province = { local_has_caravel = yes local_has_galleon = yes  local_has_samurai = yes }
 		dynasty_names = {
 			Nasrid Ummayad Zirid
 		}
