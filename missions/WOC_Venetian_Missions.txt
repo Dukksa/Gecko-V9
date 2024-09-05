@@ -1061,7 +1061,7 @@ X_VEN_slot_3 = {
 					112 = {
 						NOT = { 
 							has_great_project = { 
-								type = gme_arsenale_veneziano
+								type = venetian_arsenal_gp
 								tier = 3 
 							}
 						}
@@ -1069,7 +1069,7 @@ X_VEN_slot_3 = {
 				}
 				112 = {
 					add_great_project_tier = { 
-						type = gme_arsenale_veneziano
+						type = venetian_arsenal_gp
 						tier = 1 
 					}
 				}
@@ -1147,7 +1147,7 @@ X_VEN_slot_3 = {
 						}
 						NOT = {
 							has_great_project = {
-								type = gme_arsenale_veneziano
+								type = venetian_arsenal_gp
 								tier = 3
 							}
 						}
@@ -1159,7 +1159,7 @@ X_VEN_slot_3 = {
 			112 = {
 				owned_by = ROOT
 				has_great_project = {
-					type = gme_arsenale_veneziano
+					type = venetian_arsenal_gp
 					tier = 3
 				}
 				OR = {
