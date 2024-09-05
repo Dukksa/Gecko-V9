@@ -33,6 +33,9 @@ h_reform_dominion = {
 
 	custom_attributes = {
 		locked_government_type = yes
+		enables_estate_burghers = yes
+		enables_estate_church = yes
+		enables_estate_nobles = yes
 	}
 	duration = 5
 }
