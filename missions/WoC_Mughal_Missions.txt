@@ -287,7 +287,7 @@ WoC_mughals_1 = {
 					skill = 3
 					culture = ROOT
 					religion = ROOT
-					cost_multiplier = 0.33
+					cost_multiplier = 0.75
 				}
 			}
 		}
@@ -776,7 +776,7 @@ WoC_mughals_2 = {
 				skill = 3
 				culture = ROOT
 				religion = hinduism
-				cost_multiplier = 0.4
+				cost_multiplier = 0.75			
 			}
 		}
 	}
@@ -1071,7 +1071,7 @@ WoC_mughals_2 = {
 				skill = 3
 				culture = ROOT
 				religion = ROOT
-				cost_multiplier = 0.33
+				cost_multiplier = 0.75
 			}
 			
 			if = {
@@ -1293,7 +1293,7 @@ WoC_mughals_3 = {
 				skill = 3
 				culture = ROOT
 				religion = ROOT
-				cost_multiplier = 0.33
+				cost_multiplier = 0.75
 			}
 			
 			custom_tooltip = " "
@@ -1623,7 +1623,7 @@ WoC_mughals_4 = {
 				skill = 3
 				culture = nepali
 				religion = hinduism
-				cost_multiplier = 0.5
+				cost_multiplier = 0.75			
 			}
 			
 			custom_tooltip = " "
@@ -3012,7 +3012,7 @@ WoC_mughals_5 = {
 			define_advisor = {
 				type = fortification_expert 
 				skill = 3
-				cost_multiplier = 0.33
+				cost_multiplier = 0.75
 			}
 		}
 	}

@@ -3214,33 +3214,13 @@ kok_persia_culture_mission_slot_2 = {
 			}
 		}
 		effect = {
-			if = {
-				limit = { has_estate = estate_burghers NOT = { has_unlocked_estate_privilege = { estate_privilege = estate_burghers_great_works_of_iran } } }
-				add_estate_loyalty = {
-					estate = estate_burghers
-					loyalty = 20
-				}
-				unlock_estate_privilege = {
-					estate_privilege = estate_burghers_great_works_of_iran
-					modifier_tooltip = estate_burghers_great_works_of_iran_tooltip
-					effect_tooltip = "
-						change_estate_land_share = {
-							estate = estate_burghers
-							share = 5
-						}
-						custom_tooltip = estate_burghers_great_works_of_iran_tt
-					"
-				}
+			add_country_modifier = {
+				name = development_mission
+				duration = 3650
 			}
-			else = {
-				hidden_effect = {
-					unlock_estate_privilege = {
-						estate_privilege = estate_burghers_great_works_of_iran
-					}
-				}
-				add_mercantilism = 5
-				add_treasury = 500
-			}
+			add_mercantilism = 5
+			add_treasury = 500
+			
 		}
 	}
 	per_compete_with_hormuz = {

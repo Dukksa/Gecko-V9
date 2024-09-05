@@ -85,7 +85,7 @@ NED_1 = {
 							culture = flemish
 							skill = 2
 							type = artist
-							cost_multiplier = 0.5
+							cost_multiplier = 0.75
 						}
 					"
 				}
@@ -1195,7 +1195,7 @@ NED_2_1 = {
 			define_advisor = {
 				type = naval_reformer
 				skill = 3
-				cost_multiplier = 0.25
+				cost_multiplier = 0.75
 				name = "Piet Hein"
 			}
 			add_country_modifier = {
@@ -1914,7 +1914,7 @@ NED_3_1 = {
 				type = colonial_governor
 				skill = 3
 				culture = swedish
-				cost_multiplier = 0.5
+				cost_multiplier = 0.75
 				name = "Frederick Coyett"
 			}
 		} 
@@ -3142,7 +3142,7 @@ NED_5_1 = {
 					define_advisor = {
 						type = artist
 						skill = 3
-						cost_multiplier = 0.25
+						cost_multiplier = 0.75
 						name = \"Pieter Post\"
 					}
 				"

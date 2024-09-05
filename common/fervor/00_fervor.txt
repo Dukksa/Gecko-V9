@@ -125,9 +125,9 @@ fervor_trade_buffed = {
 	trigger = {
 	}
 	effect = {
-		global_trade_power = 0.15
-		trade_efficiency = 0.15
-		global_trade_goods_size_modifier = 0.075
+		global_trade_power = 0.1
+		trade_efficiency = 0.1
+		global_trade_goods_size_modifier = 0.05
 	}
 	ai_will_do = {
 		factor = 1
@@ -163,9 +163,9 @@ fervor_war_buffed = {
 	trigger = {
 	}
 	effect = {
-		land_morale = 0.15
-		naval_morale = 0.15
-		morale_damage = 0.075
+		land_morale = 0.1
+		naval_morale = 0.1
+		morale_damage = 0.05
 	}
 	ai_will_do = {
 		factor = 1
@@ -188,9 +188,8 @@ fervor_stability_buffed = {
 	trigger = {
 	}
 	effect = {
-		development_cost = -0.05
-		global_unrest = -3
-		all_estate_loyalty_equilibrium = 0.20
+		global_unrest = -2
+		all_estate_loyalty_equilibrium = 0.15
 	}
 	ai_will_do = {
 		factor = 1
@@ -219,9 +218,9 @@ fervor_diplomacy_buffed = {
 	trigger = {
 	}
 	effect = {
-		diplomatic_reputation = 3
-		improve_relation_modifier = 0.375
-		spy_action_cost_modifier = -0.375
+		diplomatic_reputation = 2
+		improve_relation_modifier = 0.33
+		spy_action_cost_modifier = -0.33
 	}
 	ai_will_do = {
 		factor = 1

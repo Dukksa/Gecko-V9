@@ -1146,8 +1146,10 @@ KoK_ARB_hedjaz_najd_bedouin_4 = {
 			}
 		}
 		effect = {
-			custom_tooltip = bs_ARB_unlock_oasis_development
-			set_country_flag = ARB_unlock_oasis_development_flag
+			add_country_modifier = {
+				name = development_mission
+				duration = 3650
+			}
 			
 			custom_tooltip = " "
 			

@@ -671,8 +671,9 @@ mam_missions_2 = {
 			}
 		}
 		effect = {
-			unlock_estate_privilege = {
-				estate_privilege = estate_burghers_hydraulic_rights
+			add_country_modifier = {
+				name = development_mission
+				duration = 3650
 			}
 			if = {
 				limit = { 

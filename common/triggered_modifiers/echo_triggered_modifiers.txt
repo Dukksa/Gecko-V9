@@ -246,7 +246,6 @@ TUR = {
 
 Peace_of_Italy = {
 	potential = {
-		always = no
 		OR = {
 			tag = MLO
 			tag = VEN
