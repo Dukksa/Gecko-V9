@@ -13317,11 +13317,11 @@ EPI_ideas = {
 LAE_ideas = {
 	start = {
         discipline = 0.05
-        global_heretic_missionary_strength = 0.03
+        infantry_power = 0.1
 	}
 	
 	bonus = {
-		missionaries = 1
+		artillery_power = 0.1
 	}
 	
 	trigger = {
@@ -13335,22 +13335,25 @@ LAE_ideas = {
 		republican_tradition = 0.3
 		meritocracy = 1
 		horde_unity = 1
-        vassal_forcelimit_bonus = 1
+        reform_progress_growth = 0.25
     }
     lae_latin_patriarch = {
         papal_influence = 2
         curia_powers_cost = -0.1
+		development_cost = -0.05
     }
     lae_byzantine_bureaucracy = {
         advisor_cost = -0.1
         stability_cost_modifier = -0.1
     }
     lae_guilds_pera = {
-        global_trade_power = 0.1
+        global_trade_power = 0.15
+		trade_efficiency = 0.15
         galley_power = 0.1
     }
     epi_latin_knights = {
         #cavalry_power = 0.15 same as Epirus
+		allowed_marine_fraction = 0.25
     }
     lae_partitio_graeci = {
         warscore_cost_vs_other_religion = -0.1
