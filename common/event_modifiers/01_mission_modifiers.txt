@@ -8185,7 +8185,7 @@ hsa_mercantile_stronghold_of_the_hansa_modifier = {
 	province_trade_power_value = 10
 }
 hsa_general_army_reform_modifier = {
-	land_morale = 0.15
+	land_morale = 0.1
 }
 hsa_general_army_organization_modifier = {
 	land_forcelimit_modifier = 0.25
@@ -12869,7 +12869,6 @@ ned_hollander_settlers = {
 
 ned_je_maintiedrai = {
 	discipline = 0.05
-	development_cost = -0.1
 }
 
 ned_devise_glorious_crossing = {
@@ -14996,4 +14995,8 @@ orm_protected_trading_outposts_buffed_no_dlc = {
 	local_defensiveness = 0.2
     province_trade_power_modifier = 0.3
 	province_trade_power_value = 10
+}
+
+development_mission = {
+	development_cost_modifier = -0.075
 }
