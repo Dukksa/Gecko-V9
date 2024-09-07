@@ -7029,8 +7029,7 @@ new_world_company = {
 }
 
 new_world_missions = {
-	native_uprising_chance = -0.5
-	native_assimilation = 0.5
+	native_assimilation = 0.75
 }
 
 dhimmi_nobles = {
