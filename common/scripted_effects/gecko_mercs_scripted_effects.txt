@@ -170,7 +170,7 @@ recruit_gecko_mercs = {
 			}
 			if = {
 				limit = {
-					NOT = { has_country_flag = gecko_mercs_recruit_cavalry_cflag }
+					NOT = { has_country_flag = gecko_mercs_recruit_cavalry }
 				}
 				for_variable_amount = {
 					variable = $variable$
@@ -224,7 +224,7 @@ recruit_gecko_mercs = {
 			else = {
 				if = {
 					limit = {
-						NOT = { has_country_flag = gecko_mercs_recruit_cavalry_cflag }
+						NOT = { has_country_flag = gecko_mercs_recruit_cavalry }
 					}
 					for = {
 						amount = $fixed$
@@ -269,7 +269,7 @@ gecko_mercs_base_system = {
 		#Mercenary Cavalry cost multiplier
 		if = {
 			limit = {
-				has_country_flag = gecko_mercs_recruit_cavalry_cflag
+				has_country_flag = gecko_mercs_recruit_cavalry
 			}
 			multiply_variable = {
 				which = mercenary_cost
@@ -686,7 +686,7 @@ gecko_mercs_army_professionalism_cost = {
 		if = {
 			limit = {
 				OR = {
-					has_country_flag = fifty_percent_merc_army_professionalism_cost
+					has_country_flag = fifty_percent_merc_army_professionalism_cost 
 					has_country_modifier = pol_cheap_ap_mercs_modifier
 				}
 			}
