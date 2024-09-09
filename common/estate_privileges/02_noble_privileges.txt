@@ -470,10 +470,10 @@ estate_nobles_right_of_counsel = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	is_valid = {
-		has_dlc = "Domination"
-		cavalry_fraction = 0.01
+		has_dlc = "Domination"ž
 	}
 	can_select = {
+		cavalry_fraction = 0.01
 	}
 	influence = 0.1
 	mechanics = {
@@ -492,8 +492,14 @@ estate_nobles_right_of_counsel = {
 		allowed_cossack_fraction = 0.5
 	}
 	on_granted = {
+		hidden_effect = {
+			set_country_flag = got_five_cossacks
+		}
 		if = {
 			limit = {
+				hidden_trigger = {
+					has_country_flag = got_five_cossacks
+				}
 				capital_scope = { 
 					owned_by = ROOT
 				}
@@ -508,6 +514,9 @@ estate_nobles_right_of_counsel = {
 		}
 		if = {
 			limit = {
+				hidden_trigger = {
+					has_country_flag = got_five_cossacks
+				}
 				capital_scope = {
 					NOT = {
 						owned_by = ROOT
@@ -1110,7 +1119,9 @@ estate_nobles_strong_duchies = {
 						is_subject_of_type = march
 						is_subject_of_type = client_march
 						is_subject_of_type = personal_union
-						is_subject_of_type = canton			
+						is_subject_of_type = canton		
+						is_subject_of_type = eyalet
+						is_subject_of_type = core_eyalet	
 					}
 				}
 			}
