@@ -470,7 +470,7 @@ estate_nobles_right_of_counsel = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	is_valid = {
-		has_dlc = "Domination"ž
+		has_dlc = "Domination"
 	}
 	can_select = {
 		cavalry_fraction = 0.01

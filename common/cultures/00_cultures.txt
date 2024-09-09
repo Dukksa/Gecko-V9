@@ -3860,6 +3860,7 @@ maghrebi = {
 		}
 	}
 	tunisian = {
+		province = { local_has_samurai = yes }
 		primary = TUN
 		dynasty_names = {
 			"Hafsid" "Karamanli" "Muradid" "Husainid" "Banu Muhammad"
