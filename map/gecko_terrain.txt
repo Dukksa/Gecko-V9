@@ -159,7 +159,6 @@ categories =  {
 		type = forest
 		sound_type = forest
 		
-		combat_width = -0.1
 		movement_cost = 1.0
 		defence = 1
 		supply_limit = 4
@@ -188,7 +187,6 @@ categories =  {
 		type = hills
 		sound_type = mountains
 
-		combat_width = -0.1
 		movement_cost = 1.0
 		defence = 1
 		local_defensiveness = 0.1
@@ -260,7 +258,6 @@ categories =  {
 		type = forest
 		sound_type = forest
 
-		combat_width = -0.5
 		movement_cost = 1.0
 		defence = 1
 		local_development_cost = 0.1
@@ -340,7 +337,7 @@ categories =  {
 		defence = 2
 		local_defensiveness = 0.2
 		local_development_cost = 0.1
-		combat_width = -0.15
+		combat_width = -0.1
 		nation_designer_cost_multiplier = 0.75
 		supply_limit = 4
 	
@@ -491,7 +488,6 @@ categories =  {
 		type = jungle
 		sound_type = jungle
 
-		combat_width = -0.15
 		movement_cost = 1.0
 		defence = 1
 		local_development_cost = 0.1
@@ -531,7 +527,6 @@ categories =  {
 		type = marsh
 		sound_type = forest
 
-		combat_width = -0.1
 		movement_cost = 1.0
 		defence = 1
 		local_development_cost = 0.1
@@ -567,7 +562,6 @@ categories =  {
 		type = desert
 		sound_type = desert
 
-		combat_width = -0.5
 		movement_cost = 1.0
 		supply_limit = 4
 		local_development_cost = 0.1
@@ -596,7 +590,6 @@ categories =  {
 		type = desert
 		sound_type = desert
 
-		combat_width = -0.5
 		movement_cost = 1.0
 		local_development_cost = 0.1
 		nation_designer_cost_multiplier = 0.9		
@@ -712,7 +705,6 @@ categories =  {
 		type = hills
 		sound_type = mountains
 		
-		combat_width = -0.1
 		supply_limit = 6
 		movement_cost = 1.0
 		defence = 1
