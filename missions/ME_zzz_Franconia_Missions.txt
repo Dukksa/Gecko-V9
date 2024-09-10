@@ -561,12 +561,14 @@ FKN_Missions_1 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
-			any_owned_province = {
+			4715 = {
 				province_trade_power = 20
 			}
 		}
 		effect = {
-			set_center_level_3_center_of_trade = yes
+			4715 = {
+				set_center_level_3_center_of_trade = yes
+			}
 			capital_scope = {
 				add_trade_node_income = 30
 			}
