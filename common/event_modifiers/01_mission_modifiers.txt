@@ -13158,8 +13158,7 @@ hun_black_legion = {
 }
 
 estate_burghers_hungarian_royal_city_modifier = {
-	local_development_cost_modifier = -0.1
-	trade_goods_size_modifier = 0.5
+	trade_goods_size_modifier = 0.2
 	allowed_num_of_manufactories = 1
 }
 

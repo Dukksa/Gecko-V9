@@ -1563,7 +1563,7 @@ woc_hun_third_branch = {
 				skill = 2
 				culture = hungarian
 				religion = ROOT
-				cost_multiplier = 0.5
+				cost_multiplier = 0.75
 			}
 			if = {
 				limit = {
@@ -2154,7 +2154,7 @@ woc_hun_third_branch = {
 				skill = 3
 				religion = ROOT
 				culture = ROOT
-				cost_multiplier = 0.25
+				cost_multiplier = 0.75
 			}
 		}
 		ai_weight = {
@@ -2590,7 +2590,7 @@ woc_hun_fourth_branch = {
 				skill = 3
 				culture = hungarian
 				religion = ROOT
-				cost_multiplier = 0.25
+				cost_multiplier = 0.75
 			}
 			hidden_effect = {
 				if = {
