@@ -520,3 +520,6 @@ black_chamber_act_2:0 "The Black Chamber Act II"
  ability_eco_golden_age: ""
  eco_golden_era: "Eco Golden Era"
  eco_golden_era_desc: "You  Can Start Your Eco Golden Era"
+
+#gov reform cooldown
+one_v_one_gov_reform_switch_cooldown_tt: "Cannot switch Goverment Reform for §Y3§! years."
