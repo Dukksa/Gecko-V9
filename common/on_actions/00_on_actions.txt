@@ -18,6 +18,7 @@ on_startup = {
 		flavor_fra.206 # Setup the general for missions
 		flavor_geo.1 # Disaster info
 		flavor_mam.111 # Mamluks-Syria relations
+		frscolor.1 #fars color event
 	}
 	on_startup_effect = yes
 	on_startup_dlc_cleanup_effect = yes
@@ -5725,6 +5726,8 @@ on_capital_moved = {
 on_expanded_infrastructure = {
 }
 
+on_expanded_infrastructure_removed = {
+}
 #ROOT = province that was centralized in
 on_centralized_state = {
 	if = {

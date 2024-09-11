@@ -5,15 +5,12 @@ country_event = {
 	picture = BAD_WITH_MONARCH_eventPicture
 	
 	fire_only_once = yes
-	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
-			is_year = 1445
-		}
 		tag = FRS
 	}
-
+	is_triggered_only = yes
+	
 	option = {
 		ai_chance = {
 			factor = 1
