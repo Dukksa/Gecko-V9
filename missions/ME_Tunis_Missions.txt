@@ -1386,7 +1386,7 @@ TUN_missions_4 = {
 						religion_group = muslim
 					}
 				}
-				amount = 50
+				amount = 40
 			}
 		}
 		effect = {
