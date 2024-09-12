@@ -2731,6 +2731,11 @@ state_house = {
 			type = tax
 			value = 2
 		}
+		add_dev_from_building = {
+			building = manufactory 
+			type = tax
+			value = 1 
+		}
 	}
 	on_destroyed = {
 		bastard_dev_cost_remove_from_buildings = yes
@@ -2738,6 +2743,11 @@ state_house = {
 			building = state_house
 			type = tax
 			value = 2
+		}
+		remove_dev_from_building = {
+			building = manufactory 
+			type = tax
+			value = 1 
 		}
 	}
 	on_obsolete = {
