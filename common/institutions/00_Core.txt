@@ -356,7 +356,7 @@ renaissance = {
 		is_state = yes
 		NOT = { province_id = 126 }
 		is_island = no
-		owner = {ai = no}
+		
 		OR = {
 			development = 20
 			is_capital = yes
@@ -621,7 +621,7 @@ new_world_i = {
 		}
 		is_in_capital_area = yes
 		owner = { 
-			ai = no
+			
 			OR = {
 				north_america = { has_discovered = PREV }
 				south_america = { has_discovered = PREV }
@@ -927,7 +927,7 @@ printing_press = {
 		is_in_capital_area = yes
 		is_island = no
 		is_state = yes
-		owner = {ai = no}
+		
 		OR = {
 			development = 15
 			is_capital = yes
@@ -1290,7 +1290,7 @@ global_trade = {
 			}
 		}
 		owner = {
-			ai = no
+			
 			any_active_trade_node = {
 				is_strongest_trade_power = PREV
 				highest_value_trade_node = yes
@@ -1591,7 +1591,7 @@ manufactories = {
 		development = 20
 		printing_press = 100
 		global_trade = 100
-		owner = {ai = no}
+		
 		custom_trigger_tooltip = {
 			tooltip = two_neighbor_dev_15_provinces
 			calc_true_if = {
@@ -2078,7 +2078,7 @@ enlightenment = {
 		printing_press = 100
 		global_trade = 100
 		development = 30
-		owner = {ai = no}
+		
 		OR = {
 			custom_trigger_tooltip = {
 				tooltip = tooltip_has_seat_in_parliament
@@ -2431,7 +2431,7 @@ industrialization = {
 		development = 30
 		manufactories = 100
 		enlightenment = 100
-		owner = {ai = no}
+		
 		if = {
 			limit = {
 				has_dlc = "Rule Britannia"
