@@ -620,7 +620,7 @@ NWC_naturalist_effect_2 = {
 		skill = 3
 		culture = saxon
 		religion = ROOT
-		cost_multiplier = 0.25
+		cost_multiplier = 0.75
 	}
 
 }

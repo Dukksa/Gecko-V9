@@ -60,7 +60,6 @@ Merc_payments_reneged = {
 
 defense_of_the_low_countries = {
 	global_tax_modifier = -0.1
-	land_morale = 0.1
 	hostile_attrition = 3
 	max_hostile_attrition = 3
 }

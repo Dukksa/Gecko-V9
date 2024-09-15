@@ -587,7 +587,7 @@ country_decisions = {
 			}
 			add_country_modifier = { 
 				name = "defense_of_the_low_countries" 
-				duration = -1
+				duration = 1825
 				desc = the_righteous_army_tt
 			}
 		}
