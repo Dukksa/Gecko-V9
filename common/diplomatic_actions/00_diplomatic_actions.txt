@@ -629,23 +629,19 @@ break_marriage = {
 	}
 }
 takeondebt = {
-	condition = {
-		tooltip = b_takeondebt_action
-		potential = {
-			NOT = {
+    condition = {
+        potential = {
+            FROM = {
 				OR = {
-					FROM = { is_colonial_nation = yes }
-					FROM = { is_subject_of = ROOT }
+					is_subject_of = ROOT
+					is_colonial_nation = yes
 				}
-			}	
-		}
-		allow = {
-			always = no	
-		}
-	}
-	effect = {
-		change_asha_vahishta = { value = 2 }
-	}
+			}
+        }
+        allow = {
+        	NOT = { num_of_loans = 1 }
+        }
+    }
 }
 influence_nation = {
 	effect = {
