@@ -1373,25 +1373,24 @@ mercenary_ideas = {
 		infantry_power = 0.1
 	}
 	organised_mercenary_payment = {
-		mercenary_cost = -0.15
-		merc_maintenance_modifier = -0.5
+		mercenary_cost = -0.1
+		merc_maintenance_modifier = -0.25
 	}
 	war_council = {
 		mil_advisor_cost = -0.25
 	}
 	nation_of_war = {
 		mercenary_discipline = 0.05
-		morale_damage_received = -0.1
 	}
 	expanded_contracts = {
-		manpower_recovery_speed = 0.15
+		manpower_recovery_speed = 0.1
 	}
 	benefits_for_mercenaries = {
-		reinforce_speed = 0.33
-		reinforce_cost_modifier = -0.33
+		reinforce_speed = 0.2
+		reinforce_cost_modifier = -0.2
 	}
 	organised_mercenary_recruitment = { 
-		mercenary_manpower = 0.33
+		mercenary_manpower = 0.2
 	}
 
 	ai_will_do = {
