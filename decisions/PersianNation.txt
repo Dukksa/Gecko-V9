@@ -411,20 +411,6 @@ country_decisions = {
 			}
 			change_religion = shiite
 			add_government_reform = persian_theocracy
-			define_ruler = {
-				name = "Ismail I"
-				dynasty = "Safavid"
-				
-				religion = shiite
-				claim = 100
-				adm = 5
-				dip = 4
-				mil = 5
-				}							
-			if = {
-				limit = { has_heir = yes }
-				kill_heir = {}
-			}	
 			change_unit_type = gunpowder_empire
 			change_estate_land_share = {
 				estate = estate_nobles

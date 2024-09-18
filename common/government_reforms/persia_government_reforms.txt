@@ -12,12 +12,12 @@ persian_theocracy = { #tier 1
 			}
 		}
 	modifiers = {
-		land_morale = 0.10
+		land_morale = 0.05
 		missionaries = 1
 		global_missionary_strength = 0.01
 		tolerance_own = 2
 		monthly_piety = -0.001
-		governing_capacity = 150
+		governing_capacity = 100
 		move_capital_cost_modifier = 0.33
 	}
 	government_abilities = {
