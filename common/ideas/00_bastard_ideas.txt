@@ -2362,11 +2362,11 @@ MAM_ideas = {
 EGY_ideas = {
 	start = {
 		trade_efficiency = 0.15
-		administrative_efficiency = 0.05
+		cavalry_power = 0.10
 	}
 
 	bonus = {
-		free_policy = 1
+		land_forcelimit_modifier = 0.33
 	}
 	
 	trigger = {
@@ -2383,6 +2383,7 @@ EGY_ideas = {
 	}
 	b_purchase_new_mamelukes = {
 		infantry_power = 0.1
+		shock_damage_received = -0.1
 	}
 	nile_production = {
 		production_efficiency = 0.15
@@ -2393,6 +2394,7 @@ EGY_ideas = {
 	}
 	mediterranean_shipwrights = {
 		sea_repair = yes
+		trade_steering = 0.1
 	}
 	crossroads_between_europe_and_africa = {
 		manpower_recovery_speed = 0.15
