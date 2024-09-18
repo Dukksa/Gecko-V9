@@ -7067,7 +7067,7 @@
  expanded_contracts:0 "Expanded Contracts"
  expanded_contracts_desc:0 "Enact a standarized way to handle mercenary and military contracts that provides safety nets for our soldiers and the promise of post-war care."
  seasoned_veterans:0 "Seasoned Veterans"
- seasoned_veterans_desc:1 "Employing seasoned veterans within our rank is a necessary factor when it comes to sustaining casualties and prolonged exposure to the elements of war and death.\n"
+ seasoned_veterans_desc:1 "Employing seasoned veterans within our rank is a necessary factor when it comes to sustaining casualties and prolonged exposure to the elements of war and death.\nMercenary Companies no longer reduce §YArmy Professionalism§! when hired"
 
 
  ###New Ideas Additions###
