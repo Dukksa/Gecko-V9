@@ -27,6 +27,11 @@ country_event = {
 				capital_scope = { continent = south_america }
 				capital_scope = { continent = new_world }
 			}
+			OR = {
+				tobacco = 4
+				sugar = 4
+				cotton = 4
+			}
 		}
 		
 	}
@@ -44,66 +49,13 @@ country_event = {
 			duration = -1
 		}
 		add_years_of_income  = 0.25
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 		set_global_flag = triangle_happened
 	}
 }
 
 
-# Europeans in China
-country_event = {
-	id = prices.2
-	title = prices.2.t
-	desc = prices.2.d
-	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
-
-	fire_only_once = yes
-	
-	major = yes
-
-	trigger = {
-		capital_scope = { continent = europe }
-		OR = {
-			1371 = {	# Canton
-				trade_share = {
-					country = ROOT
-					share = 5
-				}
-			}
-			684 = {  #Hangzhou
-				trade_share = {
-					country = ROOT
-					share = 5
-				}
-			}
-		}
-		NOT = { has_global_flag = europeans_in_china_happened }
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = europeans_in_china_happened
-		}
-	}	
-	
-	option = {
-		name = prices.2.a
-		change_price = {
-			trade_goods = chinaware
-			key = EUROPEANS_IN_CHINA
-			value = 0.5
-			duration = -1
-		}
-		add_years_of_income  = 0.25
-		add_prestige = 20
-	}
-}
-
-#Johann Friedrich B�ttger
+#Johann Friedrich Boettger
 country_event = {
 	id = prices.3
 	title = prices.3.t
@@ -154,7 +106,7 @@ country_event = {
 			value = -0.5
 			duration = -1
 		}
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 	}
 }
 
@@ -199,60 +151,6 @@ country_event = {
 }
 
 
-
-# Coffee Boom
-country_event = {
-	id = prices.5
-	title = prices.5.t
-	desc = prices.5.d
-	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
-
-	fire_only_once = yes
-	
-	major = yes
-
-	trigger = {
-		OR = {
-			capital_scope = { continent = europe }
-			AND = {
-				any_owned_province = {
-					continent =  europe
-				}
-				dip_tech = 20
-			}
-		}
-		NOT = { has_global_flag = coffee_boom_happened }
-		OR = {
-			any_owned_province = {
-				region = malaya_region
-				trade_goods = coffee
-			}
-			any_subject_country = {
-				is_colonial_nation = yes
-				coffee = 4
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-
-	
-	option = {
-		name = prices.5.a
-		change_price = {
-			trade_goods = coffee
-			key = COFFEE_BOOM
-			value = 0.5
-			duration = -1
-		}
-		add_years_of_income  = 0.25
-		add_prestige = 20
-	}
-}
-
-
 # Cotton Imports
 country_event = {
 	id = prices.6
@@ -265,37 +163,13 @@ country_event = {
 
 	trigger = {
 		is_great_power = yes
-		capital_scope = { continent = europe }
-		any_owned_province = {
-			trade_goods = wool
-			continent = europe
-		} 
-		OR = {
 			504 = { #Indus
 				trade_share = {
 					country = ROOT
 					share = 10
 				}
 			}
-			524 = { #Deccan
-				trade_share = {
-					country = ROOT
-					share = 10
-				}
-			}
-			1340 = { #Ceylon
-				trade_share = {
-					country = ROOT
-					share = 10
-				}
-			}
-			1343 = { #Bengal
-				trade_share = {
-					country = ROOT
-					share = 10
-				}
-			}
-		}
+		
 		NOT = { has_country_flag = cotton_imports }
 		NOT = { has_global_flag = cotton_imports_global }
 	}
@@ -357,38 +231,6 @@ country_event = {
 			}
 		}
 		set_country_flag = cotton_imports
-		504 = { #Indus
-			add_trade_modifier = {
-				who = root
-				duration = -1
-				power = -10
-				key = COTTON_IMPORTS_BANNED
-			}
-		}
-		524 = { #Deccan
-			add_trade_modifier = {
-				who = root
-				duration = -1
-				power = -10
-				key = COTTON_IMPORTS_BANNED
-			}
-		}
-		1340 = { #Ceylon
-			add_trade_modifier = {
-				who = root
-				duration = -1
-				power = -10
-				key = COTTON_IMPORTS_BANNED
-			}
-		}
-		1343 = { #Bengal
-			add_trade_modifier = {
-				who = root
-				duration = -1
-				power = -10
-				key = COTTON_IMPORTS_BANNED
-			}
-		}
 	}
 }
 
@@ -473,7 +315,7 @@ country_event = {
 			duration = -1
 		}
 		add_years_of_income  = 0.25
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 	}
 }
 
@@ -521,7 +363,7 @@ country_event = {
 			duration = -1
 		}
 		add_years_of_income  = 0.25
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 	}
 }
 
@@ -554,7 +396,7 @@ country_event = {
 			value = -0.4
 			duration = -1
 		}
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 
@@ -679,9 +521,13 @@ country_event = {
 	major = yes
 
 	trigger = {
-		dip_tech = 20
-		wine = 1
+		dip_tech = 10
 		glass = 1
+		num_of_owned_provinces_with = {
+			value = 5
+			trade_goods = wine
+			has_building = farm_estate
+		}
 		NOT = { has_global_flag = wine_corks_happened }
 	}
 	mean_time_to_happen = {
@@ -694,13 +540,13 @@ country_event = {
 		change_price = {
 			trade_goods = wine
 			key = WINE_CORKS
-			value = 0.25
+			value = 0.15
 			duration = -1
 		}
 		change_price = {
 			trade_goods = glass
 			key = WINE_CORKS
-			value = 0.15
+			value = 0.05
 			duration = -1
 		}
 	}
@@ -732,13 +578,13 @@ country_event = {
 		change_price = {
 			trade_goods = cloth
 			key = NEW_DRAPERIES
-			value = 0.20
+			value = 0.6
 			duration = -1
 		}
 		change_price = {
 			trade_goods = wool
 			key = NEW_DRAPERIES
-			value = -0.20
+			value = -0.2
 			duration = -1
 		}
 	}
@@ -799,7 +645,11 @@ country_event = {
 	major = yes
 
 	trigger = {
-		dip_tech = 10
+		OR = {
+			owns_core_province = 980
+			owns_core_province = 2573
+			owns_core_province = 981
+		}
 		NOT = { has_global_flag = great_fisheries_happened }
 		capital_scope = { NOT = { continent = north_america } }
 		capital_scope = { NOT = { continent = new_world } }
@@ -820,15 +670,15 @@ country_event = {
 		change_price = {
 			trade_goods = salt
 			key = GREAT_FISHERIES
-			value = 0.1
+			value = 0.2
 			duration = -1
 		}
-		#newfoundland_area = {
-		#	add_permanent_province_modifier = {
-		#		name = "grand_bank_fisheries"
-		#		duration = -1
-		#	}
-		#}
+		newfoundland_area = {
+			add_permanent_province_modifier = {
+				name = "grand_bank_fisheries"
+				duration = -1
+			}
+		}
 	}
 }
 
@@ -904,7 +754,6 @@ country_event = {
 	major = yes
 
 	trigger = {
-		capital_scope = { continent = europe }
 		owns = 61
 		NOT = { has_global_flag = depleted_beaver_happened }
 		is_year = 1570
@@ -937,7 +786,20 @@ country_event = {
 	major = yes
 
 	trigger = {
-		dip_tech = 14
+		OR = {
+			capital_scope = { continent = europe }
+			is_colonial_nation = yes
+		}
+		OR = {
+			any_owned_province = {
+				trade_goods = fur
+				continent = north_america
+			}
+			any_owned_province = {
+				trade_goods = fur
+				continent = new_world
+			}
+		}
 		NOT = { has_global_flag = felt_hats_happened }
 	}
 	mean_time_to_happen = {
@@ -968,33 +830,35 @@ country_event = {
 	major = yes
 
 	trigger = {
-		dip_tech = 22
+		dip_tech = 15
 		num_of_ports = 3
+		has_flagship = yes
+		naval_supplies = 5
 		NOT = { has_global_flag = permanent_navies_happened }
 	}
 	mean_time_to_happen = {
 		months = 1
 	}
 	
-	
 	option = {
 		name = prices.19.a
+		add_dip_power = 200
 		change_price = {
 			trade_goods = naval_supplies
 			key = PERMANENT_NAVIES
-			value = 0.5
+			value = 0.35
 			duration = -1
 		}
 		change_price = {
 			trade_goods = glass
 			key = PERMANENT_NAVIES
-			value = 0.15
+			value = 0.1
 			duration = -1
 		}
 		change_price = {
 			trade_goods = livestock
 			key = PERMANENT_NAVIES
-			value = 0.10
+			value = 0.05
 			duration = -1
 		}
 	}
@@ -1032,88 +896,6 @@ country_event = {
 	}
 }
 
-# Japanese Tea Culture
-country_event = {
-	id = prices.21
-	title = prices.21.t
-	desc = prices.21.d
-	picture = TRADEGOODS_eventPicture
-
-	fire_only_once = yes
-	
-	major = yes
-
-	trigger = {
-		dip_tech = 8
-		OR = {
-			has_reform = shogunate
-			tag = JAP
-		}
-		NOT = { has_global_flag = japanese_tea_happened }
-	}
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	
-	option = {
-		name = prices.21.a
-		change_price = {
-			trade_goods = tea
-			key = JAPANESE_TEA_CULTURE
-			value = 0.25
-			duration = -1
-		}
-		change_price = {
-			trade_goods = incense
-			key = JAPANESE_TEA_CULTURE
-			value = 0.10
-			duration = -1
-		}
-	}
-}
-
-# Decline of the Spice Trade
-country_event = {
-	id = prices.22
-	title = prices.22.t
-	desc = prices.22.d
-	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
-
-	fire_only_once = yes
-	
-	major = yes
-
-	trigger = {
-		is_year = 1600
-		capital_scope = { continent = europe }
-		religion_group = christian
-		spices = 3
-		any_known_country = {
-			capital_scope = { continent = europe }
-			religion_group = christian
-			spices = 3
-		}
-		NOT = { has_global_flag = decline_of_spices_happened }
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	
-	immediate = { 
-		hidden_effect = { set_global_flag = decline_of_spices_happened }
-	}
-	
-	option = {
-		name = prices.22.a
-		change_price = {
-			trade_goods = spices
-			key = DECLINE_OF_SPICE_TRADE
-			value = -0.4
-			duration = -1
-		}
-	}
-}
 
 # Changing Patterns of Consumption
 country_event = {
@@ -1180,59 +962,51 @@ country_event = {
 	major = yes
 
 	trigger = {
+		capital_scope = { continent = europe }
+		dip_tech = 18
 		OR = {
-			AND = {
-				capital_scope = { continent = europe }
-				dip_tech = 18
-				OR = {
-					current_age = age_of_absolutism #Not before this
-					current_age = age_of_revolutions
+			current_age = age_of_absolutism #Not before this
+			current_age = age_of_revolutions
+		}
+		OR = {
+			504 = { #Indus
+				trade_share = {
+					country = ROOT
+					share = 10
 				}
-				OR = {
-					504 = { #Indus
-						trade_share = {
-							country = ROOT
-							share = 10
-						}
-					}
-					524 = { #Deccan
-						trade_share = {
-							country = ROOT
-							share = 10
-						}
-					}
-					1340 = { #Ceylon
-						trade_share = {
-							country = ROOT
-							share = 10
-						}
-					}
-					1343 = { #Bengal
-						trade_share = {
-							country = ROOT
-							share = 10
-						}
-					}
-					1371 = { #Guanghzou
-						trade_share = {
-							country = ROOT
-							share = 10
-						}
-					}
-					684 = { #Hangzhou
-						trade_share = {
-							country = ROOT
-							share = 10
-						}
-					}
-				}
-				NOT = { has_global_flag = popular_silk_happened }
 			}
-			AND = {
-				tag = MNG 
-				mission_completed = mng_restore_royal_road
+			524 = { #Deccan
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			1340 = { #Ceylon
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			1343 = { #Bengal
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			1371 = { #Guanghzou
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			684 = { #Hangzhou
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
 			}
 		}
+		NOT = { has_global_flag = popular_silk_happened }
 	}
 	mean_time_to_happen = {
 		months = 1
@@ -1460,6 +1234,16 @@ country_event = {
 	trigger = {
 		dip_tech = 16
 		colony = 1
+		any_subject_country = {
+			is_colonial_nation = yes
+			OR = {
+				capital_scope = { continent = north_america }
+				capital_scope = { continent = south_america }
+				capital_scope = { continent = new_world }
+			}
+			cocoa = 7
+			sugar = 1
+		}
 		NOT = { has_global_flag = hot_chocolate_happened }
 	}
 	mean_time_to_happen = {
@@ -1490,6 +1274,7 @@ country_event = {
 	major = yes
 
 	trigger = {
+		always = no
 		dip_tech = 16
 		colony = 1
 		NOT = { has_global_flag = popularization_of_tobacco_happened }
@@ -1515,103 +1300,6 @@ country_event = {
 			key = POPULARIZATION_OF_TOBACCO
 			value = 0.5
 			duration = -1
-		}
-	}
-}
-
-# Breaking the Arabian Monopoly on Coffee
-country_event = {
-	id = prices.31
-	title = prices.31.t
-	desc = prices.31.d
-	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
-	goto = java_coffee_here
-
-	fire_only_once = yes
-	
-	major = yes
-
-	trigger = {
-		NOT = { has_global_flag = mocha_killed }
-		NOT = { owns = 387 } #Mocha
-		coffee = 2
-		has_discovered = 387
-		any_owned_province = {
-			has_building = plantations
-			trade_goods = coffee
-			NOT = { continent = africa }
-			NOT = { region = arabia_region }
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	immediate = {
-		hidden_effect = {
-			387 = {
-				owner = {
-					save_event_target_as = owner_of_mocha
-				}
-				save_event_target_as = mocha
-			}
-			random_owned_province = {
-				limit = {
-					has_building = plantations
-					trade_goods = coffee
-					NOT = { continent = africa }
-					NOT = { region = arabia_region }
-				}
-				save_event_target_as = java_coffee_here #Used in localization
-			}
-		}
-	}
-	
-	option = {
-		name = prices.31.a
-		add_years_of_income  = 1
-		add_prestige = 20
-		change_price = {
-			trade_goods = coffee
-			key = JAVA_COFFEE
-			value = -0.4
-			duration = -1
-		}
-		387 = {
-			tooltip = { remove_province_modifier = coffea_arabica_modifier }
-		}
-		event_target:owner_of_mocha = {
-			country_event = { id = prices.32 }
-			add_opinion = {
-				who = ROOT
-				modifier = coffee_plant_spread
-			}
-		}
-	}
-}
-
-
-# Decline of Mocha
-country_event = {
-	id = prices.32
-	title = prices.32.t
-	desc = prices.32.d
-	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
-	goto = 387
-
-	is_triggered_only = yes
-	
-	option = {
-		name = prices.32.a
-		387 = {
-			remove_province_modifier = coffea_arabica_modifier
-		}
-		FROM = { 
-			add_opinion = {
-				who = ROOT
-				modifier = coffee_plant_spread #We will both dislike eachother
-			}
 		}
 	}
 }
@@ -1682,7 +1370,7 @@ country_event = {
 		change_price = {
 			trade_goods = paper
 			key = INCREASED_PRINTING
-			value = 0.25
+			value = 0.2
 			duration = -1
 		}
 	}
@@ -1929,7 +1617,7 @@ country_event = {
 		change_price = {
 			trade_goods = paper
 			key = PAPER_IN_BUREAUCRACY
-			value = 0.25
+			value = 0.2
 			duration = -1
 		}
 	}
@@ -2108,7 +1796,6 @@ country_event = {
 	major = yes
 
 	trigger = {
-		ai = no
 		NOT = { has_global_flag = faceting_happened }
 		has_institution = renaissance
 		prestige = 50
@@ -2147,7 +1834,6 @@ country_event = {
 				}
 				save_event_target_as = diamond_city
 			}
-			set_global_flag = faceting_happened
 		}
 	}
 	
@@ -2217,7 +1903,7 @@ country_event = {
 	option = {
 		name = prices.39.a
 		add_years_of_income = 1.5
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 		change_price = {
 			trade_goods = gems
 			key = BRAZILIAN_DIAMONDS
@@ -2601,7 +2287,7 @@ country_event = {
 
 	trigger = {
 		#has_dlc = "Rule Britannia"
-		#NOT = { has_global_flag = steam_engine_happened }
+		NOT = { has_global_flag = steam_engine_happened }
 		has_country_flag = watt_steam_engine_flag #Set by Industrialization Events
 		has_country_flag = coke_blast_furnaces_flag #Set by Industrialization Events.
 		has_institution = enlightenment
