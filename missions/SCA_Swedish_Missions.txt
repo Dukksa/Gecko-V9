@@ -396,8 +396,9 @@ swe_scandinavian_colonialism_mission_slot = {
 			}
 		}
 		effect = {
-			unlock_estate_privilege = {
-				estate_privilege = estate_burghers_forest_expansion
+			add_country_modifier = {
+				name = development_mission
+				duration = 3650
 			}
 			laponia_area = {
 				add_local_autonomy = -100
