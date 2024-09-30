@@ -56,12 +56,16 @@ country_decisions = {
 						owns_core_province = 104	
 						owns_core_province = 116	
 						owns_core_province = 118	
+						owns_core_province = 112
+						owns_core_province = 125
 					}
 				}
 				province_id = 101	# Genoa
 				province_id = 104	# Milan
 				province_id = 116	# Firenze
 				province_id = 118	# Roma
+				province_id = 112 	# venice
+				province_id = 125 	# Palermo
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -76,6 +80,8 @@ country_decisions = {
 			owns_core_province = 104	# Milan
 			owns_core_province = 116	# Firenze
 			owns_core_province = 118	# Roma
+			owns_core_province = 112 	# venice
+			owns_core_province = 125	# Palermo
 			num_of_owned_provinces_with = {
 				value = 45
 				region = italy_region

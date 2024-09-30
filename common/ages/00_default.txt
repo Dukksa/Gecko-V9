@@ -211,6 +211,7 @@ age_of_discovery = {
 					tag = SIC
 					tag = TTS
 					tag = ROT
+					tag = FKN
 				}
 			}	
 			modifier = {
@@ -938,6 +939,7 @@ age_of_revolutions = {
 					tag = HAB
 					tag = HLR
 					tag = AHU
+					tag = SGF
 				}
 			}
 			modifier = {

@@ -21,6 +21,7 @@ country_decisions = {
 			NOT = { tag = ADU }
 			NOT = { tag = POR }
 			NOT = { tag = CAS }
+			NOT = { tag = SPA }
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
