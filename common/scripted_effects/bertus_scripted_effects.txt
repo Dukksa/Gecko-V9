@@ -1,0 +1,17 @@
+
+
+get_treasury_fraction = {
+	FROM = {
+		set_variable = { which = current_treasury value = 0 }
+		set_variable = { which = treasury_to_transfer value = 1 }
+		subtract_variable = { which = treasury_to_transfer value = $fraction$ }
+		export_to_variable = { which = current_treasury value = treasury }
+		multiply_variable = { which = treasury_to_transfer which = current_treasury }
+		while = {
+			limit = { check_variable = { which = current_treasury which = treasury_to_transfer } }
+			subtract_variable = { which = current_treasury value = 1 }
+			add_treasury = -1
+			ROOT = {add_treasury = 1}
+		}
+	}
+}

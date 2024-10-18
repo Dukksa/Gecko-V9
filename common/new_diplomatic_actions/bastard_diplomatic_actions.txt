@@ -144,3 +144,33 @@ bastard_convert_trib_to_vassal = {
 		}
 	}
 }
+
+#from Bertus mod(Anbennar MP modified)
+spy_steal_treasury_action = {
+	category = covert 
+	require_acceptance = no
+	
+	is_visible = {
+    }
+	
+	is_allowed = {
+		custom_trigger_tooltip = {
+			tooltip = need_75_spy_network_tt
+			has_spy_network_in = {who = FROM value = 75}
+		}
+	}
+
+    on_accept = {
+		ROOT = {
+			get_treasury_fraction = { fraction = 0.15 }
+			add_spy_network_in = {
+				who = FROM
+				value = -75
+			}
+		}
+    }
+    
+    on_decline = {
+    }
+	ai_will_do = {always = no}
+}
