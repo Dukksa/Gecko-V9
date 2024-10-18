@@ -13303,8 +13303,8 @@ EPI_ideas = {
 		idea_cost = -0.1
 	}
 	epi_latin_knights = {
-		cavalry_power = 0.15
-		cav_to_inf_ratio = 0.25
+		allowed_marine_fraction = 0.25
+		global_sailors_modifier = 0.25
 	}
 	epi_trade_influences = {
 		global_trade_power = 0.1
@@ -13354,6 +13354,7 @@ LAE_ideas = {
     epi_latin_knights = {
         #cavalry_power = 0.15 same as Epirus
 		allowed_marine_fraction = 0.25
+		global_sailors_modifier = 0.25
     }
     lae_partitio_graeci = {
         warscore_cost_vs_other_religion = -0.1
