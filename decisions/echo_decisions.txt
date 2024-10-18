@@ -34,6 +34,7 @@ country_decisions = {
 				province_id = 295
 				province_id = 454
 				province_id = 416
+				province_id = 361
 			}
 			OR = {
 				NOT = { owned_by = ROOT }

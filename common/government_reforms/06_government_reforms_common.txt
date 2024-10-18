@@ -50,6 +50,7 @@ united_cantons_reform = {
 
 parliamentary_reform = {
 	icon = "judge"
+	lock_level_when_selected = yes
 	modifiers = {
 		global_unrest = -1
 	}
@@ -132,6 +133,7 @@ parliamentary_reform = {
 
 restoration_of_the_senate_reform = {
 	icon = "restoration_of_the_senate_reform"
+	lock_level_when_selected = yes
 	modifiers = {
 		global_unrest = -2
 		max_possible_parliament_seats = 8
@@ -476,6 +478,7 @@ vodka_of_the_crown_reform = {
 
 governing_senate_reform = {
 	icon = governing_senate
+	lock_level_when_selected = yes
 	potential = {
 		has_dlc = "Domination"
 		is_revolutionary = no
@@ -5053,6 +5056,7 @@ german_other_reform = {
 merchant_representation_reform = {
 	icon = "merchant_representation_reform"
 	allow_normal_conversion = yes
+	lock_level_when_selected = yes
 	potential = {
 		has_unlocked_government_reform = {
 			government_reform = merchant_representation_reform

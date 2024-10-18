@@ -420,62 +420,62 @@ mam_missions_1 = {
 		}
 	}
 
-	mam_colonize_spice_islands = {
-		icon = mission_rb_colonise_spice_islands
-		required_missions = { mam_karimi_merchants }
-		position = 11
-		provinces_to_highlight = {
-			OR = {
-				province_id = 650
-				province_id = 649
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			650 = { country_or_non_sovereign_subject_holds = ROOT }
-			649 = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		effect = {
-			if = {
-				limit = {
-					648 = { is_empty = yes }
-				}
-				648 = {
-					add_core = ROOT
-					cede_province = ROOT
-					change_trade_goods = cloves
-				}
-			}
-			custom_tooltip = mam_1_merc_for_every_cloves_province_tt
-			hidden_effect = {
-				if = {
-					limit = {
-						tag = MAM 
-					}
-					every_province = {
-						limit = {
-							country_or_non_sovereign_subject_holds = ROOT
-							trade_goods = cloves
-						}
-						MAM = { add_mercantilism = 1 }
-					}
-				}
-				else_if = {
-					limit = {
-						tag = EGY 
-					}
-					every_province = {
-						limit = {
-							country_or_non_sovereign_subject_holds = ROOT
-							trade_goods = cloves
-						}
-						EGY = { add_mercantilism = 1 }
-					}
-				}
-			}
-		}
-	}
-}
+	#mam_colonize_spice_islands = {
+	#	icon = mission_rb_colonise_spice_islands
+	#	required_missions = { mam_karimi_merchants }
+	#	position = 11
+	#	provinces_to_highlight = {
+	#		OR = {
+	#			province_id = 650
+	#			province_id = 649
+	#		}
+	#		NOT = { country_or_non_sovereign_subject_holds = ROOT }
+	#	}
+	#	trigger = {
+	#		650 = { country_or_non_sovereign_subject_holds = ROOT }
+	#		649 = { country_or_non_sovereign_subject_holds = ROOT }
+	#	}
+	#	effect = {
+	#		if = {
+	#			limit = {
+	#				648 = { is_empty = yes }
+	##			}
+	#			648 = {
+	#				add_core = ROOT
+	#				cede_province = ROOT
+	#				change_trade_goods = cloves
+	#			}
+	#		}
+	#		custom_tooltip = mam_1_merc_for_every_cloves_province_tt
+	#		hidden_effect = {
+	#			if = {
+	#				limit = {
+	#					tag = MAM 
+	#				}
+	#				every_province = {
+	#					limit = {
+	#						country_or_non_sovereign_subject_holds = ROOT
+	#						trade_goods = cloves
+	#					}
+	#					MAM = { add_mercantilism = 1 }
+	#				}
+	#			}
+	#			else_if = {
+	#				limit = {
+	#					tag = EGY 
+	#				}
+	#				every_province = {
+	#					limit = {
+	#						country_or_non_sovereign_subject_holds = ROOT
+	#						trade_goods = cloves
+	#					}
+	#					EGY = { add_mercantilism = 1 }
+	#				}
+	#			}
+	#		}
+	#	}
+	#}
+#}
 
 mam_missions_2 = {
 	slot = 2
