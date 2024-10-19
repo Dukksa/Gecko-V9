@@ -475,7 +475,7 @@ mam_missions_1 = {
 	#		}
 	#	}
 	#}
-#}
+}
 
 mam_missions_2 = {
 	slot = 2
