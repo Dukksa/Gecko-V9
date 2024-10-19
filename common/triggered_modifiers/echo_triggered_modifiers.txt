@@ -257,6 +257,9 @@ Peace_of_Italy = {
 		current_age = age_of_discovery
 	}
 	trigger = {
+		NOT ={
+			has_country_modifier = We_stand_alone
+		}
         custom_trigger_tooltip = {
             tooltip = peace_of_italy_tt
 				OR = {
@@ -645,54 +648,6 @@ Merc_payments = {
 		}
 	}
 	mercenary_manpower = -0.01
-}
-
-Peace_of_Italy = {
-	potential = {
-		OR = {
-			tag = MLO
-			tag = VEN
-			tag = SIC
-			tag = TTS
-			tag = ITA
-			tag = ROM
-		}
-		
-	}
-
-	trigger = {
-		italy_region = {
-			owner = { culture_group = latin }
-		}
-		OR = {
-				great_power_rank = 5
-				 is_great_power = no
-				}
-		#is_at_war = no
-		NOT = { is_lacking_institutions = yes }
-		NOT = {	
-			italy_region = {
-					owner = {
-						OR = {
-						  culture_group = germanic
-						  culture_group = french
-						  culture_group = iberian
-						  culture_group = carpathian
-						  culture_group = maghrebi
-						  culture_group = turko_semitic 
-						  }
-					}
-			}											
-		}			
-	}
-	#all_power_cost = -0.025
-	#build_cost = -0.05
-	production_efficiency = 0.05
-	global_tax_modifier = 0.05
-	global_manpower_modifier = 0.05
-	global_autonomy = -0.025
-	monthly_reform_progress_modifier = 0.075
-	infantry_power = 0.05
 }
 
 Control_African_Slave_Trade = {
