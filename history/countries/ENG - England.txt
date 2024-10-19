@@ -7,22 +7,16 @@ add_accepted_culture = gascon
 add_accepted_culture = normand
 religion = catholic
 capital = 236 # London
-#national_focus = DIP
+national_focus = MIL
+add_accepted_culture = normand
 
 change_estate_land_share = {
 	estate = estate_church
-	share = -10
+	share = 10
 }
 change_estate_land_share = {
 	estate = estate_burghers
-	share = -10
-}
-
-#1422.8.31 = { #Succession
-
-change_estate_land_share = { #compensates for lack of nobles, distributes 20 between the remaining estates
-	estate = all
-	share = 20
+	share = 10
 }
 
 
@@ -43,18 +37,7 @@ change_estate_land_share = { #compensates for lack of nobles, distributes 20 bet
 
 #1434.1.1 = { leader = {	name = "Richard Neville"	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1460.12.31 } }
 
-1444.1.1 = {
-	leader = {
-		name = "John Talbot"
-		type = general
-		fire = 2
-		shock = 4
-		manuever = 3
-		siege = 0
-		death_date = 1453.7.17
-	}
-	set_estate_privilege = estate_nobles_english_villeinage
-}
+#1444.1.1 = { leader = {	name = "John Talbot"	type = general	fire = 2	shock = 4	manuever = 3	siege = 2	death_date = 1453.7.17 } }
 
 1445.4.23 = {
 	queen = {
@@ -84,7 +67,6 @@ change_estate_land_share = { #compensates for lack of nobles, distributes 20 bet
 		dip = 2
 		mil = 4
 	}
-	remove_estate_privilege = estate_nobles_english_villeinage
 }
 
 1455.1.1 = { leader = {	name = "Edmund Beaufort"	type = general	fire = 3	shock = 2	manuever = 2	siege = 0	death_date = 1461.3.4 } }
@@ -585,7 +567,7 @@ change_estate_land_share = { #compensates for lack of nobles, distributes 20 bet
 
 1577.1.1 = { leader = {	name = "Francis Drake"         	type = explorer	fire = 5	shock = 5	manuever = 6	siege = 0	death_date = 1596.1.28 } }
 
-1580.1.1 = { decision = enlist_privateers }
+#1580.1.1 = { decision = enlist_privateers }
 
 1580.1.1 = { leader = {	name = "Walter Raleigh"		type = conquistador	fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1618.10.29 } }
 
