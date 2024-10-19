@@ -7596,7 +7596,7 @@ legalised_divorces_aspect_modifier = {
 	reform_progress_growth = 0.2
 }
 heretics_deported_aspect_modifier = {
-	colonist_placement_chance = 0.2
+	colonist_placement_chance = 0.05
 }
 parish_registers_aspect_modifier = {
 	yearly_corruption = -0.25
