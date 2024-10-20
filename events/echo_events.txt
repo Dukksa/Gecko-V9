@@ -814,3 +814,18 @@ country_event = { # state edicts
 			clr_country_flag = sea_state_edicts_flag
 		}
 	}
+	#event to notify about ur money being stolen
+	country_event = {
+		id = bertus_changes.6032
+		title = bertus_changes.6032.title
+		desc = bertus_changes.6032.desc
+		picture = DHIMMI_ESTATE_eventPicture
+	
+		is_triggered_only = yes
+	
+		immediate = {
+		}
+		option = {
+			name = bertus_changes.6031.a #
+		}
+	}
