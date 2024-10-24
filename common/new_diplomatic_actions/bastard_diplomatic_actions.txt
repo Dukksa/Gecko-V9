@@ -158,11 +158,16 @@ spy_steal_treasury_action = {
 			tooltip = need_75_spy_network_tt
 			has_spy_network_in = {who = FROM value = 75}
 		}
+		hidden_trigger = {
+			ROOT ={
+				is_colonial_nation = no
+			}
+		}
 	}
 
     on_accept = {
 		ROOT = {
-			get_treasury_fraction = { fraction = 0.15 }
+			get_treasury_fraction = { fraction = 0.10 }
 			add_spy_network_in = {
 				who = FROM
 				value = -75

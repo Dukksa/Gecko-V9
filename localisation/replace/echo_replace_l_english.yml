@@ -96,8 +96,8 @@ unite_mongol_culture_tt:1 "All owned provinces with §YKazakh§!, §YTurkmeni§!
  french_empire_desc:0 "I'm literaly napoleon maxxing"
 #bertus mod shit
  spy_steal_treasury_action_title:0 "Steal Treasury"
- spy_steal_treasury_action_desc:0 "Steals §Y15%§! of their current Treasury"
- spy_steal_treasury_action_tooltip:0 "Steals §Y15%§! of their current Treasury"
+ spy_steal_treasury_action_desc:0 "Steals §Y10%§! of their current Treasury"
+ spy_steal_treasury_action_tooltip:0 "Steals §Y10%§! of their current Treasury"
  need_75_spy_network_tt:0 "Your §Y[From.GetName]§! Spy Network needs to be of at least size §Y75.00§! to use this action."
  bertus_changes.6032.title:0 "Treasury Stolen!"
  bertus_changes.6032.desc:0 "Part of our treasury has been stolen, we do not know who exactly got it but it is certainly missing!"

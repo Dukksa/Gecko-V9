@@ -480,9 +480,9 @@ spy_ideas = {
 	}
 
 	shady_recruitment = {
-		may_return_manpower_on_disband = yes
 		manpower_recovery_speed = 0.1
 		land_forcelimit_modifier = 0.1
+		regiment_manpower_usage = -0.05
 	}
 	espionage = {
 		technology_cost = -0.1
